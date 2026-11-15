@@ -1,0 +1,356 @@
+{
+  "checked": "2026-11-15",
+  "sources": [
+    {
+      "id": "FR-DEM",
+      "text": "[Insee, bilan démographique 2025](https://www.insee.fr/fr/statistiques/8719824), 13 janvier 2026. France métropolitaine et cinq DOM. Fécondité en 2025 ; population et part des 65 ans ou plus au 1er janvier 2026. Estimations provisoires."
+    },
+    {
+      "id": "FR-AREA",
+      "text": "[Union européenne, présentation de la France, données Eurostat 2026](https://european-union.europa.eu/principles-countries-history/eu-countries/france_fr). Superficie du territoire français dans l’UE, régions ultrapériphériques comprises. Périmètre distinct des territoires administrés par Taipei."
+    },
+    {
+      "id": "FR-GDP",
+      "text": "[FMI, World Economic Outlook, octobre 2026, série NGDPD pour la France](https://www.imf.org/external/datamapper/NGDPD@WEO/FRA) ; [extraction API](https://www.imf.org/external/datamapper/api/v1/NGDPD/FRA). 2025 : 3 382,595 milliards de dollars courants. Même monnaie et même année que Taïwan ; millésimes de révision distincts."
+    },
+    {
+      "id": "FR-HDI",
+      "text": "[PNUD, Human Development Report 2025, tableau des indices](https://www.undp.org/sites/g/files/zskgke326/files/2025-05/hdr2025overviewen.pdf), données 2023. France : IDH 0,920, rang officiel 26."
+    },
+    {
+      "id": "FR-VD",
+      "text": "[V-Dem, Democracy Report 2026](https://www.v-dem.net/documents/75/V-Dem_Institute_Democracy_Report_2026_lowres.pdf), tableau A2, page 48. Données 2025 : France, indice de démocratie libérale 0,80, rang 9. Taïwan : même tableau et même définition."
+    },
+    {
+      "id": "FR-RSF",
+      "text": "[RSF, France, classement 2026](https://rsf.org/en/country/france). Score 76,68 sur 100 ; rang 25 sur 180."
+    },
+    {
+      "id": "FR-CPI",
+      "text": "[Transparency International, France, CPI 2025](https://www.transparency.org/en/countries/france). Score 66 sur 100 ; rang 27 sur 182."
+    },
+    {
+      "id": "FR-CLIM",
+      "text": "[Météo-France, fiche climatologique Paris-Montsouris, station 75114001](https://meteofrance.s3.sbg.io.cloud.ovh.net/data/synchro_ftp/REF_STATION/FICHECLIM_75114001.pdf). Normales 1991–2020, page 1, édition du 6 novembre 2026. Extraction des moyennes mensuelles de température minimale, maximale et de précipitations, sans les records."
+    },
+    {
+      "id": "FR-AGE",
+      "text": "[Insee, bilan démographique, données nationales de population](https://www.insee.fr/fr/statistiques/8999013) ; [POP4, population par sexe et groupe quinquennal, XLSX](https://www.insee.fr/fr/statistiques/fichier/8999013/4_Pop1janv_grages_quinquennal.xlsx), 15 juin 2026. Feuilles FR-Hommes et FR-Femmes, ligne 2026 (p). Somme des moins d’un an et des 1–4 ans ; somme des 100–104 et 105 ans ou plus. Pourcentages calculés sur le total des deux sexes, France entière."
+    },
+    {
+      "id": "FR-GINI",
+      "text": "[Insee, niveau de vie et pauvreté en 2024](https://www.insee.fr/fr/statistiques/9019316). Gini 0,302, niveau de vie individuel par unité de consommation, France métropolitaine, logements ordinaires. Non superposé au Gini taïwanais du revenu par ménage : unité statistique, champ et année différents."
+    },
+    {
+      "id": "FR-ENERGY",
+      "text": "[SDES, bilan énergétique 2025, données provisoires](https://www.statistiques.developpement-durable.gouv.fr/media/9287/download?inline=) et [Insee, conventions des statistiques de l’énergie](https://www.insee.fr/fr/information/8203038). Indépendance française : 62,7 %. La chaleur nucléaire compte en production intérieure malgré l’uranium importé. Ce ratio ne mesure pas la part des combustibles importés au sens taïwanais."
+    },
+    {
+      "id": "FR-WAGE",
+      "text": "[Insee, salaires dans le secteur privé en 2025](https://www.insee.fr/fr/statistiques/9087193), octobre 2026. Salaires en équivalent temps plein, primes incluses, ensemble des salariés du privé. Le salaire régulier brut des seuls nationaux à temps plein à Taïwan exclut primes et heures supplémentaires. Aucune conversion monétaire ne corrige cette différence de champ."
+    },
+    {
+      "id": "FR-HOUSING",
+      "text": "[IGEDD, prix immobilier et environnement économique, séries longues](https://www.igedd.developpement-durable.gouv.fr/prix-immobilier-evolution-a-long-terme-a1048.html). Les indices prix/revenu français ne sont pas un nombre d’années de revenu médian d’un ménage. Pas de série française de même définition et période identifiée lors de cette recherche."
+    },
+    {
+      "id": "FR-SECTORS",
+      "text": "[Insee, valeur ajoutée par branche en 2025](https://www.insee.fr/fr/statistiques/2830197), comptes base 2020, données provisoires. Agriculture : 41,3 milliards d’euros ; industrie et construction : 358,5 + 148,5 ; services : 1 536,8 + 579,8 ; total VA : 2 664,9. Ces parts excluent les impôts nets sur les produits. Taïwan inclut les droits d’importation et la TVA dans les services (note 3 du tableau 4-2). Pas de superposition de ces deux dénominateurs."
+    },
+    {
+      "id": "FR-WORK",
+      "text": "[Service Public, durée du travail à temps plein](https://www.service-public.gouv.fr/particuliers/vosdroits/F1911), vérifié le 25 septembre 2025. Durée légale française : 35 heures hebdomadaires ; ne mesure pas la durée réellement travaillée."
+    },
+    {
+      "id": "FR-MARRIAGE",
+      "text": "[Vie publique, loi du 17 mai 2013 ouvrant le mariage aux couples de personnes de même sexe](https://www.vie-publique.fr/loi/20645-mariage-pour-tous-loi-du-17-mai-2013-taubira-mariage-couples-meme-sexe)."
+    }
+  ],
+  "population": {
+    "value": 69081996,
+    "unit": "habitants",
+    "year": 2026,
+    "source_ids": [
+      "FR-DEM"
+    ],
+    "coverage": "Résidents · 1er janvier 2026",
+    "status": "comparable",
+    "note": "Ordres de grandeur : registre taïwanais contre population résidente française ; dates distinctes."
+  },
+  "superficie": {
+    "value": 638475,
+    "unit": "km²",
+    "year": 2026,
+    "source_ids": [
+      "FR-AREA"
+    ],
+    "coverage": "Territoire français dans l’UE · 2026",
+    "status": "comparable"
+  },
+  "pib-nominal": {
+    "value": 3382595000000,
+    "unit": "USD",
+    "year": 2025,
+    "source_ids": [
+      "FR-GDP"
+    ],
+    "coverage": "Prix courants · 2025",
+    "status": "comparable"
+  },
+  "fecondite": {
+    "value": 1.56,
+    "unit": "enfant/femme",
+    "year": 2025,
+    "source_ids": [
+      "FR-DEM"
+    ],
+    "coverage": "Indicateur conjoncturel · 2025",
+    "status": "comparable",
+    "precision": 1
+  },
+  "65-plus": {
+    "value": 22.2,
+    "unit": "%",
+    "year": 2026,
+    "source_ids": [
+      "FR-DEM"
+    ],
+    "coverage": "Résidents · 1er janvier 2026",
+    "status": "comparable"
+  },
+  "idh": {
+    "value": 0.92,
+    "unit": "",
+    "year": 2023,
+    "source_ids": [
+      "FR-HDI"
+    ],
+    "coverage": "IDH, méthode PNUD",
+    "status": "comparable",
+    "precision": 3,
+    "rank": "26ᵉ"
+  },
+  "democratie": {
+    "value": 0.8,
+    "unit": "",
+    "year": 2025,
+    "source_ids": [
+      "FR-VD"
+    ],
+    "coverage": "Indice de démocratie libérale",
+    "status": "comparable",
+    "precision": 2,
+    "rank": "9ᵉ"
+  },
+  "presse": {
+    "value": 76.68,
+    "unit": "",
+    "year": 2026,
+    "source_ids": [
+      "FR-RSF"
+    ],
+    "coverage": "Liberté de la presse",
+    "status": "comparable",
+    "precision": 2,
+    "rank": "25ᵉ / 180"
+  },
+  "corruption": {
+    "value": 66,
+    "unit": "",
+    "year": 2025,
+    "source_ids": [
+      "FR-CPI"
+    ],
+    "coverage": "Corruption perçue",
+    "status": "comparable",
+    "precision": 0,
+    "rank": "27ᵉ / 182"
+  },
+  "climat-paris": {
+    "status": "comparable",
+    "place": "Paris-Montsouris",
+    "year": "1991–2020",
+    "source_ids": [
+      "FR-CLIM"
+    ],
+    "tmin": [
+      3.2,
+      3.3,
+      5.6,
+      7.9,
+      11.1,
+      14.2,
+      16.2,
+      16,
+      13,
+      9.9,
+      6.2,
+      3.8
+    ],
+    "tmax": [
+      7.6,
+      8.8,
+      12.8,
+      16.6,
+      20.2,
+      23.4,
+      25.7,
+      25.6,
+      21.5,
+      16.5,
+      11.1,
+      8
+    ],
+    "precip_mm": [
+      47.6,
+      41.8,
+      45.2,
+      45.8,
+      69,
+      51.3,
+      59.4,
+      58,
+      44.7,
+      55.2,
+      54.3,
+      62
+    ]
+  },
+  "energie-importee": {
+    "status": "non_comparable",
+    "reason": "Le nucléaire est compté comme production intérieure en France ; le combustible importé entre dans le ratio taïwanais.",
+    "source_ids": [
+      "FR-ENERGY"
+    ]
+  },
+  "gini": {
+    "status": "non_comparable",
+    "reason": "Niveau de vie par personne en France ; revenu par ménage à Taïwan.",
+    "source_ids": [
+      "FR-GINI"
+    ]
+  },
+  "salaires": {
+    "status": "non_comparable",
+    "reason": "Primes incluses et salariés en équivalent temps plein en France ; salaire régulier hors primes à Taïwan.",
+    "source_ids": [
+      "FR-WAGE"
+    ]
+  },
+  "logement": {
+    "status": "unavailable",
+    "reason": "Pas de ratio français de même définition et période identifié. Un indice prix/revenu ne donne pas des années de revenu.",
+    "source_ids": [
+      "FR-HOUSING"
+    ]
+  },
+  "pib-secteurs": {
+    "status": "non_comparable",
+    "reason": "La référence française porte sur la valeur ajoutée hors impôts sur les produits ; les services taïwanais les incluent.",
+    "source_ids": [
+      "FR-SECTORS"
+    ]
+  },
+  "langues": {
+    "status": "non_comparable",
+    "reason": "Pas de catégorie française équivalente pour ces langues et ce champ de recensement.",
+    "source_ids": []
+  },
+  "identites": {
+    "status": "non_comparable",
+    "reason": "Ces identités déclarées sont propres à l’histoire taïwanaise.",
+    "source_ids": []
+  },
+  "religions": {
+    "status": "unavailable",
+    "reason": "Pas d’enquête française identifiée avec les mêmes catégories, question et année.",
+    "source_ids": []
+  },
+  "exportations": {
+    "status": "unavailable",
+    "reason": "Pas de série française harmonisée avec ces regroupements douaniers identifiée.",
+    "source_ids": []
+  },
+  "tsmc-gravure": {
+    "status": "non_comparable",
+    "reason": "Répartition des revenus d’une entreprise mondiale ; aucun équivalent national français.",
+    "source_ids": []
+  },
+  "pyramide-france": {
+    "status": "comparable",
+    "unit": "personnes",
+    "year": 2026,
+    "source_ids": [
+      "FR-AGE"
+    ],
+    "age_groups": [
+      "0–4",
+      "5–9",
+      "10–14",
+      "15–19",
+      "20–24",
+      "25–29",
+      "30–34",
+      "35–39",
+      "40–44",
+      "45–49",
+      "50–54",
+      "55–59",
+      "60–64",
+      "65–69",
+      "70–74",
+      "75–79",
+      "80–84",
+      "85–89",
+      "90–94",
+      "95–99",
+      "100+"
+    ],
+    "male": [
+      1662835,
+      1936744,
+      2147040,
+      2222637,
+      2013408,
+      2001462,
+      2006912,
+      2135649,
+      2131470,
+      2089504,
+      2205051,
+      2177228,
+      2108210,
+      1887418,
+      1680153,
+      1508046,
+      823170,
+      516047,
+      239048,
+      53681,
+      5484
+    ],
+    "female": [
+      1591477,
+      1838580,
+      2051146,
+      2077070,
+      1921888,
+      1994129,
+      2060312,
+      2221960,
+      2243460,
+      2156607,
+      2255236,
+      2254664,
+      2238065,
+      2104638,
+      1980961,
+      1854803,
+      1108827,
+      838013,
+      527129,
+      180318,
+      31516
+    ]
+  }
+}

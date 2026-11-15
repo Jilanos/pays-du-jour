@@ -2,76 +2,160 @@
   "keyfacts": [
     {
       "label": "Population enregistrée",
-      "value": "23 204 000",
+      "value": 23204000,
       "year": 2026,
-      "source": "MOI, 31 octobre 2026 (S01)"
+      "id": "population",
+      "unit": "habitants",
+      "coverage": "Population enregistrée · 31 octobre 2026",
+      "source_ids": [
+        "S01"
+      ],
+      "france": "population"
     },
     {
       "label": "Superficie",
-      "value": "36 197 km²",
+      "value": 36197.3371,
       "year": 2025,
-      "source": "MOI, tableau y1sa, fin 2025 ; 36 197,3371 km² arrondis au km² (S03)"
+      "id": "superficie",
+      "unit": "km²",
+      "coverage": "Territoires administrés · 2025",
+      "source_ids": [
+        "S03"
+      ],
+      "france": "superficie"
     },
     {
       "label": "PIB nominal",
-      "value": "922,5 milliards USD",
+      "value": 922454000000,
       "year": 2025,
-      "source": "DGBAS, tableau 1-2, révision août 2026 ; 922 454 millions USD arrondis (S28)"
+      "id": "pib-nominal",
+      "unit": "USD",
+      "coverage": "Prix courants · 2025",
+      "source_ids": [
+        "S28"
+      ],
+      "france": "pib-nominal"
     },
     {
       "label": "Fécondité",
-      "value": "0,695 enfant/femme",
+      "value": 0.695,
       "year": 2025,
-      "source": "MOI, plateforme des indicateurs de genre (S14)"
+      "id": "fecondite",
+      "unit": "enfant/femme",
+      "coverage": "Indicateur conjoncturel · 2025",
+      "source_ids": [
+        "S14"
+      ],
+      "france": "fecondite",
+      "precision": 1
     },
     {
       "label": "Part des 65 ans ou plus",
-      "value": "20,79 %",
+      "value": 20.79,
       "year": 2026,
-      "source": "MOI, 31 octobre 2026 (S01)"
+      "id": "65-plus",
+      "unit": "%",
+      "coverage": "Population enregistrée · octobre 2026",
+      "source_ids": [
+        "S01"
+      ],
+      "france": "65-plus"
     },
     {
       "label": "Énergie importée",
-      "value": "95,4 %",
+      "value": 95.4,
       "year": 2025,
-      "source": "Energy Administration, approvisionnement en énergie primaire (S31)"
+      "id": "energie-importee",
+      "unit": "%",
+      "coverage": "Approvisionnement primaire · 2025",
+      "source_ids": [
+        "S31"
+      ],
+      "france": "energie-importee"
     }
   ],
   "indices": [
     {
-      "name": "IDH",
+      "name": "Développement humain",
       "value": 0.934,
-      "rank": "21, rang comparatif calculé par DGBAS, hors classement officiel PNUD",
+      "rank": "21ᵉ, indicatif",
       "year": 2023,
-      "source": "DGBAS, calcul selon la méthode PNUD (S07)"
+      "id": "idh",
+      "source_ids": [
+        "S07"
+      ],
+      "france": "idh",
+      "scale_min": 0,
+      "scale_max": 1,
+      "higher_is_better": true,
+      "precision": 3,
+      "acronym": "IDH",
+      "note_visible": "Taïwan calcule son IDH selon la méthode du PNUD. Son rang est indicatif ; il ne figure pas au classement officiel."
     },
     {
-      "name": "Gini du revenu disponible des ménages",
+      "name": "Inégalités de revenus",
       "value": 0.341,
       "rank": "Sans classement",
       "year": 2025,
-      "source": "DGBAS, enquête revenus et dépenses des ménages, après transferts (S08)"
+      "id": "gini",
+      "source_ids": [
+        "S08"
+      ],
+      "france": "gini",
+      "scale_min": 0,
+      "scale_max": 1,
+      "higher_is_better": false,
+      "precision": 3,
+      "acronym": "Gini",
+      "coverage": "Revenu disponible par ménage, après transferts."
     },
     {
-      "name": "V-Dem, démocratie libérale (0–1)",
+      "name": "Démocratie libérale",
       "value": 0.7,
-      "rank": "29",
+      "rank": "29ᵉ",
       "year": 2025,
-      "source": "V-Dem, Democracy Report 2026, tableau A2, p. 48 (S09)"
+      "id": "democratie",
+      "source_ids": [
+        "S09"
+      ],
+      "france": "democratie",
+      "scale_min": 0,
+      "scale_max": 1,
+      "higher_is_better": true,
+      "precision": 2,
+      "acronym": "V-Dem"
     },
     {
-      "name": "RSF, liberté de la presse (0–100)",
+      "name": "Liberté de la presse",
       "value": 75.44,
-      "rank": "28/180",
+      "rank": "28ᵉ / 180",
       "year": 2026,
-      "source": "Reporters sans frontières, index 2026 (S10)"
+      "id": "presse",
+      "source_ids": [
+        "S10"
+      ],
+      "france": "presse",
+      "scale_min": 0,
+      "scale_max": 100,
+      "higher_is_better": true,
+      "precision": 2,
+      "acronym": "RSF"
     },
     {
-      "name": "CPI, corruption perçue (0–100)",
+      "name": "Corruption perçue",
       "value": 68,
-      "rank": "24/182",
+      "rank": "24ᵉ / 182",
       "year": 2025,
-      "source": "Transparency International, CPI 2025 (S11)"
+      "id": "corruption",
+      "source_ids": [
+        "S11"
+      ],
+      "france": "corruption",
+      "scale_min": 0,
+      "scale_max": 100,
+      "higher_is_better": true,
+      "precision": 0,
+      "acronym": "CPI"
     }
   ],
   "cities": [
@@ -82,7 +166,10 @@
       "lon": 121.465,
       "note": "Couronne métropolitaine, industrie et littoral.",
       "year": 2025,
-      "source": "MOI, municipalité au 31 décembre 2025 (S02) ; coordonnées du centre : Natural Earth (S37)"
+      "source_ids": [
+        "S02",
+        "S37"
+      ]
     },
     {
       "name": "Taichung",
@@ -91,7 +178,10 @@
       "lon": 120.681667,
       "note": "Machines-outils, mécanique et cycles.",
       "year": 2025,
-      "source": "MOI, municipalité au 31 décembre 2025 (S02) ; coordonnées du centre : Natural Earth (S37)"
+      "source_ids": [
+        "S02",
+        "S37"
+      ]
     },
     {
       "name": "Kaohsiung",
@@ -100,7 +190,10 @@
       "lon": 120.266602,
       "note": "Port, sidérurgie et développement des fabs.",
       "year": 2025,
-      "source": "MOI, municipalité au 31 décembre 2025 (S02) ; coordonnées du centre : Natural Earth (S37)"
+      "source_ids": [
+        "S02",
+        "S37"
+      ]
     },
     {
       "name": "Taipei",
@@ -109,7 +202,10 @@
       "lon": 121.568333,
       "note": "Capitale politique, finance et services.",
       "year": 2025,
-      "source": "MOI, municipalité au 31 décembre 2025 (S02) ; coordonnées du centre : Natural Earth (S37)"
+      "source_ids": [
+        "S02",
+        "S37"
+      ]
     },
     {
       "name": "Taoyuan",
@@ -118,7 +214,10 @@
       "lon": 121.311111,
       "note": "Aéroport international, logistique et industrie.",
       "year": 2025,
-      "source": "MOI, municipalité au 31 décembre 2025 (S02) ; coordonnées du centre : Natural Earth (S37)"
+      "source_ids": [
+        "S02",
+        "S37"
+      ]
     },
     {
       "name": "Tainan",
@@ -127,117 +226,121 @@
       "lon": 120.200043,
       "note": "Ancienne capitale, temples et électronique.",
       "year": 2025,
-      "source": "MOI, municipalité au 31 décembre 2025 (S02) ; coordonnées du centre : Natural Earth (S37)"
+      "source_ids": [
+        "S02",
+        "S37"
+      ]
     }
   ],
   "charts": [
     {
-      "id": "climat-taipei",
+      "id": "climat",
       "type": "climate",
-      "title": "Taipei : températures et précipitations",
-      "source": "Central Weather Administration, normales 1991-2020 (S12)",
-      "year": 2020,
-      "place": "Taipei",
-      "note": "Normales 1991-2020 ; moyennes des minima et maxima quotidiens, précipitations mensuelles. Année 2020 = fin de la période de référence. Station 466920.",
-      "tmin": [
-        14.2,
-        14.4,
-        16.0,
-        19.3,
-        22.6,
-        25.1,
-        26.6,
-        26.4,
-        25.0,
-        22.4,
-        19.7,
-        16.0
+      "title": "Deux saisons des pluies, un même été brûlant",
+      "subtitle": "Normales 1991–2020 · comparaison avec Paris-Montsouris",
+      "year": "1991–2020",
+      "source_ids": [
+        "S12"
       ],
-      "tmax": [
-        19.4,
-        20.3,
-        22.7,
-        26.4,
-        29.7,
-        32.7,
-        34.8,
-        34.2,
-        31.5,
-        27.6,
-        24.8,
-        21.0
-      ],
-      "precip_mm": [
-        90.5,
-        143.2,
-        157.2,
-        152.5,
-        239.9,
-        345.0,
-        226.1,
-        337.8,
-        315.2,
-        150.2,
-        83.2,
-        88.7
-      ]
-    },
-    {
-      "id": "climat-kaohsiung",
-      "type": "climate",
-      "title": "Kaohsiung : températures et précipitations",
-      "source": "Central Weather Administration, normales 1991-2020 (S12)",
-      "year": 2020,
-      "place": "Kaohsiung",
-      "note": "Normales 1991-2020 ; moyennes des minima et maxima quotidiens, précipitations mensuelles. Année 2020 = fin de la période de référence. Ancienne station 467440.",
-      "tmin": [
-        16.2,
-        17.2,
-        19.7,
-        22.8,
-        25.2,
-        26.3,
-        26.7,
-        26.3,
-        25.9,
-        24.4,
-        21.6,
-        17.9
-      ],
-      "tmax": [
-        24.2,
-        25.0,
-        27.0,
-        29.3,
-        31.0,
-        32.1,
-        32.7,
-        32.1,
-        31.8,
-        30.1,
-        28.1,
-        25.3
-      ],
-      "precip_mm": [
-        19.1,
-        17.7,
-        32.3,
-        68.4,
-        202.2,
-        416.2,
-        377.2,
-        512.4,
-        224.5,
-        53.4,
-        25.6,
-        19.2
+      "france": "climat-paris",
+      "note": "Minima et maxima : moyennes quotidiennes. Pluie : cumul mensuel moyen. CWA : station 466920 à Taipei, ancienne station 467440 à Kaohsiung. Échelles communes : 0 à 40 °C et 0 à 600 mm. Paris-Montsouris : station 75114001, mêmes définitions et période.",
+      "places": [
+        {
+          "place": "Taipei",
+          "tmin": [
+            14.2,
+            14.4,
+            16.0,
+            19.3,
+            22.6,
+            25.1,
+            26.6,
+            26.4,
+            25.0,
+            22.4,
+            19.7,
+            16.0
+          ],
+          "tmax": [
+            19.4,
+            20.3,
+            22.7,
+            26.4,
+            29.7,
+            32.7,
+            34.8,
+            34.2,
+            31.5,
+            27.6,
+            24.8,
+            21.0
+          ],
+          "precip_mm": [
+            90.5,
+            143.2,
+            157.2,
+            152.5,
+            239.9,
+            345.0,
+            226.1,
+            337.8,
+            315.2,
+            150.2,
+            83.2,
+            88.7
+          ]
+        },
+        {
+          "place": "Kaohsiung",
+          "tmin": [
+            16.2,
+            17.2,
+            19.7,
+            22.8,
+            25.2,
+            26.3,
+            26.7,
+            26.3,
+            25.9,
+            24.4,
+            21.6,
+            17.9
+          ],
+          "tmax": [
+            24.2,
+            25.0,
+            27.0,
+            29.3,
+            31.0,
+            32.1,
+            32.7,
+            32.1,
+            31.8,
+            30.1,
+            28.1,
+            25.3
+          ],
+          "precip_mm": [
+            19.1,
+            17.7,
+            32.3,
+            68.4,
+            202.2,
+            416.2,
+            377.2,
+            512.4,
+            224.5,
+            53.4,
+            25.6,
+            19.2
+          ]
+        }
       ]
     },
     {
       "id": "pyramide-ages",
       "type": "pyramid",
-      "title": "Population enregistrée par âge et sexe au 31 décembre 2025",
-      "source": "MOI, tableau annuel y1s6, feuille cinq ans, 2025 (S02)",
+      "title": "Une base étroite, des générations actives nombreuses",
       "year": 2025,
       "age_groups": [
         "0–4",
@@ -263,59 +366,64 @@
         "100+"
       ],
       "male": [
-        353.613,
-        483.955,
-        550.471,
-        507.119,
-        600.272,
-        773.172,
-        823.739,
-        808.771,
-        934.5,
-        978.049,
-        840.213,
-        856.943,
-        847.888,
-        755.618,
-        619.521,
-        356.952,
-        196.895,
-        113.102,
-        44.864,
-        14.323,
-        2.421
+        353613,
+        483955,
+        550471,
+        507119,
+        600272,
+        773172,
+        823739,
+        808771,
+        934500,
+        978049,
+        840213,
+        856943,
+        847888,
+        755618,
+        619521,
+        356952,
+        196895,
+        113102,
+        44864,
+        14323,
+        2421
       ],
       "female": [
-        330.399,
-        450.842,
-        512.61,
-        465.983,
-        551.332,
-        717.522,
-        771.237,
-        775.043,
-        954.413,
-        1020.299,
-        893.229,
-        907.97,
-        916.393,
-        844.473,
-        722.942,
-        440.607,
-        272.604,
-        185.184,
-        79.273,
-        21.269,
-        3.107
+        330399,
+        450842,
+        512610,
+        465983,
+        551332,
+        717522,
+        771237,
+        775043,
+        954413,
+        1020299,
+        893229,
+        907970,
+        916393,
+        844473,
+        722942,
+        440607,
+        272604,
+        185184,
+        79273,
+        21269,
+        3107
       ],
-      "unit": "k",
-      "note": "Dernier millésime annuel complet disponible ; effectifs administratifs observés. Les deux séries positives sont exprimées en milliers de personnes. Total : 23 299 132."
+      "unit": "personnes",
+      "note": "Taïwan : registre au 31 décembre 2025. Effectifs en personnes, convertis en pourcentage du total des deux sexes par le rendu. France : résidents au 1er janvier 2026, estimations provisoires. Les résidents étrangers sont inégalement couverts par les deux systèmes.",
+      "source_ids": [
+        "S02"
+      ],
+      "france": "pyramide-france",
+      "subtitle": "Part de la population totale · % · fin 2025 / début 2026",
+      "note_visible": "Taïwan : population enregistrée. France : population résidente."
     },
     {
       "id": "langues",
       "type": "share",
       "title": "Langue principalement utilisée, recensement 2020",
-      "source": "DGBAS, recensement 2020, repris par le Legislative Yuan (S16)",
       "year": 2020,
       "labels": [
         "Mandarin",
@@ -332,13 +440,17 @@
         0.2
       ],
       "unit": "%",
-      "note": "Résidents nationaux âgés de six ans ou plus. Une seule langue principale ; aucune mesure du nombre de locuteurs multilingues. Résidu calculé : 100 − 66,4 − 31,7 − 1,5 − 0,2 = 0,2 %."
+      "note": "Résidents nationaux âgés de six ans ou plus. Une seule langue principale ; aucune mesure du nombre de locuteurs multilingues. Résidu calculé : 100 − 66,4 − 31,7 − 1,5 − 0,2 = 0,2 %.",
+      "source_ids": [
+        "S16"
+      ],
+      "france": "langues",
+      "subtitle": "2020 · %"
     },
     {
       "id": "identites",
       "type": "share",
       "title": "Identification ethnoculturelle déclarée, choix unique",
-      "source": "Hakka Affairs Council, enquête 2021, tableau B-1 ; synthèse MOI 2022 (S15, S17)",
       "year": 2021,
       "labels": [
         "Hoklo",
@@ -355,13 +467,18 @@
         5
       ],
       "unit": "%",
-      "note": "Identification unique déclarée dans une enquête. Les catégories sont celles de la source. La catégorie continentale désigne une identité familiale issue de la Chine continentale. Résidu calculé : 100 − 71,3 − 15,7 − 5 − 3 = 5 %. Ne pas assimiler aux statuts du registre civil."
+      "note": "Identification unique déclarée dans une enquête. Les catégories sont celles de la source. La catégorie continentale désigne une identité familiale issue de la Chine continentale. Résidu calculé : 100 − 71,3 − 15,7 − 5 − 3 = 5 %. Ne pas assimiler aux statuts du registre civil.",
+      "source_ids": [
+        "S15",
+        "S17"
+      ],
+      "france": "identites",
+      "subtitle": "2021 · %"
     },
     {
       "id": "religions",
       "type": "share",
       "title": "Affiliation religieuse déclarée des adultes",
-      "source": "Pew Research Center, enquête 2023, question QCURREL (S18)",
       "year": 2023,
       "labels": [
         "Bouddhisme",
@@ -384,13 +501,18 @@
         2
       ],
       "unit": "%",
-      "note": "Somme de 99 % conservée telle que publiée, effet des arrondis. Les cultes populaires et le culte des ancêtres dépassent les affiliations exclusives. Échantillon taïwanais : 2 277 adultes."
+      "note": "Somme de 99 % conservée telle que publiée, effet des arrondis. Les cultes populaires et le culte des ancêtres dépassent les affiliations exclusives. Échantillon taïwanais : 2 277 adultes.",
+      "source_ids": [
+        "S18"
+      ],
+      "france": "religions",
+      "note_visible": "Total publié : 99 %, effet des arrondis. Les pratiques peuvent se cumuler.",
+      "subtitle": "2023 · %"
     },
     {
       "id": "salaires",
       "type": "bar",
       "title": "Salaire mensuel régulier, médiane et moyenne en 2025",
-      "source": "DGBAS, Industry and Services Sector Earnings Statistics in December 2025 (S25)",
       "year": 2025,
       "labels": [
         "Médiane",
@@ -402,13 +524,17 @@
       ],
       "unit": "TWD/mois",
       "highlight": "Médiane",
-      "note": "Salariés nationaux à temps plein, industrie et services ; rémunération régulière brute, hors primes et heures supplémentaires. Moyennes sur les douze mois de 2025, et non chiffres de décembre seul."
+      "note": "Salariés nationaux à temps plein, industrie et services ; rémunération régulière brute, hors primes et heures supplémentaires. Moyennes sur les douze mois de 2025, et non chiffres de décembre seul.",
+      "source_ids": [
+        "S25"
+      ],
+      "france": "salaires",
+      "subtitle": "2025 · TWD/mois"
     },
     {
       "id": "logement",
       "type": "barh",
       "title": "Prix médian du logement / revenu annuel médian du ménage",
-      "source": "MOI, indicateurs d’accessibilité du logement, T1 2026 (S26)",
       "year": 2026,
       "labels": [
         "Taïwan",
@@ -420,13 +546,18 @@
       ],
       "unit": "années de revenu",
       "highlight": "Taipei",
-      "note": "Premier trimestre 2026 ; revenu disponible du ménage. Rapport prix/revenu, sans simulation de crédit."
+      "note": "Premier trimestre 2026 ; revenu disponible du ménage. Rapport prix/revenu, sans simulation de crédit.",
+      "source_ids": [
+        "S26"
+      ],
+      "france": "logement",
+      "precision": 1,
+      "subtitle": "2026 · années de revenu"
     },
     {
       "id": "pib-secteurs",
       "type": "share",
       "title": "PIB par grand secteur en 2025",
-      "source": "DGBAS, comptes nationaux révisés le 14 août 2026, tableau 4-2 (S28)",
       "year": 2025,
       "labels": [
         "Agriculture, forêt, pêche",
@@ -439,13 +570,18 @@
         55.1
       ],
       "unit": "%",
-      "note": "Prix courants ; parts de PIB publiées, somme de 99,99 % à cause des arrondis. L’industrie comprend 38,55 % du PIB pour la fabrication."
+      "note": "Prix courants ; parts de PIB publiées, somme de 99,99 % à cause des arrondis. L’industrie comprend 38,55 % du PIB pour la fabrication.",
+      "source_ids": [
+        "S28"
+      ],
+      "france": "pib-secteurs",
+      "note_visible": "Les services incluent les droits à l’importation et la TVA dans les comptes taïwanais.",
+      "subtitle": "2025 · %"
     },
     {
       "id": "exportations",
       "type": "share",
       "title": "Structure des exportations de biens en 2025",
-      "source": "Ministère des Finances, Annual External Trade Report in 2025, tableau 1 (S29)",
       "year": 2025,
       "labels": [
         "Informatique, télécoms, audiovisuel",
@@ -458,13 +594,17 @@
         26.0
       ],
       "unit": "%",
-      "note": "Valeur douanière totale : 640,7 milliards USD. Autres biens = résidu calculé de 100 − 39,2 − 34,8. Les composants électroniques incluent les circuits intégrés ; aucune addition avec les produits finis déjà classés dans l’autre catégorie."
+      "note": "Valeur douanière des exportations de biens. Autres biens : résidu calculé. Les composants électroniques et les produits finis sont deux catégories disjointes.",
+      "source_ids": [
+        "S29"
+      ],
+      "france": "exportations",
+      "subtitle": "2025 · %"
     },
     {
       "id": "tsmc-gravure",
       "type": "share",
       "title": "TSMC : revenus de wafers par technologie de gravure en 2025",
-      "source": "TSMC, rapport annuel 2025 et formulaire 20-F 2025 déposé auprès de la SEC (S21, S56)",
       "year": 2025,
       "labels": [
         "3 nm",
@@ -479,7 +619,337 @@
         26
       ],
       "unit": "%",
-      "note": "Part des revenus de wafers de TSMC, toutes implantations confondues. 7 nm et plus avancé : 74 %. Procédés plus anciens = 100 − 24 − 36 − 14. Les appellations en nm sont des générations de procédés. Aucune part de marché mondiale dans ce graphique."
+      "note": "Part des revenus de wafers de TSMC, toutes implantations confondues. Procédés plus anciens : résidu calculé. Aucune part de marché mondiale dans ce graphique.",
+      "source_ids": [
+        "S21",
+        "S56"
+      ],
+      "france": "tsmc-gravure",
+      "note_visible": "Revenus de wafers de TSMC, toutes implantations. Les « nm » désignent des générations de procédés.",
+      "subtitle": "2025 · %"
     }
-  ]
+  ],
+  "sources": [
+    {
+      "id": "S01",
+      "text": "[MOI, registre démographique d’octobre 2026](https://www.ris.gov.tw/info-liferay/app/channel/newsEnglishDetail/26309288)."
+    },
+    {
+      "id": "S02",
+      "text": "MOI : [population annuelle par sexe et âge, tableau y1s6, XLS](https://www.ris.gov.tw/info-popudata/app/awFastDownload/view?type=xls&m4c=y1s6&d5c=) ; [Demography Quarterly, hiver 2025, tableau 2, décembre](https://www.ris.gov.tw/documents/data/5/2/DemographicQuarterly_Winter2025.pdf)."
+    },
+    {
+      "id": "S03",
+      "text": "[MOI, superficie et densité, tableau y1sa, XLS](https://www.ris.gov.tw/info-popudata/app/awFastDownload/view?type=xls&m4c=y1sa&d5c=) ; [Tourism Administration, transports terrestres](https://eng.taiwan.net.tw/m1.aspx?sNo=0029023). Superficie arrondie au km²."
+    },
+    {
+      "id": "S04",
+      "text": "[Congressional Research Service, Taiwan: Background and U.S. Relations, 20/10/2026](https://www.everycrsreport.com/files/2026-10-20_IF10275_122aababdc488ff6b3c8ebd6e50d8c86b61bc62c.pdf). Copie du rapport IF10275."
+    },
+    {
+      "id": "S05",
+      "text": "[Tourism Administration, General Information](https://eng.taiwan.net.tw/m1.aspx?sNo=0002004). Géographie, Yushan et randonnée."
+    },
+    {
+      "id": "S06",
+      "text": "[Wikimedia Commons, Taiwan relief location map.jpg](https://commons.wikimedia.org/wiki/File:Taiwan_relief_location_map.jpg). Uwe Dedering, corrections par NordNordWest et Geographyinitiative ; SRTM30plus/Natural Earth ; [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/). Fichier conservé sans modification, 102 985 octets."
+    },
+    {
+      "id": "S07",
+      "text": "[DGBAS, calcul de l’IDH 2023, 11/06/2025](https://ws.dgbas.gov.tw/001/Upload/463/relfile/11759/233228/2023%E5%B9%B4%E6%88%91%E5%9C%8BHDI%E4%BD%8D%E5%B1%85%E5%85%A8%E7%90%83%E7%AC%AC21%E5%90%8D.pdf)."
+    },
+    {
+      "id": "S08",
+      "text": "[DGBAS, comptes nationaux et distribution des revenus 2025, 14/08/2026](https://eng.stat.gov.tw/News_Content.aspx?n=2337&s=236587)."
+    },
+    {
+      "id": "S09",
+      "text": "[V-Dem, Democracy Report 2026, tableau A2, p. 48, données 2025](https://www.v-dem.net/documents/75/V-Dem_Institute_Democracy_Report_2026_lowres.pdf)."
+    },
+    {
+      "id": "S10",
+      "text": "[RSF, Taïwan, index 2026](https://rsf.org/en/country/taiwan)."
+    },
+    {
+      "id": "S11",
+      "text": "[Transparency International, Taïwan, CPI 2025](https://www.transparency.org/en/countries/taiwan)."
+    },
+    {
+      "id": "S12",
+      "text": "CWA, normales 1991-2020 : [méthode et stations](https://www.cwa.gov.tw/V8/E/C/Statistics/monthlymean.html), [minima](https://www.cwa.gov.tw/V8/E/C/Statistics/MonthlyMean/MOD/Taiwan_meantxmin.html), [maxima](https://www.cwa.gov.tw/V8/E/C/Statistics/MonthlyMean/MOD/Taiwan_meantxmax.html), [précipitations](https://www.cwa.gov.tw/V8/E/C/Statistics/MonthlyMean/MOD/Taiwan_precp.html)."
+    },
+    {
+      "id": "S13",
+      "text": "[CWA, climat saisonnier d’automne](https://climate.cwa.gov.tw/SeasonalClimate?subpage=Autumn) ; [présentation CWA sur les pluies de mousson et les typhons, 2024](https://www.weather.gov/media/climateservices/CPASW/2024/Thursday/1-Thur-Session12-Lo.pdf)."
+    },
+    {
+      "id": "S14",
+      "text": "[Plateforme taïwanaise des indicateurs de genre, fécondité, données MOI](https://www.gender-indicators.org.tw/zh-tw/indicators/index/total_fertility_rate?p=GEPG). Valeur 2025 : 695 naissances pour 1 000 femmes."
+    },
+    {
+      "id": "S15",
+      "text": "[MOI, Population Policy Data Collection 2022](https://www.ris.gov.tw/documents/data/5/2/3/PopulationPolicyDataCollection%282022%29.pdf). Population, vieillissement et identités."
+    },
+    {
+      "id": "S16",
+      "text": "[Legislative Yuan, langues du recensement 2020 et identités](https://www.ly.gov.tw/Pages/Detail.aspx?nodeid=46405&pid=231920)."
+    },
+    {
+      "id": "S17",
+      "text": "[Hakka Affairs Council, enquête population et langues 2021, tableau B-1](https://www.hakka.gov.tw/File/Attach/37585/File_96737.pdf). Recoupement avec la synthèse du MOI de 2022."
+    },
+    {
+      "id": "S18",
+      "text": "Pew Research Center : [religion à Taïwan](https://www.pewresearch.org/short-reads/2024/07/29/4-facts-about-religion-and-diversity-in-taiwan/), [résultats de l’enquête 2023, QCURREL](https://www.pewresearch.org/wp-content/uploads/sites/20/2024/06/PR_2024.06.17_religion-in-east-asia_topline.pdf)."
+    },
+    {
+      "id": "S19",
+      "text": "[Tourism Administration, marchés de nuit et cuisine](https://www.taiwan.net.tw/m1.aspx?sNo=0001040)."
+    },
+    {
+      "id": "S20",
+      "text": "[Ministère du Travail, durée normale du travail](https://english.mol.gov.tw/21004/21015/21016/21023/21027/21227/)."
+    },
+    {
+      "id": "S21",
+      "text": "[TSMC, rapport annuel 2025](https://investor.tsmc.com/static/annualReports/2025/english/index.html). Activités, implantation et technologies."
+    },
+    {
+      "id": "S22",
+      "text": "[Resident Advisor, clubs de Taipei](https://ra.co/clubs/tw/taipei)."
+    },
+    {
+      "id": "S23",
+      "text": "[Tourism Administration, vélo à Taïwan](https://eng.taiwan.net.tw/m1.aspx?sNo=0029976)."
+    },
+    {
+      "id": "S24",
+      "text": "[Executive Yuan, légalisation du mariage entre personnes de même sexe, 23/05/2019](https://english.ey.gov.tw/Page/61BF20C3E89B856/edc61e2f-af8f-45f3-933b-682546c0e0d9)."
+    },
+    {
+      "id": "S25",
+      "text": "[DGBAS, salaires de décembre et de l’année 2025](https://eng.dgbas.gov.tw/News_Content.aspx?n=4438&s=235868)."
+    },
+    {
+      "id": "S26",
+      "text": "[MOI, accessibilité du logement, premier trimestre 2026](https://pip.moi.gov.tw/Publicize/Info/E1050)."
+    },
+    {
+      "id": "S27",
+      "text": "[CNA / Focus Taiwan, enquête DGBAS sur les revenus 2025, 16/08/2026](https://focustaiwan.tw/business/202608160005)."
+    },
+    {
+      "id": "S28",
+      "text": "DGBAS, comptes nationaux, publication du 14/08/2026 : [PIB par secteur, tableau 4-2, XLSX](https://ws.dgbas.gov.tw/001/Upload/464/relfile/10854/236587/t4-2e.xlsx), [PIB nominal, tableau 1-2, XLSX](https://ws.dgbas.gov.tw/001/Upload/464/relfile/10854/236587/t1-2e.xlsx)."
+    },
+    {
+      "id": "S29",
+      "text": "[Ministère des Finances, Annual External Trade Report in 2025, 23/02/2026](https://service.mof.gov.tw/public/Data/statistic/bulletin/115/114%E5%B9%B4%E6%88%91%E5%9C%8B%E5%87%BA%E9%80%B2%E5%8F%A3%E8%B2%BF%E6%98%93%E6%A6%82%E6%B3%81_%E8%8B%B1%E6%96%87%E7%89%88.pdf)."
+    },
+    {
+      "id": "S30",
+      "text": "[Banque centrale de Taïwan, rapport annuel 2025, balance des paiements et destinations commerciales](https://www.cbc.gov.tw/dl-225833-e53e3197a7bc456399291cb1d69bf8d9.html)."
+    },
+    {
+      "id": "S31",
+      "text": "[Energy Administration, approvisionnement énergétique 2025](https://www.moeaea.gov.tw/ECW/populace/content/Content.aspx?menu_id=14435)."
+    },
+    {
+      "id": "S32",
+      "text": "[AP, révocations et référendum nucléaire, 23/08/2025](https://apnews.com/article/2efa596845858a7e4bd89e0c23af39b8)."
+    },
+    {
+      "id": "S33",
+      "text": "[MOEA / Taipower, dépôt du plan Maanshan, 27/03/2026](https://www.moea.gov.tw/Mns/english/news/News.aspx?kind=6&menu_id=176&news_id=122448)."
+    },
+    {
+      "id": "S34",
+      "text": "[World Nuclear News, examen du plan de redémarrage, 28/09/2026](https://world-nuclear-news.org/articles/taiwan-regulator-completes-review-of-restart-plan)."
+    },
+    {
+      "id": "S35",
+      "text": "[CNA / Focus Taiwan, référendum nucléaire approuvé, 28/08/2026](https://focustaiwan.tw/politics/202608280025)."
+    },
+    {
+      "id": "S36",
+      "text": "[TSMC, rapport annuel 2024, p. 159, gestion de l’eau](https://investor.tsmc.com/static/annualReports/2024/english/ebook/files/basic-html/page159.html)."
+    },
+    {
+      "id": "S37",
+      "text": "[Natural Earth, populated places, 1:10m, GeoJSON](https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_populated_places.geojson). Coordonnées des six centres ; données du domaine public."
+    },
+    {
+      "id": "S38",
+      "text": "[MOFA, Historical Timeline, Taiwan at a Glance](https://ws.mofa.gov.tw/001/Upload/402/relfile/20/422/779bb0cb-5fcb-47eb-8e82-84ac0c39d61b.pdf)."
+    },
+    {
+      "id": "S39",
+      "text": "Présidence : [présidents depuis 1947](https://english.president.gov.tw/Page/42), [Constitution et articles additionnels](https://english.president.gov.tw/Page/93)."
+    },
+    {
+      "id": "S40",
+      "text": "Executive Yuan : [Cho Jung-tai](https://english.ey.gov.tw/Page/61C21F458EFF8175), [réunion du Conseil des ministres du 05/11/2026](https://english.ey.gov.tw/Page/61BF20C3E89B856/af6dbb33-ba38-48aa-9aee-c8f9470f8304)."
+    },
+    {
+      "id": "S41",
+      "text": "[CRS, Taiwan: Issues for Congress, 2017](https://www.everycrsreport.com/reports/R44996.html). ECFA, Tournesols et rapprochement avec Pékin."
+    },
+    {
+      "id": "S42",
+      "text": "[Le Monde, bilan des années Tsai, 20/05/2024](https://www.lemonde.fr/en/international/article/2024/05/20/taiwan-under-president-tsai-ing-wen-eight-years-of-stability-in-the-storm_6671969_4.html)."
+    },
+    {
+      "id": "S43",
+      "text": "[Commission électorale centrale, présidentielle 2024](https://web.cec.gov.tw/english/article/41410)."
+    },
+    {
+      "id": "S44",
+      "text": "[CNA, résultats des élections de 2024, 13/01/2024](https://www.cna.com.tw/news/aipl/202401135011.aspx)."
+    },
+    {
+      "id": "S45",
+      "text": "[AP, accord commercial américano-taïwanais, 12/02/2026](https://apnews.com/article/2b1743397ba33010463d41132b75ce53)."
+    },
+    {
+      "id": "S46",
+      "text": "[AP, déclaration franco-britannico-allemande, 24/06/2026](https://apnews.com/article/954142789772e314b4394210a658862d)."
+    },
+    {
+      "id": "S47",
+      "text": "[AP, enquête sur des candidatures financées depuis la Chine, 08/11/2026](https://apnews.com/article/8a5d0366b5d72e73f41bd7b9ccbb1f6d)."
+    },
+    {
+      "id": "S48",
+      "text": "[Tourism Administration, religion](https://eng.taiwan.net.tw/m1.aspx?sNo=0029044) ; [Travel Tainan, marchés de nuit](https://twtainan.net/en/statics/night-market/)."
+    },
+    {
+      "id": "S49",
+      "text": "[France Diplomatie, représentations françaises et taïwanaises](https://www.diplomatie.gouv.fr/fr/information-par-pays/taiwan/conseils-aux-voyageurs-contacts-utiles)."
+    },
+    {
+      "id": "S50",
+      "text": "[Fondation pour la recherche stratégique, Taïwan, un partenaire important pour la France, 2024](https://www.frstrategie.org/web/documents/programmes/Programme-Taiwan/2024/032024.pdf)."
+    },
+    {
+      "id": "S51",
+      "text": "[Sénat, ventes d’armement à Taïwan, réponse gouvernementale](https://www.senat.fr/questions/base/1997/qSEQ970421994.html)."
+    },
+    {
+      "id": "S52",
+      "text": "[Direction générale du Trésor, brèves de la semaine du 09/02/2026, rubrique Taïwan](https://www.tresor.economie.gouv.fr/Articles/5409c437-8cf7-43a9-babc-83d59ad308fa/files/62e10355-bec2-41e0-b20e-c55077efdda6). Commerce 2025 et chantier ProLogium."
+    },
+    {
+      "id": "S53",
+      "text": "[U.S. Department of Commerce, Taiwan: Semiconductors, 01/12/2025](https://www.trade.gov/country-commercial-guides/taiwan-semiconductors-including-chip-design-ai)."
+    },
+    {
+      "id": "S54",
+      "text": "[The Silicon Shield Theory 25 Years Later, 2026](https://www.tandfonline.com/doi/full/10.1080/13439006.2026.2702232)."
+    },
+    {
+      "id": "S55",
+      "text": "[Wikimedia Commons, Flag of the Republic of China.svg](https://commons.wikimedia.org/wiki/File:Flag_of_the_Republic_of_China.svg). Domaine public, œuvre officielle de la République de Chine ; Dessin conservé ; encodage UTF-8 et fins de ligne normalisés."
+    },
+    {
+      "id": "S56",
+      "text": "[TSMC, formulaire annuel 20-F 2025 déposé auprès de la SEC](https://www.sec.gov/Archives/edgar/data/1046179/000162828026025362/tsm-20251231.htm). Répartition annuelle des revenus de wafers par gravure."
+    },
+    {
+      "id": "NE",
+      "text": "[Natural Earth](https://www.naturalearthdata.com/about/terms-of-use/), domaine public. Contours 1:110 m et 1:50 m, micro-États 1:10 m. Projections régionales, repères et encart nord réalisés pour cette fiche. Les contours ne constituent pas une position sur les frontières."
+    }
+  ],
+  "map_sources": {
+    "locator": [
+      "S04",
+      "NE"
+    ],
+    "cities": [
+      "S02",
+      "S37",
+      "NE"
+    ],
+    "relief": [
+      "S06"
+    ]
+  },
+  "hero_sources": [
+    "S04",
+    "S55"
+  ],
+  "prose_values": {
+    "autochtones": {
+      "value": 2.78,
+      "unit": "%",
+      "precision": 1
+    },
+    "travail-twn": {
+      "value": 40,
+      "unit": "heures",
+      "precision": 0
+    },
+    "travail-fr": {
+      "value": 35,
+      "unit": "heures",
+      "precision": 0
+    },
+    "revenu-hsinchu": {
+      "value": 1604000,
+      "unit": "TWD"
+    },
+    "revenu-taipei": {
+      "value": 1554000,
+      "unit": "TWD"
+    },
+    "export-total": {
+      "value": 640700000000,
+      "unit": "USD"
+    },
+    "exports-us": {
+      "value": 30.9,
+      "unit": "%",
+      "precision": 1
+    },
+    "exports-chine": {
+      "value": 26.6,
+      "unit": "%",
+      "precision": 1
+    },
+    "eau": {
+      "value": 67000,
+      "unit": "m³ par jour"
+    },
+    "yushan": {
+      "value": 3952,
+      "unit": "mètres"
+    },
+    "vote-lai": {
+      "value": 40.05,
+      "unit": "%",
+      "precision": 1
+    },
+    "vote-hou": {
+      "value": 33.49,
+      "unit": "%",
+      "precision": 1
+    },
+    "vote-ko": {
+      "value": 26.46,
+      "unit": "%",
+      "precision": 1
+    },
+    "commerce-fr": {
+      "value": 7500000000,
+      "unit": "euros"
+    },
+    "puces": {
+      "value": 90,
+      "unit": "%",
+      "precision": 0
+    },
+    "velo": {
+      "value": 960.8,
+      "unit": "kilomètres"
+    }
+  }
 }

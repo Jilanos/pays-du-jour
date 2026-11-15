@@ -4,22 +4,29 @@
 <div class="reading-layout">
   <main id="contenu" class="fiche">
     <a class="back" href="/">{{ ui['navigation']['back'] }}</a>
-    <header class="fiche-header">
-      {% if fiche.flag %}<img class="flag" src="/pays/{{ fiche.meta.iso3 }}/assets/flag.svg" alt="Drapeau de {{ fiche.meta.nom }}">{% endif %}
-      <p class="eyebrow">{{ fiche.meta.iso3 }} · {{ fiche.meta.temps_lecture_min }} min de lecture</p>
-      <h1>{{ fiche.meta.nom }}</h1>
-      <p>{{ fiche.meta.nom_officiel }}</p>
-      <dl class="identity">
-        {% for label, key in [('Capitale', 'capitale'), ('Population', 'population'), ('Superficie (km²)', 'superficie_km2'), ('Langues', 'langues'), ('Monnaie', 'monnaie'), ('Régime', 'regime'), ('Chef de l’État', 'chef_etat')] %}
-        <div><dt>{{ label }}</dt><dd>{% if key == 'langues' %}{{ fiche.meta[key] | join(', ') }}{% elif key in ['population', 'superficie_km2'] %}{{ '{:,}'.format(fiche.meta[key]).replace(',', ' ') }}{% else %}{{ fiche.meta[key] }}{% endif %}</dd></div>
-        {% endfor %}
-      </dl>
-      <p class="muted">Données vérifiées le {{ fiche.meta.date_donnees }}</p>
+    <header class="fiche-header" id="identite">
+      <div class="hero-copy">
+        <p class="eyebrow">{{ fiche.meta.region | default('Un pays à découvrir') }} <span> / </span> L’atlas personnel</p>
+        <div class="title-line">{% if fiche.flag %}<img class="flag" src="/pays/{{ fiche.meta.iso3 }}/assets/flag.svg" alt="Drapeau de {{ fiche.meta.nom }}" width="90" height="60">{% endif %}<h1>{{ fiche.meta.nom }}</h1></div>
+        <p class="official-name">{{ fiche.meta.nom_officiel }}</p>
+        {% if fiche.meta.chapo %}<p class="chapo">{{ fiche.meta.chapo }}</p>{% endif %}
+        <dl class="identity">
+          <div><dt>Capitale</dt><dd>{{ fiche.meta.capitale }}</dd></div>
+          <div><dt>Monnaie</dt><dd>{{ fiche.meta.monnaie }}</dd></div>
+          <div><dt>Langue principale</dt><dd>{{ fiche.meta.langue_principale | default(fiche.meta.langues[0]) }}</dd></div>
+        </dl>
+        <p class="hero-meta">{{ fiche.meta.temps_lecture_min }} min de lecture <span>·</span> Vérifié le {{ fiche.meta.date_donnees | date_fr }}{{ fiche.hero_marker }}</p>
+      </div>
+      {{ fiche.locator }}
     </header>
     {% if fiche.toc %}<details class="mobile-toc"><summary>{{ ui['navigation']['toc'] }}</summary><nav aria-label="Sommaire"><ol>{% for anchor, title in fiche.toc %}<li><a href="#{{ anchor }}">{{ title }}</a></li>{% endfor %}</ol></nav></details>{% endif %}
     <div class="prose">{{ fiche.html }}</div>
-    <a class="back" href="/">{{ ui['navigation']['back'] }}</a>
+    <nav class="fiche-end" aria-label="Poursuivre la lecture">
+      <p class="eyebrow">Le voyage continue</p>
+      {% if next_country %}<a class="next-country" href="/pays/{{ next_country.iso3 }}">{{ next_country.pays }} <span>Lire la prochaine fiche ↗</span></a>{% else %}<p>D’autres pays rejoindront bientôt la collection.</p>{% endif %}
+      <a href="/">Explorer les {{ total }} pays <span aria-hidden="true">→</span></a>
+    </nav>
   </main>
-  {% if fiche.toc %}<aside class="toc"><nav aria-label="Sommaire"><h2>{{ ui['navigation']['toc'] }}</h2><ol>{% for anchor, title in fiche.toc %}<li><a href="#{{ anchor }}">{{ title }}</a></li>{% endfor %}</ol></nav></aside>{% endif %}
+  {% if fiche.toc %}<aside class="toc"><nav aria-label="Sommaire"><p class="eyebrow">Dans cette fiche</p><ol>{% for anchor, title in fiche.toc %}<li><a href="#{{ anchor }}"><span>{{ '%02d' | format(loop.index) }}</span>{{ title }}</a></li>{% endfor %}</ol></nav><a class="toc-top" href="#identite">↑ Revenir au début</a></aside>{% endif %}
 </div>
 {% endblock %}

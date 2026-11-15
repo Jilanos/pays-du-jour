@@ -1,26 +1,50 @@
 {% extends "base.html" %}
 {% block content %}
 <main id="contenu" class="home">
-  <p class="eyebrow">{{ ui['home']['eyebrow'] }}</p>
-  <h1>{{ ui['home']['title'] }}</h1>
-  <p class="intro">{{ ui['home']['intro'] }}</p>
-  <p class="muted">{{ available }} fiche{% if available != 1 %}s{% endif %} disponible{% if available != 1 %}s{% endif %} · {{ total }} pays</p>
-  <nav class="sort" aria-label="{{ ui['home']['sort_label'] }}">
-    <a href="/?tri=palier" {% if tri == 'palier' %}aria-current="page"{% endif %}>{{ ui['home']['sort_tier'] }}</a>
-    <a href="/?tri=alpha" {% if tri == 'alpha' %}aria-current="page"{% endif %}>{{ ui['home']['sort_alpha'] }}</a>
-  </nav>
-  {% for title, countries in groups.items() %}
-  <section class="country-group">
-    <h2>{{ title }}</h2>
-    <ul class="countries">
-      {% for country in countries %}
-      <li data-iso3="{{ country.iso3 }}">
-        {% if country.available %}<a href="/pays/{{ country.iso3 }}">{{ country.pays }}<span aria-hidden="true">↗</span></a>
-        {% else %}<span class="upcoming">{{ country.pays }}<small>{{ ui['home']['upcoming'] }}</small></span>{% endif %}
-      </li>
-      {% endfor %}
-    </ul>
+  <header class="home-header"><p class="eyebrow">{{ ui['home']['eyebrow'] }}</p>
+    <h1>Le monde,<br><em>pays par pays.</em></h1>
+    <p class="intro">{{ ui['home']['intro'] }}</p>
+    <div class="collection-count"><span><strong>{{ available }}</strong> fiche{% if available != 1 %}s{% endif %} à lire</span><span>{{ total }} pays à découvrir</span></div>
+    <progress class="collection-progress" value="{{ available }}" max="{{ total }}" aria-label="Fiches disponibles">{{ available }} / {{ total }}</progress>
+  </header>
+  {% if featured %}
+  <a class="featured" href="/pays/{{ featured.meta.iso3 }}">
+    <div><p class="eyebrow">À la une <span> / </span> {{ featured.meta.region | default('La collection') }}</p>
+      <div class="featured-title">{% if featured.flag %}<img src="/pays/{{ featured.meta.iso3 }}/assets/flag.svg" alt="" width="54" height="36">{% endif %}<h2>{{ featured.meta.nom }}</h2></div>
+      <p>{{ featured.meta.chapo | default('Une fiche pour faire connaissance avec ce pays.') }}</p>
+      <span class="read-link">Lire la fiche <span aria-hidden="true">↗</span></span><small>{{ featured.meta.temps_lecture_min }} min de lecture</small>
+    </div>
+    <div class="featured-map" aria-hidden="true">{{ featured_map }}</div>
+  </a>
+  {% endif %}
+  <section id="index" class="country-index" aria-labelledby="index-title">
+    <div class="index-header"><p class="eyebrow">La collection</p><h2 id="index-title">Choisir une destination</h2><p>Les fiches en couleur sont prêtes à lire. La collection s’enrichit au fil des découvertes.</p></div>
+    <form class="index-search" action="/#index" method="get" role="search">
+      <label for="country-search">Rechercher un pays</label>
+      <div class="search-controls"><input id="country-search" type="search" name="q" value="{{ q }}" placeholder="Un pays, une envie…"><input type="hidden" name="tri" value="{{ tri }}"><button type="submit">Rechercher</button></div>
+      <label class="availability"><input type="checkbox" name="disponibles" value="1" {% if only_available %}checked{% endif %}> Fiches disponibles seulement</label>
+    </form>
+    <nav class="sort" aria-label="{{ ui['home']['sort_label'] }}">
+      {% for mode, label in [('palier', 'Par affinités'), ('alpha', 'Ordre alphabétique'), ('continent', 'Par continent')] %}<a href="/?{{ sort_queries[mode] }}#index" {% if tri == mode %}aria-current="page"{% endif %}>{{ label }}</a>{% endfor %}
+    </nav>
+    {% if q or only_available %}<p class="filter-result">{{ result_count }} pays trouvé{% if result_count != 1 %}s{% endif %}. <a href="/?tri={{ tri }}#index">Tout afficher</a></p>{% endif %}
+    <nav class="group-jumps" aria-label="Aller à un groupe">{% for title in groups %}<a href="#groupe-{{ loop.index }}">{{ title }}</a>{% endfor %}</nav>
+    {% for title, countries in groups.items() %}
+    <section class="country-group" id="groupe-{{ loop.index }}">
+      <h3><span class="group-number">{{ '%02d' | format(loop.index) }}</span>{{ title }} <small>{{ countries | length }}</small></h3>
+      <ul class="countries">
+        {% for country in countries %}
+        <li data-iso3="{{ country.iso3 }}" class="{% if country.available %}available{% else %}forthcoming{% endif %}">
+          {% if country.available %}<a href="/pays/{{ country.iso3 }}">{% else %}<div class="upcoming">{% endif %}
+            <img class="country-flag" src="/static/flags/{{ country.iso2 | default('xx') | lower }}.svg" width="28" height="21" alt="" loading="lazy">
+            <span class="country-name">{{ country.pays }}<small>{{ country.raison }}</small></span>
+            {% if country.available %}<span class="country-status">Lire ↗</span>{% else %}<span class="country-rank">{{ '%02d' | format(country.rang | int) }}</span>{% endif %}
+          {% if country.available %}</a>{% else %}</div>{% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+    {% endfor %}
   </section>
-  {% endfor %}
 </main>
 {% endblock %}
