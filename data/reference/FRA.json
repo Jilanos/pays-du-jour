@@ -384,7 +384,8 @@
     "precision": 1,
     "source_ids": [
       "FR-GINI-SILC-2024"
-    ]
+    ],
+    "rank": "Sans classement"
   },
   "pib-secteurs-wdi-2025": {
     "status": "comparable",

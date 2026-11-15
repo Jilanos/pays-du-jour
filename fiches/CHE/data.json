@@ -342,8 +342,8 @@
         }
       ],
       "temperature_extent": [
-        -5,
-        35
+        -10,
+        30
       ],
       "rain_max": 200,
       "note": "Échelles communes à Genève/Cointrin, Lugano et Paris-Montsouris. Stations de basse altitude, sans représentativité nationale."
@@ -517,7 +517,8 @@
         "reason": "ESS suisse : brut standardisé à 40 h, secteurs privé et public, secondaire et tertiaire ; référence française : secteur privé, équivalent temps plein selon la durée conventionnelle. La conversion monétaire ne corrige pas ces champs et durées.",
         "source_ids": []
       },
-      "note": "Secteurs privé et public, secondaire et tertiaire. Primes et part proportionnelle du treizième salaire incluses. Médianes par branche pour le second graphique ; seuils P10/P90 et médiane pour le premier."
+      "note": "Secteurs privé et public, secondaire et tertiaire. Primes et part proportionnelle du treizième salaire incluses. Médianes par branche pour le second graphique ; seuils P10/P90 et médiane pour le premier.",
+      "highlight": "Médiane"
     },
     {
       "id": "salaires-branches",
@@ -647,7 +648,8 @@
   "prose_values": {
     "dufour": {
       "value": 4636,
-      "unit": "mètres"
+      "unit": "mètres",
+      "precision": 0
     },
     "travail-industrie": {
       "value": 45,

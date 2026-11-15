@@ -128,7 +128,7 @@ Les relations commerciales avec Washington évoluent aussi en 2026, après les a
 
 ## Culture et cuisine
 
-Les cultures régionales dépassent les images du chalet et du cor des Alpes. À Zurich, la techno figure dans la liste suisse des traditions vivantes. La Street Parade débute en 1992. Les raves ponctuelles ont progressivement nourri un réseau de clubs. Cette reconnaissance patrimoniale décrit une pratique culturelle et ses communautés. Elle ne garantit pas la permanence d’un lieu de fête particulier. {#culture-1 sources="S44" label="Une culture techno reconnue"}
+Les cultures régionales dépassent les images du chalet et du cor des Alpes. À Zurich, la techno figure dans la liste suisse des traditions vivantes. La Street Parade débute en 1992. Les raves ponctuelles ont progressivement nourri un réseau de clubs. Cette reconnaissance patrimoniale décrit une pratique culturelle et ses communautés. {#culture-1 sources="S44" label="Une culture techno reconnue"}
 
 La cuisine suit les régions et les influences voisines. Fondue, raclette et röstis circulent dans tout le pays. Le Tessin possède une tradition de risotto. Saucisson vaudois, longeole genevoise, viande séchée des Grisons et biscuits bâlois ajoutent des repères locaux. Le pain et le fromage restent centraux. Le Birchermüsli vient lui aussi d’une invention suisse, liée à une démarche médicale autour de l’alimentation. {#culture-2 sources="S45" label="Cuisine régionale"}
 
@@ -144,7 +144,7 @@ La coopération scientifique relie universités, organismes de recherche et entr
 
 La politique de transfert vise à déplacer les marchandises de la route vers le rail. Elle combine infrastructures et instruments économiques. Le tunnel de base du Gothard, mis en service en 2016, mesure {{value:gothard}}. Les tunnels du Lötschberg et du Ceneri complètent les nouvelles liaisons alpines. Les trains franchissent les massifs avec des rampes plus faibles que sur les anciennes lignes de montagne. {#phenomene-1 sources="S35,S49" label="La logique des tunnels de base"}
 
-L’avantage intéresse directement l’ingénieur : une pente réduite facilite la traction de convois lourds. La capacité dépend aussi des voies d’accès, des sillons disponibles et des opérations aux frontières. Un tunnel performant s’insère dans une chaîne européenne. Les perturbations sur les réseaux voisins peuvent limiter le bénéfice du nouvel ouvrage. {#phenomene-2 sources="S35,S49" label="Une infrastructure dans un système"}
+Une pente réduite facilite la traction de convois lourds. La capacité dépend aussi des voies d’accès, des sillons disponibles et des opérations aux frontières. Un tunnel performant s’insère dans une chaîne européenne. Les perturbations sur les réseaux voisins peuvent limiter le bénéfice du nouvel ouvrage. {#phenomene-2 sources="S35,S49" label="Une infrastructure dans un système"}
 
 En 2025, la part du rail recule malgré les investissements. L’OFT relève les chantiers et la conjoncture tendue. Le graphique mesure des tonnes transportées à travers les Alpes suisses. Il ne représente ni tous les transports nationaux ni les tonnes-kilomètres. La performance du système dépend autant de sa fiabilité quotidienne que de ses grands ouvrages. {#phenomene-3 sources="S49" label="Les limites du transfert en 2025"}
 
