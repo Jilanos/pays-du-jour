@@ -212,7 +212,11 @@ def pyramid(chart, mobile=False):
     for i, name in enumerate(labels):
         y = base - (i + 1) * 25
         text(root, center, y + 16, name, text_anchor="middle", class_="age-label")
-        for value, side, color in [(male[i], -1, "var(--cool)"), (female[i], 1, "var(--warm)")]:
+        # Country colours stay clear of the France blue: accent for men, warm for women.
+        for value, side, color in [
+            (male[i], -1, "var(--accent)"),
+            (female[i], 1, "var(--warm)"),
+        ]:
             size = value / limit * extent
             x = center - gap - size if side == -1 else center + gap
             el(root, "rect", x=x, y=y, width=size, height=20, fill=color, opacity=".8")

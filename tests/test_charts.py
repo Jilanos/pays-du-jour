@@ -3,7 +3,7 @@ from xml.etree import ElementTree as ET
 
 import pytest
 
-from app.charts import RENDERERS, render_chart
+from app.charts import RENDERERS, pyramid, render_chart
 
 
 @pytest.mark.parametrize("kind", RENDERERS)
@@ -93,3 +93,10 @@ def test_many_periods_use_stacked_areas_with_a_separate_france_column():
     assert all(n.attrib["stroke"] == "var(--france)" for n in bars)
     area_right = max(float(point.split(",")[0]) for point in areas[0].attrib["points"].split())
     assert float(bars[0].attrib["x"]) - area_right >= 24
+
+
+def test_pyramid_country_bars_avoid_the_france_blue(charts):
+    chart = next(c for c in charts if c["type"] == "pyramid")
+    svg = pyramid(chart)
+    assert 'fill="var(--accent)"' in svg and 'fill="var(--warm)"' in svg
+    assert "var(--cool)" not in svg
