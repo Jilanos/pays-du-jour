@@ -27,6 +27,6 @@
       <a href="/">Explorer les {{ total }} pays <span aria-hidden="true">→</span></a>
     </nav>
   </main>
-  {% if fiche.toc %}<aside class="toc"><nav aria-label="Sommaire"><p class="eyebrow">Dans cette fiche</p><ol>{% for anchor, title in fiche.toc %}<li><a href="#{{ anchor }}"><span>{{ '%02d' | format(loop.index) }}</span>{{ title }}</a></li>{% endfor %}</ol></nav><a class="toc-top" href="#identite">↑ Revenir au début</a></aside>{% endif %}
+  {% if fiche.toc %}<aside class="toc"><details class="toc-panel" open><summary><span class="eyebrow">{{ ui['navigation']['toc'] }}</span><span class="toc-toggle"><span class="toc-hide">Masquer</span><span class="toc-show">Afficher</span></span></summary><nav aria-label="Sommaire"><ol>{% for anchor, title in fiche.toc %}<li><a href="#{{ anchor }}"><span>{{ '%02d' | format(loop.index) }}</span>{{ title }}</a></li>{% endfor %}</ol></nav><a class="toc-top" href="#identite">↑ Revenir au début</a></details></aside>{% endif %}
 </div>
 {% endblock %}
