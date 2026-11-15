@@ -151,3 +151,10 @@ def test_head_answers_like_get_without_body(client, url):
 
 def test_head_unknown_country_is_404(client):
     assert client.head("/pays/XXX").status_code == 404
+
+
+def test_stylesheet_url_is_root_relative_behind_https_proxy(client):
+    # Behind Caddy the app sees plain HTTP: an absolute http:// URL is blocked as mixed content.
+    response = client.get("/", headers={"host": "pays.example", "x-forwarded-proto": "https"})
+    assert '<link rel="stylesheet" href="/static/style.css">' in response.text
+    assert 'href="http://' not in response.text
