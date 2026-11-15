@@ -1,0 +1,908 @@
+{
+  "keyfacts": [
+    {
+      "id": "population",
+      "label": "Population",
+      "value": 1404890000,
+      "unit": "habitants",
+      "year": 2025,
+      "coverage": "Chine continentale, hors étrangers · fin 2025",
+      "source_ids": [
+        "S01"
+      ],
+      "france": "population"
+    },
+    {
+      "id": "superficie",
+      "label": "Superficie",
+      "value": 9562911,
+      "unit": "km²",
+      "year": 2026,
+      "coverage": "Superficie publiée par France Diplomatie · 2026",
+      "source_ids": [
+        "S02"
+      ],
+      "france": "superficie"
+    },
+    {
+      "id": "pib-nominal",
+      "label": "PIB nominal",
+      "value": 19626191000000,
+      "unit": "USD",
+      "year": 2025,
+      "coverage": "Prix courants · FMI, millésime octobre 2026",
+      "source_ids": [
+        "S03"
+      ],
+      "france": "pib-nominal"
+    },
+    {
+      "id": "65-plus",
+      "label": "Part des 65 ans ou plus",
+      "value": 15.9,
+      "unit": "%",
+      "year": 2025,
+      "coverage": "Chine continentale · fin 2025",
+      "source_ids": [
+        "S01"
+      ],
+      "france": "65-plus"
+    },
+    {
+      "id": "urbanisation",
+      "label": "Population urbaine",
+      "value": 67.89,
+      "unit": "%",
+      "year": 2025,
+      "coverage": "Résidence habituelle, définition NBS · fin 2025",
+      "source_ids": [
+        "S01"
+      ],
+      "france": {
+        "status": "non_comparable",
+        "reason": "Les définitions nationales de l’urbain diffèrent ; pas de série harmonisée avec la définition NBS utilisée ici.",
+        "source_ids": []
+      }
+    },
+    {
+      "id": "electricite-bas-carbone",
+      "label": "Électricité bas-carbone",
+      "value": 42,
+      "unit": "%",
+      "year": 2025,
+      "coverage": "Nucléaire et renouvelables · production 2025",
+      "source_ids": [
+        "S25"
+      ],
+      "france": "electricite-bas-carbone"
+    }
+  ],
+  "indices": [
+    {
+      "id": "idh",
+      "name": "Développement humain",
+      "acronym": "IDH",
+      "value": 0.797,
+      "rank": "78ᵉ",
+      "year": 2023,
+      "scale_min": 0,
+      "scale_max": 1,
+      "higher_is_better": true,
+      "precision": 3,
+      "source_ids": [
+        "S04"
+      ],
+      "france": "idh"
+    },
+    {
+      "id": "gini",
+      "name": "Inégalités de revenus",
+      "acronym": "Gini",
+      "value": 0.465,
+      "rank": "Sans classement",
+      "year": 2023,
+      "scale_min": 0,
+      "scale_max": 1,
+      "higher_is_better": false,
+      "precision": 3,
+      "source_ids": [
+        "S05"
+      ],
+      "france": {
+        "status": "non_comparable",
+        "reason": "Revenu disponible par personne en Chine ; niveau de vie par unité de consommation en France. Échelles et années différentes.",
+        "source_ids": [
+          "FR-GINI"
+        ]
+      },
+      "coverage": "Revenu disponible par personne, après transferts."
+    },
+    {
+      "id": "democratie",
+      "name": "Démocratie libérale",
+      "acronym": "V-Dem",
+      "value": 0.04,
+      "rank": "171ᵉ",
+      "year": 2025,
+      "scale_min": 0,
+      "scale_max": 1,
+      "higher_is_better": true,
+      "precision": 2,
+      "source_ids": [
+        "S06"
+      ],
+      "france": "democratie"
+    },
+    {
+      "id": "presse",
+      "name": "Liberté de la presse",
+      "acronym": "RSF",
+      "value": 13.85,
+      "rank": "178ᵉ / 180",
+      "year": 2026,
+      "scale_min": 0,
+      "scale_max": 100,
+      "higher_is_better": true,
+      "precision": 2,
+      "source_ids": [
+        "S07"
+      ],
+      "france": "presse"
+    },
+    {
+      "id": "corruption",
+      "name": "Corruption perçue",
+      "acronym": "CPI",
+      "value": 43,
+      "rank": "76ᵉ / 182",
+      "year": 2025,
+      "scale_min": 0,
+      "scale_max": 100,
+      "higher_is_better": true,
+      "precision": 0,
+      "source_ids": [
+        "S08"
+      ],
+      "france": "corruption"
+    }
+  ],
+  "charts": [
+    {
+      "id": "climat",
+      "type": "climate",
+      "title": "De l’hiver sec de Pékin à la mousson de Canton",
+      "year": "1991–2020",
+      "source_ids": [
+        "S10",
+        "S11"
+      ],
+      "subtitle": "Normales 1991–2020 · mêmes échelles · référence Paris-Montsouris",
+      "places": [
+        {
+          "place": "Pékin",
+          "precip_mm": [
+            2.2,
+            5.8,
+            8.6,
+            21.7,
+            36.1,
+            72.4,
+            169.7,
+            113.4,
+            53.7,
+            28.7,
+            13.5,
+            2.2
+          ],
+          "tmax": [
+            2.3,
+            6.1,
+            13.2,
+            21.0,
+            27.2,
+            30.8,
+            31.8,
+            30.7,
+            26.5,
+            19.3,
+            10.3,
+            3.7
+          ],
+          "tmin": [
+            -6.9,
+            -4.2,
+            1.9,
+            9.0,
+            15.1,
+            20.0,
+            23.0,
+            22.0,
+            16.3,
+            8.8,
+            0.7,
+            -5.0
+          ]
+        },
+        {
+          "place": "Canton",
+          "precip_mm": [
+            51.1,
+            56.1,
+            101.0,
+            193.8,
+            329.0,
+            364.9,
+            242.6,
+            270.3,
+            203.2,
+            67.3,
+            37.4,
+            33.4
+          ],
+          "tmax": [
+            18.7,
+            20.0,
+            22.3,
+            26.4,
+            30.0,
+            32.0,
+            33.3,
+            33.2,
+            32.0,
+            29.3,
+            25.3,
+            20.7
+          ],
+          "tmin": [
+            10.6,
+            12.5,
+            15.5,
+            19.6,
+            23.1,
+            25.1,
+            25.8,
+            25.5,
+            24.2,
+            20.9,
+            16.7,
+            11.9
+          ]
+        }
+      ],
+      "temperature_extent": [
+        -10,
+        40
+      ],
+      "rain_max": 400,
+      "france": "climat-paris"
+    },
+    {
+      "id": "pyramide-ages",
+      "type": "pyramid",
+      "title": "Des générations nombreuses approchent de la retraite",
+      "year": 2025,
+      "source_ids": [
+        "S12"
+      ],
+      "subtitle": "Parts de la population totale · projection ONU au 1er juillet 2025",
+      "unit": "personnes",
+      "age_groups": [
+        "0–4",
+        "5–9",
+        "10–14",
+        "15–19",
+        "20–24",
+        "25–29",
+        "30–34",
+        "35–39",
+        "40–44",
+        "45–49",
+        "50–54",
+        "55–59",
+        "60–64",
+        "65–69",
+        "70–74",
+        "75–79",
+        "80–84",
+        "85–89",
+        "90–94",
+        "95–99",
+        "100+"
+      ],
+      "male": [
+        24942279.0,
+        42739276.5,
+        48511730.0,
+        45686204.5,
+        42526154.0,
+        44377128.0,
+        52145494.5,
+        63281937.5,
+        52676265.5,
+        47064933.5,
+        58045377.5,
+        58103255.5,
+        45994642.5,
+        33383371.5,
+        29762714.0,
+        17342999.5,
+        8940378.5,
+        4076891.5,
+        1154593.0,
+        128472.5,
+        3699.5
+      ],
+      "female": [
+        22577862.5,
+        37580544.0,
+        41830353.0,
+        38974885.5,
+        36299576.5,
+        38427453.0,
+        46450905.5,
+        58246667.5,
+        49820496.5,
+        45295720.5,
+        57034156.5,
+        58561241.0,
+        47741355.5,
+        36668389.5,
+        35372406.5,
+        21708587.5,
+        12439706.0,
+        6886092.5,
+        2732696.5,
+        514332.99999999994,
+        44866.5
+      ],
+      "france": "pyramide-france",
+      "note_visible": "Chine : projection ONU de 2024 pour juillet 2025. France : estimation Insee au 1er janvier 2026.",
+      "note": "Pourcentages calculés sur le total des deux sexes. La pyramide utilise une projection ONU antérieure au bilan national NBS ; leurs totaux diffèrent. Cohortes quinquennales identiques à la référence française."
+    },
+    {
+      "id": "langues",
+      "type": "barh",
+      "title": "Le mandarin standard s’est largement diffusé",
+      "year": "2000 / 2020",
+      "source_ids": [
+        "S13"
+      ],
+      "subtitle": "Maîtrise du putonghua · population nationale · %",
+      "labels": [
+        "2000",
+        "2020"
+      ],
+      "values": [
+        53.06,
+        80.72
+      ],
+      "unit": "%",
+      "note_visible": "Maîtrise du mandarin standard. Les locuteurs peuvent aussi parler une langue régionale.",
+      "france": {
+        "status": "non_comparable",
+        "reason": "Taux de maîtrise du putonghua, sans indicateur français équivalent.",
+        "source_ids": []
+      }
+    },
+    {
+      "id": "identites",
+      "type": "share",
+      "title": "Une majorité Han, des minorités très diverses",
+      "year": 2020,
+      "source_ids": [
+        "S14"
+      ],
+      "subtitle": "Appartenance ethnique du recensement · Chine continentale · %",
+      "labels": [
+        "Han",
+        "Minorités reconnues"
+      ],
+      "values": [
+        91.11,
+        8.89
+      ],
+      "unit": "%",
+      "france": {
+        "status": "non_comparable",
+        "reason": "Catégories administratives du recensement chinois sans équivalent français.",
+        "source_ids": []
+      }
+    },
+    {
+      "id": "religions",
+      "type": "share",
+      "title": "L’affiliation déclarée laisse beaucoup de pratiques hors champ",
+      "year": 2018,
+      "source_ids": [
+        "S15"
+      ],
+      "subtitle": "Adultes · enquête CGSS 2018 analysée par Pew · %",
+      "labels": [
+        "Sans affiliation déclarée",
+        "Avec affiliation déclarée"
+      ],
+      "values": [
+        90,
+        10
+      ],
+      "unit": "%",
+      "note_visible": "La réponse « aucune croyance religieuse » peut coexister avec des rites et des croyances.",
+      "france": {
+        "status": "non_comparable",
+        "reason": "Pas de série française de même question, année et champ identifiée.",
+        "source_ids": []
+      }
+    },
+    {
+      "id": "salaires",
+      "type": "barh",
+      "title": "Les moyennes salariales dépendent du type d’employeur",
+      "year": 2025,
+      "source_ids": [
+        "S21"
+      ],
+      "subtitle": "Salaires bruts annuels moyens · unités urbaines · CNY/an",
+      "labels": [
+        "Unités privées",
+        "Unités non privées"
+      ],
+      "values": [
+        71590,
+        129441
+      ],
+      "unit": "CNY/an",
+      "euro": true,
+      "note_visible": "Deux moyennes, sans médiane publiée. « Non privé » inclut plusieurs statuts, dont les entreprises étrangères.",
+      "note": "Primes et heures supplémentaires comprises, avant retenues personnelles. Population salariée recensée par unité, sans conversion en équivalent temps plein. Exclut indépendants et emplois informels.",
+      "france": {
+        "status": "non_comparable",
+        "reason": "Insee mesure les salaires en équivalent temps plein du privé. Champ et traitement du temps de travail différents des unités urbaines chinoises.",
+        "source_ids": [
+          "FR-WAGE"
+        ]
+      }
+    },
+    {
+      "id": "revenus",
+      "type": "barh",
+      "title": "Revenus des ménages : un fort contraste entre ville et campagne",
+      "year": 2025,
+      "source_ids": [
+        "S22"
+      ],
+      "subtitle": "Revenu disponible annuel par personne · CNY/an",
+      "labels": [
+        "Médiane nationale",
+        "Moyenne nationale",
+        "Moyenne rurale",
+        "Moyenne urbaine"
+      ],
+      "values": [
+        36231,
+        43377,
+        24456,
+        56502
+      ],
+      "unit": "CNY/an",
+      "euro": true,
+      "note_visible": "Revenus de tous les membres du ménage, rapportés à chaque personne. Ce ne sont pas des salaires.",
+      "france": {
+        "status": "non_comparable",
+        "reason": "Revenu par tête en Chine ; niveau de vie par unité de consommation en France.",
+        "source_ids": [
+          "FR-GINI"
+        ]
+      }
+    },
+    {
+      "id": "pib-secteurs",
+      "type": "share",
+      "title": "Les services dominent, l’industrie conserve un poids majeur",
+      "year": 2025,
+      "source_ids": [
+        "S01"
+      ],
+      "subtitle": "Parts sectorielles du PIB aux prix courants · 2025 · %",
+      "labels": [
+        "Agriculture, forêt, pêche",
+        "Industrie et construction",
+        "Services"
+      ],
+      "values": [
+        6.7,
+        35.6,
+        57.7
+      ],
+      "unit": "%",
+      "france": {
+        "status": "non_comparable",
+        "reason": "Le NBS publie des parts du PIB ; la référence Insee existante porte sur la valeur ajoutée hors impôts nets sur les produits.",
+        "source_ids": [
+          "FR-SECTORS"
+        ]
+      },
+      "note": "Parts arrondies publiées dans le communiqué national. Pas de renormalisation sur une autre définition."
+    },
+    {
+      "id": "exportations-ve",
+      "type": "share",
+      "title": "À l’étranger, les constructeurs chinois prennent le relais",
+      "year": 2025,
+      "source_ids": [
+        "S41"
+      ],
+      "subtitle": "Voitures BEV et PHEV fabriquées en Chine, vendues à l’étranger · 2025 · %",
+      "labels": [
+        "Constructeurs basés en Chine",
+        "Constructeurs basés ailleurs"
+      ],
+      "values": [
+        80,
+        20
+      ],
+      "unit": "%",
+      "note": "AIE : quatre voitures électriques fabriquées en Chine sur cinq vendues à l’étranger en 2025 proviennent de constructeurs chinois, contre moins de deux sur cinq en 2021. Parts arrondies publiées, complément calculé. Catégorisation selon l’origine du constructeur ; ne mesure ni les seules exportations douanières ni la part de marché mondiale.",
+      "france": {
+        "status": "non_comparable",
+        "reason": "Ventilation des voitures fabriquées en Chine et vendues à l’étranger ; aucune série nationale française de même objet.",
+        "source_ids": []
+      }
+    },
+    {
+      "id": "prix-batteries",
+      "type": "barh",
+      "title": "Les packs vendus en Chine sont moins chers en moyenne",
+      "year": 2025,
+      "source_ids": [
+        "S42"
+      ],
+      "subtitle": "Prix moyen par kWh · indice Europe = 100 · 2025",
+      "labels": [
+        "Chine",
+        "Europe"
+      ],
+      "values": [
+        65,
+        100
+      ],
+      "unit": "points",
+      "note_visible": "Toutes chimies et applications, voiture et stockage. Composition des produits différente entre régions.",
+      "note": "Indice calculé à partir d’un écart publié de 35 %. Prix moyens régionaux incluant production locale et importations. Ce graphique n’isole ni l’effet des salaires ni celui d’une chimie particulière.",
+      "france": {
+        "status": "non_comparable",
+        "reason": "Europe agrégée dans la source ; aucune donnée française séparée vérifiée.",
+        "source_ids": []
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "S01",
+      "text": "[NBS, communiqué statistique national 2025, 28 février 2026](https://www.stats.gov.cn/english/PressRelease/202602/t20260228_1962661.html). Chine continentale : 31 subdivisions et militaires, hors Hong Kong, Macao, Taïwan et étrangers résidents. Population au 31 décembre 2025 ; parts sectorielles du PIB aux prix courants, industrie avec construction. Chiffres provisoires. Urbanisation : 67,89 % dans le texte, 67,9 % dans le tableau arrondi."
+    },
+    {
+      "id": "S02",
+      "text": "[France Diplomatie, présentation de la Chine, octobre 2026](https://www.diplomatie.gouv.fr/fr/information-par-pays/chine/presentation-de-la-chine). Identité, superficie publiée, institutions et relations extérieures. Les anciens indicateurs démographiques et économiques de cette page ne sont pas repris."
+    },
+    {
+      "id": "S03",
+      "text": "[FMI, World Economic Outlook, octobre 2026, NGDPD Chine](https://www.imf.org/external/datamapper/api/v1/NGDPD/CHN?periods=2025). Extraction 2025 : 19 626,191 milliards USD courants. Même série, année et millésime que la référence française."
+    },
+    {
+      "id": "S04",
+      "text": "[PNUD, Human Development Report 2025, tableaux des indices](https://www.undp.org/sites/g/files/zskgke326/files/2025-05/hdr2025overviewen.pdf). Données 2023. Chine : IDH 0,797, rang 78."
+    },
+    {
+      "id": "S05",
+      "text": "[UNICEF Chine, Children in China: An Atlas of Social Indicators 2024](https://www.unicef.cn/en/media/28801/file/Children%20in%20China%3A%20An%20Atlas%20of%20Social%20Indicators%202024.pdf). Figure 2.7, p. 38 : Gini du revenu disponible par personne en 2023, 0,465. Source originale : NBS, Essential Statistics of China Household Survey 2024. Répartition par tête, sans échelle française des unités de consommation."
+    },
+    {
+      "id": "S06",
+      "text": "[V-Dem, Democracy Report 2026](https://www.v-dem.net/documents/75/V-Dem_Institute_Democracy_Report_2026_lowres.pdf). Tableau A2, données 2025 : indice de démocratie libérale 0,04, rang 171. Même définition que la référence française."
+    },
+    {
+      "id": "S07",
+      "text": "[RSF, Chine, classement 2026](https://rsf.org/en/country/china). Score 13,85 sur 100 ; rang 178 sur 180. Contrôle des médias et de l’information."
+    },
+    {
+      "id": "S08",
+      "text": "[Transparency International, Chine, CPI 2025](https://www.transparency.org/en/countries/china). Score 43 sur 100 ; rang 76 sur 182. Corruption perçue du secteur public."
+    },
+    {
+      "id": "S09",
+      "text": "[SCIO, Brief introduction to China, géographie](https://english.scio.gov.cn/chinafacts/2017-03/30/content_40529820.htm). Relief en gradins, grands fleuves et contrastes climatiques. Source gouvernementale pour les données physiques."
+    },
+    {
+      "id": "S10",
+      "text": "[CMA / OMM, normales 1991–2020, Pékin 54511](https://www.nodc.noaa.gov/archive/arc0216/0253808/5.5/data/0-data/Region-2-WMO-Normals-9120/China/CSV/BEIJING_54511.csv). Archive NOAA NCEI. Paramètres 1 (cumul moyen des précipitations), 3 (maximum quotidien moyen) et 4 (minimum quotidien moyen). Douze mois ; trente années contributives pour chaque valeur."
+    },
+    {
+      "id": "S11",
+      "text": "[CMA / OMM, normales 1991–2020, Canton 59287](https://www.nodc.noaa.gov/archive/arc0216/0253808/5.5/data/0-data/Region-2-WMO-Normals-9120/China/CSV/GUANGZHOU_59287.csv). Archive NOAA NCEI. Mêmes paramètres et trente années contributives. Les stations représentent deux climats urbains, sans résumer tout le pays. Échelles communes aux deux panneaux et à Paris."
+    },
+    {
+      "id": "S12",
+      "text": "[ONU, World Population Prospects 2024, pyramide Chine 2025](https://www.populationpyramid.net/china/2025/). Diffusion PopulationPyramid.net. Projection centrale au 1er juillet 2025, préparée en juillet 2024. Séries intégrées male/female en milliers de personnes, multipliées par 1 000 sans arrondi intermédiaire. Total : 1 416 096 094 ; distinct de l’estimation NBS en fin d’année. Seules les données sont reprises, sans les commentaires automatiques du site."
+    },
+    {
+      "id": "S13",
+      "text": "[Ministère chinois de l’Éducation, diffusion du putonghua, 2 juin 2021](https://www.moe.gov.cn/fbh/live/2021/53486/mtbd/202106/t20210602_535127.html). Taux de maîtrise/diffusion du mandarin standard : 53,06 % en 2000 et 80,72 % en 2020. Ce ne sont pas des parts exclusives de langues maternelles."
+    },
+    {
+      "id": "S14",
+      "text": "[NBS, septième recensement, communiqué n° 2, 2020](https://www.stats.gov.cn/english/PressRelease/202105/t20210510_1817187.html). Population continentale du recensement au 1er novembre 2020. Han 91,11 %, minorités officiellement reconnues 8,89 %. Catégories administratives, distinctes des langues."
+    },
+    {
+      "id": "S15",
+      "text": "[Pew Research Center, Non-religion in China, 30 août 2023](https://www.pewresearch.org/religion/2023/08/30/non-religion/). CGSS 2018, adultes : 90 % répondent « aucune croyance religieuse » ; complément calculé de 10 %. Déclaration d’affiliation zongjiao, sans mesure exhaustive des pratiques populaires."
+    },
+    {
+      "id": "S16",
+      "text": "[Pew Research Center, Measuring Religion in China, 30 août 2023](https://www.pewresearch.org/religion/2023/08/30/measuring-religion-in-china/). Croyances, cultes populaires et contrôle des religions. Les enquêtes de 2021 couvrent moins de provinces ; la fiche retient 2018 pour le graphique."
+    },
+    {
+      "id": "S17",
+      "text": "[Gouvernement chinois, guide des services de paiement, 11 avril 2024](https://english.www.gov.cn/news/202404/11/content_WS6617c858c6d0868f4e8e5f4d.html). Alipay et WeChat Pay, carte internationale et autres modes de paiement."
+    },
+    {
+      "id": "S18",
+      "text": "[FMI, Reforms to Reduce China’s High Household Savings, décembre 2025](https://www.imf.org/en/publications/wp/issues/2025/12/12/reforms-to-reduce-chinas-high-household-savings-572507). Recherche sur le hukou, les dépenses sociales rurales et l’épargne de précaution."
+    },
+    {
+      "id": "S19",
+      "text": "[Reuters, les autorités jugent illégal le rythme 996, 27 août 2021](https://finance.yahoo.com/news/chinese-authorities-overtime-996-policy-012450424.html). Compte rendu des cas publiés par la Cour populaire suprême et le ministère des Ressources humaines. 996 : de neuf heures à vingt et une heures, six jours par semaine."
+    },
+    {
+      "id": "S20",
+      "text": "[Resident Advisor, Zhao Dai, Pékin](https://ra.co/clubs/139615). Fiche du club et programmation consultées le 15 novembre 2026."
+    },
+    {
+      "id": "S21",
+      "text": "[NBS, salaires annuels moyens des unités urbaines en 2025, 18 mai 2026](https://www.stats.gov.cn/english/PressRelease/202605/t20260518_1963740.html). Salaires bruts annuels, primes et heures supplémentaires comprises, avant cotisations et impôt. Unités privées : 71 590 CNY ; non privées : 129 441 CNY. Non privé comprend des entreprises publiques et d’autres statuts, notamment étrangers. Hors indépendants et emploi informel. Aucune médiane salariale nationale publiée dans cette série."
+    },
+    {
+      "id": "S22",
+      "text": "[NBS, revenus et consommation des ménages en 2025, 20 janvier 2026](https://www.stats.gov.cn/english/PressRelease/202601/t20260120_1962356.html). Revenu disponible annuel par personne : médiane nationale 36 231 CNY, moyenne 43 377 CNY, moyenne urbaine 56 502 CNY, moyenne rurale 24 456 CNY. Inclut revenus du travail, activités, patrimoine et transferts. Ne mesure pas le salaire médian."
+    },
+    {
+      "id": "S23",
+      "text": "[BCE, moyenne annuelle CNY/EUR 2025, EXR.A.CNY.EUR.SP00.A](https://data-api.ecb.europa.eu/service/data/EXR/A.CNY.EUR.SP00.A?startPeriod=2025&endPeriod=2025&format=csvdata). Valeur publiée : 8,1185043137255 CNY pour un euro. Conversion des flux annuels 2025, sans parité de pouvoir d’achat."
+    },
+    {
+      "id": "S24",
+      "text": "[Banque mondiale, China Economic Update, décembre 2025](https://thedocs.worldbank.org/en/doc/600cd53e2bb24d516b8c3489e5d2c187-0070012025/original/CEU-December-2025-EN.pdf). Crise immobilière, confiance, protection sociale et faiblesse de la consommation."
+    },
+    {
+      "id": "S25",
+      "text": "[Ember, Global Electricity Review 2026, grands pays](https://ember-energy.org/latest-insights/global-electricity-review-2026/major-countries-and-regions/). Chine 2025 : 42 % de production électrique bas-carbone, nucléaire et renouvelables. Part arrondie publiée. Périmètre national, électricité produite, distinct de l’énergie primaire et des capacités installées."
+    },
+    {
+      "id": "S26",
+      "text": "[CFR Education, China Under Mao Zedong and Deng Xiaoping, 30 mars 2023](https://www.cfr.org/education/learn/reading/china-mao-zedong-deng-xiaoping). Grand Bond en avant, Révolution culturelle et réforme à partir de 1978. Aucun bilan chiffré des victimes retenu."
+    },
+    {
+      "id": "S27",
+      "text": "[Office of the Historian, Tiananmen Square, 1989](https://history.state.gov/milestones/1989-1992/tiananmen-square). Répression du mouvement démocratique. Aucun chiffre de victimes retenu."
+    },
+    {
+      "id": "S28",
+      "text": "[CFR, chronologie des relations États-Unis / Chine](https://www.cfr.org/articles/us-china-relations). 1949, adhésion à l’OMC, arrivée de Xi et tensions commerciales."
+    },
+    {
+      "id": "S29",
+      "text": "[CRS, China Primer: China’s Political System, 27 avril 2026](https://www.everycrsreport.com/reports/IF12505.html). Structure du parti-État, fonctions de Xi Jinping et de Li Qiang, absence d’élections nationales concurrentielles."
+    },
+    {
+      "id": "S30",
+      "text": "[Banque mondiale, Reflections on 40 Years of Reforms, 2018](https://thedocs.worldbank.org/en/doc/934911517472447837-0070022018/original/Reflectionson40yearsofreformsfinal.pdf). Chronologie et plan de relance de 2008."
+    },
+    {
+      "id": "S31",
+      "text": "[OHCHR, évaluation de la situation au Xinjiang, 31 août 2022](https://www.ohchr.org/sites/default/files/documents/countries/2022-08-31/22-08-31-final-assesment.pdf). Conclusions, notamment paragraphe 148 : les violations peuvent constituer des crimes internationaux, en particulier des crimes contre l’humanité. Position contestée par Pékin."
+    },
+    {
+      "id": "S32",
+      "text": "[AP, troisième mandat présidentiel de Xi, 10 mars 2023](https://apnews.com/article/5e6230d8c881dc17b11a781e832accd1). Suppression des limites de mandat, confinement de Shanghai et consolidation du pouvoir."
+    },
+    {
+      "id": "S33",
+      "text": "[Gouvernement chinois, adoption du plan 2026–2030, 12 mars 2026](https://english.www.gov.cn/news/202603/13/content_WS69b36c11c6d00ca5f9a09d96.html). Quinzième plan quinquennal, modernisation industrielle et autonomie technologique."
+    },
+    {
+      "id": "S34",
+      "text": "[AP, bilan du cinquième plénum, 30 octobre 2026](https://apnews.com/article/64e17fadcad51932f5d320cd4a97cc1f). Réunion close le 29 octobre : discipline et ratification des exclusions. Élévation de Zhang Shengmin au Bureau politique."
+    },
+    {
+      "id": "S35",
+      "text": "[AP, rencontre Trump / Xi / Poutine annoncée, 14 novembre 2026](https://apnews.com/article/5fe92253ef38100bae913834a9b74d72). Rencontre prévue le 19 novembre à Shenzhen, en marge de l’APEC. Annonce, sans résultat acquis au 15 novembre."
+    },
+    {
+      "id": "S36",
+      "text": "[UNESCO, pratiques et techniques traditionnelles du thé en Chine](https://ich.unesco.org/en/RL/traditional-tea-processing-techniques-and-associated-social-practices-in-china-01884). Transmission, diversité des thés et sociabilité."
+    },
+    {
+      "id": "S37",
+      "text": "[UNESCO, culture alimentaire chinoise, A Movable Feast](https://www.unesco.org/en/articles/china-story-movable-feast). Diversité régionale, traditions culinaires et fête du Printemps."
+    },
+    {
+      "id": "S38",
+      "text": "[France Diplomatie, relations bilatérales franco-chinoises, octobre 2026](https://www.diplomatie.gouv.fr/fr/information-par-pays/chine/chine-relations-bilaterales). Reconnaissance en 1964, échanges industriels, culturels et scientifiques ; déséquilibre commercial."
+    },
+    {
+      "id": "S39",
+      "text": "[Commission européenne, conférence de presse de Maroš Šefčovič, 9 octobre 2026](https://audiovisual.ec.europa.eu/en/media/video/I-295803). Entente sur les hybrides, accès au marché et facilitation des licences de terres rares et d’aimants. Ne pas assimiler l’annonce à un dispositif déjà intégralement appliqué."
+    },
+    {
+      "id": "S40",
+      "text": "[AIE, Global EV Outlook 2026, tendances des voitures électriques](https://www.iea.org/reports/global-ev-outlook-2026/trends-in-electric-cars). Voitures particulières électriques à batterie et hybrides rechargeables. Ventes domestiques 2025 proches de 55 % ; part distincte du parc existant. Licence CC BY 4.0."
+    },
+    {
+      "id": "S41",
+      "text": "[AIE, Global EV Outlook 2026, production et commerce](https://www.iea.org/reports/global-ev-outlook-2026/manufacturing-and-trade). En 2025 : quatre voitures électriques fabriquées en Chine sur cinq vendues à l’étranger proviennent de constructeurs chinois ; plus de 80 % de la production mondiale de cellules est en Chine. Le graphique concerne les ventes hors de Chine, avec une catégorisation des constructeurs, et non les déclarations douanières. Licence CC BY 4.0."
+    },
+    {
+      "id": "S42",
+      "text": "[AIE, Global EV Outlook 2026, batteries](https://www.iea.org/reports/global-ev-outlook-2026/electric-vehicle-batteries). Prix moyen des packs en Chine inférieur de 35 % au prix européen en 2025. Indice calculé : Europe = 100, Chine = 65. Toutes chimies et applications VE / stockage stationnaire ; production locale et importations, sans panier de produits identique. LFP et NMC, intégration industrielle. Licence CC BY 4.0."
+    },
+    {
+      "id": "S43",
+      "text": "[AP, marché automobile chinois, 11 novembre 2026](https://apnews.com/article/2779fbbf91f391dd8a59c7ee626cb1b5). Contraction des ventes domestiques et hausse des exportations en octobre ; guerre des prix et implantations étrangères."
+    },
+    {
+      "id": "S44",
+      "text": "[Wikimedia Commons, Flag of the People’s Republic of China.svg](https://commons.wikimedia.org/wiki/File:Flag_of_the_People%27s_Republic_of_China.svg). Dessin de Zeng Liansong. Domaine public, géométrie simple et document officiel exempté par l’article 5 du droit chinois. SVG original téléchargé sans modification du dessin."
+    },
+    {
+      "id": "S45",
+      "text": "[Uwe Dedering, China edcp relief location map, Wikimedia Commons, 3 mars 2010](https://commons.wikimedia.org/wiki/File:China_edcp_relief_location_map.jpg). CC BY-SA 3.0, https://creativecommons.org/licenses/by-sa/3.0/. Fond Natural Earth. Adaptation : réduction proportionnelle à 1 200 × 955 pixels et conversion WebP, couleurs conservées. Frontières et tracés indicatifs, sans prise de position territoriale. Fichier dérivé sous la même licence."
+    },
+    {
+      "id": "S46",
+      "text": "[Bureau des statistiques de Pékin, population fin 2025](https://www.beijing.gov.cn/renwen/bjgk/rk/rktj/202603/t20260327_4567368.html). 21 800 000 résidents, municipalité administrative entière, y compris espaces ruraux."
+    },
+    {
+      "id": "S47",
+      "text": "[Bureau des statistiques de Shanghai, communiqué 2025](https://tjj.sh.gov.cn/tjgb/20260330/e0772941e8e041eaaad2df850b44ef98.html). 24 854 100 résidents fin 2025, municipalité entière. Sports, marathon, Formule 1 et équipements de proximité."
+    },
+    {
+      "id": "S48",
+      "text": "[Shenzhen, communiqué 2025 présenté le 26 mai 2026](https://www.sz.gov.cn/cn/xxgk/zfxxgj/zwdt/content/post_12806017.html). 18 248 500 résidents fin 2025, territoire municipal entier. Électronique et innovation."
+    },
+    {
+      "id": "S49",
+      "text": "[Bureau des statistiques de Chongqing, communiqué 2025](https://tjj.cq.gov.cn/zwgk_233/fdzdgknr/tjxx/sjjd_55469/202603/t20260326_15568538_wap.html). 31 872 600 résidents fin 2025. Vaste municipalité incluant campagnes et montagnes, sans équivalence avec une agglomération bâtie."
+    },
+    {
+      "id": "S50",
+      "text": "[CSIS, liste des principaux dirigeants chinois, 2017](https://beyondparallel.csis.org/wp-content/uploads/2017/03/China-North-Korea-High-Level-Officials-Reference-List_170309.pdf). Dates de la présidence de Hu Jintao et du gouvernement de Wen Jiabao."
+    },
+    {
+      "id": "S51",
+      "text": "[AIE, Global EV Outlook 2025, batteries](https://www.iea.org/reports/global-ev-outlook-2025/electric-vehicle-batteries). Densité énergétique LFP plus faible que NMC et développement d’architectures de packs. Licence CC BY 4.0."
+    },
+    {
+      "id": "S52",
+      "text": "[MOFCOM, précisions sur l’entente automobile UE / Chine, 12 octobre 2026](https://english.mofcom.gov.cn/News/SpokesmansRemarks/art/2026/art_9c5d95356d984390af922150976cc853.html). Position chinoise : modalités et volumes en discussion, consultations sur les engagements de prix pour les véhicules électriques à batterie."
+    },
+    {
+      "id": "NE",
+      "text": "[Natural Earth, conditions d’utilisation](https://www.naturalearthdata.com/about/terms-of-use/). Domaine public. Géométrie locale de l’application pour les cartes de situation et de villes. Les contours ne constituent pas une position sur les frontières."
+    },
+    {
+      "id": "S53",
+      "text": "[AP, quatrième baisse annuelle de la population chinoise, 19 janvier 2026](https://apnews.com/article/868cd1ffc949af5a2e94c523e750e97e). Fin de l’enfant unique, deux enfants à partir de 2016, trois en 2021 ; obstacles économiques aux naissances."
+    },
+    {
+      "id": "S54",
+      "text": "[OSW, China after its abrupt U-turn on the zero-Covid strategy, 16 janvier 2023](https://www.osw.waw.pl/en/publikacje/analyses/2023-01-16/china-after-its-abrupt-u-turn-zero-covid-strategy). Abandon des restrictions en décembre 2022 et difficultés de la transition."
+    },
+    {
+      "id": "S55",
+      "text": "[UNESCO, Chengdu, réseau des villes créatives](https://www.unesco.org/en/creative-cities/chengdu). Traditions culinaires régionales et diversité des saveurs du Sichuan."
+    },
+    {
+      "id": "S56",
+      "text": "[Lonely Planet, A taste of Chengdu, 19 août 2021](https://www.lonelyplanet.com/articles/chengdu-capital-chinese-sichuan-cuisine). Raviolis chaoshou, poulet gongbao, piment et poivre du Sichuan."
+    }
+  ],
+  "cities": [
+    {
+      "name": "Pékin",
+      "population": 21800000,
+      "lat": 39.9042,
+      "lon": 116.4074,
+      "note": "Capitale, recherche, numérique et sièges publics.",
+      "year": 2025,
+      "source_ids": [
+        "S46"
+      ]
+    },
+    {
+      "name": "Shanghai",
+      "population": 24854100,
+      "lat": 31.2304,
+      "lon": 121.4737,
+      "note": "Port, finance, automobile et delta industriel.",
+      "year": 2025,
+      "source_ids": [
+        "S47"
+      ]
+    },
+    {
+      "name": "Shenzhen",
+      "population": 18248500,
+      "lat": 22.5431,
+      "lon": 114.0579,
+      "note": "Électronique, innovation et automobile électrique.",
+      "year": 2025,
+      "source_ids": [
+        "S48"
+      ]
+    },
+    {
+      "name": "Chongqing",
+      "population": 31872600,
+      "lat": 29.563,
+      "lon": 106.5516,
+      "note": "Automobile, logistique ; vaste territoire rural inclus.",
+      "year": 2025,
+      "source_ids": [
+        "S49"
+      ]
+    }
+  ],
+  "cities_title": "Quatre pôles, des périmètres municipaux très étendus",
+  "cities_scope": "Résidents des territoires administratifs entiers · fin 2025 · hors comparaison des agglomérations bâties",
+  "hero_sources": [
+    "S02",
+    "S44"
+  ],
+  "map_sources": {
+    "locator": [
+      "S02",
+      "NE"
+    ],
+    "cities": [
+      "S46",
+      "S47",
+      "S48",
+      "S49",
+      "NE"
+    ],
+    "relief": [
+      "S45"
+    ]
+  },
+  "relief_title": "Des hauts plateaux de l’ouest aux plaines orientales",
+  "relief_alt": "Carte physique de la Chine et des régions voisines : plateau tibétain au sud-ouest, bassins désertiques au nord-ouest, plaines basses à l’est.",
+  "relief_landmarks": [
+    {
+      "label": "Le plateau tibétain",
+      "text": "Les hautes terres dominent le sud-ouest. L’Himalaya borde leur versant méridional."
+    },
+    {
+      "label": "Le Xinjiang et les bassins intérieurs",
+      "text": "Au nord-ouest, massifs et déserts compartimentent les axes de transport."
+    },
+    {
+      "label": "Les plaines et les deltas de l’est",
+      "text": "Les fleuves débouchent vers les principales façades urbaines et industrielles."
+    }
+  ],
+  "euro": {
+    "currency": "CNY",
+    "per_euro": 8.1185043137255,
+    "year": 2025,
+    "basis": "Moyenne annuelle directe des taux de référence BCE. Conversion indicative en euros courants, sans correction du pouvoir d’achat.",
+    "source_ids": [
+      "S23"
+    ]
+  },
+  "prose_values": {
+    "cellules": {
+      "value": 80,
+      "unit": "%",
+      "precision": 0
+    }
+  }
+}

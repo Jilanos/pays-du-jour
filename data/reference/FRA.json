@@ -64,6 +64,10 @@
     {
       "id": "FR-MARRIAGE",
       "text": "[Vie publique, loi du 17 mai 2013 ouvrant le mariage aux couples de personnes de même sexe](https://www.vie-publique.fr/loi/20645-mariage-pour-tous-loi-du-17-mai-2013-taubira-mariage-couples-meme-sexe)."
+    },
+    {
+      "id": "FR-ELEC-2025",
+      "text": "[RTE, bilan électrique 2025, production](https://analysesetdonnees.rte-france.com/bilan-electrique-2025/production). France métropolitaine : électricité bas-carbone, nucléaire et renouvelables, 95,2 % de la production en 2025 (521,1 TWh sur 547,5 TWh). Production électrique, sans assimilation à la consommation finale d’énergie ou aux capacités installées."
     }
   ],
   "population": {
@@ -351,6 +355,16 @@
       527129,
       180318,
       31516
+    ]
+  },
+  "electricite-bas-carbone": {
+    "status": "comparable",
+    "value": 95.2,
+    "unit": "%",
+    "year": 2025,
+    "coverage": "Nucléaire et renouvelables · production métropolitaine 2025",
+    "source_ids": [
+      "FR-ELEC-2025"
     ]
   }
 }
