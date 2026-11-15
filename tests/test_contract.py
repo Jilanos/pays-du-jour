@@ -64,7 +64,15 @@ def test_production_fiche_has_unique_figures_and_complete_source_roundtrips():
     assert body.count('class="indices"') == 1
     assert "4,0\u00a0millions\u00a0d’habitants" in body
     assert "4\u202f044\u202f831" not in body
-    assert "Non comparable" in body and "indisponible" in body
+    # No France slot, reason or reference mark when the comparison is not comparable.
+    for absent in ("Non comparable", "ndisponible", "comparison-note", "missing"):
+        assert absent not in body
+    energy = body.split('id="fact-energie-importee"', 1)[1].split("</section>", 1)[0]
+    assert "France" not in energy and "metric-pair single" in energy
+    gini = body.split('id="index-gini"', 1)[1].split('class="index-row"', 1)[0]
+    assert "france-dot" not in gini and "index-france" not in gini
+    wages = body.split('id="fig-salaires"', 1)[1].split("</figure>", 1)[0]
+    assert "France" not in wages
 
 
 def test_bibliography_numbers_follow_display_order_not_citation_order():

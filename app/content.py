@@ -14,7 +14,7 @@ from markdown_it.token import Token
 from markupsafe import Markup
 
 from .charts import render_chart
-from .components import indices, keyfacts, reference
+from .components import comparable, indices, keyfacts, reference
 from .config import ROOT, Settings
 from .format import record
 from .maps import cities, locator
@@ -154,7 +154,7 @@ def read_fiche(iso3: str, settings: Settings) -> Fiche:
             toc.append(("indices", "Lire les indices"))
         elif key.startswith("chart:"):
             chart = charts[key[6:]].copy()
-            ref = reference(chart, references)
+            ref = comparable(reference(chart, references))
             chart["_france"] = ref
             marker = sources.cite(
                 "fig-" + chart["id"],

@@ -85,6 +85,10 @@ All comparison records have `status`:
 - `unavailable`: `reason`, including the missing dataset or matching definition, and any
   research sources. Never substitute zero or invent a value.
 
+Only `comparable` records reach the page. For the two other statuses the app shows
+nothing for France: no card slot, ring, bar, reference series, reason or France source.
+The `reason` stays in the data as an audit trail.
+
 Wages need matching gross/net, premiums, worker coverage, hours and currency basis.
 No currency conversion can repair incompatible definitions. GDP is in common current
 USD; a PPP comparison requires an explicit sourced basis. City ratios do not stand in

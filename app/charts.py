@@ -92,7 +92,7 @@ def climate(chart, mobile=False):
     width, left, right = (240, 31, 235) if mobile else (720, 42, 700)
     root = svg(chart, width, 360)
     tmin, tmax, rain = [pairs(MONTHS, chart[k]) for k in ("tmin", "tmax", "precip_mm")]
-    ref = chart.get("_france", {})
+    ref = chart.get("_france") or {}
     if ref.get("status") in ("non_comparable", "unavailable"):
         ref = {}
     all_temperatures = tmin + tmax + ref.get("tmin", []) + ref.get("tmax", [])
@@ -529,13 +529,6 @@ def data_table(chart):
     return out
 
 
-def comparison_note(ref):
-    if not ref or ref.get("status") not in ("non_comparable", "unavailable"):
-        return ""
-    status = "non comparable" if ref["status"] == "non_comparable" else "indisponible"
-    return f'<p class="comparison-note"><span>France · {status}</span> {escape(ref["reason"])}</p>'
-
-
 def render_chart(chart, marker=""):
     kind = chart["type"]
     subtitle = chart.get("subtitle", str(chart["year"]) + " · " + chart.get("unit", "°C et mm"))
@@ -585,7 +578,6 @@ def render_chart(chart, marker=""):
             )
     if chart.get("note_visible"):
         out.append(f'<p class="figure-note">{escape(chart["note_visible"])}</p>')
-    out.append(comparison_note(chart.get("_france")))
     out.append('<details class="chart-data"><summary>Voir les données</summary>')
     if kind == "climate" and chart.get("places"):
         for place in chart["places"]:
