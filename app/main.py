@@ -20,6 +20,27 @@ from .maps import locator
 APP_DIR = Path(__file__).resolve().parent
 
 
+class HeadAsGet:
+    """Answer HEAD like GET without a body: FastAPI GET routes otherwise return 405."""
+
+    def __init__(self, app):
+        self.app = app
+
+    async def __call__(self, scope, receive, send):
+        if scope["type"] != "http" or scope["method"] != "HEAD":
+            await self.app(scope, receive, send)
+            return
+
+        async def send_without_body(message):
+            if message["type"] == "http.response.body":
+                if message.get("more_body"):
+                    return
+                message = {"type": "http.response.body", "body": b"", "more_body": False}
+            await send(message)
+
+        await self.app({**scope, "method": "GET"}, receive, send_without_body)
+
+
 def create_app(settings: Settings | None = None) -> FastAPI:
     settings = settings or Settings()
     app = FastAPI(title="Pays du jour", docs_url=None, redoc_url=None, openapi_url=None)
@@ -28,6 +49,7 @@ def create_app(settings: Settings | None = None) -> FastAPI:
     templates.env.filters["date_fr"] = date_fr
     templates.env.globals["ui"] = json.loads((APP_DIR / "i18n/fr.json").read_text())
     app.mount("/static", StaticFiles(directory=APP_DIR / "static"), name="static")
+    app.add_middleware(HeadAsGet)
 
     @app.middleware("http")
     async def noindex(request: Request, call_next):

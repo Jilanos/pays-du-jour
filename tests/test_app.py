@@ -137,3 +137,17 @@ def test_adjacent_placeholder_lines_resolve_but_code_examples_remain_literal(set
     assert "<p>Texte avant</p>" in html and "<p>Texte après</p>" in html
     assert '<code class="language-text">{{chart:salaires}}' in html
     assert "<code>{{map:cities}}" in html
+
+
+@pytest.mark.parametrize("url", ["/", "/pays/FRA", "/robots.txt", "/static/style.css"])
+def test_head_answers_like_get_without_body(client, url):
+    get = client.get(url)
+    head = client.head(url)
+    assert head.status_code == get.status_code == 200
+    assert head.headers["content-type"] == get.headers["content-type"]
+    assert head.headers["x-robots-tag"] == "noindex, nofollow"
+    assert head.content == b""
+
+
+def test_head_unknown_country_is_404(client):
+    assert client.head("/pays/XXX").status_code == 404
