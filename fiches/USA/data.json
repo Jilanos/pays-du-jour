@@ -1,0 +1,819 @@
+{
+  "keyfacts": [
+    {
+      "id": "population",
+      "label": "Population résidente",
+      "value": 341784857,
+      "unit": "habitants",
+      "year": 2025,
+      "coverage": "50 États et DC · 1er juillet 2025",
+      "source_ids": [
+        "S02"
+      ],
+      "france": "population"
+    },
+    {
+      "id": "superficie",
+      "label": "Superficie totale",
+      "value": 9833517,
+      "unit": "km²",
+      "year": 2010,
+      "coverage": "Terres et eaux · 50 États et DC · 2010",
+      "source_ids": [
+        "S03"
+      ],
+      "france": "superficie-usa"
+    },
+    {
+      "id": "pib-nominal",
+      "label": "PIB nominal",
+      "value": 30861300000000,
+      "unit": "USD",
+      "year": 2025,
+      "coverage": "Prix courants · 2025",
+      "source_ids": [
+        "S04"
+      ],
+      "france": "pib-nominal"
+    },
+    {
+      "id": "65-plus",
+      "label": "Part des 65 ans ou plus",
+      "value": 18.905778496792795,
+      "unit": "%",
+      "year": 2025,
+      "coverage": "Résidents · 1er juillet 2025",
+      "source_ids": [
+        "S05"
+      ],
+      "france": "65-plus"
+    },
+    {
+      "id": "moins-18",
+      "label": "Part des moins de 18 ans",
+      "value": 21.1,
+      "unit": "%",
+      "year": 2025,
+      "coverage": "Résidents · 1er juillet 2025",
+      "source_ids": [
+        "S02"
+      ]
+    }
+  ],
+  "indices": [
+    {
+      "id": "idh",
+      "name": "Développement humain",
+      "acronym": "IDH",
+      "value": 0.938,
+      "year": 2023,
+      "rank": "17ᵉ / 193",
+      "source_ids": [
+        "S06"
+      ],
+      "scale_min": 0,
+      "scale_max": 1,
+      "higher_is_better": true,
+      "precision": 3,
+      "france": "idh"
+    },
+    {
+      "id": "gini",
+      "name": "Inégalités de revenus",
+      "acronym": "Gini",
+      "value": 0.49,
+      "year": 2025,
+      "rank": "Sans classement",
+      "source_ids": [
+        "S10"
+      ],
+      "scale_min": 0,
+      "scale_max": 1,
+      "higher_is_better": false,
+      "precision": 3,
+      "france": "gini-usa",
+      "coverage": "Revenu monétaire par ménage avant impôts."
+    },
+    {
+      "id": "democratie",
+      "name": "Démocratie libérale",
+      "acronym": "V-Dem",
+      "value": 0.57,
+      "year": 2025,
+      "rank": "51ᵉ / 179",
+      "source_ids": [
+        "S07"
+      ],
+      "scale_min": 0,
+      "scale_max": 1,
+      "higher_is_better": true,
+      "precision": 2,
+      "france": "democratie"
+    },
+    {
+      "id": "presse",
+      "name": "Liberté de la presse",
+      "acronym": "RSF",
+      "value": 62.61,
+      "year": 2026,
+      "rank": "64ᵉ / 180",
+      "source_ids": [
+        "S08"
+      ],
+      "scale_min": 0,
+      "scale_max": 100,
+      "higher_is_better": true,
+      "precision": 2,
+      "france": "presse"
+    },
+    {
+      "id": "corruption",
+      "name": "Corruption perçue",
+      "acronym": "CPI",
+      "value": 64,
+      "year": 2025,
+      "rank": "29ᵉ / 182",
+      "source_ids": [
+        "S09"
+      ],
+      "scale_min": 0,
+      "scale_max": 100,
+      "higher_is_better": true,
+      "precision": 0,
+      "france": "corruption"
+    }
+  ],
+  "cities": [
+    {
+      "name": "New York",
+      "population": 8584629,
+      "lat": 40.6943,
+      "lon": -73.9249,
+      "note": "Finance, médias et grand port atlantique.",
+      "year": 2025,
+      "source_ids": [
+        "S48",
+        "NE"
+      ]
+    },
+    {
+      "name": "Los Angeles",
+      "population": 3869089,
+      "lat": 34.1141,
+      "lon": -118.4068,
+      "note": "Cinéma, ports et industrie aérospatiale.",
+      "year": 2025,
+      "source_ids": [
+        "S48",
+        "NE"
+      ]
+    },
+    {
+      "name": "Chicago",
+      "population": 2731585,
+      "lat": 41.8375,
+      "lon": -87.6866,
+      "note": "Logistique, industrie et carrefour ferroviaire.",
+      "year": 2025,
+      "source_ids": [
+        "S48",
+        "NE"
+      ]
+    },
+    {
+      "name": "Houston",
+      "population": 2397315,
+      "lat": 29.786,
+      "lon": -95.3885,
+      "note": "Énergie, pétrochimie et centre spatial.",
+      "year": 2025,
+      "source_ids": [
+        "S48",
+        "NE"
+      ]
+    },
+    {
+      "name": "Phoenix",
+      "population": 1665481,
+      "lat": 33.5722,
+      "lon": -112.0891,
+      "note": "Semi-conducteurs et croissance du désert.",
+      "year": 2025,
+      "source_ids": [
+        "S48",
+        "NE"
+      ]
+    },
+    {
+      "name": "Philadelphie",
+      "population": 1574281,
+      "lat": 40.0077,
+      "lon": -75.1339,
+      "note": "Santé, universités et héritage industriel.",
+      "year": 2025,
+      "source_ids": [
+        "S48",
+        "NE"
+      ]
+    }
+  ],
+  "charts": [
+    {
+      "id": "climat",
+      "type": "climate",
+      "title": "Deux façades, deux régimes de pluie",
+      "subtitle": "Normales 1991–2020 · mêmes échelles · référence Paris",
+      "year": "1991–2020",
+      "source_ids": [
+        "S11"
+      ],
+      "france": "climat-paris",
+      "places": [
+        {
+          "place": "New York-Central Park",
+          "tmin": [
+            -2.2777777777777777,
+            -1.3888888888888888,
+            2.111111111111111,
+            7.5,
+            12.777777777777779,
+            18.0,
+            21.166666666666668,
+            20.5,
+            16.833333333333332,
+            10.777777777777779,
+            5.555555555555555,
+            1.0
+          ],
+          "tmax": [
+            4.166666666666667,
+            5.666666666666667,
+            9.944444444444445,
+            16.555555555555557,
+            21.88888888888889,
+            26.5,
+            29.38888888888889,
+            28.5,
+            24.555555555555557,
+            18.055555555555557,
+            12.222222222222221,
+            6.833333333333333
+          ],
+          "precip_mm": [
+            92.456,
+            81.026,
+            108.966,
+            103.886,
+            100.584,
+            115.316,
+            116.84,
+            115.824,
+            109.474,
+            111.252,
+            90.932,
+            111.252
+          ]
+        },
+        {
+          "place": "Los Angeles-LAX",
+          "tmin": [
+            9.666666666666666,
+            10.055555555555555,
+            11.222222222222221,
+            12.333333333333334,
+            14.222222222222221,
+            16.055555555555557,
+            17.77777777777778,
+            18.22222222222222,
+            17.61111111111111,
+            15.444444444444445,
+            12.055555555555555,
+            9.5
+          ],
+          "tmax": [
+            19.055555555555557,
+            18.666666666666668,
+            18.944444444444443,
+            20.055555555555557,
+            20.833333333333332,
+            22.22222222222222,
+            23.944444444444443,
+            24.833333333333332,
+            24.72222222222222,
+            23.555555555555557,
+            21.61111111111111,
+            18.944444444444443
+          ],
+          "precip_mm": [
+            72.644,
+            75.946,
+            43.942,
+            15.24,
+            7.112,
+            2.032,
+            1.016,
+            0.0,
+            2.794,
+            12.446,
+            20.828,
+            56.642
+          ]
+        }
+      ],
+      "temperature_extent": [
+        -10,
+        40
+      ],
+      "rain_max": 200,
+      "note": "Moyennes quotidiennes des minima et maxima, cumuls mensuels moyens. Les villes ne résument pas les climats du pays. LAX représente la côte. Valeurs américaines converties des unités d’origine sans arrondi préalable."
+    },
+    {
+      "id": "pyramide-ages",
+      "type": "pyramid",
+      "title": "Un pays vieillissant, plus jeune que la France",
+      "subtitle": "Part de la population totale · % · 2025 / début 2026",
+      "year": 2025,
+      "age_groups": [
+        "0–4",
+        "5–9",
+        "10–14",
+        "15–19",
+        "20–24",
+        "25–29",
+        "30–34",
+        "35–39",
+        "40–44",
+        "45–49",
+        "50–54",
+        "55–59",
+        "60–64",
+        "65–69",
+        "70–74",
+        "75–79",
+        "80–84",
+        "85–89",
+        "90–94",
+        "95–99",
+        "100+"
+      ],
+      "unit": "personnes",
+      "source_ids": [
+        "S05"
+      ],
+      "france": "pyramide-france",
+      "note": "États-Unis : résidents au 1er juillet 2025, 50 États et DC ; France : résidents au 1er janvier 2026. Cohortes identiques. Pourcentages calculés sur l’ensemble des deux sexes, années distinctes affichées.",
+      "male": [
+        9449992,
+        10101519,
+        10539273,
+        11323927,
+        11723186,
+        11815783,
+        11660125,
+        11548851,
+        10967569,
+        10013169,
+        9674842,
+        9777218,
+        10108530,
+        9388985,
+        7734018,
+        5835979,
+        3407808,
+        1712872,
+        714540,
+        207800,
+        31539
+      ],
+      "female": [
+        9041875,
+        9686202,
+        10080832,
+        10791353,
+        11220048,
+        11526582,
+        11561557,
+        11622452,
+        11182143,
+        10342933,
+        10103840,
+        10335681,
+        10968287,
+        10532474,
+        9032674,
+        7123612,
+        4520502,
+        2579950,
+        1256721,
+        449971,
+        87643
+      ]
+    },
+    {
+      "id": "langues",
+      "type": "share",
+      "title": "Les langues parlées à la maison",
+      "subtitle": "Résidents de cinq ans ou plus · ACS 2019 · %",
+      "year": 2019,
+      "labels": [
+        "Anglais uniquement",
+        "Espagnol ou créole espagnol",
+        "Autres langues"
+      ],
+      "values": [
+        78.0457482159517,
+        13.520952348461583,
+        8.433299435586719
+      ],
+      "unit": "%",
+      "source_ids": [
+        "S13"
+      ],
+      "france": "langues",
+      "note": "Les personnes déclarant une autre langue à la maison peuvent aussi maîtriser l’anglais. Ce graphique ne mesure ni la langue maternelle ni la citoyenneté."
+    },
+    {
+      "id": "religions",
+      "type": "share",
+      "title": "Affiliations religieuses déclarées",
+      "subtitle": "Adultes · enquête Pew 2023–2024 · %",
+      "year": "2023–2024",
+      "labels": [
+        "Chrétiens",
+        "Sans affiliation religieuse",
+        "Autres religions"
+      ],
+      "values": [
+        62,
+        29,
+        7
+      ],
+      "unit": "%",
+      "source_ids": [
+        "S14"
+      ],
+      "france": "religions",
+      "note_visible": "Total publié : 98 %. Non-réponses et arrondis expliquent l’écart à 100 %.",
+      "note": "Valeurs arrondies publiées, conservées sans normalisation. Affiliation déclarée des adultes, distincte de la pratique ou de l’ensemble de la population."
+    },
+    {
+      "id": "salaires",
+      "type": "barh",
+      "title": "Salaires horaires : la moyenne tire vers le haut",
+      "subtitle": "Brut · toutes professions · mai 2025 · USD/heure",
+      "year": 2025,
+      "labels": [
+        "Médiane",
+        "Moyenne"
+      ],
+      "values": [
+        24.51,
+        33.54
+      ],
+      "unit": "USD/heure",
+      "source_ids": [
+        "S17"
+      ],
+      "france": "salaires-usa",
+      "euro": true,
+      "note": "OEWS, salariés à temps plein et partiel ; hors indépendants. Brut en temps normal, pourboires et commissions inclus, majorations d’heures supplémentaires et primes hors production exclues. Conversion annuelle BCE 2025, sans ajustement du pouvoir d’achat."
+    },
+    {
+      "id": "pib-secteurs",
+      "type": "share",
+      "title": "Les services dominent une grande économie industrielle",
+      "subtitle": "Valeur ajoutée rapportée au PIB courant · BEA 2024 · %",
+      "year": 2024,
+      "labels": [
+        "Agriculture, forêt et pêche",
+        "Industrie et construction",
+        "Services, gouvernement compris"
+      ],
+      "values": [
+        0.9205406512389923,
+        17.218581473138098,
+        81.8608778756229
+      ],
+      "unit": "%",
+      "source_ids": [
+        "S20"
+      ],
+      "france": "pib-secteurs-usa",
+      "note": "Regroupement du tableau B-8. L’industrie comprend mines, fabrication, construction et utilities. Les services sont le solde du PIB, gouvernement compris ; parts calculées sur les montants publiés, sans arrondi préalable."
+    },
+    {
+      "id": "ia-investissements",
+      "type": "barh",
+      "title": "Le financement privé de l’IA se concentre aux États-Unis",
+      "subtitle": "Principales zones sélectionnées · 2025 · USD",
+      "year": 2025,
+      "labels": [
+        "États-Unis",
+        "Europe",
+        "Chine"
+      ],
+      "values": [
+        285880000000,
+        20920000000,
+        12410000000
+      ],
+      "unit": "USD",
+      "source_ids": [
+        "S22"
+      ],
+      "note": "Investissements privés suivis par Quid dans les entreprises d’IA. Europe désigne la zone du rapport, sans décomposition française. Ni budget de recherche public ni ensemble des investissements en centres de données."
+    },
+    {
+      "id": "assemblage-auto",
+      "type": "barh",
+      "title": "Les light trucks dominent les chaînes américaines",
+      "subtitle": "Assemblages sur le territoire · moyenne annuelle 2025 · véhicules",
+      "year": 2025,
+      "labels": [
+        "Voitures particulières",
+        "Light trucks",
+        "Poids moyens et lourds"
+      ],
+      "values": [
+        1280000,
+        8640000,
+        250000
+      ],
+      "unit": "véhicules",
+      "source_ids": [
+        "S43",
+        "S44"
+      ],
+      "note": "Série Fed G.17 du 18 février 2026, moyenne 2025 des cadences annualisées désaisonnalisées, convertie des millions en unités. Production territoriale, toutes marques et motorisations ; ne mesure pas les ventes. Arrondis publiés : somme des catégories 10,17 millions, total officiel 10,18 millions. Les light trucks comprennent pickups, vans et de nombreux SUV."
+    }
+  ],
+  "sources": [
+    {
+      "id": "S01",
+      "text": "[France Diplomatie, présentation des États-Unis](https://www.diplomatie.gouv.fr/fr/information-par-pays/etats-unis/presentation-des-etats-unis). Identité, territoires et contexte politique ; mise à jour d’octobre 2026."
+    },
+    {
+      "id": "S02",
+      "text": "[Census Bureau, QuickFacts, États-Unis](https://www.census.gov/quickfacts/fact/table/US/PST045225). Population résidente au 1er juillet 2025, Vintage 2025 : 50 États et district de Columbia, territoires exclus."
+    },
+    {
+      "id": "S03",
+      "text": "[Census Bureau, State Area Measurements](https://www.census.gov/geographies/reference-files/2010/geo/state-area.html.html). Tableau 2010, États-Unis : 9 833 517 km², terres et eaux intérieures, côtières et territoriales. 50 États et DC ; dépendances exclues."
+    },
+    {
+      "id": "S04",
+      "text": "[BEA, mise à jour annuelle des comptes nationaux, septembre 2026](https://apps.bea.gov/scb/issues/2026/09-september/0926-nea-annual-update.htm). Comptes récapitulatifs, compte 1, lignes 14 et 36 : PIB 2025 de 30 861,3 milliards de dollars courants. Comparaison avec le FMI pour la France, même année et monnaie ; millésimes de révision distincts."
+    },
+    {
+      "id": "S05",
+      "text": "[Census Bureau, population nationale par âge et sexe, Vintage 2025, CSV](https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/national/asrh/nc-est2025-agesex-res.csv). POPESTIMATE2025, SEX 1 et 2, âges 0 à 100 ; 100 représente 100 ans ou plus, 999 est le total et est exclu des sommes. Agrégation quinquennale sans arrondi. Part des 65 ans ou plus calculée sur les 341 784 857 résidents."
+    },
+    {
+      "id": "S06",
+      "text": "[PNUD, Human Development Report 2025, tableau des indices](https://hdr.undp.org/system/files/documents/global-report-document/hdr2025overviewen.pdf). Données 2023 : États-Unis 0,938, rang 17 sur 193 ; France 0,920, rang 26."
+    },
+    {
+      "id": "S07",
+      "text": "[V-Dem, Democracy Report 2026](https://www.v-dem.net/documents/75/V-Dem_Institute_Democracy_Report_2026_lowres.pdf). Tableau A2, page imprimée 48 : indice de démocratie libérale en 2025, États-Unis 0,57, rang 51 sur 179. Analyse du recul des contre-pouvoirs, pages 33 à 39. Mesure 2025, antérieure aux élections de novembre 2026."
+    },
+    {
+      "id": "S08",
+      "text": "[RSF, États-Unis, classement 2026](https://rsf.org/en/country/united-states). Score global 62,61 sur 100, rang 64 sur 180 ; ne pas confondre avec les cinq sous-indicateurs."
+    },
+    {
+      "id": "S09",
+      "text": "[Transparency International, États-Unis, CPI 2025](https://www.transparency.org/en/countries/united-states/). Score 64 sur 100, rang 29 sur 182, publication de février 2026."
+    },
+    {
+      "id": "S10",
+      "text": "[Census Bureau, Income in the United States: 2025, P60-289](https://www2.census.gov/library/publications/2026/demo/p60-289.pdf). Page imprimée 4, Gini du money income des ménages avant impôts : 0,490. Le Gini français du niveau de vie après redistribution utilise une autre unité statistique et un autre concept de revenu."
+    },
+    {
+      "id": "S11",
+      "text": "[NOAA NCEI, normales climatiques 1991–2020](https://www.ncei.noaa.gov/products/land-based-station/us-climate-normals), CSV mensuels de [New York-Central Park, USW00094728](https://www.ncei.noaa.gov/data/normals-monthly/1991-2020/access/USW00094728.csv) et [Los Angeles-LAX, USW00023174](https://www.ncei.noaa.gov/data/normals-monthly/1991-2020/access/USW00023174.csv). MLY-TMIN-NORMAL, MLY-TMAX-NORMAL et MLY-PRCP-NORMAL ; conversion exacte des °F en °C par (F − 32) × 5/9, pouces en mm par × 25,4. Los Angeles représente le littoral aéroportuaire, plus frais que les vallées intérieures."
+    },
+    {
+      "id": "S12",
+      "text": "[Wikimedia Commons, Usa edcp relief location map.png](https://commons.wikimedia.org/wiki/File:Usa_edcp_relief_location_map.png). Uwe Dedering, optimisation JeanJung212 et correction de frontière Spesh531 ; données Natural Earth. [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/). Version du 2 avril 2024, convertie en WebP, qualité 86, sans recadrage ni recoloration ; 1 181 × 731 pixels, 217 064 octets. Carte des États contigus, Alaska et Hawaï exclus. Relief distribué sous la même licence."
+    },
+    {
+      "id": "S13",
+      "text": "[Census Bureau, Language Use in the United States: 2019, ACS-50](https://www.census.gov/content/dam/Census/library/publications/2022/acs/acs-50.pdf), août 2022, tableau 1, page imprimée 3. Résidents de cinq ans ou plus : 308 834 688 ; anglais seul 241 032 343 ; espagnol ou créole espagnol 41 757 391 ; autres langues 26 044 954 par différence. Pourcentages calculés sur ces effectifs, sans arrondi préalable. Millésime ancien explicitement conservé pour sa table nationale documentée."
+    },
+    {
+      "id": "S14",
+      "text": "[Pew Research Center, Religious Landscape Study 2023–2024, synthèse](https://www.pewresearch.org/religion/2025/02/26/religious-landscape-study-executive-summary/) et [identités religieuses](https://www.pewresearch.org/2025/02/26/religious-landscape-study-religious-identity/), 26 février 2025. Adultes : chrétiens 62 %, sans affiliation 29 %, autres religions 7 %. Valeurs publiées arrondies, non-réponses exclues des catégories ; total de 98 % conservé. Enquête d’affiliation, distincte de la pratique."
+    },
+    {
+      "id": "S15",
+      "text": "[Department of Labor, questions sur le FLSA](https://www.dol.gov/agencies/whd/flsa/faq) et [congés](https://webapps.dol.gov/elaws/whd/flsa/hoursworked/screenER14.asp). Majoration au-delà de 40 heures pour les salariés couverts et non exemptés ; absence d’obligation de congés payés dans le FLSA. Des lois locales ou des contrats peuvent ajouter des droits."
+    },
+    {
+      "id": "S16",
+      "text": "[Census Bureau, Health Insurance Coverage in the United States: 2025](https://www.census.gov/library/publications/2026/demo/p60-291.html), septembre 2026. Couvertures professionnelles, Medicare, Medicaid et assurance individuelle ; programmes et populations distincts."
+    },
+    {
+      "id": "S17",
+      "text": "[BLS, salaires par profession, mai 2025, tableau 1](https://www.bls.gov/news.release/ocwage.t01.htm) et [définitions OEWS](https://www.bls.gov/opub/hom/oews/concepts.htm). Toutes professions, salaire horaire brut : médiane 24,51 USD, moyenne 33,54 USD. Temps plein et partiel ; emplois salariés non agricoles, hors indépendants. Pourboires, commissions et primes de production compris ; heures supplémentaires majorées, primes hors production et avantages employeur exclus. Champ national OEWS incluant les territoires couverts par l’enquête, distinct du champ démographique des 50 États et DC."
+    },
+    {
+      "id": "S18",
+      "text": "[BCE, moyenne annuelle USD/EUR 2025, EXR.A.USD.EUR.SP00.A](https://data.ecb.europa.eu/data/datasets/EXR/EXR.A.USD.EUR.SP00.A). [Tableau Eurostat reprenant la BCE](https://ec.europa.eu/eurostat/statistics-explained/SEPDF/cache/1112.pdf) : 1,1300 USD pour 1 EUR."
+    },
+    {
+      "id": "S19",
+      "text": "[Federal Reserve, Economic Well-Being of U.S. Households in 2025, logement](https://www.federalreserve.gov/publications/2026-economic-well-being-of-us-households-in-2025-housing.htm), 2026. Loyers, accès à la propriété et écarts entre propriétaires et locataires."
+    },
+    {
+      "id": "S20",
+      "text": "[Economic Report of the President 2026, annexe statistique, tableau B-8, données BEA](https://www.whitehouse.gov/wp-content/uploads/2026/04/2026-Economic-Report-of-the-President-2.pdf), pages imprimées 382–385. Année complète 2024, milliards USD : PIB 29 298,0 ; agriculture 269,7 ; mines 404,2 ; construction 1 305,4 ; fabrication 2 880,7 ; utilities 454,4. Regroupement industrie et construction : 5 044,7 ; services privés et gouvernement : solde 23 983,6. Parts calculées sur le PIB, sans arrondi préalable. Millésime 2024 du tableau, distinct du PIB 2025 des repères ; France : VA hors impôts nets sur produits, dénominateur différent."
+    },
+    {
+      "id": "S21",
+      "text": "[EIA, production et consommation d’énergie aux États-Unis](https://www.eia.gov/energyexplained/us-energy-facts/) et [production d’électricité en 2025](https://www.eia.gov/energyexplained/electricity/electricity-in-the-us-generation-capacity-and-sales.php). Ressources fossiles, production intérieure et diversité des moyens électriques ; la capacité installée se distingue de l’énergie produite."
+    },
+    {
+      "id": "S22",
+      "text": "[Stanford HAI, AI Index 2026, économie](https://hai.stanford.edu/ai-index/2026-ai-index-report/economy?tab=marketing). Quid : investissements privés en IA en 2025, États-Unis 285,88 milliards USD, Europe 20,92, Chine 12,41. Périmètre des financements privés suivis, distinct des dépenses totales de recherche et des dépenses d’infrastructure des entreprises."
+    },
+    {
+      "id": "S23",
+      "text": "[NIST, programme CHIPS, TSMC Arizona](https://www.nist.gov/chips/tsmc-arizona-phoenix). Usines, aides fédérales et développement du packaging avancé ; calendrier annoncé, ne constitue pas une preuve d’achèvement de chaque usine."
+    },
+    {
+      "id": "S24",
+      "text": "[National Archives, Déclaration d’indépendance](https://www.archives.gov/founding-docs/declaration) et [Constitution](https://www.archives.gov/founding-docs/constitution). Indépendance de 1776, Constitution de 1787, institutions et compromis originels sur l’esclavage."
+    },
+    {
+      "id": "S25",
+      "text": "[National Archives, treizième amendement, 1865](https://www.archives.gov/milestone-documents/13th-amendment) et [National Park Service, Trail of Tears](https://www.nps.gov/trte/learn/historyculture/index.htm). Abolition de l’esclavage et déplacements forcés des peuples autochtones."
+    },
+    {
+      "id": "S26",
+      "text": "[National Archives, Civil Rights Act de 1964](https://www.archives.gov/milestone-documents/civil-rights-act) et [Voting Rights Act de 1965](https://www.archives.gov/milestone-documents/voting-rights-act). Lutte contre les discriminations et protection de l’accès au vote."
+    },
+    {
+      "id": "S27",
+      "text": "[USAGov, branches du gouvernement fédéral](https://www.usa.gov/branches-of-government) et [National Archives, collège électoral](https://www.archives.gov/electoral-college/about). Exécutif, Congrès, justice et élection présidentielle indirecte."
+    },
+    {
+      "id": "S28",
+      "text": "[National Archives, présidents dans les recensements](https://www.archives.gov/research/census/presidents) et [Maison-Blanche, administration](https://www.whitehouse.gov/administration/). Mandats présidentiels et vice-présidence de JD Vance, vérifiés au 15 novembre 2026."
+    },
+    {
+      "id": "S29",
+      "text": "[Miller Center, George W. Bush, politique intérieure](https://millercenter.org/president/gwbush/domestic-affairs). Élections de 2006 et crise financière de 2008."
+    },
+    {
+      "id": "S30",
+      "text": "[Miller Center, Barack Obama, politique intérieure](https://millercenter.org/president/obama/domestic-affairs). Sauvetage automobile, Affordable Care Act, Tea Party et blocages parlementaires."
+    },
+    {
+      "id": "S31",
+      "text": "[Miller Center, Donald Trump, politique intérieure](https://millercenter.org/president/trump/domestic-affairs) et [événements du premier mandat](https://millercenter.org/president/trump/key-events). Fiscalité, immigration, nominations judiciaires, pandémie et contestation de l’élection de 2020."
+    },
+    {
+      "id": "S32",
+      "text": "[Miller Center, Joe Biden, politique intérieure](https://millercenter.org/president/biden/domestic-affairs). Assaut du Capitole, infrastructures, CHIPS, Inflation Reduction Act et fin du mandat."
+    },
+    {
+      "id": "S33",
+      "text": "[FEC, résultats officiels des élections fédérales de 2024](https://www.fec.gov/resources/cms-content/documents/federalelections2024.pdf). Résultat du collège électoral : Trump 312, Harris 226."
+    },
+    {
+      "id": "S34",
+      "text": "[France Diplomatie, situation politique américaine, octobre 2026](https://www.diplomatie.gouv.fr/fr/information-par-pays/etats-unis/presentation-des-etats-unis). Priorités du second mandat Trump, immigration, administration fédérale, commerce et retraits multilatéraux."
+    },
+    {
+      "id": "S35",
+      "text": "[IRS, crédits fiscaux pour véhicules propres](https://www.irs.gov/clean-vehicle-tax-credits). Fin des crédits pour les acquisitions postérieures au 30 septembre 2025. Une livraison ultérieure reste possible sous conditions pour une acquisition antérieure."
+    },
+    {
+      "id": "S36",
+      "text": "[Cour suprême, Louisiana v. Callais, 29 avril 2026](https://www.supremecourt.gov/opinions/25pdf/24-109_21o3.pdf). Découpage de Louisiane et interprétation restrictive des conditions d’application de la section 2 du Voting Rights Act."
+    },
+    {
+      "id": "S37",
+      "text": "[Congressional Research Service, U.S. Conflict with Iran, 26 mars 2026](https://www.everycrsreport.com/files/2026-03-26_R48887_1afa45aeebb1130b3f0d451b54cd24fa49b31761.pdf). Début des frappes américano-israéliennes le 28 février 2026 et extension régionale du conflit."
+    },
+    {
+      "id": "S38",
+      "text": "[Reuters, les démocrates remportent les deux chambres, 4 novembre 2026](https://www.investing.com/news/politics-news/democrats-seize-congress-in-sweeping-midterm-repudiation-of-trump-4997528). Scrutin du 3 novembre ; entrée du nouveau Congrès en janvier 2027. Aucun décompte définitif de sièges utilisé ici."
+    },
+    {
+      "id": "S39",
+      "text": "[AP, déclarations de Trump sur la guerre avec l’Iran après les élections, 14 novembre 2026](https://apnews.com/article/02378df1ec3073d2c0f8f162e697d181). Discours fluctuants et incertitudes sur la suite des opérations."
+    },
+    {
+      "id": "S40",
+      "text": "[AP, contestation de la direction républicaine, 15 novembre 2026](https://apnews.com/article/9227f58e61910975d84d066c856c6684). Conséquences des élections de mi-mandat et débat sur la direction du parti."
+    },
+    {
+      "id": "S41",
+      "text": "[France Diplomatie, relations politiques et économiques avec les États-Unis](https://www.diplomatie.gouv.fr/fr/information-par-pays/etats-unis/politique-et-economie). Alliance historique, AUKUS, visites de 2022 et 2024, G7 d’Évian des 15–17 juin 2026 et tensions commerciales."
+    },
+    {
+      "id": "S42",
+      "text": "[Library of Congress, Ford Implements the Moving Assembly Line](https://guides.loc.gov/this-month-in-business-history/October/Ford). Chaîne mobile de Highland Park, octobre 1913."
+    },
+    {
+      "id": "S43",
+      "text": "[Federal Reserve, G.17, tableau 3, publication du 18 février 2026](https://www.federalreserve.gov/Releases/g17/20260218/table3.htm). Moyenne annuelle 2025, millions de véhicules assemblés aux États-Unis : autos 1,28 ; light trucks 8,64 ; poids moyens et lourds 0,25. Conversion en unités par × 1 000 000. Les arrondis publiés produisent 10,17 millions pour ces postes, contre 10,18 millions pour le total officiel ; aucun ajustement."
+    },
+    {
+      "id": "S44",
+      "text": "[EPA, Automotive Trends Report, définitions des catégories](https://www.epa.gov/automotive-trends). Les catégories américaines de light trucks comprennent notamment des SUV, pickups et vans. Les catégories EPA et les séries d’assemblage de la Fed ne constituent pas une série de ventes par motorisation."
+    },
+    {
+      "id": "S45",
+      "text": "[Visit Detroit, Discovering Detroit’s Techno Roots](https://visitdetroit.com/inside-the-d/discovering-detroits-techno-roots/). Juan Atkins, Derrick May, Kevin Saunderson, héritage noir de la techno et festival Movement."
+    },
+    {
+      "id": "S46",
+      "text": "[Brand USA, cultures et cuisines régionales](https://www.visittheusa.com/experience/discover-regional-cuisines-united-states). Gastronomies régionales et apports culturels ; organisme national de promotion touristique."
+    },
+    {
+      "id": "S47",
+      "text": "[Arizona Department of Transportation, Route 66 celebrates 100 years of travel](https://azdot.gov/adot-blog/route-66-celebrates-100-years-travel), novembre 2026. Centenaire de la désignation du 11 novembre 1926."
+    },
+    {
+      "id": "S48",
+      "text": "[Census Bureau, estimations municipales Vintage 2025, 14 mai 2026](https://www.census.gov/newsroom/press-releases/2026/vintage-2025-city-town-pop-estimates.html) et [tableau des villes, Population Clock](https://www.census.gov/popclock/). New York 8 584 629 ; Los Angeles 3 869 089 ; Chicago 2 731 585 ; Houston 2 397 315 ; Phoenix 1 665 481 ; Philadelphie 1 574 281. Municipalités au 1er juillet 2025, distinctes des agglomérations."
+    },
+    {
+      "id": "S49",
+      "text": "[Wikimedia Commons, Flag of the United States.svg](https://commons.wikimedia.org/wiki/File:Flag_of_the_United_States.svg). Drapeau officiel, domaine public. SVG téléchargé depuis Wikimedia Commons, dessin et proportions conservés."
+    },
+    {
+      "id": "S50",
+      "text": "[U.S. Global Change Research Program, Fifth National Climate Assessment](https://nca2023.globalchange.gov/). Régions, chaleur, sécheresse, feux et risques côtiers, 2023 ; [National Park Service, provinces physiographiques](https://www.nps.gov/subjects/geology/physiographic-provinces.htm)."
+    },
+    {
+      "id": "S51",
+      "text": "[Boston Athletic Association, Boston Marathon](https://www.baa.org/races/boston-marathon) et [National Park Service, loisirs et activités](https://www.nps.gov/subjects/healthandsafety/outdoor-recreation.htm). Course et sports de plein air ; pratiques dépendantes du lieu et de la saison."
+    },
+    {
+      "id": "S52",
+      "text": "[CFM International, présentation](https://www.cfmaeroengines.com/about/). Coentreprise de Safran Aircraft Engines et GE Aerospace, industrie aéronautique franco-américaine."
+    },
+    {
+      "id": "NE",
+      "text": "[Natural Earth](https://www.naturalearthdata.com/about/terms-of-use/), domaine public. Contours locaux 1:110 m et 1:50 m ; [centres urbains 1:10 m](https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_populated_places.geojson). Repères cartographiques ; les contours ne constituent pas une position sur les frontières."
+    }
+  ],
+  "hero_sources": [
+    "S01",
+    "S49"
+  ],
+  "map_sources": {
+    "locator": [
+      "S01",
+      "NE"
+    ],
+    "cities": [
+      "S48",
+      "NE"
+    ],
+    "relief": [
+      "S12"
+    ]
+  },
+  "prose_values": {
+    "travail-us": {
+      "value": 40,
+      "unit": "heures",
+      "precision": 0
+    },
+    "grands-electeurs": {
+      "value": 312,
+      "unit": "grands électeurs",
+      "precision": 0
+    }
+  },
+  "cities_title": "Six grands pôles urbains",
+  "cities_scope": "Municipalités · 1er juillet 2025 · hors agglomérations",
+  "relief_title": "Les États contigus : un Ouest montagneux",
+  "relief_alt": "Carte physique des États-Unis contigus. Hautes chaînes et plateaux à l’ouest, grandes plaines au centre, Appalaches à l’est. Alaska et Hawaï hors champ.",
+  "relief_landmarks": [
+    {
+      "label": "Les chaînes de l’Ouest",
+      "text": "Rocheuses, Sierra Nevada et Cascades séparent bassins humides et régions sèches."
+    },
+    {
+      "label": "Les plaines centrales",
+      "text": "Le bassin du Mississippi relie agriculture, villes et voies navigables."
+    },
+    {
+      "label": "Les Appalaches",
+      "text": "Un vieux massif entre les Grands Lacs, l’intérieur et la façade atlantique."
+    }
+  ],
+  "euro": {
+    "currency": "USD",
+    "per_euro": 1.13,
+    "year": 2025,
+    "source_ids": [
+      "S18"
+    ]
+  }
+}

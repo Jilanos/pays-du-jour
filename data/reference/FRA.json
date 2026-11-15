@@ -352,5 +352,33 @@
       180318,
       31516
     ]
+  },
+  "superficie-usa": {
+    "status": "non_comparable",
+    "reason": "Le total américain inclut des eaux côtières et territoriales. Le champ hydrologique de la superficie Eurostat française disponible n’est pas harmonisé.",
+    "source_ids": [
+      "FR-AREA"
+    ]
+  },
+  "gini-usa": {
+    "status": "non_comparable",
+    "reason": "Revenu monétaire par ménage avant impôts aux États-Unis ; niveau de vie par unité de consommation après redistribution en France.",
+    "source_ids": [
+      "FR-GINI"
+    ]
+  },
+  "salaires-usa": {
+    "status": "non_comparable",
+    "reason": "OEWS : salaire horaire brut des emplois à temps plein ou partiel, primes hors production exclues ; référence française : rémunérations en équivalent temps plein du privé, primes incluses.",
+    "source_ids": [
+      "FR-WAGE"
+    ]
+  },
+  "pib-secteurs-usa": {
+    "status": "non_comparable",
+    "reason": "Parts américaines du PIB courant BEA 2024 ; référence française 2025 portant sur la VA hors impôts nets sur les produits. Année et dénominateur différents.",
+    "source_ids": [
+      "FR-SECTORS"
+    ]
   }
 }
