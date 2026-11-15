@@ -2,7 +2,7 @@
 
 from html import escape
 
-from .format import number, rounded
+from .format import number, rounded, scale_word
 
 
 def reference(item, references):
@@ -28,10 +28,11 @@ def metric(item):
     unit = item.get("unit", "")
     if abs(value) >= 1e9:
         val = rounded(value / 1e9)
-        unit = "milliards " + unit
+        unit = scale_word("milliard", val) + " " + unit
     elif abs(value) >= 1e6:
         val = number(value / 1e6, 1, fixed=True)
-        unit = "millions d’habitants" if unit == "habitants" else "millions " + unit
+        word = scale_word("million", val)
+        unit = f"{word} d’habitants" if unit == "habitants" else f"{word} {unit}"
     else:
         val = rounded(value, item.get("precision"))
     return f'<strong>{val}</strong><span class="metric-unit">{escape(unit)}</span>'

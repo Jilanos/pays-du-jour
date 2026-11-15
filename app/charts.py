@@ -4,7 +4,7 @@ from html import escape
 from math import ceil, floor, isfinite, log10
 from xml.etree.ElementTree import Element, SubElement, tostring
 
-from .format import number, quantity
+from .format import euro, number, quantity
 
 COLORS = [f"var(--cat-{i})" for i in range(1, 7)]
 MONTHS = [
@@ -234,6 +234,14 @@ def pyramid(chart, mobile=False):
     return finish(root)
 
 
+def converted(value, chart):
+    """Approximate euro value next to a local-currency amount, when the chart opts in."""
+    fx = chart.get("_euro")
+    if not fx:
+        return ""
+    return f' <span class="euro">(≈\u00a0{euro(value, chart["unit"], fx)})</span>'
+
+
 def bar(chart):
     vals = pairs(chart["labels"], chart["values"])
     ref = chart.get("_france", {})
@@ -246,7 +254,8 @@ def bar(chart):
         cls = " highlighted" if label == chart.get("highlight") else ""
         out.append(
             f'<div class="bar-row{cls}"><div class="row-heading"><span>{escape(label)}</span>'
-            f"<strong>{quantity(value, chart['unit'], chart.get('precision'))}</strong></div>"
+            f"<strong>{quantity(value, chart['unit'], chart.get('precision'))}"
+            f"{converted(value, chart)}</strong></div>"
             f'<div class="bar-track"><span style="width:{value / limit * 100:.4f}%"></span></div>'
         )
         if refs:

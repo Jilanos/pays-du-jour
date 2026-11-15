@@ -2,13 +2,14 @@
 
 import json
 import re
+import shutil
 from html.parser import HTMLParser
 
 import pytest
 from fastapi.testclient import TestClient
 
 from app.config import ROOT, Settings
-from app.format import number, quantity, rounded
+from app.format import euro, number, quantity, rounded, with_euro
 from app.main import create_app
 from app.sources import Sources
 
@@ -35,6 +36,9 @@ class Links(HTMLParser):
         (922454000000, "USD", "922\u00a0milliards\u00a0USD"),
         (20.79, "%", "20,8\u202f%"),
         (0, "%", "0\u202f%"),
+        (1604000, "TWD", "1,6\u00a0million\u00a0TWD"),
+        (1990000, "TWD", "2,0\u00a0millions\u00a0TWD"),
+        (1.2e9, "USD", "1,2\u00a0milliard\u00a0USD"),
     ],
 )
 def test_french_reading_precision(value, unit, expected):
@@ -123,3 +127,36 @@ def test_reference_pyramid_cohorts_and_total():
         if comparison["status"] != "comparable":
             assert comparison["reason"]
             assert "value" not in comparison and "values" not in comparison
+
+
+def test_euro_conversion_uses_the_stored_rate_and_keeps_the_unit_suffix():
+    fx = {"currency": "TWD", "per_euro": 35.217, "year": 2025}
+    assert euro(50643, "TWD/mois", fx) == "1\u202f440\u00a0€/mois"
+    assert with_euro("50 600 TWD", 1604000, "TWD", fx) == "50 600 TWD (≈\u00a045\u202f500\u00a0€)"
+    with pytest.raises(ValueError, match="expects an amount in TWD"):
+        euro(10, "USD", fx)
+
+
+def test_production_wages_and_incomes_show_euros_with_a_cited_rate():
+    with TestClient(create_app()) as client:
+        html = client.get("/pays/TWN").text
+    body, sources = html.split('<section class="sources"', 1)
+    wages = body.split('id="fig-salaires"', 1)[1].split("</figure>", 1)[0]
+    assert '50\u202f600\u00a0TWD/mois <span class="euro">(≈\u00a01\u202f440\u00a0€/mois)' in wages
+    assert "1,6\u00a0million\u00a0TWD (≈\u00a045\u202f500\u00a0€)" in body
+    assert "1\u00a0€ = 35,22\u00a0TWD, moyenne annuelle 2025" in sources
+    assert 'href="#fig-salaires">↩' in sources.split('id="src-S57"', 1)[1].split("</li>", 1)[0]
+
+
+def test_euro_conversion_rejects_a_rate_from_another_year(tmp_path):
+    from dataclasses import replace
+
+    from app.content import read_fiche
+
+    folder = tmp_path / "TWN"
+    shutil.copytree(ROOT / "fiches/TWN", folder)
+    data = json.loads((folder / "data.json").read_text())
+    data["euro"]["year"] = 2024
+    (folder / "data.json").write_text(json.dumps(data, ensure_ascii=False))
+    with pytest.raises(ValueError, match="euro rate year 2024"):
+        read_fiche("TWN", replace(Settings(), content_dir=tmp_path))

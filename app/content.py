@@ -16,7 +16,7 @@ from markupsafe import Markup
 from .charts import render_chart
 from .components import comparable, indices, keyfacts, reference
 from .config import ROOT, Settings
-from .format import record
+from .format import NBSP, number, record, with_euro
 from .maps import cities, locator
 from .sources import Sources
 from .typo import french
@@ -75,6 +75,41 @@ def country_list(settings: Settings):
     return countries
 
 
+def euro_rate(data, sources):
+    """The fiche's euro conversion record, validated, with its rate noted in the sources."""
+    fx = data.get("euro")
+    if not fx:
+        return None
+    for key in ("currency", "per_euro", "year", "source_ids"):
+        if not fx.get(key):
+            raise ValueError(f"euro: missing {key}")
+    note = (
+        f"Conversion en euros{NBSP}: 1{NBSP}€ = {number(fx['per_euro'], 2, fixed=True)}"
+        f"{NBSP}{fx['currency']}, moyenne annuelle {fx['year']}."
+    )
+    if fx.get("basis"):
+        note += " " + fx["basis"]
+    sources.annotate(fx["source_ids"][0], note)
+    return fx
+
+
+def euro_for(item, fx, where):
+    """The rate to apply to an opted-in record, checking the year matches."""
+    if not item.get("euro"):
+        return None
+    if not fx:
+        raise ValueError(f"{where}: euro conversion requested without a fiche euro rate")
+    if "year" in item and item["year"] != fx["year"]:
+        raise ValueError(f"{where}: euro rate year {fx['year']} differs from {item['year']}")
+    return fx
+
+
+def prose_value(item, fx, key):
+    text = record(item)
+    rate = euro_for(item, fx, f"prose value {key}")
+    return with_euro(text, item["value"], item.get("unit", ""), rate) if rate else text
+
+
 def read_fiche(iso3: str, settings: Settings) -> Fiche:
     if not ISO3.fullmatch(iso3):
         raise FileNotFoundError(iso3)
@@ -90,6 +125,8 @@ def read_fiche(iso3: str, settings: Settings) -> Fiche:
     references = json.loads((ROOT / "data/reference/FRA.json").read_text())
     sources = Sources(data.get("sources", []) + references["sources"], meta["date_donnees"])
     charts = {chart["id"]: chart for chart in data.get("charts", [])}
+    fx = euro_rate(data, sources)
+    values = data.get("prose_values", {})
     hero_marker = sources.cite("identite", "Identité et drapeau", data.get("hero_sources", []))
     map_marker = sources.cite(
         "situation", "Situation régionale", data.get("map_sources", {}).get("locator", [])
@@ -106,16 +143,22 @@ def read_fiche(iso3: str, settings: Settings) -> Fiche:
     toc, counts, citation_ids = [], {}, set()
     for index, token in enumerate(tokens):
         if token.type == "inline":
-            content = VALUE.sub(lambda m: record(data["prose_values"][m[1]]), token.content)
+            converted = [k for k in VALUE.findall(token.content) if values[k].get("euro")]
+            content = VALUE.sub(lambda m: prose_value(values[m[1]], fx, m[1]), token.content)
             citation = CITATION.search(content)
             marker = ""
+            if converted and not citation:
+                raise ValueError(f"Euro value {converted[0]} needs a sourced paragraph")
             if citation:
                 anchor, ids, label = citation.groups()
                 if anchor in citation_ids:
                     raise ValueError(f"Duplicate paragraph anchor: {anchor}")
                 citation_ids.add(anchor)
                 tokens[index - 1].attrSet("id", anchor)
-                marker = sources.cite(anchor, label, [s.strip() for s in ids.split(",")])
+                ids = [s.strip() for s in ids.split(",")]
+                if converted:
+                    ids += fx["source_ids"]
+                marker = sources.cite(anchor, label, ids)
                 content = content[: citation.start()]
             token.children = md.parseInline(content)[0].children
             for child in token.children or []:
@@ -156,10 +199,13 @@ def read_fiche(iso3: str, settings: Settings) -> Fiche:
             chart = charts[key[6:]].copy()
             ref = comparable(reference(chart, references))
             chart["_france"] = ref
+            chart["_euro"] = euro_for(chart, fx, f"chart {chart['id']}")
             marker = sources.cite(
                 "fig-" + chart["id"],
                 chart["title"],
-                chart.get("source_ids", []) + ref.get("source_ids", []),
+                chart.get("source_ids", [])
+                + ref.get("source_ids", [])
+                + (fx["source_ids"] if chart["_euro"] else []),
                 [chart.get("note")],
             )
             rendered = render_chart(chart, marker)

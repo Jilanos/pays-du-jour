@@ -36,6 +36,13 @@ class Sources:
             f'aria-label="Sources : {escape(label, quote=True)}">·</a></sup>'
         )
 
+    def annotate(self, source_id, note):
+        """Attach a bibliography note to a source, shown only if the source is cited."""
+        if source_id not in self.records:
+            raise ValueError(f"Unknown source {source_id} in annotation")
+        if note not in self.notes[source_id]:
+            self.notes[source_id].append(note)
+
     def render(self):
         displayed = [key for key in self.records if key in self.uses]
         numbers = {key: i + 1 for i, key in enumerate(displayed)}

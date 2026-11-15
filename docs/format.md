@@ -99,6 +99,29 @@ nonbreaking units, one decimal for percentages, three significant digits below a
 and for billions, one decimal for millions. Indices retain published precision.
 `app/typo.py` applies French spacing to prose text nodes, leaving URLs and code intact.
 
+## Euro equivalents
+
+Mean and median wages and incomes show the local amount followed by an approximate
+euro value: `50 600 TWD/mois (≈ 1 440 €/mois)`. The rate lives in `data.json`:
+
+```json
+"euro": {
+  "currency": "TWD",
+  "per_euro": 35.217054,
+  "year": 2025,
+  "basis": "How the rate was obtained, when it is not a direct published rate.",
+  "source_ids": ["S57", "S58"]
+}
+```
+
+`per_euro` is the annual average of the data year: units of local currency for one euro,
+from ECB reference rates or Banque de France, otherwise a sourced cross rate explained in
+`basis`. A `bar`/`barh` chart or a `prose_values` record opts in with `"euro": true`; its
+unit must start with the currency code (`TWD`, `TWD/mois`). A `year` on the record must
+equal the rate year, or rendering fails. The app adds the rate sources to the citation
+and writes the rate and year under the first rate source in the bibliography. Raw data
+tables keep the local currency only.
+
 ## Charts
 
 Every record has `id`, `type`, `title`, `year`, `source_ids`, and preferably `subtitle`
