@@ -38,6 +38,7 @@ def quantity(value, unit='', precision=None, compact=False):
     else:
         result = rounded(value, precision)
     if unit:
+        unit = 'd’habitants' if unit == 'habitants' and abs(value) >= 1e6 and not compact else unit
         result += NBSP + unit
     return result
 

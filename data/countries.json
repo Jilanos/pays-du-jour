@@ -1,0 +1,790 @@
+{
+  "TWN": {
+    "iso2": "TW",
+    "continent": "Asie"
+  },
+  "USA": {
+    "iso2": "US",
+    "continent": "Amérique du Nord"
+  },
+  "CHN": {
+    "iso2": "CN",
+    "continent": "Asie"
+  },
+  "CHE": {
+    "iso2": "CH",
+    "continent": "Europe"
+  },
+  "MAR": {
+    "iso2": "MA",
+    "continent": "Afrique"
+  },
+  "DZA": {
+    "iso2": "DZ",
+    "continent": "Afrique"
+  },
+  "DEU": {
+    "iso2": "DE",
+    "continent": "Europe"
+  },
+  "JPN": {
+    "iso2": "JP",
+    "continent": "Asie"
+  },
+  "KOR": {
+    "iso2": "KR",
+    "continent": "Asie"
+  },
+  "NLD": {
+    "iso2": "NL",
+    "continent": "Europe"
+  },
+  "UKR": {
+    "iso2": "UA",
+    "continent": "Europe"
+  },
+  "RUS": {
+    "iso2": "RU",
+    "continent": "Europe"
+  },
+  "ISR": {
+    "iso2": "IL",
+    "continent": "Asie"
+  },
+  "PSE": {
+    "iso2": "PS",
+    "continent": "Asie"
+  },
+  "IND": {
+    "iso2": "IN",
+    "continent": "Asie"
+  },
+  "GBR": {
+    "iso2": "GB",
+    "continent": "Europe"
+  },
+  "BEL": {
+    "iso2": "BE",
+    "continent": "Europe"
+  },
+  "ESP": {
+    "iso2": "ES",
+    "continent": "Europe"
+  },
+  "ITA": {
+    "iso2": "IT",
+    "continent": "Europe"
+  },
+  "LUX": {
+    "iso2": "LU",
+    "continent": "Europe"
+  },
+  "MCO": {
+    "iso2": "MC",
+    "continent": "Europe"
+  },
+  "AND": {
+    "iso2": "AD",
+    "continent": "Europe"
+  },
+  "TUN": {
+    "iso2": "TN",
+    "continent": "Afrique"
+  },
+  "SEN": {
+    "iso2": "SN",
+    "continent": "Afrique"
+  },
+  "CIV": {
+    "iso2": "CI",
+    "continent": "Afrique"
+  },
+  "LBN": {
+    "iso2": "LB",
+    "continent": "Asie"
+  },
+  "CAN": {
+    "iso2": "CA",
+    "continent": "Amérique du Nord"
+  },
+  "FRA": {
+    "iso2": "FR",
+    "continent": "Europe"
+  },
+  "VAT": {
+    "iso2": "VA",
+    "continent": "Europe"
+  },
+  "MLI": {
+    "iso2": "ML",
+    "continent": "Afrique"
+  },
+  "HTI": {
+    "iso2": "HT",
+    "continent": "Amérique du Nord"
+  },
+  "PRT": {
+    "iso2": "PT",
+    "continent": "Europe"
+  },
+  "SWE": {
+    "iso2": "SE",
+    "continent": "Europe"
+  },
+  "CZE": {
+    "iso2": "CZ",
+    "continent": "Europe"
+  },
+  "MEX": {
+    "iso2": "MX",
+    "continent": "Amérique du Nord"
+  },
+  "BRA": {
+    "iso2": "BR",
+    "continent": "Amérique du Sud"
+  },
+  "NOR": {
+    "iso2": "NO",
+    "continent": "Europe"
+  },
+  "FIN": {
+    "iso2": "FI",
+    "continent": "Europe"
+  },
+  "EST": {
+    "iso2": "EE",
+    "continent": "Europe"
+  },
+  "GEO": {
+    "iso2": "GE",
+    "continent": "Asie"
+  },
+  "KEN": {
+    "iso2": "KE",
+    "continent": "Afrique"
+  },
+  "ETH": {
+    "iso2": "ET",
+    "continent": "Afrique"
+  },
+  "JAM": {
+    "iso2": "JM",
+    "continent": "Amérique du Nord"
+  },
+  "NZL": {
+    "iso2": "NZ",
+    "continent": "Océanie"
+  },
+  "ZAF": {
+    "iso2": "ZA",
+    "continent": "Afrique"
+  },
+  "ARG": {
+    "iso2": "AR",
+    "continent": "Amérique du Sud"
+  },
+  "SGP": {
+    "iso2": "SG",
+    "continent": "Asie"
+  },
+  "ARE": {
+    "iso2": "AE",
+    "continent": "Asie"
+  },
+  "SAU": {
+    "iso2": "SA",
+    "continent": "Asie"
+  },
+  "QAT": {
+    "iso2": "QA",
+    "continent": "Asie"
+  },
+  "IRL": {
+    "iso2": "IE",
+    "continent": "Europe"
+  },
+  "ISL": {
+    "iso2": "IS",
+    "continent": "Europe"
+  },
+  "POL": {
+    "iso2": "PL",
+    "continent": "Europe"
+  },
+  "HUN": {
+    "iso2": "HU",
+    "continent": "Europe"
+  },
+  "TUR": {
+    "iso2": "TR",
+    "continent": "Asie"
+  },
+  "IRN": {
+    "iso2": "IR",
+    "continent": "Asie"
+  },
+  "VNM": {
+    "iso2": "VN",
+    "continent": "Asie"
+  },
+  "IDN": {
+    "iso2": "ID",
+    "continent": "Asie"
+  },
+  "AUS": {
+    "iso2": "AU",
+    "continent": "Océanie"
+  },
+  "MYS": {
+    "iso2": "MY",
+    "continent": "Asie"
+  },
+  "CHL": {
+    "iso2": "CL",
+    "continent": "Amérique du Sud"
+  },
+  "BOL": {
+    "iso2": "BO",
+    "continent": "Amérique du Sud"
+  },
+  "COD": {
+    "iso2": "CD",
+    "continent": "Afrique"
+  },
+  "AUT": {
+    "iso2": "AT",
+    "continent": "Europe"
+  },
+  "DNK": {
+    "iso2": "DK",
+    "continent": "Europe"
+  },
+  "SVK": {
+    "iso2": "SK",
+    "continent": "Europe"
+  },
+  "ROU": {
+    "iso2": "RO",
+    "continent": "Europe"
+  },
+  "PRK": {
+    "iso2": "KP",
+    "continent": "Asie"
+  },
+  "VEN": {
+    "iso2": "VE",
+    "continent": "Amérique du Sud"
+  },
+  "SRB": {
+    "iso2": "RS",
+    "continent": "Europe"
+  },
+  "XKX": {
+    "iso2": "XK",
+    "continent": "Europe"
+  },
+  "GRC": {
+    "iso2": "GR",
+    "continent": "Europe"
+  },
+  "ALB": {
+    "iso2": "AL",
+    "continent": "Europe"
+  },
+  "EGY": {
+    "iso2": "EG",
+    "continent": "Afrique"
+  },
+  "NGA": {
+    "iso2": "NG",
+    "continent": "Afrique"
+  },
+  "PAK": {
+    "iso2": "PK",
+    "continent": "Asie"
+  },
+  "COL": {
+    "iso2": "CO",
+    "continent": "Amérique du Sud"
+  },
+  "PNG": {
+    "iso2": "PG",
+    "continent": "Océanie"
+  },
+  "ARM": {
+    "iso2": "AM",
+    "continent": "Asie"
+  },
+  "LBY": {
+    "iso2": "LY",
+    "continent": "Afrique"
+  },
+  "GHA": {
+    "iso2": "GH",
+    "continent": "Afrique"
+  },
+  "BGD": {
+    "iso2": "BD",
+    "continent": "Asie"
+  },
+  "PER": {
+    "iso2": "PE",
+    "continent": "Amérique du Sud"
+  },
+  "FJI": {
+    "iso2": "FJ",
+    "continent": "Océanie"
+  },
+  "AZE": {
+    "iso2": "AZ",
+    "continent": "Asie"
+  },
+  "BHR": {
+    "iso2": "BH",
+    "continent": "Asie"
+  },
+  "BFA": {
+    "iso2": "BF",
+    "continent": "Afrique"
+  },
+  "AFG": {
+    "iso2": "AF",
+    "continent": "Asie"
+  },
+  "ECU": {
+    "iso2": "EC",
+    "continent": "Amérique du Sud"
+  },
+  "SLB": {
+    "iso2": "SB",
+    "continent": "Océanie"
+  },
+  "BLR": {
+    "iso2": "BY",
+    "continent": "Europe"
+  },
+  "IRQ": {
+    "iso2": "IQ",
+    "continent": "Asie"
+  },
+  "NER": {
+    "iso2": "NE",
+    "continent": "Afrique"
+  },
+  "THA": {
+    "iso2": "TH",
+    "continent": "Asie"
+  },
+  "URY": {
+    "iso2": "UY",
+    "continent": "Amérique du Sud"
+  },
+  "VUT": {
+    "iso2": "VU",
+    "continent": "Océanie"
+  },
+  "BIH": {
+    "iso2": "BA",
+    "continent": "Europe"
+  },
+  "JOR": {
+    "iso2": "JO",
+    "continent": "Asie"
+  },
+  "TCD": {
+    "iso2": "TD",
+    "continent": "Afrique"
+  },
+  "PHL": {
+    "iso2": "PH",
+    "continent": "Asie"
+  },
+  "PRY": {
+    "iso2": "PY",
+    "continent": "Amérique du Sud"
+  },
+  "WSM": {
+    "iso2": "WS",
+    "continent": "Océanie"
+  },
+  "BGR": {
+    "iso2": "BG",
+    "continent": "Europe"
+  },
+  "KWT": {
+    "iso2": "KW",
+    "continent": "Asie"
+  },
+  "CMR": {
+    "iso2": "CM",
+    "continent": "Afrique"
+  },
+  "MMR": {
+    "iso2": "MM",
+    "continent": "Asie"
+  },
+  "GUY": {
+    "iso2": "GY",
+    "continent": "Amérique du Sud"
+  },
+  "TON": {
+    "iso2": "TO",
+    "continent": "Océanie"
+  },
+  "CYP": {
+    "iso2": "CY",
+    "continent": "Europe"
+  },
+  "OMN": {
+    "iso2": "OM",
+    "continent": "Asie"
+  },
+  "GAB": {
+    "iso2": "GA",
+    "continent": "Afrique"
+  },
+  "KHM": {
+    "iso2": "KH",
+    "continent": "Asie"
+  },
+  "SUR": {
+    "iso2": "SR",
+    "continent": "Amérique du Sud"
+  },
+  "KIR": {
+    "iso2": "KI",
+    "continent": "Océanie"
+  },
+  "HRV": {
+    "iso2": "HR",
+    "continent": "Europe"
+  },
+  "SYR": {
+    "iso2": "SY",
+    "continent": "Asie"
+  },
+  "COG": {
+    "iso2": "CG",
+    "continent": "Afrique"
+  },
+  "LAO": {
+    "iso2": "LA",
+    "continent": "Asie"
+  },
+  "CUB": {
+    "iso2": "CU",
+    "continent": "Amérique du Nord"
+  },
+  "TUV": {
+    "iso2": "TV",
+    "continent": "Océanie"
+  },
+  "LVA": {
+    "iso2": "LV",
+    "continent": "Europe"
+  },
+  "YEM": {
+    "iso2": "YE",
+    "continent": "Asie"
+  },
+  "CAF": {
+    "iso2": "CF",
+    "continent": "Afrique"
+  },
+  "MNG": {
+    "iso2": "MN",
+    "continent": "Asie"
+  },
+  "DOM": {
+    "iso2": "DO",
+    "continent": "Amérique du Nord"
+  },
+  "NRU": {
+    "iso2": "NR",
+    "continent": "Océanie"
+  },
+  "LIE": {
+    "iso2": "LI",
+    "continent": "Europe"
+  },
+  "SDN": {
+    "iso2": "SD",
+    "continent": "Afrique"
+  },
+  "GIN": {
+    "iso2": "GN",
+    "continent": "Afrique"
+  },
+  "KAZ": {
+    "iso2": "KZ",
+    "continent": "Asie"
+  },
+  "PAN": {
+    "iso2": "PA",
+    "continent": "Amérique du Nord"
+  },
+  "PLW": {
+    "iso2": "PW",
+    "continent": "Océanie"
+  },
+  "LTU": {
+    "iso2": "LT",
+    "continent": "Europe"
+  },
+  "MRT": {
+    "iso2": "MR",
+    "continent": "Afrique"
+  },
+  "BEN": {
+    "iso2": "BJ",
+    "continent": "Afrique"
+  },
+  "UZB": {
+    "iso2": "UZ",
+    "continent": "Asie"
+  },
+  "CRI": {
+    "iso2": "CR",
+    "continent": "Amérique du Nord"
+  },
+  "FSM": {
+    "iso2": "FM",
+    "continent": "Océanie"
+  },
+  "MLT": {
+    "iso2": "MT",
+    "continent": "Europe"
+  },
+  "TGO": {
+    "iso2": "TG",
+    "continent": "Afrique"
+  },
+  "KGZ": {
+    "iso2": "KG",
+    "continent": "Asie"
+  },
+  "NIC": {
+    "iso2": "NI",
+    "continent": "Amérique du Nord"
+  },
+  "MHL": {
+    "iso2": "MH",
+    "continent": "Océanie"
+  },
+  "MDA": {
+    "iso2": "MD",
+    "continent": "Europe"
+  },
+  "MDG": {
+    "iso2": "MG",
+    "continent": "Afrique"
+  },
+  "TJK": {
+    "iso2": "TJ",
+    "continent": "Asie"
+  },
+  "HND": {
+    "iso2": "HN",
+    "continent": "Amérique du Nord"
+  },
+  "MNE": {
+    "iso2": "ME",
+    "continent": "Europe"
+  },
+  "RWA": {
+    "iso2": "RW",
+    "continent": "Afrique"
+  },
+  "TKM": {
+    "iso2": "TM",
+    "continent": "Asie"
+  },
+  "SLV": {
+    "iso2": "SV",
+    "continent": "Amérique du Nord"
+  },
+  "MKD": {
+    "iso2": "MK",
+    "continent": "Europe"
+  },
+  "BDI": {
+    "iso2": "BI",
+    "continent": "Afrique"
+  },
+  "NPL": {
+    "iso2": "NP",
+    "continent": "Asie"
+  },
+  "GTM": {
+    "iso2": "GT",
+    "continent": "Amérique du Nord"
+  },
+  "SMR": {
+    "iso2": "SM",
+    "continent": "Europe"
+  },
+  "UGA": {
+    "iso2": "UG",
+    "continent": "Afrique"
+  },
+  "BTN": {
+    "iso2": "BT",
+    "continent": "Asie"
+  },
+  "BLZ": {
+    "iso2": "BZ",
+    "continent": "Amérique du Nord"
+  },
+  "SVN": {
+    "iso2": "SI",
+    "continent": "Europe"
+  },
+  "TZA": {
+    "iso2": "TZ",
+    "continent": "Afrique"
+  },
+  "LKA": {
+    "iso2": "LK",
+    "continent": "Asie"
+  },
+  "BHS": {
+    "iso2": "BS",
+    "continent": "Amérique du Nord"
+  },
+  "SOM": {
+    "iso2": "SO",
+    "continent": "Afrique"
+  },
+  "MDV": {
+    "iso2": "MV",
+    "continent": "Asie"
+  },
+  "BRB": {
+    "iso2": "BB",
+    "continent": "Amérique du Nord"
+  },
+  "DJI": {
+    "iso2": "DJ",
+    "continent": "Afrique"
+  },
+  "BRN": {
+    "iso2": "BN",
+    "continent": "Asie"
+  },
+  "TTO": {
+    "iso2": "TT",
+    "continent": "Amérique du Sud"
+  },
+  "ERI": {
+    "iso2": "ER",
+    "continent": "Afrique"
+  },
+  "TLS": {
+    "iso2": "TL",
+    "continent": "Asie"
+  },
+  "ATG": {
+    "iso2": "AG",
+    "continent": "Amérique du Nord"
+  },
+  "SSD": {
+    "iso2": "SS",
+    "continent": "Afrique"
+  },
+  "DMA": {
+    "iso2": "DM",
+    "continent": "Amérique du Nord"
+  },
+  "AGO": {
+    "iso2": "AO",
+    "continent": "Afrique"
+  },
+  "GRD": {
+    "iso2": "GD",
+    "continent": "Amérique du Nord"
+  },
+  "ZMB": {
+    "iso2": "ZM",
+    "continent": "Afrique"
+  },
+  "KNA": {
+    "iso2": "KN",
+    "continent": "Amérique du Nord"
+  },
+  "ZWE": {
+    "iso2": "ZW",
+    "continent": "Afrique"
+  },
+  "LCA": {
+    "iso2": "LC",
+    "continent": "Amérique du Nord"
+  },
+  "MOZ": {
+    "iso2": "MZ",
+    "continent": "Afrique"
+  },
+  "VCT": {
+    "iso2": "VC",
+    "continent": "Amérique du Nord"
+  },
+  "MWI": {
+    "iso2": "MW",
+    "continent": "Afrique"
+  },
+  "BWA": {
+    "iso2": "BW",
+    "continent": "Afrique"
+  },
+  "NAM": {
+    "iso2": "NA",
+    "continent": "Afrique"
+  },
+  "LSO": {
+    "iso2": "LS",
+    "continent": "Afrique"
+  },
+  "SWZ": {
+    "iso2": "SZ",
+    "continent": "Afrique"
+  },
+  "GMB": {
+    "iso2": "GM",
+    "continent": "Afrique"
+  },
+  "GNB": {
+    "iso2": "GW",
+    "continent": "Afrique"
+  },
+  "SLE": {
+    "iso2": "SL",
+    "continent": "Afrique"
+  },
+  "LBR": {
+    "iso2": "LR",
+    "continent": "Afrique"
+  },
+  "CPV": {
+    "iso2": "CV",
+    "continent": "Afrique"
+  },
+  "STP": {
+    "iso2": "ST",
+    "continent": "Afrique"
+  },
+  "GNQ": {
+    "iso2": "GQ",
+    "continent": "Afrique"
+  },
+  "COM": {
+    "iso2": "KM",
+    "continent": "Afrique"
+  },
+  "MUS": {
+    "iso2": "MU",
+    "continent": "Afrique"
+  },
+  "SYC": {
+    "iso2": "SC",
+    "continent": "Afrique"
+  }
+}

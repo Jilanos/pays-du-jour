@@ -35,6 +35,8 @@ class Sources:
                 f'aria-label="Sources : {escape(label, quote=True)}">·</a></sup>')
 
     def render(self):
+        displayed = [key for key in self.records if key in self.uses]
+        numbers = {key: i + 1 for i, key in enumerate(displayed)}
         out = [f'<section class="sources" aria-labelledby="sources"><h2 id="sources">Sources</h2>'
                f'<p class="source-intro">Consultées le {date_fr(self.checked)}. '
                'Les liens de retour retrouvent le passage ou la figure.</p><ol class="source-list">']
@@ -53,7 +55,7 @@ class Sources:
                 out.append(f'<a href="#{escape(anchor)}">↩ {escape(label)}</a>')
                 if ids[0] == source_id and len(ids) > 1:
                     out.append('<span class="related-sources">Avec ' + ', '.join(
-                        f'<a href="#src-{escape(s)}">{list(self.uses).index(s) + 1}</a>'
+                        f'<a href="#src-{escape(s)}">{numbers[s]}</a>'
                         for s in ids[1:]) + '</span>')
             out.append('</div></li>')
         out.append('</ol></section>')

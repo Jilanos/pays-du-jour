@@ -21,7 +21,7 @@
     <div class="index-header"><p class="eyebrow">La collection</p><h2 id="index-title">Choisir une destination</h2><p>Les fiches en couleur sont prêtes à lire. La collection s’enrichit au fil des découvertes.</p></div>
     <form class="index-search" action="/#index" method="get" role="search">
       <label for="country-search">Rechercher un pays</label>
-      <div class="search-controls"><input id="country-search" type="search" name="q" value="{{ q }}" placeholder="Un pays, une envie…"><input type="hidden" name="tri" value="{{ tri }}"><button type="submit">Rechercher</button></div>
+      <div class="search-controls"><input id="country-search" type="search" name="q" value="{{ q }}" placeholder="Nom d’un pays…"><input type="hidden" name="tri" value="{{ tri }}"><button type="submit">Rechercher</button></div>
       <label class="availability"><input type="checkbox" name="disponibles" value="1" {% if only_available %}checked{% endif %}> Fiches disponibles seulement</label>
     </form>
     <nav class="sort" aria-label="{{ ui['home']['sort_label'] }}">
