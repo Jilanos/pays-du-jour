@@ -160,3 +160,17 @@ def test_euro_conversion_rejects_a_rate_from_another_year(tmp_path):
     (folder / "data.json").write_text(json.dumps(data, ensure_ascii=False))
     with pytest.raises(ValueError, match="euro rate year 2024"):
         read_fiche("TWN", replace(Settings(), content_dir=tmp_path))
+
+
+def test_china_chart_labels_and_relief_source_links_use_the_current_country():
+    with TestClient(create_app()) as client:
+        response = client.get("/pays/CHN")
+    assert response.status_code == 200
+    html = response.text
+    assert '<span class="legend-population">Chine</span>' in html
+    assert '<span class="legend-population">Taïwan</span>' not in html
+    assert "<caption>Chine</caption>" in html
+    assert "Relief de l’île" not in html
+    links = Links(html)
+    assert len(links.ids) == len(set(links.ids))
+    assert all(href[1:] in links.ids for href in links.hrefs if href.startswith("#"))
