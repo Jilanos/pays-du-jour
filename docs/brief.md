@@ -20,9 +20,16 @@
 ## Order
 Arbitrary but reasoned: closeness to the reader's interests first (automotive engineering,
 tech and semiconductors, sport, techno music, ties to France, current affairs), then the rest.
-See `data/ordre.md`.
+See `data/ordre.md` and `data/ordre.csv`.
 
 ## Production
 - Generated in advance, in batches, spread over the cdx accounts.
 - Pilot fiche first; launch the series once the format is validated.
 - Sources: World Bank, IMF, open climate data, Natural Earth / OpenStreetMap, Wikipedia, press.
+
+## Hosting (decided 2026-11-15)
+- `pays.paulmondou.fr`: this repo builds its own static Nginx image; infra-paulmondou adds a Caddy block
+  and a service (same pattern as f1 / sommeil). home-paulmondou only gets a link.
+- Public but not indexed (`noindex` meta + robots.txt).
+- Pilot fiche: Taiwan.
+- Generation accounts: claude, worka, workb.

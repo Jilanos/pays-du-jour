@@ -1,0 +1,198 @@
+rang,iso3,pays,palier,palier_nom,raison
+1,TWN,Taïwan,1,"Actualité, tech et géopolitique","semi-conducteurs, TSMC"
+2,USA,États-Unis,1,"Actualité, tech et géopolitique","actualité, tech, auto"
+3,CHN,Chine,1,"Actualité, tech et géopolitique","actualité, VE, batteries"
+4,CHE,Suisse,1,"Actualité, tech et géopolitique",voisin
+5,MAR,Maroc,1,"Actualité, tech et géopolitique","lien France, usines auto"
+6,DZA,Algérie,1,"Actualité, tech et géopolitique",lien France
+7,DEU,Allemagne,1,"Actualité, tech et géopolitique","auto, voisin"
+8,JPN,Japon,1,"Actualité, tech et géopolitique","auto, tech"
+9,KOR,Corée du Sud,1,"Actualité, tech et géopolitique","semi-conducteurs, batteries, auto"
+10,NLD,Pays-Bas,1,"Actualité, tech et géopolitique","ASML, techno"
+11,UKR,Ukraine,1,"Actualité, tech et géopolitique",guerre
+12,RUS,Russie,1,"Actualité, tech et géopolitique","guerre, actualité"
+13,ISR,Israël,1,"Actualité, tech et géopolitique","actualité, tech"
+14,PSE,Palestine,1,"Actualité, tech et géopolitique",actualité
+15,IND,Inde,1,"Actualité, tech et géopolitique","puissance montante, tech"
+16,GBR,Royaume-Uni,1,"Actualité, tech et géopolitique","voisin, F1"
+17,BEL,Belgique,2,Voisins et liens avec la France,voisin
+18,ESP,Espagne,2,Voisins et liens avec la France,voisin
+19,ITA,Italie,2,Voisins et liens avec la France,"voisin, auto"
+20,LUX,Luxembourg,2,Voisins et liens avec la France,voisin
+21,MCO,Monaco,2,Voisins et liens avec la France,"voisin, F1"
+22,AND,Andorre,2,Voisins et liens avec la France,voisin
+23,TUN,Tunisie,2,Voisins et liens avec la France,lien France
+24,SEN,Sénégal,2,Voisins et liens avec la France,lien France
+25,CIV,Côte d'Ivoire,2,Voisins et liens avec la France,lien France
+26,LBN,Liban,2,Voisins et liens avec la France,lien France
+27,CAN,Canada,2,Voisins et liens avec la France,francophonie
+28,FRA,France,2,Voisins et liens avec la France,chez soi
+29,VAT,Vatican,2,Voisins et liens avec la France,micro-État
+30,MLI,Mali,2,Voisins et liens avec la France,"Sahel, rupture avec la France"
+31,HTI,Haïti,2,Voisins et liens avec la France,"francophonie, crise"
+32,PRT,Portugal,2,Voisins et liens avec la France,voisin proche
+33,SWE,Suède,3,"Auto, énergie, sport et techno","Volvo, Northvolt, Spotify"
+34,CZE,Tchéquie,3,"Auto, énergie, sport et techno","Škoda, industrie auto"
+35,MEX,Mexique,3,"Auto, énergie, sport et techno",industrie auto
+36,BRA,Brésil,3,"Auto, énergie, sport et techno","Senna, football"
+37,NOR,Norvège,3,"Auto, énergie, sport et techno",VE à 90 %
+38,FIN,Finlande,3,"Auto, énergie, sport et techno",tech
+39,EST,Estonie,3,"Auto, énergie, sport et techno",État numérique
+40,GEO,Géorgie,3,"Auto, énergie, sport et techno",techno à Tbilissi
+41,KEN,Kenya,3,"Auto, énergie, sport et techno",course de fond
+42,ETH,Éthiopie,3,"Auto, énergie, sport et techno",course de fond
+43,JAM,Jamaïque,3,"Auto, énergie, sport et techno",sprint
+44,NZL,Nouvelle-Zélande,3,"Auto, énergie, sport et techno","rugby, sports outdoor"
+45,ZAF,Afrique du Sud,3,"Auto, énergie, sport et techno","métaux, rugby"
+46,ARG,Argentine,3,"Auto, énergie, sport et techno","Milei, football"
+47,SGP,Singapour,3,"Auto, énergie, sport et techno",hub tech
+48,ARE,Émirats arabes unis,3,"Auto, énergie, sport et techno","F1, hub"
+49,SAU,Arabie saoudite,3,"Auto, énergie, sport et techno","pétrole, sport-washing"
+50,QAT,Qatar,3,"Auto, énergie, sport et techno","gaz, sport"
+51,IRL,Irlande,3,"Auto, énergie, sport et techno",sièges tech
+52,ISL,Islande,3,"Auto, énergie, sport et techno",géothermie
+53,POL,Pologne,3,"Auto, énergie, sport et techno","usines batteries, actualité"
+54,HUN,Hongrie,3,"Auto, énergie, sport et techno","Orbán, usines VE"
+55,TUR,Turquie,3,"Auto, énergie, sport et techno","actualité, auto"
+56,IRN,Iran,3,"Auto, énergie, sport et techno",actualité
+57,VNM,Vietnam,3,"Auto, énergie, sport et techno","VinFast, industrie"
+58,IDN,Indonésie,3,"Auto, énergie, sport et techno",nickel
+59,AUS,Australie,3,"Auto, énergie, sport et techno","lithium, sport"
+60,MYS,Malaisie,3,"Auto, énergie, sport et techno",semi-conducteurs
+61,CHL,Chili,3,"Auto, énergie, sport et techno","lithium, cuivre"
+62,BOL,Bolivie,3,"Auto, énergie, sport et techno",lithium
+63,COD,RD Congo,3,"Auto, énergie, sport et techno",cobalt
+64,AUT,Autriche,3,"Auto, énergie, sport et techno","voisin alpin, Red Bull"
+65,DNK,Danemark,3,"Auto, énergie, sport et techno","éolien, vélo"
+66,SVK,Slovaquie,3,"Auto, énergie, sport et techno",1er producteur auto par habitant
+67,ROU,Roumanie,3,"Auto, énergie, sport et techno",Dacia
+68,PRK,Corée du Nord,3,"Auto, énergie, sport et techno",actualité
+69,VEN,Venezuela,3,"Auto, énergie, sport et techno","pétrole, crise"
+70,SRB,Serbie,3,"Auto, énergie, sport et techno",actualité
+71,XKX,Kosovo,3,"Auto, énergie, sport et techno",reconnaissance
+72,GRC,Grèce,3,"Auto, énergie, sport et techno","crise, Europe"
+73,ALB,Albanie,4,Tour du monde,Europe
+74,EGY,Égypte,4,Tour du monde,Afrique du Nord et Moyen-Orient
+75,NGA,Nigeria,4,Tour du monde,Afrique subsaharienne
+76,PAK,Pakistan,4,Tour du monde,Asie
+77,COL,Colombie,4,Tour du monde,Amériques
+78,PNG,Papouasie-Nouvelle-Guinée,4,Tour du monde,Océanie
+79,ARM,Arménie,4,Tour du monde,Europe
+80,LBY,Libye,4,Tour du monde,Afrique du Nord et Moyen-Orient
+81,GHA,Ghana,4,Tour du monde,Afrique subsaharienne
+82,BGD,Bangladesh,4,Tour du monde,Asie
+83,PER,Pérou,4,Tour du monde,Amériques
+84,FJI,Fidji,4,Tour du monde,Océanie
+85,AZE,Azerbaïdjan,4,Tour du monde,Europe
+86,BHR,Bahreïn,4,Tour du monde,Afrique du Nord et Moyen-Orient
+87,BFA,Burkina Faso,4,Tour du monde,Afrique subsaharienne
+88,AFG,Afghanistan,4,Tour du monde,Asie
+89,ECU,Équateur,4,Tour du monde,Amériques
+90,SLB,Îles Salomon,4,Tour du monde,Océanie
+91,BLR,Biélorussie,4,Tour du monde,Europe
+92,IRQ,Irak,4,Tour du monde,Afrique du Nord et Moyen-Orient
+93,NER,Niger,4,Tour du monde,Afrique subsaharienne
+94,THA,Thaïlande,4,Tour du monde,Asie
+95,URY,Uruguay,4,Tour du monde,Amériques
+96,VUT,Vanuatu,4,Tour du monde,Océanie
+97,BIH,Bosnie-Herzégovine,4,Tour du monde,Europe
+98,JOR,Jordanie,4,Tour du monde,Afrique du Nord et Moyen-Orient
+99,TCD,Tchad,4,Tour du monde,Afrique subsaharienne
+100,PHL,Philippines,4,Tour du monde,Asie
+101,PRY,Paraguay,4,Tour du monde,Amériques
+102,WSM,Samoa,4,Tour du monde,Océanie
+103,BGR,Bulgarie,4,Tour du monde,Europe
+104,KWT,Koweït,4,Tour du monde,Afrique du Nord et Moyen-Orient
+105,CMR,Cameroun,4,Tour du monde,Afrique subsaharienne
+106,MMR,Birmanie,4,Tour du monde,Asie
+107,GUY,Guyana,4,Tour du monde,Amériques
+108,TON,Tonga,4,Tour du monde,Océanie
+109,CYP,Chypre,4,Tour du monde,Europe
+110,OMN,Oman,4,Tour du monde,Afrique du Nord et Moyen-Orient
+111,GAB,Gabon,4,Tour du monde,Afrique subsaharienne
+112,KHM,Cambodge,4,Tour du monde,Asie
+113,SUR,Suriname,4,Tour du monde,Amériques
+114,KIR,Kiribati,4,Tour du monde,Océanie
+115,HRV,Croatie,4,Tour du monde,Europe
+116,SYR,Syrie,4,Tour du monde,Afrique du Nord et Moyen-Orient
+117,COG,Congo,4,Tour du monde,Afrique subsaharienne
+118,LAO,Laos,4,Tour du monde,Asie
+119,CUB,Cuba,4,Tour du monde,Amériques
+120,TUV,Tuvalu,4,Tour du monde,Océanie
+121,LVA,Lettonie,4,Tour du monde,Europe
+122,YEM,Yémen,4,Tour du monde,Afrique du Nord et Moyen-Orient
+123,CAF,Centrafrique,4,Tour du monde,Afrique subsaharienne
+124,MNG,Mongolie,4,Tour du monde,Asie
+125,DOM,République dominicaine,4,Tour du monde,Amériques
+126,NRU,Nauru,4,Tour du monde,Océanie
+127,LIE,Liechtenstein,4,Tour du monde,Europe
+128,SDN,Soudan,4,Tour du monde,Afrique du Nord et Moyen-Orient
+129,GIN,Guinée,4,Tour du monde,Afrique subsaharienne
+130,KAZ,Kazakhstan,4,Tour du monde,Asie
+131,PAN,Panama,4,Tour du monde,Amériques
+132,PLW,Palaos,4,Tour du monde,Océanie
+133,LTU,Lituanie,4,Tour du monde,Europe
+134,MRT,Mauritanie,4,Tour du monde,Afrique du Nord et Moyen-Orient
+135,BEN,Bénin,4,Tour du monde,Afrique subsaharienne
+136,UZB,Ouzbékistan,4,Tour du monde,Asie
+137,CRI,Costa Rica,4,Tour du monde,Amériques
+138,FSM,Micronésie,4,Tour du monde,Océanie
+139,MLT,Malte,4,Tour du monde,Europe
+140,TGO,Togo,4,Tour du monde,Afrique subsaharienne
+141,KGZ,Kirghizistan,4,Tour du monde,Asie
+142,NIC,Nicaragua,4,Tour du monde,Amériques
+143,MHL,Îles Marshall,4,Tour du monde,Océanie
+144,MDA,Moldavie,4,Tour du monde,Europe
+145,MDG,Madagascar,4,Tour du monde,Afrique subsaharienne
+146,TJK,Tadjikistan,4,Tour du monde,Asie
+147,HND,Honduras,4,Tour du monde,Amériques
+148,MNE,Monténégro,4,Tour du monde,Europe
+149,RWA,Rwanda,4,Tour du monde,Afrique subsaharienne
+150,TKM,Turkménistan,4,Tour du monde,Asie
+151,SLV,Salvador,4,Tour du monde,Amériques
+152,MKD,Macédoine du Nord,4,Tour du monde,Europe
+153,BDI,Burundi,4,Tour du monde,Afrique subsaharienne
+154,NPL,Népal,4,Tour du monde,Asie
+155,GTM,Guatemala,4,Tour du monde,Amériques
+156,SMR,Saint-Marin,4,Tour du monde,Europe
+157,UGA,Ouganda,4,Tour du monde,Afrique subsaharienne
+158,BTN,Bhoutan,4,Tour du monde,Asie
+159,BLZ,Belize,4,Tour du monde,Amériques
+160,SVN,Slovénie,4,Tour du monde,Europe
+161,TZA,Tanzanie,4,Tour du monde,Afrique subsaharienne
+162,LKA,Sri Lanka,4,Tour du monde,Asie
+163,BHS,Bahamas,4,Tour du monde,Amériques
+164,SOM,Somalie,4,Tour du monde,Afrique subsaharienne
+165,MDV,Maldives,4,Tour du monde,Asie
+166,BRB,Barbade,4,Tour du monde,Amériques
+167,DJI,Djibouti,4,Tour du monde,Afrique subsaharienne
+168,BRN,Brunei,4,Tour du monde,Asie
+169,TTO,Trinité-et-Tobago,4,Tour du monde,Amériques
+170,ERI,Érythrée,4,Tour du monde,Afrique subsaharienne
+171,TLS,Timor oriental,4,Tour du monde,Asie
+172,ATG,Antigua-et-Barbuda,4,Tour du monde,Amériques
+173,SSD,Soudan du Sud,4,Tour du monde,Afrique subsaharienne
+174,DMA,Dominique,4,Tour du monde,Amériques
+175,AGO,Angola,4,Tour du monde,Afrique subsaharienne
+176,GRD,Grenade,4,Tour du monde,Amériques
+177,ZMB,Zambie,4,Tour du monde,Afrique subsaharienne
+178,KNA,Saint-Christophe-et-Niévès,4,Tour du monde,Amériques
+179,ZWE,Zimbabwe,4,Tour du monde,Afrique subsaharienne
+180,LCA,Sainte-Lucie,4,Tour du monde,Amériques
+181,MOZ,Mozambique,4,Tour du monde,Afrique subsaharienne
+182,VCT,Saint-Vincent-et-les-Grenadines,4,Tour du monde,Amériques
+183,MWI,Malawi,4,Tour du monde,Afrique subsaharienne
+184,BWA,Botswana,4,Tour du monde,Afrique subsaharienne
+185,NAM,Namibie,4,Tour du monde,Afrique subsaharienne
+186,LSO,Lesotho,4,Tour du monde,Afrique subsaharienne
+187,SWZ,Eswatini,4,Tour du monde,Afrique subsaharienne
+188,GMB,Gambie,4,Tour du monde,Afrique subsaharienne
+189,GNB,Guinée-Bissau,4,Tour du monde,Afrique subsaharienne
+190,SLE,Sierra Leone,4,Tour du monde,Afrique subsaharienne
+191,LBR,Liberia,4,Tour du monde,Afrique subsaharienne
+192,CPV,Cap-Vert,4,Tour du monde,Afrique subsaharienne
+193,STP,Sao Tomé-et-Principe,4,Tour du monde,Afrique subsaharienne
+194,GNQ,Guinée équatoriale,4,Tour du monde,Afrique subsaharienne
+195,COM,Comores,4,Tour du monde,Afrique subsaharienne
+196,MUS,Maurice,4,Tour du monde,Afrique subsaharienne
+197,SYC,Seychelles,4,Tour du monde,Afrique subsaharienne
