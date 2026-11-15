@@ -76,6 +76,10 @@
     {
       "id": "FR-SECTORS-WDI-2025",
       "text": "[Banque mondiale, WDI, parts de valeur ajoutée de la France en 2025](https://api.worldbank.org/v2/country/FRA/indicator/NV.AGR.TOTL.ZS;NV.IND.TOTL.ZS;NV.SRV.TOTL.ZS?source=2&date=2025&format=json&per_page=100). Agriculture, industrie construction comprise, services : parts du PIB courant. Impôts nets sur les produits calculés comme 100 moins ces parts. Même fichier, année, définition et dénominateur que la Suisse."
+    },
+    {
+      "id": "FR-UNEMP",
+      "text": "[Insee, activité, emploi et chômage en 2025, enquête Emploi en continu](https://www.insee.fr/fr/statistiques/8977299?sommaire=8977323) ; [tableau T302, XLSX](https://www.insee.fr/fr/statistiques/fichier/8977299/EEC_T302.xlsx), feuille TXCHOM, ligne Total. Taux de chômage au sens du BIT en moyenne annuelle 2025 : 7,7 %. France entière, personnes de 15 ans ou plus vivant en logement ordinaire."
     }
   ],
   "population": {
@@ -517,5 +521,94 @@
       211834
     ],
     "coverage": "Résidents · 1er janvier 2026 · regroupement des 95 ans ou plus"
+  },
+  "chomage": {
+    "status": "comparable",
+    "value": 7.7,
+    "unit": "%",
+    "year": 2025,
+    "precision": 1,
+    "coverage": "Au sens du BIT, 15 ans ou plus · moyenne 2025",
+    "source_ids": [
+      "FR-UNEMP"
+    ]
+  },
+  "pyramide-france-75": {
+    "status": "comparable",
+    "unit": "personnes",
+    "year": 2026,
+    "source_ids": [
+      "FR-AGE"
+    ],
+    "age_groups": [
+      "0–4",
+      "5–9",
+      "10–14",
+      "15–19",
+      "20–24",
+      "25–29",
+      "30–34",
+      "35–39",
+      "40–44",
+      "45–49",
+      "50–54",
+      "55–59",
+      "60–64",
+      "65–69",
+      "70–74",
+      "75+"
+    ],
+    "male": [
+      1662835,
+      1936744,
+      2147040,
+      2222637,
+      2013408,
+      2001462,
+      2006912,
+      2135649,
+      2131470,
+      2089504,
+      2205051,
+      2177228,
+      2108210,
+      1887418,
+      1680153,
+      3145476
+    ],
+    "female": [
+      1591477,
+      1838580,
+      2051146,
+      2077070,
+      1921888,
+      1994129,
+      2060312,
+      2221960,
+      2243460,
+      2156607,
+      2255236,
+      2254664,
+      2238065,
+      2104638,
+      1980961,
+      4540606
+    ],
+    "note": "Mêmes données que pyramide-france ; classes de 75 ans ou plus additionnées pour correspondre aux recensements qui s’arrêtent à 75 ans ou plus."
+  },
+  "va-secteurs": {
+    "status": "comparable",
+    "unit": "%",
+    "year": 2025,
+    "source_ids": [
+      "FR-SECTORS"
+    ],
+    "values": [
+      1.55,
+      19.025,
+      79.425
+    ],
+    "coverage": "Valeur ajoutée par branche, prix courants · 2025",
+    "note": "Parts calculées sur la valeur ajoutée totale : agriculture 41,3 ; industrie 358,5 et construction 148,5 ; services 1 536,8 et 579,8 milliards d’euros sur 2 664,9. Hors impôts nets sur les produits."
   }
 }

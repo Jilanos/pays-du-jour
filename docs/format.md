@@ -154,6 +154,9 @@ in a keyboard-scrollable local table; the page itself must never overflow.
 `cities` contains `name`, raw `population`, `lat`, `lon` and `note` (economic role).
 Optional `offset: [dx, dy]` per city moves its pin (with a leader line) when two pins overlap.
 Optional `cities_note` replaces the note under the city map.
+Optional `cities_inset` magnifies a dense cluster: `{"label", "cities": [names], "lon", "lat",
+"scale", "x", "y", "width", "height"}` (inset box in the 260x360 city-map frame, `lon`/`lat` its
+bottom-left anchor).
 Optional `map_focus: {"bbox": [lon_min, lat_min, lon_max, lat_max], "caption": "..."}` keeps only
 the polygons inside the box on the locator and city maps (mainland of a country with distant
 territories, e.g. USA without Alaska and Hawaii).

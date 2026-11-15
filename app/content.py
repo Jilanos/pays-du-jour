@@ -230,6 +230,7 @@ def read_fiche(iso3: str, settings: Settings) -> Fiche:
                 note=data.get(
                     "cities_note", "Les limites municipales englobent aussi des espaces ruraux."
                 ),
+                inset=data.get("cities_inset"),
             )
         else:
             relief = next(

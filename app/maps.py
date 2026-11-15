@@ -186,6 +186,7 @@ def cities(
     scope="Population municipale",
     map_focus=None,
     note="Les limites municipales englobent aussi des espaces ruraux.",
+    inset=None,
 ):
     geom = focus(load_geo(geo_dir, "countries-50m.json")[iso3], (map_focus or {}).get("bbox"))
     start, dx, lo, hi = main_bounds(geom)
@@ -205,14 +206,29 @@ def cities(
     group = el(root, "g", clip_path=f"url(#cities-frame-{iso3})")
     el(group, "rect", width=260, height=360, fill="var(--map-sea)", rx=6)
     el(group, "path", d=path(geom, project), class_="city-land", fill_rule="evenodd")
-    north = [i for i, c in enumerate(city_data) if iso3 == "TWN" and c["lat"] > 24.8]
+    if inset is None and iso3 == "TWN":
+        # Taipei's northern cluster: the historical, hand-tuned inset.
+        inset = {
+            "label": "Le nord",
+            "cities": [c["name"] for c in city_data if c["lat"] > 24.8],
+            "lon": 121.24,
+            "lat": 24.92,
+            "scale": 250,
+            "x": 8,
+            "y": 8,
+            "width": 120,
+            "height": 92,
+            "focus": [121.5, 25],
+            "lat_correction": False,
+        }
+    grouped = [i for i, c in enumerate(city_data) if inset and c["name"] in inset["cities"]]
 
     def pin(parent, x, y, i):
         el(parent, "circle", cx=x, cy=y, r=11, class_="city-dot")
         text(parent, x, y + 6, i + 1, text_anchor="middle", class_="pin-number")
 
     for i, city in enumerate(city_data):
-        if i not in north:
+        if i not in grouped:
             x, y = project((city["lon"], city["lat"]))
             ox, oy = city.get("offset", (0, 0))  # leader line when two pins overlap
             if ox or oy:
@@ -228,49 +244,82 @@ def cities(
                 )
                 el(group, "circle", cx=x, cy=y, r=2, fill="var(--accent)")
             pin(group, x + ox, y + oy, i)
-    if north:
-        x, y = project((121.5, 25))
-        el(
+    if grouped:
+        # A dense cluster moves to a magnified inset, linked to a dashed outline on the map.
+        box_x, box_y = inset["x"], inset["y"]
+        box_w, box_h = inset["width"], inset["height"]
+        dash = {"stroke": "var(--accent)", "stroke_dasharray": "3 3"}
+        if iso3 == "TWN":
+            x, y = project(inset["focus"])
+            el(group, "circle", cx=x, cy=y, r=16, fill="none", **dash)
+            el(group, "line", x1=x - 15, x2=118, y1=y, y2=72, **dash)
+        else:
+            points = [project((city_data[i]["lon"], city_data[i]["lat"])) for i in grouped]
+            left = min(p[0] for p in points) - 5
+            right = max(p[0] for p in points) + 5
+            top = min(p[1] for p in points) - 5
+            bottom = max(p[1] for p in points) + 5
+            el(
+                group,
+                "rect",
+                x=left,
+                y=top,
+                width=right - left,
+                height=bottom - top,
+                rx=3,
+                fill="none",
+                **dash,
+            )
+            cx, cy = (left + right) / 2, (top + bottom) / 2
+
+            def clamp(v, lo, hi):
+                return min(max(v, lo), hi)
+
+            if box_y >= bottom:
+                start, end = (cx, bottom), (clamp(cx, box_x, box_x + box_w), box_y)
+            elif box_y + box_h <= top:
+                start, end = (cx, top), (clamp(cx, box_x, box_x + box_w), box_y + box_h)
+            elif box_x + box_w <= left:
+                start, end = (left, cy), (box_x + box_w, clamp(cy, box_y, box_y + box_h))
+            else:
+                start, end = (right, cy), (box_x, clamp(cy, box_y, box_y + box_h))
+            el(group, "line", x1=start[0], y1=start[1], x2=end[0], y2=end[1], **dash)
+        view_h = round(box_h * 103 / 92) if iso3 == "TWN" else box_h
+        frame = el(
             group,
-            "circle",
-            cx=x,
-            cy=y,
-            r=16,
-            fill="none",
-            stroke="var(--accent)",
-            stroke_dasharray="3 3",
+            "svg",
+            x=box_x,
+            y=box_y,
+            width=box_w,
+            height=box_h,
+            viewBox=f"0 0 {box_w} {view_h}",
         )
         el(
-            group,
-            "line",
-            x1=x - 15,
-            x2=118,
-            y1=y,
-            y2=72,
-            stroke="var(--accent)",
-            stroke_dasharray="3 3",
-        )
-        inset = el(group, "svg", x=8, y=8, width=120, height=92, viewBox="0 0 120 103")
-        el(
-            inset,
+            frame,
             "rect",
             x=1,
             y=1,
-            width=118,
-            height=101,
+            width=box_w - 2,
+            height=view_h - 2,
             rx=4,
             fill="var(--bg)",
             stroke="var(--rule)",
         )
+        correction = cos(radians(inset["lat"])) if inset.get("lat_correction", True) else 1
+        bottom = 81 if iso3 == "TWN" else view_h - 12
 
         def ip(p):
-            return (15 + (p[0] - 121.24) * 250, 81 - (p[1] - 24.92) * 250)
+            return (
+                15 + (p[0] - inset["lon"]) * inset["scale"] * correction,
+                bottom - (p[1] - inset["lat"]) * inset["scale"],
+            )
 
-        el(inset, "path", d=path(geom, ip), class_="city-land")
-        el(inset, "rect", x=6, y=6, width=76, height=23, fill="var(--bg)", rx=2)
-        text(inset, 10, 23, "Le nord", class_="inset-label")
-        for i in north:
-            pin(inset, *ip((city_data[i]["lon"], city_data[i]["lat"])), i)
+        el(frame, "path", d=path(geom, ip), class_="city-land")
+        label_width = 76 if iso3 == "TWN" else min(box_w - 12, 6 + 10 * len(inset["label"]))
+        el(frame, "rect", x=6, y=6, width=label_width, height=23, fill="var(--bg)", rx=2)
+        text(frame, 10, 23, inset["label"], class_="inset-label")
+        for i in grouped:
+            pin(frame, *ip((city_data[i]["lon"], city_data[i]["lat"])), i)
     text(group, 230, 291, "N", text_anchor="middle")
     el(
         group,
