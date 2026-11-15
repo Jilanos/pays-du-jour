@@ -197,6 +197,7 @@ def read_fiche(iso3: str, settings: Settings) -> Fiche:
             toc.append(("indices", "Lire les indices"))
         elif key.startswith("chart:"):
             chart = charts[key[6:]].copy()
+            chart["country"] = meta["nom"]
             ref = comparable(reference(chart, references))
             chart["_france"] = ref
             chart["_euro"] = euro_for(chart, fx, f"chart {chart['id']}")
@@ -236,7 +237,9 @@ def read_fiche(iso3: str, settings: Settings) -> Fiche:
             rendered = ""
             if meta.get("relief_pertinent") and relief:
                 mark = sources.cite(
-                    "relief", "Relief de l’île", data.get("map_sources", {}).get("relief", [])
+                    "relief",
+                    data.get("relief_title", "Relief"),
+                    data.get("map_sources", {}).get("relief", []),
                 )
                 title = escape(data.get("relief_title", "Relief"))
                 alt = escape(data.get("relief_alt", f"Relief de {meta['nom']}"))

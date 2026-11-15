@@ -7,11 +7,11 @@
     },
     {
       "id": "FR-AREA",
-      "text": "[Union européenne, présentation de la France, données Eurostat 2026](https://european-union.europa.eu/principles-countries-history/eu-countries/france_fr). Superficie du territoire français dans l’UE, régions ultrapériphériques comprises. Périmètre distinct des territoires administrés par Taipei."
+      "text": "[Union européenne, présentation de la France, données Eurostat 2026](https://european-union.europa.eu/principles-countries-history/eu-countries/france_fr). Superficie du territoire français dans l’UE, régions ultrapériphériques comprises."
     },
     {
       "id": "FR-GDP",
-      "text": "[FMI, World Economic Outlook, octobre 2026, série NGDPD pour la France](https://www.imf.org/external/datamapper/NGDPD@WEO/FRA) ; [extraction API](https://www.imf.org/external/datamapper/api/v1/NGDPD/FRA). 2025 : 3 382,595 milliards de dollars courants. Même monnaie et même année que Taïwan ; millésimes de révision distincts."
+      "text": "[FMI, World Economic Outlook, octobre 2026, série NGDPD pour la France](https://www.imf.org/external/datamapper/NGDPD@WEO/FRA) ; [extraction API](https://www.imf.org/external/datamapper/api/v1/NGDPD/FRA). 2025 : 3 382,595 milliards de dollars courants. Série en dollars courants ; millésime octobre 2026."
     },
     {
       "id": "FR-HDI",
@@ -19,7 +19,7 @@
     },
     {
       "id": "FR-VD",
-      "text": "[V-Dem, Democracy Report 2026](https://www.v-dem.net/documents/75/V-Dem_Institute_Democracy_Report_2026_lowres.pdf), tableau A2, page 48. Données 2025 : France, indice de démocratie libérale 0,80, rang 9. Taïwan : même tableau et même définition."
+      "text": "[V-Dem, Democracy Report 2026](https://www.v-dem.net/documents/75/V-Dem_Institute_Democracy_Report_2026_lowres.pdf), tableau A2, page 48. Données 2025 : France, indice de démocratie libérale 0,80, rang 9. Classement selon la même définition pour tous les pays."
     },
     {
       "id": "FR-RSF",
@@ -64,6 +64,10 @@
     {
       "id": "FR-MARRIAGE",
       "text": "[Vie publique, loi du 17 mai 2013 ouvrant le mariage aux couples de personnes de même sexe](https://www.vie-publique.fr/loi/20645-mariage-pour-tous-loi-du-17-mai-2013-taubira-mariage-couples-meme-sexe)."
+    },
+    {
+      "id": "FR-ELEC-2025",
+      "text": "[Ember, Yearly Electricity Data, série mondiale 2025](https://files.ember-energy.org/public-downloads/generation/outputs/release_generation_yearly_global.csv) ; [méthodologie](https://files.ember-energy.org/public-downloads/ember_electricity_data_methodology.pdf). Publication mise à jour le 11 novembre 2026. Ligne France, 2025, Clean, colonne Share of generation (%) : 94,893 %. Même fichier, agrégat nucléaire et renouvelables et convention de production brute que la Chine. La production nette métropolitaine de RTE n’est pas utilisée pour cette comparaison. Licence CC BY 4.0."
     }
   ],
   "population": {
@@ -75,7 +79,7 @@
     ],
     "coverage": "Résidents · 1er janvier 2026",
     "status": "comparable",
-    "note": "Ordres de grandeur : registre taïwanais contre population résidente française ; dates distinctes."
+    "note": "Comparer les périmètres affichés : couverture des résidents étrangers et dates de référence peuvent différer selon les sources nationales."
   },
   "superficie": {
     "value": 638475,
@@ -351,6 +355,16 @@
       527129,
       180318,
       31516
+    ]
+  },
+  "electricite-bas-carbone": {
+    "status": "comparable",
+    "value": 94.893,
+    "unit": "%",
+    "year": 2025,
+    "coverage": "Nucléaire et renouvelables · production brute 2025",
+    "source_ids": [
+      "FR-ELEC-2025"
     ]
   }
 }

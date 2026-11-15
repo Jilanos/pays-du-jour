@@ -3,7 +3,7 @@
 import json
 from functools import lru_cache
 from html import escape
-from math import cos, radians
+from math import cos, floor, log10, radians
 from pathlib import Path
 from xml.etree.ElementTree import Element, SubElement
 
@@ -23,11 +23,25 @@ def rings(geometry):
     return [ring for polygon in polygons for ring in polygon]
 
 
-def path(geometry, project):
-    return " ".join(
-        "M" + " L".join(f"{x:.2f},{y:.2f}" for x, y in map(project, ring)) + " Z"
-        for ring in rings(geometry)
-    )
+def path(geometry, project, longitude_center=None):
+    outlines = []
+    for ring in rings(geometry):
+        if longitude_center is None:
+            copies = [ring]
+        else:
+            # Keep each ring continuous at the regional projection's opposite meridian.
+            # Wrapping vertices separately draws distant coasts across the whole map.
+            previous, unwrapped = longitude_center, []
+            for lon, lat in ring:
+                lon = previous + (lon - previous + 180) % 360 - 180
+                unwrapped.append((lon, lat))
+                previous = lon
+            copies = [[(lon + shift, lat) for lon, lat in unwrapped] for shift in (-360, 0, 360)]
+        for copy in copies:
+            outlines.append(
+                "M" + " L".join(f"{x:.2f},{y:.2f}" for x, y in map(project, copy)) + " Z"
+            )
+    return " ".join(outlines)
 
 
 def main_bounds(geometry):
@@ -87,6 +101,9 @@ def locator(iso3, name, geo_dir, marker=""):
     def project(p):
         return (200 + ((p[0] - lon + 180) % 360 - 180) * factor * scale, 150 - (p[1] - lat) * scale)
 
+    def continuous_project(p):
+        return (200 + (p[0] - lon) * factor * scale, 150 - (p[1] - lat) * scale)
+
     for latline in range(-60, 91, 10):
         y = project((lon, latline))[1]
         el(group, "line", x1=0, x2=400, y1=y, y2=y, class_="map-grid")
@@ -94,8 +111,20 @@ def locator(iso3, name, geo_dir, marker=""):
         x = project((lonline, lat))[0]
         el(group, "line", x1=x, x2=x, y1=0, y2=320, class_="map-grid")
     for _code, geom in world.items():
-        el(group, "path", d=path(geom, project), class_="country", fill_rule="evenodd")
-    el(group, "path", d=path(country, project), class_="country selected", fill_rule="evenodd")
+        el(
+            group,
+            "path",
+            d=path(geom, continuous_project, lon),
+            class_="country",
+            fill_rule="evenodd",
+        )
+    el(
+        group,
+        "path",
+        d=path(country, continuous_project, lon),
+        class_="country selected",
+        fill_rule="evenodd",
+    )
     x, y = project((lon, lat))
     el(group, "circle", cx=x, cy=y, r=11, class_="locator-dot")
     text(group, x + 18, y + 8, name, class_="map-country-name")
@@ -217,7 +246,9 @@ def cities(
         stroke="var(--ink)",
         stroke_width=1.5,
     )
-    km = 100 if (hi - lo) > 1 else 1
+    target_km = 80 * 111.2 / scale
+    magnitude = 10 ** floor(log10(target_km))
+    km = max(step * magnitude for step in (1, 2, 5) if step * magnitude <= target_km)
     distance = km / 111.2 * scale
     el(
         group,
@@ -227,7 +258,7 @@ def cities(
         stroke="var(--ink)",
         stroke_width=2,
     )
-    text(group, 18, 350, f"{km} km")
+    text(group, 18, 350, quantity(km, "km"))
     rows = []
     for i, c in enumerate(city_data):
         rows.append(
