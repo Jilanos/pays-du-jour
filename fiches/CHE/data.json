@@ -1,0 +1,970 @@
+{
+  "keyfacts": [
+    {
+      "id": "population",
+      "label": "Population résidante permanente",
+      "value": 9127125,
+      "unit": "habitants",
+      "year": 2025,
+      "coverage": "Résidents permanents · 31 décembre 2025",
+      "source_ids": [
+        "S03"
+      ],
+      "france": "population"
+    },
+    {
+      "id": "superficie",
+      "label": "Superficie",
+      "value": 41285,
+      "unit": "km²",
+      "year": 2026,
+      "coverage": "Territoire national, lacs compris",
+      "source_ids": [
+        "S01"
+      ],
+      "france": "superficie"
+    },
+    {
+      "id": "pib-nominal",
+      "label": "PIB nominal",
+      "value": 1043529899250.92,
+      "unit": "USD",
+      "year": 2025,
+      "coverage": "Prix courants · 2025",
+      "source_ids": [
+        "S17"
+      ],
+      "france": "pib-nominal"
+    },
+    {
+      "id": "fecondite",
+      "label": "Fécondité",
+      "value": 1.28,
+      "unit": "enfant/femme",
+      "year": 2025,
+      "coverage": "Indicateur conjoncturel · 2025, provisoire",
+      "source_ids": [
+        "S57"
+      ],
+      "france": "fecondite",
+      "precision": 1
+    },
+    {
+      "id": "65-plus",
+      "label": "Part des 65 ans ou plus",
+      "value": 19.838097977183395,
+      "unit": "%",
+      "year": 2025,
+      "coverage": "Résidents permanents · 31 décembre 2025",
+      "source_ids": [
+        "S03"
+      ],
+      "france": "65-plus"
+    },
+    {
+      "id": "etrangers",
+      "label": "Population de nationalité étrangère",
+      "value": 28,
+      "unit": "%",
+      "year": 2025,
+      "coverage": "Résidents permanents · 2025, part publiée arrondie",
+      "source_ids": [
+        "S02"
+      ],
+      "france": {
+        "status": "non_comparable",
+        "reason": "Aucune comparaison française de même date et de même définition retenue. Nationalité étrangère et immigration sont deux concepts différents.",
+        "source_ids": []
+      },
+      "precision": 0
+    }
+  ],
+  "indices": [
+    {
+      "id": "idh",
+      "name": "Développement humain",
+      "acronym": "IDH",
+      "value": 0.97,
+      "year": 2023,
+      "rank": "2ᵉ ex æquo",
+      "scale_min": 0,
+      "scale_max": 1,
+      "precision": 3,
+      "source_ids": [
+        "S52"
+      ],
+      "france": "idh",
+      "higher_is_better": true
+    },
+    {
+      "id": "gini",
+      "name": "Inégalités de revenus",
+      "acronym": "Gini",
+      "value": 31.0,
+      "year": 2024,
+      "rank": "Sans classement",
+      "scale_min": 0,
+      "scale_max": 100,
+      "precision": 1,
+      "source_ids": [
+        "S15"
+      ],
+      "france": "gini-silc-2024",
+      "higher_is_better": false,
+      "coverage": "EU-SILC 2024 · revenu disponible équivalent de 2023"
+    },
+    {
+      "id": "democratie",
+      "name": "Démocratie libérale",
+      "acronym": "V-Dem",
+      "value": 0.84,
+      "year": 2025,
+      "rank": "4ᵉ",
+      "scale_min": 0,
+      "scale_max": 1,
+      "precision": 2,
+      "source_ids": [
+        "S53"
+      ],
+      "france": "democratie",
+      "higher_is_better": true
+    },
+    {
+      "id": "presse",
+      "name": "Liberté de la presse",
+      "acronym": "RSF",
+      "value": 84.83,
+      "year": 2026,
+      "rank": "8ᵉ / 180",
+      "scale_min": 0,
+      "scale_max": 100,
+      "precision": 2,
+      "source_ids": [
+        "S54"
+      ],
+      "france": "presse",
+      "higher_is_better": true
+    },
+    {
+      "id": "corruption",
+      "name": "Corruption perçue",
+      "acronym": "CPI",
+      "value": 80,
+      "year": 2025,
+      "rank": "6ᵉ / 182",
+      "scale_min": 0,
+      "scale_max": 100,
+      "precision": 0,
+      "source_ids": [
+        "S55"
+      ],
+      "france": "corruption",
+      "higher_is_better": true
+    }
+  ],
+  "cities": [
+    {
+      "name": "Zurich",
+      "population": 440935,
+      "lat": 47.381934,
+      "lon": 8.548064,
+      "note": "Finance, services et industrie.",
+      "year": 2025,
+      "source_ids": [
+        "S58",
+        "NE"
+      ]
+    },
+    {
+      "name": "Genève",
+      "population": 211152,
+      "lat": 46.210008,
+      "lon": 6.140028,
+      "note": "Diplomatie et bassin de vie transfrontalier.",
+      "year": 2025,
+      "source_ids": [
+        "S58",
+        "NE"
+      ]
+    },
+    {
+      "name": "Bâle",
+      "population": 180097,
+      "lat": 47.580389,
+      "lon": 7.590017,
+      "note": "Pharmacie et carrefour rhénan.",
+      "year": 2025,
+      "source_ids": [
+        "S58",
+        "NE"
+      ]
+    },
+    {
+      "name": "Lausanne",
+      "population": 145596,
+      "lat": 46.530427,
+      "lon": 6.650023,
+      "note": "Pôle urbain de l’arc lémanique.",
+      "year": 2025,
+      "source_ids": [
+        "S58",
+        "NE"
+      ]
+    },
+    {
+      "name": "Berne",
+      "population": 138562,
+      "lat": 46.916683,
+      "lon": 7.466976,
+      "note": "Ville fédérale, gouvernement et Parlement.",
+      "year": 2025,
+      "source_ids": [
+        "S58",
+        "NE"
+      ]
+    },
+    {
+      "name": "Lugano",
+      "population": 63691,
+      "lat": 46.000382,
+      "lon": 8.966677,
+      "note": "Pôle urbain du Tessin italophone.",
+      "year": 2025,
+      "source_ids": [
+        "S58",
+        "NE"
+      ]
+    }
+  ],
+  "cities_title": "Un réseau de villes entre les massifs",
+  "cities_scope": "Communes · résidents permanents au 31 décembre 2025",
+  "charts": [
+    {
+      "id": "climat",
+      "type": "climate",
+      "title": "Deux versants des Alpes, deux régimes de pluie",
+      "subtitle": "Normales 1991-2020 · Genève et Lugano face à Paris",
+      "year": "1991–2020",
+      "source_ids": [
+        "S04"
+      ],
+      "france": "climat-paris",
+      "places": [
+        {
+          "place": "Genève / Cointrin",
+          "tmin": [
+            -1.1,
+            -1.1,
+            1.7,
+            5.0,
+            9.1,
+            12.7,
+            14.6,
+            14.2,
+            10.7,
+            7.2,
+            2.6,
+            -0.2
+          ],
+          "tmax": [
+            5.1,
+            7.0,
+            11.8,
+            15.9,
+            20.1,
+            24.2,
+            26.7,
+            26.2,
+            21.1,
+            15.5,
+            9.3,
+            5.6
+          ],
+          "precip_mm": [
+            72.8,
+            55.9,
+            62.1,
+            67.1,
+            78.5,
+            83.2,
+            79.2,
+            81.2,
+            90.7,
+            96.5,
+            88.6,
+            89.9
+          ]
+        },
+        {
+          "place": "Lugano",
+          "tmin": [
+            1.2,
+            1.9,
+            5.2,
+            8.5,
+            12.4,
+            16.1,
+            18.0,
+            17.8,
+            14.2,
+            10.2,
+            5.7,
+            2.0
+          ],
+          "tmax": [
+            7.1,
+            9.0,
+            13.5,
+            16.7,
+            20.8,
+            24.9,
+            27.3,
+            26.8,
+            22.1,
+            16.9,
+            11.6,
+            7.7
+          ],
+          "precip_mm": [
+            65.5,
+            61.3,
+            75.5,
+            138.0,
+            177.6,
+            171.5,
+            157.9,
+            158.2,
+            164.9,
+            149.7,
+            166.6,
+            79.9
+          ]
+        }
+      ],
+      "temperature_extent": [
+        -5,
+        35
+      ],
+      "rain_max": 200,
+      "note": "Échelles communes à Genève/Cointrin, Lugano et Paris-Montsouris. Stations de basse altitude, sans représentativité nationale."
+    },
+    {
+      "id": "pyramide-ages",
+      "type": "pyramid",
+      "title": "Des générations actives nombreuses, une base plus étroite",
+      "subtitle": "Résidents permanents · 31 décembre 2025 · France au 1er janvier 2026",
+      "year": 2025,
+      "source_ids": [
+        "S03"
+      ],
+      "france": "pyramide-france-95plus",
+      "unit": "personnes",
+      "age_groups": [
+        "0–4",
+        "5–9",
+        "10–14",
+        "15–19",
+        "20–24",
+        "25–29",
+        "30–34",
+        "35–39",
+        "40–44",
+        "45–49",
+        "50–54",
+        "55–59",
+        "60–64",
+        "65–69",
+        "70–74",
+        "75–79",
+        "80–84",
+        "85–89",
+        "90–94",
+        "95+"
+      ],
+      "male": [
+        212450,
+        236173,
+        239653,
+        242058,
+        246077,
+        291313,
+        326323,
+        340729,
+        331707,
+        312892,
+        306572,
+        324287,
+        307758,
+        240995,
+        192553,
+        167910,
+        124511,
+        64954,
+        25920,
+        5488
+      ],
+      "female": [
+        201601,
+        224367,
+        225814,
+        222424,
+        226442,
+        274642,
+        314122,
+        332983,
+        327044,
+        310735,
+        305520,
+        323482,
+        309309,
+        254123,
+        215078,
+        196869,
+        157405,
+        98625,
+        50105,
+        16112
+      ]
+    },
+    {
+      "id": "langues",
+      "type": "barh",
+      "title": "Des langues nationales et des langues de migration",
+      "subtitle": "Langues principales déclarées · 2024 · sélection · %",
+      "year": 2024,
+      "source_ids": [
+        "S06"
+      ],
+      "labels": [
+        "Allemand / suisse allemand",
+        "Français",
+        "Italien / dialectes",
+        "Romanche",
+        "Anglais",
+        "Albanais",
+        "Portugais",
+        "Espagnol"
+      ],
+      "values": [
+        61.11158012907928,
+        22.573743016127555,
+        7.7935320033090285,
+        0.4301397736416177,
+        6.481803171642847,
+        3.4265761172781315,
+        3.425455755322002,
+        2.5014174276263152
+      ],
+      "unit": "%",
+      "note_visible": "Jusqu’à trois langues principales par personne. Les parts se recouvrent.",
+      "france": {
+        "status": "non_comparable",
+        "reason": "Les catégories de langues et le recensement à réponses multiples ne correspondent pas à une série française retenue.",
+        "source_ids": []
+      }
+    },
+    {
+      "id": "religions",
+      "type": "share",
+      "title": "La non-affiliation religieuse en tête",
+      "subtitle": "Résidents permanents de 15 ans ou plus en ménage privé · 2024 · %",
+      "year": 2024,
+      "source_ids": [
+        "S08"
+      ],
+      "labels": [
+        "Sans appartenance",
+        "Catholiques romains",
+        "Réformés évangéliques",
+        "Communautés musulmanes",
+        "Autres communautés",
+        "Inconnue"
+      ],
+      "values": [
+        36.81753330787829,
+        29.995964535313647,
+        18.74072954011191,
+        6.025806248938329,
+        7.516907247316283,
+        0.9030591204415206
+      ],
+      "unit": "%",
+      "france": "religions"
+    },
+    {
+      "id": "salaires",
+      "type": "barh",
+      "title": "Un large éventail de salaires bruts",
+      "subtitle": "Brut mensuel standardisé à 40 h · 2024 · CHF/mois",
+      "year": 2024,
+      "source_ids": [
+        "S13"
+      ],
+      "labels": [
+        "Seuil des 10 % les moins payés",
+        "Médiane",
+        "Seuil des 10 % les mieux payés"
+      ],
+      "values": [
+        4635,
+        7024,
+        12526
+      ],
+      "unit": "CHF/mois",
+      "euro": true,
+      "france": {
+        "status": "non_comparable",
+        "reason": "ESS suisse : brut standardisé à 40 h, secteurs privé et public, secondaire et tertiaire ; référence française : secteur privé, équivalent temps plein selon la durée conventionnelle. La conversion monétaire ne corrige pas ces champs et durées.",
+        "source_ids": []
+      },
+      "note": "Secteurs privé et public, secondaire et tertiaire. Primes et part proportionnelle du treizième salaire incluses. Médianes par branche pour le second graphique ; seuils P10/P90 et médiane pour le premier."
+    },
+    {
+      "id": "salaires-branches",
+      "type": "barh",
+      "title": "Des rémunérations très différentes selon les branches",
+      "subtitle": "Brut mensuel standardisé à 40 h · 2024 · CHF/mois",
+      "year": 2024,
+      "source_ids": [
+        "S13",
+        "S14"
+      ],
+      "labels": [
+        "Hébergement-restauration",
+        "Industrie des machines",
+        "Industrie pharmaceutique",
+        "Banques"
+      ],
+      "values": [
+        4734,
+        7632,
+        10159,
+        10723
+      ],
+      "unit": "CHF/mois",
+      "euro": true,
+      "france": {
+        "status": "non_comparable",
+        "reason": "ESS suisse : brut standardisé à 40 h, secteurs privé et public, secondaire et tertiaire ; référence française : secteur privé, équivalent temps plein selon la durée conventionnelle. La conversion monétaire ne corrige pas ces champs et durées.",
+        "source_ids": []
+      },
+      "note": "Secteurs privé et public, secondaire et tertiaire. Primes et part proportionnelle du treizième salaire incluses. Médianes par branche pour le second graphique ; seuils P10/P90 et médiane pour le premier."
+    },
+    {
+      "id": "pib-secteurs",
+      "type": "share",
+      "title": "Les services dominent, l’industrie conserve son poids",
+      "subtitle": "Valeurs ajoutées et impôts nets · parts du PIB courant · 2025 · %",
+      "year": 2025,
+      "source_ids": [
+        "S17"
+      ],
+      "labels": [
+        "Agriculture, forêt, pêche",
+        "Industrie, construction comprise",
+        "Services",
+        "Impôts nets sur les produits"
+      ],
+      "values": [
+        0.644624328848247,
+        25.0018306550161,
+        71.7465500326877,
+        2.6069949834479615
+      ],
+      "unit": "%",
+      "france": "pib-secteurs-wdi-2025",
+      "note": "Impôts nets calculés par différence avec les trois valeurs ajoutées ; absence de normalisation des secteurs sur leur seule somme."
+    },
+    {
+      "id": "electricite",
+      "type": "share",
+      "title": "L’eau et l’atome portent la production électrique",
+      "subtitle": "Production nationale brute · 2025 · %",
+      "year": 2025,
+      "source_ids": [
+        "S22"
+      ],
+      "labels": [
+        "Hydraulique",
+        "Nucléaire",
+        "Photovoltaïque",
+        "Autres renouvelables",
+        "Thermique non renouvelable"
+      ],
+      "values": [
+        55.51523947750363,
+        27.219276680193122,
+        11.770978347797755,
+        3.4699801546162736,
+        2.0245253398892213
+      ],
+      "unit": "%",
+      "france": {
+        "status": "non_comparable",
+        "reason": "Pas de série française vérifiée ici avec les mêmes regroupements et la même convention de production brute incluant le pompage-turbinage.",
+        "source_ids": []
+      },
+      "note": "Parts calculées sur les GWh du tableau 4 de la statistique globale de l’énergie 2025. Le pompage d’accumulation consomme de l’électricité en amont de cette production brute."
+    },
+    {
+      "id": "fret-alpin",
+      "type": "stacked",
+      "title": "Le rail reste majoritaire, sa part recule",
+      "subtitle": "Fret à travers les Alpes suisses · tonnes nettes · %",
+      "year": "2024–2025",
+      "source_ids": [
+        "S49"
+      ],
+      "labels": [
+        "2024",
+        "2025"
+      ],
+      "series": [
+        {
+          "name": "Rail",
+          "values": [
+            70.3,
+            68.6
+          ]
+        },
+        {
+          "name": "Route",
+          "values": [
+            29.7,
+            31.4
+          ]
+        }
+      ],
+      "unit": "%",
+      "france": {
+        "status": "non_comparable",
+        "reason": "Le fret à travers les Alpes suisses ne correspond pas au fret national français. Aucun ratio géographique de substitution.",
+        "source_ids": []
+      },
+      "note": "Parts modales sur des tonnes transportées, distinctes des tonnes-kilomètres. Route par complément à 100."
+    }
+  ],
+  "prose_values": {
+    "dufour": {
+      "value": 4636,
+      "unit": "mètres"
+    },
+    "travail-industrie": {
+      "value": 45,
+      "unit": "heures",
+      "precision": 0
+    },
+    "travail-autres": {
+      "value": 50,
+      "unit": "heures",
+      "precision": 0
+    },
+    "signatures-initiative": {
+      "value": 100000,
+      "unit": "signatures"
+    },
+    "signatures-referendum": {
+      "value": 50000,
+      "unit": "signatures"
+    },
+    "gothard": {
+      "value": 57.1,
+      "unit": "kilomètres",
+      "precision": 1
+    }
+  },
+  "relief_title": "Le Plateau entre Jura et Alpes",
+  "relief_alt": "Relief de la Suisse : Jura au nord-ouest, Plateau et lacs au nord, Alpes au sud et à l’est. Les limites cantonales du fond ancien ne sont pas actualisées.",
+  "relief_landmarks": [
+    {
+      "label": "Le Jura",
+      "text": "Un arc de reliefs au nord-ouest, près de la France."
+    },
+    {
+      "label": "Le Plateau",
+      "text": "Le principal espace urbain, entre Léman et lac de Constance."
+    },
+    {
+      "label": "Les Alpes",
+      "text": "Des massifs traversés par les vallées et les tunnels nord-sud."
+    }
+  ],
+  "euro": {
+    "currency": "CHF",
+    "per_euro": 0.95262578125,
+    "year": 2024,
+    "source_ids": [
+      "S56"
+    ],
+    "basis": "Moyenne annuelle directe des taux de référence BCE. Les salaires sont exprimés en francs de 2024 ; la conversion est nominale, sans correction du coût de la vie."
+  },
+  "hero_sources": [
+    "S07",
+    "S27",
+    "S59"
+  ],
+  "map_sources": {
+    "locator": [
+      "S01",
+      "NE"
+    ],
+    "cities": [
+      "S58",
+      "NE",
+      "S18",
+      "S19",
+      "S46",
+      "S50"
+    ],
+    "relief": [
+      "S60",
+      "S01"
+    ]
+  },
+  "sources": [
+    {
+      "id": "S01",
+      "text": "[DFAE, géographie de la Suisse](https://www.aboutswitzerland.eda.admin.ch/fr/geographie). Superficie totale, lacs compris ; pointe Dufour ; Alpes, Plateau et Jura."
+    },
+    {
+      "id": "S02",
+      "text": "[OFS, effectif et évolution de la population en 2025, résultats définitifs, 20/08/2026](https://statistik.admin.ch/fr/asset/36680492). Le communiqué arrondit les effectifs à la centaine et la part étrangère au pourcent. La population exacte et les âges viennent du tableau de S03."
+    },
+    {
+      "id": "S03",
+      "text": "[OFS, population résidante permanente selon le sexe et l’âge, 1860-2025, PX](https://dam-api.bfs.admin.ch/hub/api/dam/assets/36733990/master). Année 2025, sexes masculin et féminin ; somme des âges simples en groupes quinquennaux. Dernière classe : 95 ans ou plus, le fichier regroupant déjà les 99 ans ou plus. Population totale : 9 127 125 ; 65 ans ou plus : 1 810 648. Les proportions sont calculées sans arrondi préalable."
+    },
+    {
+      "id": "S04",
+      "text": "Source : MétéoSuisse, [normales climatiques par paramètre](https://opendatadocs.meteoswiss.ch/c-climate-data/c6-climate-normals), [archive TXT](https://data.geo.admin.ch/ch.meteoschweiz.klima/normwerte/normwerte.zip), édition du 27/05/2025. Stations Genève/Cointrin (411 m) et Lugano (273 m), période 1991-2020 ; tre2dymn, tre2dymx et rre150m0. Moyennes des minima et maxima quotidiens ; cumuls mensuels moyens de précipitations. Aucune estimation urbaine interpolée."
+    },
+    {
+      "id": "S05",
+      "text": "[ETH Zurich / GLAMOS, bilan des glaciers du 01/10/2026](https://baug.ethz.ch/en/news-and-events/news/2026/10/ein-verheerendes-jahr-fuer-die-schweizer-gletscher.html). Mesures de l’année hydrologique 2025/2026."
+    },
+    {
+      "id": "S06",
+      "text": "[OFS, langues principales les plus fréquentes, XLSX](https://dam-api.bfs.admin.ch/hub/api/dam/assets/36399481/master), feuille 2024, publication du 05/03/2026. Pourcentages conservés tels que fournis dans les cellules. Population résidante permanente vivant en ménage privé, enfants compris ; diplomates, fonctionnaires internationaux et familles exclus. Jusqu’à trois langues principales par personne. Sélection de huit langues ; les parts se recouvrent."
+    },
+    {
+      "id": "S07",
+      "text": "[DFAE, langues](https://www.aboutswitzerland.eda.admin.ch/fr/langues) ; [OFC, politique des langues](https://www.bak.admin.ch/fr/langues). Le romanche est langue nationale et langue officielle de la Confédération dans les rapports avec les personnes de langue romanche."
+    },
+    {
+      "id": "S08",
+      "text": "[OFS, appartenance religieuse, XLSX](https://dam-api.bfs.admin.ch/hub/api/dam/assets/36347562/master), feuille Total, ligne Total, relevé structurel 2024, publié le 29/01/2026. Résidents permanents de 15 ans ou plus vivant en ménage privé, hors diplomates et fonctionnaires internationaux et familles. Parts calculées à partir des effectifs pondérés publiés, sans arrondi intermédiaire. « Autres communautés » regroupe catholiques-chrétiens, autres chrétiens, juifs et autres communautés religieuses. L’inconnu reste séparé."
+    },
+    {
+      "id": "S09",
+      "text": "[Géoportail fédéral, itinéraires de SuisseMobile, 15/06/2026](https://www.geo.admin.ch/fr/jeu-de-donnees-15062026). Réseaux balisés à pied, à vélo et en hiver, publiés avec les partenaires de la mobilité douce."
+    },
+    {
+      "id": "S10",
+      "text": "[SECO, enregistrement de la durée du travail](https://www.seco.admin.ch/fr/enregistrement-de-la-duree-du-travail) et [durée du travail et du repos](https://www.seco.admin.ch/fr/duree-du-travail-et-du-repos). Plafonds de la loi sur le travail, avec exceptions ; à distinguer de la durée contractuelle et des heures réellement travaillées."
+    },
+    {
+      "id": "S11",
+      "text": "[SEFRI, formation professionnelle initiale](https://www.sbfi.admin.ch/fr/formation-professionnelle-initiale) ; [DFAE, système dual et passerelles](https://www.aboutswitzerland.eda.admin.ch/fr/formation-professionnelle-initiale)."
+    },
+    {
+      "id": "S12",
+      "text": "[OFSP, obligation d’assurance](https://www.bag.admin.ch/fr/assurance-maladie-obligation-de-sassurer-pour-les-assures-domicilies-en-suisse) ; [OFSP, primes et coûts, questions fréquentes](https://www.bag.admin.ch/fr/primes-et-couts-reponses-aux-questions-frequentes)."
+    },
+    {
+      "id": "S13",
+      "text": "[OFS, enquête sur la structure des salaires 2024, premiers résultats, 25/11/2025](https://www.bfs.admin.ch/fr/newnsb/CzozNgBTCJOrNyvwsItyp) ; [communiqué et définitions, PDF](https://dam-api.bfs.admin.ch/hub/api/dam/assets/36195848/master). Secteurs privé et public, secondaire et tertiaire ; brut standardisé à 4 1/3 semaines de 40 heures. Cotisations salariales, primes régulières, un douzième du treizième salaire et des paiements spéciaux annuels inclus ; allocations familiales exclues. P10 = 4 635, médiane = 7 024, P90 = 12 526 CHF/mois. Les déciles sont des seuils, pas les moyennes des groupes."
+    },
+    {
+      "id": "S14",
+      "text": "[OFS, salaires par région, formation et activité économique](https://statistik.admin.ch/fr/themes/travail-remuneration/salaires-revenu-professionnel-cout-du-travail). ESS 2024. Les montants par branche sont des médianes brutes standardisées selon la même méthode que S13."
+    },
+    {
+      "id": "S15",
+      "text": "[Eurostat, coefficient de Gini du revenu disponible équivalent, ilc_di12](https://ec.europa.eu/eurostat/databrowser/view/ilc_di12/default/table?lang=fr), [API Suisse et France, 2024](https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_di12?lang=FR&geo=CH&geo=FR&time=2024&age=TOTAL). EU-SILC, ensemble des âges, revenu après transferts ; enquête 2024, revenus de 2023, échelle de 0 à 100. Suisse : 31,0 ; France : 30,0. Aucune assimilation à la concentration du patrimoine."
+    },
+    {
+      "id": "S16",
+      "text": "[OCDE, Étude économique de la Suisse 2024, évolutions macroéconomiques et enjeux](https://www.oecd.org/fr/publications/2024/03/oecd-economic-surveys-switzerland-2024_9410595b/full-report/component-5.html). Niveau de vie, logement, garde des enfants et contraintes de participation à l’emploi."
+    },
+    {
+      "id": "S17",
+      "text": "[Banque mondiale, WDI, extraction Suisse et France pour 2024-2025](https://api.worldbank.org/v2/country/CHE;FRA/indicator/NY.GDP.MKTP.CD;NV.AGR.TOTL.ZS;NV.IND.TOTL.ZS;NV.SRV.TOTL.ZS?source=2&date=2024:2025&format=json&per_page=100). PIB nominal courant en USD ; valeurs ajoutées agriculture, industrie avec construction et services en % du PIB. Pour le graphique, millésime 2025 ; impôts nets sur les produits calculés comme 100 moins les trois parts. Les valeurs ne sont pas normalisées sur la somme des valeurs ajoutées."
+    },
+    {
+      "id": "S18",
+      "text": "[DFAE, machines, équipements électriques et métallurgie](https://www.aboutswitzerland.eda.admin.ch/fr/machines-equipements-electriques-et-metallurgie). Spécialités industrielles et orientation exportatrice."
+    },
+    {
+      "id": "S19",
+      "text": "[OFS, comptes nationaux](https://statistik.admin.ch/fr/themes/economie-nationale/comptes-nationaux) ; [OFS, comptes annuels 2024, 29/09/2025](https://statistik.admin.ch/fr/asset/36147493). Structure économique et rôle de la pharmacie et du commerce de gros."
+    },
+    {
+      "id": "S20",
+      "text": "[Autoneum, rapport annuel 2025, Consumers and End-Users](https://ar.autoneum.com/2025/en/consumers-and-end-users). Solutions de gestion thermique et acoustique pour l’automobile."
+    },
+    {
+      "id": "S21",
+      "text": "[Banque nationale suisse, chronique monétaire](https://www.snb.ch/fr/the-snb/organisation/history/geld-und-waehrungspolitische-chronik). Stabilisation d’UBS en 2008 ; cours plancher introduit en 2011 et supprimé le 15/01/2015."
+    },
+    {
+      "id": "S22",
+      "text": "[OFEN, statistique globale suisse de l’énergie 2025, tableau 4](https://pubdb.bfe.admin.ch/fr/publication/download/12648). Production brute : 67 522 GWh. Hydraulique 37 485 ; nucléaire 18 379 ; photovoltaïque 7 948 ; autres renouvelables 2 343 ; thermique non renouvelable 1 367. Parts calculées sans arrondi intermédiaire. Les autres renouvelables réunissent le thermique renouvelable et les renouvelables diverses hors solaire. La consommation du pompage d’accumulation n’est pas retranchée de la production brute du graphique."
+    },
+    {
+      "id": "S23",
+      "text": "[DETEC, consommation d’énergie et production d’électricité](https://www.uvek.admin.ch/fr/consommation-energie-et-production-electricite), mise à jour du 28/10/2026. Dépendances énergétiques, échanges et stockage hydraulique."
+    },
+    {
+      "id": "S24",
+      "text": "[DFAE, histoire de la Suisse](https://www.aboutswitzerland.eda.admin.ch/fr/histoire-de-la-suisse). République helvétique, neutralité reconnue en 1815, guerre du Sonderbund et État fédéral."
+    },
+    {
+      "id": "S25",
+      "text": "[Parlement, Constitution fédérale suisse](https://www.parlament.ch/fr/%C3%BCber-das-parlament/Pages/bundesverfassung.aspx). Institutions de 1848 et souveraineté cantonale."
+    },
+    {
+      "id": "S26",
+      "text": "[Archives fédérales, suffrage féminin en Suisse](https://www.bar.admin.ch/fr/le-suffrage-feminin-en-suisse). Votation du 07/02/1971 et histoire de la mobilisation."
+    },
+    {
+      "id": "S27",
+      "text": "[DFAE, système politique](https://www.aboutswitzerland.eda.admin.ch/fr/systeme-politique). Fédéralisme, chambres, gouvernement collégial et statut de Berne."
+    },
+    {
+      "id": "S28",
+      "text": "[DFAE, démocratie directe](https://www.aboutswitzerland.eda.admin.ch/fr/democratie-directe). Initiative populaire, référendum facultatif et référendum obligatoire."
+    },
+    {
+      "id": "S29",
+      "text": "[Conseil fédéral, carte officielle du gouvernement 2026](https://www.admin.ch/dam/fr/sd-web/D4sUdARs26su/Bundesratskarte_2026_A5_quer.pdf) ; [composition et actualités du gouvernement](https://www.admin.ch/fr). Noms, partis, départements, entrée en fonction et présidence 2026. Martin Pfister a succédé à Viola Amherd en 2025."
+    },
+    {
+      "id": "S30",
+      "text": "[Parlement, renouvellement du Conseil fédéral du 12/12/2007](https://www.parlament.ch/fr/%C3%BCber-das-parlament/archive/retrospective-des-elections/election-conseil-federal/2007-12-12). Non-réélection de Christoph Blocher ; élection d’Eveline Widmer-Schlumpf."
+    },
+    {
+      "id": "S31",
+      "text": "[Département fédéral de justice et police, initiative contre les minarets](https://www.ejpd.admin.ch/fr/initiative-populaire-contre-la-construction-de-minarets). Votation du 29/11/2009."
+    },
+    {
+      "id": "S32",
+      "text": "[Secrétariat d’État aux migrations, mise en œuvre de l’article constitutionnel sur l’immigration](https://www.sem.admin.ch/fr/mise-en-oeuvre-de-l-article-constitutionnel-sur-l-immigration). Vote du 09/02/2014 et législation d’application."
+    },
+    {
+      "id": "S33",
+      "text": "[Administration fédérale des contributions, échange de renseignements, questions et réponses](https://www.estv.admin.ch/fr/questions-et-reponses). Collecte EAR depuis 2017 ; premiers échanges en 2018."
+    },
+    {
+      "id": "S34",
+      "text": "[OFS, élections fédérales 2023](https://www.elections.admin.ch/fr/ch/) ; [UIP, résultats des élections du 22/10/2023](https://data.ipu.org/fr/parliament/CH/CH-LC01/election/CH-LC01-E20231022/). Résultat au scrutin, distinct de la composition après remplacements."
+    },
+    {
+      "id": "S35",
+      "text": "[DETEC, nouvelles lignes ferroviaires à travers les Alpes](https://www.uvek.admin.ch/fr/nlfa). Gothard : 57,1 km ; inauguration en juin 2016 et exploitation régulière en décembre 2016. Lötschberg, Gothard et Ceneri ; rampes, capacités et axes européens."
+    },
+    {
+      "id": "S36",
+      "text": "[DFAE, paquet Suisse-UE, Bilatérales III](https://www.europa.eda.admin.ch/fr/paquet-suisse-ue) ; [France Diplomatie, contexte du retrait des négociations du 26/05/2021](https://www.diplomatie.gouv.fr/en/information-by-country/switzerland/france-and-switzerland). Reprise en 2024, signature le 02/03/2026 et procédure d’approbation."
+    },
+    {
+      "id": "S37",
+      "text": "[DFF, acquisition de Credit Suisse par UBS](https://www.efd.admin.ch/fr/credit-suisse-fr). Intervention du 19/03/2023, garanties et concentration du système bancaire."
+    },
+    {
+      "id": "S38",
+      "text": "[OFAS, mise en œuvre de la treizième rente AVS](https://www.bsv.admin.ch/fr/misenoeuvre-13-rente-avs), état novembre 2026. Vote du 03/03/2024 ; premier versement en décembre 2026."
+    },
+    {
+      "id": "S39",
+      "text": "[Parlement, suivi de l’examen des accords Suisse-UE](https://www.parlament.ch/fr/services/suche-news/le_parlement_et_le_mandat_de_negociation), communiqués de commissions jusqu’au 13/11/2026 ; [CPE-N, 06/11/2026](https://www.parlament.ch/press-releases/Pages/mm-apk-n-2026-11-6.aspx?lang=1036). Examen encore en cours à la date de consultation."
+    },
+    {
+      "id": "S40",
+      "text": "[AP, rejet de l’initiative de plafonnement démographique, 14/06/2026](https://apnews.com/article/03b42363567cfa9ff29c0995bb4ff711) ; [gfs.bern, analyse VOX du vote de juin 2026](https://vox.gfsbern.ch/wp-content/uploads/2026/08/fr_zusammenfassung_vox_juni_2026_def.pdf)."
+    },
+    {
+      "id": "S41",
+      "text": "[DFAE, neutralité, bilan du scrutin du 27/09/2026](https://www.dfae.admin.ch/fr/neutralite). Rejet de l’initiative et maintien de la politique de neutralité ; absence d’adhésion à l’OTAN."
+    },
+    {
+      "id": "S42",
+      "text": "[SECO, reprise du 21e paquet de sanctions, 04/11/2026](https://www.seco.admin.ch/fr/newnsb/KsmEWk4E-bHM). Mesures visant la Russie et le Bélarus."
+    },
+    {
+      "id": "S43",
+      "text": "[SECO, relations commerciales Suisse-États-Unis](https://www.seco.admin.ch/fr/relations-commerciales-usa-ch). Chronologie 2025-2026, changements juridiques et droits sectoriels ; situation consultée le 16/11/2026."
+    },
+    {
+      "id": "S44",
+      "text": "[Office fédéral de la culture, culture techno à Zurich](https://www.lebendige-traditionen.ch/fr/culture-techno-a-zurich). Liste des traditions vivantes ; histoire des clubs et première Street Parade en 1992. Aucun chiffre de fréquentation repris."
+    },
+    {
+      "id": "S45",
+      "text": "[DFAE, cuisine suisse](https://www.aboutswitzerland.eda.admin.ch/fr/la-cuisine-suisse), 26/06/2026. Plats régionaux, pain, fromages et origine du Birchermüsli."
+    },
+    {
+      "id": "S46",
+      "text": "[France Diplomatie, relations bilatérales franco-suisses](https://www.diplomatie.gouv.fr/fr/information-par-pays/suisse/relations-bilaterales), 03/04/2026 ; [DFAE, relations Suisse-France](https://www.dfae.admin.ch/fr/relations-bilaterales-suisse-france), 31/07/2026. Coopération transfrontalière, scientifique et culturelle."
+    },
+    {
+      "id": "S47",
+      "text": "[Le Monde, proximité suisse et tensions en Haute-Savoie, 08/05/2024](https://www.lemonde.fr/economie/article/2024/05/08/la-proximite-avec-la-suisse-une-chance-et-un-probleme-pour-la-haute-savoie_6232129_3234.html). Logement et recrutement côté français."
+    },
+    {
+      "id": "S48",
+      "text": "[CERN, présentation du laboratoire](https://home.cern/fr/about/). Installations près de Genève sur la frontière franco-suisse."
+    },
+    {
+      "id": "S49",
+      "text": "[OFT, parts de marché du fret ferroviaire transalpin en baisse, 12/03/2026](https://www.bav.admin.ch/fr/newnsb/pAzo0IO4kxRefXD7Hdnrf) ; [rapport sur le transfert 2025](https://www.bav.admin.ch/dam/fr/sd-web/XDjNDhXEeaxf/rapport-sur-le-transfert-2025.pdf). Part modale en tonnes nettes transportées, rail et route, à travers les Alpes suisses : 70,3 % en 2024 et 68,6 % en 2025. Part routière calculée par complément à 100. Chantiers, fiabilité, voies d’accès et conjoncture."
+    },
+    {
+      "id": "S50",
+      "text": "[Ville de Berne, portrait de la ville fédérale](https://www.bern.ch/fr/en-visite-a-berne/portrait-de-la-ville-de-berne/berne-en-bref/). Sièges du Parlement, du gouvernement et des administrations."
+    },
+    {
+      "id": "S51",
+      "text": "[Office fédéral de la justice, mariage pour tous, 30/03/2022](https://www.bj.admin.ch/fr/nsb?id=87786). Votation du 26/09/2021 ; entrée en vigueur le 01/07/2022."
+    },
+    {
+      "id": "S52",
+      "text": "[PNUD, Human Development Report 2025, annexe statistique, tableau 1](https://hdr.undp.org/sites/default/files/2025_HDR/HDR25_Statistical_Annex_Tables_1-7.pdf). IDH 2023 : 0,970, deuxième rang ex æquo avec la Norvège selon le tableau officiel."
+    },
+    {
+      "id": "S53",
+      "text": "[V-Dem, Democracy Report 2026, tableau A2, p. 48](https://v-dem.net/documents/75/V-Dem_Institute_Democracy_Report_2026_lowres.pdf). Données 2025, indice de démocratie libérale : 0,84, rang 4 ; précision publiée conservée."
+    },
+    {
+      "id": "S54",
+      "text": "[RSF, Suisse, classement 2026](https://rsf.org/fr/pays/suisse). Score 84,83 ; rang 8 sur 180."
+    },
+    {
+      "id": "S55",
+      "text": "[Transparency International, Suisse, CPI 2025](https://www.transparency.org/en/countries/switzerland). Score 80 ; rang 6 sur 182."
+    },
+    {
+      "id": "S56",
+      "text": "[BCE, taux CHF/EUR, moyenne annuelle 2024, série EXR.A.CHF.EUR.SP00.A](https://data.ecb.europa.eu/data/datasets/EXR/EXR.A.CHF.EUR.SP00.A), [extraction CSV](https://data-api.ecb.europa.eu/service/data/EXR/A.CHF.EUR.SP00.A?startPeriod=2024&endPeriod=2024&format=csvdata)."
+    },
+    {
+      "id": "S57",
+      "text": "[OFS, mouvement naturel de la population en 2025, résultats définitifs](https://statistik.admin.ch/fr/asset/36649216). Indicateur conjoncturel de fécondité 2025 : 1,28 enfant par femme, encore qualifié de provisoire dans le communiqué."
+    },
+    {
+      "id": "S58",
+      "text": "[OFS, population résidante permanente selon l’âge, par commune, XLSX](https://dam-api.bfs.admin.ch/hub/api/dam/assets/36681788/master). Feuille 2025, colonne Total ; communes 0261, 6621, 2701, 5586, 0351 et 5192. Millésime au 31/12/2025, distinct des agglomérations et des registres municipaux élargis."
+    },
+    {
+      "id": "S59",
+      "text": "[Wikimedia Commons, Flag of Switzerland.svg](https://commons.wikimedia.org/wiki/File:Flag_of_Switzerland.svg). Domaine public, géométrie simple et œuvre officielle suisse. Vectorisation Marc Mongenet, contributions notamment de -xfi- et Zscout370 ; version de Perhelion du 16/10/2019, fichier conservé sans modification, 213 octets."
+    },
+    {
+      "id": "S60",
+      "text": "[Wikimedia Commons, Switzerland relief location map.jpg](https://commons.wikimedia.org/wiki/File:Switzerland_relief_location_map.jpg). Eric Gaba (Sting) et NordNordWest, correction du Doubs par Reinhard Kraasch ; NASA SRTM3v2. [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/). Conversion JPEG vers WebP qualité 87, sans recadrage, 1 349 × 865, 336 604 octets. Carte de relief ; limites cantonales du fond ancien non actualisées pour 2026. La version WebP reste sous CC BY-SA 3.0."
+    },
+    {
+      "id": "NE",
+      "text": "[Natural Earth](https://www.naturalearthdata.com/about/terms-of-use/), domaine public. Contours locaux 1:110 m et 1:50 m ; [centres des villes, populated places 1:10 m](https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_populated_places.geojson). Les limites cartographiques ne constituent pas une position sur les frontières."
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-15",
+  "checked": "2026-11-16",
   "sources": [
     {
       "id": "FR-DEM",
@@ -68,6 +68,14 @@
     {
       "id": "FR-ELEC-2025",
       "text": "[Ember, Yearly Electricity Data, série mondiale 2025](https://files.ember-energy.org/public-downloads/generation/outputs/release_generation_yearly_global.csv) ; [méthodologie](https://files.ember-energy.org/public-downloads/ember_electricity_data_methodology.pdf). Publication mise à jour le 11 novembre 2026. Ligne France, 2025, Clean, colonne Share of generation (%) : 94,893 %. Même fichier, agrégat nucléaire et renouvelables et convention de production brute que la Chine. La production nette métropolitaine de RTE n’est pas utilisée pour cette comparaison. Licence CC BY 4.0."
+    },
+    {
+      "id": "FR-GINI-SILC-2024",
+      "text": "[Eurostat, coefficient de Gini, EU-SILC, ilc_di12](https://ec.europa.eu/eurostat/databrowser/view/ilc_di12/default/table?lang=fr), [API France et Suisse, 2024, ensemble des âges](https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_di12?lang=FR&geo=CH&geo=FR&time=2024&age=TOTAL). Revenu disponible équivalent après transferts, enquête 2024, revenus de 2023. France : 30,0 sur 100. Même série harmonisée que la Suisse, sans mélange avec ERFS ou les inégalités de patrimoine."
+    },
+    {
+      "id": "FR-SECTORS-WDI-2025",
+      "text": "[Banque mondiale, WDI, parts de valeur ajoutée de la France en 2025](https://api.worldbank.org/v2/country/FRA/indicator/NV.AGR.TOTL.ZS;NV.IND.TOTL.ZS;NV.SRV.TOTL.ZS?source=2&date=2025&format=json&per_page=100). Agriculture, industrie construction comprise, services : parts du PIB courant. Impôts nets sur les produits calculés comme 100 moins ces parts. Même fichier, année, définition et dénominateur que la Suisse."
     }
   ],
   "population": {
@@ -366,5 +374,112 @@
     "source_ids": [
       "FR-ELEC-2025"
     ]
+  },
+  "gini-silc-2024": {
+    "status": "comparable",
+    "value": 30.0,
+    "unit": "",
+    "year": 2024,
+    "coverage": "EU-SILC 2024 · revenu disponible équivalent de 2023",
+    "precision": 1,
+    "source_ids": [
+      "FR-GINI-SILC-2024"
+    ]
+  },
+  "pib-secteurs-wdi-2025": {
+    "status": "comparable",
+    "labels": [
+      "Agriculture, forêt, pêche",
+      "Industrie, construction comprise",
+      "Services",
+      "Impôts nets sur les produits"
+    ],
+    "values": [
+      1.40317576023592,
+      16.7769964006735,
+      70.8514738300024,
+      10.968354009088173
+    ],
+    "unit": "%",
+    "year": 2025,
+    "coverage": "Valeurs ajoutées et impôts nets · PIB courant 2025",
+    "source_ids": [
+      "FR-SECTORS-WDI-2025"
+    ]
+  },
+  "pyramide-france-95plus": {
+    "status": "comparable",
+    "unit": "personnes",
+    "year": 2026,
+    "source_ids": [
+      "FR-AGE"
+    ],
+    "age_groups": [
+      "0–4",
+      "5–9",
+      "10–14",
+      "15–19",
+      "20–24",
+      "25–29",
+      "30–34",
+      "35–39",
+      "40–44",
+      "45–49",
+      "50–54",
+      "55–59",
+      "60–64",
+      "65–69",
+      "70–74",
+      "75–79",
+      "80–84",
+      "85–89",
+      "90–94",
+      "95+"
+    ],
+    "male": [
+      1662835,
+      1936744,
+      2147040,
+      2222637,
+      2013408,
+      2001462,
+      2006912,
+      2135649,
+      2131470,
+      2089504,
+      2205051,
+      2177228,
+      2108210,
+      1887418,
+      1680153,
+      1508046,
+      823170,
+      516047,
+      239048,
+      59165
+    ],
+    "female": [
+      1591477,
+      1838580,
+      2051146,
+      2077070,
+      1921888,
+      1994129,
+      2060312,
+      2221960,
+      2243460,
+      2156607,
+      2255236,
+      2254664,
+      2238065,
+      2104638,
+      1980961,
+      1854803,
+      1108827,
+      838013,
+      527129,
+      211834
+    ],
+    "coverage": "Résidents · 1er janvier 2026 · regroupement des 95 ans ou plus"
   }
 }
