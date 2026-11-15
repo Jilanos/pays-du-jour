@@ -11,7 +11,7 @@
     },
     {
       "id": "FR-GDP",
-      "text": "[FMI, World Economic Outlook, octobre 2026, série NGDPD pour la France](https://www.imf.org/external/datamapper/NGDPD@WEO/FRA) ; [extraction API](https://www.imf.org/external/datamapper/api/v1/NGDPD/FRA). 2025 : 3 382,595 milliards de dollars courants. Même monnaie et même année que Taïwan ; millésimes de révision distincts."
+      "text": "[FMI, World Economic Outlook, octobre 2026, série NGDPD pour la France](https://www.imf.org/external/datamapper/NGDPD@WEO/FRA) ; [extraction API](https://www.imf.org/external/datamapper/api/v1/NGDPD/FRA). 2025 : 3 382,595 milliards de dollars courants. PIB à prix courants, en dollars américains ; millésime de révision précisé."
     },
     {
       "id": "FR-HDI",
@@ -19,7 +19,7 @@
     },
     {
       "id": "FR-VD",
-      "text": "[V-Dem, Democracy Report 2026](https://www.v-dem.net/documents/75/V-Dem_Institute_Democracy_Report_2026_lowres.pdf), tableau A2, page 48. Données 2025 : France, indice de démocratie libérale 0,80, rang 9. Taïwan : même tableau et même définition."
+      "text": "[V-Dem, Democracy Report 2026](https://www.v-dem.net/documents/75/V-Dem_Institute_Democracy_Report_2026_lowres.pdf), tableau A2, page 48. Données 2025 : France, indice de démocratie libérale 0,80, rang 9. Définition harmonisée de l’indice de démocratie libérale."
     },
     {
       "id": "FR-RSF",
@@ -39,7 +39,7 @@
     },
     {
       "id": "FR-GINI",
-      "text": "[Insee, niveau de vie et pauvreté en 2024](https://www.insee.fr/fr/statistiques/9019316). Gini 0,302, niveau de vie individuel par unité de consommation, France métropolitaine, logements ordinaires. Non superposé au Gini taïwanais du revenu par ménage : unité statistique, champ et année différents."
+      "text": "[Insee, niveau de vie et pauvreté en 2024](https://www.insee.fr/fr/statistiques/9019316). Gini 0,302, niveau de vie individuel par unité de consommation, France métropolitaine, logements ordinaires."
     },
     {
       "id": "FR-ENERGY",
@@ -75,7 +75,7 @@
     ],
     "coverage": "Résidents · 1er janvier 2026",
     "status": "comparable",
-    "note": "Ordres de grandeur : registre taïwanais contre population résidente française ; dates distinctes."
+    "note": "Populations et dates de mesure précisées dans chaque fiche. Comparaison d’ordres de grandeur."
   },
   "superficie": {
     "value": 638475,
@@ -379,6 +379,13 @@
     "reason": "Parts américaines du PIB courant BEA 2024 ; référence française 2025 portant sur la VA hors impôts nets sur les produits. Année et dénominateur différents.",
     "source_ids": [
       "FR-SECTORS"
+    ]
+  },
+  "electricite-usa": {
+    "status": "unavailable",
+    "reason": "Pas de série française 2025 identifiée sur le même champ des installations d’au moins 1 MW, hors petit solaire distribué.",
+    "source_ids": [
+      "FR-ENERGY"
     ]
   }
 }

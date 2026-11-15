@@ -565,7 +565,8 @@ def render_chart(chart, marker=""):
     elif kind == "pyramid":
         if chart.get("_france", {}).get("male"):
             out.append(
-                '<p class="chart-legend"><span class="legend-population">Taïwan</span>'
+                '<p class="chart-legend"><span class="legend-population">'
+                f'{escape(chart.get("country", "Taïwan"))}</span>'
                 '<span class="legend-outline">France · contours</span></p>'
             )
         out.append(responsive(pyramid, chart))

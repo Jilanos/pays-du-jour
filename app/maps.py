@@ -54,6 +54,18 @@ def main_bounds(geometry):
     return start, max(wrap(p[0]) for p in pts), min(p[1] for p in pts), max(p[1] for p in pts)
 
 
+def contiguous_usa(geometry):
+    """Keep the mainland for a readable regional view of the selected cities."""
+    return {
+        "type": "MultiPolygon",
+        "coordinates": [
+            polygon
+            for polygon in geometry["coordinates"]
+            if all(-126 < lon < -66 and 24 < lat < 50 for lon, lat in polygon[0])
+        ],
+    }
+
+
 def canvas(title, width, height):
     root = Element(
         "svg",
@@ -71,6 +83,8 @@ def canvas(title, width, height):
 def locator(iso3, name, geo_dir, marker=""):
     world = load_geo(geo_dir, "world-110m.json")
     country = load_geo(geo_dir, "countries-50m.json")[iso3]
+    if iso3 == "USA":
+        country = contiguous_usa(country)
     start, dx, lo, hi = main_bounds(country)
     lon = (start + dx / 2 + 180) % 360 - 180
     lat = (lo + hi) / 2
@@ -85,7 +99,10 @@ def locator(iso3, name, geo_dir, marker=""):
     scale = 400 / span
 
     def project(p):
-        return (200 + ((p[0] - lon + 180) % 360 - 180) * factor * scale, 150 - (p[1] - lat) * scale)
+        delta = p[0] - lon
+        if iso3 != "USA":
+            delta = (delta + 180) % 360 - 180
+        return (200 + delta * factor * scale, 150 - (p[1] - lat) * scale)
 
     for latline in range(-60, 91, 10):
         y = project((lon, latline))[1]
@@ -122,7 +139,10 @@ def locator(iso3, name, geo_dir, marker=""):
         stroke="var(--accent)",
         stroke_width=4,
     )
-    caption = "Dans le Pacifique occidental" if iso3 == "TWN" else "Situation régionale"
+    caption = {
+        "TWN": "Dans le Pacifique occidental",
+        "USA": "États contigus · repère mondial",
+    }.get(iso3, "Situation régionale")
     return (
         f'<figure class="locator" id="situation">{finish(root)}'
         f"<figcaption>{caption}{marker}</figcaption></figure>"
@@ -139,6 +159,8 @@ def cities(
     scope="Population municipale",
 ):
     geom = load_geo(geo_dir, "countries-50m.json")[iso3]
+    if iso3 == "USA":
+        geom = contiguous_usa(geom)
     start, dx, lo, hi = main_bounds(geom)
     factor = max(0.15, cos(radians((lo + hi) / 2)))
     scale = min(205 / max(dx * factor, 0.02), 290 / max(hi - lo, 0.02))
@@ -164,7 +186,31 @@ def cities(
 
     for i, city in enumerate(city_data):
         if i not in north:
-            pin(group, *project((city["lon"], city["lat"])), i)
+            x, y = project((city["lon"], city["lat"]))
+            offsets = (
+                {
+                    "New York": (8, -15),
+                    "Philadelphie": (8, 15),
+                    "Los Angeles": (-8, -10),
+                    "Phoenix": (8, 10),
+                }
+                if iso3 == "USA"
+                else {}
+            )
+            ox, oy = offsets.get(city["name"], (0, 0))
+            if ox or oy:
+                el(
+                    group,
+                    "line",
+                    x1=x,
+                    y1=y,
+                    x2=x + ox,
+                    y2=y + oy,
+                    stroke="var(--accent)",
+                    stroke_width=1,
+                )
+                el(group, "circle", cx=x, cy=y, r=2, fill="var(--accent)")
+            pin(group, x + ox, y + oy, i)
     if north:
         x, y = project((121.5, 25))
         el(
@@ -217,7 +263,7 @@ def cities(
         stroke="var(--ink)",
         stroke_width=1.5,
     )
-    km = 100 if (hi - lo) > 1 else 1
+    km = 1000 if iso3 == "USA" else (100 if (hi - lo) > 1 else 1)
     distance = km / 111.2 * scale
     el(
         group,
@@ -241,8 +287,13 @@ def cities(
         "<thead><tr><th>Ville</th><th>Population</th><th>Repère</th></tr></thead>"
         f"<tbody>{''.join(rows)}</tbody></table>"
     )
+    note = (
+        "Carte des États contigus. Populations municipales, hors agglomérations."
+        if iso3 == "USA"
+        else "Les limites municipales englobent aussi des espaces ruraux."
+    )
     return (
         f'<figure class="graphic cities-figure" id="villes"><h3>{escape(title)}{marker}</h3>'
-        '<p class="figure-note">Les limites municipales englobent aussi des espaces ruraux.</p>'
+        f'<p class="figure-note">{note}</p>'
         f'<div class="cities-layout">{finish(root)}{table}</div></figure>'
     )

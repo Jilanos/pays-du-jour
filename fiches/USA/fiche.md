@@ -52,7 +52,7 @@ Le christianisme recouvre de nombreuses familles protestantes, le catholicisme e
 
 ## Mode de vie et société
 
-Le quotidien varie fortement entre quartier dense et banlieue pavillonnaire. Dans de nombreux territoires, la voiture relie logement, travail, courses et loisirs. Les métropoles disposent de réseaux de transport très inégaux. La distance devient une dépense récurrente en carburant, assurance et entretien. Le choix résidentiel engage aussi l’accès aux emplois. {#societe-distances sources="S19,S44" label="Habiter et se déplacer"}
+Le quotidien varie fortement entre quartier dense et banlieue pavillonnaire. Dans de nombreux territoires, la voiture relie logement, travail, courses et loisirs. Les métropoles disposent de réseaux de transport très inégaux. La distance devient une dépense récurrente en carburant, assurance et entretien. Le choix résidentiel engage aussi l’accès aux emplois. {#societe-distances sources="S19,S53" label="Habiter et se déplacer"}
 
 Le droit fédéral prévoit une majoration après {{value:travail-us}} hebdomadaires pour les salariés couverts et non exemptés. Ce seuil ne décrit pas tous les contrats des ingénieurs ou des cadres. Le FLSA n’impose pas de congés annuels payés. Les droits dépendent aussi des États, des conventions et de l’employeur. {#societe-travail sources="S15" label="Temps de travail et congés"}
 
@@ -116,9 +116,9 @@ Les mandats suivants couvrent les deux dernières décennies. JD Vance est vice-
 
 **2017-2020.** Trump réduit la fiscalité, durcit l’immigration et engage une confrontation commerciale avec la Chine. Ses nominations modifient l’équilibre de la Cour suprême. La pandémie et les mobilisations contre les violences policières dominent 2020. Battu par Biden, il conteste le résultat sans établir la fraude massive qu’il invoque. {#politique-2017 sources="S31" label="Politique · 2017-2020"}
 
-**2021-2024.** L’assaut du Capitole du 6 janvier 2021 expose la crise de la transmission du pouvoir. Biden fait voter les infrastructures, le CHIPS Act et l’Inflation Reduction Act. Leurs aides relancent la politique industrielle. La fin de la protection fédérale de l’avortement en 2022 renforce les divergences entre États. Biden renonce à sa candidature en juillet 2024. Harris perd face à Trump. {#politique-2021 sources="S32,S33" label="Politique · 2021-2024"}
+**2021-2024.** L’assaut du Capitole du 6 janvier 2021 expose la crise de la transmission du pouvoir. Biden fait voter les infrastructures, le CHIPS Act et l’Inflation Reduction Act. Leurs aides relancent la politique industrielle. La fin de la protection fédérale de l’avortement en 2022 renforce les divergences entre États. Biden renonce à sa candidature en juillet 2024. Harris perd face à Trump. {#politique-2021 sources="S32" label="Politique · 2021-2024"}
 
-**2025.** Trump revient avec JD Vance. Immigration, réorganisation de l’administration fédérale et droits de douane structurent son action. Les crédits fédéraux aux acheteurs de véhicules propres cessent pour les acquisitions après le 30 septembre. Cette rupture modifie le cadre économique de l’électrification automobile. {#politique-2025 sources="S34,S35" label="Politique · 2025"}
+**2025.** Trump revient avec JD Vance. Immigration, réorganisation de l’administration fédérale et droits de douane structurent son action. Les crédits fédéraux aux acheteurs de véhicules propres cessent pour les acquisitions après le 30 septembre. Cette rupture modifie le cadre économique de l’électrification automobile. {#politique-2025 sources="S01,S35" label="Politique · 2025"}
 
 Le rapport V-Dem publié en 2026 décrit un recul marqué des contre-pouvoirs en 2025. RSF documente les pressions sur les médias et les agences de régulation. Ces constats portent sur l’exercice du pouvoir et les libertés. Les indices annuels ne constituent pas un résultat électoral ni une mesure en temps réel. {#politique-libertes sources="S07,S08" label="Contre-pouvoirs et libertés"}
 
@@ -144,7 +144,7 @@ L’industrie aéronautique matérialise cette interdépendance. CFM Internation
 
 {{chart:assemblage-auto}}
 
-À Highland Park, Ford déploie la chaîne mobile en 1913. L’automobile relie ensuite production de masse, emplois industriels et aménagement territorial. Les formes urbaines prolongent cette histoire : lotissements, échangeurs, parkings et zones commerciales organisent les déplacements. La dépendance quotidienne à la voiture nourrit un marché industriel et un débat d’urbanisme. {#phenomene-modele sources="S42,S19" label="Production de masse et territoire automobile"}
+À Highland Park, Ford déploie la chaîne mobile en 1913. L’automobile relie ensuite production de masse, emplois industriels et aménagement territorial. Les formes urbaines prolongent cette histoire : lotissements, échangeurs, parkings et zones commerciales organisent les déplacements. La dépendance quotidienne à la voiture nourrit un marché industriel et un débat d’urbanisme. {#phenomene-modele sources="S42,S53" label="Production de masse et territoire automobile"}
 
 Les light trucks regroupent des véhicules très différents, dont de nombreux SUV et pickups. Leur poids dans l’assemblage décrit une spécialisation industrielle. Le graphique concerne les usines du territoire, toutes marques confondues. Il ne donne ni les ventes américaines ni la part des motorisations électriques. Catégorie réglementaire, lieu de production et nationalité du constructeur sont trois lectures distinctes. {#phenomene-vehicules sources="S43,S44" label="Lire la production automobile"}
 

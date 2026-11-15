@@ -58,6 +58,19 @@
       "source_ids": [
         "S02"
       ]
+    },
+    {
+      "id": "electricite",
+      "label": "Électricité produite",
+      "value": 4429,
+      "unit": "TWh",
+      "year": 2025,
+      "coverage": "Centrales d’au moins 1 MW · 2025",
+      "source_ids": [
+        "S21"
+      ],
+      "france": "electricite-usa",
+      "note": "Production nette nationale utility-scale publiée par l’EIA comme environ 4 429 milliards de kWh. Petit solaire distribué exclu."
     }
   ],
   "indices": [
@@ -147,8 +160,8 @@
     {
       "name": "New York",
       "population": 8584629,
-      "lat": 40.6943,
-      "lon": -73.9249,
+      "lat": 40.721562,
+      "lon": -73.995718,
       "note": "Finance, médias et grand port atlantique.",
       "year": 2025,
       "source_ids": [
@@ -159,8 +172,8 @@
     {
       "name": "Los Angeles",
       "population": 3869089,
-      "lat": 34.1141,
-      "lon": -118.4068,
+      "lat": 34.049219,
+      "lon": -118.231986,
       "note": "Cinéma, ports et industrie aérospatiale.",
       "year": 2025,
       "source_ids": [
@@ -171,8 +184,8 @@
     {
       "name": "Chicago",
       "population": 2731585,
-      "lat": 41.8375,
-      "lon": -87.6866,
+      "lat": 41.847961,
+      "lon": -87.635237,
       "note": "Logistique, industrie et carrefour ferroviaire.",
       "year": 2025,
       "source_ids": [
@@ -183,8 +196,8 @@
     {
       "name": "Houston",
       "population": 2397315,
-      "lat": 29.786,
-      "lon": -95.3885,
+      "lat": 29.741273,
+      "lon": -95.348436,
       "note": "Énergie, pétrochimie et centre spatial.",
       "year": 2025,
       "source_ids": [
@@ -195,8 +208,8 @@
     {
       "name": "Phoenix",
       "population": 1665481,
-      "lat": 33.5722,
-      "lon": -112.0891,
+      "lat": 33.448322,
+      "lon": -112.067365,
       "note": "Semi-conducteurs et croissance du désert.",
       "year": 2025,
       "source_ids": [
@@ -207,8 +220,8 @@
     {
       "name": "Philadelphie",
       "population": 1574281,
-      "lat": 40.0077,
-      "lon": -75.1339,
+      "lat": 39.945942,
+      "lon": -75.179841,
       "note": "Santé, universités et héritage industriel.",
       "year": 2025,
       "source_ids": [
@@ -321,7 +334,7 @@
         }
       ],
       "temperature_extent": [
-        -10,
+        -20,
         40
       ],
       "rain_max": 200,
@@ -550,7 +563,7 @@
   "sources": [
     {
       "id": "S01",
-      "text": "[France Diplomatie, présentation des États-Unis](https://www.diplomatie.gouv.fr/fr/information-par-pays/etats-unis/presentation-des-etats-unis). Identité, territoires et contexte politique ; mise à jour d’octobre 2026."
+      "text": "[France Diplomatie, présentation des États-Unis](https://www.diplomatie.gouv.fr/fr/information-par-pays/etats-unis/presentation-des-etats-unis). Identité, territoires et politiques du second mandat Trump ; mise à jour d’octobre 2026."
     },
     {
       "id": "S02",
@@ -677,14 +690,6 @@
       "text": "[Miller Center, Joe Biden, politique intérieure](https://millercenter.org/president/biden/domestic-affairs). Assaut du Capitole, infrastructures, CHIPS, Inflation Reduction Act et fin du mandat."
     },
     {
-      "id": "S33",
-      "text": "[FEC, résultats officiels des élections fédérales de 2024](https://www.fec.gov/resources/cms-content/documents/federalelections2024.pdf). Résultat du collège électoral : Trump 312, Harris 226."
-    },
-    {
-      "id": "S34",
-      "text": "[France Diplomatie, situation politique américaine, octobre 2026](https://www.diplomatie.gouv.fr/fr/information-par-pays/etats-unis/presentation-des-etats-unis). Priorités du second mandat Trump, immigration, administration fédérale, commerce et retraits multilatéraux."
-    },
-    {
       "id": "S35",
       "text": "[IRS, crédits fiscaux pour véhicules propres](https://www.irs.gov/clean-vehicle-tax-credits). Fin des crédits pour les acquisitions postérieures au 30 septembre 2025. Une livraison ultérieure reste possible sous conditions pour une acquisition antérieure."
     },
@@ -730,7 +735,7 @@
     },
     {
       "id": "S46",
-      "text": "[Brand USA, cultures et cuisines régionales](https://www.visittheusa.com/experience/discover-regional-cuisines-united-states). Gastronomies régionales et apports culturels ; organisme national de promotion touristique."
+      "text": "[Smithsonian Folklife Festival, Rhythms, Roots, Recipes, 2026](https://festival.si.edu/2026/rhythms-roots-recipes/recipes) et [AP, traditions régionales du barbecue, juin 2026](https://apnews.com/article/58752ec6176c10425449cec3a17d23c1). Recettes et diversité des traditions culinaires américaines."
     },
     {
       "id": "S47",
@@ -738,7 +743,7 @@
     },
     {
       "id": "S48",
-      "text": "[Census Bureau, estimations municipales Vintage 2025, 14 mai 2026](https://www.census.gov/newsroom/press-releases/2026/vintage-2025-city-town-pop-estimates.html) et [tableau des villes, Population Clock](https://www.census.gov/popclock/). New York 8 584 629 ; Los Angeles 3 869 089 ; Chicago 2 731 585 ; Houston 2 397 315 ; Phoenix 1 665 481 ; Philadelphie 1 574 281. Municipalités au 1er juillet 2025, distinctes des agglomérations."
+      "text": "[Census Bureau, estimations municipales Vintage 2025, 14 mai 2026](https://www.census.gov/newsroom/press-releases/2026/vintage-2025-city-town-pop-estimates.html) et [tableau des villes, Population Clock](https://www.census.gov/popclock/). New York 8 584 629 ; Los Angeles 3 869 089 ; Chicago 2 731 585 ; Houston 2 397 315 ; Phoenix 1 665 481 ; Philadelphie 1 574 281. Municipalités au 1er juillet 2025, distinctes des agglomérations. Coordonnées des centres issues de Natural Earth, distinctes des centroïdes municipaux."
     },
     {
       "id": "S49",
@@ -746,7 +751,7 @@
     },
     {
       "id": "S50",
-      "text": "[U.S. Global Change Research Program, Fifth National Climate Assessment](https://nca2023.globalchange.gov/). Régions, chaleur, sécheresse, feux et risques côtiers, 2023 ; [National Park Service, provinces physiographiques](https://www.nps.gov/subjects/geology/physiographic-provinces.htm)."
+      "text": "[U.S. Global Change Research Program, Fifth National Climate Assessment](https://nca5.climate.us/). Copie conservée du rapport fédéral original. Régions, chaleur, sécheresse, feux et risques côtiers, 2023 ; [National Park Service, provinces physiographiques](https://www.nps.gov/subjects/geology/physiographic-provinces.htm)."
     },
     {
       "id": "S51",
@@ -759,6 +764,10 @@
     {
       "id": "NE",
       "text": "[Natural Earth](https://www.naturalearthdata.com/about/terms-of-use/), domaine public. Contours locaux 1:110 m et 1:50 m ; [centres urbains 1:10 m](https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_populated_places.geojson). Repères cartographiques ; les contours ne constituent pas une position sur les frontières."
+    },
+    {
+      "id": "S53",
+      "text": "[Bureau of Transportation Statistics, Transportation Economic Trends, caractéristiques économiques des déplacements](https://data.bts.gov/stories/s/Chapter-4-Economic-Characteristics-of-Passenger-Tr/65u2-y2k4/). Mobilité des ménages, dépenses de transport et dépendance aux véhicules particuliers."
     }
   ],
   "hero_sources": [
@@ -782,11 +791,6 @@
     "travail-us": {
       "value": 40,
       "unit": "heures",
-      "precision": 0
-    },
-    "grands-electeurs": {
-      "value": 312,
-      "unit": "grands électeurs",
       "precision": 0
     }
   },
