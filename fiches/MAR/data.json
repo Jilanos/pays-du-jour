@@ -242,20 +242,20 @@
   "cities_scope": "Population légale des villes · 1er septembre 2024 · arrondie au millier par le HCP",
   "cities_note": "Contour de Natural Earth, Sahara occidental compris. Salé, voisine de Rabat, figure dans le texte.",
   "cities_inset": {
-    "label": "Rabat-Fès",
+    "label": "Nord-ouest",
     "cities": [
       "Casablanca",
       "Rabat",
       "Meknès",
       "Fès"
     ],
-    "lon": -7.85,
+    "lon": -7.618,
     "lat": 33.3,
-    "scale": 44,
-    "x": 128,
-    "y": 170,
-    "width": 124,
-    "height": 100
+    "scale": 38,
+    "x": 140,
+    "y": 192,
+    "width": 114,
+    "height": 86
   },
   "charts": [
     {
@@ -268,7 +268,7 @@
         "S11"
       ],
       "france": "climat-paris",
-      "note": "Minima et maxima : moyennes quotidiennes. Pluie : cumul mensuel moyen. Stations OMM 60155 Casablanca-Anfa et 60230 Marrakech. Paris-Montsouris : station 75114001, mêmes définitions et période.",
+      "note": "Minima et maxima : moyennes quotidiennes. Pluie : cumul mensuel moyen. Stations OMM 60155 Casablanca-Anfa et 60230 Marrakech. Paris-Montsouris : station 75114001, mêmes définitions et période. Échelle des pluies : 0 à 150 mm.",
       "places": [
         {
           "place": "Casablanca",
@@ -360,7 +360,8 @@
             24.2
           ]
         }
-      ]
+      ],
+      "rain_max": 150
     },
     {
       "id": "pyramide-ages",
@@ -461,7 +462,7 @@
     {
       "id": "salaires",
       "type": "bar",
-      "title": "La moitié des salariés déclarés gagne moins de 3 400 dirhams",
+      "title": "La médiane loin derrière la moyenne",
       "year": 2025,
       "subtitle": "Salaire mensuel déclaré à la CNSS · secteur privé formel · 2025 · MAD/mois",
       "labels": [
@@ -641,7 +642,8 @@
   "prose_values": {
     "toubkal": {
       "value": 4167,
-      "unit": "mètres"
+      "unit": "mètres",
+      "precision": 0
     },
     "marrakech-35": {
       "value": 72.9,
@@ -669,11 +671,6 @@
     },
     "francais-ecrit": {
       "value": 57.7,
-      "unit": "%",
-      "precision": 1
-    },
-    "activite": {
-      "value": 43.5,
       "unit": "%",
       "precision": 1
     },
@@ -709,7 +706,7 @@
     },
     "commerce-fr": {
       "value": 15100000000,
-      "unit": "euros"
+      "unit": "d’euros"
     },
     "ide-fr": {
       "value": 27,
@@ -718,7 +715,7 @@
     },
     "voitures-2024": {
       "value": 537000,
-      "unit": "voitures"
+      "unit": ""
     },
     "voitures-2025": {
       "value": 457000,
@@ -731,7 +728,8 @@
     },
     "renault-production": {
       "value": 394474,
-      "unit": "véhicules"
+      "unit": "véhicules",
+      "precision": 0
     },
     "contenu-europeen": {
       "value": 70,
@@ -741,6 +739,23 @@
     "thermique": {
       "value": 90,
       "unit": "%",
+      "precision": 0
+    },
+    "activite-femmes": {
+      "value": 19.0,
+      "unit": "%",
+      "precision": 1
+    },
+    "activite-hommes": {
+      "value": 68.5,
+      "unit": "%",
+      "precision": 1
+    },
+    "seuil-4000": {
+      "value": 4000,
+      "unit": "MAD",
+      "euro": true,
+      "year": 2025,
       "precision": 0
     }
   },

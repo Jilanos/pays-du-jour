@@ -212,41 +212,45 @@ def cities(
         if i not in grouped:
             pin(group, *project((city["lon"], city["lat"])), i)
     if grouped:
-        # A dense cluster moves to a magnified inset, linked to a dashed ring on the map.
-        lons = [city_data[i]["lon"] for i in grouped]
-        lats = [city_data[i]["lat"] for i in grouped]
-        focus = inset.get("focus") or [(min(lons) + max(lons)) / 2, (min(lats) + max(lats)) / 2]
-        x, y = project(focus)
-        spread = max(
-            abs(a - b)
-            for i in grouped
-            for a, b in zip(project((city_data[i]["lon"], city_data[i]["lat"])), (x, y))
-        )
-        radius = 16 if iso3 == "TWN" else max(16, spread + 8)
-        el(
-            group,
-            "circle",
-            cx=x,
-            cy=y,
-            r=radius,
-            fill="none",
-            stroke="var(--accent)",
-            stroke_dasharray="3 3",
-        )
+        # A dense cluster moves to a magnified inset, linked to a dashed outline on the map.
         box_x, box_y = inset["x"], inset["y"]
         box_w, box_h = inset["width"], inset["height"]
-        anchor_x = box_x + box_w if box_x + box_w < x else box_x
-        anchor_y = min(max(y, box_y), box_y + box_h)
-        el(
-            group,
-            "line",
-            x1=x - radius + 1 if anchor_x < x else x + radius - 1,
-            x2=118 if iso3 == "TWN" else anchor_x,
-            y1=y,
-            y2=anchor_y if iso3 != "TWN" else 72,
-            stroke="var(--accent)",
-            stroke_dasharray="3 3",
-        )
+        dash = {"stroke": "var(--accent)", "stroke_dasharray": "3 3"}
+        if iso3 == "TWN":
+            x, y = project(inset["focus"])
+            el(group, "circle", cx=x, cy=y, r=16, fill="none", **dash)
+            el(group, "line", x1=x - 15, x2=118, y1=y, y2=72, **dash)
+        else:
+            points = [project((city_data[i]["lon"], city_data[i]["lat"])) for i in grouped]
+            left = min(p[0] for p in points) - 5
+            right = max(p[0] for p in points) + 5
+            top = min(p[1] for p in points) - 5
+            bottom = max(p[1] for p in points) + 5
+            el(
+                group,
+                "rect",
+                x=left,
+                y=top,
+                width=right - left,
+                height=bottom - top,
+                rx=3,
+                fill="none",
+                **dash,
+            )
+            cx, cy = (left + right) / 2, (top + bottom) / 2
+
+            def clamp(v, lo, hi):
+                return min(max(v, lo), hi)
+
+            if box_y >= bottom:
+                start, end = (cx, bottom), (clamp(cx, box_x, box_x + box_w), box_y)
+            elif box_y + box_h <= top:
+                start, end = (cx, top), (clamp(cx, box_x, box_x + box_w), box_y + box_h)
+            elif box_x + box_w <= left:
+                start, end = (left, cy), (box_x + box_w, clamp(cy, box_y, box_y + box_h))
+            else:
+                start, end = (right, cy), (box_x, clamp(cy, box_y, box_y + box_h))
+            el(group, "line", x1=start[0], y1=start[1], x2=end[0], y2=end[1], **dash)
         view_h = round(box_h * 103 / 92) if iso3 == "TWN" else box_h
         frame = el(
             group,
@@ -278,7 +282,7 @@ def cities(
             )
 
         el(frame, "path", d=path(geom, ip), class_="city-land")
-        label_width = 76 if iso3 == "TWN" else 12 + 8 * len(inset["label"])
+        label_width = 76 if iso3 == "TWN" else min(box_w - 12, 6 + 10 * len(inset["label"]))
         el(frame, "rect", x=6, y=6, width=label_width, height=23, fill="var(--bg)", rx=2)
         text(frame, 10, 23, inset["label"], class_="inset-label")
         for i in grouped:

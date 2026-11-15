@@ -54,19 +54,19 @@ L’islam est la religion de l’État. La Constitution garantit le libre exerci
 
 La place Jemaa el-Fna, à Marrakech, rassemble chaque soir conteurs, musiciens et vendeurs. L’UNESCO l’inscrit au patrimoine immatériel. {#societe-1 sources="S35" label="Place Jemaa el-Fna"}
 
-La Moudawana de 2004 réforme le code de la famille. Les femmes peuvent demander le divorce et se marier sans tuteur. L’âge légal du mariage passe à 18 ans. La polygamie reste permise sous conditions strictes. Le travail reste pourtant peu partagé. Le taux d’activité global n’atteint que {{value:activite}}. Les femmes subissent un chômage bien plus élevé que les hommes. {#societe-2 sources="S30,S05" label="Famille et travail des femmes"}
+La Moudawana de 2004 réforme le code de la famille. Les femmes peuvent demander le divorce et se marier sans tuteur. L’âge légal du mariage passe à 18 ans. La polygamie reste permise sous conditions strictes. Le travail des femmes reste pourtant rare. Leur taux d’activité atteint {{value:activite-femmes}}, contre {{value:activite-hommes}} pour les hommes. Leur chômage dépasse nettement celui des hommes. {#societe-2 sources="S30,S05" label="Famille et travail des femmes"}
 
-Le football domine les conversations. Le Maroc accueille la Coupe d’Afrique des nations de 2025 et coorganise la Coupe du monde 2030 avec l’Espagne et le Portugal. Le Toubkal, au sud de Marrakech, attire randonneurs et alpinistes. Pour la musique électronique, le festival Oasis a fait venir à Marrakech des artistes comme Laurent Garnier et Joy Orbison. Sa huitième édition a eu lieu en septembre 2024, avant une pause annoncée pour 2025. {#societe-3 sources="S27,S28,S38,S36" label="Sport et musique"}
+Le football domine les conversations. Le Maroc a accueilli la Coupe d’Afrique des nations fin 2025. Il coorganise la Coupe du monde 2030 avec l’Espagne et le Portugal. Le Toubkal, au sud de Marrakech, attire randonneurs et alpinistes. Pour la musique électronique, le festival Oasis a fait venir à Marrakech des artistes comme Laurent Garnier et Joy Orbison. Sa huitième édition a eu lieu en septembre 2024, avant une pause annoncée pour 2025. {#societe-3 sources="S27,S28,S38,S36" label="Sport et musique"}
 
 ## Richesse et disparités
 
 {{chart:salaires}}
 
-L’écart entre médiane et moyenne est très large. Une minorité de cadres tire la moyenne vers le haut. Plus de la moitié des salariés déclarés touche moins de 4 000 dirhams par mois. Ces chiffres couvrent le secteur privé formel. Une grande partie des actifs travaille hors de ce champ, dans l’agriculture familiale, le commerce informel ou la fonction publique. {#richesse-1 sources="S12" label="Lecture des salaires"}
+L’écart entre médiane et moyenne est très large. Une minorité de cadres tire la moyenne vers le haut. Plus de la moitié des salariés déclarés touche moins de {{value:seuil-4000}} par mois. Ces chiffres couvrent le secteur privé formel. Les fonctionnaires, les indépendants et l’emploi informel n’y figurent pas. {#richesse-1 sources="S12" label="Lecture des salaires"}
 
 {{chart:chomage-groupes}}
 
-Le chômage frappe surtout les jeunes, les diplômés et les femmes. Il est beaucoup plus faible à la campagne. Le sous-emploi progresse aussi. Ce décalage entre diplômes et emplois nourrit la colère de la jeunesse. {#richesse-2 sources="S05,S26" label="Chômage"}
+Plus d’un jeune actif sur trois est au chômage. Les diplômés et les femmes sont aussi très exposés. Le chômage est beaucoup plus faible à la campagne. Le sous-emploi progresse aussi. {#richesse-2 sources="S05" label="Chômage"}
 
 La pauvreté monétaire atteint {{value:pauvrete}} de la population en 2022, contre {{value:pauvrete-rurale}} à la campagne. Le Gini porte sur les dépenses de consommation. Il ne se compare pas directement aux indices français fondés sur les revenus. Le nombre de pauvres dépasse le million de personnes en 2022. {#richesse-3 sources="S02" label="Pauvreté et territoires"}
 
@@ -92,7 +92,7 @@ Hassan II règne ensuite jusqu’à sa mort en 1999. Son pouvoir autoritaire mar
 
 Le Maroc est une monarchie constitutionnelle. Le roi nomme le chef du gouvernement au sein du parti arrivé en tête des législatives. Il préside le Conseil des ministres, commande les forces armées et accrédite les ambassadeurs. Le gouvernement conduit les politiques économiques et sociales. V-Dem classe le régime parmi les autocraties fermées. Les journalistes indépendants subissent une pression constante. {#politique-1 sources="S39,S08,S09" label="Institutions"}
 
-Le Sahara occidental structure toute la diplomatie marocaine. Rabat propose depuis 2007 une autonomie sous sa souveraineté. Washington reconnaît cette souveraineté en décembre 2020, en échange de la normalisation avec Israël. L’Algérie, soutien du Polisario, rompt ses relations diplomatiques en août 2021. {#politique-2 sources="S34,S25" label="Sahara occidental"}
+Le Sahara occidental structure toute la diplomatie marocaine. Rabat défend une autonomie du territoire sous sa souveraineté. Washington reconnaît cette souveraineté en décembre 2020, en échange de la normalisation avec Israël. L’Algérie, soutien du Polisario, rompt ses relations diplomatiques en août 2021. {#politique-2 sources="S34,S25" label="Sahara occidental"}
 
 ### Dirigeants récents
 
@@ -107,7 +107,7 @@ Mohammed VI est chef de l’État depuis le 23 juillet 1999. Fatima Ezzahra El M
 
 ### Dynamiques actuelles
 
-**2011-2015.** Le mouvement du 20 Février manifeste pour la dignité et contre la corruption. Le roi répond par une nouvelle Constitution, adoptée par référendum le 1er juillet 2011. Les islamistes du PJD gagnent les législatives de novembre avec 107 sièges. Abdelilah Benkirane dirige le premier gouvernement de ce parti. {#dynamiques-1 sources="S31" label="Politique · 2011-2015"}
+**2006-2015.** En 2007, Rabat présente à l’ONU son plan d’autonomie pour le Sahara occidental. En 2011, le mouvement du 20 Février manifeste pour la dignité et contre la corruption. Le roi répond par une nouvelle Constitution, adoptée par référendum le 1er juillet 2011. Les islamistes du PJD gagnent les législatives de novembre avec 107 sièges. Abdelilah Benkirane dirige le premier gouvernement de ce parti. {#dynamiques-1 sources="S41,S31" label="Politique · 2006-2015"}
 
 **2016-2020.** Le PJD remporte 125 sièges en octobre 2016. Après cinq mois de blocage, Saâdeddine El Othmani remplace Benkirane en mars 2017. Dans le Rif, le Hirak manifeste en 2017 pour la justice sociale. En juin 2018, ses meneurs Nasser Zefzafi et Nabil Ahamjik sont condamnés à vingt ans de prison. En décembre 2020, la reconnaissance américaine sur le Sahara accompagne la normalisation avec Israël. {#dynamiques-2 sources="S31,S33,S34" label="Politique · 2016-2020"}
 
@@ -137,7 +137,7 @@ La France reste le premier partenaire économique du Maroc. Les échanges de bie
 
 Renault produit au Maroc dans deux usines : Tanger, ouverte sur l’export, et la Somaca à Casablanca. En 2025, elles fabriquent {{value:renault-production}}. Le Maroc est le deuxième pays de production de Renault Group. Stellantis assemble à Kénitra la Peugeot 208 et des quadricycles électriques : Citroën Ami, Fiat Topolino et Opel Rocks-e. Autour d’eux, des équipementiers fabriquent câblages, sièges et pièces. {#automobile-1 sources="S20,S21" label="Usines et constructeurs"}
 
-Le câblage pèse désormais presque autant que l’assemblage. En 2025, les voitures exportées tombent de {{value:voitures-2024}} à {{value:voitures-2025}}. L’Europe en reçoit l’essentiel, dont {{value:voitures-france}} pour la France. Les voitures vendues dans l’Union restent thermiques à près de {{value:thermique}}. La demande européenne se tourne vers l’électrique et les modèles chinois. {#automobile-2 sources="S13" label="Exportations et électrification"}
+Le câblage pèse désormais presque autant que l’assemblage. En 2025, le nombre de voitures exportées tombe de {{value:voitures-2024}} à {{value:voitures-2025}}. L’Europe en reçoit l’essentiel, dont {{value:voitures-france}} pour la France. Les voitures marocaines vendues dans l’Union restent thermiques à près de {{value:thermique}}. La demande européenne se tourne vers l’électrique et les modèles chinois. {#automobile-2 sources="S13" label="Exportations et électrification"}
 
 Bruxelles prépare une préférence européenne dans l’industrie. Dans l’automobile, les aides publiques exigeraient un assemblage final dans l’Union et {{value:contenu-europeen}} de contenu européen hors batterie. Mi-octobre, Paris et Berlin s’entendent sur une définition qui exclut le Maroc. Le 10 novembre, le ministre de l’Industrie Ryad Mezzour reconnaît devant les députés que des projets ont été réorientés vers l’Europe. Dans TelQuel, il qualifie cette exclusion d’« acte agressif ». Le pays mise sur les batteries et des centres de recherche pour suivre l’électrification. {#automobile-3 sources="S37,S13" label="Made in Europe et batteries"}
 
