@@ -67,10 +67,10 @@
     {
       "id": "electricite-bas-carbone",
       "label": "Électricité bas-carbone",
-      "value": 42,
+      "value": 41.075,
       "unit": "%",
       "year": 2025,
-      "coverage": "Nucléaire et renouvelables · production 2025",
+      "coverage": "Nucléaire et renouvelables · production brute 2025",
       "source_ids": [
         "S25"
       ],
@@ -674,7 +674,7 @@
     },
     {
       "id": "S25",
-      "text": "[Ember, Global Electricity Review 2026, grands pays](https://ember-energy.org/latest-insights/global-electricity-review-2026/major-countries-and-regions/). Chine 2025 : 42 % de production électrique bas-carbone, nucléaire et renouvelables. Part arrondie publiée. Périmètre national, électricité produite, distinct de l’énergie primaire et des capacités installées."
+      "text": "[Ember, Yearly Electricity Data, série mondiale 2025](https://files.ember-energy.org/public-downloads/generation/outputs/release_generation_yearly_global.csv) ; [méthodologie](https://files.ember-energy.org/public-downloads/ember_electricity_data_methodology.pdf). Publication mise à jour le 11 novembre 2026. Ligne China, 2025, Clean, colonne Share of generation (%) : 41,075 %. Production brute nationale ; nucléaire et renouvelables, hors pompage. Même fichier et même agrégat que la France. Le CSV actualisé remplace la part arrondie du rapport d’avril. Licence CC BY 4.0."
     },
     {
       "id": "S26",
@@ -803,6 +803,14 @@
     {
       "id": "S56",
       "text": "[Lonely Planet, A taste of Chengdu, 19 août 2021](https://www.lonelyplanet.com/articles/chengdu-capital-chinese-sichuan-cuisine). Raviolis chaoshou, poulet gongbao, piment et poivre du Sichuan."
+    },
+    {
+      "id": "S57",
+      "text": "[Académie chinoise des sciences, établissement de l’heure de Pékin, 14 octobre 2024](https://english.cas.cn/Special_Reports/CAS_75th_anniversary/Key_National_Needs/202410/t20241014_691701.shtml). Le National Time Service Center maintient et diffuse l’heure nationale."
+    },
+    {
+      "id": "S58",
+      "text": "[Time and Date, Only One Time Zone in China](https://www.timeanddate.com/time/china/one-time-zone.html). Heure officielle commune et usage officieux au Xinjiang."
     }
   ],
   "cities": [

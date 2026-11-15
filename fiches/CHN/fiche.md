@@ -162,6 +162,6 @@ La réussite industrielle s’accompagne d’une concurrence féroce. Le bilan p
 
 ## Le saviez-vous ?
 
-Le mot « non privé » dans les statistiques salariales chinoises ne signifie pas « fonctionnaire ». Cette catégorie comprend aussi des entreprises étrangères. Lire la définition peut changer complètement l’interprétation d’un salaire moyen. {#saviez-vous-1 sources="S21" label="Un piège de vocabulaire statistique"}
+L’heure officielle est celle de Pékin dans tout le pays. Elle est maintenue par un centre national spécialisé. À l’extrême ouest, le soleil se décale fortement par rapport aux horaires de l’est. Au Xinjiang, une heure locale officieuse accompagne aussi la vie quotidienne. {#saviez-vous-1 sources="S57,S58" label="Une même heure officielle"}
 
 {{sources}}
