@@ -1,0 +1,963 @@
+{
+  "keyfacts": [
+    {
+      "id": "population",
+      "label": "Population légale",
+      "value": 36828330,
+      "unit": "habitants",
+      "year": 2024,
+      "coverage": "Recensement · 1er septembre 2024",
+      "source_ids": [
+        "S01"
+      ],
+      "france": "population"
+    },
+    {
+      "id": "superficie",
+      "label": "Superficie",
+      "value": 446550,
+      "unit": "km²",
+      "year": 2024,
+      "coverage": "Hors Sahara occidental · Banque mondiale",
+      "source_ids": [
+        "S03"
+      ],
+      "france": "superficie"
+    },
+    {
+      "id": "pib-nominal",
+      "label": "PIB nominal",
+      "value": 183973000000,
+      "unit": "USD",
+      "year": 2025,
+      "coverage": "Prix courants · FMI, octobre 2026",
+      "source_ids": [
+        "S04"
+      ],
+      "france": "pib-nominal"
+    },
+    {
+      "id": "fecondite",
+      "label": "Fécondité",
+      "value": 1.97,
+      "unit": "enfant/femme",
+      "year": 2024,
+      "precision": 2,
+      "coverage": "Indicateur synthétique · recensement 2024",
+      "source_ids": [
+        "S01"
+      ],
+      "france": "fecondite"
+    },
+    {
+      "id": "chomage",
+      "label": "Chômage",
+      "value": 13.0,
+      "unit": "%",
+      "year": 2025,
+      "precision": 1,
+      "coverage": "15 ans ou plus · moyenne 2025",
+      "source_ids": [
+        "S05"
+      ],
+      "france": "chomage"
+    },
+    {
+      "id": "electricite-bas-carbone",
+      "label": "Électricité bas-carbone",
+      "value": 23.212,
+      "unit": "%",
+      "year": 2025,
+      "coverage": "Renouvelables · production brute 2025",
+      "source_ids": [
+        "S06"
+      ],
+      "france": "electricite-bas-carbone"
+    }
+  ],
+  "indices": [
+    {
+      "id": "idh",
+      "name": "Développement humain",
+      "acronym": "IDH",
+      "value": 0.71,
+      "rank": "120ᵉ / 193",
+      "year": 2023,
+      "source_ids": [
+        "S07"
+      ],
+      "france": "idh",
+      "scale_min": 0,
+      "scale_max": 1,
+      "higher_is_better": true,
+      "precision": 3
+    },
+    {
+      "id": "gini",
+      "name": "Inégalités de dépenses",
+      "acronym": "Gini",
+      "value": 0.405,
+      "rank": "Sans classement",
+      "year": 2022,
+      "source_ids": [
+        "S02"
+      ],
+      "scale_min": 0,
+      "scale_max": 1,
+      "higher_is_better": false,
+      "precision": 3,
+      "coverage": "Dépenses de consommation par personne.",
+      "france": {
+        "status": "non_comparable",
+        "reason": "Gini des dépenses de consommation au Maroc ; Gini du niveau de vie (revenus) en France.",
+        "source_ids": [
+          "FR-GINI"
+        ]
+      }
+    },
+    {
+      "id": "democratie",
+      "name": "Démocratie libérale",
+      "acronym": "V-Dem",
+      "value": 0.25,
+      "rank": "107ᵉ",
+      "year": 2025,
+      "source_ids": [
+        "S08"
+      ],
+      "france": "democratie",
+      "scale_min": 0,
+      "scale_max": 1,
+      "higher_is_better": true,
+      "precision": 2
+    },
+    {
+      "id": "presse",
+      "name": "Liberté de la presse",
+      "acronym": "RSF",
+      "value": 50.55,
+      "rank": "105ᵉ / 180",
+      "year": 2026,
+      "source_ids": [
+        "S09"
+      ],
+      "france": "presse",
+      "scale_min": 0,
+      "scale_max": 100,
+      "higher_is_better": true,
+      "precision": 2
+    },
+    {
+      "id": "corruption",
+      "name": "Corruption perçue",
+      "acronym": "CPI",
+      "value": 39,
+      "rank": "91ᵉ / 182",
+      "year": 2025,
+      "source_ids": [
+        "S10"
+      ],
+      "france": "corruption",
+      "scale_min": 0,
+      "scale_max": 100,
+      "higher_is_better": true,
+      "precision": 0
+    }
+  ],
+  "cities": [
+    {
+      "name": "Casablanca",
+      "population": 3236000,
+      "lat": 33.601922,
+      "lon": -7.618313,
+      "note": "Capitale économique, port, banques et industrie.",
+      "year": 2024,
+      "source_ids": [
+        "S01",
+        "S17"
+      ]
+    },
+    {
+      "name": "Tanger",
+      "population": 1275000,
+      "lat": 35.747287,
+      "lon": -5.832704,
+      "note": "Détroit de Gibraltar, port et usine Renault.",
+      "year": 2024,
+      "source_ids": [
+        "S01",
+        "S17"
+      ]
+    },
+    {
+      "name": "Fès",
+      "population": 1183000,
+      "lat": 34.056546,
+      "lon": -5.002323,
+      "note": "Médina historique, universités et artisanat.",
+      "year": 2024,
+      "source_ids": [
+        "S01",
+        "S17"
+      ]
+    },
+    {
+      "name": "Marrakech",
+      "population": 1015000,
+      "lat": 31.631939,
+      "lon": -8.001933,
+      "note": "Tourisme, médina et porte du Haut Atlas.",
+      "year": 2024,
+      "source_ids": [
+        "S01",
+        "S17"
+      ]
+    },
+    {
+      "name": "Meknès",
+      "population": 562000,
+      "lat": 33.900423,
+      "lon": -5.559981,
+      "note": "Ville impériale au cœur de la plaine du Saïs.",
+      "year": 2024,
+      "source_ids": [
+        "S01",
+        "S17"
+      ]
+    },
+    {
+      "name": "Rabat",
+      "population": 516000,
+      "lat": 34.025307,
+      "lon": -6.836408,
+      "note": "Capitale politique, administration et palais royal.",
+      "year": 2024,
+      "source_ids": [
+        "S01",
+        "S17"
+      ]
+    }
+  ],
+  "cities_title": "Les villes de l’Atlantique et du Saïs",
+  "cities_scope": "Population légale des villes · 1er septembre 2024 · arrondie au millier par le HCP",
+  "cities_note": "Contour de Natural Earth, Sahara occidental compris. Salé, voisine de Rabat, figure dans le texte.",
+  "cities_inset": {
+    "label": "Rabat-Fès",
+    "cities": [
+      "Casablanca",
+      "Rabat",
+      "Meknès",
+      "Fès"
+    ],
+    "lon": -7.85,
+    "lat": 33.3,
+    "scale": 44,
+    "x": 128,
+    "y": 170,
+    "width": 124,
+    "height": 100
+  },
+  "charts": [
+    {
+      "id": "climat",
+      "type": "climate",
+      "title": "Une côte tempérée, un intérieur brûlant",
+      "subtitle": "Normales 1991–2020 · comparaison avec Paris-Montsouris",
+      "year": "1991–2020",
+      "source_ids": [
+        "S11"
+      ],
+      "france": "climat-paris",
+      "note": "Minima et maxima : moyennes quotidiennes. Pluie : cumul mensuel moyen. Stations OMM 60155 Casablanca-Anfa et 60230 Marrakech. Paris-Montsouris : station 75114001, mêmes définitions et période.",
+      "places": [
+        {
+          "place": "Casablanca",
+          "tmin": [
+            8.9,
+            9.7,
+            11.6,
+            13.3,
+            15.9,
+            18.7,
+            20.5,
+            21.0,
+            19.5,
+            16.8,
+            12.8,
+            10.5
+          ],
+          "tmax": [
+            17.6,
+            18.1,
+            19.7,
+            20.6,
+            22.7,
+            24.6,
+            26.1,
+            26.7,
+            25.9,
+            24.3,
+            21.0,
+            18.9
+          ],
+          "precip_mm": [
+            61.9,
+            49.7,
+            42.5,
+            33.5,
+            13.6,
+            2.5,
+            0.5,
+            0.4,
+            11.7,
+            45.3,
+            84.4,
+            62.2
+          ]
+        },
+        {
+          "place": "Marrakech",
+          "tmin": [
+            5.9,
+            7.6,
+            10.3,
+            12.4,
+            15.2,
+            17.9,
+            20.6,
+            21.1,
+            18.6,
+            15.7,
+            10.7,
+            7.3
+          ],
+          "tmax": [
+            19.1,
+            20.7,
+            23.6,
+            25.7,
+            29.4,
+            33.6,
+            37.7,
+            37.4,
+            32.5,
+            28.5,
+            23.1,
+            20.1
+          ],
+          "precip_mm": [
+            25.0,
+            25.7,
+            35.2,
+            26.3,
+            10.5,
+            3.1,
+            2.2,
+            4.7,
+            15.2,
+            19.1,
+            29.8,
+            24.2
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pyramide-ages",
+      "type": "pyramid",
+      "title": "Une base qui se resserre, des adultes nombreux",
+      "year": 2024,
+      "subtitle": "Part de la population totale · % · septembre 2024 / janvier 2026",
+      "age_groups": [
+        "0–4",
+        "5–9",
+        "10–14",
+        "15–19",
+        "20–24",
+        "25–29",
+        "30–34",
+        "35–39",
+        "40–44",
+        "45–49",
+        "50–54",
+        "55–59",
+        "60–64",
+        "65–69",
+        "70–74",
+        "75+"
+      ],
+      "male": [
+        3.939,
+        4.787,
+        4.986,
+        4.188,
+        3.59,
+        3.341,
+        3.49,
+        3.441,
+        3.391,
+        2.992,
+        2.742,
+        2.294,
+        2.294,
+        1.745,
+        1.296,
+        1.396
+      ],
+      "female": [
+        3.71,
+        4.462,
+        4.663,
+        4.011,
+        3.66,
+        3.51,
+        3.66,
+        3.56,
+        3.51,
+        3.108,
+        2.808,
+        2.407,
+        2.407,
+        1.705,
+        1.253,
+        1.705
+      ],
+      "unit": "%",
+      "source_ids": [
+        "S02"
+      ],
+      "france": "pyramide-france-75",
+      "note": "Maroc : population municipale du recensement de septembre 2024. Le HCP publie la structure par âge au sein de chaque sexe, arrondie au dixième (tableau 1.6). Part de la population totale calculée pour cette fiche : part publiée × effectif municipal du sexe (18 195 000 hommes, 18 295 000 femmes, tableau 1.3) / 36 490 000. Somme : 100,05 %, effet des arrondis. France : résidents au 1er janvier 2026, classes de 75 ans ou plus regroupées.",
+      "note_visible": "Maroc : recensement 2024. France : estimation au 1er janvier 2026."
+    },
+    {
+      "id": "langues",
+      "type": "barh",
+      "title": "La darija, langue commune",
+      "year": 2024,
+      "subtitle": "Expressions linguistiques utilisées · recensement 2024 · % de la population",
+      "labels": [
+        "Darija",
+        "Amazigh (tachelhit, tamazight, tarifit)",
+        "Hassania"
+      ],
+      "values": [
+        91.9,
+        24.8,
+        0.8
+      ],
+      "unit": "%",
+      "precision": 1,
+      "source_ids": [
+        "S01"
+      ],
+      "note_visible": "Plusieurs réponses possibles : le total dépasse 100 %.",
+      "france": {
+        "status": "non_comparable",
+        "reason": "Pas de question française équivalente sur les langues utilisées au quotidien.",
+        "source_ids": []
+      }
+    },
+    {
+      "id": "salaires",
+      "type": "bar",
+      "title": "La moitié des salariés déclarés gagne moins de 3 400 dirhams",
+      "year": 2025,
+      "subtitle": "Salaire mensuel déclaré à la CNSS · secteur privé formel · 2025 · MAD/mois",
+      "labels": [
+        "Médiane",
+        "Moyenne"
+      ],
+      "values": [
+        3363,
+        6149
+      ],
+      "unit": "MAD/mois",
+      "highlight": "Médiane",
+      "euro": true,
+      "source_ids": [
+        "S12"
+      ],
+      "note": "Régime général de la CNSS : 4,22 millions de salariés déclarés en 2025. Salaires bruts déclarés par les employeurs. Les fonctionnaires et l’emploi informel sont hors champ.",
+      "note_visible": "Salariés déclarés à la CNSS. Fonction publique et emploi informel exclus.",
+      "france": {
+        "status": "non_comparable",
+        "reason": "Insee mesure les salaires en équivalent temps plein, primes incluses ; la CNSS publie des salaires déclarés sans conversion en temps plein.",
+        "source_ids": [
+          "FR-WAGE"
+        ]
+      }
+    },
+    {
+      "id": "chomage-groupes",
+      "type": "barh",
+      "title": "Le chômage frappe d’abord les jeunes",
+      "year": 2025,
+      "subtitle": "Taux de chômage par groupe · 2025 · %",
+      "labels": [
+        "15–24 ans",
+        "Femmes",
+        "Diplômés",
+        "Villes",
+        "Campagnes"
+      ],
+      "values": [
+        37.2,
+        20.5,
+        19.1,
+        16.4,
+        6.6
+      ],
+      "unit": "%",
+      "precision": 1,
+      "highlight": "15–24 ans",
+      "source_ids": [
+        "S05"
+      ],
+      "france": {
+        "status": "unavailable",
+        "reason": "Pas de série française publiée avec ces mêmes groupes, notamment urbain, rural et diplômés.",
+        "source_ids": []
+      }
+    },
+    {
+      "id": "pib-secteurs",
+      "type": "share",
+      "title": "Les services dominent, l’industrie pèse plus qu’en France",
+      "year": 2025,
+      "subtitle": "Valeur ajoutée aux prix de base · prix courants · 2025 · %",
+      "labels": [
+        "Agriculture, forêt, pêche",
+        "Industrie, mines, énergie, construction",
+        "Services"
+      ],
+      "values": [
+        11.987,
+        28.375,
+        59.639
+      ],
+      "unit": "%",
+      "source_ids": [
+        "S14"
+      ],
+      "france": "va-secteurs",
+      "note": "Parts calculées sur la valeur ajoutée aux prix de base : 181 927, 430 654 et 905 166 millions de dirhams sur 1 517 747. Comptes provisoires, base 2014. Impôts nets sur les produits exclus, comme dans la référence française."
+    },
+    {
+      "id": "exportations",
+      "type": "share",
+      "title": "L’automobile, premier poste à l’export",
+      "year": 2025,
+      "subtitle": "Exportations de biens par secteur · 2025 · %",
+      "labels": [
+        "Automobile",
+        "Phosphates et dérivés",
+        "Agriculture et agroalimentaire",
+        "Textile et cuir",
+        "Aéronautique",
+        "Autres"
+      ],
+      "values": [
+        32.915,
+        21.213,
+        18.596,
+        9.34,
+        6.191,
+        11.745
+      ],
+      "unit": "%",
+      "source_ids": [
+        "S13"
+      ],
+      "note": "Office des changes, repris par Bank Al-Maghrib (tableau 1.6.3). Total : 470,0 milliards de dirhams. Autres : résidu calculé, dont électronique et électricité (16,7 milliards) et autres industries.",
+      "france": {
+        "status": "unavailable",
+        "reason": "Pas de série française harmonisée avec ces regroupements sectoriels.",
+        "source_ids": []
+      }
+    },
+    {
+      "id": "automobile-segments",
+      "type": "stacked",
+      "title": "Le câblage rattrape l’assemblage",
+      "year": "2022–2025",
+      "subtitle": "Exportations du secteur automobile par segment · milliards de dirhams",
+      "labels": [
+        "2022",
+        "2023",
+        "2024",
+        "2025"
+      ],
+      "unit": "milliards MAD",
+      "series": [
+        {
+          "name": "Construction de véhicules",
+          "values": [
+            55.1,
+            67.6,
+            71.0,
+            61.4
+          ]
+        },
+        {
+          "name": "Câblage",
+          "values": [
+            37.5,
+            50.4,
+            53.6,
+            57.8
+          ]
+        },
+        {
+          "name": "Intérieur et sièges",
+          "values": [
+            5.9,
+            7.7,
+            9.0,
+            9.7
+          ]
+        },
+        {
+          "name": "Autres segments",
+          "values": [
+            16.9,
+            22.5,
+            24.0,
+            25.8
+          ]
+        }
+      ],
+      "source_ids": [
+        "S13"
+      ],
+      "note": "Office des changes, repris par Bank Al-Maghrib (tableau 1.6.3). Autres segments : résidu calculé entre le total du secteur et les trois segments publiés.",
+      "france": {
+        "status": "non_comparable",
+        "reason": "Ventilation propre à la nomenclature marocaine du secteur automobile.",
+        "source_ids": []
+      }
+    }
+  ],
+  "prose_values": {
+    "toubkal": {
+      "value": 4167,
+      "unit": "mètres"
+    },
+    "marrakech-35": {
+      "value": 72.9,
+      "unit": "jours par an",
+      "precision": 0
+    },
+    "ifrane-gel": {
+      "value": 68.1,
+      "unit": "jours par an",
+      "precision": 0
+    },
+    "urbanisation": {
+      "value": 62.8,
+      "unit": "%",
+      "precision": 1
+    },
+    "sale": {
+      "value": 945000,
+      "unit": "habitants"
+    },
+    "analphabetisme": {
+      "value": 24.8,
+      "unit": "%",
+      "precision": 1
+    },
+    "francais-ecrit": {
+      "value": 57.7,
+      "unit": "%",
+      "precision": 1
+    },
+    "activite": {
+      "value": 43.5,
+      "unit": "%",
+      "precision": 1
+    },
+    "pauvrete": {
+      "value": 3.9,
+      "unit": "%",
+      "precision": 1
+    },
+    "pauvrete-rurale": {
+      "value": 6.9,
+      "unit": "%",
+      "precision": 1
+    },
+    "export-total": {
+      "value": 470000000000,
+      "unit": "MAD",
+      "euro": true,
+      "year": 2025
+    },
+    "charbon": {
+      "value": 62.378,
+      "unit": "%",
+      "precision": 0
+    },
+    "seisme": {
+      "value": 2960,
+      "unit": "morts"
+    },
+    "participation": {
+      "value": 38.08,
+      "unit": "%",
+      "precision": 1
+    },
+    "commerce-fr": {
+      "value": 15100000000,
+      "unit": "euros"
+    },
+    "ide-fr": {
+      "value": 27,
+      "unit": "%",
+      "precision": 0
+    },
+    "voitures-2024": {
+      "value": 537000,
+      "unit": "voitures"
+    },
+    "voitures-2025": {
+      "value": 457000,
+      "unit": "voitures"
+    },
+    "voitures-france": {
+      "value": 35,
+      "unit": "%",
+      "precision": 0
+    },
+    "renault-production": {
+      "value": 394474,
+      "unit": "véhicules"
+    },
+    "contenu-europeen": {
+      "value": 70,
+      "unit": "%",
+      "precision": 0
+    },
+    "thermique": {
+      "value": 90,
+      "unit": "%",
+      "precision": 0
+    }
+  },
+  "euro": {
+    "currency": "MAD",
+    "per_euro": 10.55,
+    "year": 2025,
+    "basis": "Moyenne annuelle 2025 des cours de référence de Bank Al-Maghrib, publiée directement (tableau A7.1). La BCE ne publie pas de taux de référence pour le dirham.",
+    "source_ids": [
+      "S13"
+    ]
+  },
+  "hero_sources": [
+    "S39",
+    "S15"
+  ],
+  "map_sources": {
+    "locator": [
+      "NE"
+    ],
+    "cities": [
+      "S01",
+      "S17",
+      "NE"
+    ],
+    "relief": [
+      "S16"
+    ]
+  },
+  "relief_title": "Un pays de montagnes face à l’Atlantique",
+  "relief_alt": "Relief du Maroc : Rif au nord, Moyen Atlas, Haut Atlas et Anti-Atlas en diagonale, plaines atlantiques à l’ouest.",
+  "relief_landmarks": [
+    {
+      "label": "Le Rif",
+      "text": "Un arc montagneux le long de la Méditerranée."
+    },
+    {
+      "label": "Le Haut Atlas",
+      "text": "La barrière centrale, du sud-ouest au nord-est."
+    },
+    {
+      "label": "Les plaines atlantiques",
+      "text": "Le principal espace urbain, agricole et industriel."
+    }
+  ],
+  "sources": [
+    {
+      "id": "S01",
+      "text": "HCP, recensement général de la population et de l’habitat 2024 : [principaux résultats, présentation du 17/12/2024](https://www.hcp.ma/file/242665) ; [population légale par régions, provinces et communes, novembre 2024](https://portailsudmaroc.com/documents/Population%20l%C3%A9gale%20du%20Royaume%20du%20Maroc%20r%C3%A9partie%20par%20r%C3%A9gions,%20provinces%20et%20pr%C3%A9fectures%20et%20communes%20selon%20les%20r%C3%A9sultats%20du%20Recensement%20g%C3%A9n%C3%A9ral%20de%20la%20population%20et%20de%20l%E2%80%99habitat%202024%20(version%20fran%C3%A7aise).docx.pdf). Population légale, urbanisation, fécondité, langues, lecture et écriture, populations des sept premières villes arrondies au millier."
+    },
+    {
+      "id": "S02",
+      "text": "[HCP, Les indicateurs sociaux du Maroc, édition 2026](https://www.hcp.ma/file/248623/). Tableaux 1.3 et 1.6 (population municipale par sexe, structure par âge 2024) ; tableau 6.16 (Gini des dépenses, 2022) ; fiche pauvreté monétaire 2022."
+    },
+    {
+      "id": "S03",
+      "text": "[Banque mondiale, Surface area (AG.SRF.TOTL.K2), Maroc](https://data.worldbank.org/indicator/AG.SRF.TOTL.K2?locations=MA). Valeur 2024 : 446 550 km², Sahara occidental exclu."
+    },
+    {
+      "id": "S04",
+      "text": "[FMI, World Economic Outlook, octobre 2026, série NGDPD pour le Maroc](https://www.imf.org/external/datamapper/NGDPD@WEO/MAR) ; [extraction API](https://www.imf.org/external/datamapper/api/v1/NGDPD/MAR). Valeur 2025 : 183,973 milliards de dollars courants."
+    },
+    {
+      "id": "S05",
+      "text": "[HCP, Situation du marché du travail en 2025](https://hcp.ma/Situation-du-marche-du-travail-en-2025_a4248.html). Enquête nationale sur l’emploi, population de 15 ans ou plus, définitions du BIT."
+    },
+    {
+      "id": "S06",
+      "text": "[Ember, Yearly Electricity Data, série mondiale 2025](https://files.ember-energy.org/public-downloads/generation/outputs/release_generation_yearly_global.csv) ; [méthodologie](https://files.ember-energy.org/public-downloads/ember_electricity_data_methodology.pdf). Publication mise à jour le 11 novembre 2026. Ligne Morocco, 2025 : Clean 23,212 % ; Coal 62,378 %. Même fichier et même agrégat que la France. Licence CC BY 4.0."
+    },
+    {
+      "id": "S07",
+      "text": "[PNUD, Human Development Report 2025, tableau 1, XLSX](https://hdr.undp.org/sites/default/files/2025_HDR/HDR25_Statistical_Annex_HDI_Table.xlsx). Données 2023 : Maroc 0,710, rang 120."
+    },
+    {
+      "id": "S08",
+      "text": "[V-Dem, Democracy Report 2026, tableau A2, p. 49, données 2025](https://www.v-dem.net/documents/75/V-Dem_Institute_Democracy_Report_2026_lowres.pdf). Indice de démocratie libérale 0,25, rang 107 ; régime classé autocratie fermée."
+    },
+    {
+      "id": "S09",
+      "text": "[RSF, Maroc / Sahara occidental, classement 2026](https://rsf.org/en/country/morocco-western-sahara). Score 50,55 ; rang 105 sur 180."
+    },
+    {
+      "id": "S10",
+      "text": "[Transparency International, Maroc, CPI 2025](https://www.transparency.org/en/countries/morocco). Score 39 ; rang 91 sur 182."
+    },
+    {
+      "id": "S11",
+      "text": "[OMM, normales climatologiques 1991-2020, archive NCEI 0253808, fichiers du Maroc](https://www.nodc.noaa.gov/archive/arc0216/0253808/2.2/data/0-data/Region-1-WMO-Normals-9120/Morocco/CSV/). Stations Casablanca-Anfa (60155), Marrakech (60230) et Ifrane (60160) : températures, précipitations, jours à 35 °C ou plus et jours de gel. DOI 10.25921/800j-vn07."
+    },
+    {
+      "id": "S12",
+      "text": "CNSS, rapport annuel 2025 publié le 7 septembre 2026, chiffres repris par [Aujourd’hui le Maroc](https://aujourdhui.ma/societe/salaries-declares-affilies-declarants-pensionnes-prestations-servies-les-chiffres-de-la-cnss-en-2025) et [TelQuel, 10/09/2026](https://telquel.ma/instant-t/2026/09/10/cnss-en-2025-57-des-salaries-declares-percevaient-un-salaire-inferieur-ou-egal-a-4-000-dirhams_2006947/). Régime général : salaire mensuel moyen 6 149 DH, médian 3 363 DH."
+    },
+    {
+      "id": "S13",
+      "text": "[Bank Al-Maghrib, rapport annuel 2025](https://www.bkam.ma/content/download/847720/9164323/RAPPORT%20FR%2025.pdf). Tableau 1.6.3 (exportations par secteur, source Office des changes) ; encadré 1.6.1 (automobile) ; tableau A7.1, p. 296 (cours de référence moyen de l’euro, 10,550 dirhams en 2025)."
+    },
+    {
+      "id": "S14",
+      "text": "[HCP, comptes nationaux provisoires 2025, base 2014](https://www.hcp.ma/file/248119/). Tableau 1.1.6 : PIB par secteurs d’activité aux prix courants."
+    },
+    {
+      "id": "S15",
+      "text": "[Wikimedia Commons, Flag of Morocco.svg](https://commons.wikimedia.org/wiki/File:Flag_of_Morocco.svg). Domaine public ; dessin de Denelson83 et Zscout370 d’après le dahir de 1915."
+    },
+    {
+      "id": "S16",
+      "text": "[Wikimedia Commons, Morocco relief location map.jpg](https://commons.wikimedia.org/wiki/File:Morocco_relief_location_map.jpg). Eric Gaba (Sting), données SRTM30 Plus et NGDC ; [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/). Image non modifiée."
+    },
+    {
+      "id": "S17",
+      "text": "[Natural Earth, populated places, 1:10m, GeoJSON](https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_populated_places.geojson). Coordonnées des six villes ; domaine public."
+    },
+    {
+      "id": "S18",
+      "text": "[Direction générale du Trésor, relations économiques bilatérales France-Maroc](https://www.tresor.economie.gouv.fr/Pays/MA/relations-economiques-bilaterales). Échanges 2025 : 15,1 milliards d’euros ; France premier investisseur, 27 % du stock."
+    },
+    {
+      "id": "S19",
+      "text": "[Hespress, d’après Campus France, 16/09/2025](https://fr.hespress.com/441308-441308.html). Étudiants marocains, première communauté étudiante étrangère en France en 2024-2025."
+    },
+    {
+      "id": "S20",
+      "text": "[Hespress, bilan 2025 de Renault Group Maroc](https://fr.hespress.com/460014-en-2025-renault-group-maroc-renforce-son-role-de-leader-de-la-filiere-automobile-nationale.html). Production de Tanger et de la Somaca, exportations."
+    },
+    {
+      "id": "S21",
+      "text": "[Automotive Manufacturing Solutions, usine Stellantis de Kénitra](https://www.automotivemanufacturingsolutions.com/strategy/stellantis-kenitra-moroccos-automotive-powerhouse-accelerates/2617225). Modèles assemblés et extension."
+    },
+    {
+      "id": "S22",
+      "text": "Maroc.ma : [résultats provisoires des législatives, 24/09/2026](https://www.maroc.ma/fr/actualites/legislatives-2026-le-pam-en-tete-avec-97-sieges-selon-les-resultats-provisoires) ; [résultats définitifs, 26/09/2026](https://www.maroc.ma/fr/actualites/legislatives-2026-les-resultats-definitifs-correspondent-parfaitement-aux-resultats-generaux)."
+    },
+    {
+      "id": "S23",
+      "text": "Maroc.ma : [nomination de Fatima Ezzahra El Mansouri, 29/09/2026](https://www.maroc.ma/fr/actualites/sm-le-roi-nomme-fatima-ezzahra-el-mansouri-cheffe-du-gouvernement-et-la-charge-de-former-le-nouveau) ; [majorité PAM, Istiqlal, USFP et PPS, 13/10/2026](https://www.maroc.ma/fr/actualites/formation-dune-majorite-gouvernementale-composee-du-pam-du-pi-de-lusfp-et-du-pps) ; [Wikipédia, gouvernement El Mansouri](https://fr.wikipedia.org/wiki/Gouvernement_El_Mansouri), nomination des ministres le 16/10/2026."
+    },
+    {
+      "id": "S24",
+      "text": "[EcoActu, vote de confiance de la Chambre des représentants, 23/10/2026](https://ecoactu.ma/chambre-des-representants-le-programme-gouvernemental/). 204 voix pour, 127 contre."
+    },
+    {
+      "id": "S25",
+      "text": "[ONU, couverture des réunions, Conseil de sécurité, CS/16498, 30/10/2026](https://press.un.org/fr/2026/cs16498.doc.htm). Double rejet des projets de prorogation de la MINURSO."
+    },
+    {
+      "id": "S26",
+      "text": "[Human Rights Watch, Maroc : répression violente de manifestations, 15/10/2025](https://www.hrw.org/fr/news/2025/10/15/maroc-repression-violente-de-manifestations)."
+    },
+    {
+      "id": "S27",
+      "text": "[CAF, finale de la CAN 2025, 18/01/2026](https://www.cafonline.com/fr/can2025/infos/le-senegal-encore-sur-le-toit-de-l-afrique-apres-la-victoire-sur-le-maroc-en-finale-de-la-totalenergies-caf-can-2025/)."
+    },
+    {
+      "id": "S28",
+      "text": "[FIFA, Congrès extraordinaire désignant les pays hôtes de 2030 et 2034, 11/12/2024](https://inside.fifa.com/about-fifa/congress/media-releases/extraordinary-congress-appoints-hosts-of-2030-and-2034-editions-of-fifa-world-cup)."
+    },
+    {
+      "id": "S29",
+      "text": "[Élysée, visite d’État au Maroc, deuxième journée, 29/10/2024](https://www.elysee.fr/emmanuel-macron/2024/10/29/visite-detat-au-maroc-deuxieme-journee). Discours au Parlement et rappel de la lettre du 30 juillet 2024 sur le Sahara occidental."
+    },
+    {
+      "id": "S30",
+      "text": "Wikipédia : [Protectorat français au Maroc](https://fr.wikipedia.org/wiki/Protectorat_fran%C3%A7ais_au_Maroc) ; [Marche verte](https://fr.wikipedia.org/wiki/Marche_verte) ; [Mohammed VI](https://fr.wikipedia.org/wiki/Mohammed_VI) ; [Moudawana](https://fr.wikipedia.org/wiki/Moudawana)."
+    },
+    {
+      "id": "S31",
+      "text": "Wikipédia : élections législatives marocaines de [2011](https://fr.wikipedia.org/wiki/%C3%89lections_l%C3%A9gislatives_marocaines_de_2011), [2016](https://fr.wikipedia.org/wiki/%C3%89lections_l%C3%A9gislatives_marocaines_de_2016) et [2021](https://fr.wikipedia.org/wiki/%C3%89lections_l%C3%A9gislatives_marocaines_de_2021) ; [Mouvement du 20 Février](https://fr.wikipedia.org/wiki/Mouvement_du_20_F%C3%A9vrier)."
+    },
+    {
+      "id": "S32",
+      "text": "[Wikipédia, séisme de 2023 au Maroc](https://fr.wikipedia.org/wiki/S%C3%A9isme_de_2023_au_Maroc). Bilan officiel : 2 960 morts."
+    },
+    {
+      "id": "S33",
+      "text": "[Amnesty International, verdicts des procès du Hirak, 27/06/2018](https://www.amnesty.org/fr/latest/news/2018/06/morocco-guilty-verdicts-returned-in-unfair-hirak-trials-must-be-overturned/)."
+    },
+    {
+      "id": "S34",
+      "text": "Wikipédia : [accords d’Abraham](https://fr.wikipedia.org/wiki/Accords_d%27Abraham), annonce du 10/12/2020 ; [relations entre l’Algérie et le Maroc](https://fr.wikipedia.org/wiki/Relations_entre_l%27Alg%C3%A9rie_et_le_Maroc), rupture du 24/08/2021 ; [résolution 2797](https://fr.wikipedia.org/wiki/R%C3%A9solution_2797_du_Conseil_de_s%C3%A9curit%C3%A9_des_Nations_unies), 31/10/2025."
+    },
+    {
+      "id": "S35",
+      "text": "UNESCO, patrimoine culturel immatériel : [couscous, 2020](https://ich.unesco.org/fr/RL/savoirs-savoir-faire-et-pratiques-lies-a-la-production-et-a-la-consommation-du-couscous-01602) ; [Gnawa, 2019](https://ich.unesco.org/fr/RL/gnawa-01170) ; [place Jemaa el-Fna](https://ich.unesco.org/fr/RL/l-espace-culturel-de-la-place-jemaa-el-fna-00014)."
+    },
+    {
+      "id": "S36",
+      "text": "[TelQuel, festival Oasis à Marrakech, 22/08/2024](https://telquel.ma/instant-t/2024/08/22/le-festival-oasis-revient-en-septembre-a-marrakech-et-fera-une-pause-en-2025_1890086/)."
+    },
+    {
+      "id": "S37",
+      "text": "[LesEco, préférence européenne et industrie marocaine, novembre 2026](https://leseco.ma/business/industrie-preference-europeenne-electrochoc-national.html) ; [TelQuel, entretien avec Ryad Mezzour, 13/11/2026](https://telquel.ma/2026/11/13/ryad-mezzour-exclure-le-maroc-du-pacte-made-in-europe-est-un-acte-agressif_2018091)."
+    },
+    {
+      "id": "S38",
+      "text": "[Wikipédia, djebel Toubkal](https://fr.wikipedia.org/wiki/Djebel_Toubkal). Altitude : 4 167 mètres."
+    },
+    {
+      "id": "S39",
+      "text": "[Constitution du Royaume du Maroc, 2011, édition du ministère de la Justice](https://adala.justice.gov.ma/api/uploads/2024/02/28/costitution-1709118294788.pdf). Préambule ; articles 3, 5, 41 et 47."
+    },
+    {
+      "id": "S40",
+      "text": "[Wikipédia, Coupe du monde de football 2022](https://fr.wikipedia.org/wiki/Coupe_du_monde_de_football_2022). Quart de finale Maroc-Portugal et demi-finale France-Maroc."
+    },
+    {
+      "id": "S41",
+      "text": "[ONU, couverture des réunions, Conseil de sécurité, SC/16208, 31/10/2025](https://press.un.org/en/2025/sc16208.doc.htm). Adoption de la résolution 2797 par 11 voix et 3 abstentions."
+    },
+    {
+      "id": "S42",
+      "text": "[Le Routard, Maroc, cuisine et boissons](https://www.routard.com/guide/maroc/708/cuisine_et_boissons.htm). Tajine, pastilla, harira et thé à la menthe."
+    },
+    {
+      "id": "NE",
+      "text": "[Natural Earth](https://www.naturalearthdata.com/about/terms-of-use/), domaine public. Contours 1:110 m et 1:50 m. Le contour 1:50 m du Maroc inclut le Sahara occidental. Projections régionales, repères et encart réalisés pour cette fiche. Les contours ne constituent pas une position sur la souveraineté."
+    }
+  ]
+}
