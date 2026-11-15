@@ -529,7 +529,8 @@
         "S25"
       ],
       "france": "salaires",
-      "subtitle": "Salaire mensuel régulier brut · 2025 · TWD/mois"
+      "subtitle": "Salaire mensuel régulier brut · 2025 · TWD/mois",
+      "euro": true
     },
     {
       "id": "logement",
@@ -855,6 +856,14 @@
       "text": "[TSMC, formulaire annuel 20-F 2025 déposé auprès de la SEC](https://www.sec.gov/Archives/edgar/data/1046179/000162828026025362/tsm-20251231.htm). Répartition annuelle des revenus de wafers par gravure."
     },
     {
+      "id": "S57",
+      "text": "[Banque centrale européenne, taux de référence USD/EUR, moyenne annuelle 2025 (série EXR.A.USD.EUR.SP00.A)](https://data.ecb.europa.eu/data/datasets/EXR/EXR.A.USD.EUR.SP00.A)."
+    },
+    {
+      "id": "S58",
+      "text": "[Central Bank of the Republic of China (Taiwan), taux NTD/USD interbancaire de clôture, moyennes annuelles](https://www.cbc.gov.tw/tw/cp-2151-27029-FFC31-1.html). Source primaire : Taipei Foreign Exchange Inc."
+    },
+    {
       "id": "NE",
       "text": "[Natural Earth](https://www.naturalearthdata.com/about/terms-of-use/), domaine public. Contours 1:110 m et 1:50 m, micro-États 1:10 m. Projections régionales, repères et encart nord réalisés pour cette fiche. Les contours ne constituent pas une position sur les frontières."
     }
@@ -895,11 +904,15 @@
     },
     "revenu-hsinchu": {
       "value": 1604000,
-      "unit": "TWD"
+      "unit": "TWD",
+      "euro": true,
+      "year": 2025
     },
     "revenu-taipei": {
       "value": 1554000,
-      "unit": "TWD"
+      "unit": "TWD",
+      "euro": true,
+      "year": 2025
     },
     "export-total": {
       "value": 640700000000,
@@ -969,5 +982,15 @@
       "label": "Le massif du Yushan",
       "text": "À l’ouest de la chaîne centrale."
     }
-  ]
+  ],
+  "euro": {
+    "currency": "TWD",
+    "per_euro": 35.217054,
+    "year": 2025,
+    "basis": "Taux croisé : moyenne annuelle BCE de 1,1300 USD pour 1 € multipliée par la moyenne annuelle de 31,166 TWD pour 1 USD de la banque centrale de Taïwan. La BCE ne publie plus de taux indicatif pour le TWD depuis octobre 2020.",
+    "source_ids": [
+      "S57",
+      "S58"
+    ]
+  }
 }

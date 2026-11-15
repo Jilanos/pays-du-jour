@@ -4,7 +4,7 @@ from html import escape
 from math import ceil, floor, isfinite, log10
 from xml.etree.ElementTree import Element, SubElement, tostring
 
-from .format import number, quantity
+from .format import euro, number, quantity
 
 COLORS = [f"var(--cat-{i})" for i in range(1, 7)]
 MONTHS = [
@@ -92,7 +92,7 @@ def climate(chart, mobile=False):
     width, left, right = (240, 31, 235) if mobile else (720, 42, 700)
     root = svg(chart, width, 360)
     tmin, tmax, rain = [pairs(MONTHS, chart[k]) for k in ("tmin", "tmax", "precip_mm")]
-    ref = chart.get("_france", {})
+    ref = chart.get("_france") or {}
     if ref.get("status") in ("non_comparable", "unavailable"):
         ref = {}
     all_temperatures = tmin + tmax + ref.get("tmin", []) + ref.get("tmax", [])
@@ -212,7 +212,11 @@ def pyramid(chart, mobile=False):
     for i, name in enumerate(labels):
         y = base - (i + 1) * 25
         text(root, center, y + 16, name, text_anchor="middle", class_="age-label")
-        for value, side, color in [(male[i], -1, "var(--cool)"), (female[i], 1, "var(--warm)")]:
+        # Country colours stay clear of the France blue: accent for men, warm for women.
+        for value, side, color in [
+            (male[i], -1, "var(--accent)"),
+            (female[i], 1, "var(--warm)"),
+        ]:
             size = value / limit * extent
             x = center - gap - size if side == -1 else center + gap
             el(root, "rect", x=x, y=y, width=size, height=20, fill=color, opacity=".8")
@@ -234,6 +238,14 @@ def pyramid(chart, mobile=False):
     return finish(root)
 
 
+def converted(value, chart):
+    """Approximate euro value next to a local-currency amount, when the chart opts in."""
+    fx = chart.get("_euro")
+    if not fx:
+        return ""
+    return f' <span class="euro">(≈\u00a0{euro(value, chart["unit"], fx)})</span>'
+
+
 def bar(chart):
     vals = pairs(chart["labels"], chart["values"])
     ref = chart.get("_france", {})
@@ -246,7 +258,8 @@ def bar(chart):
         cls = " highlighted" if label == chart.get("highlight") else ""
         out.append(
             f'<div class="bar-row{cls}"><div class="row-heading"><span>{escape(label)}</span>'
-            f"<strong>{quantity(value, chart['unit'], chart.get('precision'))}</strong></div>"
+            f"<strong>{quantity(value, chart['unit'], chart.get('precision'))}"
+            f"{converted(value, chart)}</strong></div>"
             f'<div class="bar-track"><span style="width:{value / limit * 100:.4f}%"></span></div>'
         )
         if refs:
@@ -529,13 +542,6 @@ def data_table(chart):
     return out
 
 
-def comparison_note(ref):
-    if not ref or ref.get("status") not in ("non_comparable", "unavailable"):
-        return ""
-    status = "non comparable" if ref["status"] == "non_comparable" else "indisponible"
-    return f'<p class="comparison-note"><span>France · {status}</span> {escape(ref["reason"])}</p>'
-
-
 def render_chart(chart, marker=""):
     kind = chart["type"]
     subtitle = chart.get("subtitle", str(chart["year"]) + " · " + chart.get("unit", "°C et mm"))
@@ -585,7 +591,6 @@ def render_chart(chart, marker=""):
             )
     if chart.get("note_visible"):
         out.append(f'<p class="figure-note">{escape(chart["note_visible"])}</p>')
-    out.append(comparison_note(chart.get("_france")))
     out.append('<details class="chart-data"><summary>Voir les données</summary>')
     if kind == "climate" and chart.get("places"):
         for place in chart["places"]:

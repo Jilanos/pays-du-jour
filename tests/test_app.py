@@ -44,6 +44,8 @@ def test_fixture_resolves_every_placeholder_and_builds_toc(client):
     assert "/pays/FRA/assets/flag.svg" in response.text
     assert "/pays/FRA/assets/relief.svg" in response.text
     assert "<table>" in response.text
+    # The chapter sidebar folds without JavaScript and starts open.
+    assert '<details class="toc-panel" open><summary>' in response.text
     assert client.get("/pays/fra").status_code == 200
 
 

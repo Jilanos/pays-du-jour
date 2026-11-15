@@ -2,7 +2,7 @@
 
 from html import escape
 
-from .format import number, rounded
+from .format import number, rounded, scale_word
 
 
 def reference(item, references):
@@ -18,15 +18,21 @@ def reference(item, references):
     }
 
 
+def comparable(ref):
+    """France appears only with a comparable value; otherwise the country stands alone."""
+    return ref if ref and ref.get("status") == "comparable" else {}
+
+
 def metric(item):
     value = item["value"]
     unit = item.get("unit", "")
     if abs(value) >= 1e9:
         val = rounded(value / 1e9)
-        unit = "milliards " + unit
+        unit = scale_word("milliard", val) + " " + unit
     elif abs(value) >= 1e6:
         val = number(value / 1e6, 1, fixed=True)
-        unit = "millions d’habitants" if unit == "habitants" else "millions " + unit
+        word = scale_word("million", val)
+        unit = f"{word} d’habitants" if unit == "habitants" else f"{word} {unit}"
     else:
         val = rounded(value, item.get("precision"))
     return f'<strong>{val}</strong><span class="metric-unit">{escape(unit)}</span>'
@@ -35,7 +41,7 @@ def metric(item):
 def keyfacts(data, references, sources, country):
     out = ['<div class="keyfacts">']
     for item in data.get("keyfacts", []):
-        ref = reference(item, references)
+        ref = comparable(reference(item, references))
         anchor = "fact-" + item["id"]
         mark = sources.cite(
             anchor,
@@ -43,28 +49,20 @@ def keyfacts(data, references, sources, country):
             item.get("source_ids", []) + ref.get("source_ids", []),
             [item.get("note"), ref.get("note")],
         )
+        single = "" if ref else " single"
         out.append(
             f'<section class="fact" id="{anchor}" aria-label="{escape(item["label"])}">'
-            f'<h3>{escape(item["label"])}{mark}</h3><div class="metric-pair">'
+            f'<h3>{escape(item["label"])}{mark}</h3><div class="metric-pair{single}">'
             f'<div class="metric-country"><span class="country-label">{escape(country)}</span>'
             f"{metric(item)}<small>{escape(item.get('coverage', str(item['year'])))}</small></div>"
         )
-        if ref.get("status") == "comparable":
+        if ref:
             out.append(
                 f'<div class="metric-france"><span class="country-label">France</span>'
                 f"{metric(ref)}<small>{escape(ref.get('coverage', str(ref['year'])))}</small></div>"
             )
-        else:
-            out.append(
-                '<div class="metric-france"><span class="country-label">France</span>'
-                '<strong class="missing">'
-                + ("Non comparable" if ref["status"] == "non_comparable" else "Indisponible")
-                + "</strong><small>"
-                + escape(ref["reason"])
-                + "</small></div>"
-            )
         out.append("</div>")
-        if ref.get("status") == "comparable":
+        if ref:
             maxval = max(item["value"], ref["value"]) or 1
             out.append(
                 '<div class="comparison-bars" aria-hidden="true">'
@@ -82,7 +80,7 @@ def indices(data, references, sources, country):
         "Chaque indice mesure une dimension différente.</p>"
     ]
     for item in data.get("indices", []):
-        ref = reference(item, references)
+        ref = comparable(reference(item, references))
         anchor = "index-" + item["id"]
         mark = sources.cite(
             anchor, item["name"], item.get("source_ids", []) + ref.get("source_ids", [])
@@ -95,20 +93,14 @@ def indices(data, references, sources, country):
             '<div class="index-values">'
         )
         for rec, cls, label in [(item, "country", country), (ref, "france", "France")]:
-            out.append(f'<div class="index-{cls}"><span>{escape(label)}</span>')
-            if rec is item or ref.get("status") == "comparable":
-                value = number(rec["value"], rec.get("precision", item["precision"]), fixed=True)
-                rank = escape(str(rec.get("rank", "")))
-                out.append(
-                    f"<strong>{value}</strong><small>{escape(str(rec['year']))} · {rank}</small>"
-                )
-            else:
-                status = "Non comparable" if ref["status"] == "non_comparable" else "Indisponible"
-                out.append(
-                    f'<strong class="missing">{status}</strong>'
-                    f"<small>{escape(ref['reason'])}</small>"
-                )
-            out.append("</div>")
+            if not rec:
+                continue
+            value = number(rec["value"], rec.get("precision", item["precision"]), fixed=True)
+            rank = escape(str(rec.get("rank", "")))
+            out.append(
+                f'<div class="index-{cls}"><span>{escape(label)}</span>'
+                f"<strong>{value}</strong><small>{escape(str(rec['year']))} · {rank}</small></div>"
+            )
         lo, hi = item["scale_min"], item["scale_max"]
 
         def pos(value, lo=lo, hi=hi):
