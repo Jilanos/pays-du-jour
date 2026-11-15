@@ -351,7 +351,7 @@
       ],
       "temperature_extent": [
         0,
-        50
+        60
       ],
       "rain_max": 120,
       "note": "Stations Alger Dar-El-Beïda et In Salah, normales OMM 1991–2020. Minima et maxima : moyennes quotidiennes ; pluie : cumul mensuel moyen. Paris-Montsouris : mêmes définitions et période."
@@ -553,7 +553,7 @@
     },
     {
       "id": "S05",
-      "text": "OMM, normales climatologiques 1991–2020 transmises par l’Algérie, archivées par NOAA/NCEI : [Alger Dar-El-Beïda, 60390](https://www.ncei.noaa.gov/data/oceans/archive/arc0216/0253808/1.1/data/0-data/Region-1-WMO-Normals-9120/Algeria/CSV/AlgerDarElBeida_60390.csv) ; [In Salah, 60630](https://www.ncei.noaa.gov/data/oceans/archive/arc0216/0253808/1.1/data/0-data/Region-1-WMO-Normals-9120/Algeria/CSV/InSalah_60630.csv). Lignes Sum du paramètre 1 et Mean des paramètres 3 et 4. Moyennes quotidiennes des minima et maxima, cumuls mensuels de pluie. Échelles communes : 0 à 50 °C et 0 à 120 mm. Données de stations, sans extrapolation à l’ensemble du Sahara."
+      "text": "OMM, normales climatologiques 1991–2020 transmises par l’Algérie, archivées par NOAA/NCEI : [Alger Dar-El-Beïda, 60390](https://www.ncei.noaa.gov/data/oceans/archive/arc0216/0253808/1.1/data/0-data/Region-1-WMO-Normals-9120/Algeria/CSV/AlgerDarElBeida_60390.csv) ; [In Salah, 60630](https://www.ncei.noaa.gov/data/oceans/archive/arc0216/0253808/1.1/data/0-data/Region-1-WMO-Normals-9120/Algeria/CSV/InSalah_60630.csv). Lignes Sum du paramètre 1 et Mean des paramètres 3 et 4. Moyennes quotidiennes des minima et maxima, cumuls mensuels de pluie. Échelles communes : 0 à 60 °C et 0 à 120 mm. Données de stations, sans extrapolation à l’ensemble du Sahara."
     },
     {
       "id": "S06",
