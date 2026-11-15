@@ -49,3 +49,47 @@ def test_rejects_mismatched_or_nonfinite_data(charts):
     chart["values"] = [float("nan"), 2]
     with pytest.raises(ValueError, match="finite"):
         render_chart(chart)
+
+
+def test_line_keeps_real_time_gaps_and_separates_nearby_end_labels():
+    from app.charts import line
+
+    chart = {
+        "id": "time",
+        "type": "line",
+        "title": "Time",
+        "unit": "points",
+        "year": 2026,
+        "x": [2000, 2001, 2010, 2025],
+        "series": [{"name": f"Série {i}", "values": [10, None, 5, i]} for i in range(4)],
+    }
+    root = ET.fromstring(line(chart, mobile=True))
+    assert len(root.findall("{*}polyline")) == 8
+    positions = [
+        float(n.attrib["y"])
+        for n in root.findall("{*}text")
+        if n.attrib.get("class") == "value-label"
+    ]
+    assert all(b - a >= 34 for a, b in zip(positions, positions[1:], strict=False))
+    chart["_france"] = {"values": [1, 2, 3, 4]}
+    with pytest.raises(ValueError, match="four series"):
+        line(chart)
+
+
+def test_many_periods_use_stacked_areas_with_a_separate_france_column():
+    from app.charts import stacked
+
+    chart = {
+        "title": "Sectors",
+        "labels": [str(y) for y in range(2020, 2026)],
+        "unit": "%",
+        "series": [{"name": "A", "values": [40] * 6}, {"name": "B", "values": [60] * 6}],
+        "_france": {"values": [25, 75]},
+    }
+    root = ET.fromstring(stacked(chart, mobile=True))
+    areas = root.findall("{*}polygon")
+    bars = root.findall("{*}rect")
+    assert len(areas) == len(bars) == 2
+    assert all(n.attrib["stroke"] == "var(--france)" for n in bars)
+    area_right = max(float(point.split(",")[0]) for point in areas[0].attrib["points"].split())
+    assert float(bars[0].attrib["x"]) - area_right >= 24

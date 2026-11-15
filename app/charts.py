@@ -281,14 +281,14 @@ def share(chart):
     # Grid gaps do not eat into a small category or silently close a rounding gap.
     for i in order:
         other = chart["labels"][i].lower().startswith(("autres", "procédés plus"))
-        cls = "cat-other" if other else f"cat-{i + 1}"
+        cls = "cat-other" if other and i < 6 else f"cat-{i + 1}"
         out.append(f'<span class="category {cls}" style="flex-grow:{vals[i]}"></span>')
     if residual:
         out.append(f'<span class="rounding-gap" style="flex-grow:{residual}"></span>')
     out.append('</div><dl class="share-labels">')
     for i in order:
         other = chart["labels"][i].lower().startswith(("autres", "procédés plus"))
-        cls = "cat-other" if other else f"cat-{i + 1}"
+        cls = "cat-other" if other and i < 6 else f"cat-{i + 1}"
         out.append(
             f'<div><dt><i class="category {cls}" aria-hidden="true"></i>'
             f"{escape(chart['labels'][i])}</dt><dd>{quantity(vals[i], '%')}</dd></div>"
@@ -379,20 +379,19 @@ def stacked(chart, mobile=False):
     if len(series) > 5:
         raise ValueError("Stacked charts support at most five series")
     vals = [pairs(labels, s["values"]) for s in series]
-    if any(v < 0 for row in vals for v in row):
-        raise ValueError("Stacked charts require non-negative values")
     ref = chart.get("_france", {})
-    if ref.get("values"):
-        if len(ref["values"]) != len(series):
-            raise ValueError("France sectors must match")
-        labels.append("France")
-        for row, v in zip(vals, ref["values"], strict=True):
-            row.append(v)
+    refs = numbers(ref["values"]) if ref.get("values") else []
+    if refs and len(refs) != len(series):
+        raise ValueError("France sectors must match")
+    if any(v < 0 for row in vals for v in row) or any(v < 0 for v in refs):
+        raise ValueError("Stacked charts require non-negative values")
     totals = [sum(row[i] for row in vals) for i in range(len(labels))]
-    ys = ticks(0, max(totals) or 1)
+    ys = ticks(0, max(totals + [sum(refs)]) or 1)
     width = 240 if mobile else 720
     root = svg(chart, width, 350)
     left, right = 34, width - 8
+    ref_width = 48 if mobile else 64
+    country_right = right - ref_width - 24 if refs else right
 
     def y(v):
         return 295 - v / ys[-1] * 250
@@ -400,24 +399,59 @@ def stacked(chart, mobile=False):
     for v in ys:
         el(root, "line", x1=left, x2=right, y1=y(v), y2=y(v), class_="grid")
         text(root, left - 7, y(v) + 5, number(v), text_anchor="end")
-    step = (right - left) / len(labels)
-    for i, name in enumerate(labels):
+
+    def column(values, center, bar_width, france=False):
         base = 0
-        for j, row in enumerate(vals):
+        for j, v in enumerate(values):
             el(
                 root,
                 "rect",
-                x=left + step * (i + 0.2),
-                y=y(base + row[i]),
-                width=step * 0.6,
-                height=y(base) - y(base + row[i]),
+                x=center - bar_width / 2,
+                y=y(base + v),
+                width=bar_width,
+                height=y(base) - y(base + v),
                 fill=COLORS[j],
-                stroke="var(--france)" if name == "France" else "none",
-                stroke_dasharray="4 3" if name == "France" else "none",
+                stroke="var(--france)" if france else "none",
+                stroke_dasharray="4 3" if france else "none",
             )
-            base += row[i]
-        text(root, left + step * (i + 0.5), y(base) - 9, number(base), text_anchor="middle")
-        text(root, left + step * (i + 0.5), 324, name, text_anchor="middle")
+            base += v
+        text(root, center, y(base) - 9, quantity(base, compact=True), text_anchor="middle")
+
+    if len(labels) >= 6:
+        step = (country_right - left) / (len(labels) - 1)
+        bases = [0] * len(labels)
+        for j, row in enumerate(vals):
+            tops = [a + b for a, b in zip(bases, row, strict=True)]
+            points = [(left + i * step, y(v)) for i, v in enumerate(tops)]
+            points += [(left + i * step, y(bases[i])) for i in range(len(labels) - 1, -1, -1)]
+            el(
+                root,
+                "polygon",
+                points=" ".join(f"{x},{yy}" for x, yy in points),
+                fill=COLORS[j],
+                class_="stack-area",
+            )
+            bases = tops
+        selected = [0, len(labels) - 1] if mobile else [0, len(labels) // 2, len(labels) - 1]
+        for i in selected:
+            text(root, left + i * step, 324, labels[i], text_anchor="middle")
+            text(
+                root,
+                left + i * step,
+                y(totals[i]) - 9,
+                quantity(totals[i], compact=True),
+                text_anchor="middle",
+            )
+    else:
+        step = (country_right - left) / len(labels)
+        for i, label in enumerate(labels):
+            center = left + step * (i + 0.5)
+            column([row[i] for row in vals], center, min(64, step * 0.6))
+            text(root, center, 324, label, text_anchor="middle")
+    if refs:
+        center = right - ref_width / 2
+        column(refs, center, ref_width * 0.65, france=True)
+        text(root, center, 324, "France", text_anchor="middle")
     return finish(root)
 
 

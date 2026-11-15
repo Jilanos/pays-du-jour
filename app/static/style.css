@@ -27,3 +27,6 @@
 @media print{.plot-wide{display:block}.plot-narrow{display:none}}
 .relief-layout{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center}.relief-guide{font-size:16px;line-height:1.5}.relief-guide>div{padding:20px 0;border-bottom:1px solid var(--rule)}.relief-guide dt{font-weight:600;color:var(--accent)}.relief-guide dd{margin:6px 0 0;color:var(--muted)}
 @media(max-width:599px){.relief-layout{grid-template-columns:1fr;gap:0}.relief-guide{margin-bottom:0}.relief-guide>div{padding:12px 0}.relief-guide>div:last-child{border:0}}
+/* A citation stays at the end of its line without creating an orphan dot. */
+.source-marker{display:inline-block;position:relative;width:0;margin:0;vertical-align:baseline}.source-marker a{position:absolute;left:-4px;top:-17px}
+.share-strip .category{border:0;box-shadow:inset -2px 0 var(--surface)}
