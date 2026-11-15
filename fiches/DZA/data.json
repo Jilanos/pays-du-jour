@@ -1,0 +1,864 @@
+{
+  "keyfacts": [
+    {
+      "id": "population",
+      "label": "Population résidente",
+      "value": 47400000,
+      "unit": "habitants",
+      "year": 2025,
+      "coverage": "Projection ONS · 1er janvier 2025",
+      "source_ids": [
+        "S06"
+      ],
+      "france": "population"
+    },
+    {
+      "id": "superficie",
+      "label": "Superficie",
+      "value": 2381741,
+      "unit": "km²",
+      "year": 2026,
+      "coverage": "Territoire national · 2026",
+      "source_ids": [
+        "S01"
+      ],
+      "france": "superficie"
+    },
+    {
+      "id": "pib-nominal",
+      "label": "PIB nominal",
+      "value": 287031225987.736,
+      "unit": "USD",
+      "year": 2025,
+      "coverage": "Prix courants · 2025",
+      "source_ids": [
+        "S57"
+      ],
+      "france": "pib-nominal"
+    },
+    {
+      "id": "fecondite",
+      "label": "Fécondité",
+      "value": 2.7,
+      "unit": "enfant/femme",
+      "precision": 1,
+      "year": 2025,
+      "coverage": "Projection ONU · 2025",
+      "source_ids": [
+        "S07"
+      ],
+      "france": "fecondite"
+    },
+    {
+      "id": "65-plus",
+      "label": "Part des 65 ans ou plus",
+      "value": 7,
+      "unit": "%",
+      "precision": 0,
+      "year": 2025,
+      "coverage": "Projection ONU · 2025",
+      "source_ids": [
+        "S07"
+      ],
+      "france": "65-plus"
+    },
+    {
+      "id": "electricite-bas-carbone",
+      "label": "Électricité bas carbone",
+      "value": 1.069,
+      "unit": "%",
+      "year": 2024,
+      "coverage": "Nucléaire et renouvelables · production brute 2024",
+      "source_ids": [
+        "S50"
+      ],
+      "france": "electricite-bas-carbone-2024"
+    }
+  ],
+  "indices": [
+    {
+      "id": "idh",
+      "name": "Développement humain",
+      "acronym": "IDH",
+      "value": 0.763,
+      "rank": "96ᵉ",
+      "year": 2023,
+      "scale_min": 0,
+      "scale_max": 1,
+      "higher_is_better": true,
+      "precision": 3,
+      "source_ids": [
+        "S58"
+      ],
+      "france": "idh"
+    },
+    {
+      "id": "gini",
+      "name": "Inégalités de consommation",
+      "acronym": "Gini",
+      "value": 27.6,
+      "rank": "Sans classement",
+      "year": 2011,
+      "scale_min": 0,
+      "scale_max": 100,
+      "higher_is_better": false,
+      "precision": 1,
+      "source_ids": [
+        "S21"
+      ],
+      "france": "gini-dza",
+      "coverage": "Consommation des ménages par personne · enquête 2011",
+      "note_visible": "Dernière enquête disponible : 2011. Cet indice ne décrit pas les inégalités actuelles."
+    },
+    {
+      "id": "democratie",
+      "name": "Démocratie libérale",
+      "acronym": "V-Dem",
+      "value": 0.13,
+      "rank": "131ᵉ",
+      "year": 2025,
+      "scale_min": 0,
+      "scale_max": 1,
+      "higher_is_better": true,
+      "precision": 2,
+      "source_ids": [
+        "S31"
+      ],
+      "france": "democratie"
+    },
+    {
+      "id": "presse",
+      "name": "Liberté de la presse",
+      "acronym": "RSF",
+      "value": 37.38,
+      "rank": "145ᵉ / 180",
+      "year": 2026,
+      "scale_min": 0,
+      "scale_max": 100,
+      "higher_is_better": true,
+      "precision": 2,
+      "source_ids": [
+        "S32"
+      ],
+      "france": "presse"
+    },
+    {
+      "id": "corruption",
+      "name": "Corruption perçue",
+      "acronym": "CPI",
+      "value": 34,
+      "rank": "109ᵉ / 182",
+      "year": 2025,
+      "scale_min": 0,
+      "scale_max": 100,
+      "higher_is_better": true,
+      "precision": 0,
+      "source_ids": [
+        "S59"
+      ],
+      "france": "corruption"
+    }
+  ],
+  "cities": [
+    {
+      "name": "Alger",
+      "population": 2364230,
+      "lat": 36.732,
+      "lon": 3.087,
+      "note": "Capitale, administrations et services.",
+      "year": 2008,
+      "source_ids": [
+        "S03",
+        "S56"
+      ]
+    },
+    {
+      "name": "Oran",
+      "population": 803329,
+      "lat": 35.699,
+      "lon": -0.636,
+      "note": "Pôle portuaire et industriel de l’ouest.",
+      "year": 2008,
+      "source_ids": [
+        "S03",
+        "S56"
+      ]
+    },
+    {
+      "name": "Constantine",
+      "population": 448028,
+      "lat": 36.365,
+      "lon": 6.615,
+      "note": "Grand pôle urbain de l’intérieur oriental.",
+      "year": 2008,
+      "source_ids": [
+        "S03",
+        "S56"
+      ],
+      "offset": [
+        -14,
+        12
+      ]
+    },
+    {
+      "name": "Annaba",
+      "population": 342703,
+      "lat": 36.9,
+      "lon": 7.767,
+      "note": "Port et bassin industriel du nord-est.",
+      "year": 2008,
+      "source_ids": [
+        "S03",
+        "S56"
+      ],
+      "offset": [
+        12,
+        -12
+      ]
+    },
+    {
+      "name": "Ghardaïa",
+      "population": 142913,
+      "lat": 32.491,
+      "lon": 3.673,
+      "note": "Oasis et cités ibadites du Mzab.",
+      "year": 2008,
+      "source_ids": [
+        "S03",
+        "S12",
+        "S56"
+      ]
+    },
+    {
+      "name": "Tamanrasset",
+      "population": 81752,
+      "lat": 22.785,
+      "lon": 5.523,
+      "note": "Ville du Hoggar et carrefour saharien.",
+      "year": 2008,
+      "source_ids": [
+        "S03",
+        "S04",
+        "S56"
+      ]
+    }
+  ],
+  "cities_title": "Du littoral aux villes sahariennes",
+  "cities_scope": "Agglomérations ONS · recensement de 2008",
+  "cities_note": "Périmètres agglomérés, parfois intercommunaux. Ces effectifs anciens ne représentent pas les populations de 2026.",
+  "charts": [
+    {
+      "id": "climat",
+      "type": "climate",
+      "title": "Littoral méditerranéen, Sahara brûlant",
+      "subtitle": "Normales 1991–2020 · mêmes échelles · Paris en référence",
+      "year": "1991–2020",
+      "source_ids": [
+        "S05"
+      ],
+      "france": "climat-paris",
+      "places": [
+        {
+          "place": "Alger · Dar-El-Beïda",
+          "tmin": [
+            5.5,
+            5.6,
+            7.5,
+            9.4,
+            12.6,
+            16.2,
+            19.4,
+            20.4,
+            17.9,
+            14.3,
+            10.1,
+            7.0
+          ],
+          "tmax": [
+            17.1,
+            17.5,
+            19.7,
+            21.8,
+            25.0,
+            29.0,
+            32.1,
+            32.9,
+            29.8,
+            26.5,
+            21.2,
+            18.2
+          ],
+          "precip_mm": [
+            84.2,
+            72.1,
+            58.9,
+            58.0,
+            39.0,
+            8.6,
+            1.5,
+            10.6,
+            27.5,
+            51.5,
+            102.7,
+            86.4
+          ]
+        },
+        {
+          "place": "In Salah",
+          "tmin": [
+            6.8,
+            9.3,
+            13.4,
+            17.8,
+            23.0,
+            27.5,
+            30.4,
+            30.1,
+            26.8,
+            20.6,
+            12.9,
+            8.4
+          ],
+          "tmax": [
+            22.1,
+            24.9,
+            29.7,
+            34.6,
+            39.4,
+            44.0,
+            46.1,
+            44.9,
+            41.9,
+            35.6,
+            27.9,
+            23.1
+          ],
+          "precip_mm": [
+            2.9,
+            1.0,
+            1.4,
+            1.3,
+            0.8,
+            1.2,
+            0.1,
+            0.6,
+            1.4,
+            1.4,
+            1.4,
+            0.5
+          ]
+        }
+      ],
+      "temperature_extent": [
+        0,
+        50
+      ],
+      "rain_max": 120,
+      "note": "Stations Alger Dar-El-Beïda et In Salah, normales OMM 1991–2020. Minima et maxima : moyennes quotidiennes ; pluie : cumul mensuel moyen. Paris-Montsouris : mêmes définitions et période."
+    },
+    {
+      "id": "pyramide-ages",
+      "type": "pyramid",
+      "title": "Des générations jeunes encore nombreuses",
+      "subtitle": "Part de la population totale · % · 2023",
+      "year": 2023,
+      "age_groups": [
+        "0–4",
+        "5–9",
+        "10–14",
+        "15–19",
+        "20–24",
+        "25–29",
+        "30–34",
+        "35–39",
+        "40–44",
+        "45–49",
+        "50–54",
+        "55–59",
+        "60–64",
+        "65–69",
+        "70–74",
+        "75–79",
+        "80–84",
+        "85+"
+      ],
+      "male": [
+        2418312,
+        2577848,
+        2226491,
+        1767360,
+        1493089,
+        1673383,
+        1850789,
+        1890973,
+        1718235,
+        1359281,
+        1138044,
+        962902,
+        757366,
+        599881,
+        443747,
+        251962,
+        181027,
+        153024
+      ],
+      "female": [
+        2297741,
+        2435592,
+        2106260,
+        1667939,
+        1431146,
+        1612588,
+        1800081,
+        1872960,
+        1688754,
+        1350494,
+        1156449,
+        980910,
+        772985,
+        609531,
+        446224,
+        277642,
+        204278,
+        168876
+      ],
+      "unit": "personnes",
+      "source_ids": [
+        "S06"
+      ],
+      "france": "pyramide-france-2023-85plus",
+      "note_visible": "Algérie : projection au 1er juillet 2023. France : résidents au 1er janvier 2023.",
+      "note": "ONS tableau 6 : effectifs projetés, 85 ans ou plus regroupés. Les moins d’un an et les 1–4 ans sont additionnés. La somme des effectifs par sexe peut différer de quelques personnes du total publié, sans correction. Pourcentages calculés par le rendu sur les effectifs des deux sexes. France Insee, mêmes classes d’âge, 85 ans ou plus regroupés."
+    },
+    {
+      "id": "salaires",
+      "type": "barh",
+      "title": "Le secteur et l’employeur changent la rémunération",
+      "subtitle": "Salaires nets moyens versés · mai 2022 · DZD/mois",
+      "year": 2022,
+      "labels": [
+        "Ensemble de l’enquête",
+        "Privé national",
+        "Public national",
+        "Industrie manufacturière",
+        "Industries extractives"
+      ],
+      "values": [
+        43467,
+        35210,
+        61329,
+        44254,
+        114148
+      ],
+      "unit": "DZD/mois",
+      "euro": true,
+      "highlight": "Ensemble de l’enquête",
+      "source_ids": [
+        "S19"
+      ],
+      "france": "salaires-dza",
+      "note_visible": "Moyennes, primes comprises. Hors agriculture et administration ; privé d’au moins vingt salariés.",
+      "note": "Toutes qualifications, salariés permanents et non permanents. Les branches et statuts juridiques se recoupent ; les barres ne s’additionnent pas. La moyenne ne remplace pas une médiane, non publiée. Pas de comparaison française homogène."
+    },
+    {
+      "id": "pib-secteurs",
+      "type": "share",
+      "title": "Services et industrie portent la valeur ajoutée",
+      "subtitle": "Parts de la valeur ajoutée courante · 2024 · %",
+      "year": 2024,
+      "labels": [
+        "Agriculture, forêt, pêche",
+        "Industrie et construction",
+        "Services"
+      ],
+      "values": [
+        14.398816815975527,
+        37.33423505937471,
+        48.26694812464976
+      ],
+      "unit": "%",
+      "source_ids": [
+        "S22"
+      ],
+      "france": "valeur-ajoutee-2024",
+      "note": "Somme des valeurs ajoutées de l’agriculture, de l’industrie et des services, en USD courants. Algérie : 37 596 599 118,4309 ; 97 483 028 422,3935 ; 126 029 320 499,388. Les parts sont calculées sur leur somme, hors impôts nets sur les produits. Même calcul pour la France, même source et même année."
+    },
+    {
+      "id": "automobile",
+      "type": "bar",
+      "title": "Tafraoui : une production en progression",
+      "subtitle": "Véhicules produits · résultats communiqués par Stellantis",
+      "year": "2024–2025",
+      "labels": [
+        "2024",
+        "2025"
+      ],
+      "values": [
+        17000,
+        53000
+      ],
+      "unit": "véhicules/an",
+      "source_ids": [
+        "S23"
+      ],
+      "france": {
+        "status": "non_comparable",
+        "reason": "Production d’une seule usine algérienne, sans périmètre national français équivalent.",
+        "source_ids": []
+      },
+      "note": "Volumes annuels passés communiqués le 7 avril 2026, sans prévision dans les barres. Les objectifs du constructeur sont distingués dans le texte."
+    },
+    {
+      "id": "exportations",
+      "type": "share",
+      "title": "Les hydrocarbures dominent les recettes de biens",
+      "subtitle": "Exportations de marchandises en valeur · 2023 · %",
+      "year": 2023,
+      "labels": [
+        "Hydrocarbures",
+        "Autres biens"
+      ],
+      "values": [
+        91,
+        9
+      ],
+      "unit": "%",
+      "source_ids": [
+        "S49"
+      ],
+      "france": {
+        "status": "unavailable",
+        "reason": "Pas de regroupement douanier français homogène vérifié avec l’annexe X du rapport FMI.",
+        "source_ids": []
+      },
+      "note": "FMI, annexe X : 91 % des exportations de biens en 2023, et non 84 % qui portent sur les biens et services. Autres biens : complément à 100 calculé à partir de la part publiée."
+    }
+  ],
+  "sources": [
+    {
+      "id": "S01",
+      "text": "[France Diplomatie, présentation de l’Algérie](https://www.diplomatie.gouv.fr/fr/information-par-pays/algerie/presentation-de-l-algerie). Mise à jour du 21 octobre 2026. Identité, superficie, gouvernement et relations extérieures. La mention incomplète du nom de la présidente de l’APN sur cette page n’est pas reprise ; voir les résultats UIP."
+    },
+    {
+      "id": "S02",
+      "text": "[ONUDI et ICSHP, World Small Hydropower Development Report 2022, Afrique du Nord, chapitre Algérie](https://www.unido.org/sites/default/files/files/2023-08/NORTHERN_AFRICA_2022.pdf). Géographie, étagement du relief, répartition du peuplement et ressources en eau. Les statistiques énergétiques anciennes de ce rapport ne sont pas reprises."
+    },
+    {
+      "id": "S03",
+      "text": "[ONS, Armature urbaine RGPH 2008, Collections statistiques n° 163, 2011](https://www.ons.dz/img/pdf/armature_urbaine_2008.pdf). Tableau 14 pour les agglomérations intercommunales et tableau 37-11 pour Tamanrasset. Populations agglomérées de 2008 : Alger 2 364 230, Oran 803 329, Constantine 448 028, Annaba 342 703, Ghardaïa 142 913, Tamanrasset 81 752. Aucun de ces effectifs n’est présenté comme une estimation 2026."
+    },
+    {
+      "id": "S04",
+      "text": "[Library of Congress, Algeria: A Country Study, chapitre Geography, édition 1994](https://tile.loc.gov/storage-services/master/frd/frdcstdy/al/algeriacountryst00metz_0/algeriacountryst00metz_0.pdf). Relief physique : Tell, Hauts Plateaux, Atlas saharien et massifs du Sahara. Source de géographie physique, sans reprise de ses données démographiques anciennes."
+    },
+    {
+      "id": "S05",
+      "text": "OMM, normales climatologiques 1991–2020 transmises par l’Algérie, archivées par NOAA/NCEI : [Alger Dar-El-Beïda, 60390](https://www.ncei.noaa.gov/data/oceans/archive/arc0216/0253808/1.1/data/0-data/Region-1-WMO-Normals-9120/Algeria/CSV/AlgerDarElBeida_60390.csv) ; [In Salah, 60630](https://www.ncei.noaa.gov/data/oceans/archive/arc0216/0253808/1.1/data/0-data/Region-1-WMO-Normals-9120/Algeria/CSV/InSalah_60630.csv). Lignes Sum du paramètre 1 et Mean des paramètres 3 et 4. Moyennes quotidiennes des minima et maxima, cumuls mensuels de pluie. Échelles communes : 0 à 50 °C et 0 à 120 mm. Données de stations, sans extrapolation à l’ensemble du Sahara."
+    },
+    {
+      "id": "S06",
+      "text": "[ONS, Démographie algérienne 2020 à 2023, n° 1030](https://www.ons.dz/IMG/pdf/Demographie_Algerienne2020_2023.pdf). Population résidente projetée au 1er janvier 2025 sous maintien du rythme 2023 : 47 400 000. Tableau 6, page 11 : effectifs projetés par sexe et âge au 1er juillet 2023. Somme des moins d’un an et 1–4 ans. Les effectifs publiés sont conservés, y compris les écarts d’arrondi de quelques personnes entre sommes et totaux."
+    },
+    {
+      "id": "S07",
+      "text": "[UNFPA, État de la population mondiale 2025, indicateurs démographiques](https://www.unfpa.org/sites/default/files/pub-pdf/swp25-layout-en-v250609-web.pdf). Estimations et projections WPP 2024 de la Division de la population des Nations unies. Algérie, 2025 : fécondité 2,7 enfants par femme ; 65 ans ou plus 7 %. Précision publiée conservée. France Insee : 2025 pour la fécondité, début 2026 pour les 65 ans ou plus, dates affichées dans les cartes."
+    },
+    {
+      "id": "S08",
+      "text": "[FMI, consultation de 2026 au titre de l’article IV avec l’Algérie](https://www.imf.org/en/news/articles/2026/09/21/pr26290-algeria-imf-concludes-2026-aiv-consultation). 21 septembre 2026. Investissement public, emploi, diversification, déficits et écart du taux de change parallèle."
+    },
+    {
+      "id": "S09",
+      "text": "[Université Laval, CEFAN, situation sociolinguistique de l’Algérie](https://www.axl.cefan.ulaval.ca/afrique/algerie-1demo.htm). Arabe algérien, langues amazighes et usage du français. Aucun pourcentage de locuteurs n’est repris."
+    },
+    {
+      "id": "S10",
+      "text": "[Le Monde, enseignement du français au primaire et progression de l’anglais](https://www.lemonde.fr/afrique/article/2026/09/16/en-algerie-l-enseignement-du-francais-en-primaire-relegue-au-second-plan-au-profit-de-l-anglais_6775432_3212.html). 16 septembre 2026."
+    },
+    {
+      "id": "S11",
+      "text": "[Département d’État américain, rapport 2023 sur la liberté religieuse en Algérie](https://2021-2025.state.gov/reports/2023-report-on-international-religious-freedom/algeria/). Islam sunnite, minorités et restrictions des cultes. Les estimations d’affiliation ne sont pas converties en répartition exhaustive."
+    },
+    {
+      "id": "S12",
+      "text": "[UNESCO, vallée du M’Zab](https://whc.unesco.org/fr/list/188/). Cités ibadites, organisation urbaine et adaptation au milieu désertique."
+    },
+    {
+      "id": "S13",
+      "text": "[Office national du tourisme, la chorba frik à la table de l’iftar](https://www.ont.dz/en/news/fb-eb9fa520a4d9cee11dfd1823/). 10 mars 2025. Préparation familiale et pratiques du ramadan."
+    },
+    {
+      "id": "S14",
+      "text": "[OIT, NATLEX, ordonnance n° 97-03 du 11 janvier 1997 fixant la durée légale du travail](https://www.ilo.org/dyn/natlex/natlex4.detail?p_isn=46293&p_lang=en). Durée légale hebdomadaire normale : 40 heures."
+    },
+    {
+      "id": "S15",
+      "text": "[Ambassade d’Algérie à Bruxelles, distinctions des médaillés des Jeux de Paris 2024](https://embbrussels.mfa.gov.dz/fr/news-and-press-releases/paris-olympics-president-tebboune-honours-medal-winning-athletes). Kaylia Nemour et Imane Khelif, or ; Djamel Sedjati, bronze."
+    },
+    {
+      "id": "S16",
+      "text": "[France Diplomatie, Algérie, sécurité](https://www.diplomatie.gouv.fr/fr/information-par-pays/algerie/conseils-aux-voyageurs-securite). Mise à jour du 15 septembre 2026. Encadrement des voyages touristiques sahariens."
+    },
+    {
+      "id": "S17",
+      "text": "[Algerian Techno Movement, présentation du collectif](https://algeriantechnomovement.com/). Présentation directe par les organisateurs. Aucune programmation future ou adresse de club n’est présumée."
+    },
+    {
+      "id": "S18",
+      "text": "[L’Art Rue, Transmitting Voices × Moving Stones](https://lartrue.org/en/our-programs/cooperation-projects/all-around-culture-eng/all-around-culture-wp3-eng/croos-border-collaboration-projects-thoulathy/aac-thoulathy-transmitting-voices-x-moving-stones-eng). Présentation du travail d’El Moutanakil autour du patrimoine musical, des résidences et de la création électronique."
+    },
+    {
+      "id": "S19",
+      "text": "[ONS, enquête annuelle sur les salaires auprès des entreprises, mai 2022, n° 1053](https://www.ons.dz/IMG/pdf/Salaire_Mai2022.pdf). Publication avril 2025. Tableaux 1, 3 et 5 : ensemble 43 467 DZD, public national 61 329, privé national 35 210, fabrication 44 254 et extraction 114 148. Salaires nets après IRG, sécurité sociale et retraite, primes comprises. Réponses de 684 entreprises ; privé national d’au moins vingt salariés, hors agriculture et administration. La médiane et une standardisation en EQTP ne sont pas documentées."
+    },
+    {
+      "id": "S20",
+      "text": "[Banque d’Algérie, cours moyens annuels du dinar, 1994–2025, XLSX](https://www.bank-of-algeria.dz/stoodroa/2026/01/Cours-moyens-annuels-1994-2025.xlsx). Cellule AF8 : 149,5768 DZD pour 1 EUR en 2022. Taux officiel annuel, distinct du marché parallèle."
+    },
+    {
+      "id": "S21",
+      "text": "[Banque mondiale, WDI/Poverty and Inequality Platform, Gini en Algérie, extraction API](https://api.worldbank.org/v2/country/DZA/indicator/SI.POV.GINI?format=json&per_page=100). Dernière observation non nulle : 27,6 sur 100 en 2011, enquête de consommation. Aucun Gini actuel déduit de cette valeur. [Tableau Banque mondiale précisant le concept de consommation](https://documents1.worldbank.org/curated/en/099101424092027337/pdf/P500855154ddde0b31827a1e9377c43d15e.pdf)."
+    },
+    {
+      "id": "S22",
+      "text": "[Banque mondiale, valeurs ajoutées algériennes par branche, 2024, extraction API](https://api.worldbank.org/v2/country/DZA/indicator/NV.AGR.TOTL.CD;NV.IND.TOTL.CD;NV.SRV.TOTL.CD?source=2&format=json&date=2024&per_page=100). Séries NV.AGR.TOTL.CD, NV.IND.TOTL.CD et NV.SRV.TOTL.CD. Parts calculées sur la somme des trois valeurs ajoutées courantes, sans arrondi préalable et hors impôts nets sur les produits. Base actualisée le 11 novembre 2026."
+    },
+    {
+      "id": "S23",
+      "text": "[Stellantis, extension de l’usine Fiat de Tafraoui](https://www.media.stellantis.com/me-fr/corporate/press/stellantis-annonce-l-extension-de-son-usine-fiat-de-tafraoui-pour-atteindre-135-000-vehicules-par-an). 7 avril 2026. Productions communiquées pour 2024 et 2025 : 17 000 et 53 000 véhicules. Cible annoncée : 135 000 véhicules par an en 2028. Les objectifs 2026 et 2028 ne sont pas représentés comme des résultats."
+    },
+    {
+      "id": "S24",
+      "text": "[Fiat El Djazaïr, partenariats au salon Mechanica](https://www.media.stellantis.com/me-fr/corporate/press/fiat-el-djazair-met-en-avant-son-savoir-faire-industriel-a-mechanica-et-elargit-son-reseau-de-partenaires-locaux). 12 février 2026. Distingue fournisseurs de l’usine et réseau après-vente, notamment emboutissage et batteries."
+    },
+    {
+      "id": "S25",
+      "text": "[Musée national de l’histoire de l’immigration, 1830–1914 : la société coloniale](https://www.histoire-immigration.fr/juifs-et-musulmans-de-la-france-coloniale-a-nos-jours/1830-1914-ensemble-mais-differents-dans-la-societe-coloniale). Colonisation et inégalités des statuts civiques."
+    },
+    {
+      "id": "S26",
+      "text": "[Ministère des Armées, la guerre d’Algérie](https://www.defense.gouv.fr/chemins-memoire/histoire-memoires/ressources-historiques/guerre-dalgerie). Guerre d’indépendance, violences et mémoires du conflit."
+    },
+    {
+      "id": "S27",
+      "text": "[Vie publique, 18 mars 1962 : la signature des accords d’Évian](https://www.vie-publique.fr/parole-dexpert/284385-cetait-le-18-mars-1962-la-signature-des-accords-devian). Accords, poursuite des violences, exode et indépendance."
+    },
+    {
+      "id": "S28",
+      "text": "[Bertelsmann Stiftung, BTI 2026, rapport Algérie](https://bti-project.org/en/reports/country-report/DZA). Histoire du système politique, guerre civile, Hirak et restrictions de la participation. Le référendum sur la réconciliation est daté de 2005 selon le texte primaire et Amnesty, malgré une erreur de millésime dans ce rapport."
+    },
+    {
+      "id": "S29",
+      "text": "[Amnesty International et autres organisations, amnistie et impunité en Algérie](https://www.amnesty.org/en/wp-content/uploads/2021/08/mde280052006en.pdf). 1er mars 2006. Application de la charte approuvée par référendum le 29 septembre 2005."
+    },
+    {
+      "id": "S30",
+      "text": "[Cour constitutionnelle, Constitution adoptée par référendum du 1er novembre 2020](https://cour-constitutionnelle.dz/2023/09/14/constitution-adoptee-par-referendum-du-1er-novembre-2020/?print=print). Présidence, gouvernement, Parlement et langues officielles."
+    },
+    {
+      "id": "S31",
+      "text": "[V-Dem, Democracy Report 2026, tableau A2, page 48](https://www.v-dem.net/documents/75/V-Dem_Institute_Democracy_Report_2026_lowres.pdf). Données 2025. Algérie : indice de démocratie libérale 0,13, rang 131. Même indice que la référence française."
+    },
+    {
+      "id": "S32",
+      "text": "[RSF, Algérie, classement 2026 et actualités](https://rsf.org/en/country/algeria). Score global 37,38 sur 100, rang 145 sur 180. Le rang 157 concerne uniquement le sous-indicateur politique. Pressions sur la presse et détention de Christophe Gleizes."
+    },
+    {
+      "id": "S33",
+      "text": "[Freedom House, Freedom in the World 2025, Algérie](https://freedomhouse.org/country/algeria/freedom-world/2025). Hirak, transition présidentielle, scrutin de septembre 2024 et résultat définitif corrigé : 84,3 %."
+    },
+    {
+      "id": "S34",
+      "text": "[Parlement européen, Algeria and the EU, briefing de 2018](https://www.europarl.europa.eu/RegData/etudes/BRIE/2018/630328/EPRS_BRI%282018%29630328_EN.pdf). Révisions constitutionnelles de 2008 et 2016, santé de Bouteflika, contexte politique et économique."
+    },
+    {
+      "id": "S35",
+      "text": "[Congressional Research Service, Algeria: In Focus, 26 février 2019](https://www.everycrsreport.com/files/2019-02-26_IF11116_9e75c5dc8fdba9c5a16ceea7c46f04678de18fd4.pdf). Copie du rapport IF11116. Institutions, succession de Bouteflika, économie et rôle des hydrocarbures."
+    },
+    {
+      "id": "S36",
+      "text": "[Human Rights Watch, World Report 2026, Algérie](https://www.hrw.org/world-report/2026/country-chapters/algeria). Événements de 2025, restrictions des libertés et poursuites pour expression critique."
+    },
+    {
+      "id": "S37",
+      "text": "[Union interparlementaire, élections à l’APN du 2 juillet 2026](https://data.ipu.org/fr/parliament/DZ/DZ-LC01/election/DZ-LC01-E20260702/). Résultats définitifs : FLN 91 sièges, RND 74, total 407. Khalida Boufedeche élue présidente le 28 juillet 2026."
+    },
+    {
+      "id": "S38",
+      "text": "[Cour constitutionnelle, proclamation des résultats définitifs des législatives de 2026](https://cour-constitutionnelle.dz/2026/07/19/la-cour-constitutionnelle-proclame-les-resultats-definitifs-des-elections-legislatives/?print=print). Proclamation du 18 juillet. Participation : 21,24 % à l’intérieur du pays ; 10,75 % à l’étranger. La fiche utilise le taux intérieur, explicitement identifié."
+    },
+    {
+      "id": "S39",
+      "text": "[APS, publication du code pénal au Journal officiel](https://www.aps.dz/fr/algerie/actualite-nationale/mv7x78zr-publication-du-code-penal-au-journal-officiel). Loi n° 26-13 du 12 octobre 2026. Extension du champ de la peine de mort. La publication n’atteste aucune exécution."
+    },
+    {
+      "id": "S40",
+      "text": "[Amnesty International, réaction aux amendements sur la peine de mort](https://www.amnesty.org/fr/latest/news/2026/10/argelia-la-camara-alta-del-parlamento-debe-rechazar-una-legislacion-regresiva-que-amplia-la-pena-de-muerte-despues-de-30-anos-sin-ejecuciones/). Octobre 2026. Dernières exécutions en 1993 ; distinction entre condamnation et exécution."
+    },
+    {
+      "id": "S41",
+      "text": "[Associated Press, retour des ambassadeurs maliens et algériens](https://apnews.com/article/49e525be7ce3a1f93b2c5af556697863). 11 juillet 2026. Annonces du 10 juillet, réouverture des espaces aériens et antécédents de la crise."
+    },
+    {
+      "id": "S42",
+      "text": "[Nations unies en Algérie, patrimoine culturel immatériel inscrit à l’UNESCO](https://algeria.un.org/fr/230087-patrimoine-immat%C3%A9riel-alg%C3%A9rien-class%C3%A9-%C3%A0-l%E2%80%99unesco). 4 mai 2023. Raï, imzad et ahellil. Les listes d’inscriptions ultérieures ne sont pas déduites de cette page."
+    },
+    {
+      "id": "S43",
+      "text": "[UNESCO, savoirs et pratiques du couscous](https://ich.unesco.org/fr/RL/savoirs-savoir-faire-et-pratiques-lies-a-la-production-et-a-la-consommation-du-couscous-01602). Inscription partagée en 2020 par l’Algérie, la Mauritanie, le Maroc et la Tunisie."
+    },
+    {
+      "id": "S44",
+      "text": "[Insee, l’essentiel sur les immigrés et les étrangers](https://www.insee.fr/fr/statistiques/3633212). Estimations provisoires 2025 par pays de naissance et définition d’immigré. Ne mesure ni la nationalité actuelle ni les descendants nés en France."
+    },
+    {
+      "id": "S45",
+      "text": "[France Diplomatie, relations bilatérales avec l’Algérie](https://www.diplomatie.gouv.fr/fr/information-par-pays/algerie/relations-bilaterales). Enseignement supérieur, formation, recherche, culture et liens humains."
+    },
+    {
+      "id": "S46",
+      "text": "[France Diplomatie, Algérie, politique et économie](https://www.diplomatie.gouv.fr/fr/information-par-pays/algerie/politique-et-economie). Chronologie de la crise depuis 2024, grâce de Boualem Sansal en novembre 2025, appel de Christophe Gleizes en décembre 2025 et rencontres ministérielles en 2026."
+    },
+    {
+      "id": "S47",
+      "text": "[Le Monde, dégradation du commerce franco-algérien](https://www.lemonde.fr/en/le-monde-africa/article/2026/11/13/trade-between-france-and-algeria-collapses-as-diplomatic-crisis-deepens_6779401_124.html). 13 novembre 2026. Enquête auprès des milieux économiques, restrictions d’importation et concurrence. Aucun chiffre d’entreprise en difficulté n’est repris."
+    },
+    {
+      "id": "S48",
+      "text": "[EIA, Country Analysis Brief: Algeria, 5 juin 2025](https://www.eia.gov/international/content/analysis/countries_long/Algeria/algeria.pdf). Gisements, Sonatrach, gazoducs, GNL et arbitrages entre consommation locale et exportation. [Géographie des ressources et des villes portuaires, carte EIA](https://www.eia.gov/international/content/analysis/countries_long/Algeria/algeria.pdf), page 2."
+    },
+    {
+      "id": "S49",
+      "text": "[FMI, consultation article IV 2025, rapport n° 25/270](https://www.imf.org/-/media/files/publications/cr/2025/english/1dzaea2025001-source-pdf.pdf). Annexe X : hydrocarbures à 91 % des exportations de biens en 2023 ; ne pas confondre avec les 84 % des exportations de biens et services. Résidu autres biens : 100 − 91."
+    },
+    {
+      "id": "S50",
+      "text": "[Ember, Yearly Electricity Data, Algérie, 2024](https://files.ember-energy.org/public-downloads/generation/outputs/release_generation_yearly_global.csv). Production brute. Agrégat Clean, colonne Share of generation (%) : 1,069 %. Dernier millésime algérien disponible dans le fichier actualisé le 11 novembre 2026. Nucléaire nul ; solaire, hydraulique et éolien inclus. Licence CC BY 4.0."
+    },
+    {
+      "id": "S51",
+      "text": "[Sonatrach, station de dessalement de Koudiat Draouch à pleine production](https://sonatrach.com/fr/la-station-de-dessalement-de-leau-de-mer-de-koudiat-draouch-dans-la-wilaya-del-tarf-entre-en-phase-de-production-complete/). 21 août 2025. Capacité annoncée de 300 000 m³ par jour. Déclaration de l’exploitant, distincte d’une série de production journalière auditée."
+    },
+    {
+      "id": "S52",
+      "text": "[Sonatrach, visite du chantier de dessalement de Dahra, Chlef](https://sonatrach.com/fr/dessalement-de-leau-de-mer-le-president-directeur-general-de-sonatrach-en-visite-sur-le-chantier-de-la-stationde-dahra-commune-del-marsa-wilaya-de-chlef/). Visite du 14 novembre 2026. Le chantier n’est pas présenté comme une station déjà en production."
+    },
+    {
+      "id": "S53",
+      "text": "[UNESCO, Tassili n’Ajjer](https://whc.unesco.org/fr/list/179/). Art rupestre, changements climatiques et paysages de grès."
+    },
+    {
+      "id": "S54",
+      "text": "[Wikimedia Commons, Flag of Algeria.svg](https://commons.wikimedia.org/wiki/File:Flag_of_Algeria.svg). Drapeau national, domaine public : PD-Algeria et formes géométriques simples, PD-ineligible. Fichier original conservé, 311 octets."
+    },
+    {
+      "id": "S55",
+      "text": "[Wikimedia Commons, North Algeria relief location map.png](https://commons.wikimedia.org/wiki/File:North_Algeria_relief_location_map.png). Éric Gaba (Sting) et GrandEscogriffe, 10 mars 2022, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Original conservé sans modification, 348 133 octets. Le cadrage couvre le nord entre 32,2° et 37,8° N, sans le Hoggar. Les contours administratifs appartiennent au fond cartographique, sans prétention de mise à jour 2026."
+    },
+    {
+      "id": "S56",
+      "text": "[GeoNames, coordonnées des villes algériennes](https://www.geonames.org/DZ/largest-cities-in-algeria.html). Repères géographiques arrondis au millième de degré, licence [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Coordonnées de Ghardaïa et Tamanrasset : [Ghardaïa, entrée 2496049](https://www.geonames.org/2496049/ghardaia.html) et [Tamanrasset, entrée 2478216](https://www.geonames.org/2478216/tamanrasset.html). Les populations de la carte viennent de l’ONS."
+    },
+    {
+      "id": "S57",
+      "text": "[Banque mondiale, PIB courant de l’Algérie, extraction API](https://api.worldbank.org/v2/country/DZA/indicator/NY.GDP.MKTP.CD?format=json&date=2024:2025). 2025 : 287 031 225 987,736 USD. Base actualisée le 11 novembre 2026. France : PIB nominal FMI 2025, même définition en dollars courants, sans conversion en PPA."
+    },
+    {
+      "id": "S58",
+      "text": "[PNUD, Human Development Report 2025, indices 2023](https://www.undp.org/sites/g/files/zskgke326/files/2025-06/human_development_report_2025_overview_en.pdf). Algérie : IDH 0,763, rang 96."
+    },
+    {
+      "id": "S59",
+      "text": "[Transparency International, Algérie, CPI 2025](https://www.transparency.org/en/countries/algeria). Score 34 sur 100, rang 109 sur 182."
+    },
+    {
+      "id": "S60",
+      "text": "[ALNAFT, évolution des lois sur les hydrocarbures](https://www.alnaft.dz/fr/evolution-des-lois-sur-les-hydrocarbures-en-algerie/). Nationalisation du 24 février 1971 et création de Sonatrach."
+    },
+    {
+      "id": "S61",
+      "text": "[APS, rupture des relations diplomatiques avec les Émirats arabes unis](https://www.aps.dz/fr/algerie/actualite-nationale/mtvebg2w-l-algerie-decide-de-rompre-ses-relations-diplomatiques-avec-les-emirats). 10 septembre 2026. Communiqué du ministère algérien des Affaires étrangères. Les griefs rapportés sont ceux des autorités algériennes."
+    },
+    {
+      "id": "NE",
+      "text": "[Natural Earth, conditions d’utilisation](https://www.naturalearthdata.com/about/terms-of-use/). Géométrie locale du projet, domaine public. Les contours ne constituent pas une position sur les frontières."
+    }
+  ],
+  "map_sources": {
+    "locator": [
+      "S01",
+      "NE"
+    ],
+    "cities": [
+      "S03",
+      "S01",
+      "S04",
+      "S12",
+      "S56",
+      "NE"
+    ],
+    "relief": [
+      "S55"
+    ]
+  },
+  "hero_sources": [
+    "S01",
+    "S30",
+    "S54"
+  ],
+  "relief_title": "Le nord : Atlas et Hauts Plateaux",
+  "relief_alt": "Carte topographique du nord algérien : reliefs telliens près de la Méditerranée, Hauts Plateaux puis Atlas saharien vers le sud.",
+  "relief_landmarks": [
+    {
+      "label": "L’Atlas tellien",
+      "text": "Les reliefs proches du littoral méditerranéen."
+    },
+    {
+      "label": "Les Hauts Plateaux",
+      "text": "Un espace intérieur entre les chaînes montagneuses."
+    },
+    {
+      "label": "L’Atlas saharien",
+      "text": "La transition montagneuse vers le Sahara."
+    }
+  ],
+  "prose_values": {
+    "travail-dza": {
+      "value": 40,
+      "unit": "heures",
+      "precision": 0
+    },
+    "travail-fr": {
+      "value": 35,
+      "unit": "heures",
+      "precision": 0
+    },
+    "capacite-fiat": {
+      "value": 135000,
+      "unit": "véhicules par an"
+    },
+    "vote-tebboune": {
+      "value": 84.3,
+      "unit": "%",
+      "precision": 1
+    },
+    "participation-legislatives": {
+      "value": 21.24,
+      "unit": "%",
+      "precision": 1
+    },
+    "dessalement": {
+      "value": 300000,
+      "unit": "m³ par jour"
+    }
+  },
+  "euro": {
+    "currency": "DZD",
+    "per_euro": 149.5768,
+    "year": 2022,
+    "basis": "Cours officiel moyen annuel directement publié par la Banque d’Algérie. La conversion des salaires de mai emploie la moyenne annuelle de leur année, conformément au format ; elle ne mesure pas le pouvoir d’achat ni le taux parallèle.",
+    "source_ids": [
+      "S20"
+    ]
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-15",
+  "checked": "2026-11-16",
   "sources": [
     {
       "id": "FR-DEM",
@@ -68,6 +68,18 @@
     {
       "id": "FR-ELEC-2025",
       "text": "[Ember, Yearly Electricity Data, série mondiale 2025](https://files.ember-energy.org/public-downloads/generation/outputs/release_generation_yearly_global.csv) ; [méthodologie](https://files.ember-energy.org/public-downloads/ember_electricity_data_methodology.pdf). Publication mise à jour le 11 novembre 2026. Ligne France, 2025, Clean, colonne Share of generation (%) : 94,893 %. Même fichier, agrégat nucléaire et renouvelables et convention de production brute que la Chine. La production nette métropolitaine de RTE n’est pas utilisée pour cette comparaison. Licence CC BY 4.0."
+    },
+    {
+      "id": "FR-AGE-DZA",
+      "text": "[Insee, POP4, population par sexe et groupe quinquennal, fichier du bilan démographique](https://www.insee.fr/fr/statistiques/fichier/8999013/4_Pop1janv_grages_quinquennal.xlsx). Édition du 15 juin 2026. Feuilles FR-Hommes et FR-Femmes, ligne 2023, France entière au 1er janvier. Moins d’un an et 1–4 ans additionnés ; cinq classes à partir de 85 ans additionnées en 85+. Cohortes identiques à la pyramide algérienne."
+    },
+    {
+      "id": "FR-VA-DZA",
+      "text": "[Banque mondiale, WDI, valeurs ajoutées françaises par branche, 2024, extraction API](https://api.worldbank.org/v2/country/FRA/indicator/NV.AGR.TOTL.CD;NV.IND.TOTL.CD;NV.SRV.TOTL.CD?source=2&format=json&date=2024&per_page=100). Séries NV.AGR.TOTL.CD, NV.IND.TOTL.CD et NV.SRV.TOTL.CD. Parts calculées sur la somme des trois valeurs ajoutées courantes, hors impôts nets sur les produits, comme pour l’Algérie. Base actualisée le 11 novembre 2026."
+    },
+    {
+      "id": "FR-ELEC-DZA",
+      "text": "[Ember, Yearly Electricity Data, France, 2024](https://files.ember-energy.org/public-downloads/generation/outputs/release_generation_yearly_global.csv). Agrégat Clean, colonne Share of generation (%) : 94,923 %. Production brute, nucléaire et renouvelables. Même définition, même millésime et même fichier que l’Algérie. Mise à jour du 11 novembre 2026. Licence CC BY 4.0."
     }
   ],
   "population": {
@@ -400,6 +412,118 @@
     "reason": "Pas de série française 2025 identifiée sur le même champ des installations d’au moins 1 MW, hors petit solaire distribué.",
     "source_ids": [
       "FR-ENERGY"
+    ]
+  },
+  "pyramide-france-2023-85plus": {
+    "status": "comparable",
+    "unit": "personnes",
+    "year": 2023,
+    "coverage": "Résidents · 1er janvier 2023",
+    "source_ids": [
+      "FR-AGE-DZA"
+    ],
+    "age_groups": [
+      "0–4",
+      "5–9",
+      "10–14",
+      "15–19",
+      "20–24",
+      "25–29",
+      "30–34",
+      "35–39",
+      "40–44",
+      "45–49",
+      "50–54",
+      "55–59",
+      "60–64",
+      "65–69",
+      "70–74",
+      "75–79",
+      "80–84",
+      "85+"
+    ],
+    "male": [
+      1801276,
+      2024498,
+      2188166,
+      2163008,
+      2020969,
+      1897784,
+      2028120,
+      2068259,
+      2126887,
+      2102349,
+      2235630,
+      2183197,
+      2025733,
+      1835467,
+      1713176,
+      1235046,
+      754148,
+      756169
+    ],
+    "female": [
+      1723714,
+      1930651,
+      2084756,
+      2030155,
+      1942305,
+      1910898,
+      2102452,
+      2183183,
+      2219259,
+      2149584,
+      2293602,
+      2283105,
+      2183330,
+      2075615,
+      2005673,
+      1522067,
+      1049023,
+      1555589
+    ]
+  },
+  "valeur-ajoutee-2024": {
+    "status": "comparable",
+    "year": 2024,
+    "unit": "%",
+    "coverage": "Parts de la valeur ajoutée courante · 2024",
+    "source_ids": [
+      "FR-VA-DZA"
+    ],
+    "labels": [
+      "Agriculture, forêt, pêche",
+      "Industrie et construction",
+      "Services"
+    ],
+    "values": [
+      1.4535166280813239,
+      19.245531089447176,
+      79.3009522824715
+    ]
+  },
+  "electricite-bas-carbone-2024": {
+    "status": "comparable",
+    "value": 94.923,
+    "unit": "%",
+    "year": 2024,
+    "coverage": "Nucléaire et renouvelables · production brute 2024",
+    "source_ids": [
+      "FR-ELEC-DZA"
+    ]
+  },
+  "salaires-dza": {
+    "status": "non_comparable",
+    "reason": "Algérie : salaires nets versés en mai 2022 dans les entreprises publiques et privées nationales, privé d’au moins vingt salariés, agriculture et administration exclues ; pas de standardisation en équivalent temps plein documentée. France : secteur privé en EQTP, autre année et autre champ. Ni le taux de change ni l’étiquette net ne corrigent ces écarts.",
+    "source_ids": [
+      "FR-WAGE"
+    ]
+  },
+  "gini-dza": {
+    "status": "non_comparable",
+    "reason": "Algérie : consommation des ménages par personne, enquête 2011, WDI/PIP. France : niveau de vie par unité de consommation après redistribution, enquête 2024. Concept, unité statistique et période différents.",
+    "source_ids": [
+      "FR-GINI"
     ]
   }
 }
