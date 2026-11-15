@@ -1,0 +1,3 @@
+{% extends "base.html" %}
+{% block title %}{{ status }} · {{ ui['site']['name'] }}{% endblock %}
+{% block content %}<main id="contenu" class="home"><h1>{% if status == 404 %}Fiche introuvable{% else %}Page indisponible{% endif %}</h1><p>Retrouvez les fiches disponibles dans la liste des pays.</p><a href="/">{{ ui['navigation']['back'] }}</a></main>{% endblock %}

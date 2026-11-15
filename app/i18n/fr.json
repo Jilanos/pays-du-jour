@@ -1,0 +1,21 @@
+{
+  "site": {
+    "name": "Pays du jour",
+    "tagline": "Le monde, pays par pays.",
+    "footer": "Une collection de fiches pour comprendre le monde."
+  },
+  "navigation": {
+    "skip": "Aller au contenu",
+    "back": "← tous les pays",
+    "toc": "Dans cette fiche"
+  },
+  "home": {
+    "eyebrow": "L’atlas personnel",
+    "title": "197 pays à découvrir.",
+    "intro": "Géographie, société, économie, histoire. Une dizaine de minutes pour faire connaissance avec un pays.",
+    "sort_label": "Ordre des pays",
+    "sort_tier": "Par palier",
+    "sort_alpha": "Ordre alphabétique",
+    "upcoming": "à venir"
+  }
+}

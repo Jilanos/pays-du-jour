@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+<main id="contenu" class="home">
+  <p class="eyebrow">{{ ui['home']['eyebrow'] }}</p>
+  <h1>{{ ui['home']['title'] }}</h1>
+  <p class="intro">{{ ui['home']['intro'] }}</p>
+  <p class="muted">{{ available }} fiche{% if available != 1 %}s{% endif %} disponible{% if available != 1 %}s{% endif %} · {{ total }} pays</p>
+  <nav class="sort" aria-label="{{ ui['home']['sort_label'] }}">
+    <a href="/?tri=palier" {% if tri == 'palier' %}aria-current="page"{% endif %}>{{ ui['home']['sort_tier'] }}</a>
+    <a href="/?tri=alpha" {% if tri == 'alpha' %}aria-current="page"{% endif %}>{{ ui['home']['sort_alpha'] }}</a>
+  </nav>
+  {% for title, countries in groups.items() %}
+  <section class="country-group">
+    <h2>{{ title }}</h2>
+    <ul class="countries">
+      {% for country in countries %}
+      <li data-iso3="{{ country.iso3 }}">
+        {% if country.available %}<a href="/pays/{{ country.iso3 }}">{{ country.pays }}<span aria-hidden="true">↗</span></a>
+        {% else %}<span class="upcoming">{{ country.pays }}<small>{{ ui['home']['upcoming'] }}</small></span>{% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endfor %}
+</main>
+{% endblock %}
