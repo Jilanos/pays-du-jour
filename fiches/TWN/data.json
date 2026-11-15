@@ -423,7 +423,7 @@
     {
       "id": "langues",
       "type": "share",
-      "title": "Langue principalement utilisée, recensement 2020",
+      "title": "Le mandarin domine les usages quotidiens",
       "year": 2020,
       "labels": [
         "Mandarin",
@@ -445,7 +445,7 @@
         "S16"
       ],
       "france": "langues",
-      "subtitle": "2020 · %"
+      "subtitle": "Recensement 2020 · langue principale · %"
     },
     {
       "id": "identites",
@@ -512,7 +512,7 @@
     {
       "id": "salaires",
       "type": "bar",
-      "title": "Salaire mensuel régulier, médiane et moyenne en 2025",
+      "title": "Le salaire moyen dépasse la médiane",
       "year": 2025,
       "labels": [
         "Médiane",
@@ -529,12 +529,12 @@
         "S25"
       ],
       "france": "salaires",
-      "subtitle": "2025 · TWD/mois"
+      "subtitle": "Salaire mensuel régulier brut · 2025 · TWD/mois"
     },
     {
       "id": "logement",
       "type": "barh",
-      "title": "Prix médian du logement / revenu annuel médian du ménage",
+      "title": "Acheter un logement, un effort accru à Taipei",
       "year": 2026,
       "labels": [
         "Taïwan",
@@ -552,12 +552,12 @@
       ],
       "france": "logement",
       "precision": 1,
-      "subtitle": "2026 · années de revenu"
+      "subtitle": "Prix médian / revenu annuel médian du ménage · T1 2026"
     },
     {
       "id": "pib-secteurs",
       "type": "share",
-      "title": "PIB par grand secteur en 2025",
+      "title": "Les services en tête, une industrie très présente",
       "year": 2025,
       "labels": [
         "Agriculture, forêt, pêche",
@@ -576,12 +576,12 @@
       ],
       "france": "pib-secteurs",
       "note_visible": "Les services incluent les droits à l’importation et la TVA dans les comptes taïwanais.",
-      "subtitle": "2025 · %"
+      "subtitle": "Parts du PIB · 2025 · %"
     },
     {
       "id": "exportations",
       "type": "share",
-      "title": "Structure des exportations de biens en 2025",
+      "title": "L’électronique domine les exportations",
       "year": 2025,
       "labels": [
         "Informatique, télécoms, audiovisuel",
@@ -599,12 +599,12 @@
         "S29"
       ],
       "france": "exportations",
-      "subtitle": "2025 · %"
+      "subtitle": "Exportations de biens · 2025 · %"
     },
     {
       "id": "tsmc-gravure",
       "type": "share",
-      "title": "TSMC : revenus de wafers par technologie de gravure en 2025",
+      "title": "TSMC : les procédés récents dominent les revenus",
       "year": 2025,
       "labels": [
         "3 nm",
@@ -626,7 +626,7 @@
       ],
       "france": "tsmc-gravure",
       "note_visible": "Revenus de wafers de TSMC, toutes implantations. Les « nm » désignent des générations de procédés.",
-      "subtitle": "2025 · %"
+      "subtitle": "Revenus de wafers par technologie de gravure · 2025 · %"
     }
   ],
   "sources": [
@@ -951,5 +951,23 @@
       "value": 960.8,
       "unit": "kilomètres"
     }
-  }
+  },
+  "cities_title": "Les villes de l’ouest",
+  "cities_scope": "Municipalités · 31 décembre 2025",
+  "relief_title": "Une île de montagnes",
+  "relief_alt": "Relief de Taïwan : montagnes au centre et à l’est, plaines à l’ouest.",
+  "relief_landmarks": [
+    {
+      "label": "La chaîne centrale",
+      "text": "Une dorsale orientée du nord au sud."
+    },
+    {
+      "label": "Les plaines occidentales",
+      "text": "Le principal espace urbain et agricole."
+    },
+    {
+      "label": "Le massif du Yushan",
+      "text": "À l’ouest de la chaîne centrale."
+    }
+  ]
 }

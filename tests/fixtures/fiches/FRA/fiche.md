@@ -17,9 +17,9 @@ relief_pertinent: true
 
 ## Carte
 
-Cette fiche contient des **données fictives de test**. Elle ne constitue pas une fiche documentaire.
+Cette fiche contient des **données fictives de test**. Elle ne constitue pas une fiche documentaire. {#test-intro sources="TEST" label="Démonstration"}
 
-{{map:locator}}
+
 
 {{map:relief}}
 
@@ -59,7 +59,4 @@ Cette fiche contient des **données fictives de test**. Elle ne constitue pas un
 | --- | --- |
 | Lecture | Une fiche sans JavaScript. |
 
-## Sources
-
-- [Natural Earth](https://www.naturalearthdata.com/) · consulté le 15 novembre 2026.
-- Jeu de données fictif, uniquement pour tester l’application.
+{{sources}}

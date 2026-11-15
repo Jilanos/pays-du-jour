@@ -7,15 +7,20 @@ from app.charts import RENDERERS, render_chart
 
 
 @pytest.mark.parametrize("kind", RENDERERS)
-def test_each_chart_is_valid_svg_with_labels_units_and_source(charts, kind):
+def test_each_chart_has_accessible_plot_and_exact_data_without_source_caption(charts, kind):
     chart = next(c for c in charts if c["type"] == kind)
     rendered = render_chart(chart)
-    start, end = rendered.index("<svg"), rendered.index("</svg>") + 6
-    root = ET.fromstring(rendered[start:end])
-    assert root.tag == "{http://www.w3.org/2000/svg}svg"
-    assert root.attrib["role"] == "img"
-    assert root.find("{*}title").text == chart["title"]
-    assert "Source : Données fictives &lt;test&gt; &amp; exemples · 2026" in rendered
+    if kind in ("bar", "barh", "share"):
+        assert "<svg" not in rendered
+        assert all(label in rendered for label in chart["labels"])
+    else:
+        start, end = rendered.index("<svg"), rendered.index("</svg>") + 6
+        root = ET.fromstring(rendered[start:end])
+        assert root.tag == "{http://www.w3.org/2000/svg}svg"
+        assert root.attrib["role"] == "img"
+        assert root.find("{*}title").text == chart["title"]
+    assert "Source :" not in rendered
+    assert chart["note"] not in rendered
     assert "Voir les données" in rendered
     assert (chart.get("unit") or "°C") in rendered
     assert "nan" not in rendered.lower()
@@ -33,7 +38,7 @@ def test_zero_values_render_without_division_by_zero(charts, kind):
                 chart[key] = [0] * len(chart[key])
         for series in chart.get("series", []):
             series["values"] = [0] * len(series["values"])
-    ET.fromstring(RENDERERS[kind](chart))
+    ET.fromstring("<root>" + RENDERERS[kind](chart) + "</root>")
 
 
 def test_rejects_mismatched_or_nonfinite_data(charts):

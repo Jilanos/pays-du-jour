@@ -5,12 +5,11 @@ from collections import OrderedDict
 from pathlib import Path
 from urllib.parse import urlencode
 
-from markupsafe import Markup
-
 from fastapi import FastAPI, HTTPException, Request
 from fastapi.responses import FileResponse, HTMLResponse, PlainTextResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
+from markupsafe import Markup
 from starlette.exceptions import HTTPException as StarletteHTTPException
 
 from .config import Settings
@@ -49,30 +48,50 @@ def create_app(settings: Settings | None = None) -> FastAPI:
     @app.get("/", response_class=HTMLResponse)
     def home(request: Request, tri: str = "palier", q: str = "", disponibles: str = ""):
         countries = country_list(settings)
-        available = [c for c in countries if c['available']]
-        featured = read_fiche(available[0]['iso3'], settings) if available else None
-        selected = [c for c in countries if (not disponibles or c['available'])
-                    and alphabetical(q.strip()) in alphabetical(c['pays'])]
+        available = [c for c in countries if c["available"]]
+        featured = read_fiche(available[0]["iso3"], settings) if available else None
+        selected = [
+            c
+            for c in countries
+            if (not disponibles or c["available"])
+            and alphabetical(q.strip()) in alphabetical(c["pays"])
+        ]
         groups = OrderedDict()
         if tri == "alpha":
             for country in sorted(selected, key=lambda c: alphabetical(c["pays"])):
-                groups.setdefault(alphabetical(country['pays'])[0].upper(), []).append(country)
+                groups.setdefault(alphabetical(country["pays"])[0].upper(), []).append(country)
         elif tri == "continent":
-            for country in sorted(selected, key=lambda c: (c.get('continent', ''), alphabetical(c['pays']))):
-                groups.setdefault(country.get('continent', 'Autres'), []).append(country)
+            for country in sorted(
+                selected, key=lambda c: (c.get("continent", ""), alphabetical(c["pays"]))
+            ):
+                groups.setdefault(country.get("continent", "Autres"), []).append(country)
         else:
             tri = "palier"
             for country in sorted(selected, key=lambda c: (int(c["palier"]), int(c["rang"]))):
-                groups.setdefault(country['palier_nom'], []).append(country)
-        queries = {mode: urlencode({'tri': mode, 'q': q, **({'disponibles': '1'} if disponibles else {})})
-                   for mode in ('palier','alpha','continent')}
+                groups.setdefault(country["palier_nom"], []).append(country)
+        queries = {
+            mode: urlencode({"tri": mode, "q": q, **({"disponibles": "1"} if disponibles else {})})
+            for mode in ("palier", "alpha", "continent")
+        }
         return templates.TemplateResponse(
-            request=request, name="home.html",
-            context={"groups": groups, "tri": tri, "total": len(countries),
-                     "available": len(available), "featured": featured,
-                     "featured_map": Markup(locator(featured.meta['iso3'], featured.meta['nom'], settings.geo_dir)) if featured else '',
-                     "q": q, "only_available": bool(disponibles), "result_count": len(selected),
-                     "sort_queries": queries},
+            request=request,
+            name="home.html",
+            context={
+                "groups": groups,
+                "tri": tri,
+                "total": len(countries),
+                "available": len(available),
+                "featured": featured,
+                "featured_map": Markup(
+                    locator(featured.meta["iso3"], featured.meta["nom"], settings.geo_dir)
+                )
+                if featured
+                else "",
+                "q": q,
+                "only_available": bool(disponibles),
+                "result_count": len(selected),
+                "sort_queries": queries,
+            },
         )
 
     @app.get("/pays/{iso3}", response_class=HTMLResponse)
@@ -85,12 +104,13 @@ def create_app(settings: Settings | None = None) -> FastAPI:
         except FileNotFoundError:
             raise HTTPException(404) from None
         countries = country_list(settings)
-        available = [c for c in countries if c['available']]
-        position = next(i for i,c in enumerate(available) if c['iso3']==code)
-        next_country = available[(position+1) % len(available)] if len(available)>1 else None
+        available = [c for c in countries if c["available"]]
+        position = next(i for i, c in enumerate(available) if c["iso3"] == code)
+        next_country = available[(position + 1) % len(available)] if len(available) > 1 else None
         return templates.TemplateResponse(
-            request=request, name="fiche.html",
-            context={"fiche": content, "next_country": next_country, "total": len(countries)}
+            request=request,
+            name="fiche.html",
+            context={"fiche": content, "next_country": next_country, "total": len(countries)},
         )
 
     @app.get("/pays/{iso3}/assets/{filename}")

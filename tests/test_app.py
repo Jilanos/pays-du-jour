@@ -20,8 +20,8 @@ def test_home_lists_all_countries_and_available_fiche(client):
     assert len(codes) == len(set(codes)) == 197
     assert 'href="/pays/FRA"' in response.text
     assert 'href="/pays/TWN"' not in response.text
-    assert response.text.count("à venir") == 196
-    assert "Palier 1" in response.text and "Palier 4" in response.text
+    assert "à venir" not in response.text
+    assert "Par affinités" in response.text and "Tour du monde" in response.text
 
 
 def test_alpha_toggle_is_french_alphabetical(client, settings):
@@ -36,11 +36,11 @@ def test_fixture_resolves_every_placeholder_and_builds_toc(client):
     response = client.get("/pays/FRA")
     assert response.status_code == 200
     assert "{{" not in response.text
-    assert response.text.count("<svg ") == 9  # Seven charts and two maps.
+    assert response.text.count('class="graphic"') == 7  # HTML rows and responsive SVGs.
     assert 'href="#population"' in response.text
     assert 'id="population"' in response.text
     assert "← tous les pays" in response.text
-    assert "Source de test" in response.text and "Indices" in response.text
+    assert "Source de test" in response.text and "Lire les indices" in response.text
     assert "/pays/FRA/assets/flag.svg" in response.text
     assert "/pays/FRA/assets/relief.svg" in response.text
     assert "<table>" in response.text
@@ -121,12 +121,17 @@ def test_adjacent_placeholder_lines_resolve_but_code_examples_remain_literal(set
     path = config.content_dir / "FRA/fiche.md"
     path.write_text(
         path.read_text() + "\n## Blocs adjacents\nTexte avant\n"
-        "{{keyfacts}}\n{{chart:salaires}}\nTexte après\n"
+        "{{chart:adjacent}}\n{{chart:second}}\nTexte après\n"
         "\n```text\n{{chart:salaires}}\n```\n"
         "\n    {{map:cities}}\n"
     )
+    data_path = config.content_dir / "FRA/data.json"
+    data = json.loads(data_path.read_text())
+    original = next(c for c in data["charts"] if c["id"] == "salaires")
+    data["charts"] += [{**original, "id": name} for name in ("adjacent", "second")]
+    data_path.write_text(json.dumps(data))
     html = read_fiche("FRA", config).html
-    assert html.count("<svg ") == 10
+    assert html.count('class="graphic"') == 9
     assert "<p>Texte avant</p>" in html and "<p>Texte après</p>" in html
     assert '<code class="language-text">{{chart:salaires}}' in html
     assert "<code>{{map:cities}}" in html
