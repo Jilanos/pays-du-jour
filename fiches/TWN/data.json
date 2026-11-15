@@ -1,0 +1,485 @@
+{
+  "keyfacts": [
+    {
+      "label": "Population enregistrée",
+      "value": "23 204 000",
+      "year": 2026,
+      "source": "MOI, 31 octobre 2026 (S01)"
+    },
+    {
+      "label": "Superficie",
+      "value": "36 197 km²",
+      "year": 2025,
+      "source": "MOI, tableau y1sa, fin 2025 ; 36 197,3371 km² arrondis au km² (S03)"
+    },
+    {
+      "label": "PIB nominal",
+      "value": "922,5 milliards USD",
+      "year": 2025,
+      "source": "DGBAS, tableau 1-2, révision août 2026 ; 922 454 millions USD arrondis (S28)"
+    },
+    {
+      "label": "Fécondité",
+      "value": "0,695 enfant/femme",
+      "year": 2025,
+      "source": "MOI, plateforme des indicateurs de genre (S14)"
+    },
+    {
+      "label": "Part des 65 ans ou plus",
+      "value": "20,79 %",
+      "year": 2026,
+      "source": "MOI, 31 octobre 2026 (S01)"
+    },
+    {
+      "label": "Énergie importée",
+      "value": "95,4 %",
+      "year": 2025,
+      "source": "Energy Administration, approvisionnement en énergie primaire (S31)"
+    }
+  ],
+  "indices": [
+    {
+      "name": "IDH",
+      "value": 0.934,
+      "rank": "21, rang comparatif calculé par DGBAS, hors classement officiel PNUD",
+      "year": 2023,
+      "source": "DGBAS, calcul selon la méthode PNUD (S07)"
+    },
+    {
+      "name": "Gini du revenu disponible des ménages",
+      "value": 0.341,
+      "rank": "Sans classement",
+      "year": 2025,
+      "source": "DGBAS, enquête revenus et dépenses des ménages, après transferts (S08)"
+    },
+    {
+      "name": "V-Dem, démocratie libérale (0–1)",
+      "value": 0.7,
+      "rank": "29",
+      "year": 2025,
+      "source": "V-Dem, Democracy Report 2026, tableau A2, p. 48 (S09)"
+    },
+    {
+      "name": "RSF, liberté de la presse (0–100)",
+      "value": 75.44,
+      "rank": "28/180",
+      "year": 2026,
+      "source": "Reporters sans frontières, index 2026 (S10)"
+    },
+    {
+      "name": "CPI, corruption perçue (0–100)",
+      "value": 68,
+      "rank": "24/182",
+      "year": 2025,
+      "source": "Transparency International, CPI 2025 (S11)"
+    }
+  ],
+  "cities": [
+    {
+      "name": "Nouveau Taipei",
+      "population": 4044831,
+      "lat": 25.012778,
+      "lon": 121.465,
+      "note": "Couronne métropolitaine, industrie et littoral.",
+      "year": 2025,
+      "source": "MOI, municipalité au 31 décembre 2025 (S02) ; coordonnées du centre : Natural Earth (S37)"
+    },
+    {
+      "name": "Taichung",
+      "population": 2868465,
+      "lat": 24.152078,
+      "lon": 120.681667,
+      "note": "Machines-outils, mécanique et cycles.",
+      "year": 2025,
+      "source": "MOI, municipalité au 31 décembre 2025 (S02) ; coordonnées du centre : Natural Earth (S37)"
+    },
+    {
+      "name": "Kaohsiung",
+      "population": 2718545,
+      "lat": 22.633307,
+      "lon": 120.266602,
+      "note": "Port, sidérurgie et développement des fabs.",
+      "year": 2025,
+      "source": "MOI, municipalité au 31 décembre 2025 (S02) ; coordonnées du centre : Natural Earth (S37)"
+    },
+    {
+      "name": "Taipei",
+      "population": 2439507,
+      "lat": 25.035833,
+      "lon": 121.568333,
+      "note": "Capitale politique, finance et services.",
+      "year": 2025,
+      "source": "MOI, municipalité au 31 décembre 2025 (S02) ; coordonnées du centre : Natural Earth (S37)"
+    },
+    {
+      "name": "Taoyuan",
+      "population": 2355106,
+      "lat": 24.988889,
+      "lon": 121.311111,
+      "note": "Aéroport international, logistique et industrie.",
+      "year": 2025,
+      "source": "MOI, municipalité au 31 décembre 2025 (S02) ; coordonnées du centre : Natural Earth (S37)"
+    },
+    {
+      "name": "Tainan",
+      "population": 1852477,
+      "lat": 23.000003,
+      "lon": 120.200043,
+      "note": "Ancienne capitale, temples et électronique.",
+      "year": 2025,
+      "source": "MOI, municipalité au 31 décembre 2025 (S02) ; coordonnées du centre : Natural Earth (S37)"
+    }
+  ],
+  "charts": [
+    {
+      "id": "climat-taipei",
+      "type": "climate",
+      "title": "Taipei : températures et précipitations",
+      "source": "Central Weather Administration, normales 1991-2020 (S12)",
+      "year": 2020,
+      "place": "Taipei",
+      "note": "Normales 1991-2020 ; moyennes des minima et maxima quotidiens, précipitations mensuelles. Année 2020 = fin de la période de référence. Station 466920.",
+      "tmin": [
+        14.2,
+        14.4,
+        16.0,
+        19.3,
+        22.6,
+        25.1,
+        26.6,
+        26.4,
+        25.0,
+        22.4,
+        19.7,
+        16.0
+      ],
+      "tmax": [
+        19.4,
+        20.3,
+        22.7,
+        26.4,
+        29.7,
+        32.7,
+        34.8,
+        34.2,
+        31.5,
+        27.6,
+        24.8,
+        21.0
+      ],
+      "precip_mm": [
+        90.5,
+        143.2,
+        157.2,
+        152.5,
+        239.9,
+        345.0,
+        226.1,
+        337.8,
+        315.2,
+        150.2,
+        83.2,
+        88.7
+      ]
+    },
+    {
+      "id": "climat-kaohsiung",
+      "type": "climate",
+      "title": "Kaohsiung : températures et précipitations",
+      "source": "Central Weather Administration, normales 1991-2020 (S12)",
+      "year": 2020,
+      "place": "Kaohsiung",
+      "note": "Normales 1991-2020 ; moyennes des minima et maxima quotidiens, précipitations mensuelles. Année 2020 = fin de la période de référence. Ancienne station 467440.",
+      "tmin": [
+        16.2,
+        17.2,
+        19.7,
+        22.8,
+        25.2,
+        26.3,
+        26.7,
+        26.3,
+        25.9,
+        24.4,
+        21.6,
+        17.9
+      ],
+      "tmax": [
+        24.2,
+        25.0,
+        27.0,
+        29.3,
+        31.0,
+        32.1,
+        32.7,
+        32.1,
+        31.8,
+        30.1,
+        28.1,
+        25.3
+      ],
+      "precip_mm": [
+        19.1,
+        17.7,
+        32.3,
+        68.4,
+        202.2,
+        416.2,
+        377.2,
+        512.4,
+        224.5,
+        53.4,
+        25.6,
+        19.2
+      ]
+    },
+    {
+      "id": "pyramide-ages",
+      "type": "pyramid",
+      "title": "Population enregistrée par âge et sexe au 31 décembre 2025",
+      "source": "MOI, tableau annuel y1s6, feuille cinq ans, 2025 (S02)",
+      "year": 2025,
+      "age_groups": [
+        "0–4",
+        "5–9",
+        "10–14",
+        "15–19",
+        "20–24",
+        "25–29",
+        "30–34",
+        "35–39",
+        "40–44",
+        "45–49",
+        "50–54",
+        "55–59",
+        "60–64",
+        "65–69",
+        "70–74",
+        "75–79",
+        "80–84",
+        "85–89",
+        "90–94",
+        "95–99",
+        "100+"
+      ],
+      "male": [
+        353.613,
+        483.955,
+        550.471,
+        507.119,
+        600.272,
+        773.172,
+        823.739,
+        808.771,
+        934.5,
+        978.049,
+        840.213,
+        856.943,
+        847.888,
+        755.618,
+        619.521,
+        356.952,
+        196.895,
+        113.102,
+        44.864,
+        14.323,
+        2.421
+      ],
+      "female": [
+        330.399,
+        450.842,
+        512.61,
+        465.983,
+        551.332,
+        717.522,
+        771.237,
+        775.043,
+        954.413,
+        1020.299,
+        893.229,
+        907.97,
+        916.393,
+        844.473,
+        722.942,
+        440.607,
+        272.604,
+        185.184,
+        79.273,
+        21.269,
+        3.107
+      ],
+      "unit": "k",
+      "note": "Dernier millésime annuel complet disponible ; effectifs administratifs observés. Les deux séries positives sont exprimées en milliers de personnes. Total : 23 299 132."
+    },
+    {
+      "id": "langues",
+      "type": "share",
+      "title": "Langue principalement utilisée, recensement 2020",
+      "source": "DGBAS, recensement 2020, repris par le Legislative Yuan (S16)",
+      "year": 2020,
+      "labels": [
+        "Mandarin",
+        "Hokkien taïwanais",
+        "Hakka",
+        "Langues autochtones",
+        "Autres / résidu"
+      ],
+      "values": [
+        66.4,
+        31.7,
+        1.5,
+        0.2,
+        0.2
+      ],
+      "unit": "%",
+      "note": "Résidents nationaux âgés de six ans ou plus. Une seule langue principale ; aucune mesure du nombre de locuteurs multilingues. Résidu calculé : 100 − 66,4 − 31,7 − 1,5 − 0,2 = 0,2 %."
+    },
+    {
+      "id": "identites",
+      "type": "share",
+      "title": "Identification ethnoculturelle déclarée, choix unique",
+      "source": "Hakka Affairs Council, enquête 2021, tableau B-1 ; synthèse MOI 2022 (S15, S17)",
+      "year": 2021,
+      "labels": [
+        "Hoklo",
+        "Hakka",
+        "Continentale",
+        "Autochtone",
+        "Autres / sans réponse"
+      ],
+      "values": [
+        71.3,
+        15.7,
+        5,
+        3,
+        5
+      ],
+      "unit": "%",
+      "note": "Identification unique déclarée dans une enquête. Les catégories sont celles de la source. La catégorie continentale désigne une identité familiale issue de la Chine continentale. Résidu calculé : 100 − 71,3 − 15,7 − 5 − 3 = 5 %. Ne pas assimiler aux statuts du registre civil."
+    },
+    {
+      "id": "religions",
+      "type": "share",
+      "title": "Affiliation religieuse déclarée des adultes",
+      "source": "Pew Research Center, enquête 2023, question QCURREL (S18)",
+      "year": 2023,
+      "labels": [
+        "Bouddhisme",
+        "Taoïsme",
+        "Sans religion",
+        "Christianisme",
+        "Combinaison de religions",
+        "Religions locales / autochtones",
+        "Autres religions",
+        "Ne sait pas / refus"
+      ],
+      "values": [
+        28,
+        24,
+        27,
+        7,
+        5,
+        4,
+        2,
+        2
+      ],
+      "unit": "%",
+      "note": "Somme de 99 % conservée telle que publiée, effet des arrondis. Les cultes populaires et le culte des ancêtres dépassent les affiliations exclusives. Échantillon taïwanais : 2 277 adultes."
+    },
+    {
+      "id": "salaires",
+      "type": "bar",
+      "title": "Salaire mensuel régulier, médiane et moyenne en 2025",
+      "source": "DGBAS, Industry and Services Sector Earnings Statistics in December 2025 (S25)",
+      "year": 2025,
+      "labels": [
+        "Médiane",
+        "Moyenne"
+      ],
+      "values": [
+        39890,
+        50643
+      ],
+      "unit": "TWD/mois",
+      "highlight": "Médiane",
+      "note": "Salariés nationaux à temps plein, industrie et services ; rémunération régulière brute, hors primes et heures supplémentaires. Moyennes sur les douze mois de 2025, et non chiffres de décembre seul."
+    },
+    {
+      "id": "logement",
+      "type": "barh",
+      "title": "Prix médian du logement / revenu annuel médian du ménage",
+      "source": "MOI, indicateurs d’accessibilité du logement, T1 2026 (S26)",
+      "year": 2026,
+      "labels": [
+        "Taïwan",
+        "Taipei"
+      ],
+      "values": [
+        9.47,
+        14.72
+      ],
+      "unit": "années de revenu",
+      "highlight": "Taipei",
+      "note": "Premier trimestre 2026 ; revenu disponible du ménage. Rapport prix/revenu, sans simulation de crédit."
+    },
+    {
+      "id": "pib-secteurs",
+      "type": "share",
+      "title": "PIB par grand secteur en 2025",
+      "source": "DGBAS, comptes nationaux révisés le 14 août 2026, tableau 4-2 (S28)",
+      "year": 2025,
+      "labels": [
+        "Agriculture, forêt, pêche",
+        "Industrie, construction comprise",
+        "Services"
+      ],
+      "values": [
+        1.44,
+        43.45,
+        55.1
+      ],
+      "unit": "%",
+      "note": "Prix courants ; parts de PIB publiées, somme de 99,99 % à cause des arrondis. L’industrie comprend 38,55 % du PIB pour la fabrication."
+    },
+    {
+      "id": "exportations",
+      "type": "share",
+      "title": "Structure des exportations de biens en 2025",
+      "source": "Ministère des Finances, Annual External Trade Report in 2025, tableau 1 (S29)",
+      "year": 2025,
+      "labels": [
+        "Informatique, télécoms, audiovisuel",
+        "Composants électroniques",
+        "Autres biens"
+      ],
+      "values": [
+        39.2,
+        34.8,
+        26.0
+      ],
+      "unit": "%",
+      "note": "Valeur douanière totale : 640,7 milliards USD. Autres biens = résidu calculé de 100 − 39,2 − 34,8. Les composants électroniques incluent les circuits intégrés ; aucune addition avec les produits finis déjà classés dans l’autre catégorie."
+    },
+    {
+      "id": "tsmc-gravure",
+      "type": "share",
+      "title": "TSMC : revenus de wafers par technologie de gravure en 2025",
+      "source": "TSMC, rapport annuel 2025 et formulaire 20-F 2025 déposé auprès de la SEC (S21, S56)",
+      "year": 2025,
+      "labels": [
+        "3 nm",
+        "5 nm",
+        "7 nm",
+        "Procédés plus anciens"
+      ],
+      "values": [
+        24,
+        36,
+        14,
+        26
+      ],
+      "unit": "%",
+      "note": "Part des revenus de wafers de TSMC, toutes implantations confondues. 7 nm et plus avancé : 74 %. Procédés plus anciens = 100 − 24 − 36 − 14. Les appellations en nm sont des générations de procédés. Aucune part de marché mondiale dans ce graphique."
+    }
+  ]
+}
