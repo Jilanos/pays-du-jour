@@ -224,6 +224,10 @@ def read_fiche(iso3: str, settings: Settings) -> Fiche:
                 marker=mark,
                 title=data.get("cities_title", "Villes principales"),
                 scope=data.get("cities_scope", "Population municipale"),
+                note=data.get(
+                    "cities_note", "Les limites municipales englobent aussi des espaces ruraux."
+                ),
+                inset=data.get("cities_inset"),
             )
         else:
             relief = next(

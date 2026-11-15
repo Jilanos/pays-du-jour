@@ -166,6 +166,8 @@ def cities(
     marker="",
     title="Villes principales",
     scope="Population municipale",
+    note="Les limites municipales englobent aussi des espaces ruraux.",
+    inset=None,
 ):
     geom = load_geo(geo_dir, "countries-50m.json")[iso3]
     start, dx, lo, hi = main_bounds(geom)
@@ -185,58 +187,102 @@ def cities(
     group = el(root, "g", clip_path=f"url(#cities-frame-{iso3})")
     el(group, "rect", width=260, height=360, fill="var(--map-sea)", rx=6)
     el(group, "path", d=path(geom, project), class_="city-land", fill_rule="evenodd")
-    north = [i for i, c in enumerate(city_data) if iso3 == "TWN" and c["lat"] > 24.8]
+    if inset is None and iso3 == "TWN":
+        # Taipei's northern cluster: the historical, hand-tuned inset.
+        inset = {
+            "label": "Le nord",
+            "cities": [c["name"] for c in city_data if c["lat"] > 24.8],
+            "lon": 121.24,
+            "lat": 24.92,
+            "scale": 250,
+            "x": 8,
+            "y": 8,
+            "width": 120,
+            "height": 92,
+            "focus": [121.5, 25],
+            "lat_correction": False,
+        }
+    grouped = [i for i, c in enumerate(city_data) if inset and c["name"] in inset["cities"]]
 
     def pin(parent, x, y, i):
         el(parent, "circle", cx=x, cy=y, r=11, class_="city-dot")
         text(parent, x, y + 6, i + 1, text_anchor="middle", class_="pin-number")
 
     for i, city in enumerate(city_data):
-        if i not in north:
+        if i not in grouped:
             pin(group, *project((city["lon"], city["lat"])), i)
-    if north:
-        x, y = project((121.5, 25))
+    if grouped:
+        # A dense cluster moves to a magnified inset, linked to a dashed ring on the map.
+        lons = [city_data[i]["lon"] for i in grouped]
+        lats = [city_data[i]["lat"] for i in grouped]
+        focus = inset.get("focus") or [(min(lons) + max(lons)) / 2, (min(lats) + max(lats)) / 2]
+        x, y = project(focus)
+        spread = max(
+            abs(a - b)
+            for i in grouped
+            for a, b in zip(project((city_data[i]["lon"], city_data[i]["lat"])), (x, y))
+        )
+        radius = 16 if iso3 == "TWN" else max(16, spread + 8)
         el(
             group,
             "circle",
             cx=x,
             cy=y,
-            r=16,
+            r=radius,
             fill="none",
             stroke="var(--accent)",
             stroke_dasharray="3 3",
         )
+        box_x, box_y = inset["x"], inset["y"]
+        box_w, box_h = inset["width"], inset["height"]
+        anchor_x = box_x + box_w if box_x + box_w < x else box_x
+        anchor_y = min(max(y, box_y), box_y + box_h)
         el(
             group,
             "line",
-            x1=x - 15,
-            x2=118,
+            x1=x - radius + 1 if anchor_x < x else x + radius - 1,
+            x2=118 if iso3 == "TWN" else anchor_x,
             y1=y,
-            y2=72,
+            y2=anchor_y if iso3 != "TWN" else 72,
             stroke="var(--accent)",
             stroke_dasharray="3 3",
         )
-        inset = el(group, "svg", x=8, y=8, width=120, height=92, viewBox="0 0 120 103")
+        view_h = round(box_h * 103 / 92) if iso3 == "TWN" else box_h
+        frame = el(
+            group,
+            "svg",
+            x=box_x,
+            y=box_y,
+            width=box_w,
+            height=box_h,
+            viewBox=f"0 0 {box_w} {view_h}",
+        )
         el(
-            inset,
+            frame,
             "rect",
             x=1,
             y=1,
-            width=118,
-            height=101,
+            width=box_w - 2,
+            height=view_h - 2,
             rx=4,
             fill="var(--bg)",
             stroke="var(--rule)",
         )
+        correction = cos(radians(inset["lat"])) if inset.get("lat_correction", True) else 1
+        bottom = 81 if iso3 == "TWN" else view_h - 12
 
         def ip(p):
-            return (15 + (p[0] - 121.24) * 250, 81 - (p[1] - 24.92) * 250)
+            return (
+                15 + (p[0] - inset["lon"]) * inset["scale"] * correction,
+                bottom - (p[1] - inset["lat"]) * inset["scale"],
+            )
 
-        el(inset, "path", d=path(geom, ip), class_="city-land")
-        el(inset, "rect", x=6, y=6, width=76, height=23, fill="var(--bg)", rx=2)
-        text(inset, 10, 23, "Le nord", class_="inset-label")
-        for i in north:
-            pin(inset, *ip((city_data[i]["lon"], city_data[i]["lat"])), i)
+        el(frame, "path", d=path(geom, ip), class_="city-land")
+        label_width = 76 if iso3 == "TWN" else 12 + 8 * len(inset["label"])
+        el(frame, "rect", x=6, y=6, width=label_width, height=23, fill="var(--bg)", rx=2)
+        text(frame, 10, 23, inset["label"], class_="inset-label")
+        for i in grouped:
+            pin(frame, *ip((city_data[i]["lon"], city_data[i]["lat"])), i)
     text(group, 230, 291, "N", text_anchor="middle")
     el(
         group,
@@ -274,6 +320,6 @@ def cities(
     )
     return (
         f'<figure class="graphic cities-figure" id="villes"><h3>{escape(title)}{marker}</h3>'
-        '<p class="figure-note">Les limites municipales englobent aussi des espaces ruraux.</p>'
+        f'<p class="figure-note">{escape(note)}</p>'
         f'<div class="cities-layout">{finish(root)}{table}</div></figure>'
     )
