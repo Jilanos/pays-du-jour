@@ -68,6 +68,20 @@ def main_bounds(geometry):
     return start, max(wrap(p[0]) for p in pts), min(p[1] for p in pts), max(p[1] for p in pts)
 
 
+def focus(geometry, bbox):
+    """Keep the polygons inside bbox [lon_min, lat_min, lon_max, lat_max] (e.g. a mainland)."""
+    if not bbox:
+        return geometry
+    w, s, e, n = bbox
+    polygons = (
+        geometry["coordinates"] if geometry["type"] == "MultiPolygon" else [geometry["coordinates"]]
+    )
+    kept = [
+        poly for poly in polygons if all(w <= lon <= e and s <= lat <= n for lon, lat in poly[0])
+    ]
+    return {"type": "MultiPolygon", "coordinates": kept} if kept else geometry
+
+
 def canvas(title, width, height):
     root = Element(
         "svg",
@@ -82,9 +96,10 @@ def canvas(title, width, height):
     return root
 
 
-def locator(iso3, name, geo_dir, marker=""):
+def locator(iso3, name, geo_dir, marker="", map_focus=None):
+    map_focus = map_focus or {}
     world = load_geo(geo_dir, "world-110m.json")
-    country = load_geo(geo_dir, "countries-50m.json")[iso3]
+    country = focus(load_geo(geo_dir, "countries-50m.json")[iso3], map_focus.get("bbox"))
     start, dx, lo, hi = main_bounds(country)
     lon = (start + dx / 2 + 180) % 360 - 180
     lat = (lo + hi) / 2
@@ -151,7 +166,10 @@ def locator(iso3, name, geo_dir, marker=""):
         stroke="var(--accent)",
         stroke_width=4,
     )
-    caption = "Dans le Pacifique occidental" if iso3 == "TWN" else "Situation régionale"
+    caption = escape(
+        map_focus.get("caption")
+        or ("Dans le Pacifique occidental" if iso3 == "TWN" else "Situation régionale")
+    )
     return (
         f'<figure class="locator" id="situation">{finish(root)}'
         f"<figcaption>{caption}{marker}</figcaption></figure>"
@@ -166,8 +184,10 @@ def cities(
     marker="",
     title="Villes principales",
     scope="Population municipale",
+    map_focus=None,
+    note="Les limites municipales englobent aussi des espaces ruraux.",
 ):
-    geom = load_geo(geo_dir, "countries-50m.json")[iso3]
+    geom = focus(load_geo(geo_dir, "countries-50m.json")[iso3], (map_focus or {}).get("bbox"))
     start, dx, lo, hi = main_bounds(geom)
     factor = max(0.15, cos(radians((lo + hi) / 2)))
     scale = min(205 / max(dx * factor, 0.02), 290 / max(hi - lo, 0.02))
@@ -193,7 +213,21 @@ def cities(
 
     for i, city in enumerate(city_data):
         if i not in north:
-            pin(group, *project((city["lon"], city["lat"])), i)
+            x, y = project((city["lon"], city["lat"]))
+            ox, oy = city.get("offset", (0, 0))  # leader line when two pins overlap
+            if ox or oy:
+                el(
+                    group,
+                    "line",
+                    x1=x,
+                    y1=y,
+                    x2=x + ox,
+                    y2=y + oy,
+                    stroke="var(--accent)",
+                    stroke_width=1,
+                )
+                el(group, "circle", cx=x, cy=y, r=2, fill="var(--accent)")
+            pin(group, x + ox, y + oy, i)
     if north:
         x, y = project((121.5, 25))
         el(
@@ -274,6 +308,6 @@ def cities(
     )
     return (
         f'<figure class="graphic cities-figure" id="villes"><h3>{escape(title)}{marker}</h3>'
-        '<p class="figure-note">Les limites municipales englobent aussi des espaces ruraux.</p>'
+        f'<p class="figure-note">{escape(note)}</p>'
         f'<div class="cities-layout">{finish(root)}{table}</div></figure>'
     )

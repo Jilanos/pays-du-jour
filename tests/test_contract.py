@@ -91,6 +91,20 @@ def test_bibliography_numbers_follow_display_order_not_citation_order():
         sources.cite("missing", "Absent", ["Z"])
 
 
+def test_usa_figures_use_their_own_country_and_citations_roundtrip():
+    with TestClient(create_app()) as client:
+        response = client.get("/pays/USA")
+    assert response.status_code == 200
+    html = response.text
+    body = html.split('<section class="sources"', 1)[0]
+    assert 'class="legend-population">États-Unis</span>' in body
+    assert "Taïwan" not in body
+    assert "Relief de l’île" not in html
+    links = Links(html)
+    assert len(links.ids) == len(set(links.ids))
+    assert all(href[1:] in links.ids for href in links.hrefs if href.startswith("#"))
+
+
 def test_every_country_has_local_flag_and_continent():
     from app.content import country_list
 

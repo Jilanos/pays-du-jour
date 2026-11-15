@@ -117,6 +117,29 @@ def test_geo_extract_covers_all_197_countries_and_stays_small(settings):
         ET.fromstring(rendered[start:end])
 
 
+def test_usa_city_markers_remain_visible_and_separate():
+    from math import dist
+
+    config = Settings()
+    data = json.loads((config.content_dir / "USA/data.json").read_text())
+    rendered = cities(
+        "USA",
+        "États-Unis",
+        data["cities"],
+        config.geo_dir,
+        map_focus=data["map_focus"],
+        note=data["cities_note"],
+    )
+    start, end = rendered.index("<svg"), rendered.index("</svg>") + 6
+    root = ET.fromstring(rendered[start:end])
+    pins = [node for node in root.iter() if node.get("class") == "city-dot"]
+    points = [(float(node.get("cx")), float(node.get("cy"))) for node in pins]
+    assert len(points) == len(data["cities"]) == 6
+    assert all(11 <= x <= 249 and 11 <= y <= 349 for x, y in points)
+    assert all(dist(a, b) >= 22 for i, a in enumerate(points) for b in points[i + 1 :])
+    assert "États contigus" in rendered
+
+
 def test_adjacent_placeholder_lines_resolve_but_code_examples_remain_literal(settings, tmp_path):
     shutil.copytree(settings.content_dir, tmp_path / "fiches")
     config = replace(settings, content_dir=tmp_path / "fiches")

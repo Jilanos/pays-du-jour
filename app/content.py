@@ -131,7 +131,9 @@ def read_fiche(iso3: str, settings: Settings) -> Fiche:
     map_marker = sources.cite(
         "situation", "Situation régionale", data.get("map_sources", {}).get("locator", [])
     )
-    hero_map = locator(iso3, meta["nom"], settings.geo_dir, marker=map_marker)
+    hero_map = locator(
+        iso3, meta["nom"], settings.geo_dir, marker=map_marker, map_focus=data.get("map_focus")
+    )
     md = MarkdownIt("commonmark", {"html": False}).enable("table")
     md.block.ruler.before(
         "paragraph",
@@ -197,7 +199,7 @@ def read_fiche(iso3: str, settings: Settings) -> Fiche:
             toc.append(("indices", "Lire les indices"))
         elif key.startswith("chart:"):
             chart = charts[key[6:]].copy()
-            chart["country"] = meta["nom"]
+            chart.setdefault("country", meta["nom"])
             ref = comparable(reference(chart, references))
             chart["_france"] = ref
             chart["_euro"] = euro_for(chart, fx, f"chart {chart['id']}")
@@ -224,6 +226,10 @@ def read_fiche(iso3: str, settings: Settings) -> Fiche:
                 marker=mark,
                 title=data.get("cities_title", "Villes principales"),
                 scope=data.get("cities_scope", "Population municipale"),
+                map_focus=data.get("map_focus"),
+                note=data.get(
+                    "cities_note", "Les limites municipales englobent aussi des espaces ruraux."
+                ),
             )
         else:
             relief = next(
@@ -238,7 +244,7 @@ def read_fiche(iso3: str, settings: Settings) -> Fiche:
             if meta.get("relief_pertinent") and relief:
                 mark = sources.cite(
                     "relief",
-                    data.get("relief_title", "Relief"),
+                    data.get("relief_title", f"Relief de {meta['nom']}"),
                     data.get("map_sources", {}).get("relief", []),
                 )
                 title = escape(data.get("relief_title", "Relief"))

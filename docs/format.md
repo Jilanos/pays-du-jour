@@ -152,6 +152,11 @@ in a keyboard-scrollable local table; the page itself must never overflow.
 ## Cities, assets and sources
 
 `cities` contains `name`, raw `population`, `lat`, `lon` and `note` (economic role).
+Optional `offset: [dx, dy]` per city moves its pin (with a leader line) when two pins overlap.
+Optional `cities_note` replaces the note under the city map.
+Optional `map_focus: {"bbox": [lon_min, lat_min, lon_max, lat_max], "caption": "..."}` keeps only
+the polygons inside the box on the locator and city maps (mainland of a country with distant
+territories, e.g. USA without Alaska and Hawaii).
 The city figure owns names, rounded populations and roles. Taiwan's city data are
 municipalities at 31 December 2025; captions for new fiches must state their own scope.
 
