@@ -10,7 +10,8 @@ WORKDIR /app
 COPY pyproject.toml uv.lock ./
 RUN uv sync --frozen --no-dev --no-install-project
 COPY app app
-COPY data/ordre.csv data/ordre.csv
+COPY data/ordre.csv data/countries.json data/
+COPY data/reference data/reference
 COPY data/geo data/geo
 COPY fiches fiches
 RUN useradd --system --uid 10001 pays && mkdir -p /data && chown pays /data
