@@ -1,0 +1,798 @@
+{
+  "keyfacts": [
+    {
+      "id": "population",
+      "label": "Population résidente",
+      "value": 10002200,
+      "unit": "habitants",
+      "year": 2024,
+      "coverage": "Champ statistique israélien · milieu de 2024",
+      "source_ids": [
+        "S01"
+      ],
+      "france": "population-wdi-2024"
+    },
+    {
+      "id": "superficie",
+      "label": "Superficie statistique",
+      "value": 22072,
+      "unit": "km²",
+      "year": 2022,
+      "coverage": "Eaux intérieures comprises · Jérusalem-Est et Golan inclus",
+      "source_ids": [
+        "S02"
+      ],
+      "france": {
+        "status": "non_comparable",
+        "reason": "Le périmètre inclut des annexions non reconnues ; pas de référence territoriale harmonisée retenue.",
+        "source_ids": [
+          "S02",
+          "FR-AREA"
+        ]
+      }
+    },
+    {
+      "id": "pib-nominal",
+      "label": "PIB nominal",
+      "value": 542284494490.778,
+      "unit": "USD",
+      "year": 2024,
+      "coverage": "Prix courants · 2024",
+      "source_ids": [
+        "S03"
+      ],
+      "france": "pib-wdi-2024"
+    },
+    {
+      "id": "fecondite",
+      "label": "Fécondité",
+      "value": 2.87,
+      "unit": "enfant/femme",
+      "year": 2024,
+      "coverage": "Indicateur conjoncturel · 2024",
+      "source_ids": [
+        "S01"
+      ],
+      "france": "fecondite-wdi-2024"
+    },
+    {
+      "id": "65-plus",
+      "label": "Part des 65 ans ou plus",
+      "value": 12.5526937672772,
+      "unit": "%",
+      "year": 2024,
+      "coverage": "Population résidente · WDI 2024",
+      "source_ids": [
+        "S01"
+      ],
+      "france": "65plus-wdi-2024"
+    },
+    {
+      "id": "pauvrete",
+      "label": "Pauvreté relative",
+      "value": 20.7,
+      "unit": "%",
+      "year": 2024,
+      "coverage": "Personnes · seuil national à 50 % de la médiane · 2024",
+      "source_ids": [
+        "S14"
+      ],
+      "france": {
+        "status": "non_comparable",
+        "reason": "Seuil à 50 % et échelle d’équivalence israélienne ; pas de rapprochement avec le seuil Insee à 60 % ni avec une autre échelle.",
+        "source_ids": [
+          "S14",
+          "FR-GINI"
+        ]
+      }
+    }
+  ],
+  "indices": [
+    {
+      "id": "idh",
+      "name": "Développement humain",
+      "acronym": "IDH",
+      "value": 0.919,
+      "year": 2023,
+      "rank": "27ᵉ",
+      "scale_min": 0,
+      "scale_max": 1,
+      "higher_is_better": true,
+      "precision": 3,
+      "source_ids": [
+        "S10"
+      ],
+      "france": "idh"
+    },
+    {
+      "id": "gini",
+      "name": "Inégalités de revenus",
+      "acronym": "Gini",
+      "value": 0.3692,
+      "year": 2024,
+      "rank": "Sans classement",
+      "scale_min": 0,
+      "scale_max": 1,
+      "higher_is_better": false,
+      "precision": 4,
+      "source_ids": [
+        "S14"
+      ],
+      "france": {
+        "status": "non_comparable",
+        "reason": "Échelle d’équivalence nationale de l’Assurance nationale différente de l’échelle OCDE modifiée utilisée pour le niveau de vie en France.",
+        "source_ids": [
+          "S14",
+          "FR-GINI"
+        ]
+      },
+      "coverage": "Revenu net par personne standardisée · échelle nationale"
+    },
+    {
+      "id": "democratie",
+      "name": "Démocratie libérale",
+      "acronym": "V-Dem",
+      "value": 0.59,
+      "year": 2025,
+      "rank": "48ᵉ",
+      "scale_min": 0,
+      "scale_max": 1,
+      "higher_is_better": true,
+      "precision": 2,
+      "source_ids": [
+        "S11"
+      ],
+      "france": "democratie",
+      "note_visible": "Les territoires palestiniens font l’objet d’évaluations distinctes. Ce score ne décrit pas leurs droits politiques."
+    },
+    {
+      "id": "presse",
+      "name": "Liberté de la presse",
+      "acronym": "RSF",
+      "value": 46.46,
+      "year": 2026,
+      "rank": "116ᵉ / 180",
+      "scale_min": 0,
+      "scale_max": 100,
+      "higher_is_better": true,
+      "precision": 2,
+      "source_ids": [
+        "S12"
+      ],
+      "france": "presse"
+    },
+    {
+      "id": "corruption",
+      "name": "Corruption perçue",
+      "acronym": "CPI",
+      "value": 62,
+      "year": 2025,
+      "rank": "35ᵉ / 182",
+      "scale_min": 0,
+      "scale_max": 100,
+      "higher_is_better": true,
+      "precision": 0,
+      "source_ids": [
+        "S13"
+      ],
+      "france": "corruption"
+    }
+  ],
+  "cities": [
+    {
+      "name": "Jérusalem",
+      "population": 1050200,
+      "lat": 31.778408,
+      "lon": 35.206626,
+      "note": "Institutions, lieux saints et universités. Jérusalem-Est incluse.",
+      "year": 2024,
+      "source_ids": [
+        "S04",
+        "S05"
+      ]
+    },
+    {
+      "name": "Tel Aviv-Jaffa",
+      "population": 494900,
+      "lat": 32.081937,
+      "lon": 34.768066,
+      "note": "Centre métropolitain, finance et entreprises technologiques.",
+      "year": 2024,
+      "source_ids": [
+        "S04",
+        "S05"
+      ]
+    },
+    {
+      "name": "Haïfa",
+      "population": 297100,
+      "lat": 32.822357,
+      "lon": 34.978079,
+      "note": "Port, industrie et Technion sur les pentes du Carmel.",
+      "year": 2024,
+      "source_ids": [
+        "S04",
+        "S05"
+      ]
+    },
+    {
+      "name": "Beer-Sheva",
+      "population": 223600,
+      "lat": 31.250016,
+      "lon": 34.830008,
+      "note": "Pôle universitaire et technologique du Néguev.",
+      "year": 2024,
+      "source_ids": [
+        "S04",
+        "S05"
+      ]
+    }
+  ],
+  "charts": [
+    {
+      "id": "climat",
+      "type": "climate",
+      "title": "L’été sec, l’hiver pluvieux",
+      "year": "1991–2020",
+      "subtitle": "Jérusalem · normales 1991–2020 · référence Paris-Montsouris",
+      "place": "Jérusalem",
+      "tmin": [
+        6.7,
+        7.3,
+        9.5,
+        12.5,
+        16.2,
+        18.3,
+        20.0,
+        20.2,
+        19.1,
+        17.3,
+        12.9,
+        8.8
+      ],
+      "tmax": [
+        12.7,
+        14.0,
+        17.4,
+        22.0,
+        26.2,
+        28.6,
+        30.0,
+        30.3,
+        28.9,
+        25.9,
+        19.9,
+        14.9
+      ],
+      "precip_mm": [
+        136.8,
+        117.9,
+        67.2,
+        21.8,
+        7.1,
+        0.3,
+        0.0,
+        0.0,
+        0.7,
+        10.3,
+        51.1,
+        112.3
+      ],
+      "temperature_extent": [
+        0,
+        40
+      ],
+      "rain_max": 160,
+      "source_ids": [
+        "S06"
+      ],
+      "france": "climat-paris"
+    },
+    {
+      "id": "pyramide-ages",
+      "type": "pyramid",
+      "title": "Une population plus jeune que la France",
+      "year": 2024,
+      "subtitle": "Estimations WDI · milieu de 2024 · parts des deux sexes réunis",
+      "unit": "personnes",
+      "age_groups": [
+        "0–4",
+        "5–9",
+        "10–14",
+        "15–19",
+        "20–24",
+        "25–29",
+        "30–34",
+        "35–39",
+        "40–44",
+        "45–49",
+        "50–54",
+        "55–59",
+        "60–64",
+        "65–69",
+        "70–74",
+        "75–79",
+        "80+"
+      ],
+      "male": [
+        476093.8789380873,
+        479688.994439768,
+        450907.82525900163,
+        407424.93523222307,
+        383471.172921749,
+        348703.82742549817,
+        326615.2843461124,
+        310808.6035785697,
+        297776.57626875694,
+        283156.3688595792,
+        254329.38166856562,
+        210975.9541591122,
+        188629.55158019875,
+        171715.24705332136,
+        155070.52291231367,
+        116033.57818214587,
+        118809.29717499675
+      ],
+      "female": [
+        452051.6262103726,
+        454336.66602172854,
+        428450.02592054306,
+        388462.09560555994,
+        367834.93627325044,
+        336229.5698174135,
+        318311.00045967486,
+        309105.31081163936,
+        300046.6649938522,
+        288112.1402062117,
+        261201.52096829805,
+        219189.074149899,
+        204741.48506051739,
+        194063.22603999692,
+        181585.27840143937,
+        143454.04282709013,
+        174814.33623251301
+      ],
+      "source_ids": [
+        "S07"
+      ],
+      "france": "pyramide-wdi-2024-80plus"
+    },
+    {
+      "id": "langues",
+      "type": "share",
+      "title": "Des langues héritées des familles",
+      "year": 2011,
+      "subtitle": "Langue maternelle · personnes de 20 ans ou plus · enquête 2011",
+      "labels": [
+        "Hébreu",
+        "Arabe",
+        "Russe",
+        "Yiddish, français et anglais",
+        "Autres langues"
+      ],
+      "values": [
+        49,
+        18,
+        15,
+        6,
+        12
+      ],
+      "unit": "%",
+      "source_ids": [
+        "S08"
+      ],
+      "note_visible": "Enquête ancienne : cette répartition décrit 2011. Elle ne mesure pas les langues maîtrisées en 2026.",
+      "note": "Yiddish, français et anglais : 2 % chacun, regroupés ; autres langues : 100 − 49 − 18 − 15 − 6. Pourcentages publiés arrondis.",
+      "france": {
+        "status": "non_comparable",
+        "reason": "Langues maternelles, champ adulte et catégories sans enquête française harmonisée identifiée.",
+        "source_ids": [
+          "S08"
+        ]
+      }
+    },
+    {
+      "id": "religions",
+      "type": "share",
+      "title": "Religion enregistrée et pratique se distinguent",
+      "year": 2024,
+      "subtitle": "Catégories religieuses du registre · résidents israéliens · 2024",
+      "labels": [
+        "Juifs",
+        "Musulmans",
+        "Chrétiens",
+        "Druzes",
+        "Sans classification religieuse"
+      ],
+      "values": [
+        73.6,
+        18.5,
+        1.8,
+        1.6,
+        4.5
+      ],
+      "unit": "%",
+      "source_ids": [
+        "S09"
+      ],
+      "note": "Hors population étrangère. La catégorie juive inclut les personnes laïques ; sans classification ne signifie pas sans croyance.",
+      "france": "religions"
+    },
+    {
+      "id": "salaires",
+      "type": "barh",
+      "title": "La moyenne dépasse nettement la médiane",
+      "year": 2025,
+      "subtitle": "Brut mensuel par salarié · tous emplois réunis · janvier–juin 2025",
+      "labels": [
+        "Salaire médian",
+        "Salaire moyen"
+      ],
+      "values": [
+        10586,
+        15098
+      ],
+      "unit": "ILS/mois",
+      "euro": true,
+      "source_ids": [
+        "S15"
+      ],
+      "note": "Temps plein et temps partiel réunis, sans standardisation en équivalent temps plein. Équivalents en euros au taux moyen annuel 2025, sans correction des prix locaux.",
+      "france": {
+        "status": "non_comparable",
+        "reason": "Salaires bruts mensuels administratifs, temps plein et partiel réunis ; France : privé en équivalent temps plein. Champs et durées non harmonisés.",
+        "source_ids": [
+          "S15",
+          "FR-WAGE"
+        ]
+      }
+    },
+    {
+      "id": "pib-secteurs",
+      "type": "share",
+      "title": "Les services dominent la valeur ajoutée",
+      "year": 2024,
+      "subtitle": "Parts de la valeur ajoutée courante · 2024 · hors impôts nets",
+      "labels": [
+        "Agriculture, forêt, pêche",
+        "Industrie et construction",
+        "Services"
+      ],
+      "values": [
+        1.4067126430008834,
+        18.854673264955316,
+        79.73861409204379
+      ],
+      "unit": "%",
+      "source_ids": [
+        "S03"
+      ],
+      "france": "valeur-ajoutee-2024"
+    },
+    {
+      "id": "high-tech",
+      "type": "barh",
+      "title": "La tech pèse surtout dans les exportations",
+      "year": 2025,
+      "subtitle": "Part du secteur high-tech dans chaque total national · 2025",
+      "labels": [
+        "Dans le PIB",
+        "Dans les exportations"
+      ],
+      "values": [
+        18.3,
+        58
+      ],
+      "unit": "%",
+      "source_ids": [
+        "S37"
+      ],
+      "note_visible": "Deux dénominateurs distincts. Les barres ne forment pas une répartition.",
+      "note": "Exportations de biens et services. Définition du secteur par l’Israel Innovation Authority ; le PIB sectoriel recoupe services et industrie.",
+      "france": {
+        "status": "non_comparable",
+        "reason": "Pas de série française de même définition sectorielle identifiée.",
+        "source_ids": [
+          "S37"
+        ]
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "S01",
+      "text": "[Banque mondiale, WDI, Israël, démographie 2024](https://api.worldbank.org/v2/country/ISR/indicator/SP.POP.TOTL;SP.POP.65UP.TO.ZS;SP.DYN.TFRT.IN?source=2&date=2024&format=json&per_page=100). Base du 11 novembre 2026. Population au milieu de l’année, fécondité et part des 65 ans ou plus. Le champ statistique israélien inclut Jérusalem-Est, le Golan et les résidents israéliens des colonies de Cisjordanie ; il exclut la population palestinienne de Cisjordanie et de Gaza."
+    },
+    {
+      "id": "S02",
+      "text": "[CBS, superficie, tableau 1.1, annuaire 2023](https://www.cbs.gov.il/he/publications/doclib/2023/1.shnatongeography/st01_01.pdf). Superficie totale avec eaux intérieures ; inclut Jérusalem-Est et le Golan, hors reste de la Cisjordanie et Gaza. Périmètre statistique, sans reconnaissance des annexions."
+    },
+    {
+      "id": "S03",
+      "text": "[Banque mondiale, comptes nationaux israéliens, WDI 2024](https://api.worldbank.org/v2/country/ISR/indicator/NY.GDP.MKTP.CD;NV.AGR.TOTL.CD;NV.IND.TOTL.CD;NV.SRV.TOTL.CD?source=2&date=2024&format=json&per_page=100). PIB en dollars courants. Parts sectorielles calculées sur la somme des trois valeurs ajoutées, hors impôts nets sur les produits. Base du 11 novembre 2026."
+    },
+    {
+      "id": "S04",
+      "text": "[CBS, Localities and population, tableau 2.15, 31 décembre 2024](https://www.cbs.gov.il/he/publications/DocLib/2025/2.ShnatonPopulation/st02_15x.pdf). Publication du 31 décembre 2025, page 2. Population municipale, ensemble des groupes et résidents étrangers. Les chiffres publiés en milliers à une décimale sont multipliés par 1 000. Jérusalem inclut sa partie orientale. Ne pas confondre avec les aires urbaines."
+    },
+    {
+      "id": "S05",
+      "text": "[Natural Earth, populated places, 1:10m](https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_populated_places.geojson). Coordonnées des centres urbains. Domaine public."
+    },
+    {
+      "id": "S06",
+      "text": "[OMM / service météorologique israélien, normales de Jérusalem 1991–2020, station 40183](https://www.nodc.noaa.gov/archive/arc0216/0253808/1.1/data/0-data/Region-6-WMO-Normals-9120/Israel/CSV/JERUSALEM_40183.csv). Archive NOAA/NCEI. Paramètres 3 et 4, Mean : moyennes des maxima et minima quotidiens ; paramètre 1, Sum : précipitations mensuelles moyennes. Station à 810 m. Pour le littoral : [Bet Dagan, températures 1991–2020](https://www.nodc.noaa.gov/archive/arc0216/0253808/4.4/data/0-data/Region-6-WMO-Normals-9120/Israel/CSV/BETDAGAN_40179.csv)."
+    },
+    {
+      "id": "S07",
+      "text": "[Banque mondiale, pyramide par sexe et âge, Israël, WDI 2024](https://data.worldbank.org/indicator/SP.POP.0004.MA.5Y?locations=IL). Séries SP.POP.0004 à 7579 et 80UP, MA/FE.5Y. Effectifs calculés sans arrondi à partir des parts propres à chaque sexe multipliées par SP.POP.TOTL.MA.IN ou FE.IN. Même année et mêmes cohortes que la référence française WDI. Base du 11 novembre 2026."
+    },
+    {
+      "id": "S08",
+      "text": "[CBS, Social Survey 2011, usage des langues](https://www.cbs.gov.il/en/Statistical/seker-chevrati-e137.pdf). Personnes de 20 ans ou plus. Langue maternelle déclarée. Catégorie « autres » : résidu calculé après les trois langues principales et le groupe yiddish/français/anglais. Millésime ancien conservé et signalé, aucune extrapolation à 2026."
+    },
+    {
+      "id": "S09",
+      "text": "[CBS, population après octobre 2023, état des lieux 2024](https://www.cbs.gov.il/he/mediarelease/DocLib/2026/028/33_26_028b.pdf). Publication du 26 janvier 2026. Parts par religion : juifs 73,6 %, musulmans 18,5 %, chrétiens 1,8 %, druzes 1,6 %, sans classification 4,5 %. Catégories du registre ; résidents israéliens hors population étrangère, à distinguer des groupes juifs/autres/arabes."
+    },
+    {
+      "id": "S10",
+      "text": "[PNUD, Human Development Report 2025, tableau 2](https://hdr.undp.org/sites/default/files/2025_HDR/HDR25_Statistical_Annex_HDI_Trends_Table.pdf). Données 2023. Israël : 0,919, rang 27."
+    },
+    {
+      "id": "S11",
+      "text": "[V-Dem, Democracy Report 2026, tableau A2](https://www.v-dem.net/documents/75/V-Dem_Institute_Democracy_Report_2026_lowres.pdf). Données 2025. Indice de démocratie libérale : 0,59, rang 48. Les territoires palestiniens sont traités séparément dans la base ; cet indice ne décrit pas les droits de toutes les populations sous contrôle israélien."
+    },
+    {
+      "id": "S12",
+      "text": "[RSF, Israël, classement 2026](https://rsf.org/en/country/israel). Score 46,46 ; rang 116 sur 180. Le diagnostic inclut les restrictions sur la presse et les violences commises par les forces israéliennes contre les journalistes à Gaza."
+    },
+    {
+      "id": "S13",
+      "text": "[Transparency International, CPI 2025, Israël](https://www.transparency.org/en/countries/israel). Score 62 ; rang 35 sur 182."
+    },
+    {
+      "id": "S14",
+      "text": "[Assurance nationale, pauvreté et inégalités 2024](https://www.btl.gov.il/Publications/oni_report/Documents/dohahoni2024.pdf). Tableau 3, page imprimée 14 : Gini du revenu net par personne standardisée 0,3692. Échelle d’équivalence nationale. Pauvreté : 20,7 % des personnes, seuil de 50 % du revenu net médian équivalent. [Synthèse anglaise](https://www.btl.gov.il/English%20Homepage/About/PressReleases/Pages/dohoni2024.aspx). Ne pas substituer les estimations préliminaires 2025 ni une autre échelle d’équivalence."
+    },
+    {
+      "id": "S15",
+      "text": "[Assurance nationale, salaires, premier semestre 2025](https://www.btl.gov.il/English%20Homepage/About/PressReleases/Pages/dovrotdohsachar2025.aspx). Brut mensuel par salarié, tous ses emplois réunis, temps plein et partiel, déclarations administratives des employeurs. Moyenne 15 098 ILS, médiane 10 586 ILS. Moyenne des indicateurs mensuels de janvier à juin. Ne pas utiliser les valeurs par poste, 13 733 et 9 296 ILS, pour ce graphique."
+    },
+    {
+      "id": "S16",
+      "text": "[BCE, taux annuel ILS/EUR, moyenne 2025](https://data.ecb.europa.eu/data/datasets/EXR/EXR.A.ILS.EUR.SP00.A). [Extraction CSV](https://data-api.ecb.europa.eu/service/data/EXR/A.ILS.EUR.SP00.A?startPeriod=2025&endPeriod=2025&format=csvdata) : 3,8927258823529 ILS pour 1 €. Taux direct, sans taux croisé. Moyenne annuelle 2025 appliquée aux salaires du premier semestre 2025 ; équivalents approximatifs, sans correction du pouvoir d’achat."
+    },
+    {
+      "id": "S17",
+      "text": "[OCDE, Étude économique Israël 2025](https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/04/oecd-economic-surveys-israel-2025_18e45b04/d6dd02bc-en.pdf). Coût de la vie, logement, productivité, participation des hommes haredim et des femmes arabes au marché du travail, effets économiques de la guerre. Les données statistiques sont fournies par les autorités israéliennes sous leur responsabilité, sans préjuger du statut des territoires occupés."
+    },
+    {
+      "id": "S18",
+      "text": "[Knesset, loi fondamentale sur l’État-nation, 2018](https://main.knesset.gov.il/EN/activity/documents/BasicLawsPDF/BasicLawNationState.pdf). Hébreu, statut particulier de l’arabe, Jérusalem, immigration et jours de repos."
+    },
+    {
+      "id": "S19",
+      "text": "[Ville de Tel Aviv, shabbat](https://visit.tel-aviv.gov.il/info/shabbat). Complément : [réseau municipal de week-end Na’im BeSofash](https://www.tel-aviv.gov.il/Residents/Transportation/Pages/naimbesofash.aspx). Service lancé en novembre 2019."
+    },
+    {
+      "id": "S20",
+      "text": "[Comité olympique israélien, Paris 2024](https://www.olympicsil.co.il/en/paris-2024/). Palmarès en voile, judo et gymnastique."
+    },
+    {
+      "id": "S21",
+      "text": "[Le Monde, les survivants du festival Nova, 6 octobre 2024](https://www.lemonde.fr/en/m-le-mag/article/2024/10/06/one-year-after-october-7-festival-survivors-are-healing-through-action_6728407_117.html). Trance, attaque du 7 octobre 2023 et reconstruction des survivants."
+    },
+    {
+      "id": "S22",
+      "text": "[AIE, Gas Market Report, deuxième trimestre 2026](https://www.iea.org/files/8a1b93f9-d096-4dcd-b29a-77613f201ecc/GasMarketReport%2CQ2-2026.pdf). Gaz offshore de Tamar, Leviathan et Karish, exportations vers l’Égypte et la Jordanie, arrêts préventifs de production en février 2026."
+    },
+    {
+      "id": "S23",
+      "text": "[OCDE, gestion durable de l’eau en Israël](https://www.oecd.org/en/publications/ipac-policies-in-practice_22632907-en/israel-s-sustainable-water-management-plans_d81db5f5-en.html). Dessalement, réutilisation des eaux usées, tarification et gestion de la demande."
+    },
+    {
+      "id": "S24",
+      "text": "[Nations unies, histoire de la question de Palestine](https://www.un.org/unispal/history/). Mandat, partage de 1947, guerre de 1948, réfugiés, occupation de 1967 et processus d’Oslo."
+    },
+    {
+      "id": "S25",
+      "text": "[United States Holocaust Memorial Museum, fondation d’Israël](https://encyclopedia.ushmm.org/content/en/article/postwar-refugee-crisis-and-the-establishment-of-the-state-of-israel). Sionisme, Shoah, personnes déplacées et proclamation de 1948."
+    },
+    {
+      "id": "S26",
+      "text": "[CRS, Israel: Background and U.S. Relations, 1er juillet 2022](https://www.everycrsreport.com/reports/RL33476.html). Histoire, institutions, coalitions, guerres et accords régionaux jusqu’en 2022."
+    },
+    {
+      "id": "S27",
+      "text": "[CRS, Israel: Background and U.S. Relations in Brief, 27 janvier 2021](https://www.everycrsreport.com/files/2021-01-27_R44245_5d1f285892330f12f6be0eb7e5879541aa95d43d.pdf). Années Netanyahu, procès, coalitions et normalisations."
+    },
+    {
+      "id": "S28",
+      "text": "[CRS, Israel: Major Issues and U.S. Relations, 2 juillet 2026](https://www.everycrsreport.com/reports/R44245.html). Gaza, Iran, Liban, Cisjordanie et politique intérieure. Arrêté de juillet, complété par les sources de novembre."
+    },
+    {
+      "id": "S29",
+      "text": "[CRS, élections israéliennes, 30 octobre 2026](https://www.everycrsreport.com/files/2026-10-30_IN12751_9721e1fb9efa295a5078f5461d9b952ec1254e8a.pdf). Élections du 27 octobre et absence de majorité des deux blocs."
+    },
+    {
+      "id": "S30",
+      "text": "[Le Monde, nouvelle Knesset et négociations, 11 novembre 2026](https://www.lemonde.fr/en/international/article/2026/11/11/eisenkot-pledges-swift-legislative-reforms-before-government-formation-in-israel_6777457_4.html). Mandat confié à Gadi Eisenkot le 8 novembre, gouvernement encore à former. Ne pas confondre ce mandat avec une investiture."
+    },
+    {
+      "id": "S31",
+      "text": "[OCHA, situation humanitaire, 13 novembre 2026](https://www.ochaopt.org/content/humanitarian-situation-report-13-november-2026). Situation à Gaza et en Cisjordanie, accès humanitaire, abris et violences."
+    },
+    {
+      "id": "S32",
+      "text": "[France Diplomatie, Palestine, relations politiques et économiques](https://www.diplomatie.gouv.fr/en/information-by-country/israel-palestine/palestine-political-and-economic-relations). Statut de Jérusalem, territoires occupés et reconnaissance française de la Palestine le 22 septembre 2025."
+    },
+    {
+      "id": "S33",
+      "text": "[CIJ, avis du 19 juillet 2024, résumé](https://www.icj-cij.org/sites/default/files/case-related/186/186-20240719-sum-01-00-en.pdf). La présence continue d’Israël dans le territoire palestinien occupé est illicite. Avis consultatif, distinct du contentieux Afrique du Sud c. Israël."
+    },
+    {
+      "id": "S34",
+      "text": "[UNESCO, Ville blanche de Tel Aviv](https://whc.unesco.org/en/list/1096). Urbanisme et Mouvement moderne, inscription de 2003."
+    },
+    {
+      "id": "S35",
+      "text": "[Centre du patrimoine culturel immatériel d’Israël, traditions culinaires](https://www.ich-israel.com/culinary-traditions). Houmous, shakshouka, sabich et héritages des diasporas."
+    },
+    {
+      "id": "S36",
+      "text": "[Direction générale du Trésor, commerce bilatéral France-Israël en 2024](https://www.tresor.economie.gouv.fr/PagesInternationales/IL/cartographie-de-la-presence-israelienne-en-france). Biens, aéronautique, pharmacie, chimie, diamants et implantations économiques."
+    },
+    {
+      "id": "S37",
+      "text": "[Israel Innovation Authority, rapport annuel 2026, préface](https://innovationisrael.org.il/en/report/preface-2026/). Données 2025 : part du PIB, financement, implantation des salariés et risque de change. [Vue d’ensemble et part des exportations](https://innovationisrael.org.il/en/report/overview-israeli-high-tech-in-2025/). Les deux barres utilisent des dénominateurs distincts : PIB national et exportations totales de biens et services."
+    },
+    {
+      "id": "S38",
+      "text": "[Mobileye, rapport annuel 2025](https://www.sec.gov/Archives/edgar/data/1910139/000110465926048124/tm261059d3_ars.pdf). EyeQ, ADAS, relations avec les constructeurs et contrôle majoritaire par Intel. Les systèmes d’assistance et la conduite autonome correspondent à des produits et niveaux de responsabilité distincts."
+    },
+    {
+      "id": "S39",
+      "text": "[Université de Washington, renaissance de l’hébreu](https://jewishstudies.washington.edu/israel-hebrew/reviving-hebrew-persian-ancient-languages-eliezer-ben-yehuda-manekji-limji-hataria/). Rôle de Ben-Yehuda, école et diffusion d’une langue de communication quotidienne."
+    },
+    {
+      "id": "S40",
+      "text": "[Wikimedia Commons, Flag of Israel.svg](https://commons.wikimedia.org/wiki/File:Flag_of_Israel.svg). Domaine public, seuil d’originalité et droit israélien. Dessin original attribué à Israel Belkind et Fanny Abramovitch ; spécification officielle de 1948. SVG original conservé, 398 octets."
+    },
+    {
+      "id": "S41",
+      "text": "[Wikimedia Commons, Israel relief location map.jpg](https://commons.wikimedia.org/wiki/File:Israel_relief_location_map.jpg). Eric Gaba (Sting) et NordNordWest, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/). Relief SRTM ; fichier original conservé, 183 153 octets. Limites représentées selon la convention de la carte, distinctes d’une reconnaissance de souveraineté."
+    },
+    {
+      "id": "S42",
+      "text": "[AP, frappe sur l’hôpital Nasser, 12 novembre 2026](https://apnews.com/article/50b547b5a82388b6b415aee4d776fbfb). Contexte de l’attaque du Hamas du 7 octobre 2023 et de la guerre à Gaza."
+    },
+    {
+      "id": "NE",
+      "text": "[Natural Earth, conditions d’utilisation](https://www.naturalearthdata.com/about/terms-of-use/). Domaine public. Contours du localisateur régional et mondial. Les conventions de frontières ne constituent pas une position sur la souveraineté."
+    },
+    {
+      "id": "CITYMAP",
+      "text": "[Wikimedia Commons, Israel location map with stripes.svg](https://commons.wikimedia.org/wiki/File:Israel_location_map_with_stripes.svg). Drink L’Chaim, d’après [NordNordWest](https://commons.wikimedia.org/wiki/File:Israel_location_map.svg), [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0). SVG original conservé. [Bornes et projection](https://en.wikipedia.org/wiki/Module:Location_map/data/Israel). Repères numérotés ajoutés à l’affichage."
+    },
+    {
+      "id": "S43",
+      "text": "[Ministère israélien des Affaires étrangères, géographie et climat](https://www.gov.il/en/pages/the-land-geography-and-climate). Plaine littorale, relief, dépression du Jourdain, Néguev et contrastes climatiques. Les formulations de souveraineté de cette source gouvernementale ne sont pas reprises."
+    },
+    {
+      "id": "S44",
+      "text": "[Pew Research Center, Israel’s Religiously Divided Society, 2016](https://www.pewresearch.org/religious-landscape-study/2016/03/08/israels-religiously-divided-society/). Enquête 2014–2015. Distinction entre identité religieuse, pratique et groupes sociaux."
+    },
+    {
+      "id": "S45",
+      "text": "[Library of Congress, conscription des hommes haredim, 1er juillet 2026](https://www.loc.gov/item/global-legal-monitor/2026-07-01/israel-high-court-imposes-sanctions-on-individual-haredi-men-avoiding-draft/). Arrêt d’avril 2026 et obligation de mettre en œuvre la décision de juin 2024."
+    },
+    {
+      "id": "S46",
+      "text": "[Ville de Tel Aviv, services sur les plages](https://www.tel-aviv.gov.il/Visitors/Beaches/Pages/beachlist.aspx). Sports nautiques et équipements sportifs du littoral. [Déplacements et vélos municipaux](https://visit.tel-aviv.gov.il/Pages/In-Tel-Aviv.aspx)."
+    },
+    {
+      "id": "S47",
+      "text": "[Knesset, lois fondamentales](https://main.knesset.gov.il/EN/activity/Pages/BasicLaws.aspx). Parlement, gouvernement et président. [Système électoral](https://main.knesset.gov.il/en/mk/pages/elections.aspx), circonscription nationale et représentation proportionnelle."
+    },
+    {
+      "id": "S48",
+      "text": "[CRS, Israel: Background and U.S. Relations, 7 janvier 2010](https://www.everycrsreport.com/files/20100107_RL33476_a22041bdab6edd078b3269c1b3fb840c6614467b.pdf). Sharon, Olmert, guerre du Liban de 2006 et négociations de paix."
+    },
+    {
+      "id": "S49",
+      "text": "[Knesset, passation du gouvernement Lapid au gouvernement Netanyahu, 29 décembre 2022](https://main.knesset.gov.il/EN/News/PressReleases/Pages/press291222w.aspx). Bilan de la coalition Bennett-Lapid et fin de l’alternance."
+    },
+    {
+      "id": "S50",
+      "text": "[CRS, controverse sur la transformation de la justice, 2023](https://www.everycrsreport.com/reports/IN12214.html). Coalition Netanyahu et manifestations contre la réforme judiciaire."
+    },
+    {
+      "id": "S51",
+      "text": "[AP, actualité du Proche-Orient, 11 novembre 2026](https://apnews.com/article/50075bc97e07d41fa3b66fc28858c06b). Cessez-le-feu de Gaza d’octobre 2025 et poursuite des frappes."
+    },
+    {
+      "id": "S52",
+      "text": "[Pew Research Center, religion et politique en Israël, 2016](https://www.pewresearch.org/short-reads/2016/03/08/key-findings-religion-politics-israel/). Diversité des pratiques et place de la religion dans l’espace public."
+    },
+    {
+      "id": "S53",
+      "text": "[France Diplomatie, relations bilatérales avec Israël](https://www.diplomatie.gouv.fr/fr/information-par-pays/israel-territoires-palestiniens/israel-relations-bilaterales). Coopération culturelle et scientifique, Institut français, recherche et ambassade à Tel Aviv. Actualisation consultée en novembre 2026."
+    },
+    {
+      "id": "S54",
+      "text": "[Reuters, manifestations sociales, 3 septembre 2011](https://www.stabroeknews.com/2011/09/03/news/guyana/biggest-rally-in-israels-history-presses-pm/). Article Reuters repris par Stabroek News ; logement et coût de la vie."
+    }
+  ],
+  "hero_sources": [
+    "S18",
+    "S32",
+    "S40"
+  ],
+  "map_sources": {
+    "locator": [
+      "NE",
+      "S32"
+    ],
+    "cities": [
+      "S04",
+      "S05"
+    ],
+    "relief": [
+      "S41"
+    ]
+  },
+  "cities_title": "Quatre pôles urbains",
+  "cities_scope": "Municipalités · 31 décembre 2024",
+  "cities_note": "Population municipale CBS, étrangers inclus. Jérusalem comprend Jérusalem-Est. Le fond hachure les territoires occupés selon sa convention cartographique. Il ne décrit pas les lignes militaires actuelles.",
+  "cities_map": {
+    "file": "cities.svg",
+    "width": 614,
+    "height": 1141,
+    "bounds": {
+      "top": 33.5,
+      "bottom": 29.3,
+      "left": 33.7,
+      "right": 36.3
+    },
+    "projection": {
+      "type": "equirectangular"
+    },
+    "credit": {
+      "author": "Drink L’Chaim, d’après NordNordWest",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Israel_location_map_with_stripes.svg"
+    },
+    "definition_url": "https://en.wikipedia.org/wiki/Module:Location_map/data/Israel",
+    "source_ids": [
+      "CITYMAP"
+    ]
+  },
+  "relief_title": "Du littoral au fossé du Jourdain",
+  "relief_alt": "Relief régional : plaine méditerranéenne, hauteurs de Galilée et de Judée, dépression du Jourdain et de la mer Morte, désert du Néguev.",
+  "relief_landmarks": [
+    {
+      "label": "La plaine côtière",
+      "text": "Le principal corridor urbain et économique."
+    },
+    {
+      "label": "Les hautes terres",
+      "text": "Galilée au nord, collines de Judée autour de Jérusalem."
+    },
+    {
+      "label": "Le fossé du Jourdain",
+      "text": "Une dépression qui se prolonge vers la mer Morte et l’Arava."
+    }
+  ],
+  "euro": {
+    "currency": "ILS",
+    "per_euro": 3.8927258823529,
+    "year": 2025,
+    "basis": "Taux direct BCE, moyenne annuelle 2025. Application aux salaires de janvier à juin 2025 ; équivalents approximatifs sans correction du pouvoir d’achat.",
+    "source_ids": [
+      "S16"
+    ]
+  },
+  "prose_values": {}
+}

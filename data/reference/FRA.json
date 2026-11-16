@@ -120,6 +120,10 @@
     {
       "id": "FR-AGE-UKR",
       "text": "[Banque mondiale, WDI, population française par âge et sexe, 2024](https://data.worldbank.org/indicator/SP.POP.0004.MA.5Y?locations=FR) ; [population totale, API](https://api.worldbank.org/v2/country/FRA/indicator/SP.POP.TOTL?format=json&date=2024). Base du 11 novembre 2026. Cohortes quinquennales 0-4 à 75-79, puis 80 ans ou plus. Effectifs calculés à partir des parts propres à chaque sexe et de SP.POP.TOTL.MA.IN / FE.IN, sans arrondi. Population totale 68 551 653 ; hommes 33 232 759 ; femmes 35 318 894. Même année et séries WDI que l’Ukraine. Les comptes démographiques français sont issus des statistiques nationales reprises dans WDI."
+    },
+    {
+      "id": "FR-WDI-ISR-2024",
+      "text": "[Banque mondiale, WDI, France, PIB et fécondité 2024](https://api.worldbank.org/v2/country/FRA/indicator/NY.GDP.MKTP.CD;SP.DYN.TFRT.IN?source=2&date=2024&format=json&per_page=100). Base du 11 novembre 2026. Même année, séries et définitions que les indicateurs israéliens. PIB nominal en dollars courants ; fécondité conjoncturelle."
     }
   ],
   "population": {
@@ -994,6 +998,26 @@
     "coverage": "Part des 65 ans ou plus · WDI 2024",
     "source_ids": [
       "FR-AGE-UKR"
+    ]
+  },
+  "pib-wdi-2024": {
+    "status": "comparable",
+    "value": 3160442622465.08,
+    "unit": "USD",
+    "year": 2024,
+    "coverage": "Prix courants · WDI 2024",
+    "source_ids": [
+      "FR-WDI-ISR-2024"
+    ]
+  },
+  "fecondite-wdi-2024": {
+    "status": "comparable",
+    "value": 1.61,
+    "unit": "enfant/femme",
+    "year": 2024,
+    "coverage": "Indicateur conjoncturel · WDI 2024",
+    "source_ids": [
+      "FR-WDI-ISR-2024"
     ]
   }
 }
