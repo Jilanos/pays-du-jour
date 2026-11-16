@@ -1,0 +1,818 @@
+{
+  "keyfacts": [
+    {
+      "id": "population",
+      "label": "Population",
+      "value": 18130208,
+      "unit": "habitants",
+      "year": 2026,
+      "coverage": "Résidents · Pays-Bas européens · 1er janvier 2026",
+      "source_ids": [
+        "S10"
+      ],
+      "france": "population"
+    },
+    {
+      "id": "superficie",
+      "label": "Superficie",
+      "value": 37391,
+      "unit": "km²",
+      "year": 2026,
+      "coverage": "Territoire dans l’UE · champ Eurostat 2026",
+      "source_ids": [
+        "S01"
+      ],
+      "france": "superficie"
+    },
+    {
+      "id": "pib-nominal",
+      "label": "PIB nominal",
+      "value": 1321985000000.0,
+      "unit": "USD",
+      "year": 2025,
+      "coverage": "Prix courants · 2025 · FMI octobre 2026",
+      "source_ids": [
+        "GDP"
+      ],
+      "france": "pib-nominal"
+    },
+    {
+      "id": "fecondite",
+      "label": "Fécondité",
+      "value": 1.42,
+      "unit": "enfant/femme",
+      "year": 2025,
+      "coverage": "Indicateur conjoncturel · 2025, provisoire",
+      "source_ids": [
+        "S11"
+      ],
+      "france": "fecondite",
+      "precision": 1
+    },
+    {
+      "id": "65-plus",
+      "label": "Part des 65 ans ou plus",
+      "value": 21.144313402251093,
+      "unit": "%",
+      "year": 2026,
+      "coverage": "Résidents · Pays-Bas européens · 1er janvier 2026",
+      "source_ids": [
+        "S10"
+      ],
+      "france": "65-plus"
+    },
+    {
+      "id": "chomage",
+      "label": "Chômage",
+      "value": 3.9,
+      "unit": "%",
+      "year": 2025,
+      "coverage": "Au sens du BIT · 15-74 ans · moyenne 2025",
+      "source_ids": [
+        "UNEMP"
+      ],
+      "france": "chomage-eurostat-2025",
+      "precision": 1
+    }
+  ],
+  "indices": [
+    {
+      "id": "idh",
+      "name": "Développement humain",
+      "acronym": "IDH",
+      "value": 0.955,
+      "rank": "8ᵉ",
+      "year": 2023,
+      "scale_min": 0,
+      "scale_max": 1,
+      "higher_is_better": true,
+      "precision": 3,
+      "source_ids": [
+        "HDI"
+      ],
+      "france": "idh"
+    },
+    {
+      "id": "gini",
+      "name": "Inégalités de revenus",
+      "acronym": "Gini",
+      "value": 25.9,
+      "rank": "Sans classement",
+      "year": 2025,
+      "scale_min": 0,
+      "scale_max": 100,
+      "higher_is_better": false,
+      "precision": 1,
+      "source_ids": [
+        "GINI"
+      ],
+      "france": "gini-silc-2025",
+      "coverage": "EU-SILC 2025 · revenu disponible équivalent, après transferts"
+    },
+    {
+      "id": "democratie",
+      "name": "Démocratie libérale",
+      "acronym": "V-Dem",
+      "value": 0.77,
+      "rank": "18ᵉ",
+      "year": 2025,
+      "scale_min": 0,
+      "scale_max": 1,
+      "higher_is_better": true,
+      "precision": 2,
+      "source_ids": [
+        "VDEM"
+      ],
+      "france": "democratie"
+    },
+    {
+      "id": "presse",
+      "name": "Liberté de la presse",
+      "acronym": "RSF",
+      "value": 88.92,
+      "rank": "2ᵉ / 180",
+      "year": 2026,
+      "scale_min": 0,
+      "scale_max": 100,
+      "higher_is_better": true,
+      "precision": 2,
+      "source_ids": [
+        "RSF"
+      ],
+      "france": "presse"
+    },
+    {
+      "id": "corruption",
+      "name": "Corruption perçue",
+      "acronym": "CPI",
+      "value": 78,
+      "rank": "8ᵉ / 182",
+      "year": 2025,
+      "scale_min": 0,
+      "scale_max": 100,
+      "higher_is_better": true,
+      "precision": 0,
+      "source_ids": [
+        "CPI"
+      ],
+      "france": "corruption"
+    }
+  ],
+  "cities": [
+    {
+      "name": "Amsterdam",
+      "population": 934526,
+      "lat": 52.351914,
+      "lon": 4.914694,
+      "note": "Capitale, finance et services internationaux.",
+      "year": 2025,
+      "source_ids": [
+        "S07",
+        "COORD"
+      ]
+    },
+    {
+      "name": "Rotterdam",
+      "population": 672960,
+      "lat": 51.921915,
+      "lon": 4.478028,
+      "note": "Port, logistique, chimie et énergie.",
+      "year": 2025,
+      "source_ids": [
+        "S07",
+        "COORD"
+      ]
+    },
+    {
+      "name": "La Haye",
+      "population": 568945,
+      "lat": 52.080037,
+      "lon": 4.269961,
+      "note": "Gouvernement et justice internationale.",
+      "year": 2025,
+      "source_ids": [
+        "S07",
+        "COORD"
+      ]
+    },
+    {
+      "name": "Utrecht",
+      "population": 376757,
+      "lat": 52.100346,
+      "lon": 5.120039,
+      "note": "Carrefour ferroviaire, université et services.",
+      "year": 2025,
+      "source_ids": [
+        "S07",
+        "COORD"
+      ]
+    },
+    {
+      "name": "Eindhoven",
+      "population": 249035,
+      "lat": 51.429973,
+      "lon": 5.500015,
+      "note": "Poids lourds, électronique ; Veldhoven et ASML à proximité.",
+      "year": 2025,
+      "source_ids": [
+        "S07",
+        "COORD"
+      ]
+    },
+    {
+      "name": "Groningue",
+      "population": 244441,
+      "lat": 53.220407,
+      "lon": 6.580001,
+      "note": "Université et pôle de services du nord.",
+      "year": 2025,
+      "source_ids": [
+        "S07",
+        "COORD"
+      ]
+    }
+  ],
+  "charts": [
+    {
+      "id": "climat",
+      "type": "climate",
+      "title": "Un climat océanique frais",
+      "year": "1991–2020",
+      "subtitle": "De Bilt · normales 1991–2020 · °C et mm",
+      "place": "De Bilt",
+      "tmin": [
+        0.9,
+        0.7,
+        2.4,
+        4.5,
+        8.0,
+        10.8,
+        13.0,
+        12.5,
+        10.0,
+        7.1,
+        3.9,
+        1.6
+      ],
+      "tmax": [
+        6.1,
+        7.0,
+        10.5,
+        14.8,
+        18.3,
+        20.9,
+        23.1,
+        22.9,
+        19.5,
+        14.8,
+        9.9,
+        6.7
+      ],
+      "precip_mm": [
+        70.8,
+        63.1,
+        57.8,
+        41.6,
+        59.3,
+        70.5,
+        85.2,
+        83.6,
+        77.9,
+        81.1,
+        80.0,
+        83.8
+      ],
+      "france": "climat-paris",
+      "source_ids": [
+        "S09"
+      ]
+    },
+    {
+      "id": "pyramide-ages",
+      "type": "pyramid",
+      "title": "Les générations du baby-boom vieillissent",
+      "year": 2026,
+      "subtitle": "Résidents des Pays-Bas européens · 1er janvier 2026",
+      "age_groups": [
+        "0–4",
+        "5–9",
+        "10–14",
+        "15–19",
+        "20–24",
+        "25–29",
+        "30–34",
+        "35–39",
+        "40–44",
+        "45–49",
+        "50–54",
+        "55–59",
+        "60–64",
+        "65–69",
+        "70–74",
+        "75–79",
+        "80–84",
+        "85–89",
+        "90–94",
+        "95–99",
+        "100+"
+      ],
+      "male": [
+        437072,
+        456730,
+        481496,
+        531377,
+        597487,
+        612455,
+        616613,
+        599600,
+        549515,
+        528061,
+        565852,
+        635758,
+        614635,
+        536565,
+        453283,
+        409096,
+        233953,
+        121058,
+        38303,
+        6454,
+        464
+      ],
+      "female": [
+        416974,
+        434628,
+        456798,
+        497042,
+        577727,
+        592425,
+        596943,
+        585059,
+        547066,
+        533525,
+        576714,
+        637947,
+        617201,
+        550657,
+        477936,
+        449462,
+        282809,
+        176417,
+        76532,
+        18432,
+        2087
+      ],
+      "unit": "personnes",
+      "france": "pyramide-france",
+      "source_ids": [
+        "S10"
+      ]
+    },
+    {
+      "id": "religions",
+      "type": "share",
+      "title": "L’appartenance religieuse recule",
+      "year": 2025,
+      "subtitle": "Personnes de 15 ans ou plus · affiliation déclarée · 2025",
+      "labels": [
+        "Sans religion",
+        "Catholicisme",
+        "Protestantisme",
+        "Islam",
+        "Autres religions"
+      ],
+      "values": [
+        58,
+        16,
+        12,
+        6,
+        7
+      ],
+      "unit": "%",
+      "note_visible": "Total de 99 % : arrondis de publication conservés.",
+      "france": "religions",
+      "source_ids": [
+        "S14"
+      ]
+    },
+    {
+      "id": "salaires",
+      "type": "bar",
+      "title": "Salaires horaires : médiane et moyenne",
+      "year": 2022,
+      "subtitle": "Brut par heure payée · enquête SES 2022 · € / heure",
+      "labels": [
+        "Salaire médian",
+        "Salaire moyen"
+      ],
+      "values": [
+        18.78,
+        20.95
+      ],
+      "unit": "€/heure",
+      "precision": 2,
+      "france": "salaires-ses-2022",
+      "note_visible": "Entreprises d’au moins dix salariés ; agriculture et administration publique exclues. Primes régulières et heures supplémentaires du mois incluses.",
+      "source_ids": [
+        "S21"
+      ]
+    },
+    {
+      "id": "pib-secteurs",
+      "type": "share",
+      "title": "Les services dominent la valeur ajoutée",
+      "year": 2025,
+      "subtitle": "Valeur ajoutée courante, hors impôts nets sur les produits · 2025",
+      "labels": [
+        "Agriculture, forêt, pêche",
+        "Industrie et construction",
+        "Services"
+      ],
+      "values": [
+        1.8862029616110738,
+        20.256726301491472,
+        77.85707073689746
+      ],
+      "unit": "%",
+      "france": "va-eurostat-2025",
+      "source_ids": [
+        "S24"
+      ]
+    },
+    {
+      "id": "asml-systemes",
+      "type": "barh",
+      "title": "ASML : le DUV reste majoritaire en nombre",
+      "year": 2025,
+      "subtitle": "Systèmes vendus par ASML dans le monde · 2025",
+      "labels": [
+        "Lithographie EUV",
+        "Lithographie DUV",
+        "Métrologie et inspection"
+      ],
+      "values": [
+        48,
+        279,
+        208
+      ],
+      "unit": "systèmes",
+      "precision": 0,
+      "source_ids": [
+        "S08"
+      ],
+      "note_visible": "Nombre de machines, toutes gammes confondues ; aucune part de marché ni de revenus."
+    }
+  ],
+  "sources": [
+    {
+      "id": "S01",
+      "text": "[Union européenne, présentation des Pays-Bas](https://european-union.europa.eu/principles-countries-history/eu-countries/netherlands_en). Données Eurostat 2026. Superficie du territoire dans l’UE selon le même champ que la référence française. Amsterdam et La Haye, monnaie et institutions."
+    },
+    {
+      "id": "S02",
+      "text": "[Gouvernement néerlandais, les composantes du Royaume](https://www.government.nl/themes/justice-security-and-defence/security-strategy-for-the-kingdom-of-the-netherlands/question-and-answer/what-are-the-different-parts-of-the-kingdom-of-the-netherlands). Distinction entre les quatre pays du Royaume et les collectivités caribéennes du pays néerlandais ; frontière de Saint-Martin."
+    },
+    {
+      "id": "S03",
+      "text": "[Holland.com, Netherlands or Holland?](https://www.holland.com/global/tourism/getting-around/information/netherlands-vs-holland). Hollande-Septentrionale et Hollande-Méridionale."
+    },
+    {
+      "id": "S04",
+      "text": "[Rijksmuseum, Living With Water](https://www.rijksmuseum.nl/en/collection/node/Living-With-Water--14e146ad68f9471999202b3b1575a433). Aménagement du delta et histoire du rapport à l’eau."
+    },
+    {
+      "id": "S05",
+      "text": "[Rijkswaterstaat, Room for the River](https://www.rijkswaterstaat.nl/en/projects/iconic-structures/room-for-the-river). Crues, élargissement du lit et recul des digues."
+    },
+    {
+      "id": "S06",
+      "text": "[Commission européenne, rapport pays 2026 : Pays-Bas](https://economy-finance.ec.europa.eu/economic-surveillance-eu-member-states/country-pages-including-country-reports/country-report-netherlands_en). Randstad, pôles urbains, logement et industrie."
+    },
+    {
+      "id": "S07",
+      "text": "[CBS, Gebieden in Nederland 2025, tableau 86059NED](https://www.cbs.nl/nl-nl/cijfers/detail/86059NED). Communes au 1er janvier 2025. Population Inwonertal_56 : Amsterdam 934526 ; Rotterdam 672960 ; La Haye 568945 ; Utrecht 376757 ; Eindhoven 249035 ; Groningue 244441. Les limites communales ne décrivent pas les agglomérations."
+    },
+    {
+      "id": "S08",
+      "text": "[ASML, rapport annuel 2025](https://investor.asml.com/annual-reports/2025). Base US GAAP. Veldhoven et chaîne industrielle. Ventes en unités : EUV 48 ; DUV 279 ; métrologie et inspection 208. Implantations mondiales, équipements neufs et d’occasion selon la présentation du rapport. Les unités ne sont pas des parts de revenus."
+    },
+    {
+      "id": "S09",
+      "text": "[KNMI, De Bilt, normales 1991-2020](https://cdn.knmi.nl/knmi/map/page/klimatologie/klimaatatlas/tabel/stationsdata/klimtab_9120_260.pdf). Station 260. Colonnes températures minimales et maximales moyennes, somme mensuelle des précipitations en mm. Série janvier-décembre ; comparaison Paris sur la même normale."
+    },
+    {
+      "id": "S10",
+      "text": "[CBS, population par sexe, âge et nationalité au 1er janvier, 85510ENG](https://www.cbs.nl/en-gb/figures/detail/85510ENG). Extraction OData : Periods=2026JJ00, Nationality=T001059, tous résidents des Pays-Bas européens. Classes quinquennales 70100 à 72000 puis 22200 (100 ans ou plus). Part des 65 ans ou plus calculée sur les effectifs exacts. Données définitives dans la table au 16 novembre 2026."
+    },
+    {
+      "id": "S11",
+      "text": "[CBS, Population growth slows for third consecutive year, 2 février 2026](https://www.cbs.nl/en-gb/news/2026/06/population-growth-slows-for-third-consecutive-year). Fécondité provisoire 2025 : 1,42 enfant par femme. Solde naturel et migrations."
+    },
+    {
+      "id": "S12",
+      "text": "[Gouvernement néerlandais, langues reconnues](https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/erkende-talen/erkende-talen-nederland). Statut du néerlandais et du frison, langues régionales et minoritaires."
+    },
+    {
+      "id": "S13",
+      "text": "[Business.gov.nl, Dutch life and personal matters](https://business.gov.nl/coming-to-the-netherlands/living-in-the-netherlands/dutch-life-and-personal-matters/). Vie pratique et langues pour les nouveaux résidents."
+    },
+    {
+      "id": "S14",
+      "text": "[CBS, Alleen in Limburg rekent de meerderheid zich nog tot een geloof, 13 mars 2026](https://www.cbs.nl/nl-nl/nieuws/2026/11/alleen-in-limburg-rekent-de-meerderheid-zich-nog-tot-een-geloof). Enquête 2025, personnes de 15 ans ou plus. Parts publiées arrondies, conservées telles quelles ; total 99 %. Appartenance religieuse déclarée, et non pratique."
+    },
+    {
+      "id": "S15",
+      "text": "[Gouvernement néerlandais, Bicycles](https://www.government.nl/themes/transport/bicycles). Réseau cyclable et déplacements de courte distance. Les chiffres non datés de cette page ne sont pas repris."
+    },
+    {
+      "id": "S16",
+      "text": "[CBS, De arbeidsmarkt in cijfers 2025, demande de travail](https://longreads.cbs.nl/dearbeidsmarktincijfers-2025/de-vraag-naar-arbeid/). Contrats, temps partiel et durée du travail."
+    },
+    {
+      "id": "S17",
+      "text": "[CBS, activité et durée du travail, 85275NED](https://www.cbs.nl/nl-nl/cijfers/detail/85275NED). Salariés et indépendants, temps plein et partiel, données annuelles et trimestrielles."
+    },
+    {
+      "id": "S18",
+      "text": "[Gouvernement néerlandais, assurance maladie des nouveaux résidents](https://www.government.nl/themes/migration-and-travel/immigration-to-the-netherlands/question-and-answer/health-insurance/when-do-i-need-to-take-out-health-insurance-if-i-come-to-live-in-the-netherlands). Obligation selon la situation, début de couverture et aide zorgtoeslag."
+    },
+    {
+      "id": "S19",
+      "text": "[De Nederlandsche Bank, Housing market](https://www.dnb.nl/en/current-economic-issues/housing-market/). Accessibilité des logements, propriétaires et primo-accédants, obstacles à la construction."
+    },
+    {
+      "id": "S20",
+      "text": "[The Hague International Centre, Sports](https://www.thehagueinternationalcentre.nl/living-in-the-hague-region/leisure/sports). Clubs, football, hockey et patinage de vitesse."
+    },
+    {
+      "id": "S21",
+      "text": "[Eurostat, Structure of earnings survey, salaires horaires, 2022](https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses_hourly?lang=EN&geo=NL&geo=FR&time=2022&sex=T&age=TOTAL&isco08=TOTAL&worktime=TOTAL&nace_r2=B-S_X_O). Série earn_ses_hourly, MEAN_E_EUR et MED_E_EUR, tous sexes, âges, professions et temps de travail. Entreprises d’au moins dix salariés, sections NACE B à S hors O ; agriculture et administration publique exclues. Brut par heure payée du mois de référence, généralement octobre ; heures supplémentaires et primes régulières du mois incluses, versements annuels non réguliers exclus. Moyenne et médiane de la même série, sans mélange avec les salaires CBS 2025. Monnaie locale : euro, aucune conversion nécessaire. [Méthode](https://ec.europa.eu/eurostat/cache/metadata/en/earn_ses_main_esms.htm)."
+    },
+    {
+      "id": "S22",
+      "text": "[Conseil de l’UE, recommandation du 10 juillet 2026 sur les Pays-Bas](https://eur-lex.europa.eu/eli/C/2026/3932/oj/eng/pdf). Difficultés structurelles : logement, azote, marché du travail et réseau électrique."
+    },
+    {
+      "id": "S23",
+      "text": "[Ministère du Logement, From plans to homes, 5 octobre 2026](https://www.volkshuisvestingnederland.nl/actueel/nieuws/2026/10/05/from-plans-to-homes). Plan annoncé ; raccordements, autorisations et azote. Aucune réalisation anticipée."
+    },
+    {
+      "id": "S24",
+      "text": "[Eurostat, valeur ajoutée par activité, comptes nationaux 2025](https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10_a10?lang=EN&geo=NL&geo=FR&time=2025&unit=CP_MEUR&na_item=B1G). Série nama_10_a10, B1G en millions d’euros courants. Agriculture=A ; industrie et construction=B-E+F ; services=TOTAL moins ces branches. Chaque part est divisée par la VA totale, hors impôts nets sur les produits. Même calcul pour la France ; chiffres français provisoires. Extraction du 16 novembre 2026, base actualisée le 11 novembre."
+    },
+    {
+      "id": "S25",
+      "text": "[Port de Rotterdam, rapport annuel 2025](https://www.portofrotterdam.com/en/about-port-authority/finance/annual-reports). Activités du port, industrie et logistique européenne."
+    },
+    {
+      "id": "S26",
+      "text": "[Direction générale du Trésor, relations économiques bilatérales, septembre 2026](https://www.tresor.economie.gouv.fr/Pays/NL/relations-economiques-bilaterales-france-et-pays-bas-comptent-parmi-les-plus-importants-partenaires-commerciaux-l-un-pour-l-autre-en-2017). Échanges de biens et services 2025 : 88,9 milliards d’euros. Effet Rotterdam, réexportations et année économique bilatérale."
+    },
+    {
+      "id": "S27",
+      "text": "[DAF, sites de production](https://www.daf.com/en/about-daf/daf-worldwide/production-locations). Eindhoven, moteurs et assemblage de camions électriques."
+    },
+    {
+      "id": "S28",
+      "text": "[Gouvernement néerlandais, fermeture définitive du gisement de Groningue, 18 avril 2024](https://www.rijksoverheid.nl/actueel/nieuws/2024/04/18/wet-sluiting-groningenveld-gaat-per-19-april-in). Entrée en vigueur le 19 avril 2024. [Suivi de la réparation et de la sécurité](https://www.rijksoverheid.nl/themas/klimaat-milieu-en-natuur/herstel-gaswinning-groningen-en-noord-drenthe)."
+    },
+    {
+      "id": "S29",
+      "text": "[RVO, What is grid congestion?, vérifié le 4 mai 2026](https://english.rvo.nl/topics/grid-congestion/what-grid-congestion). Conséquences pour les raccordements, la construction et l’électrification."
+    },
+    {
+      "id": "S30",
+      "text": "[Canon van Nederland, The Republic](https://www.canonvannederland.nl/en/republiek). République de 1588 à 1795 et révolte contre la monarchie espagnole."
+    },
+    {
+      "id": "S31",
+      "text": "[Canon van Nederland, The trading Companies VOC & WIC](https://www.canonvannederland.nl/en/vocenwic). Commerce, pouvoirs coloniaux et traite esclavagiste."
+    },
+    {
+      "id": "S32",
+      "text": "[Maison Anne Frank, l’occupation des Pays-Bas en 1940](https://www.annefrank.org/annes-wereld/en/anne-frank/1940-germany-occupies-netherlands/1940-germany-occupies-netherlands). Invasion et persécution des Juifs."
+    },
+    {
+      "id": "S33",
+      "text": "[Canon van Nederland, Indonesia](https://www.canonvannederland.nl/en/indonesie). Proclamation de 1945, guerre et reconnaissance de l’indépendance en 1949."
+    },
+    {
+      "id": "S34",
+      "text": "[Rijkswaterstaat, Watersnoodramp 1953](https://www.rijkswaterstaat.nl/water/waterbeheer/bescherming-tegen-het-water/watersnoodramp-1953). Catastrophe du 1er février 1953 et travaux Delta. [Histoire des ouvrages, Watersnoodmuseum](https://www.watersnoodmuseum.nl/en/water-knowledge/learn-about-water-safety/articles/the-history-the-delta-works)."
+    },
+    {
+      "id": "S35",
+      "text": "[France Diplomatie, présentation politique des Pays-Bas, 28 octobre 2026](https://www.diplomatie.gouv.fr/fr/information-par-pays/pays-bas/presentation-des-pays-bas). Institutions, scrutin du 29 octobre 2025 et coalition minoritaire de 66 sièges. Les populations municipales de cette page ne sont pas utilisées : la carte reprend le CBS sur un champ commun."
+    },
+    {
+      "id": "S36",
+      "text": "[Gouvernement néerlandais, cabinets depuis 1945](https://www.rijksoverheid.nl/regering/over-de-regering/kabinetten-sinds-1945). Composition et dates des gouvernements Balkenende, Rutte et Schoof."
+    },
+    {
+      "id": "S37",
+      "text": "[Gouvernement néerlandais, investiture du gouvernement Jetten, 23 février 2026](https://www.government.nl/latest/news/2026/02/23/jetten-government-sworn-in). Coalition D66, VVD et CDA."
+    },
+    {
+      "id": "S38",
+      "text": "[Parlement.com, cabinet Rutte I, 2010-2012](https://www.parlement.com/kabinet-rutte-i-2010-2012). Soutien extérieur du PVV et rupture sur le budget en 2012."
+    },
+    {
+      "id": "S39",
+      "text": "[Chambre basse, débat sur le scandale des allocations, 19 janvier 2021](https://www.tweedekamer.nl/kamerstukken/plenaire_verslagen/kamer_in_het_kort/debat-over-verslag-commissie-kinderopvangtoeslag). Démission du 15 janvier, responsabilité politique et discrimination."
+    },
+    {
+      "id": "S40",
+      "text": "[AP, chute de la coalition Schoof, 4 juin 2025](https://apnews.com/article/c18fd4e32cc1ab8668f159d6630cf89d). Retrait du PVV le 3 juin et suites institutionnelles."
+    },
+    {
+      "id": "S41",
+      "text": "[Gouvernement néerlandais, conférence de presse de Jetten, 13 novembre 2026](https://www.rijksoverheid.nl/documenten/2026/11/13/letterlijke-tekst-persconferentie-na-ministerraad-13-november-2026). Texte intégral sur la crise du plan fiscal et les consultations de coalition."
+    },
+    {
+      "id": "S42",
+      "text": "[NL Times, consultations de crise, 16 novembre 2026 à 08 h 04](https://nltimes.nl/2026/11/16/dutch-cabinet-still-crisis-weekend-consultation-talks-continue-today). Poursuite annoncée au Catshuis le 16 novembre. État des faits à cette consultation ; aucune chute de gouvernement affirmée."
+    },
+    {
+      "id": "S43",
+      "text": "[Gouvernement néerlandais, arrêt de la CEDH sur MH17, 9 juillet 2025](https://www.government.nl/latest/news/2025/07/09/european-court-of-human-rights-russia-responsible-for-downing-of-flight-mh17). Responsabilité russe. Le contexte diplomatique et l’aide à l’Ukraine sont documentés dans la présentation de France Diplomatie."
+    },
+    {
+      "id": "S44",
+      "text": "[Rijksmuseum, galerie d’honneur](https://www.rijksmuseum.nl/en/visit/inside-the-museum/gallery-of-honour). Rembrandt et Vermeer ; [parcours des œuvres](https://www.rijksmuseum.nl/en/tour/f9ee7cec-3043-474f-92e6-8158737f21f5). [Exposition Slavery](https://www.rijksmuseum.nl/en/whats-on/exhibitions/past/slavery), contextualisation de l’histoire coloniale."
+    },
+    {
+      "id": "S45",
+      "text": "[Holland.com, Dutch food and cuisine](https://www.holland.com/global/tourism/getting-around/interests/dutch-food-and-cuisine). Plats quotidiens, stamppot et cuisines contemporaines."
+    },
+    {
+      "id": "S46",
+      "text": "[I amsterdam, Dutch foods to try, 5 novembre 2026](https://www.iamsterdam.com/en/see-and-do/restaurant-and-bars/dutch-foods-to-try). Hareng, bitterballen, stroopwafels et héritage indonésien."
+    },
+    {
+      "id": "S47",
+      "text": "[Design Museum Den Bosch, From the exhibition: gabber](https://oud.designmuseum.nl/en/derde-verdieping/dance/from-the-exhibition-gabber/). Rotterdam, années 1990, sonorités et culture visuelle du gabber."
+    },
+    {
+      "id": "S48",
+      "text": "[Ville d’Amsterdam, trente ans d’ADE, octobre 2026](https://www.amsterdam.nl/nieuws/nieuwsoverzicht/ade-30-jaar/). Histoire depuis 1996 et édition anniversaire. [Organisateur, programme 2026](https://www.amsterdam-dance-event.nl/en/)."
+    },
+    {
+      "id": "S49",
+      "text": "[France Diplomatie, politique et économie des Pays-Bas](https://www.diplomatie.gouv.fr/fr/information-par-pays/pays-bas/politique-et-economie). Air France-KLM et année économique 2025. [Politique étrangère et soutien à l’Ukraine](https://www.diplomatie.gouv.fr/fr/information-par-pays/pays-bas/presentation-des-pays-bas)."
+    },
+    {
+      "id": "S50",
+      "text": "[ASML, principes de la lithographie](https://www.asml.com/en/technology/lithography-principles). Projection des motifs sur les plaquettes et étapes répétées de fabrication."
+    },
+    {
+      "id": "S51",
+      "text": "[ASML, mécanique et mécatronique](https://www.asml.com/en/technology/lithography-principles/mechanics-and-mechatronics). Positionnement, synchronisation et contrôle des mouvements."
+    },
+    {
+      "id": "S52",
+      "text": "[ASML, Light & lasers](https://www.asml.com/en/technology/lithography-principles/light-and-lasers). Longueur d’onde EUV : 13,5 nm ; source par plasma de gouttelettes d’étain."
+    },
+    {
+      "id": "S53",
+      "text": "[ZEISS SMT, EUV lithography](https://www.zeiss.com/semiconductor-manufacturing-technology/inspiring-technology/euv-lithography.html). Optique réfléchissante, vide et coopération ZEISS-ASML-TRUMPF."
+    },
+    {
+      "id": "S54",
+      "text": "[ASML, systèmes de lithographie DUV](https://www.asml.com/en/products/duv-lithography-systems). Rôle du DUV dans les couches et les applications ; complémentarité avec l’EUV."
+    },
+    {
+      "id": "S55",
+      "text": "[Gouvernement néerlandais, extension des contrôles d’exportation, 6 septembre 2024](https://www.government.nl/latest/news/2024/09/06/the-netherlands-expands-export-control-measure-advanced-semiconductor-manufacturing-equipment). Mesures applicables le 7 septembre 2024, autorisation pour certains systèmes DUV."
+    },
+    {
+      "id": "S56",
+      "text": "[Gouvernement néerlandais, extension des contrôles, 15 janvier 2025](https://www.government.nl/latest/news/2025/01/15/klever-export-controls-on-advanced-semiconductor-manufacturing-equipment-to-be-tightened). Élargissement applicable le 1er avril 2025."
+    },
+    {
+      "id": "S57",
+      "text": "[UNESCO, polder de Beemster](https://whc.unesco.org/en/list/899/). Ancien lac asséché ; [dossier d’inscription et système hydraulique](https://whc.unesco.org/uploads/nominations/899.pdf). [Définition de polder](https://www.visitholland.nl/index.php/glossary-visit-holland/11/polder)."
+    },
+    {
+      "id": "HDI",
+      "text": "[PNUD, Human Development Report 2025, annexe statistique](https://hdr.undp.org/sites/default/files/2025_HDR/HDR25_Statistical_Annex_Tables_1-7.pdf). Tableau 1, données 2023 : Pays-Bas 0,955, rang 8."
+    },
+    {
+      "id": "GINI",
+      "text": "[Eurostat, Gini du revenu disponible équivalent, EU-SILC 2025](https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_di12?lang=EN&geo=NL&time=2025&age=TOTAL). Série ilc_di12, échelle 0-100 : 25,9. Revenus de l’année précédente, après transferts ; même définition que la référence française EU-SILC 2025. Ne mesure pas le patrimoine."
+    },
+    {
+      "id": "VDEM",
+      "text": "[V-Dem, Democracy Report 2026](https://www.v-dem.net/documents/75/V-Dem_Institute_Democracy_Report_2026_lowres.pdf). Tableau A2, p. 48 : indice de démocratie libérale 2025, Pays-Bas 0,77, rang 18. Même publication et définition que la France."
+    },
+    {
+      "id": "RSF",
+      "text": "[RSF, Pays-Bas, classement 2026](https://rsf.org/en/country/netherlands). Score 88,92 ; rang 2 sur 180."
+    },
+    {
+      "id": "CPI",
+      "text": "[Transparency International, Pays-Bas, CPI 2025](https://www.transparency.org/en/countries/netherlands). Score 78 sur 100 ; rang 8 sur 182."
+    },
+    {
+      "id": "GDP",
+      "text": "[FMI, World Economic Outlook, octobre 2026, PIB nominal des Pays-Bas](https://www.imf.org/external/datamapper/NGDPD@WEO/NLD). [Extraction API NGDPD](https://www.imf.org/external/datamapper/api/v1/NGDPD/NLD), année 2025 : 1321,985 milliards de dollars courants, multipliés par un milliard sans arrondi préalable. Même millésime que la France."
+    },
+    {
+      "id": "UNEMP",
+      "text": "[Eurostat, taux de chômage annuel 2025](https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/une_rt_a?lang=EN&geo=NL&time=2025&sex=T&age=Y15-74&unit=PC_ACT). Au sens du BIT, 15-74 ans, tous sexes, pourcentage des actifs : 3,9. Même série et période que la France."
+    },
+    {
+      "id": "FLAG",
+      "text": "[Wikimedia Commons, Flag of the Netherlands.svg](https://commons.wikimedia.org/wiki/File:Flag_of_the_Netherlands.svg). Zscout370 ; domaine public, dessin géométrique simple (PD-shape). SVG original conservé, 223 octets."
+    },
+    {
+      "id": "COORD",
+      "text": "[Natural Earth, populated places, 1:10m](https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_populated_places.geojson). Coordonnées des centres d’Amsterdam, Rotterdam, The Hague, Utrecht, Eindhoven et Groningen ; domaine public. Le nom français Groningue correspond à la commune Groningen."
+    },
+    {
+      "id": "NE",
+      "text": "[Natural Earth, conditions de réutilisation](https://www.naturalearthdata.com/about/terms-of-use/). Domaine public. Contours du localisateur régional et repère mondial ; aucune position sur les frontières."
+    },
+    {
+      "id": "CITYMAP",
+      "text": "[Wikimedia Commons, Netherlands location map.svg](https://commons.wikimedia.org/wiki/File:Netherlands_location_map.svg). Lencer, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0). SVG original conservé. [Bornes et projection](https://en.wikipedia.org/wiki/Module:Location_map/data/Netherlands). Repères numérotés ajoutés à l’affichage."
+    },
+    {
+      "id": "NEXPERIA",
+      "text": "[Gouvernement néerlandais, mise à jour sur Nexperia, 19 novembre 2025](https://www.government.nl/binaries/government/documenten/diplomatic-statements/2025/11/19/update-on-invoking-goods-availability-act/Update%2Bon%2Binvoking%2BGoods%2BAvailability%2BAct%2B-%2B19%2Bnovember%2B2025.pdf). Intervention du 30 septembre, restrictions chinoises et suspension de la mesure publique. [Chambre des entreprises, enquête du 11 février 2026](https://www.rechtspraak.nl/organisatie-en-contact/organisatie/gerechtshoven/gerechtshof-amsterdam/nieuws/2026/02/ruling-nexperia-enterprise-chamber), procédure distincte de la mesure ministérielle."
+    },
+    {
+      "id": "NEXPERIA-2026",
+      "text": "[Nexperia, déclaration du 12 novembre 2026](https://www.nexperia.com/about/news-events/press-releases/Statement-from-Nexperia-12-11-26). Position de l’entreprise sur les procédures avec Wingtech et Nexperia China ; cette déclaration ne vaut pas décision définitive du juge."
+    }
+  ],
+  "hero_sources": [
+    "S01",
+    "S02",
+    "FLAG"
+  ],
+  "map_sources": {
+    "locator": [
+      "NE"
+    ],
+    "cities": [
+      "S07",
+      "COORD"
+    ]
+  },
+  "cities_map": {
+    "file": "cities.svg",
+    "width": 888,
+    "height": 1001,
+    "bounds": {
+      "top": 53.7,
+      "bottom": 50.6,
+      "left": 3.1,
+      "right": 7.5
+    },
+    "projection": {
+      "type": "equirectangular"
+    },
+    "credit": {
+      "author": "Lencer",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Netherlands_location_map.svg"
+    },
+    "definition_url": "https://en.wikipedia.org/wiki/Module:Location_map/data/Netherlands",
+    "source_ids": [
+      "CITYMAP"
+    ]
+  },
+  "cities_title": "Six pôles des Pays-Bas européens",
+  "cities_scope": "Communes · 1er janvier 2025 · périmètre CBS",
+  "cities_note": "Repères des centres urbains. Les populations suivent les limites communales. Les quatre villes de la Randstad sont agrandies sous la carte.",
+  "cities_inset": {
+    "label": "Randstad · agrandissement",
+    "cities": [
+      "Amsterdam",
+      "Rotterdam",
+      "La Haye",
+      "Utrecht"
+    ],
+    "center": [
+      4.75,
+      52.15
+    ],
+    "zoom": 4,
+    "x": 8,
+    "y": 292,
+    "width": 244,
+    "height": 240
+  },
+  "prose_values": {
+    "commerce-france": {
+      "value": 88900000000,
+      "unit": "euros"
+    },
+    "longueur-euv": {
+      "value": 13.5,
+      "unit": "nm",
+      "precision": 1
+    }
+  }
+}
