@@ -213,7 +213,7 @@
       ],
       "offset": [
         12,
-        -12
+        0
       ]
     },
     {
@@ -782,6 +782,10 @@
     {
       "id": "NE",
       "text": "[Natural Earth, conditions d’utilisation](https://www.naturalearthdata.com/about/terms-of-use/). Géométrie locale du projet, domaine public. Les contours ne constituent pas une position sur les frontières."
+    },
+    {
+      "id": "CITYMAP",
+      "text": "[Wikimedia Commons, Algeria location map.svg](https://commons.wikimedia.org/wiki/File:Algeria_location_map.svg). Eric Gaba (Sting), [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0). Conversion en WebP à 1 100 pixels de large, sans recadrage. [Bornes et projection](https://en.wikipedia.org/wiki/Module:Location_map/data/Algeria). Repères numérotés et encart ajoutés à l’affichage."
     }
   ],
   "map_sources": {
@@ -794,8 +798,7 @@
       "S01",
       "S04",
       "S12",
-      "S56",
-      "NE"
+      "S56"
     ],
     "relief": [
       "S55"
@@ -860,5 +863,29 @@
     "source_ids": [
       "S20"
     ]
+  },
+  "cities_map": {
+    "file": "cities.webp",
+    "width": 3840,
+    "height": 3814,
+    "bounds": {
+      "top": 37.8,
+      "bottom": 18.25,
+      "left": -9.45,
+      "right": 12.75
+    },
+    "projection": {
+      "type": "equirectangular"
+    },
+    "credit": {
+      "author": "Eric Gaba (Sting)",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Algeria_location_map.svg"
+    },
+    "source_ids": [
+      "CITYMAP"
+    ],
+    "definition_url": "https://en.wikipedia.org/wiki/Module:Location_map/data/Algeria"
   }
 }

@@ -112,8 +112,8 @@ def test_geo_extract_covers_all_197_countries_and_stays_small(settings):
     # Tiny countries absent from 110m still have a highlighted locator marker.
     assert 'class="locator-dot"' in locator("VAT", "Vatican", settings.geo_dir)
     for code in ("FJI", "KIR", "RUS", "FRA", "VAT", "TWN", "XKX", "PSE"):
-        rendered = cities(code, code, [], settings.geo_dir)
-        start, end = rendered.index("<svg"), rendered.index("</svg>") + 6
+        rendered = locator(code, code, settings.geo_dir)
+        start, end = rendered.index("<svg"), rendered.rindex("</svg>") + 6
         ET.fromstring(rendered[start:end])
 
 
@@ -126,11 +126,10 @@ def test_usa_city_markers_remain_visible_and_separate():
         "USA",
         "États-Unis",
         data["cities"],
-        config.geo_dir,
-        map_focus=data["map_focus"],
+        data["cities_map"],
         note=data["cities_note"],
     )
-    start, end = rendered.index("<svg"), rendered.index("</svg>") + 6
+    start, end = rendered.index("<svg"), rendered.rindex("</svg>") + 6
     root = ET.fromstring(rendered[start:end])
     pins = [node for node in root.iter() if node.get("class") == "city-dot"]
     points = [(float(node.get("cx")), float(node.get("cy"))) for node in pins]

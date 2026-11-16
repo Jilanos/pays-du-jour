@@ -786,7 +786,7 @@
     },
     {
       "id": "NE",
-      "text": "[Natural Earth, conditions d’utilisation](https://www.naturalearthdata.com/about/terms-of-use/). Domaine public. Géométrie locale de l’application pour les cartes de situation et de villes. Les contours ne constituent pas une position sur les frontières."
+      "text": "[Natural Earth, conditions d’utilisation](https://www.naturalearthdata.com/about/terms-of-use/). Domaine public. Géométrie locale de l’application pour le localisateur régional. Les contours ne constituent pas une position sur les frontières."
     },
     {
       "id": "S53",
@@ -811,6 +811,10 @@
     {
       "id": "S58",
       "text": "[Time and Date, Only One Time Zone in China](https://www.timeanddate.com/time/china/one-time-zone.html). Heure officielle commune et usage officieux au Xinjiang."
+    },
+    {
+      "id": "CITYMAP",
+      "text": "[Wikimedia Commons, China edcp location map.svg](https://commons.wikimedia.org/wiki/File:China_edcp_location_map.svg). Uwe Dedering, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0). Conversion en WebP à 1 100 pixels de large, sans recadrage. [Bornes et projection](https://en.wikipedia.org/wiki/Module:Location_map/data/China). Repères numérotés et encart ajoutés à l’affichage."
     }
   ],
   "cities": [
@@ -874,8 +878,7 @@
       "S46",
       "S47",
       "S48",
-      "S49",
-      "NE"
+      "S49"
     ],
     "relief": [
       "S45"
@@ -912,5 +915,31 @@
       "unit": "%",
       "precision": 0
     }
+  },
+  "cities_map": {
+    "file": "cities.webp",
+    "width": 1181,
+    "height": 940,
+    "bounds": null,
+    "projection": {
+      "type": "equidistant_conic",
+      "longitude0": 104,
+      "cone": 0.5867115434267053,
+      "radius_offset": 1.9996655301850468,
+      "radius0": 1.3713469994670882,
+      "y_offset": 0.02641006622571962,
+      "scale": 116.80932603407057,
+      "y_scale": 1.256383
+    },
+    "credit": {
+      "author": "Uwe Dedering",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:China_edcp_location_map.svg"
+    },
+    "source_ids": [
+      "CITYMAP"
+    ],
+    "definition_url": "https://en.wikipedia.org/wiki/Module:Location_map/data/China"
   }
 }

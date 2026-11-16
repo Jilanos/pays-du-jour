@@ -3,6 +3,7 @@
 import argparse
 import json
 from pathlib import Path
+from urllib.parse import urljoin
 
 from PIL import Image
 from playwright.sync_api import sync_playwright
@@ -16,6 +17,15 @@ def ready(page):
     assert page.locator("img").evaluate_all(
         "images => images.every(img => img.naturalWidth > 0)"
     ), "Broken image"
+    for url in set(
+        page.locator("svg image").evaluate_all("images => images.map(el => el.href.baseVal)")
+    ):
+        response = page.request.get(urljoin(page.url, url))
+        assert response.ok and response.headers.get("content-type", "").startswith("image/"), (
+            "Broken SVG map background",
+            url,
+            response.status,
+        )
 
 
 def capture(url, output, name):
@@ -40,10 +50,19 @@ def capture(url, output, name):
                     assert page.evaluate("innerWidth") == width
                     assert page.evaluate("document.documentElement.scrollWidth") == width
                     stem = f"{name}-{device}" + ("-dark" if theme == "dark" else "")
-                    for old_tile in output.glob(f'{stem}-[0-9][0-9].png'):
+                    for old_tile in output.glob(f"{stem}-[0-9][0-9].png"):
                         old_tile.unlink()
                     path = output / f"{stem}.png"
                     page.screenshot(path=str(path), full_page=True, animations="disabled")
+                    for selector, suffix in (
+                        ("#villes", "cities"),
+                        (".fiche-header .locator", "locator"),
+                    ):
+                        figure = page.locator(selector)
+                        if figure.count():
+                            figure.screenshot(
+                                path=str(output / f"{stem}-{suffix}.png"), animations="disabled"
+                            )
                     with Image.open(path) as screenshot:
                         assert screenshot.width == width, screenshot.size
                         for i, y in enumerate(range(0, screenshot.height, 1500)):

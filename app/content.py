@@ -17,7 +17,7 @@ from .charts import render_chart
 from .components import comparable, indices, keyfacts, reference
 from .config import ROOT, Settings
 from .format import NBSP, number, record, with_euro
-from .maps import cities, locator
+from .maps import cities, locator, validate_city_map
 from .sources import Sources
 from .typo import french
 
@@ -215,18 +215,26 @@ def read_fiche(iso3: str, settings: Settings) -> Fiche:
         elif key == "map:locator":
             raise ValueError("The locator belongs to the hero; remove its body placeholder")
         elif key == "map:cities":
+            map_data = data.get("cities_map")
+            validate_city_map(map_data, folder / "assets")
             mark = sources.cite(
-                "villes", "Villes principales", data.get("map_sources", {}).get("cities", [])
+                "villes",
+                "Villes principales",
+                data.get("map_sources", {}).get("cities", []) + map_data["source_ids"],
+            )
+            credit = map_data["credit"]
+            sources.annotate(
+                map_data["source_ids"][0],
+                f"Fond de carte : {credit['author']}, {credit['license']}.",
             )
             rendered = cities(
                 iso3,
                 meta["nom"],
                 data.get("cities", []),
-                settings.geo_dir,
+                map_data,
                 marker=mark,
                 title=data.get("cities_title", "Villes principales"),
                 scope=data.get("cities_scope", "Population municipale"),
-                map_focus=data.get("map_focus"),
                 note=data.get(
                     "cities_note", "Les limites municipales englobent aussi des espaces ruraux."
                 ),

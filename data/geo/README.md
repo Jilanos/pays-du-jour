@@ -20,8 +20,8 @@ Only geometry and country identifiers are retained. ADM0 identifiers are mapped
 0.02° (world) and 0.005° (country maps); coordinates are rounded to 0.001°.
 The two files total about 1.5 MB. The app needs neither GIS dependencies nor network
 access. Tiny countries have a locator dot when their outline is too small to see.
-City maps use an equirectangular projection with local latitude correction and wrap
-longitudes around the shortest interval for countries crossing the date line.
+These extracts serve the regional and world locators. City maps use existing licensed
+Commons assets and their published projections. See `docs/format.md` and `docs/production.md`.
 
 Rebuild explicitly when updating the source data:
 

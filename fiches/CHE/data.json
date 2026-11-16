@@ -967,6 +967,34 @@
     {
       "id": "NE",
       "text": "[Natural Earth](https://www.naturalearthdata.com/about/terms-of-use/), domaine public. Contours locaux 1:110 m et 1:50 m ; [centres des villes, populated places 1:10 m](https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_populated_places.geojson). Les limites cartographiques ne constituent pas une position sur les frontières."
+    },
+    {
+      "id": "CITYMAP",
+      "text": "[Wikimedia Commons, Switzerland adm location map.svg](https://commons.wikimedia.org/wiki/File:Switzerland_adm_location_map.svg). NordNordWest, [CC BY-SA 3.0 de](https://creativecommons.org/licenses/by-sa/3.0/de/deed.en). SVG original conservé. [Bornes et projection](https://en.wikipedia.org/wiki/Module:Location_map/data/Switzerland). Repères numérotés et encart ajoutés à l’affichage."
     }
-  ]
+  ],
+  "cities_map": {
+    "file": "cities.svg",
+    "width": 1347,
+    "height": 864,
+    "bounds": {
+      "top": 47.9,
+      "bottom": 45.75,
+      "left": 5.8,
+      "right": 10.7
+    },
+    "projection": {
+      "type": "equirectangular"
+    },
+    "credit": {
+      "author": "NordNordWest",
+      "license": "CC BY-SA 3.0 de",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+      "url": "https://commons.wikimedia.org/wiki/File:Switzerland_adm_location_map.svg"
+    },
+    "source_ids": [
+      "CITYMAP"
+    ],
+    "definition_url": "https://en.wikipedia.org/wiki/Module:Location_map/data/Switzerland"
+  }
 }

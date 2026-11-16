@@ -49,14 +49,15 @@ docker run --rm -p 127.0.0.1:8000:8000 \
 See [the content contract](docs/format.md) and [the section template](templates/fiche.md).
 A fiche folder contains `fiche.md` with YAML front matter, `data.json`, and `assets/`.
 Placeholders occupy their own line: `{{keyfacts}}`, `{{chart:id}}`,
-`{{map:locator}}`, `{{map:cities}}`, `{{map:relief}}`. Charts include a source line
-and expandable data table. The key facts block also renders `indices`.
+`{{map:locator}}`, `{{map:cities}}`, `{{map:relief}}`. Charts include citation markers
+and expandable data tables. The key facts block also renders `indices`.
 
 The app displays `assets/flag.svg` when present. Relief appears only when
 `relief_pertinent` is true and an `assets/relief.jpg`, `.jpeg`, `.png`, `.webp` or
-`.svg` exists. Credits belong in the fiche’s Sources section. Markdown raw HTML is
-disabled; tables and heading anchors are supported. Treat committed SVG assets as
-trusted content. Missing chart data is a content error to fix before publication.
+`.svg` exists. Credits belong in the fiche’s Sources section. City maps require a licensed
+local `cities_map` asset with the matching published bounds and projection; see
+`docs/production.md`. Markdown raw HTML is disabled; tables and heading anchors are supported.
+Treat committed SVG assets as trusted content. Missing chart data is a content error to fix before publication.
 
 Environment variables are read by the application factory:
 
