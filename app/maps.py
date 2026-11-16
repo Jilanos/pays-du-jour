@@ -298,7 +298,11 @@ def cities(
         if not (0 <= u <= 1 and 0 <= v <= 1):
             raise ValueError(f"City outside licensed map: {city['name']}")
         if i not in grouped:
-            pin(root, *project(point), i, city, project(point))
+            x, y = project(point)
+            ox, oy = city.get("offset", (0, 0))
+            if not (11 <= x + ox <= 249 and 11 <= y + oy <= height - 11):
+                raise ValueError(f"City pin clipped in main map: {city['name']}")
+            pin(root, x, y, i, city, (x, y))
     if grouped:
         # The inset reuses the same image and projection, with a single zoom/pan transform.
         bx, by, bw, bh = (inset[key] for key in ("x", "y", "width", "height"))

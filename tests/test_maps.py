@@ -82,6 +82,8 @@ def test_licensed_assets_pins_insets_and_sources(code):
     for frame in frames:
         dots = frame.findall("./{*}g[@class='city-pin']/{*}circle")
         points = [(float(p.get("cx")), float(p.get("cy"))) for p in dots]
+        _, _, width, height = map(float, frame.get("viewBox").split())
+        assert all(11 <= x <= width - 11 and 11 <= y <= height - 11 for x, y in points)
         assert all(dist(a, b) >= 22 for i, a in enumerate(points) for b in points[i + 1 :])
     if inset is not None:
         assert float(inset.get("y")) >= 8 + image_h
