@@ -1,0 +1,1146 @@
+{
+  "keyfacts": [
+    {
+      "id": "population",
+      "label": "Population",
+      "value": 143513328,
+      "unit": "habitants",
+      "year": 2025,
+      "coverage": "Estimation Banque mondiale, mi-2025 · Crimée non comprise",
+      "source_ids": [
+        "S01"
+      ],
+      "france": "population"
+    },
+    {
+      "id": "superficie",
+      "label": "Superficie",
+      "value": 17098246,
+      "unit": "km²",
+      "year": 2023,
+      "coverage": "Annuaire démographique de l’ONU · 2023",
+      "source_ids": [
+        "S02"
+      ],
+      "france": "superficie"
+    },
+    {
+      "id": "pib-nominal",
+      "label": "PIB nominal",
+      "value": 2572315000000,
+      "unit": "USD",
+      "year": 2025,
+      "coverage": "Prix courants · 2025",
+      "source_ids": [
+        "S03"
+      ],
+      "france": "pib-nominal"
+    },
+    {
+      "id": "fecondite",
+      "label": "Fécondité",
+      "value": 1.418,
+      "unit": "enfant/femme",
+      "year": 2024,
+      "precision": 1,
+      "coverage": "Indicateur conjoncturel · estimation 2024",
+      "source_ids": [
+        "S01"
+      ],
+      "france": "fecondite"
+    },
+    {
+      "id": "65-plus",
+      "label": "Part des 65 ans ou plus",
+      "value": 17.7917873832619,
+      "unit": "%",
+      "year": 2025,
+      "coverage": "Estimation Banque mondiale · 2025",
+      "source_ids": [
+        "S01"
+      ],
+      "france": "65-plus"
+    },
+    {
+      "id": "depenses-militaires",
+      "label": "Dépenses militaires",
+      "value": 7.5014846549,
+      "unit": "%",
+      "year": 2025,
+      "precision": 1,
+      "coverage": "Estimation SIPRI · % du PIB · 2025",
+      "source_ids": [
+        "S18"
+      ],
+      "france": "depenses-militaires-2025"
+    }
+  ],
+  "indices": [
+    {
+      "id": "idh",
+      "name": "Développement humain",
+      "acronym": "IDH",
+      "value": 0.832,
+      "rank": "64ᵉ",
+      "year": 2023,
+      "scale_min": 0,
+      "scale_max": 1,
+      "higher_is_better": true,
+      "precision": 3,
+      "source_ids": [
+        "S07"
+      ],
+      "france": "idh"
+    },
+    {
+      "id": "gini",
+      "name": "Inégalités de revenus",
+      "acronym": "Gini",
+      "value": 33.01,
+      "rank": "Sans classement",
+      "year": 2023,
+      "scale_min": 0,
+      "scale_max": 100,
+      "higher_is_better": false,
+      "precision": 1,
+      "source_ids": [
+        "S08"
+      ],
+      "coverage": "Revenu par personne · enquête Rosstat 2023",
+      "france": {
+        "status": "non_comparable",
+        "reason": "Russie : revenu par habitant de l’enquête Rosstat, harmonisé par la Banque mondiale (PIP). France : revenu disponible équivalent EU-SILC ou niveau de vie Insee. Unité et échelle d’équivalence différentes.",
+        "source_ids": [
+          "S08",
+          "FR-GINI-SILC-2025"
+        ]
+      }
+    },
+    {
+      "id": "democratie",
+      "name": "Démocratie libérale",
+      "acronym": "V-Dem",
+      "value": 0.06,
+      "rank": "162ᵉ",
+      "year": 2025,
+      "scale_min": 0,
+      "scale_max": 1,
+      "higher_is_better": true,
+      "precision": 2,
+      "source_ids": [
+        "S09"
+      ],
+      "france": "democratie"
+    },
+    {
+      "id": "presse",
+      "name": "Liberté de la presse",
+      "acronym": "RSF",
+      "value": 23.15,
+      "rank": "172ᵉ / 180",
+      "year": 2026,
+      "scale_min": 0,
+      "scale_max": 100,
+      "higher_is_better": true,
+      "precision": 2,
+      "source_ids": [
+        "S10"
+      ],
+      "france": "presse"
+    },
+    {
+      "id": "corruption",
+      "name": "Corruption perçue",
+      "acronym": "CPI",
+      "value": 22,
+      "rank": "157ᵉ / 182",
+      "year": 2025,
+      "scale_min": 0,
+      "scale_max": 100,
+      "higher_is_better": true,
+      "precision": 0,
+      "source_ids": [
+        "S11"
+      ],
+      "france": "corruption"
+    }
+  ],
+  "cities": [
+    {
+      "name": "Moscou",
+      "population": 13149803,
+      "lat": 55.75411,
+      "lon": 37.613577,
+      "note": "Capitale, pouvoir politique, finance et sièges des grands groupes.",
+      "year": 2024,
+      "source_ids": [
+        "S05",
+        "S06"
+      ]
+    },
+    {
+      "name": "Saint-Pétersbourg",
+      "population": 5597763,
+      "lat": 59.94096,
+      "lon": 30.314074,
+      "note": "Port de la Baltique, chantiers navals et patrimoine impérial.",
+      "year": 2024,
+      "source_ids": [
+        "S05",
+        "S06"
+      ]
+    },
+    {
+      "name": "Novossibirsk",
+      "population": 1633851,
+      "lat": 55.031906,
+      "lon": 82.958096,
+      "note": "Carrefour du Transsibérien et centre scientifique sibérien.",
+      "year": 2024,
+      "source_ids": [
+        "S05",
+        "S06"
+      ],
+      "offset": [
+        -4,
+        10
+      ]
+    },
+    {
+      "name": "Iekaterinbourg",
+      "population": 1536183,
+      "lat": 56.851976,
+      "lon": 60.598014,
+      "note": "Métallurgie et machines au pied de l’Oural.",
+      "year": 2024,
+      "source_ids": [
+        "S05",
+        "S06"
+      ]
+    },
+    {
+      "name": "Kazan",
+      "population": 1318604,
+      "lat": 55.751888,
+      "lon": 49.124399,
+      "note": "Capitale du Tatarstan, pétrochimie et services.",
+      "year": 2024,
+      "source_ids": [
+        "S05",
+        "S06"
+      ]
+    },
+    {
+      "name": "Krasnoïarsk",
+      "population": 1205473,
+      "lat": 56.015929,
+      "lon": 92.864055,
+      "note": "Ienisseï, hydroélectricité et aluminium.",
+      "year": 2024,
+      "source_ids": [
+        "S05",
+        "S06"
+      ],
+      "offset": [
+        10,
+        -12
+      ]
+    },
+    {
+      "name": "Nijni Novgorod",
+      "population": 1204985,
+      "lat": 56.334953,
+      "lon": 43.998149,
+      "note": "Confluent de la Volga et de l’Oka, constructeur GAZ.",
+      "year": 2024,
+      "source_ids": [
+        "S05",
+        "S06"
+      ]
+    },
+    {
+      "name": "Rostov-sur-le-Don",
+      "population": 1140487,
+      "lat": 47.236594,
+      "lon": 39.71071,
+      "note": "Porte du Sud, agriculture et logistique proche du front.",
+      "year": 2024,
+      "source_ids": [
+        "S05",
+        "S06"
+      ]
+    },
+    {
+      "name": "Togliatti",
+      "population": 667956,
+      "lat": 53.480391,
+      "lon": 49.530041,
+      "note": "AvtoVAZ et la marque Lada, sur la Volga.",
+      "year": 2024,
+      "source_ids": [
+        "S05",
+        "S06"
+      ]
+    },
+    {
+      "name": "Vladivostok",
+      "population": 591628,
+      "lat": 43.130015,
+      "lon": 131.910026,
+      "note": "Port du Pacifique et terminus du Transsibérien.",
+      "year": 2024,
+      "source_ids": [
+        "S05",
+        "S06"
+      ]
+    },
+    {
+      "name": "Iakoutsk",
+      "population": 367667,
+      "lat": 62.034959,
+      "lon": 129.735016,
+      "note": "Capitale de la Iakoutie, sur le pergélisol.",
+      "year": 2024,
+      "source_ids": [
+        "S05",
+        "S06"
+      ]
+    }
+  ],
+  "cities_title": "Des villes réparties sur deux continents",
+  "cities_scope": "Population des villes · 1er janvier 2024",
+  "cities_note": "Estimation Rosstat de la population résidente des villes. Les pins numérotés suivent l’ordre du tableau.",
+  "cities_map": {
+    "file": "cities.webp",
+    "width": 2362,
+    "height": 1299,
+    "bounds": null,
+    "projection": {
+      "type": "equidistant_conic",
+      "longitude0": 97,
+      "cone": 0.8079905491718137,
+      "radius_offset": 1.6671750744677114,
+      "radius0": 0.0,
+      "y_offset": -0.5107199120962691,
+      "scale": 70.7777470813847,
+      "y_scale": 1.8183217859892231
+    },
+    "credit": {
+      "author": "Uwe Dedering",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Russia_administrative_location_map_and_Crimea_dashed.svg"
+    },
+    "definition_url": "https://en.wikipedia.org/wiki/Module:Location_map/data/Russia",
+    "source_ids": [
+      "CITYMAP"
+    ]
+  },
+  "cities_inset": {
+    "label": "Russie d’Europe · agrandissement",
+    "cities": [
+      "Moscou",
+      "Saint-Pétersbourg",
+      "Nijni Novgorod",
+      "Kazan",
+      "Togliatti",
+      "Rostov-sur-le-Don"
+    ],
+    "center": [
+      37.9,
+      55.1
+    ],
+    "zoom": 3.6,
+    "x": 8,
+    "y": 150,
+    "width": 244,
+    "height": 196
+  },
+  "relief_title": "Plaines à l’ouest, montagnes à l’est",
+  "relief_alt": "Relief de la Russie : grande plaine européenne, Oural, plaine de Sibérie occidentale, plateaux et montagnes de Sibérie orientale.",
+  "relief_landmarks": [
+    {
+      "label": "L’Oural",
+      "text": "Une chaîne étroite, orientée du nord au sud."
+    },
+    {
+      "label": "La plaine de Sibérie occidentale",
+      "text": "Un vaste espace bas et marécageux, drainé par l’Ob."
+    },
+    {
+      "label": "L’Est montagneux",
+      "text": "Plateaux de Sibérie centrale, chaînes de l’Extrême-Orient et volcans du Kamtchatka."
+    }
+  ],
+  "charts": [
+    {
+      "id": "climat",
+      "type": "climate",
+      "title": "Un hiver long, un été court et chaud",
+      "subtitle": "Normales 1991–2020 · comparaison avec Paris-Montsouris",
+      "year": "1991–2020",
+      "source_ids": [
+        "S12"
+      ],
+      "france": "climat-paris",
+      "temperature_extent": [
+        -45,
+        30
+      ],
+      "rain_max": 100,
+      "note": "Normales climatologiques standard de l’OMM 1991–2020, fiches de station transmises par Roshydromet. Moscou : station 27612. Iakoutsk : station 24959. Minima et maxima : moyennes des températures quotidiennes. Pluie : cumul mensuel moyen des précipitations, neige comprise. Échelles communes : −45 à 30 °C et 0 à 100 mm.",
+      "places": [
+        {
+          "place": "Moscou",
+          "tmin": [
+            -8.7,
+            -8.8,
+            -4.2,
+            2.3,
+            8.1,
+            12.2,
+            14.8,
+            13,
+            8,
+            3,
+            -2.4,
+            -6.5
+          ],
+          "tmax": [
+            -3.9,
+            -3,
+            3,
+            11.7,
+            19,
+            22.4,
+            24.7,
+            22.7,
+            16.4,
+            8.9,
+            1.6,
+            -2.3
+          ],
+          "precip_mm": [
+            53,
+            43.9,
+            38.9,
+            36.6,
+            61.2,
+            77.1,
+            83.8,
+            78.2,
+            66.1,
+            70,
+            52,
+            50.9
+          ]
+        },
+        {
+          "place": "Iakoutsk",
+          "tmin": [
+            -39.8,
+            -37.2,
+            -26.1,
+            -10.4,
+            1.5,
+            9.8,
+            13.1,
+            9.3,
+            1.3,
+            -11,
+            -29.6,
+            -39.5
+          ],
+          "tmax": [
+            -34,
+            -27.9,
+            -11.7,
+            2.6,
+            13.8,
+            23.1,
+            25.8,
+            21.8,
+            11.9,
+            -3,
+            -22.3,
+            -34.3
+          ],
+          "precip_mm": [
+            9.7,
+            8.5,
+            6.3,
+            7.9,
+            20.1,
+            29.5,
+            40.1,
+            37.1,
+            29.6,
+            18.6,
+            16.9,
+            8.5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pyramide-ages",
+      "type": "pyramid",
+      "title": "Les creux des années 1990 et une large majorité féminine après 60 ans",
+      "subtitle": "Part de la population totale · % · 1er janvier 2024",
+      "year": 2024,
+      "age_groups": [
+        "0–4",
+        "5–9",
+        "10–14",
+        "15–19",
+        "20–24",
+        "25–29",
+        "30–34",
+        "35–39",
+        "40–44",
+        "45–49",
+        "50–54",
+        "55–59",
+        "60–64",
+        "65–69",
+        "70–74",
+        "75–79",
+        "80–84",
+        "85–89",
+        "90–94",
+        "95–99",
+        "100+"
+      ],
+      "male": [
+        3532537,
+        4669547,
+        4724008,
+        4018219,
+        3850048,
+        3749371,
+        5022282,
+        6291538,
+        5683625,
+        4977371,
+        4412102,
+        3938721,
+        4336949,
+        3666166,
+        2583920,
+        1237562,
+        681465,
+        409572,
+        105049,
+        23671,
+        3630
+      ],
+      "female": [
+        3331730,
+        4404331,
+        4460664,
+        3824877,
+        3589160,
+        3633552,
+        5090342,
+        6494685,
+        6060452,
+        5505814,
+        4978159,
+        4761286,
+        5815167,
+        5567377,
+        4562304,
+        2519694,
+        1867150,
+        1305929,
+        368970,
+        82170,
+        9623
+      ],
+      "unit": "personnes",
+      "source_ids": [
+        "S04"
+      ],
+      "france": "pyramide-france-2024",
+      "note": "Russie : estimation Rosstat de la population résidente au 1er janvier 2024, fondée sur le recensement de 2020 (réalisé en 2021). Crimée et Sébastopol comprises ; régions de Donetsk, Louhansk, Zaporijjia et Kherson non comprises, selon le bulletin. France : résidents au 1er janvier 2024, estimations provisoires de l’Insee.",
+      "note_visible": "Rosstat inclut la Crimée annexée dans ce total. Dernier millésime détaillé publié : 1er janvier 2024."
+    },
+    {
+      "id": "nationalites",
+      "type": "share",
+      "title": "Une majorité russe, des peuples nombreux",
+      "subtitle": "Nationalité déclarée · recensement 2020-2021 · % des réponses",
+      "year": 2021,
+      "labels": [
+        "Russes",
+        "Tatars",
+        "Tchétchènes",
+        "Bachkirs",
+        "Tchouvaches",
+        "Autres nationalités"
+      ],
+      "values": [
+        80.8494602892819,
+        3.609590434798883,
+        1.2825544131513367,
+        1.2036991572936566,
+        0.8171839658238297,
+        12.237511739650401
+      ],
+      "unit": "%",
+      "source_ids": [
+        "S13"
+      ],
+      "france": {
+        "status": "non_comparable",
+        "reason": "Le recensement français ne demande pas l’appartenance nationale ou ethnique.",
+        "source_ids": []
+      },
+      "note": "Part des 130 587 364 personnes ayant déclaré une nationalité, sur 147 182 123 recensés. Autres nationalités : résidu calculé, plus de 190 réponses distinctes. Le recensement compte la Crimée.",
+      "note_visible": "Pourcentages des seules réponses. Plus d’une personne sur dix n’a déclaré aucune nationalité."
+    },
+    {
+      "id": "salaires",
+      "type": "bar",
+      "title": "La moyenne salariale dépasse nettement la médiane",
+      "subtitle": "Salaire mensuel brut · avril 2025 · RUB/mois",
+      "year": 2025,
+      "labels": [
+        "Médiane",
+        "Moyenne"
+      ],
+      "values": [
+        73871,
+        99399
+      ],
+      "unit": "RUB/mois",
+      "highlight": "Médiane",
+      "euro": true,
+      "source_ids": [
+        "S14"
+      ],
+      "france": {
+        "status": "non_comparable",
+        "reason": "Russie : salaire brut accru d’avril, enquête par sondage auprès des organisations hors petites entreprises. France : salaires du privé en équivalent temps plein, moyenne annuelle.",
+        "source_ids": [
+          "S14",
+          "FR-WAGE"
+        ]
+      },
+      "note": "Enquête bisannuelle de Rosstat sur les salaires d’avril 2025 : 95 400 organisations et 28,4 millions de salariés. Salaire accru avant impôt sur le revenu. Petites entreprises exclues ; régions ukrainiennes annexées en 2022 non comprises.",
+      "note_visible": "Organisations hors petites entreprises. Salaire d’un seul mois, avril."
+    },
+    {
+      "id": "salaires-regions",
+      "type": "barh",
+      "title": "Du simple au quadruple selon la région",
+      "subtitle": "Salaire mensuel médian brut · avril 2025 · RUB/mois",
+      "year": 2025,
+      "labels": [
+        "Ingouchie",
+        "Daghestan",
+        "Tatarstan",
+        "Russie",
+        "Saint-Pétersbourg",
+        "Moscou",
+        "Iamalie"
+      ],
+      "values": [
+        31418,
+        35887,
+        72822,
+        73871,
+        99944,
+        128429,
+        142990
+      ],
+      "unit": "RUB/mois",
+      "highlight": "Russie",
+      "euro": true,
+      "source_ids": [
+        "S14"
+      ],
+      "france": {
+        "status": "non_comparable",
+        "reason": "Médianes régionales d’une enquête d’avril, sans série française de même champ.",
+        "source_ids": [
+          "S14"
+        ]
+      },
+      "note": "Tableau 38 du bulletin Rosstat 2025. Iamalie : district autonome des Iamalo-Nénètses, région gazière arctique."
+    },
+    {
+      "id": "pib-secteurs",
+      "type": "share",
+      "title": "Services, industrie et hydrocarbures",
+      "subtitle": "Parts du PIB courant · 2025 · %",
+      "year": 2025,
+      "labels": [
+        "Agriculture, forêt, pêche",
+        "Industrie, construction comprise",
+        "Services",
+        "Impôts nets sur les produits"
+      ],
+      "values": [
+        3.05735752541339,
+        29.673447748303,
+        58.8772323584113,
+        8.39196236787231
+      ],
+      "unit": "%",
+      "source_ids": [
+        "S16"
+      ],
+      "france": "pib-secteurs-wdi-2025",
+      "note": "Banque mondiale, WDI : parts de valeur ajoutée dans le PIB courant. Impôts nets sur les produits : 100 moins les trois parts. L’industrie comprend l’extraction de pétrole et de gaz."
+    },
+    {
+      "id": "recettes-hydrocarbures",
+      "type": "barh",
+      "title": "Le budget dépend moins du pétrole et du gaz",
+      "subtitle": "Part des recettes pétrolières et gazières dans les recettes fédérales · %",
+      "year": "2015 / 2024 / 2025",
+      "labels": [
+        "2015",
+        "2024",
+        "2025"
+      ],
+      "values": [
+        42.9,
+        30.3,
+        22.7
+      ],
+      "unit": "%",
+      "precision": 1,
+      "source_ids": [
+        "S17"
+      ],
+      "france": {
+        "status": "non_comparable",
+        "reason": "Recettes fiscales propres aux hydrocarbures russes, sans équivalent français.",
+        "source_ids": []
+      },
+      "note": "Ministère des Finances, communiqué du 4 février 2026. Budget fédéral seulement. La baisse de 2025 vient surtout du prix du pétrole ; les autres recettes progressent."
+    },
+    {
+      "id": "depenses-militaires",
+      "type": "line",
+      "title": "Un effort militaire sans équivalent depuis la fin de l’URSS",
+      "subtitle": "Dépenses militaires · % du PIB · 2010–2025",
+      "year": "2010–2025",
+      "x": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "series": [
+        {
+          "name": "Russie",
+          "values": [
+            3.5850857201,
+            3.4330438376,
+            3.6892404346,
+            3.8540425831,
+            4.1129929782,
+            4.8715147468,
+            5.425147705,
+            4.2489960517,
+            3.7198224396,
+            3.8474201139,
+            4.1447171324,
+            3.6036875729,
+            4.5558544287,
+            5.2717027939,
+            6.8741527114,
+            7.5014846549
+          ]
+        }
+      ],
+      "unit": "% du PIB",
+      "source_ids": [
+        "S18"
+      ],
+      "france": "depenses-militaires-2010-2025",
+      "note": "SIPRI, série reprise par la Banque mondiale. Estimations pour la Russie, dont une partie du budget de défense est classifiée. Même définition SIPRI pour la France.",
+      "note_visible": "Estimations SIPRI. Une part du budget russe est secrète."
+    }
+  ],
+  "prose_values": {
+    "elbrouss": {
+      "value": 5642,
+      "unit": "mètres"
+    },
+    "travail-rus": {
+      "value": 40,
+      "unit": "heures",
+      "precision": 0
+    },
+    "travail-fr": {
+      "value": 35,
+      "unit": "heures",
+      "precision": 0
+    },
+    "transsib": {
+      "value": 9288,
+      "unit": "kilomètres"
+    },
+    "vote-poutine": {
+      "value": 87.28,
+      "unit": "%",
+      "precision": 1
+    },
+    "participation-douma": {
+      "value": 59.8,
+      "unit": "%",
+      "precision": 1
+    },
+    "morts-identifies": {
+      "value": 248844,
+      "unit": "militaires"
+    },
+    "taux-directeur": {
+      "value": 14,
+      "unit": "%",
+      "precision": 0
+    },
+    "voitures-2025": {
+      "value": 673000,
+      "unit": "voitures"
+    },
+    "voitures-2022": {
+      "value": 450000,
+      "unit": "voitures"
+    },
+    "imports-fr": {
+      "value": 4100000000,
+      "unit": "euros"
+    },
+    "exports-fr": {
+      "value": 1890000000,
+      "unit": "euros"
+    },
+    "gaz-fr": {
+      "value": 77.5,
+      "unit": "%",
+      "precision": 1
+    },
+    "athletes-2026": {
+      "value": 13,
+      "unit": "athlètes",
+      "precision": 0
+    },
+    "median-auto": {
+      "value": 81610.3,
+      "unit": "RUB/mois",
+      "euro": true,
+      "year": 2025
+    },
+    "median-extraction": {
+      "value": 127601.3,
+      "unit": "RUB/mois",
+      "euro": true,
+      "year": 2025
+    },
+    "median-education": {
+      "value": 50497.1,
+      "unit": "RUB/mois",
+      "euro": true,
+      "year": 2025
+    },
+    "inflation-bas": {
+      "value": 7.1,
+      "unit": "%",
+      "precision": 1
+    },
+    "inflation-haut": {
+      "value": 7.6,
+      "unit": "%",
+      "precision": 1
+    },
+    "croissance-bas": {
+      "value": 0.5,
+      "unit": "%",
+      "precision": 1
+    },
+    "croissance-haut": {
+      "value": 1.0,
+      "unit": "%",
+      "precision": 1
+    },
+    "recul-2022": {
+      "value": 67,
+      "unit": "%",
+      "precision": 0
+    },
+    "vote-2000": {
+      "value": 53,
+      "unit": "%",
+      "precision": 0
+    },
+    "reservistes": {
+      "value": 300000,
+      "unit": "réservistes"
+    },
+    "anciens-combattants": {
+      "value": 46,
+      "unit": "anciens combattants",
+      "precision": 0
+    },
+    "pertes-totales": {
+      "value": 2000000,
+      "unit": "tués ou blessés"
+    },
+    "police-deficit": {
+      "value": 200000,
+      "unit": "postes"
+    }
+  },
+  "euro": {
+    "currency": "RUB",
+    "per_euro": 94.052204048583,
+    "year": 2025,
+    "basis": "Moyenne arithmétique des 247 cours officiels EUR/RUB fixés par la Banque de Russie du 10 janvier au 31 décembre 2025, calculée à partir de sa série publiée. Taux direct de la banque centrale nationale, sans taux croisé.",
+    "source_ids": [
+      "S15"
+    ]
+  },
+  "hero_sources": [
+    "S43",
+    "S44"
+  ],
+  "map_sources": {
+    "locator": [
+      "NE"
+    ],
+    "cities": [
+      "S05",
+      "S06"
+    ],
+    "relief": [
+      "S45"
+    ]
+  },
+  "sources": [
+    {
+      "id": "S01",
+      "text": "Banque mondiale, WDI : [population totale, fécondité et part des 65 ans ou plus, Russie](https://api.worldbank.org/v2/country/RUS/indicator/SP.POP.TOTL;SP.DYN.TFRT.IN;SP.POP.65UP.TO.ZS?source=2&date=2024:2025&format=json&per_page=100). Estimations à mi-année fondées sur les World Population Prospects de l’ONU et les statistiques nationales. Rosstat, qui compte la Crimée annexée, publie un total plus élevé."
+    },
+    {
+      "id": "S02",
+      "text": "[ONU, Annuaire démographique 2023, tableau 3](https://unstats.un.org/unsd/demographic-social/products/dyb/documents/DYB2023/table03.pdf). Fédération de Russie : superficie de 17 098 246 km²."
+    },
+    {
+      "id": "S03",
+      "text": "[FMI, World Economic Outlook, octobre 2026, série NGDPD](https://www.imf.org/external/datamapper/NGDPD@WEO/RUS) ; [extraction API](https://www.imf.org/external/datamapper/api/v1/NGDPD/RUS). Russie 2025 : 2 572,315 milliards de dollars courants. Même millésime que la référence française."
+    },
+    {
+      "id": "S04",
+      "text": "Rosstat : [page des bulletins de population par sexe et âge](https://rosstat.gov.ru/compendium/document/13284) ; [bulletin au 1er janvier 2024, archive RAR, copie Internet Archive](https://web.archive.org/web/20250404063243/https://www.rosstat.gov.ru/storage/mediabank/bul_chislen_nasel-pv_01-01-2024.rar). Tableau 1.1.1, groupes quinquennaux. Dernier millésime listé sur la page. La préface décrit le périmètre, Crimée comprise et quatre régions ukrainiennes annexées en 2022 exclues, ainsi que la surmortalité masculine."
+    },
+    {
+      "id": "S05",
+      "text": "Rosstat : [page des bulletins de population des municipalités](https://rosstat.gov.ru/compendium/document/13282) ; [bulletin au 1er janvier 2024, XLSX, copie Internet Archive](https://web.archive.org/web/20260917121848/https://rosstat.gov.ru/storage/mediabank/BUL_MO_2024.xlsx). Tableaux 23 à 25, population résidente des villes."
+    },
+    {
+      "id": "S06",
+      "text": "[Natural Earth, populated places, 1:10m, GeoJSON](https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_populated_places.geojson). Coordonnées des onze villes ; données du domaine public."
+    },
+    {
+      "id": "S07",
+      "text": "[PNUD, Human Development Report 2025, tableau des indices](https://www.undp.org/sites/g/files/zskgke326/files/2025-05/hdr2025overviewen.pdf), données 2023. Fédération de Russie : IDH 0,832, rang 64."
+    },
+    {
+      "id": "S08",
+      "text": "[Banque mondiale, Poverty and Inequality Platform, Russie](https://api.worldbank.org/pip/v1/pip?country=RUS&year=all&format=json). Année 2023, revenu par habitant, enquête Rosstat sur les revenus des ménages (VNDN) : Gini 0,3301."
+    },
+    {
+      "id": "S09",
+      "text": "[V-Dem, Democracy Report 2026, tableau A2](https://www.v-dem.net/documents/75/V-Dem_Institute_Democracy_Report_2026_lowres.pdf), données 2025. Russie : indice de démocratie libérale 0,06, rang 162."
+    },
+    {
+      "id": "S10",
+      "text": "[RSF, Russie, classement 2026](https://rsf.org/en/country/russia). Score 23,15 sur 100 ; rang 172 sur 180."
+    },
+    {
+      "id": "S11",
+      "text": "[Transparency International, Russie, CPI 2025](https://www.transparency.org/en/countries/russia). Score 22 sur 100 ; rang 157 sur 182."
+    },
+    {
+      "id": "S12",
+      "text": "OMM, normales climatologiques standard 1991–2020, archive NCEI 0253808 : [Moskva, station 27612, CSV](https://www.nodc.noaa.gov/archive/arc0216/0253808/3.3/data/0-data/Region-6-WMO-Normals-9120/RussianFederation/CSV/Moskva_27612.csv) ; [Jakutsk, station 24959, CSV](https://www.nodc.noaa.gov/archive/arc0216/0253808/3.3/data/0-data/Region-2-WMO-Normals-9120/RussianFederation/CSV/Jakutsk_24959.csv). Paramètres 1, 3 et 4 : précipitations, maxima et minima quotidiens moyens."
+    },
+    {
+      "id": "S13",
+      "text": "Rosstat, recensement de 2020 réalisé en octobre et novembre 2021 : [tome 5, nationalités et langues](https://rosstat.gov.ru/vpn/2020/Tom5_Nacionalnyj_sostav_i_vladenie_yazykami) ; [tableau 1, XLSX](https://rosstat.gov.ru/storage/mediabank/Tom5_tab1_VPN-2020.xlsx), feuille Fédération de Russie. Parts calculées sur les personnes ayant déclaré une nationalité."
+    },
+    {
+      "id": "S14",
+      "text": "Rosstat : [page des statistiques de salaires](https://rosstat.gov.ru/labour_costs) ; [bulletin sur la répartition des salariés par niveau de salaire, avril 2025, archive RAR, copie Internet Archive](https://web.archive.org/web/20260923164417/https://rosstat.gov.ru/storage/mediabank/Bul_zp_2025.rar). Tableau 38 : médiane et moyenne par région ; tableau 9 : médiane par activité."
+    },
+    {
+      "id": "S15",
+      "text": "[Banque de Russie, cours officiels de l’euro, 2025, série XML](https://www.cbr.ru/scripts/XML_dynamic.asp?date_req1=01/01/2025&date_req2=31/12/2025&VAL_NM_RQ=R01239) ; [consultation des cours](https://www.cbr.ru/eng/currency_base/dynamics/). Moyenne arithmétique des 247 cours EUR/RUB fixés en 2025 : 94,0522 RUB pour 1 €."
+    },
+    {
+      "id": "S16",
+      "text": "[Banque mondiale, WDI, parts de valeur ajoutée de la Russie en 2025](https://api.worldbank.org/v2/country/RUS/indicator/NV.AGR.TOTL.ZS;NV.IND.TOTL.ZS;NV.SRV.TOTL.ZS?source=2&date=2025&format=json&per_page=100). Agriculture, industrie construction comprise, services : parts du PIB courant. Impôts nets sur les produits : 100 moins ces parts. Même définition que la référence française."
+    },
+    {
+      "id": "S17",
+      "text": "[Ministère des Finances de la Russie, communiqué du 4 février 2026 sur la dépendance aux matières premières](https://minfin.gov.ru/ru/press-center/?id_4=40181-minfin_snizhenie_syrevoi_zavisimosti_povysilo_ustoichivost_federalnogo_byudzheta). Parts de 42,9 % en 2015, 30,3 % en 2024 et 22,7 % en 2025."
+    },
+    {
+      "id": "S18",
+      "text": "[Banque mondiale, WDI, dépenses militaires en % du PIB, Russie](https://api.worldbank.org/v2/country/RUS/indicator/MS.MIL.XPND.GD.ZS?source=2&date=2010:2025&format=json&per_page=100). Données du [SIPRI Military Expenditure Database](https://www.sipri.org/databases/milex). Estimations pour la Russie. Usage non commercial selon les [conditions du SIPRI](https://www.sipri.org/about/terms-and-conditions)."
+    },
+    {
+      "id": "S19",
+      "text": "[Banque de Russie, déclaration d’Elvira Nabioullina après le conseil du 23 octobre 2026](https://www.cbr.ru/eng/press/event/?id=32930). Taux directeur maintenu à 14 %, prévisions d’inflation et de croissance pour 2026."
+    },
+    {
+      "id": "S20",
+      "text": "[TASS, production de voitures particulières en 2022 selon Rosstat, 01/02/2023](https://tass.com/economy/1570197)."
+    },
+    {
+      "id": "S21",
+      "text": "[Auto Mail.ru, production de voitures particulières en 2025 selon Rosstat, 07/02/2026](https://auto.mail.ru/article/118051-vyipusk-legkovyih-avto-v-rossii-upal-na-12-v-2025-godu/)."
+    },
+    {
+      "id": "S22",
+      "text": "[Renault Group, cession de Renault Russie et de la participation dans AVTOVAZ, 16/05/2022](https://www.globenewswire.com/fr/news-release/2022/05/16/2443407/0/en/Renault-Group-signs-agreements-to-sell-Renault-Russia-and-its-controlling-interest-in-AVTOVAZ.html). Participation de 67,69 % cédée à NAMI, option de rachat pendant six ans."
+    },
+    {
+      "id": "S23",
+      "text": "[Direction générale du Trésor, relations commerciales franco-russes en 2025, 01/07/2026](https://www.tresor.economie.gouv.fr/Pays/RU/les-relations-commerciales-bilaterales-franco-russes-juin-2018). Données des douanes françaises."
+    },
+    {
+      "id": "S24",
+      "text": "[France Diplomatie, Russie, politique et économie, mise à jour du 29/10/2026](https://www.diplomatie.gouv.fr/fr/information-par-pays/russie/politique-et-economie)."
+    },
+    {
+      "id": "S25",
+      "text": "[Al Jazeera, libération de Laurent Vinatier, 08/01/2026](https://www.aljazeera.com/news/2026/1/8/russia-releases-french-researcher-in-prisoner-exchange)."
+    },
+    {
+      "id": "S26",
+      "text": "[Congressional Research Service, Russia: Domestic Politics and Economy, R46518](https://www.everycrsreport.com/reports/R46518.html). Parcours de Vladimir Poutine, tandem avec Dmitri Medvedev, manifestations de 2011, réforme constitutionnelle de 2020."
+    },
+    {
+      "id": "S27",
+      "text": "[RFE/RL, cérémonie d’annexion de quatre régions ukrainiennes, 30/09/2022](https://www.rferl.org/a/putin-ukraine-annexation-ceremony-referendums/32059056.html)."
+    },
+    {
+      "id": "S28",
+      "text": "[Cyprus Mail / Reuters, ordre de mobilisation, 21/09/2022](https://cyprus-mail.com/2022/09/21/putin-orders-mobilisation-for-ukraine-says-nuclear-threat-is-not-a-bluff). Annonce de 300 000 réservistes par le ministre de la Défense."
+    },
+    {
+      "id": "S29",
+      "text": "[Euronews / AP, un an après la mutinerie de Wagner, 23/06/2024](https://www.euronews.com/2024/06/23/a-year-ago-a-mutiny-by-a-mercenary-boss-briefly-threatened-putin)."
+    },
+    {
+      "id": "S30",
+      "text": "[Toute l’Europe, guerre en Ukraine, chronologie, mise à jour du 03/09/2026](https://www.touteleurope.eu/l-ue-dans-le-monde/guerre-en-ukraine-chronologie-des-evenements/). Crimée en 2014, invasion de 2022, mort d’Alexeï Navalny, offensive de Koursk, sommet d’Anchorage."
+    },
+    {
+      "id": "S31",
+      "text": "[The Moscow Times, résultats officiels de la présidentielle, 21/03/2024](https://www.themoscowtimes.com/2024/03/21/russian-election-officials-declare-putin-winner-of-presidential-race-a84554) ; [PBS NewsHour / AP, 18/03/2024](https://www.pbs.org/newshour/world/putin-secures-5th-term-as-russias-president-after-preordained-election)."
+    },
+    {
+      "id": "S32",
+      "text": "[Meduza, résultats définitifs des législatives, 25/09/2026](https://meduza.io/en/news/2026/09/25/united-russia-won-349-of-450-seats-in-russia-s-new-state-duma-parliament-will-include-46-war-participants). Données de la Commission électorale centrale."
+    },
+    {
+      "id": "S33",
+      "text": "[Congressional Research Service, Russia’s War Against Ukraine: Diplomatic Talks and U.S. Policy, IN12534, 07/08/2026](https://www.everycrsreport.com/files/2026-08-07_IN12534_ba69bd8b7f9f6fb269a222593943d5afcfdc9a3e.pdf)."
+    },
+    {
+      "id": "S34",
+      "text": "[Al Jazeera, pourparlers d’Abou Dhabi et rencontre au Kremlin, 12/11/2026](https://www.aljazeera.com/news/2026/11/12/us-envoys-arrive-in-moscow-for-russia-ukraine-talks-with-putin)."
+    },
+    {
+      "id": "S35",
+      "text": "[Kyiv Independent, décompte nominatif de Mediazona et BBC News Russian, 14/09/2026](https://kyivindependent.com/over-248-000-russian-soldiers-killed-in-ukraine-identified-by-media-investigation/). Décès identifiés jusqu’au 10 septembre 2026 ; chiffre minimal."
+    },
+    {
+      "id": "S36",
+      "text": "[Anadolu, blocage de WhatsApp et messagerie nationale Max, 12/02/2026](https://www.aa.com.tr/en/asia-pacific/kremlin-defends-whatsapp-block-urges-use-of-national-messenger-max/3828089)."
+    },
+    {
+      "id": "S37",
+      "text": "[Euronews, descentes de police dans des clubs moscovites, 30/11/2024](https://www.euronews.com/2024/11/30/police-carry-out-anti-lgbtq-raids-on-some-of-moscows-bars-and-clubs)."
+    },
+    {
+      "id": "S38",
+      "text": "[Mixmag, annulation du festival Outline, 24/07/2026](https://mixmag.net/read/moscow-outline-festival-cancelled-cites-threat-drone-strikes-news)."
+    },
+    {
+      "id": "S39",
+      "text": "[AP / Washington Times, athlètes russes neutres aux Jeux de Milan-Cortina, 27/01/2026](https://www.washingtontimes.com/news/2026/jan/27/winter-olympics-set-13-russian-athletes-7-belarus-competing/)."
+    },
+    {
+      "id": "S40",
+      "text": "[Encyclopaedia Britannica, Trans-Siberian Railroad](https://www.britannica.com/topic/Trans-Siberian-Railroad). Longueur de 9 288 km entre Moscou et Vladivostok."
+    },
+    {
+      "id": "S41",
+      "text": "Michigan State University, Seventeen Moments in Soviet History : [1917](https://soviethistory.msu.edu/1917/) ; [fin de l’Union soviétique, 1991](https://soviethistory.msu.edu/1991/end-of-the-soviet-union/)."
+    },
+    {
+      "id": "S42",
+      "text": "[Code du travail de la Fédération de Russie, article 91, ConsultantPlus](https://www.consultant.ru/document/cons_doc_LAW_34683/). Durée normale du travail limitée à 40 heures par semaine."
+    },
+    {
+      "id": "S43",
+      "text": "[CIA World Factbook, Russie, copie Internet Archive de janvier 2026](https://web.archive.org/web/20260105051435/https://www.cia.gov/the-world-factbook/page-data/countries/russia/page-data.json). Relief, climat, Elbrouz, Baïkal, risques naturels, religions traditionnelles. Publication arrêtée en février 2026 ; domaine public."
+    },
+    {
+      "id": "S44",
+      "text": "[Wikimedia Commons, Flag of Russia.svg](https://commons.wikimedia.org/wiki/File:Flag_of_Russia.svg). Domaine public, symbole officiel de l’État. Dessin conservé."
+    },
+    {
+      "id": "S45",
+      "text": "[Wikimedia Commons, Russia rel location map.png](https://commons.wikimedia.org/wiki/File:Russia_rel_location_map.png). Uwe Dedering, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0). Réduction proportionnelle à 1 100 px de large et conversion WebP, qualité 85, sans recadrage ni recoloration, 154 268 octets."
+    },
+    {
+      "id": "S46",
+      "text": "[Constitution de la Fédération de Russie, chapitre 3, article 68, traduction anglaise](http://www.constitution.ru/en/10003000-04.htm). Le russe est langue d’État ; les républiques peuvent établir leurs propres langues d’État."
+    },
+    {
+      "id": "S47",
+      "text": "[UNESCO, culture de la cuisson du bortsch ukrainien, inscription de 2022 sur la liste de sauvegarde urgente](https://ich.unesco.org/en/USL/culture-of-ukrainian-borscht-cooking-01852)."
+    },
+    {
+      "id": "S48",
+      "text": "[SBS Food, What you need to know about Russian food, 13/06/2018](https://www.sbs.com.au/food/article/what-you-need-to-know-about-russian-food/2wjn6o6zv)."
+    },
+    {
+      "id": "S49",
+      "text": "[Chemins de mémoire, ministère des Armées, le Normandie-Niemen sur le front de l’Est](https://www.cheminsdememoire.gouv.fr/fr/node/6665)."
+    },
+    {
+      "id": "S50",
+      "text": "[CNAS, The Russia Stability Tracker, 29/09/2026](https://www.cnas.org/publications/reports/the-russia-stability-tracker-sep26). Croissance, inflation, dette des industries militaires et des régions, salaires de la défense, sous-effectifs de la police."
+    },
+    {
+      "id": "NE",
+      "text": "[Natural Earth](https://www.naturalearthdata.com/about/terms-of-use/), domaine public. Contours 1:110 m et 1:50 m. Projection régionale et repère mondial du localisateur. Les contours ne constituent pas une position sur les frontières."
+    },
+    {
+      "id": "CITYMAP",
+      "text": "[Wikimedia Commons, Russia administrative location map and Crimea dashed.svg](https://commons.wikimedia.org/wiki/File:Russia_administrative_location_map_and_Crimea_dashed.svg). Uwe Dedering, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0). SVG de 8,7 Mo rendu à 1 100 px de large puis converti en WebP, qualité 90, sans recadrage ni recoloration. [Formules de projection](https://en.wikipedia.org/wiki/Module:Location_map/data/Russia) : conique équidistante du module, convertie sans approximation dans les sept paramètres de la projection equidistant_conic. La Crimée apparaît hachurée sur la carte source ; le fond ne constitue pas une position sur les frontières. Repères numérotés ajoutés à l’affichage."
+    }
+  ]
+}
