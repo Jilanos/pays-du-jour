@@ -196,6 +196,12 @@ Store those seven numeric parameters in `projection`, with its `type`; set `boun
 `null`. See the USA and CHN records. Add explicit support and reference-point tests for
 any other projection before using it. Module formulas are never evaluated as code.
 
+Japan's current module uses `projection: {"type": "japan_side_map"}` and `bounds: null`.
+The renderer implements its exact two-frame formulas: above 30.90° N, longitude spans
+128.24–149.27° E and latitude 45.86–30.02° N; at or below 30.90° N, longitude spans
+110.43–131.44° E and latitude 39.54–23.71° N. This type requires the exact Japan module
+and its map with the Ryukyu side panel. The full image frame remains unchanged.
+
 `source_ids` are automatically cited alongside `map_sources.cities`. The bibliography
 entry must link the Commons file page, author, licence, module and any conversion.
 The renderer also attaches the declared author and licence to the first map source.

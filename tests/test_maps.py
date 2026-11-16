@@ -32,6 +32,33 @@ def test_distant_polygon_crossing_opposite_meridian_stays_outside_regional_frame
         assert max(xs) < 0 or min(xs) > 400
 
 
+@pytest.mark.parametrize(
+    "point,expected",
+    [
+        ((139.6917, 35.6895), (0.5445411317, 0.6420770202)),
+        ((141.3545, 43.0621), (0.6236091298, 0.1766351010)),
+        ((127.6809, 26.2124), (0.8210804379, 0.8419204043)),
+        ((128.24, 45.86), (0, 0)),
+        ((131.44, 23.71), (1, 1)),
+        ((128, 30.90), (0.8362684436, 0.5457991156)),
+    ],
+)
+def test_japan_module_reference_locations(point, expected):
+    # Coastal cities, Naha in the side panel, frame corners and the branch boundary.
+    data = {"projection": {"type": "japan_side_map"}}
+    assert map_point(data, point) == pytest.approx(expected, abs=1e-8)
+
+
+def test_japan_projection_rejects_wrong_module_and_rectangular_bounds():
+    data = deepcopy(country_data("MAR")["cities_map"])
+    data["projection"] = {"type": "japan_side_map"}
+    with pytest.raises(ValueError, match="exact Wikipedia module"):
+        validate_city_map(data, Settings().content_dir / "MAR/assets")
+    data["definition_url"] = "https://en.wikipedia.org/wiki/Module:Location_map/data/Japan"
+    with pytest.raises(ValueError, match="two frames"):
+        validate_city_map(data, Settings().content_dir / "MAR/assets")
+
+
 def test_rectangular_map_corners_and_antimeridian():
     data = {
         "projection": {"type": "equirectangular"},
