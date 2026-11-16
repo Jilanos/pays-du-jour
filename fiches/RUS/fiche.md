@@ -28,7 +28,7 @@ La population se concentre à l’ouest de l’Oural. Moscou domine nettement le
 
 {{map:relief}}
 
-À l’ouest de l’Oural, une vaste plaine porte des collines basses. La Sibérie associe forêts de conifères et toundra. Montagnes et hauts plateaux longent les frontières du sud. L’Elbrouz, dans le Caucase, culmine à {{value:elbrouss}}. Le lac Baïkal est le plus profond du monde. Le Kamtchatka appartient à la ceinture de feu du Pacifique, avec ses volcans actifs. Le pergélisol couvre une grande partie de la Sibérie et complique chaque chantier. {#geographie-relief sources="S43" label="Plaines, Oural et Sibérie"}
+À l’ouest de l’Oural, une vaste plaine porte des collines basses. La Sibérie associe forêts de conifères et toundra. Montagnes et hauts plateaux longent les frontières du sud. L’Elbrouz, dans le Caucase, culmine à {{value:elbrouss}}. Le lac Baïkal est le plus profond du monde. Le Kamtchatka appartient à la ceinture de feu du Pacifique, avec ses volcans actifs. Le pergélisol couvre une grande partie de la Sibérie et freine son développement. {#geographie-relief sources="S43" label="Plaines, Oural et Sibérie"}
 
 Le climat passe de la steppe au sud au continental humide dans la Russie d’Europe. La Sibérie est subarctique et le littoral polaire relève de la toundra. Les hivers vont de doux sur la mer Noire à glacials en Sibérie. Les feux de forêt d’été et les crues de printemps touchent la Sibérie. {#geographie-climat sources="S43" label="Du subarctique à la steppe"}
 
@@ -42,7 +42,7 @@ Moscou passe plusieurs mois sous zéro, puis connaît un été tiède. Ses pluie
 
 {{chart:pyramide-ages}}
 
-La pyramide porte les marques de l’histoire. Les générations nées dans les années 1990 sont peu nombreuses. Celles des années 1980 forment un renflement. Après 60 ans, les femmes sont nettement plus nombreuses que les hommes. Rosstat attribue ce déséquilibre à la forte mortalité prématurée des hommes. La France présente une base plus large et des âges plus équilibrés. {#population-pyramide sources="S04,FR-AGE-RUS" label="Une pyramide marquée par l’histoire"}
+La pyramide porte les marques de l’histoire. Les générations nées dans les années 1990 sont peu nombreuses. Celles des années 1980 forment un renflement. Après 60 ans, les femmes sont nettement plus nombreuses que les hommes. Rosstat attribue ce déséquilibre à la forte mortalité prématurée des hommes. Les moins de cinq ans sont moins nombreux que les enfants de 5 à 14 ans : les naissances reculent. La France compte une part plus forte de personnes de 75 ans ou plus. {#population-pyramide sources="S04,FR-AGE-RUS" label="Une pyramide marquée par l’histoire"}
 
 La fécondité reste inférieure au niveau français. La population décline lentement. Rosstat n’a plus publié de pyramide détaillée après celle du 1er janvier 2024. {#population-fecondite sources="S01,S04" label="Fécondité et statistiques"}
 
@@ -147,9 +147,9 @@ En 2025, les importations françaises depuis la Russie atteignent {{value:import
 
 L’effort militaire russe a plus que doublé depuis 2021, en part de PIB. Il dépasse largement celui de la France. Ces chiffres restent des estimations. Une partie du budget de la défense est classifiée. {#guerre-depenses sources="S18,FR-MIL-SIPRI" label="Dépenses militaires"}
 
-Les dépenses fédérales dépassent les recettes, sans accès aux emprunts internationaux. Les industries militaires et les budgets régionaux accumulent des dettes. Les salaires de la défense attirent la main-d’œuvre. La police manque ainsi de plus de {{value:police-deficit}} en 2025. L’inflation et les taux élevés pèsent sur les entreprises et les ménages. {#guerre-modele sources="S50,S19" label="Un modèle coûteux"}
+Les dépenses fédérales dépassent les recettes, sans accès aux emprunts internationaux. Les industries militaires et les budgets régionaux accumulent des dettes. Les salaires de la défense attirent la main-d’œuvre. En 2025, il manque ainsi plus de {{value:police-deficit}} à la police. L’inflation et les taux élevés pèsent sur les entreprises et les ménages. {#guerre-modele sources="S50,S19" label="Un modèle coûteux"}
 
-Le coût humain est massif. Selon les estimations citées par le Congrès américain, les pertes des deux camps atteignent jusqu’à {{value:pertes-totales}}. La répression reste un pilier de la stabilité du régime. {#guerre-cout sources="S33,S50" label="Coût humain et répression"}
+Le coût humain est massif. Selon les estimations citées par le service de recherche du Congrès américain, les pertes des deux camps atteignent jusqu’à {{value:pertes-totales}}. La répression reste un pilier de la stabilité du régime. {#guerre-cout sources="S33,S50" label="Coût humain et répression"}
 
 ## Le saviez-vous ?
 

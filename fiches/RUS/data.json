@@ -216,6 +216,10 @@
       "source_ids": [
         "S05",
         "S06"
+      ],
+      "offset": [
+        9,
+        3
       ]
     },
     {
@@ -337,7 +341,7 @@
     ]
   },
   "cities_inset": {
-    "label": "Russie d’Europe · agrandissement",
+    "label": "Russie d’Europe",
     "cities": [
       "Moscou",
       "Saint-Pétersbourg",
@@ -365,7 +369,7 @@
     },
     {
       "label": "La plaine de Sibérie occidentale",
-      "text": "Un vaste espace bas et marécageux, drainé par l’Ob."
+      "text": "Un vaste espace bas entre l’Oural et l’Ienisseï."
     },
     {
       "label": "L’Est montagneux",
@@ -384,11 +388,11 @@
       ],
       "france": "climat-paris",
       "temperature_extent": [
-        -45,
-        30
+        -40,
+        40
       ],
       "rain_max": 100,
-      "note": "Normales climatologiques standard de l’OMM 1991–2020, fiches de station transmises par Roshydromet. Moscou : station 27612. Iakoutsk : station 24959. Minima et maxima : moyennes des températures quotidiennes. Pluie : cumul mensuel moyen des précipitations, neige comprise. Échelles communes : −45 à 30 °C et 0 à 100 mm.",
+      "note": "Normales climatologiques standard de l’OMM 1991–2020, fiches de station transmises par Roshydromet. Moscou : station 27612. Iakoutsk : station 24959. Minima et maxima : moyennes des températures quotidiennes. Pluie : cumul mensuel moyen des précipitations, neige comprise. Échelles communes : −40 à 40 °C et 0 à 100 mm.",
       "places": [
         {
           "place": "Moscou",
@@ -596,7 +600,7 @@
         "reason": "Le recensement français ne demande pas l’appartenance nationale ou ethnique.",
         "source_ids": []
       },
-      "note": "Part des 130 587 364 personnes ayant déclaré une nationalité, sur 147 182 123 recensés. Autres nationalités : résidu calculé, plus de 190 réponses distinctes. Le recensement compte la Crimée.",
+      "note": "Part des 130 587 364 personnes ayant déclaré une nationalité, sur 147 182 123 recensés. Autres nationalités : résidu calculé, avec les réponses non classées. Le recensement compte la Crimée.",
       "note_visible": "Pourcentages des seules réponses. Plus d’une personne sur dix n’a déclaré aucune nationalité."
     },
     {
@@ -621,13 +625,13 @@
       ],
       "france": {
         "status": "non_comparable",
-        "reason": "Russie : salaire brut accru d’avril, enquête par sondage auprès des organisations hors petites entreprises. France : salaires du privé en équivalent temps plein, moyenne annuelle.",
+        "reason": "Russie : salaire brut d’avril, enquête par sondage auprès des organisations hors petites entreprises. France : salaires du privé en équivalent temps plein, moyenne annuelle.",
         "source_ids": [
           "S14",
           "FR-WAGE"
         ]
       },
-      "note": "Enquête bisannuelle de Rosstat sur les salaires d’avril 2025 : 95 400 organisations et 28,4 millions de salariés. Salaire accru avant impôt sur le revenu. Petites entreprises exclues ; régions ukrainiennes annexées en 2022 non comprises.",
+      "note": "Enquête bisannuelle de Rosstat sur les salaires d’avril 2025 : 95 400 organisations et 28,4 millions de salariés. Salaire brut, avant impôt sur le revenu. Petites entreprises exclues ; régions ukrainiennes annexées en 2022 non comprises.",
       "note_visible": "Organisations hors petites entreprises. Salaire d’un seul mois, avril."
     },
     {
@@ -774,7 +778,7 @@
         "S18"
       ],
       "france": "depenses-militaires-2010-2025",
-      "note": "SIPRI, série reprise par la Banque mondiale. Estimations pour la Russie, dont une partie du budget de défense est classifiée. Même définition SIPRI pour la France.",
+      "note": "SIPRI, série reprise par la Banque mondiale. Estimations pour la Russie, dont une partie du budget de défense est classifiée. La série russe commence en 1992 ; 2025 en est le maximum. Même définition SIPRI pour la France.",
       "note_visible": "Estimations SIPRI. Une part du budget russe est secrète."
     }
   ],
@@ -905,7 +909,7 @@
     },
     "police-deficit": {
       "value": 200000,
-      "unit": "postes"
+      "unit": "agents"
     }
   },
   "euro": {

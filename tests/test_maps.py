@@ -10,7 +10,7 @@ from app.config import Settings
 from app.content import read_fiche
 from app.maps import cities, map_point, path, validate_city_map
 
-CODES = ("TWN", "USA", "CHN", "CHE", "MAR", "DZA", "JPN")
+CODES = ("TWN", "USA", "CHN", "CHE", "MAR", "DZA", "JPN", "RUS")
 
 
 def country_data(code):
@@ -76,6 +76,11 @@ def test_rectangular_map_corners_and_antimeridian():
         ("USA", (-122.33, 47.61), (0.11490606, 0.09482243)),
         ("CHN", (116.39, 39.91), (0.69260357, 0.42323668)),
         ("CHN", (121.5, 31.2), (0.80296350, 0.62750885)),
+        # Russia module formulas evaluated literally: Moscow, Vladivostok, Yakutsk, Kaliningrad.
+        ("RUS", (37.613577, 55.75411), (0.13501950, 0.44061778)),
+        ("RUS", (131.910026, 43.130015), (0.80590512, 0.87978916)),
+        ("RUS", (129.735016, 62.034959), (0.68425201, 0.51616869)),
+        ("RUS", (20.51, 54.71), (0.05567427, 0.27586892)),
     ],
 )
 def test_module_reference_locations(code, point, expected):
