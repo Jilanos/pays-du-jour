@@ -285,7 +285,12 @@
       "france": "climat-paris",
       "source_ids": [
         "S09"
-      ]
+      ],
+      "temperature_extent": [
+        0,
+        30
+      ],
+      "rain_max": 100
     },
     {
       "id": "pyramide-ages",
