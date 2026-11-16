@@ -1,0 +1,784 @@
+{
+  "keyfacts": [
+    {
+      "id": "population",
+      "label": "Population estimée",
+      "value": 5557096,
+      "unit": "habitants",
+      "year": 2025,
+      "coverage": "Palestiniens des territoires · fin 2025",
+      "source_ids": [
+        "S01"
+      ],
+      "france": "population"
+    },
+    {
+      "id": "superficie",
+      "label": "Superficie",
+      "value": 6025,
+      "unit": "km²",
+      "year": 2023,
+      "coverage": "Cisjordanie, Jérusalem-Est et Gaza · cadre territorial",
+      "source_ids": [
+        "S04"
+      ],
+      "france": {
+        "status": "non_comparable",
+        "reason": "Champ hydrologique non harmonisé avec la superficie Eurostat française.",
+        "source_ids": [
+          "FR-AREA"
+        ]
+      }
+    },
+    {
+      "id": "pib-nominal",
+      "label": "PIB nominal",
+      "value": 16016900000,
+      "unit": "USD",
+      "year": 2024,
+      "coverage": "Prix courants · WDI 2024",
+      "source_ids": [
+        "S02"
+      ],
+      "france": "pib-wdi-2024"
+    },
+    {
+      "id": "fecondite",
+      "label": "Fécondité estimée",
+      "value": 3.25,
+      "unit": "enfant/femme",
+      "year": 2024,
+      "coverage": "Indicateur conjoncturel · WDI 2024",
+      "source_ids": [
+        "S02"
+      ],
+      "precision": 1,
+      "france": "fecondite-wdi-2024"
+    },
+    {
+      "id": "65-plus",
+      "label": "Part des 65 ans ou plus",
+      "value": 3.83773428275027,
+      "unit": "%",
+      "year": 2024,
+      "coverage": "Population estimée · WDI 2024",
+      "source_ids": [
+        "S02"
+      ],
+      "france": "65plus-wdi-2024"
+    }
+  ],
+  "indices": [
+    {
+      "id": "idh",
+      "name": "Développement humain",
+      "acronym": "IDH",
+      "value": 0.674,
+      "year": 2023,
+      "rank": "133ᵉ / 193",
+      "scale_min": 0,
+      "scale_max": 1,
+      "higher_is_better": true,
+      "precision": 3,
+      "source_ids": [
+        "S05"
+      ],
+      "france": "idh",
+      "coverage": "Édition PNUD 2025 · données 2023"
+    },
+    {
+      "id": "gini",
+      "name": "Inégalités de consommation",
+      "acronym": "Gini",
+      "value": 34.4,
+      "year": 2023,
+      "rank": "Sans classement",
+      "scale_min": 0,
+      "scale_max": 100,
+      "higher_is_better": false,
+      "precision": 1,
+      "source_ids": [
+        "S06"
+      ],
+      "france": "gini-pse",
+      "coverage": "Cisjordanie seule · consommation par personne · 2023"
+    },
+    {
+      "id": "democratie-cisjordanie",
+      "name": "Démocratie libérale · Cisjordanie",
+      "acronym": "V-Dem",
+      "value": 0.11,
+      "year": 2025,
+      "rank": "138ᵉ",
+      "scale_min": 0,
+      "scale_max": 1,
+      "higher_is_better": true,
+      "precision": 2,
+      "source_ids": [
+        "S07"
+      ],
+      "france": "democratie",
+      "coverage": "Unité V-Dem Palestine/West Bank · 2025"
+    },
+    {
+      "id": "democratie-gaza",
+      "name": "Démocratie libérale · Gaza",
+      "acronym": "V-Dem",
+      "value": 0.06,
+      "year": 2025,
+      "rank": "160ᵉ",
+      "scale_min": 0,
+      "scale_max": 1,
+      "higher_is_better": true,
+      "precision": 2,
+      "source_ids": [
+        "S07"
+      ],
+      "france": "democratie",
+      "coverage": "Unité V-Dem Palestine/Gaza · 2025"
+    },
+    {
+      "id": "presse",
+      "name": "Liberté de la presse",
+      "acronym": "RSF",
+      "value": 32.09,
+      "year": 2026,
+      "rank": "156ᵉ / 180",
+      "scale_min": 0,
+      "scale_max": 100,
+      "higher_is_better": true,
+      "precision": 2,
+      "source_ids": [
+        "S08"
+      ],
+      "france": "presse",
+      "coverage": "Classement 2026"
+    }
+  ],
+  "charts": [
+    {
+      "id": "climat",
+      "type": "climate",
+      "title": "Collines fraîches, vallée brûlante",
+      "subtitle": "Ramallah et Jéricho · observations mensuelles de 2024",
+      "year": 2024,
+      "source_ids": [
+        "S10"
+      ],
+      "temperature_extent": [
+        0,
+        45
+      ],
+      "rain_max": 300,
+      "note_visible": "Une année observée, pas une normale climatique. Gaza n’est pas représentée.",
+      "france": {
+        "status": "non_comparable",
+        "reason": "Observations palestiniennes de 2024 ; la référence Paris disponible couvre les normales 1991–2020.",
+        "source_ids": [
+          "FR-CLIM"
+        ]
+      },
+      "places": [
+        {
+          "place": "Ramallah",
+          "tmin": [
+            7.6,
+            7.2,
+            9.5,
+            14,
+            15.1,
+            21.2,
+            21.5,
+            20.2,
+            18.7,
+            15.1,
+            11,
+            8.1
+          ],
+          "tmax": [
+            13.5,
+            13.3,
+            17.2,
+            22.9,
+            24,
+            30.9,
+            30,
+            29.3,
+            27.2,
+            23.9,
+            18.3,
+            15.1
+          ],
+          "precip_mm": [
+            265.8,
+            95.7,
+            61,
+            15.7,
+            11.5,
+            0,
+            0,
+            0,
+            2.2,
+            0,
+            38.1,
+            85.9
+          ]
+        },
+        {
+          "place": "Jéricho",
+          "tmin": [
+            13.8,
+            13,
+            15.7,
+            20.7,
+            22.6,
+            27.9,
+            29.2,
+            28.7,
+            26.9,
+            22.4,
+            17.5,
+            12.7
+          ],
+          "tmax": [
+            22.7,
+            22.9,
+            27.5,
+            34,
+            35.2,
+            42.2,
+            41.8,
+            40.7,
+            38,
+            33.7,
+            27.7,
+            23.3
+          ],
+          "precip_mm": [
+            22.6,
+            15.6,
+            18.3,
+            0.7,
+            3.2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            3.2,
+            30.5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pyramide-ages",
+      "type": "pyramid",
+      "title": "Une population très jeune",
+      "subtitle": "Estimations WDI · milieu de 2024 · part du total des deux sexes",
+      "year": 2024,
+      "unit": "personnes",
+      "age_groups": [
+        "0–4",
+        "5–9",
+        "10–14",
+        "15–19",
+        "20–24",
+        "25–29",
+        "30–34",
+        "35–39",
+        "40–44",
+        "45–49",
+        "50–54",
+        "55–59",
+        "60–64",
+        "65–69",
+        "70–74",
+        "75–79",
+        "80+"
+      ],
+      "male": [
+        352495.7106552431,
+        352616.49956014456,
+        320468.84532021073,
+        270519.9863740565,
+        231124.03537855652,
+        213035.05471563808,
+        203549.03521984254,
+        165510.1547893869,
+        127221.51562727948,
+        99185.49646100799,
+        79871.78367467233,
+        66638.90197340497,
+        52788.12005741562,
+        38194.31794553,
+        25864.706262201365,
+        15934.51083323742,
+        10747.32515217114
+      ],
+      "female": [
+        336557.3842852062,
+        336917.34488312376,
+        313313.458028415,
+        273201.91289775283,
+        238223.17490265655,
+        219610.13211347655,
+        205770.4170926889,
+        168057.80723024355,
+        133731.13689581596,
+        107847.659997868,
+        87530.09790677809,
+        72525.32325021285,
+        57857.41011576408,
+        43192.38436579083,
+        31021.09634097213,
+        19667.419353404894,
+        18361.840339830127
+      ],
+      "source_ids": [
+        "S02",
+        "S03"
+      ],
+      "france": "pyramide-wdi-2024-80plus",
+      "note_visible": "Estimations de 2024. Les repères de population utilisent une autre source, révisée pour fin 2025."
+    },
+    {
+      "id": "salaires",
+      "type": "bar",
+      "title": "Les salaires des personnes encore en emploi",
+      "subtitle": "Cisjordanie · salariés de 15 ans ou plus · T4 2025 · shekels par jour",
+      "year": 2025,
+      "unit": "ILS/jour",
+      "labels": [
+        "Médiane",
+        "Moyenne"
+      ],
+      "values": [
+        115.4,
+        135.6
+      ],
+      "euro": true,
+      "source_ids": [
+        "S11"
+      ],
+      "france": "salaires-pse",
+      "note_visible": "Travail en Cisjordanie seulement. Gaza, Israël et colonies exclus."
+    },
+    {
+      "id": "pib-secteurs",
+      "type": "share",
+      "title": "Les services dominent une production sous contrainte",
+      "subtitle": "Parts de la valeur ajoutée courante · hors impôts nets · 2024",
+      "year": 2024,
+      "unit": "%",
+      "labels": [
+        "Agriculture, forêt, pêche",
+        "Industrie et construction",
+        "Services"
+      ],
+      "values": [
+        6.733734930583585,
+        19.824231393126137,
+        73.44203367629028
+      ],
+      "source_ids": [
+        "S02"
+      ],
+      "france": "valeur-ajoutee-2024",
+      "note": "Parts calculées sur la somme de trois séries WDI en dollars courants : 884 200 000 ; 2 603 100 000 ; 9 643 600 000. Même dénominateur VA et même année que la France. Aucune normalisation de parts publiées : calcul explicite à partir des montants."
+    },
+    {
+      "id": "economie-territoires",
+      "type": "line",
+      "title": "Gaza décroche de la Cisjordanie",
+      "subtitle": "PIB réel · milliards de dollars aux prix de 2015 · 2021–2025",
+      "year": "2021–2025",
+      "unit": "milliards USD de 2015",
+      "x": [
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "series": [
+        {
+          "name": "Cisjordanie",
+          "values": [
+            12.4436,
+            12.9217,
+            13.3283,
+            11.5821,
+            11.9773
+          ]
+        },
+        {
+          "name": "Gaza",
+          "values": [
+            2.5781,
+            2.7133,
+            2.1547,
+            0.3619,
+            0.4856
+          ]
+        }
+      ],
+      "source_ids": [
+        "S13"
+      ],
+      "note_visible": "Les niveaux de production diffèrent aussi avec la taille des populations. Données préliminaires.",
+      "note": "Les montants du tableau PCBS, publiés en millions, sont divisés exactement par 1 000 pour afficher des milliards. Aucune donnée n’est arrondie dans le fichier."
+    }
+  ],
+  "cities": [
+    {
+      "name": "Gaza",
+      "population": 590481,
+      "lat": 31.5069,
+      "lon": 34.456,
+      "note": "Centre urbain historique du littoral ; destructions et déplacements massifs.",
+      "year": 2017,
+      "source_ids": [
+        "S16",
+        "S17"
+      ],
+      "offset": [
+        7,
+        -4
+      ]
+    },
+    {
+      "name": "Khan Younès",
+      "population": 205125,
+      "lat": 31.3444,
+      "lon": 34.3981,
+      "note": "Pôle du sud de Gaza ; infrastructures et quartiers dévastés.",
+      "year": 2017,
+      "source_ids": [
+        "S16",
+        "S17"
+      ],
+      "offset": [
+        -7,
+        4
+      ]
+    },
+    {
+      "name": "Hébron",
+      "population": 201063,
+      "lat": 31.5333,
+      "lon": 35.095,
+      "note": "Commerce et fabrication ; vieille ville divisée.",
+      "year": 2017,
+      "source_ids": [
+        "S16",
+        "S17"
+      ]
+    },
+    {
+      "name": "Naplouse",
+      "population": 156906,
+      "lat": 32.2211,
+      "lon": 35.2544,
+      "note": "Commerce, universités et tradition du savon.",
+      "year": 2017,
+      "source_ids": [
+        "S16",
+        "S17"
+      ]
+    },
+    {
+      "name": "Ramallah",
+      "population": 38998,
+      "lat": 31.9028,
+      "lon": 35.1956,
+      "note": "Siège administratif, services et vie culturelle.",
+      "year": 2017,
+      "source_ids": [
+        "S16",
+        "S17"
+      ]
+    },
+    {
+      "name": "Jéricho",
+      "population": 20907,
+      "lat": 31.86,
+      "lon": 35.46,
+      "note": "Oasis agricole et accès à la vallée du Jourdain.",
+      "year": 2017,
+      "source_ids": [
+        "S16",
+        "S17"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "S01",
+      "text": "[PCBS, Palestinians at the End of 2025](https://www.pcbs.gov.ps/media/enflushk/book2734.pdf), tableaux 1, 3 et 4, publication 2026. Estimations révisées fondées sur le recensement de 2017. Population palestinienne des territoires, Jérusalem-Est comprise ; colons israéliens exclus. La diaspora est comptée séparément. Ne pas employer les projections de Gaza établies avant octobre 2023 comme des effectifs observés."
+    },
+    {
+      "id": "S02",
+      "text": "[Banque mondiale, WDI, Palestine, indicateurs 2024](https://api.worldbank.org/v2/country/PSE/indicator/SP.POP.TOTL;SP.POP.TOTL.MA.IN;SP.POP.TOTL.FE.IN;SP.POP.65UP.TO.ZS;SP.DYN.TFRT.IN;NY.GDP.MKTP.CD;NV.AGR.TOTL.CD;NV.IND.TOTL.CD;NV.SRV.TOTL.CD?source=2&date=2024&format=json&per_page=100). Base actualisée le 11 novembre 2026. PIB en dollars courants. La fécondité et la structure par âge sont des estimations, distinctes des projections PCBS. Les comptes nationaux excluent les secteurs de Jérusalem annexés par Israël en 1967."
+    },
+    {
+      "id": "S03",
+      "text": "[Banque mondiale, WDI, structure par âge et sexe en 2024](https://data.worldbank.org/indicator/SP.POP.0004.MA.5Y?locations=PS). Séries SP.POP.0004 à 7579 et 80UP, MA/FE.5Y. Chaque part du sexe concerné est multipliée par SP.POP.TOTL.MA.IN ou FE.IN, puis divisée par 100, sans arrondi. Même méthode et mêmes cohortes que la référence française WDI 2024. Estimations démographiques, aucune mesure des déplacements de 2026."
+    },
+    {
+      "id": "S04",
+      "text": "[Banque mondiale, superficie totale, Palestine](https://data.worldbank.org/indicator/AG.SRF.TOTL.K2?locations=PS), source FAO ; [PCBS, Palestine in Figures 2018, indicateurs par région](https://www.pcbs.gov.ps/Downloads/book2421.pdf). Cadre territorial de 6 025 km² : Cisjordanie, Jérusalem-Est comprise, et bande de Gaza. Cette superficie ne mesure pas le territoire effectivement administré par l’Autorité palestinienne."
+    },
+    {
+      "id": "S05",
+      "text": "[PNUD, Country Insights, Human Development Report 2025](https://hdr.undp.org/data-center/country-insights). Palestine, État de : IDH 2023 de 0,674 ; rang 133 sur 193. Même édition et définition que la France. Ce millésime ne décrit pas toute la dégradation ultérieure."
+    },
+    {
+      "id": "S06",
+      "text": "[PCBS, Levels of Living 2023](https://www.pcbs.gov.ps/Downloads/book2705.pdf), page anglaise 29. Gini de la consommation totale par personne en Cisjordanie : 34,4 sur 100. Gaza exclue de l’enquête 2023. Aucune comparaison avec le revenu disponible équivalent français. La série WDI/PIP 36,4 ne remplace pas cet indicateur au champ explicitement documenté."
+    },
+    {
+      "id": "S07",
+      "text": "[V-Dem, Democracy Report 2026](https://www.v-dem.net/documents/75/V-Dem_Institute_Democracy_Report_2026_lowres.pdf), tableau A2. Données 2025 : indice de démocratie libérale 0,11 pour Palestine/West Bank, rang 138 ; 0,06 pour Palestine/Gaza, rang 160. Deux unités distinctes, aucune moyenne nationale calculée. France : même indicateur et même année."
+    },
+    {
+      "id": "S08",
+      "text": "[Reporters sans frontières, Palestine, classement 2026](https://rsf.org/en/country/palestine). Score 32,09 ; rang 156 sur 180. L’indice couvre le territoire et les contraintes exercées sur les journalistes, dont celles des forces israéliennes et des autorités palestiniennes."
+    },
+    {
+      "id": "S09",
+      "text": "[Transparency International, CPI 2025, rapport et cartes](https://www.transparency.de/fileadmin/Redaktion/Aktuelles/2026/CPI_2025/CPI2025_FINAL_ALL_MAPS_EN.pdf). La Palestine n’est pas évaluée : moins de trois sources admissibles. Aucun score ni classement CPI ne peut lui être attribué."
+    },
+    {
+      "id": "S10",
+      "text": "[PCBS, Monthly Metrological Tables 2024](https://www.pcbs.gov.ps/Portals/_Rainbow/Documents/MetrologicalTables2024.pdf), tableaux 2, 3 et 5, pages 2, 3 et 5. Direction générale de la météorologie palestinienne. Minima et maxima quotidiens moyens et cumuls mensuels de pluie à Ramallah et Jéricho. Observations de 2024, pas des normales trentenaires. Pas de superposition à Paris 1991–2020."
+    },
+    {
+      "id": "S11",
+      "text": "[PCBS, Labour Force Survey in the West Bank, Q4 2025](https://www.pcbs.gov.ps/portals/_pcbs/PressRelease/Press_En_LFSSYQ42025E.pdf), tableau 24, page 21. Salariés de 15 ans ou plus résidant et travaillant en Cisjordanie, hors Israël et colonies. Médiane quotidienne 115,4 NIS ; moyenne 135,6 NIS. Montants déclarés dans l’enquête, sans standardisation française en EQTP. Pas de conversion en salaire mensuel par multiplication des jours moyens."
+    },
+    {
+      "id": "S12",
+      "text": "[BCE, taux de référence annuel ILS/EUR, EXR.A.ILS.EUR.SP00.A](https://data.ecb.europa.eu/data/datasets/EXR/EXR.A.ILS.EUR.SP00.A) ; [extraction 2025](https://data-api.ecb.europa.eu/service/data/EXR/A.ILS.EUR.SP00.A?startPeriod=2025&endPeriod=2025&format=csvdata). Moyenne annuelle 2025 : 3,8927258823529 shekels pour un euro. Les salaires publiés en NIS sont exprimés en ILS. Équivalents euros approximatifs au taux annuel, y compris pour les salaires du quatrième trimestre."
+    },
+    {
+      "id": "S13",
+      "text": "[PCBS, Performance of the Palestinian Economy 2025](https://www.pcbs.gov.ps/media/t5lk34ax/book2738.pdf), mai 2026, tableau 1, page anglaise 17. PIB à prix constants de 2015, en millions de dollars, par territoire, 2021–2025. Données préliminaires susceptibles de révision ; Jérusalem annexée en 1967 exclue. Les deux séries utilisent la même base et ne sont pas des PIB nominaux."
+    },
+    {
+      "id": "S14",
+      "text": "[Banque mondiale, West Bank and Gaza, mise à jour économique de l’automne 2026](https://www.worldbank.org/ext/en/country/westbankandgaza). Restrictions d’accès, crise budgétaire, recettes de compensation suspendues depuis mai 2025, reconstruction et activité privée."
+    },
+    {
+      "id": "S15",
+      "text": "[CNUCED, besoins de reconstruction de Gaza et finances palestiniennes, 24 septembre 2026](https://unctad.org/press-material/unctad-gaza-reconstruction-needs-reach-715-billion-palestinian-economy-and-public). Dépendance monétaire, restrictions de rapatriement des billets en shekels et crise des recettes fiscales."
+    },
+    {
+      "id": "S16",
+      "text": "[PCBS, recensement 2017, indicateurs par localité](https://www.pcbs.gov.ps/Downloads/book2498.pdf) ; [PASSIA, Population, factsheet 2019](https://passia.org/media/filer_public/be/c1/bec1d396-bff4-4ae7-a306-ade92ee97302/factsheet_population_2019.pdf), tableau des villes reprenant le PCBS 2017. Populations des localités, hors camps distincts : Gaza 590 481 ; Khan Yunis 205 125 ; Hébron 201 063 ; Naplouse 156 906 ; Ramallah 38 998 ; Jéricho 20 907. Ces chiffres antérieurs à la guerre ne mesurent pas la population actuelle des villes de Gaza."
+    },
+    {
+      "id": "S17",
+      "text": "Coordonnées des centres, pages de référence géographique : [Gaza](https://en.wikipedia.org/wiki/Gaza_City), [Khan Yunis](https://en.wikipedia.org/wiki/Khan_Yunis), [Hébron](https://en.wikipedia.org/wiki/Hebron), [Naplouse](https://en.wikipedia.org/wiki/Nablus), [Ramallah](https://en.wikipedia.org/wiki/Ramallah), [Jéricho](https://en.wikipedia.org/wiki/Jericho). Coordonnées en degrés décimaux, repères de centres urbains et non centroïdes administratifs."
+    },
+    {
+      "id": "S18",
+      "text": "[France Diplomatie, Palestine : politique et économie](https://www.diplomatie.gouv.fr/fr/information-par-pays/israel-palestine/palestine-politique-et-economie), consulté le 16 novembre 2026. Identité, capitale revendiquée, institutions, dirigeants et relations bilatérales. Accréditation de l’ambassadrice de Palestine le 26 mars 2026."
+    },
+    {
+      "id": "S19",
+      "text": "[ONU, Historical Timeline of the Question of Palestine](https://www.un.org/unispal/historical-timeline/). Mandat, partage, guerre de 1948, occupation de 1967, proclamation de 1988, accords d’Oslo et statut de 2012."
+    },
+    {
+      "id": "S20",
+      "text": "[Congressional Research Service, The Palestinians: Overview, Aid, and U.S. Policy Issues, IF10644, 15 avril 2025](https://www.everycrsreport.com/reports/IF10644.html). Institutions, Fatah, Hamas, division de 2007 et politique américaine. Source historique pour les faits antérieurs à sa publication, sans présumer de la situation ultérieure."
+    },
+    {
+      "id": "S21",
+      "text": "[Freedom House, Gaza Strip, Freedom in the World 2026](https://freedomhouse.org/country/gaza-strip/freedom-world/2026). Prise de contrôle de 2007, répression, guerre et conditions de vie. [West Bank, édition 2026](https://freedomhouse.org/country/west-bank/freedom-world/2026). Institutions, décrets et restrictions des droits."
+    },
+    {
+      "id": "S22",
+      "text": "[Présidence palestinienne, décret électoral du 10 octobre 2026](https://www.president.ps/Eng/NewsPage/493202). Présidentielle et législatives fixées au 11 septembre 2027, en remplacement des législatives prévues le 28 novembre 2026. Il s’agit d’un calendrier annoncé."
+    },
+    {
+      "id": "S23",
+      "text": "[International IDEA, entretien avec le directeur de la Commission électorale palestinienne, octobre 2026](https://www.idea.int/blog/qa-ashraf-shuaibi-ceo-central-elections-commission-electoral-resilience-palestine). Scrutin municipal d’avril 2026 en Cisjordanie et à Deir al-Balah ; accès, matériel électoral et contraintes institutionnelles."
+    },
+    {
+      "id": "S24",
+      "text": "[Le Monde, dissolution annoncée des organes gouvernementaux du Hamas à Gaza, 7 juillet 2026](https://www.lemonde.fr/en/international/article/2026/07/07/hamas-dissolves-its-governing-bodies-in-gaza-as-stalemate-with-israel-continues_6755221_4.html). [AP, report des élections, 10 octobre 2026](https://apnews.com/article/3c0ab74a39492328a15318d7949b972c). Comité technocratique lié au Board of Peace encore au Caire et transfert de pouvoir bloqué. Ces annonces ne prouvent pas un changement effectif d’administration."
+    },
+    {
+      "id": "S25",
+      "text": "[OCHA, Humanitarian Situation Report, 13 novembre 2026](https://www.ochaopt.org/content/humanitarian-situation-report-13-november-2026). Période principale du 3 au 9 novembre. Pluies depuis le 6 novembre, dégâts aux abris, services interrompus, restrictions d’accès et violences liées à la récolte des olives. Les bilans de victimes cités par OCHA proviennent du ministère de la Santé de Gaza ; aucune extrapolation propre."
+    },
+    {
+      "id": "S26",
+      "text": "[CIJ, avis consultatif du 19 juillet 2024, communiqué officiel](https://www.un.org/unispal/document/icj-pressrelease-19jul24/). Présence israélienne dans le territoire palestinien occupé déclarée illicite et obligation d’y mettre fin aussi rapidement que possible. Avis consultatif distinct d’un jugement pénal."
+    },
+    {
+      "id": "S27",
+      "text": "[CPI, mandats d’arrêt contre Benjamin Netanyahu et Yoav Gallant, 21 novembre 2024](https://www.icc-cpi.int/news/situation-state-palestine-icc-pre-trial-chamber-i-rejects-state-israels-challenges). Crimes de guerre et crimes contre l’humanité présumés. Un mandat d’arrêt ne constitue pas une condamnation."
+    },
+    {
+      "id": "S28",
+      "text": "[Commission d’enquête internationale indépendante de l’ONU, conclusion sur le génocide à Gaza, 16 septembre 2025](https://www.un.org/unispal/document/israel-has-committed-genocide-in-the-gaza-strip-un-commission-finds-16sep25/). Conclusion de la commission mandatée par le Conseil des droits de l’homme, contestée par Israël ; distincte de la procédure interétatique devant la CIJ."
+    },
+    {
+      "id": "S29",
+      "text": "[France Diplomatie, comprendre la reconnaissance de l’État de Palestine](https://www.diplomatie.gouv.fr/fr/le-ministere-en-action/agir-pour-la-paix-et-le-respect-des-droits-de-l-homme/agir-pour-la-securite-le-desarmement-et-la-non-proliferation/crises-et-conflits/comprendre-la-reconnaissance-par-la-france-de-l-etat-de-palestine). Reconnaissance française le 22 septembre 2025 ; conférence franco-saoudienne et solution à deux États."
+    },
+    {
+      "id": "S30",
+      "text": "[UNRWA, questions fréquentes](https://www.unrwa.org/who-we-are/frequently-asked-questions). Définition des réfugiés de Palestine, enregistrement des descendants et cinq zones d’opération. Distinguer réfugié, déplacé intérieur et émigré."
+    },
+    {
+      "id": "S31",
+      "text": "[Département d’État américain, International Religious Freedom Report, West Bank and Gaza, 2020](https://2021-2025.state.gov/wp-content/uploads/2021/05/240282-WEST-BANK-AND-GAZA-2020-INTERNATIONAL-RELIGIOUS-FREEDOM-REPORT.pdf). Majorité musulmane sunnite, communautés chrétiennes et samaritaines. Utilisé pour leur présence historique, sans reprendre leurs anciens effectifs comme actuels."
+    },
+    {
+      "id": "S32",
+      "text": "[UNESCO, broderie palestinienne](https://ich.unesco.org/en/RL/the-art-of-embroidery-in-palestine-practices-skills-knowledge-and-rituals-01722), inscription 2021 ; [dabkeh](https://ich.unesco.org/en/RL/dabkeh-traditional-dance-in-palestine-01998), inscription 2023. Transmission, motifs, vêtements et fonction sociale de la danse."
+    },
+    {
+      "id": "S33",
+      "text": "[Palestinian Heritage Trail, cuisine palestinienne](https://www.paltrails.ps/palestinian-cuisine) ; [ministère palestinien du Tourisme, cuisine](https://www.travelpalestine.ps/en/Category/2/Cuisine). Musakhan, maqlouba, huile d’olive et traditions alimentaires."
+    },
+    {
+      "id": "S34",
+      "text": "[Sama’ Abdulhadi, entretien Red Bull, 2024](https://www.redbull.com/mea-en/sama-abdulhadi-palestine-dj-music-interview). Témoignage sur la scène électronique de Ramallah et sa circulation internationale. Aucun calendrier actuel de club n’en est déduit."
+    },
+    {
+      "id": "S35",
+      "text": "[AFC, Qatar-Palestine, huitième de finale, 29 janvier 2024](https://www.the-afc.com/en/national/afc_asian_cup/news/r16_qatar_stand_firm_to_end_palestines_run.html). Première qualification palestinienne pour la phase à élimination directe de la Coupe d’Asie, édition 2023 jouée en 2024."
+    },
+    {
+      "id": "S36",
+      "text": "[Banque mondiale, Palestinian Digital Economy Assessment, 2022](https://documents1.worldbank.org/curated/en/472671640152521943/pdf/Palestinian-Digital-Economy-Assessment.pdf). Contraintes de spectre, d’importation d’équipements et d’accès aux sites. [PCBS, télécommunications, 17 mai 2026](https://www.pcbs.gov.ps/en/post-details/?postId=26011). Fibre et économie numérique en 2025."
+    },
+    {
+      "id": "S37",
+      "text": "[AP, les développeurs de Gaza, 14 mai 2026](https://apnews.com/article/2c07ce2b1c639f43e9eeb936a62ee435). Espaces de travail partagés, alimentation électrique, accès au réseau et obstacles de paiement. Reportage, sans extrapolation à l’ensemble de l’emploi."
+    },
+    {
+      "id": "S38",
+      "text": "[UNESCO, tradition de fabrication du savon de Naplouse](https://ich.unesco.org/en/RL/tradition-of-nabulsi-soap-making-in-palestine-02112), inscription 2024. Huile d’olive, eau et soude ; fabrication, découpe et séchage."
+    },
+    {
+      "id": "S39",
+      "text": "[Département des affaires de négociation de l’OLP, Hussein Al-Sheikh](https://www.nad.ps/en/vp-hussein-al-sheikh). Vice-présidence créée en avril 2025 ; vice-présidence du Fatah en juin 2026. Source institutionnelle pour les fonctions, sans en reprendre les appréciations politiques."
+    },
+    {
+      "id": "FLAG",
+      "text": "[Wikimedia Commons, Flag of Palestine.svg](https://commons.wikimedia.org/wiki/File:Flag_of_Palestine.svg). Orionist, versions antérieures par Makaristos et Mysid. Domaine public, dessin géométrique simple ; SVG original conservé."
+    },
+    {
+      "id": "RELIEF",
+      "text": "[Wikimedia Commons, Palestine relief location map.jpg](https://commons.wikimedia.org/wiki/File:Palestine_relief_location_map.jpg). Eric Gaba (Sting) et NordNordWest, SRTM30 Plus / NASA SRTM3 ; [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/). JPEG original conservé, couleurs et proportions inchangées. Ce fond de relief ne représente pas les zones de contrôle actuelles."
+    },
+    {
+      "id": "NE",
+      "text": "[Natural Earth, conditions d’utilisation](https://www.naturalearthdata.com/about/terms-of-use/), domaine public. Localisateur régional et miniature mondiale. Les limites du fond ne représentent pas les zones de contrôle de novembre 2026."
+    },
+    {
+      "id": "CITYMAP",
+      "text": "[Wikimedia Commons, Palestine location map wide.png](https://commons.wikimedia.org/wiki/File:Palestine_location_map_wide.png). NordNordWest, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0). Conversion PNG vers WebP, sans redimensionnement, recadrage ni recoloration ; cadre complet de 614 × 1 141 pixels. [Bornes et projection](https://en.wikipedia.org/wiki/Module:Location_map/data/Palestine). Repères numérotés ajoutés à l’affichage."
+    },
+    {
+      "id": "S40",
+      "text": "[ONU, histoire de la question de Palestine](https://www.un.org/unispal/fr/history/). Partage, Nakba, occupation et processus d’Oslo. Source historique distincte de la chronologie actualisée."
+    },
+    {
+      "id": "S41",
+      "text": "[ONU, droits humains dans les territoires occupés, rapport A/HRC/28/80, 2015](https://www.un.org/unispal/document/auto-insert-189524/) ; [rapport du Secrétaire général sur l’assistance au peuple palestinien, 2016](https://www.un.org/unispal/document/auto-insert-180921/). Gouvernement de consensus formé le 2 juin 2014, difficultés persistantes à exercer ses fonctions à Gaza."
+    },
+    {
+      "id": "S42",
+      "text": "[CPI, accueil de la Palestine comme État partie au Statut de Rome, 1er avril 2015](https://www.icc-cpi.int/news/icc-welcomes-palestine-new-state-party). [Département d’État américain, reconnaissance de Jérusalem, 7 décembre 2017](https://2017-2021.state.gov/recognizing-jerusalem-as-israels-capital/), décision présidentielle du 6 décembre."
+    },
+    {
+      "id": "S43",
+      "text": "[Commission électorale palestinienne, décret de report des élections générales de 2021](https://www.elections.ps/tabid/1257/language/en-US/Default.aspx). [Experts des Nations unies, appel à reprogrammer les élections, 26 juillet 2021](https://www.un.org/unispal/document/palestinian-election-free-fair-democratic-and-credible-vote-must-include-east-jerusalem-un-experts-press-release/). Motif avancé par la présidence : participation de Jérusalem-Est."
+    },
+    {
+      "id": "S44",
+      "text": "[Conseil de l’Union européenne, Hamas et Jihad islamique palestinien, 16 janvier 2026](https://www.consilium.europa.eu/en/press/press-releases/2026/01/16/hamas-and-palestinian-islamic-jihad-council-prolongs-restrictive-measures-for-another-year/). Confirme les mesures au titre de la liste antiterroriste de l’UE, distinctes du régime complémentaire de sanctions individuelles."
+    }
+  ],
+  "hero_sources": [
+    "S18",
+    "FLAG"
+  ],
+  "map_sources": {
+    "locator": [
+      "NE",
+      "S26"
+    ],
+    "cities": [
+      "S16",
+      "S17"
+    ],
+    "relief": [
+      "RELIEF"
+    ]
+  },
+  "cities_map": {
+    "file": "cities.webp",
+    "width": 614,
+    "height": 1141,
+    "bounds": {
+      "top": 33.5,
+      "bottom": 29.3,
+      "left": 33.7,
+      "right": 36.3
+    },
+    "projection": {
+      "type": "equirectangular"
+    },
+    "credit": {
+      "author": "NordNordWest",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Palestine_location_map_wide.png"
+    },
+    "definition_url": "https://en.wikipedia.org/wiki/Module:Location_map/data/Palestine",
+    "source_ids": [
+      "CITYMAP"
+    ]
+  },
+  "cities_title": "Six repères urbains",
+  "cities_scope": "Localités · recensement 2017 · avant la guerre",
+  "cities_note": "Populations historiques, hors camps distincts. Les déplacements et destructions empêchent de les lire comme des effectifs actuels. Jérusalem-Est est la capitale revendiquée ; Ramallah accueille les institutions.",
+  "relief_title": "Des collines au fossé du Jourdain",
+  "relief_alt": "Relief de la Palestine : collines de Cisjordanie, vallée du Jourdain à l’est et plaine côtière de Gaza à l’ouest.",
+  "relief_landmarks": [
+    {
+      "label": "Les collines de Cisjordanie",
+      "text": "Un axe de villes et de cultures en terrasses."
+    },
+    {
+      "label": "La vallée du Jourdain",
+      "text": "Une dépression chaude et sèche à l’est."
+    },
+    {
+      "label": "La bande de Gaza",
+      "text": "Une étroite plaine sur la Méditerranée."
+    }
+  ],
+  "euro": {
+    "currency": "ILS",
+    "per_euro": 3.8927258823529,
+    "year": 2025,
+    "basis": "Moyenne annuelle 2025 publiée directement par la BCE, série EXR.A.ILS.EUR.SP00.A. NIS et ILS désignent le même nouveau shekel israélien. Équivalents approximatifs ; la période salariale est le quatrième trimestre de 2025.",
+    "source_ids": [
+      "S12"
+    ]
+  },
+  "prose_values": {
+    "diaspora": {
+      "value": 15489639,
+      "unit": "personnes"
+    }
+  }
+}
