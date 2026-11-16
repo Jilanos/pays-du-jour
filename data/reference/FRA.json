@@ -1143,5 +1143,19 @@
     "source_ids": [
       "FR-WDI-ISR-2024"
     ]
+  },
+  "salaires-pse": {
+    "status": "non_comparable",
+    "reason": "Salaire quotidien déclaré dans une enquête auprès des salariés résidant et travaillant en Cisjordanie, T4 2025 ; Gaza, Israël et colonies exclus. La référence française est une rémunération du privé en EQTP, primes incluses. Brut/net, primes et unité de temps non harmonisés.",
+    "source_ids": [
+      "FR-WAGE"
+    ]
+  },
+  "gini-pse": {
+    "status": "non_comparable",
+    "reason": "Cisjordanie seule : consommation totale par personne, enquête 2023. France : revenu disponible équivalent après redistribution, autre unité, autre champ et autre année.",
+    "source_ids": [
+      "FR-GINI"
+    ]
   }
 }
