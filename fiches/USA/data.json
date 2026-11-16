@@ -784,6 +784,10 @@
     {
       "id": "S53",
       "text": "[Bureau of Transportation Statistics, Transportation Economic Trends, caractéristiques économiques des déplacements](https://data.bts.gov/stories/s/Chapter-4-Economic-Characteristics-of-Passenger-Tr/65u2-y2k4/). Mobilité des ménages, dépenses de transport et dépendance aux véhicules particuliers."
+    },
+    {
+      "id": "CITYMAP",
+      "text": "[Wikimedia Commons, Usa edcp location map.svg](https://commons.wikimedia.org/wiki/File:Usa_edcp_location_map.svg). Uwe Dedering, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0). Conversion en WebP à 1 100 pixels de large, sans recadrage. [Bornes et projection](https://en.wikipedia.org/wiki/Module:Location_map/data/USA). Repères numérotés et encart ajoutés à l’affichage."
     }
   ],
   "hero_sources": [
@@ -845,5 +849,31 @@
     ],
     "caption": "États contigus · repère mondial"
   },
-  "cities_note": "Carte des États contigus. Populations municipales, hors agglomérations."
+  "cities_note": "Carte des États contigus. Populations municipales, hors agglomérations.",
+  "cities_map": {
+    "file": "cities.webp",
+    "width": 1181,
+    "height": 731,
+    "bounds": null,
+    "projection": {
+      "type": "equidistant_conic",
+      "longitude0": -96,
+      "cone": 0.6010514667026994,
+      "radius_offset": 1.9694462586094064,
+      "radius0": 1.3236744353715044,
+      "y_offset": 0.02613325650382181,
+      "scale": 124.03149777329222,
+      "y_scale": 1.6155950752393982
+    },
+    "credit": {
+      "author": "Uwe Dedering",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Usa_edcp_location_map.svg"
+    },
+    "source_ids": [
+      "CITYMAP"
+    ],
+    "definition_url": "https://en.wikipedia.org/wiki/Module:Location_map/data/USA"
+  }
 }

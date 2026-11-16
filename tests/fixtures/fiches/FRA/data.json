@@ -301,5 +301,28 @@
     "relief": [
       "TEST"
     ]
+  },
+  "cities_map": {
+    "file": "cities.svg",
+    "width": 300,
+    "height": 300,
+    "bounds": {
+      "left": -6,
+      "right": 10,
+      "top": 52,
+      "bottom": 41
+    },
+    "projection": {
+      "type": "equirectangular"
+    },
+    "credit": {
+      "author": "Pays du jour",
+      "license": "CC0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "url": "https://example.org/fixture"
+    },
+    "source_ids": [
+      "TEST"
+    ]
   }
 }

@@ -1,10 +1,11 @@
-"""Regional locators and numbered city maps from local Natural Earth geometry."""
+"""Regional locators and numbered overlays on licensed country maps."""
 
 import json
 from functools import lru_cache
 from html import escape
-from math import cos, floor, log10, radians
+from math import cos, isfinite, radians, sin
 from pathlib import Path
+from urllib.parse import quote
 from xml.etree.ElementTree import Element, SubElement
 
 from .charts import el, finish, text
@@ -176,172 +177,178 @@ def locator(iso3, name, geo_dir, marker="", map_focus=None):
     )
 
 
+def map_point(map_data, point):
+    """Project lon/lat to fractions of the original image, using Wikipedia's module."""
+    lon, lat = point
+    projection = map_data["projection"]
+    kind = projection["type"]
+    if kind == "equirectangular":
+        bounds = map_data["bounds"]
+        width = (bounds["right"] - bounds["left"]) % 360 or 360
+        return (
+            (lon - bounds["left"]) % 360 / width,
+            (bounds["top"] - lat) / (bounds["top"] - bounds["bottom"]),
+        )
+    if kind == "equidistant_conic":
+        radius = projection["radius_offset"] - radians(lat)
+        angle = projection["cone"] * radians(lon - projection["longitude0"])
+        x = 50 + projection["scale"] * radius * sin(angle)
+        y = 50 + projection["scale"] * projection["y_scale"] * (
+            projection["y_offset"] - projection["radius0"] + radius * cos(angle)
+        )
+        return x / 100, y / 100
+    raise ValueError(f"Unsupported city map projection: {kind}")
+
+
+def validate_city_map(map_data, assets):
+    """Reject missing assets or incomplete georeferencing before serving a fiche."""
+    if not map_data:
+        raise ValueError("cities_map is required for the city figure")
+    filename = map_data["file"]
+    if Path(filename).name != filename or Path(filename).suffix not in {".svg", ".webp"}:
+        raise ValueError("cities_map.file must be a local SVG or WebP asset name")
+    asset = assets / filename
+    if not asset.is_file() or not asset.resolve().is_relative_to(assets.resolve()):
+        raise ValueError(f"Missing city map asset: {filename}")
+    if asset.stat().st_size > 400_000:
+        raise ValueError("City map assets must be at most 400 KB")
+    for key in ("width", "height"):
+        if not isfinite(map_data[key]) or map_data[key] <= 0:
+            raise ValueError(f"cities_map.{key} must be positive")
+    credit = map_data["credit"]
+    if not all(credit.get(key) for key in ("author", "license", "url", "license_url")):
+        raise ValueError("City map credit needs author, license, url and license_url")
+    if not map_data.get("source_ids"):
+        raise ValueError("City map credit needs source_ids")
+    projection = map_data["projection"]
+    if projection["type"] == "equirectangular":
+        bounds = map_data["bounds"]
+        if not all(isfinite(bounds[key]) for key in ("top", "bottom", "left", "right")):
+            raise ValueError("City map bounds must be finite")
+        if not -90 <= bounds["bottom"] < bounds["top"] <= 90:
+            raise ValueError("City map needs bottom < top within latitude limits")
+        if bounds["left"] == bounds["right"]:
+            raise ValueError("City map needs distinct longitude bounds")
+    elif projection["type"] == "equidistant_conic":
+        keys = ("radius_offset", "cone", "longitude0", "scale", "y_scale", "y_offset", "radius0")
+        if not all(isfinite(projection[key]) for key in keys):
+            raise ValueError("City map projection parameters must be finite")
+    else:
+        raise ValueError(f"Unsupported city map projection: {projection['type']}")
+
+
 def cities(
     iso3,
     name,
     city_data,
-    geo_dir,
+    map_data,
     marker="",
     title="Villes principales",
     scope="Population municipale",
-    map_focus=None,
     note="Les limites municipales englobent aussi des espaces ruraux.",
     inset=None,
 ):
-    geom = focus(load_geo(geo_dir, "countries-50m.json")[iso3], (map_focus or {}).get("bbox"))
-    start, dx, lo, hi = main_bounds(geom)
-    factor = max(0.15, cos(radians((lo + hi) / 2)))
-    scale = min(205 / max(dx * factor, 0.02), 290 / max(hi - lo, 0.02))
+    # Fit the full image without cropping or changing its aspect ratio.
+    image_w = 244
+    image_h = image_w * map_data["height"] / map_data["width"]
+    height = max(image_h + 16, (inset["y"] + inset["height"] + 8) if inset else 0)
+    root = canvas(f"Villes de {name}, repères numérotés du tableau", 260, round(height, 3))
+    href = f"/pays/{iso3}/assets/{quote(map_data['file'])}"
+
+    def background(parent, x, y, zoom=1):
+        el(
+            parent,
+            "image",
+            href=href,
+            x=x,
+            y=y,
+            width=image_w * zoom,
+            height=image_h * zoom,
+            preserveAspectRatio="none",
+            class_="city-map-image",
+        )
 
     def project(p):
-        return (
-            130 + (((p[0] % 360 - start) % 360) * factor - dx * factor / 2) * scale,
-            166 - (p[1] - (lo + hi) / 2) * scale,
-        )
+        x, y = map_point(map_data, p)
+        return 8 + x * image_w, 8 + y * image_h
 
-    root = canvas(f"Villes de {name}, repères numérotés du tableau", 260, 360)
-    defs = el(root, "defs")
-    clip = el(defs, "clipPath", id=f"cities-frame-{iso3}")
-    el(clip, "rect", width=260, height=360)
-    group = el(root, "g", clip_path=f"url(#cities-frame-{iso3})")
-    el(group, "rect", width=260, height=360, fill="var(--map-sea)", rx=6)
-    el(group, "path", d=path(geom, project), class_="city-land", fill_rule="evenodd")
-    if inset is None and iso3 == "TWN":
-        # Taipei's northern cluster: the historical, hand-tuned inset.
-        inset = {
-            "label": "Le nord",
-            "cities": [c["name"] for c in city_data if c["lat"] > 24.8],
-            "lon": 121.24,
-            "lat": 24.92,
-            "scale": 250,
-            "x": 8,
-            "y": 8,
-            "width": 120,
-            "height": 92,
-            "focus": [121.5, 25],
-            "lat_correction": False,
-        }
+    background(root, 8, 8)
     grouped = [i for i, c in enumerate(city_data) if inset and c["name"] in inset["cities"]]
 
-    def pin(parent, x, y, i):
-        el(parent, "circle", cx=x, cy=y, r=11, class_="city-dot")
-        text(parent, x, y + 6, i + 1, text_anchor="middle", class_="pin-number")
+    def pin(parent, x, y, i, city, origin):
+        ox, oy = city.get("offset", (0, 0))
+        if ox or oy:
+            el(parent, "line", x1=x, y1=y, x2=x + ox, y2=y + oy, class_="city-leader")
+            el(parent, "circle", cx=x, cy=y, r=2.5, class_="city-anchor")
+        dot = el(
+            parent,
+            "g",
+            class_="city-pin",
+            data_city=city["name"],
+            data_origin_x=origin[0],
+            data_origin_y=origin[1],
+        )
+        el(dot, "title").text = f"{i + 1}. {city['name']}"
+        el(dot, "circle", cx=x + ox, cy=y + oy, r=11, class_="city-dot")
+        text(dot, x + ox, y + oy + 6, i + 1, text_anchor="middle", class_="pin-number")
 
     for i, city in enumerate(city_data):
+        point = (city["lon"], city["lat"])
+        u, v = map_point(map_data, point)
+        if not (0 <= u <= 1 and 0 <= v <= 1):
+            raise ValueError(f"City outside licensed map: {city['name']}")
         if i not in grouped:
-            x, y = project((city["lon"], city["lat"]))
-            ox, oy = city.get("offset", (0, 0))  # leader line when two pins overlap
-            if ox or oy:
-                el(
-                    group,
-                    "line",
-                    x1=x,
-                    y1=y,
-                    x2=x + ox,
-                    y2=y + oy,
-                    stroke="var(--accent)",
-                    stroke_width=1,
-                )
-                el(group, "circle", cx=x, cy=y, r=2, fill="var(--accent)")
-            pin(group, x + ox, y + oy, i)
+            pin(root, *project(point), i, city, project(point))
     if grouped:
-        # A dense cluster moves to a magnified inset, linked to a dashed outline on the map.
-        box_x, box_y = inset["x"], inset["y"]
-        box_w, box_h = inset["width"], inset["height"]
-        dash = {"stroke": "var(--accent)", "stroke_dasharray": "3 3"}
-        if iso3 == "TWN":
-            x, y = project(inset["focus"])
-            el(group, "circle", cx=x, cy=y, r=16, fill="none", **dash)
-            el(group, "line", x1=x - 15, x2=118, y1=y, y2=72, **dash)
-        else:
-            points = [project((city_data[i]["lon"], city_data[i]["lat"])) for i in grouped]
-            left = min(p[0] for p in points) - 5
-            right = max(p[0] for p in points) + 5
-            top = min(p[1] for p in points) - 5
-            bottom = max(p[1] for p in points) + 5
-            el(
-                group,
-                "rect",
-                x=left,
-                y=top,
-                width=right - left,
-                height=bottom - top,
-                rx=3,
-                fill="none",
-                **dash,
-            )
-            cx, cy = (left + right) / 2, (top + bottom) / 2
-
-            def clamp(v, lo, hi):
-                return min(max(v, lo), hi)
-
-            if box_y >= bottom:
-                start, end = (cx, bottom), (clamp(cx, box_x, box_x + box_w), box_y)
-            elif box_y + box_h <= top:
-                start, end = (cx, top), (clamp(cx, box_x, box_x + box_w), box_y + box_h)
-            elif box_x + box_w <= left:
-                start, end = (left, cy), (box_x + box_w, clamp(cy, box_y, box_y + box_h))
-            else:
-                start, end = (right, cy), (box_x, clamp(cy, box_y, box_y + box_h))
-            el(group, "line", x1=start[0], y1=start[1], x2=end[0], y2=end[1], **dash)
-        view_h = round(box_h * 103 / 92) if iso3 == "TWN" else box_h
+        # The inset reuses the same image and projection, with a single zoom/pan transform.
+        bx, by, bw, bh = (inset[key] for key in ("x", "y", "width", "height"))
+        zoom = inset["zoom"]
+        cx, cy = project(inset["center"])
+        left, top = bw / 2 - (cx - 8) * zoom, (bh + 26) / 2 - (cy - 8) * zoom
         frame = el(
-            group,
+            root,
             "svg",
-            x=box_x,
-            y=box_y,
-            width=box_w,
-            height=box_h,
-            viewBox=f"0 0 {box_w} {view_h}",
+            x=bx,
+            y=by,
+            width=bw,
+            height=bh,
+            viewBox=f"0 0 {bw} {bh}",
+            class_="city-inset",
+            overflow="hidden",
         )
+        background(frame, left, top, zoom)
+        el(frame, "rect", x=0, y=0, width=bw, height=26, fill="var(--bg)")
+        text(frame, 8, 20, inset["label"], class_="inset-label")
+        for i in grouped:
+            city = city_data[i]
+            x, y = project((city["lon"], city["lat"]))
+            px, py = left + (x - 8) * zoom, top + (y - 8) * zoom
+            ox, oy = city.get("offset", (0, 0))
+            if not (11 <= px + ox <= bw - 11 and 37 <= py + oy <= bh - 11):
+                raise ValueError(f"City pin clipped in inset: {city['name']}")
+            pin(frame, px, py, i, city, (x, y))
         el(
             frame,
             "rect",
             x=1,
             y=1,
-            width=box_w - 2,
-            height=view_h - 2,
-            rx=4,
-            fill="var(--bg)",
+            width=bw - 2,
+            height=bh - 2,
+            fill="none",
             stroke="var(--rule)",
+            stroke_width=2,
         )
-        correction = cos(radians(inset["lat"])) if inset.get("lat_correction", True) else 1
-        bottom = 81 if iso3 == "TWN" else view_h - 12
-
-        def ip(p):
-            return (
-                15 + (p[0] - inset["lon"]) * inset["scale"] * correction,
-                bottom - (p[1] - inset["lat"]) * inset["scale"],
-            )
-
-        el(frame, "path", d=path(geom, ip), class_="city-land")
-        label_width = 76 if iso3 == "TWN" else min(box_w - 12, 6 + 10 * len(inset["label"]))
-        el(frame, "rect", x=6, y=6, width=label_width, height=23, fill="var(--bg)", rx=2)
-        text(frame, 10, 23, inset["label"], class_="inset-label")
-        for i in grouped:
-            pin(frame, *ip((city_data[i]["lon"], city_data[i]["lat"])), i)
-    text(group, 230, 291, "N", text_anchor="middle")
-    el(
-        group,
-        "path",
-        d="M230 300 V326 M225 306 L230 300 L235 306",
-        fill="none",
-        stroke="var(--ink)",
-        stroke_width=1.5,
-    )
-    target_km = 80 * 111.2 / scale
-    magnitude = 10 ** floor(log10(target_km))
-    km = max(step * magnitude for step in (1, 2, 5) if step * magnitude <= target_km)
-    distance = km / 111.2 * scale
-    el(
-        group,
-        "path",
-        d=f"M18 326 v5 h{distance:.2f} v-5",
-        fill="none",
-        stroke="var(--ink)",
-        stroke_width=2,
-    )
-    text(group, 18, 350, quantity(km, "km"))
+        # A box marks the exact enlarged area; it does not hide the main map.
+        el(
+            root,
+            "rect",
+            x=8 - left / zoom,
+            y=8 + (26 - top) / zoom,
+            width=bw / zoom,
+            height=(bh - 26) / zoom,
+            fill="none",
+            class_="city-inset-area",
+        )
     rows = []
     for i, c in enumerate(city_data):
         rows.append(

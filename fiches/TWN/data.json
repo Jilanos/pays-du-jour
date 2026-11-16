@@ -865,7 +865,11 @@
     },
     {
       "id": "NE",
-      "text": "[Natural Earth](https://www.naturalearthdata.com/about/terms-of-use/), domaine public. Contours 1:110 m et 1:50 m, micro-États 1:10 m. Projections régionales, repères et encart nord réalisés pour cette fiche. Les contours ne constituent pas une position sur les frontières."
+      "text": "[Natural Earth](https://www.naturalearthdata.com/about/terms-of-use/), domaine public. Contours 1:110 m et 1:50 m, micro-États 1:10 m. Projection régionale et repère mondial du localisateur. Les contours ne constituent pas une position sur les frontières."
+    },
+    {
+      "id": "CITYMAP",
+      "text": "[Wikimedia Commons, Taiwan location map.svg](https://commons.wikimedia.org/wiki/File:Taiwan_location_map.svg). NordNordWest, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0). SVG original conservé. [Bornes et projection](https://en.wikipedia.org/wiki/Module:Location_map/data/Taiwan). Repères numérotés et encart ajoutés à l’affichage."
     }
   ],
   "map_sources": {
@@ -875,8 +879,7 @@
     ],
     "cities": [
       "S02",
-      "S37",
-      "NE"
+      "S37"
     ],
     "relief": [
       "S06"
@@ -992,5 +995,46 @@
       "S57",
       "S58"
     ]
+  },
+  "cities_map": {
+    "file": "cities.svg",
+    "width": 1016,
+    "height": 1221,
+    "bounds": {
+      "top": 26.4,
+      "bottom": 21.7,
+      "left": 118.0,
+      "right": 122.3
+    },
+    "projection": {
+      "type": "equirectangular"
+    },
+    "credit": {
+      "author": "NordNordWest",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Taiwan_location_map.svg"
+    },
+    "source_ids": [
+      "CITYMAP"
+    ],
+    "definition_url": "https://en.wikipedia.org/wiki/Module:Location_map/data/Taiwan"
+  },
+  "cities_inset": {
+    "label": "Le nord · agrandissement",
+    "cities": [
+      "Nouveau Taipei",
+      "Taipei",
+      "Taoyuan"
+    ],
+    "center": [
+      121.43,
+      25.02
+    ],
+    "zoom": 6,
+    "x": 8,
+    "y": 314,
+    "width": 244,
+    "height": 112
   }
 }

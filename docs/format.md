@@ -116,7 +116,11 @@ euro value: `50 600 TWD/mois (≈ 1 440 €/mois)`. The rate lives in `data.json
 
 `per_euro` is the annual average of the data year: units of local currency for one euro,
 from ECB reference rates or Banque de France, otherwise a sourced cross rate explained in
-`basis`. A `bar`/`barh` chart or a `prose_values` record opts in with `"euro": true`; its
+`basis`. When neither central bank publishes the currency, keep an approximate cross
+rate from sourced legs for the same period. State the calculation, period and
+approximation in `basis` and in the cited bibliography entries. Keep the ≈ display;
+do not remove euro equivalents solely because a direct rate is unavailable.
+A `bar`/`barh` chart or a `prose_values` record opts in with `"euro": true`; its
 unit must start with the currency code (`TWD`, `TWD/mois`). A `year` on the record must
 equal the rate year, or rendering fails. The app adds the rate sources to the citation
 and writes the rate and year under the first rate source in the bibliography. Raw data
@@ -154,19 +158,67 @@ in a keyboard-scrollable local table; the page itself must never overflow.
 `cities` contains `name`, raw `population`, `lat`, `lon` and `note` (economic role).
 Optional `offset: [dx, dy]` per city moves its pin (with a leader line) when two pins overlap.
 Optional `cities_note` replaces the note under the city map.
-Optional `cities_inset` magnifies a dense cluster: `{"label", "cities": [names], "lon", "lat",
-"scale", "x", "y", "width", "height"}` (inset box in the 260x360 city-map frame, `lon`/`lat` its
-bottom-left anchor).
+`cities_map` is required for every `{{map:cities}}`. Download an existing, openly licensed
+country location map from Wikimedia Commons. Store it in `assets/` as SVG or WebP,
+at most 400,000 bytes. Keep the original image frame, colours and aspect ratio. Do not
+redraw coastlines or estimate bounds from the country's extent.
+
+```json
+"cities_map": {
+  "file": "cities.svg",
+  "width": 1223,
+  "height": 995,
+  "bounds": {"top": 36.25, "bottom": 27.3, "left": -13.55, "right": -0.6},
+  "projection": {"type": "equirectangular"},
+  "definition_url": "https://en.wikipedia.org/wiki/Module:Location_map/data/Morocco",
+  "credit": {
+    "author": "Eric Gaba (Sting)",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Morocco_location_map.svg"
+  },
+  "source_ids": ["CITYMAP"]
+}
+```
+
+Read the matching Wikipedia `Module:Location map/data/<Country>` and the Commons file
+page. `width` and `height` are the source image dimensions. `bounds` describe its full
+frame, including margins and neighbouring countries. For `equirectangular`, x is the
+fraction of longitude from left to right and y is the fraction of latitude from top
+to bottom. Longitude bounds may cross the antimeridian.
+
+A module with custom `x`/`y` formulas needs the matching projection. Never use rectangular
+latitude bounds for a conic map. `equidistant_conic` implements the USA and China modules:
+`radius = radius_offset - radians(lat)`, `angle = cone * radians(lon - longitude0)`,
+`x% = 50 + scale * radius * sin(angle)`,
+`y% = 50 + scale * y_scale * (y_offset - radius0 + radius * cos(angle))`.
+Store those seven numeric parameters in `projection`, with its `type`; set `bounds` to
+`null`. See the USA and CHN records. Add explicit support and reference-point tests for
+any other projection before using it. Module formulas are never evaluated as code.
+
+`source_ids` are automatically cited alongside `map_sources.cities`. The bibliography
+entry must link the Commons file page, author, licence, module and any conversion.
+The renderer also attaches the declared author and licence to the first map source.
+A missing asset, unsupported projection or city outside the map fails rendering.
+
+Optional `cities_inset` magnifies a dense cluster on the **same image and projection**:
+`{"label", "cities": [names], "center": [lon, lat], "zoom", "x", "y", "width", "height"}`.
+Coordinates and offsets use the 260-unit-wide SVG frame. Its height expands to fit the
+full source image and inset. Reserve 26 units at the top of the inset for its label.
+Place it below the map with `y >= 8 + 244 * cities_map.height / cities_map.width`.
+A dashed box identifies the enlarged area. Offsets and leader lines work in either
+frame. Keep pin circles fully visible and at least 22 units apart; pins have radius 11.
+
 Optional `map_focus: {"bbox": [lon_min, lat_min, lon_max, lat_max], "caption": "..."}` keeps only
-the polygons inside the box on the locator and city maps (mainland of a country with distant
-territories, e.g. USA without Alaska and Hawaii).
+the polygons inside the box on the **locator** (e.g. USA without Alaska and Hawaii).
+The city map's frame is defined entirely by its licensed asset and projection.
 The city figure owns names, rounded populations and roles. Taiwan's city data are
 municipalities at 31 December 2025; captions for new fiches must state their own scope.
 
 - `assets/flag.svg`: licensed flag, source and licence in the bibliography.
 - `assets/relief.jpg|png|webp|svg`: optional licensed image, preferably ≤400 KB.
   Preserve proportions and terrain colours in both themes. Only reliable annotations.
-- Local Natural Earth geometry renders locator and city maps.
+- Local Natural Earth geometry renders the locator. Licensed assets render the city maps.
 - `hero_sources`: source IDs for identity and flag.
 - `map_sources`: object with `locator`, `cities`, `relief` arrays of source IDs.
 

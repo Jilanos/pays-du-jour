@@ -1,10 +1,24 @@
+import json
 import re
+from copy import deepcopy
+from math import dist
 from xml.etree import ElementTree as ET
 
 import pytest
 
 from app.config import Settings
-from app.maps import cities, path
+from app.content import read_fiche
+from app.maps import cities, map_point, path, validate_city_map
+
+CODES = ("TWN", "USA", "CHN", "CHE", "MAR", "DZA")
+
+
+def country_data(code):
+    return json.loads((Settings().content_dir / code / "data.json").read_text())
+
+
+def svg_root(rendered):
+    return ET.fromstring(rendered[rendered.index("<svg") : rendered.rindex("</svg>") + 6])
 
 
 def test_distant_polygon_crossing_opposite_meridian_stays_outside_regional_frame():
@@ -18,38 +32,97 @@ def test_distant_polygon_crossing_opposite_meridian_stays_outside_regional_frame
         assert max(xs) < 0 or min(xs) > 400
 
 
-@pytest.mark.parametrize("code", ["CHN", "TWN", "VAT"])
-def test_city_scale_stays_visible_at_continental_island_and_microstate_sizes(code):
-    rendered = cities(code, code, [], Settings().geo_dir)
-    start, end = rendered.index("<svg"), rendered.index("</svg>") + 6
-    root = ET.fromstring(rendered[start:end])
-    scale = next(p for p in root.findall(".//{*}path") if p.attrib["d"].startswith("M18 326"))
-    width = float(re.search(r" h([\d.]+)", scale.attrib["d"]).group(1))
-    assert 30 <= width <= 80
-
-
-def test_data_driven_inset_moves_grouped_cities_out_of_the_main_map():
-    city_data = [
-        {"name": "A", "population": 1, "lat": 33.6, "lon": -7.6},
-        {"name": "B", "population": 1, "lat": 34.0, "lon": -6.8},
-        {"name": "C", "population": 1, "lat": 31.6, "lon": -8.0},
-    ]
-    inset = {
-        "label": "Nord",
-        "cities": ["A", "B"],
-        "lon": -7.7,
-        "lat": 33.3,
-        "scale": 38,
-        "x": 140,
-        "y": 192,
-        "width": 114,
-        "height": 86,
+def test_rectangular_map_corners_and_antimeridian():
+    data = {
+        "projection": {"type": "equirectangular"},
+        "bounds": {"left": 170, "right": -170, "top": 20, "bottom": -10},
     }
-    rendered = cities("MAR", "Maroc", city_data, Settings().geo_dir, inset=inset, note="Note")
-    start, end = rendered.index("<svg"), rendered.rindex("</svg>") + 6
-    root = ET.fromstring(rendered[start:end])
-    frame = next(s for s in root.iter("{http://www.w3.org/2000/svg}svg") if s is not root)
-    inner = frame.findall(".//{*}circle")
-    outer = [c for c in root.findall(".//{*}circle") if c not in inner]
-    assert len(inner) == 2 and len(outer) == 1
-    assert '<p class="figure-note">Note</p>' in rendered
+    assert map_point(data, (170, 20)) == (0, 0)
+    assert map_point(data, (-170, -10)) == (1, 1)
+    assert map_point(data, (180, 5)) == (0.5, 0.5)
+
+
+@pytest.mark.parametrize(
+    "code,point,expected",
+    [
+        ("USA", (-77.04, 38.89), (0.81631028, 0.43527750)),
+        ("USA", (-122.33, 47.61), (0.11490606, 0.09482243)),
+        ("CHN", (116.39, 39.91), (0.69260357, 0.42323668)),
+        ("CHN", (121.5, 31.2), (0.80296350, 0.62750885)),
+    ],
+)
+def test_module_reference_locations(code, point, expected):
+    # Reference points from the module examples, expressed as fractions of the full image.
+    assert map_point(country_data(code)["cities_map"], point) == pytest.approx(expected, abs=1e-7)
+
+
+@pytest.mark.parametrize("code", CODES)
+def test_licensed_assets_pins_insets_and_sources(code):
+    data = country_data(code)
+    map_data = data["cities_map"]
+    validate_city_map(map_data, Settings().content_dir / code / "assets")
+    assert "CC BY-SA" in map_data["credit"]["license"]
+    rendered = cities(code, code, data["cities"], map_data, inset=data.get("cities_inset"))
+    root = svg_root(rendered)
+    images = root.findall(".//{*}image")
+    assert len(images) == (2 if data.get("cities_inset") else 1)
+    assert all(im.get("href") == f"/pays/{code}/assets/{map_data['file']}" for im in images)
+    assert not root.findall(".//{*}path")  # No country outline redrawn from geometry.
+    pins = root.findall(".//{*}g[@class='city-pin']")
+    assert len(pins) == len(data["cities"])
+    image_h = 244 * map_data["height"] / map_data["width"]
+    for city in data["cities"]:
+        pin = next(p for p in pins if p.get("data-city") == city["name"])
+        u, v = map_point(map_data, (city["lon"], city["lat"]))
+        assert float(pin.get("data-origin-x")) == pytest.approx(8 + u * 244)
+        assert float(pin.get("data-origin-y")) == pytest.approx(8 + v * image_h)
+    # Pins in each frame must be separate, including dense clusters.
+    inset = root.find("{*}svg")
+    frames = [root, inset] if inset is not None else [root]
+    for frame in frames:
+        dots = frame.findall("./{*}g[@class='city-pin']/{*}circle")
+        points = [(float(p.get("cx")), float(p.get("cy"))) for p in dots]
+        assert all(dist(a, b) >= 22 for i, a in enumerate(points) for b in points[i + 1 :])
+    if inset is not None:
+        assert float(inset.get("y")) >= 8 + image_h
+    html = str(read_fiche(code, Settings()).html)
+    assert 'id="src-CITYMAP"' in html
+    assert map_data["credit"]["author"] in html
+    assert map_data["credit"]["license_url"] in html
+    assert 'href="#villes"' in html
+
+
+@pytest.mark.parametrize(
+    "change,match",
+    [
+        ({"file": "../cities.svg"}, "local SVG"),
+        ({"file": "missing.svg"}, "Missing city map"),
+        ({"width": 0}, "positive"),
+        ({"credit": {}}, "credit needs"),
+        ({"source_ids": []}, "source_ids"),
+        ({"projection": {"type": "mercator"}}, "Unsupported"),
+        ({"bounds": {"left": 0, "right": 5, "top": 30, "bottom": 30}}, "bottom < top"),
+    ],
+)
+def test_invalid_map_contract_fails(change, match):
+    data = deepcopy(country_data("MAR")["cities_map"])
+    data.update(change)
+    with pytest.raises(ValueError, match=match):
+        validate_city_map(data, Settings().content_dir / "MAR/assets")
+
+
+def test_large_asset_fails(tmp_path):
+    data = country_data("MAR")["cities_map"]
+    (tmp_path / data["file"]).write_bytes(b"x" * 400_001)
+    with pytest.raises(ValueError, match="400 KB"):
+        validate_city_map(data, tmp_path)
+
+
+def test_city_outside_map_and_clipped_inset_fail():
+    data = country_data("TWN")
+    wrong = [{"name": "Outside", "population": 1, "lon": 100, "lat": 25}]
+    with pytest.raises(ValueError, match="outside licensed map"):
+        cities("TWN", "Taiwan", wrong, data["cities_map"])
+    inset = {**data["cities_inset"], "zoom": 100}
+    with pytest.raises(ValueError, match="clipped in inset"):
+        cities("TWN", "Taiwan", data["cities"], data["cities_map"], inset=inset)

@@ -240,22 +240,24 @@
   ],
   "cities_title": "Les villes de l’Atlantique et du Saïs",
   "cities_scope": "Population légale des villes · 1er septembre 2024 · arrondie au millier par le HCP",
-  "cities_note": "Contour de Natural Earth, Sahara occidental compris. Salé, voisine de Rabat, figure dans le texte.",
+  "cities_note": "Salé, voisine de Rabat, figure dans le texte. L’encart agrandit le nord-ouest.",
   "cities_inset": {
-    "label": "Nord-ouest",
+    "label": "Nord-ouest · agrandissement",
     "cities": [
       "Casablanca",
       "Rabat",
       "Meknès",
       "Fès"
     ],
-    "lon": -7.618,
-    "lat": 33.3,
-    "scale": 38,
-    "x": 140,
-    "y": 192,
-    "width": 114,
-    "height": 86
+    "center": [
+      -6.3,
+      33.85
+    ],
+    "zoom": 3.6,
+    "x": 8,
+    "y": 224,
+    "width": 244,
+    "height": 112
   },
   "charts": [
     {
@@ -778,8 +780,7 @@
     ],
     "cities": [
       "S01",
-      "S17",
-      "NE"
+      "S17"
     ],
     "relief": [
       "S16"
@@ -972,7 +973,35 @@
     },
     {
       "id": "NE",
-      "text": "[Natural Earth](https://www.naturalearthdata.com/about/terms-of-use/), domaine public. Contours 1:110 m et 1:50 m. Le contour 1:50 m du Maroc inclut le Sahara occidental. Projections régionales, repères et encart réalisés pour cette fiche. Les contours ne constituent pas une position sur la souveraineté."
+      "text": "[Natural Earth](https://www.naturalearthdata.com/about/terms-of-use/), domaine public. Contours 1:110 m et 1:50 m. Le contour du localisateur inclut le Sahara occidental. Le fond des villes s’arrête à 27,3° N. Projection régionale et repère mondial du localisateur. Les contours ne constituent pas une position sur la souveraineté."
+    },
+    {
+      "id": "CITYMAP",
+      "text": "[Wikimedia Commons, Morocco location map.svg](https://commons.wikimedia.org/wiki/File:Morocco_location_map.svg). Eric Gaba (Sting), [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0). SVG original conservé. [Bornes et projection](https://en.wikipedia.org/wiki/Module:Location_map/data/Morocco). Repères numérotés et encart ajoutés à l’affichage."
     }
-  ]
+  ],
+  "cities_map": {
+    "file": "cities.svg",
+    "width": 1223,
+    "height": 995,
+    "bounds": {
+      "top": 36.25,
+      "bottom": 27.3,
+      "left": -13.55,
+      "right": -0.6
+    },
+    "projection": {
+      "type": "equirectangular"
+    },
+    "credit": {
+      "author": "Eric Gaba (Sting)",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Morocco_location_map.svg"
+    },
+    "source_ids": [
+      "CITYMAP"
+    ],
+    "definition_url": "https://en.wikipedia.org/wiki/Module:Location_map/data/Morocco"
+  }
 }
