@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-15",
+  "checked": "2026-11-16",
   "sources": [
     {
       "id": "FR-DEM",
@@ -108,6 +108,14 @@
     {
       "id": "FR-AGE-KOR",
       "text": "[Insee, population par sexe et âge quinquennal, bilan démographique, édition du 15 juin 2026](https://www.insee.fr/fr/statistiques/fichier/8999013/4_Pop1janv_grages_quinquennal.xlsx). Feuilles FR-Hommes et FR-Femmes, ligne 2020. France entière au 1er janvier 2020. Moins d’un an et 1–4 ans additionnés ; 100–104 et 105 ans ou plus additionnés. Mêmes cohortes que le recensement coréen de novembre 2020."
+    },
+    {
+      "id": "FR-WAGE-SES-2022",
+      "text": "[Eurostat, salaires horaires SES 2022, France et Pays-Bas](https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses_hourly?lang=EN&geo=NL&geo=FR&time=2022&sex=T&age=TOTAL&isco08=TOTAL&worktime=TOTAL&nace_r2=B-S_X_O). Série earn_ses_hourly ; France : médiane 16,46 €, moyenne 20,13 €. Même enquête 2022, champ des entreprises d’au moins dix salariés, secteurs B-S hors O, brut, temps plein et partiel, primes régulières et heures supplémentaires que les Pays-Bas. Les versements annuels non réguliers sont exclus. [Méthode](https://ec.europa.eu/eurostat/cache/metadata/en/earn_ses_main_esms.htm). Montants déjà en euros."
+    },
+    {
+      "id": "FR-VA-EU-2025",
+      "text": "[Eurostat, valeur ajoutée française par activité en 2025](https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10_a10?lang=EN&geo=NL&geo=FR&time=2025&unit=CP_MEUR&na_item=B1G). Série nama_10_a10, B1G, CP_MEUR. Total 2664898,2 M€ ; A 41318,7 M€ ; B-E 358527,6 M€ ; F 148501,4 M€. Industrie et construction additionnées ; services obtenus par différence ; parts calculées sur la VA totale. Données françaises provisoires ; même fichier, année et dénominateur que les Pays-Bas."
     }
   ],
   "population": {
@@ -860,6 +868,42 @@
     ],
     "source_ids": [
       "FR-AGE-KOR"
+    ]
+  },
+  "salaires-ses-2022": {
+    "status": "comparable",
+    "year": 2022,
+    "unit": "€/heure",
+    "labels": [
+      "Salaire médian",
+      "Salaire moyen"
+    ],
+    "values": [
+      16.46,
+      20.13
+    ],
+    "coverage": "Brut par heure payée · SES 2022 · entreprises de dix salariés ou plus, NACE B-S hors O",
+    "source_ids": [
+      "FR-WAGE-SES-2022"
+    ]
+  },
+  "va-eurostat-2025": {
+    "status": "comparable",
+    "year": 2025,
+    "unit": "%",
+    "labels": [
+      "Agriculture, forêt, pêche",
+      "Industrie et construction",
+      "Services"
+    ],
+    "values": [
+      1.5504794892352733,
+      19.02620520363592,
+      79.42331530712879
+    ],
+    "coverage": "Valeur ajoutée courante, hors impôts nets sur les produits · 2025, provisoire",
+    "source_ids": [
+      "FR-VA-EU-2025"
     ]
   }
 }
