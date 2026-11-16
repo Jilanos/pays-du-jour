@@ -182,6 +182,11 @@ def map_point(map_data, point):
     lon, lat = point
     projection = map_data["projection"]
     kind = projection["type"]
+    if kind == "japan_side_map":
+        # Wikipedia's Japan module moves latitudes <= 30.90 into the Ryukyu panel.
+        if lat > 30.90:
+            return (lon - 128.24) / (149.27 - 128.24), (lat - 45.86) / (30.02 - 45.86)
+        return (lon - 110.43) / (131.44 - 110.43), (lat - 39.54) / (23.71 - 39.54)
     if kind == "equirectangular":
         bounds = map_data["bounds"]
         width = (bounds["right"] - bounds["left"]) % 360 or 360
@@ -221,7 +226,13 @@ def validate_city_map(map_data, assets):
     if not map_data.get("source_ids"):
         raise ValueError("City map credit needs source_ids")
     projection = map_data["projection"]
-    if projection["type"] == "equirectangular":
+    if projection["type"] == "japan_side_map":
+        module = "https://en.wikipedia.org/wiki/Module:Location_map/data/Japan"
+        if map_data.get("definition_url") != module:
+            raise ValueError("Japan side map requires its exact Wikipedia module")
+        if map_data.get("bounds") is not None:
+            raise ValueError("Japan side map uses two frames, not rectangular bounds")
+    elif projection["type"] == "equirectangular":
         bounds = map_data["bounds"]
         if not all(isfinite(bounds[key]) for key in ("top", "bottom", "left", "right")):
             raise ValueError("City map bounds must be finite")
