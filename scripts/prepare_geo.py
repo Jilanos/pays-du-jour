@@ -11,7 +11,8 @@ import zipfile
 from pathlib import Path
 
 import shapefile
-from shapely.geometry import mapping, shape
+from shapely.geometry import MultiPolygon, Point, mapping, shape
+from shapely.ops import unary_union
 
 ROOT = Path(__file__).resolve().parent.parent
 TARGET = ROOT / "data/geo"
@@ -44,6 +45,22 @@ def rounded(value):
     return round(value, 3) if isinstance(value, float) else value
 
 
+def recognized_ukraine(features):
+    """Keep Natural Earth's coastlines while assigning Crimea to Ukraine.
+
+    The default source assigns the entire peninsula to RUS as a separate polygon.
+    Locate that polygon with an inland Simferopol reference point, then transfer
+    it intact. This affects country identification, never the military front line.
+    """
+    russian = list(shape(features["RUS"]).geoms)
+    crimea = [polygon for polygon in russian if polygon.contains(Point(34.1, 44.95))]
+    if len(crimea) != 1:
+        raise ValueError("Review the Natural Earth Crimea polygon before rebuilding")
+    features["UKR"] = mapping(unary_union([shape(features["UKR"]), crimea[0]]))
+    features["RUS"] = mapping(MultiPolygon([p for p in russian if p != crimea[0]]))
+    return features
+
+
 def save(name, features, tolerance):
     simplified = {}
     for code, geo in features.items():
@@ -60,8 +77,10 @@ def save(name, features, tolerance):
 def main():
     TARGET.mkdir(parents=True, exist_ok=True)
     codes = {row["iso3"] for row in csv.DictReader((ROOT / "data/ordre.csv").open())}
-    world = download(110)
-    countries = {code: geo for code, geo in download(50).items() if code in codes}
+    world = recognized_ukraine(download(110))
+    countries = {
+        code: geo for code, geo in recognized_ukraine(download(50)).items() if code in codes
+    }
     missing = codes - countries.keys()
     if missing:
         countries.update({code: geo for code, geo in download(10).items() if code in missing})

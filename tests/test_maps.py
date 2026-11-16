@@ -10,7 +10,7 @@ from app.config import Settings
 from app.content import read_fiche
 from app.maps import cities, map_point, path, validate_city_map
 
-CODES = ("TWN", "USA", "CHN", "CHE", "MAR", "DZA", "JPN")
+CODES = ("TWN", "USA", "CHN", "CHE", "MAR", "DZA", "JPN", "UKR")
 
 
 def country_data(code):
@@ -19,6 +19,35 @@ def country_data(code):
 
 def svg_root(rendered):
     return ET.fromstring(rendered[rendered.index("<svg") : rendered.rindex("</svg>") + 6])
+
+
+@pytest.mark.parametrize("filename", ("countries-50m.json", "world-110m.json"))
+def test_ukraine_locator_includes_crimea_without_duplicate_russian_highlight(filename):
+    features = json.loads((Settings().geo_dir / filename).read_text())
+
+    def contains(geometry, point):
+        polygons = (
+            geometry["coordinates"]
+            if geometry["type"] == "MultiPolygon"
+            else [geometry["coordinates"]]
+        )
+
+        def in_ring(ring):
+            x, y = point
+            inside = False
+            for (ax, ay), (bx, by) in zip(ring, ring[1:], strict=False):
+                if (ay > y) != (by > y) and x < ax + (y - ay) * (bx - ax) / (by - ay):
+                    inside = not inside
+            return inside
+
+        return any(in_ring(p[0]) and not any(in_ring(h) for h in p[1:]) for p in polygons)
+
+    # Inland reference points in Crimea and each country's undisputed mainland.
+    for point in ((34.1, 44.95), (33.6, 44.65), (30.52, 50.45)):
+        assert contains(features["UKR"], point)
+        assert not contains(features["RUS"], point)
+    assert contains(features["RUS"], (37.62, 55.75))
+    assert not contains(features["UKR"], (37.62, 55.75))
 
 
 def test_distant_polygon_crossing_opposite_meridian_stays_outside_regional_frame():

@@ -1,0 +1,756 @@
+{
+  "keyfacts": [
+    {
+      "id": "population",
+      "label": "Population estimée",
+      "value": 37860221,
+      "unit": "habitants",
+      "year": 2024,
+      "coverage": "Territoire internationalement reconnu · WDI 2024",
+      "source_ids": [
+        "S01"
+      ],
+      "france": "population-wdi-2024"
+    },
+    {
+      "id": "superficie",
+      "label": "Superficie",
+      "value": 603700,
+      "unit": "km²",
+      "year": 2026,
+      "coverage": "Territoire internationalement reconnu · 2026",
+      "source_ids": [
+        "S02"
+      ],
+      "france": "superficie"
+    },
+    {
+      "id": "pib-nominal",
+      "label": "PIB nominal",
+      "value": 214233000000,
+      "unit": "USD",
+      "year": 2025,
+      "coverage": "Prix courants · FMI, estimation 2025",
+      "source_ids": [
+        "GDP"
+      ],
+      "france": "pib-nominal"
+    },
+    {
+      "id": "65-plus",
+      "label": "Part des 65 ans ou plus",
+      "value": 18.962448307579894,
+      "unit": "%",
+      "year": 2024,
+      "coverage": "Estimation démographique WDI · 2024",
+      "source_ids": [
+        "S01"
+      ],
+      "france": "65plus-wdi-2024"
+    },
+    {
+      "id": "deplaces",
+      "label": "Déplacés intérieurs",
+      "value": 3700000,
+      "unit": "personnes",
+      "year": 2026,
+      "coverage": "Estimation HCR · ordre de grandeur 2026",
+      "source_ids": [
+        "S05"
+      ]
+    },
+    {
+      "id": "reconstruction",
+      "label": "Reconstruction et relèvement",
+      "value": 587700000000,
+      "unit": "USD",
+      "year": 2026,
+      "coverage": "Besoins 2026-2035 · dégâts arrêtés fin 2025",
+      "source_ids": [
+        "S17"
+      ]
+    }
+  ],
+  "indices": [
+    {
+      "id": "idh",
+      "name": "Développement humain",
+      "acronym": "IDH",
+      "value": 0.779,
+      "year": 2023,
+      "scale_min": 0,
+      "scale_max": 1,
+      "higher_is_better": true,
+      "precision": 3,
+      "rank": "87ᵉ",
+      "source_ids": [
+        "HDI"
+      ],
+      "france": "idh"
+    },
+    {
+      "id": "gini",
+      "name": "Inégalités avant l’invasion",
+      "acronym": "Gini",
+      "value": 25.6,
+      "year": 2020,
+      "scale_min": 0,
+      "scale_max": 100,
+      "higher_is_better": false,
+      "precision": 1,
+      "rank": "Sans classement",
+      "source_ids": [
+        "GINI"
+      ],
+      "coverage": "Enquête ménages · 2020 · avant l’invasion à grande échelle",
+      "note_visible": "Le Gini de 2020 ne mesure pas les inégalités pendant la guerre.",
+      "france": {
+        "status": "non_comparable",
+        "reason": "Concept et équivalence du bien-être de l’enquête ukrainienne 2020 non validés face au niveau de vie français après redistribution ; aucune comparaison chiffrée.",
+        "source_ids": [
+          "GINI",
+          "FR-GINI"
+        ]
+      }
+    },
+    {
+      "id": "democratie",
+      "name": "Démocratie libérale",
+      "acronym": "V-Dem",
+      "value": 0.24,
+      "year": 2025,
+      "scale_min": 0,
+      "scale_max": 1,
+      "higher_is_better": true,
+      "precision": 2,
+      "rank": "108ᵉ",
+      "source_ids": [
+        "VDEM"
+      ],
+      "france": "democratie",
+      "note_visible": "La loi martiale et l’absence d’élections affectent cet indice."
+    },
+    {
+      "id": "presse",
+      "name": "Liberté de la presse",
+      "acronym": "RSF",
+      "value": 66.1,
+      "year": 2026,
+      "scale_min": 0,
+      "scale_max": 100,
+      "higher_is_better": true,
+      "precision": 2,
+      "rank": "55ᵉ / 180",
+      "source_ids": [
+        "RSF"
+      ],
+      "france": "presse"
+    },
+    {
+      "id": "corruption",
+      "name": "Corruption perçue",
+      "acronym": "CPI",
+      "value": 36,
+      "year": 2025,
+      "scale_min": 0,
+      "scale_max": 100,
+      "higher_is_better": true,
+      "precision": 0,
+      "rank": "104ᵉ / 182",
+      "source_ids": [
+        "CPI"
+      ],
+      "france": "corruption"
+    }
+  ],
+  "cities": [
+    {
+      "name": "Kyiv",
+      "population": 2952301,
+      "lat": 50.435313,
+      "lon": 30.514682,
+      "note": "Capitale, services, institutions et technologies.",
+      "year": 2022,
+      "source_ids": [
+        "S03",
+        "NE"
+      ]
+    },
+    {
+      "name": "Kharkiv",
+      "population": 1421125,
+      "lat": 50.001929,
+      "lon": 36.248079,
+      "note": "Pôle universitaire et industriel, proche de la frontière russe.",
+      "year": 2022,
+      "source_ids": [
+        "S03",
+        "NE"
+      ]
+    },
+    {
+      "name": "Odesa",
+      "population": 1010537,
+      "lat": 46.491962,
+      "lon": 30.708055,
+      "note": "Port de la mer Noire, commerce et logistique.",
+      "year": 2022,
+      "source_ids": [
+        "S03",
+        "NE"
+      ]
+    },
+    {
+      "name": "Dnipro",
+      "population": 968502,
+      "lat": 48.481918,
+      "lon": 34.998078,
+      "note": "Métallurgie, mécanique et héritage spatial.",
+      "year": 2022,
+      "source_ids": [
+        "S03",
+        "NE"
+      ],
+      "offset": [
+        8,
+        -8
+      ]
+    },
+    {
+      "name": "Lviv",
+      "population": 717273,
+      "lat": 49.83498,
+      "lon": 24.029995,
+      "note": "Carrefour de l’ouest, patrimoine et services informatiques.",
+      "year": 2022,
+      "source_ids": [
+        "S03",
+        "NE"
+      ]
+    },
+    {
+      "name": "Zaporizhzhia",
+      "population": 710052,
+      "lat": 47.859243,
+      "lon": 35.174863,
+      "note": "Industrie et aménagements du Dnipro.",
+      "year": 2022,
+      "source_ids": [
+        "S03",
+        "NE"
+      ],
+      "offset": [
+        -8,
+        8
+      ]
+    }
+  ],
+  "cities_title": "Les grands pôles urbains",
+  "cities_scope": "Villes administratives · population au 1er janvier 2022",
+  "cities_note": "Populations antérieures à l’invasion à grande échelle. Elles ne décrivent pas les effectifs actuels. Le fond montre les frontières internationalement reconnues, sans ligne de front.",
+  "cities_map": {
+    "file": "cities.webp",
+    "width": 3780,
+    "height": 2540,
+    "bounds": {
+      "top": 52.7,
+      "bottom": 44.1,
+      "left": 21.5,
+      "right": 40.7
+    },
+    "projection": {
+      "type": "equirectangular"
+    },
+    "credit": {
+      "author": "Yakiv Gluck, TUBS",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "url": "https://commons.wikimedia.org/wiki/File:Ukraine_administrative_locations_map,_improved.svg"
+    },
+    "definition_url": "https://en.wikipedia.org/wiki/Module:Location_map/data/Ukraine",
+    "source_ids": [
+      "CITYMAP"
+    ]
+  },
+  "charts": [
+    {
+      "id": "climat",
+      "type": "climate",
+      "title": "Kyiv : un hiver continental",
+      "year": "1991–2020",
+      "subtitle": "Kyiv et Paris-Montsouris · normales 1991–2020 · °C et mm",
+      "place": "Kyiv",
+      "tmin": [
+        -5.5,
+        -5.0,
+        -0.8,
+        5.7,
+        10.9,
+        14.8,
+        16.6,
+        15.7,
+        10.6,
+        5.1,
+        0.3,
+        -3.5
+      ],
+      "tmax": [
+        -0.7,
+        0.8,
+        6.5,
+        15.1,
+        21.1,
+        24.6,
+        26.6,
+        25.9,
+        20.0,
+        12.9,
+        5.3,
+        0.5
+      ],
+      "precip_mm": [
+        37,
+        39,
+        40,
+        42,
+        65,
+        74,
+        68,
+        56,
+        58,
+        46,
+        46,
+        47
+      ],
+      "source_ids": [
+        "S04"
+      ],
+      "france": "climat-paris",
+      "rain_max": 100
+    },
+    {
+      "id": "pyramide-ages",
+      "type": "pyramid",
+      "title": "Une population vieillissante, des effectifs incertains",
+      "year": 2024,
+      "subtitle": "Estimations WDI · milieu de 2024 · effectifs ramenés en %",
+      "age_groups": [
+        "0–4",
+        "5–9",
+        "10–14",
+        "15–19",
+        "20–24",
+        "25–29",
+        "30–34",
+        "35–39",
+        "40–44",
+        "45–49",
+        "50–54",
+        "55–59",
+        "60–64",
+        "65–69",
+        "70–74",
+        "75–79",
+        "80+"
+      ],
+      "male": [
+        647376.5183934153,
+        921527.5261826589,
+        1137041.032305879,
+        1053847.5299421672,
+        894044.5254018058,
+        1008999.0286679195,
+        1329819.037783135,
+        1661716.5472130862,
+        1555532.0441961451,
+        1324067.5376197207,
+        1188865.5337783303,
+        1180430.5335386728,
+        1244112.035348007,
+        974535.5276887341,
+        682767.5193989539,
+        351501.5099869437,
+        441867.0125544313
+      ],
+      "female": [
+        613230.4697352032,
+        868333.9571450647,
+        1070720.9471566489,
+        999757.4506589157,
+        857145.4576972532,
+        976580.9518027456,
+        1287534.9364562172,
+        1616163.4202373966,
+        1545897.9237052135,
+        1424655.9296888765,
+        1368974.932436903,
+        1384769.4316573974,
+        1519850.9249907138,
+        1443109.4287781396,
+        1224914.9395467043,
+        745534.4632055957,
+        1314994.4351010055
+      ],
+      "unit": "personnes",
+      "source_ids": [
+        "S01"
+      ],
+      "france": "pyramide-wdi-2024-80plus",
+      "note_visible": "Estimations sur le territoire internationalement reconnu. Le graphique ne recense pas les habitants présents dans les seules zones gouvernementales.",
+      "note": "Effectifs obtenus par multiplication des parts quinquennales et des totaux de chaque sexe. Les décimales de calcul sont conservées. Le dessin rapporte chaque sexe à la population totale des deux sexes."
+    },
+    {
+      "id": "langues",
+      "type": "share",
+      "title": "Les langues parlées à la maison",
+      "year": 2024,
+      "subtitle": "Enquête Razumkov · juin 2024 · adultes en zone gouvernementale",
+      "labels": [
+        "Ukrainien, seul ou surtout",
+        "Ukrainien et russe en alternance",
+        "Russe, seul ou surtout",
+        "Autre langue",
+        "Indécis"
+      ],
+      "values": [
+        70.5,
+        17.8,
+        11.0,
+        0.5,
+        0.4
+      ],
+      "unit": "%",
+      "source_ids": [
+        "S06"
+      ],
+      "note_visible": "Territoires occupés et exil exclus. Total publié : 100,2 %, effet des arrondis."
+    },
+    {
+      "id": "religions",
+      "type": "share",
+      "title": "Les appartenances religieuses déclarées",
+      "year": 2025,
+      "subtitle": "Enquête Razumkov · novembre 2025 · adultes en zone gouvernementale",
+      "labels": [
+        "Orthodoxes",
+        "Gréco-catholiques",
+        "Chrétiens sans autre précision",
+        "Autres confessions",
+        "Sans affiliation"
+      ],
+      "values": [
+        58.3,
+        11.8,
+        10.1,
+        4.2,
+        15.5
+      ],
+      "unit": "%",
+      "source_ids": [
+        "S07"
+      ],
+      "note_visible": "Affiliation déclarée. Total publié : 99,9 %, effet des arrondis. Les petites minorités sont mal représentées."
+    },
+    {
+      "id": "salaires",
+      "type": "barh",
+      "title": "Le salaire brut moyen versé",
+      "year": 2025,
+      "subtitle": "Salariés réguliers suivis par la statistique publique · novembre 2025",
+      "labels": [
+        "Moyenne nationale"
+      ],
+      "values": [
+        27167
+      ],
+      "unit": "UAH/mois",
+      "source_ids": [
+        "S11",
+        "S37"
+      ],
+      "euro": true,
+      "france": {
+        "status": "non_comparable",
+        "reason": "Ukraine : salariés réguliers des entreprises, institutions et organisations, mois de novembre 2025 ; France : salaire du privé en équivalent temps plein sur une année. Champ, durée et primes non harmonisés.",
+        "source_ids": [
+          "FR-WAGE",
+          "S11",
+          "S37"
+        ]
+      },
+      "note_visible": "Moyenne des salaires versés. La médiane des offres citée dans le texte mesure un autre champ."
+    },
+    {
+      "id": "pib-secteurs",
+      "type": "share",
+      "title": "La composition de la valeur ajoutée",
+      "year": 2024,
+      "subtitle": "Parts de la valeur ajoutée courante · 2024 · %",
+      "labels": [
+        "Agriculture, forêt, pêche",
+        "Industrie et construction",
+        "Services"
+      ],
+      "values": [
+        8.410200065664347,
+        21.962970352628513,
+        69.62682958170714
+      ],
+      "unit": "%",
+      "source_ids": [
+        "S14"
+      ],
+      "france": "valeur-ajoutee-2024",
+      "note": "Parts calculées sur la somme des trois branches, hors impôts nets sur les produits. Même dénominateur et même année pour la France. Couverture territoriale ukrainienne affectée par la guerre."
+    },
+    {
+      "id": "reconstruction",
+      "type": "barh",
+      "title": "Trois grands chantiers de reconstruction",
+      "year": 2026,
+      "subtitle": "RDNA5 · besoins 2026-2035 · USD",
+      "labels": [
+        "Transport",
+        "Énergie et extraction",
+        "Logement"
+      ],
+      "values": [
+        96300000000,
+        90600000000,
+        89800000000
+      ],
+      "unit": "USD",
+      "source_ids": [
+        "S17"
+      ],
+      "note_visible": "Trois secteurs sélectionnés. Besoins estimés à partir de la situation au 31 décembre 2025.",
+      "note": "Besoins sur dix ans, hors dépenses déjà réalisées prises en compte par la méthode RDNA5. Ces trois postes ne représentent pas la totalité des secteurs."
+    }
+  ],
+  "euro": {
+    "currency": "UAH",
+    "per_euro": 47.08530136986301,
+    "year": 2025,
+    "basis": "Moyenne arithmétique calculée sur les 365 taux officiels quotidiens EUR/UAH de la Banque nationale d’Ukraine, du 1er janvier au 31 décembre 2025 : somme des rate_per_unit divisée par 365 = 47,08530136986301 UAH pour 1 €. Base en jours calendaires pour les montants de 2025. Chaque équivalent reste approximatif (≈).",
+    "source_ids": [
+      "S12"
+    ]
+  },
+  "prose_values": {
+    "mediane-offres": {
+      "value": 27500,
+      "unit": "UAH/mois",
+      "year": 2025,
+      "euro": true
+    },
+    "hauteur": {
+      "value": 2.1,
+      "unit": "mètres",
+      "precision": 2
+    }
+  },
+  "sources": [
+    {
+      "id": "S01",
+      "text": "[Banque mondiale, WDI, population totale et structure par âge et sexe, 2024](https://api.worldbank.org/v2/country/UKR/indicator/SP.POP.TOTL?format=json&date=2024) ; [séries quinquennales](https://data.worldbank.org/indicator/SP.POP.0004.MA.5Y?locations=UA). Estimations ONU/WPP et WDI, base mise à jour le 11 novembre 2026. Population sur le territoire internationalement reconnu, territoires occupés compris ; aucune mesure de la seule population présente dans les zones gouvernementales. Pour chaque sexe et classe : part publiée de la population de ce sexe multipliée par SP.POP.TOTL.MA.IN ou FE.IN, divisée par 100. Somme des classes de 65 ans ou plus divisée par la population totale pour le repère de vieillissement. Valeurs calculées conservées sans arrondi."
+    },
+    {
+      "id": "S02",
+      "text": "[France Diplomatie, présentation de l’Ukraine](https://www.diplomatie.gouv.fr/fr/information-par-pays/ukraine/presentation-de-l-ukraine), mise à jour du 30 octobre 2026. Identité, superficie et politique. Les anciennes données démographiques de cette page ne sont pas reprises."
+    },
+    {
+      "id": "S03",
+      "text": "[Service national des statistiques d’Ukraine, Number of Present Population of Ukraine, as of January 1 2022, PDF](https://stat.gov.ua/sites/default/files/2026-09/zb_chnas_22.pdf). Villes dans leurs limites administratives, population présente estimée au 1er janvier 2022 : Kyiv 2 952 301 ; Kharkiv 1 421 125 ; Odesa 1 010 537 ; Dnipro 968 502 ; Lviv 717 273 ; Zaporizhzhia 710 052. Référence antérieure à l’invasion à grande échelle, sans actualisation implicite en 2026. Rôles urbains recoupés dans les notices [Kyiv](https://en.wikipedia.org/wiki/Kyiv), [Kharkiv](https://en.wikipedia.org/wiki/Kharkiv), [Odesa](https://en.wikipedia.org/wiki/Odesa), [Dnipro](https://en.wikipedia.org/wiki/Dnipro), [Lviv](https://en.wikipedia.org/wiki/Lviv) et [Zaporizhzhia](https://en.wikipedia.org/wiki/Zaporizhzhia)."
+    },
+    {
+      "id": "S04",
+      "text": "[OMM / Ukrainian Hydrometeorological Center, Kyiv, World Weather Information Service](https://worldweather.wmo.int/en/city.html?cityId=207) ; [données JSON](https://worldweather.wmo.int/en/json/207_en.json) ; [Observatoire géophysique central Borys Sreznevsky, normales de Kyiv, station 33345](https://cgo-sreznevskyi.kyiv.ua/en/activity/klimatolohichna/climate-data-for-kyiv). Période 1991-2020. Minima et maxima moyens mensuels : WWIS. Précipitations mensuelles : normale explicitement publiée par l’Observatoire, total 618 mm. La table WWIS de précipitations diverge de cette normale nationale et n’est pas retenue. Les températures et les précipitations proviennent ainsi de deux publications primaires pour la même ville et la même période."
+    },
+    {
+      "id": "S05",
+      "text": "[HCR, Ukraine, situation et réponse en 2026](https://www.unhcr.org/ukraine.html). Estimation de 3,7 millions de déplacés intérieurs ; plus de 5,9 millions de réfugiés à l’étranger. Chiffres d’ordre de grandeur, champs distincts de la population résidente WDI."
+    },
+    {
+      "id": "S06",
+      "text": "[Centre Razumkov, The identity of Ukraine’s citizens: trends of change, juin 2024](https://razumkov.org.ua/en/surveys/the-identity-of-ukraine-s-citizens-trends-of-change-june-2024). Tableau « What is your household’s main language of communication? ». Adultes interrogés en zone gouvernementale ; territoires occupés, zones de combats et exil à l’étranger exclus. Addition des réponses ukrainien et surtout ukrainien, et russe et surtout russe. Autres langues et indécis conservés. Total publié 100,2 %, sans normalisation."
+    },
+    {
+      "id": "S07",
+      "text": "[Centre Razumkov / Fondation Konrad Adenauer, Religiosity, confessional affiliation and inter-church relations, novembre 2025](https://razumkov.org.ua/en/research-areas/surveys/religiosity-confessional-affiliation-and-inter-church-relations-in-ukrainian-society-november-2025). Enquête du 22 au 29 novembre 2025 auprès de 2 009 adultes en territoire gouvernemental, hors zones de combat. Affiliation déclarée, ensemble des répondants. Protestantisme 2,6 %, catholicisme romain 1,2 % et autres religions 0,4 % regroupés en « Autres confessions ». Total publié 99,9 %, sans normalisation."
+    },
+    {
+      "id": "S08",
+      "text": "[Ministère ukrainien de la Transformation numérique, cinq ans de Diia, 6 février 2025](https://thedigital.gov.ua/news/technologies/svyatkuemo-den-narodzhennya-dii-5-rokiv-tsifrovikh-zmin) ; [bilan 2025 du ministère](https://2025.thedigital.gov.ua/). Documents, démarches, aide aux déplacés et programme de réparation des logements."
+    },
+    {
+      "id": "S09",
+      "text": "[Wendy Wei / IWMF, Dance against war, 20 août 2025](https://www.iwmf.org/reporting/dance-against-war/). Reportage sur Closer, K41, couvre-feu et collectes de solidarité. Description datée de la scène musicale."
+    },
+    {
+      "id": "S10",
+      "text": "World Athletics : [titre olympique de Mahuchikh, 4 août 2024](https://worldathletics.org/competitions/olympic-games/the-xxxiii-olympic-games-7153115/news/article/paris-2024-olympics-report-women-high-jump) ; [ratification du record de Paris du 7 juillet 2024](https://worldathletics.org/news/press-releases/ratified-world-records-mahuchikh-eisa-hibbert-yan)."
+    },
+    {
+      "id": "S11",
+      "text": "[Banque nationale d’Ukraine, Macroeconomic and Monetary Review, janvier 2026, p. 22](https://bank.gov.ua/admin_uploads/article/MMR_2026-01_en.pdf). Moyenne SSSU de novembre 2025 publiée à 27,2 milliers de UAH ; médiane des salaires proposés sur Work.ua en décembre 2025 de 27,5 milliers de UAH. Cette médiane des offres ne représente pas celle des salaires versés. Le graphique retient la valeur SSSU non arrondie à la centaine, recoupée dans S37."
+    },
+    {
+      "id": "S12",
+      "text": "[Banque nationale d’Ukraine, taux officiels journaliers EUR/UAH, du 1er janvier au 31 décembre 2025, API](https://bank.gov.ua/NBU_Exchange/exchange_site?start=20250101&end=20251231&valcode=eur&sort=exchangedate&order=asc&json). Moyenne arithmétique des 365 taux rate_per_unit, un taux par date : 47,08530136986301 UAH pour 1 €. Base annuelle calculée sur les jours calendaires, et non cours courant ni moyenne des seuls jours ouvrés. Chaque équivalent en euros reste approximatif ; les salaires mensuels de novembre et décembre conservent cette base annuelle commune de 2025."
+    },
+    {
+      "id": "S13",
+      "text": "[Institut national d’études stratégiques d’Ukraine, Labor Income of Ukrainians in the Wartime, 2025](https://niss.gov.ua/en/doslidzhennya/socialna-politika/labor-income-ukrainians-wartime). Champ des rémunérations, disparités sectorielles et inflation."
+    },
+    {
+      "id": "S14",
+      "text": "[Banque mondiale, WDI, valeurs ajoutées ukrainiennes par branche, 2024, API](https://api.worldbank.org/v2/country/UKR/indicator/NV.AGR.TOTL.CD;NV.IND.TOTL.CD;NV.SRV.TOTL.CD?source=2&format=json&date=2024&per_page=100). Parts calculées sur la somme des trois branches en dollars courants, hors impôts nets sur les produits. Agriculture 13 920 448 411,1073 USD ; industrie et construction 36 352 808 894,1239 ; services 115 245 378 427,814. Base du 11 novembre 2026. Les comptes ukrainiens ne couvrent pas la production des territoires occupés de manière exhaustive."
+    },
+    {
+      "id": "S15",
+      "text": "[Leoni, implantations européennes, Ukraine](https://www.leoni.com/about-us/locations/europe). Sites de Kolomyia et de Nezhukhiv dans le district de Stryi, fabrication de systèmes de câblage automobile."
+    },
+    {
+      "id": "S16",
+      "text": "[Agence internationale de l’énergie, Ukraine’s Energy Security and the Coming Winter, synthèse, septembre 2024](https://www.iea.org/reports/ukraines-energy-security-and-the-coming-winter/executive-summary). Architecture des réseaux, centrales, importations et chauffage. Les scénarios quantifiés pour l’hiver 2024-2025 ne sont pas présentés comme des observations de 2026."
+    },
+    {
+      "id": "S17",
+      "text": "[Gouvernement ukrainien, Banque mondiale, Commission européenne et ONU, RDNA5, février 2026, PDF](https://documents1.worldbank.org/curated/en/099022026094036395/pdf/P51449922f93f3a-4278-42bc-b907-db9553d12069.pdf), p. 21-22, figure 7 et chapitres sectoriels ; [présentation du 23 février 2026](https://www.worldbank.org/en/news/press-release/2026/02/23/updated-ukraine-recovery-and-reconstruction-needs-assessment-released). État des dégâts au 31 décembre 2025. Besoins de reconstruction et relèvement 2026-2035 : 587,7 milliards USD au total ; transport 96,3 ; énergie et extraction 90,6 ; logement 89,8. Les besoins intègrent reconstruction améliorée, coûts et priorités sectorielles. Ils diffèrent des dommages directs, des pertes économiques et des montants déjà financés."
+    },
+    {
+      "id": "S18",
+      "text": "[Encyclopédie Wikipédia, History of Ukraine](https://en.wikipedia.org/wiki/History_of_Ukraine). Repères historiques, Holodomor, Seconde Guerre mondiale, période soviétique et indépendance. Recoupement de la période contemporaine avec le rapport CRS S19."
+    },
+    {
+      "id": "S19",
+      "text": "[Congressional Research Service, Ukraine: Background, Conflict with Russia, and U.S. Policy, R45008, 5 octobre 2021](https://www.everycrsreport.com/reports/R45008.html). Institutions, absence de recensement récent, révolution orange, Maïdan, annexion illégale de la Crimée et guerre du Donbass. Source historique, antérieure à l’invasion de 2022."
+    },
+    {
+      "id": "S21",
+      "text": "[Associated Press, rétablissement de l’indépendance des instances anticorruption, 31 juillet 2025](https://apnews.com/article/2abf1e53a71ed0fff726c256c55aefb8). Loi du 22 juillet, manifestations et vote du 31 juillet."
+    },
+    {
+      "id": "S22",
+      "text": "[Commission européenne, Ukraine Report 2026, document transmis au Conseil ST 15404/2026 ADD 6](https://data.consilium.europa.eu/doc/document/ST-15404-2026-ADD-6/en/pdf), novembre 2026. Institutions, élections interdites sous loi martiale et étapes d’adhésion, dont l’ouverture du groupe marché intérieur le 13 octobre 2026. La première conférence intergouvernementale date du 25 juin 2024."
+    },
+    {
+      "id": "S23",
+      "text": "[Cabinet des ministres d’Ukraine, nomination de Sergii Koretskyi, 16 juillet 2026](https://www.kmu.gov.ua/en/news/verkhovna-rada-pryznachyla-serhiia-koretskoho-premier-ministrom-ukrainy). Succession de Ioulia Svyrydenko, nommée le 17 juillet 2025. Priorités déclarées du nouveau gouvernement."
+    },
+    {
+      "id": "S24",
+      "text": "[Associated Press, remplacement d’Oleksandr Syrskyi par Mykhailo Drapatyi, 21 juillet 2026](https://apnews.com/article/504513cfcc5cbc55175dc605cc711793). Crise du remaniement et manifestations."
+    },
+    {
+      "id": "S25",
+      "text": "[Associated Press, ministres européens, frappes énergétiques et négociations, 16 novembre 2026](https://apnews.com/article/cde686fba0e452b10ca613b3517e884e). Absence de cessez-le-feu durable et désaccords sur les garanties et la sécurité européenne."
+    },
+    {
+      "id": "S26",
+      "text": "[Le Monde, Russia-Ukraine talks in Abu Dhabi make little progress, 11 novembre 2026](https://www.lemonde.fr/en/international/article/2026/11/11/russia-ukraine-talks-in-abu-dhabi-make-little-progress_6777323_4.html). Reprise des pourparlers des 10-11 novembre. Pour l’invasion et les opérations de 2022, voir aussi France Diplomatie S02."
+    },
+    {
+      "id": "S27",
+      "text": "[UNESCO, culture de préparation du borcht ukrainien, inscription du 1er juillet 2022](https://www.unesco.org/en/articles/culture-ukrainian-borscht-cooking-inscribed-list-intangible-cultural-heritage-need-urgent?hub=66116) ; [décision 5.EXT.COM 5](https://ich.unesco.org/en/Decisions/5.EXT.COM/5). Patrimoine immatériel nécessitant une sauvegarde urgente, effets des déplacements sur la transmission."
+    },
+    {
+      "id": "S28",
+      "text": "[France Diplomatie, relations bilatérales avec l’Ukraine, 30 octobre 2026](https://www.diplomatie.gouv.fr/fr/information-par-pays/ukraine/relations-bilaterales). Relations établies le 24 janvier 1992, format Normandie et coopérations civiles."
+    },
+    {
+      "id": "S29",
+      "text": "[Présidences ukrainienne et française, déclaration commune publiée le 14 juillet 2026](https://www.president.gov.ua/en/news/spilna-deklaraciya-prezidenta-ukrayini-ta-prezidenta-francuz-105425). Première commande annoncée de Rafale, financement sollicité et coopération industrielle en Ukraine. Une annonce de commande ne vaut pas livraison."
+    },
+    {
+      "id": "S30",
+      "text": "[Ministère ukrainien de la Défense, capacité et plan d’achat de drones FPV, 10 mars 2025](https://mod.gov.ua/en/news/glib-kanievskyi-in-2025-the-ministry-of-defence-plans-to-procure-4-5-million-fpv-drones). Distingue capacité industrielle, budget et intentions d’achat. Communication d’un belligérant."
+    },
+    {
+      "id": "S31",
+      "text": "[Ministère ukrainien de la Défense, bilan de Denys Shmyhal, janvier 2026](https://mod.gov.ua/en/news/systemic-changes-to-strengthen-ukraine-s-military-denys-shmyhal-reports-to-parliament-on-his-tenure-as-minister-of-defense). Livraisons de drones annoncées pour le semestre précédent et marché DOT-Chain Defence. Déclarations officielles, sans assimilation à une mesure indépendante de l’efficacité au combat."
+    },
+    {
+      "id": "S32",
+      "text": "[Ministère ukrainien de la Défense, Stalker drone: Tracks and strikes despite EW, 2025](https://mod.gov.ua/en/news/stalker-drone-tracks-and-strikes-despite-ew) ; [Ukraine et OTAN, défi de lutte contre les drones à fibre optique, 6 mai 2025](https://mod.gov.ua/en/news/ukraine-and-nato-join-efforts-to-strengthen-countermeasures-against-fiber-optic-controlled-fpv-drones). Fonction de la liaison optique, adaptations industrielles et retours des unités."
+    },
+    {
+      "id": "S33",
+      "text": "[UNESCO, peinture de Petrykivka, inscription de 2013](https://ich.unesco.org/fr/RL/la-peinture-decorative-de-petrykivka-expression-de-l-art-populaire-ornemental-ukrainien-00893) ; [Wikipédia, Ukrainian cuisine](https://en.wikipedia.org/wiki/Ukrainian_cuisine), composition et variantes des varenyky."
+    },
+    {
+      "id": "S34",
+      "text": "[Présidence ukrainienne, entretien Zelensky-Macron, 5 octobre 2026](https://www.president.gov.ua/en/news/prezidenti-ukrayini-ta-franciyi-obgovorili-oboronnu-pidtrimk-106741). Début de formation des pilotes sur Rafale évoqué lors de l’entretien."
+    },
+    {
+      "id": "S35",
+      "text": "[Le Monde, French troops are now operating in Ukraine, 16 novembre 2026](https://www.lemonde.fr/en/international/article/2026/11/16/french-troops-are-now-operating-in-ukraine_6782174_4.html). Missions de conseil et de formation, renforcement récent, effectif non publié. Aucun effectif de combat extrapolé."
+    },
+    {
+      "id": "S36",
+      "text": "[France Diplomatie, entretien avec le ministre ukrainien des Affaires étrangères au G7, 10 novembre 2026](https://www.diplomatie.gouv.fr/fr/presse-et-ressources/decouvrir-et-informer/actualites/ministerielle-g7-affaires-etrangeres-entretien-du-ministre-avec-m-andrii-sybiha-ministre-des). Soutien aux infrastructures énergétiques avant l’hiver."
+    },
+    {
+      "id": "S37",
+      "text": "[Minfin, salaires mensuels par région en 2025, données du service statistique ukrainien](https://index.minfin.com.ua/ua/labour/salary/average/2025/), tableau octobre-novembre-décembre. Novembre 2025 : moyenne nationale 27 167 UAH bruts mensuels. Valeur recoupée avec la publication de la NBU de janvier 2026, qui l’arrondit à 27,2 milliers de UAH. Le site Minfin est un média économique, distinct du ministère des Finances."
+    },
+    {
+      "id": "GDP",
+      "text": "[FMI, World Economic Outlook, octobre 2026, PIB nominal de l’Ukraine NGDPD](https://www.imf.org/external/datamapper/NGDPD@WEO/UKR) ; [API](https://www.imf.org/external/datamapper/api/v1/NGDPD/UKR). 2025 : 214,233 milliards USD courants. Même millésime et unité que la référence française."
+    },
+    {
+      "id": "HDI",
+      "text": "[PNUD, Human Development Report 2025, tableau des indices, données 2023](https://www.undp.org/sites/g/files/zskgke326/files/2025-05/hdr2025overviewen.pdf), tableaux et clé des rangs. Ukraine : IDH 0,779, 87e rang."
+    },
+    {
+      "id": "GINI",
+      "text": "[Banque mondiale, WDI/Poverty and Inequality Platform, Gini de l’Ukraine](https://api.worldbank.org/v2/country/UKR/indicator/SI.POV.GINI?format=json&date=2015:2025&per_page=50). Dernière observation non nulle extraite : 25,6 sur 100 en 2020. Aucune observation pour 2021-2025. Enquête antérieure à l’invasion à grande échelle ; pas de comparaison avec le niveau de vie français sans validation des concepts et unités statistiques."
+    },
+    {
+      "id": "VDEM",
+      "text": "[V-Dem Institute, Democracy Report 2026, tableau A2, p. 49 du PDF, données 2025](https://www.v-dem.net/documents/75/V-Dem_Institute_Democracy_Report_2026_lowres.pdf). Indice de démocratie libérale de l’Ukraine : 0,24 ; rang 108. Les restrictions sous loi martiale, dont l’absence d’élections, affectent la mesure. Le score n’est pas une appréciation de la légitimité de la défense du pays."
+    },
+    {
+      "id": "RSF",
+      "text": "[Reporters sans frontières, Ukraine, classement 2026](https://rsf.org/en/country/ukraine). Score 66,10 ; rang 55 sur 180. Contexte économique, pluralisme, pressions et sécurité des journalistes."
+    },
+    {
+      "id": "CPI",
+      "text": "[Transparency International Ukraine, Corruption Perceptions Index 2025](https://ti-ukraine.org/en/research/corruption-perceptions-index-2025/). Score 36 sur 100 ; rang 104 sur 182. Perception de la corruption du secteur public."
+    },
+    {
+      "id": "GEO",
+      "text": "[Wikipédia, Geography of Ukraine](https://en.wikipedia.org/wiki/Geography_of_Ukraine). Frontières, Dnipro, plaines, tchernozioms, relief et contrastes climatiques. Les observations de contrôle territorial sont documentées séparément."
+    },
+    {
+      "id": "NE",
+      "text": "[Natural Earth, conditions d’utilisation](https://www.naturalearthdata.com/about/terms-of-use/), domaine public ; [Populated Places 1:10m, GeoJSON](https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_populated_places.geojson). Coordonnées des centres urbains et fonds du localisateur. Les contours locaux ne représentent pas les lignes de front ni un état du contrôle militaire. Dans le localisateur régional et son repère mondial, le polygone Natural Earth de la Crimée est réaffecté à l’Ukraine conformément aux frontières internationalement reconnues. Aucun trait de côte n’est redessiné."
+    },
+    {
+      "id": "FLAG",
+      "text": "[Wikimedia Commons, Flag of Ukraine.svg](https://commons.wikimedia.org/wiki/File:Flag_of_Ukraine.svg). Gouvernement ukrainien, drapeau officiel, domaine public selon PD-UA-exempt et PD-shape. SVG téléchargé sans modification, 182 octets."
+    },
+    {
+      "id": "CITYMAP",
+      "text": "[Wikimedia Commons, Ukraine administrative locations map, improved.svg](https://commons.wikimedia.org/wiki/File:Ukraine_administrative_locations_map,_improved.svg). Yakiv Gluck et TUBS, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). [Module de géoréférencement Ukraine](https://en.wikipedia.org/wiki/Module:Location_map/data/Ukraine), cadre 52,7–44,1° N et 21,5–40,7° E. Original 3 780 × 2 540 ; réduction proportionnelle à 1 100 px de large et conversion WebP qualité 90 par scripts/fetch_city_map.py, cadre entier et couleurs conservés. Repères numérotés et traits de rappel ajoutés à l’affichage. Fond administratif antérieur à l’invasion à grande échelle ; aucune ligne de front actuelle."
+    },
+    {
+      "id": "S38",
+      "text": "[OTAN, réponse à l’invasion de l’Ukraine par la Russie](https://www.nato.int/cps/en/natohq/topics_192648.htm). Invasion du 24 février 2022, résistance ukrainienne et soutien des partenaires. Source institutionnelle, distincte des analyses des belligérants."
+    }
+  ],
+  "hero_sources": [
+    "S02",
+    "FLAG"
+  ],
+  "map_sources": {
+    "locator": [
+      "S02",
+      "NE"
+    ],
+    "cities": [
+      "S03",
+      "NE"
+    ]
+  }
+}

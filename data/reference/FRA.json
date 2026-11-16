@@ -116,6 +116,10 @@
     {
       "id": "FR-VA-EU-2025",
       "text": "[Eurostat, valeur ajoutée française par activité en 2025](https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10_a10?lang=EN&geo=NL&geo=FR&time=2025&unit=CP_MEUR&na_item=B1G). Série nama_10_a10, B1G, CP_MEUR. Total 2664898,2 M€ ; A 41318,7 M€ ; B-E 358527,6 M€ ; F 148501,4 M€. Industrie et construction additionnées ; services obtenus par différence ; parts calculées sur la VA totale. Données françaises provisoires ; même fichier, année et dénominateur que les Pays-Bas."
+    },
+    {
+      "id": "FR-AGE-UKR",
+      "text": "[Banque mondiale, WDI, population française par âge et sexe, 2024](https://data.worldbank.org/indicator/SP.POP.0004.MA.5Y?locations=FR) ; [population totale, API](https://api.worldbank.org/v2/country/FRA/indicator/SP.POP.TOTL?format=json&date=2024). Base du 11 novembre 2026. Cohortes quinquennales 0-4 à 75-79, puis 80 ans ou plus. Effectifs calculés à partir des parts propres à chaque sexe et de SP.POP.TOTL.MA.IN / FE.IN, sans arrondi. Population totale 68 551 653 ; hommes 33 232 759 ; femmes 35 318 894. Même année et séries WDI que l’Ukraine. Les comptes démographiques français sont issus des statistiques nationales reprises dans WDI."
     }
   ],
   "population": {
@@ -904,6 +908,92 @@
     "coverage": "Valeur ajoutée courante, hors impôts nets sur les produits · 2025, provisoire",
     "source_ids": [
       "FR-VA-EU-2025"
+    ]
+  },
+  "population-wdi-2024": {
+    "status": "comparable",
+    "value": 68551653,
+    "unit": "habitants",
+    "year": 2024,
+    "coverage": "Population résidente · estimation WDI 2024",
+    "source_ids": [
+      "FR-AGE-UKR"
+    ]
+  },
+  "pyramide-wdi-2024-80plus": {
+    "status": "comparable",
+    "year": 2024,
+    "unit": "personnes",
+    "coverage": "Estimations WDI · milieu de 2024",
+    "age_groups": [
+      "0–4",
+      "5–9",
+      "10–14",
+      "15–19",
+      "20–24",
+      "25–29",
+      "30–34",
+      "35–39",
+      "40–44",
+      "45–49",
+      "50–54",
+      "55–59",
+      "60–64",
+      "65–69",
+      "70–74",
+      "75–79",
+      "80+"
+    ],
+    "male": [
+      1767002.442958923,
+      1916337.612238439,
+      2106104.728913173,
+      2181071.8151823403,
+      2151152.555246949,
+      2005924.910463642,
+      1939282.0638067275,
+      2009095.0437895574,
+      2068292.841343939,
+      2086866.5778182065,
+      2229495.279829366,
+      2125742.043830657,
+      2061757.885756744,
+      1884595.0749718174,
+      1717890.3563367971,
+      1389817.3530862245,
+      1592330.4144264935
+    ],
+    "female": [
+      1688840.981498272,
+      1829738.0822156512,
+      2006509.4513171727,
+      2073084.8250513724,
+      2042066.963900247,
+      1959778.9572826377,
+      1957009.5329861108,
+      2099675.830738744,
+      2158366.302751633,
+      2108791.7021585293,
+      2300574.720980437,
+      2257801.3567339247,
+      2239454.24267575,
+      2134850.661110115,
+      2033741.1793078475,
+      1731014.8274481236,
+      2697594.3818434314
+    ],
+    "source_ids": [
+      "FR-AGE-UKR"
+    ]
+  },
+  "65plus-wdi-2024": {
+    "status": "comparable",
+    "value": 22.146561875803126,
+    "unit": "%",
+    "year": 2024,
+    "coverage": "Part des 65 ans ou plus · WDI 2024",
+    "source_ids": [
+      "FR-AGE-UKR"
     ]
   }
 }

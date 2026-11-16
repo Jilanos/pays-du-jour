@@ -12,8 +12,13 @@ Source archives:
 - https://naturalearth.s3.amazonaws.com/50m_cultural/ne_50m_admin_0_countries.zip
 
 Natural Earth is [public domain](https://www.naturalearthdata.com/about/terms-of-use/).
-Boundaries follow its default de facto representation. They are not a position on
-recognition or sovereignty.
+Boundaries generally follow its default de facto representation. For Ukraine,
+the complete Natural Earth Crimea polygon is transferred from RUS to UKR in both
+extracts, following Ukraine's internationally recognised borders. Coastlines are
+preserved. These locators do not describe the current military front line.
+`recognized_ukraine` in the preparation script preserves this assignment on rebuild.
+The inland reference point identifying that source polygon is Simferopol
+(34.1° E, 44.95° N). Tests also check southern Crimea, Kyiv and Moscow.
 
 Only geometry and country identifiers are retained. ADM0 identifiers are mapped
 `KOS` → `XKX`, `SDS` → `SSD`, `PSX` → `PSE`. Topology-preserving simplification uses
