@@ -128,6 +128,10 @@
     {
       "id": "FR-MIL-SIPRI",
       "text": "[Banque mondiale, WDI, dépenses militaires en % du PIB, série MS.MIL.XPND.GD.ZS, France et Russie, 2010–2025](https://api.worldbank.org/v2/country/FRA;RUS/indicator/MS.MIL.XPND.GD.ZS?source=2&date=2010:2025&format=json&per_page=100). Données du [SIPRI Military Expenditure Database](https://www.sipri.org/databases/milex), reprises par la Banque mondiale ; même définition SIPRI pour les deux pays. France 2025 : 2,027 % du PIB. Usage non commercial selon les [conditions du SIPRI](https://www.sipri.org/about/terms-and-conditions)."
+    },
+    {
+      "id": "FR-WDI-ISR-2024",
+      "text": "[Banque mondiale, WDI, France, PIB et fécondité 2024](https://api.worldbank.org/v2/country/FRA/indicator/NY.GDP.MKTP.CD;SP.DYN.TFRT.IN?source=2&date=2024&format=json&per_page=100). Base du 11 novembre 2026. Même année, séries et définitions que les indicateurs israéliens. PIB nominal en dollars courants ; fécondité conjoncturelle."
     }
   ],
   "population": {
@@ -1118,6 +1122,26 @@
     "coverage": "Dépenses militaires SIPRI · % du PIB · 2010–2025",
     "source_ids": [
       "FR-MIL-SIPRI"
+    ]
+  },
+  "pib-wdi-2024": {
+    "status": "comparable",
+    "value": 3160442622465.08,
+    "unit": "USD",
+    "year": 2024,
+    "coverage": "Prix courants · WDI 2024",
+    "source_ids": [
+      "FR-WDI-ISR-2024"
+    ]
+  },
+  "fecondite-wdi-2024": {
+    "status": "comparable",
+    "value": 1.61,
+    "unit": "enfant/femme",
+    "year": 2024,
+    "coverage": "Indicateur conjoncturel · WDI 2024",
+    "source_ids": [
+      "FR-WDI-ISR-2024"
     ]
   }
 }
