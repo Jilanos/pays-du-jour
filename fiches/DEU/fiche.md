@@ -54,7 +54,7 @@ La loi fixe la journée de travail à huit heures par jour ouvrable. Elle autori
 
 Le salaire minimum légal atteint {{value:smic-de}} depuis janvier 2026. Il passera à {{value:smic-de-2027}} en janvier 2027. Le Smic français vaut {{value:smic-fr}} depuis juin 2026. {#societe-2 sources="S19,S20" label="Salaire minimum"}
 
-Le Deutschlandticket coûte {{value:ticket}} en 2026. Il donne accès aux transports locaux et régionaux dans tout le pays. {#societe-3 sources="S28" label="Se déplacer"}
+Le Deutschlandticket coûte {{value:ticket}} en 2026. Il donne accès aux transports locaux et régionaux dans tout le pays. {#societe-3 sources="S28,S51" label="Se déplacer"}
 
 La montagne a sa place dans la culture sportive. L’alpinisme en Saxe figure depuis 2024 à l’inventaire national du patrimoine culturel immatériel. Les Alpes bavaroises ferment le sud du pays. {#societe-4 sources="S27,S43" label="Montagne et sport"}
 
@@ -90,7 +90,7 @@ En 2025, les exportations de biens atteignent {{value:export-total}}. L’excéd
 
 Les trois derniers réacteurs nucléaires s’arrêtent le 15 avril 2023. La sortie avait été décidée en 2002 puis accélérée en 2011. Sans nucléaire, l’électricité bas carbone repose entièrement sur les renouvelables. Les repères la comparent à celle de la France. Le charbon, la lignite et le gaz assurent encore une part importante de la production. {#economie-4 sources="S30,S22,FR-ELEC-2025" label="Électricité"}
 
-La dépendance énergétique des repères mesure la part des importations nettes dans l’énergie disponible. La France est moins dépendante, car la chaleur nucléaire compte comme production nationale dans les deux cas. {#economie-5 sources="S06,FR-ENERGY-DEP-2024" label="Lire la dépendance énergétique"}
+La dépendance énergétique des repères mesure la part des importations nettes dans l’énergie disponible. La France est moins dépendante. La convention est la même dans les deux pays : la chaleur nucléaire compte comme production nationale. {#economie-5 sources="S06,FR-ENERGY-DEP-2024" label="Lire la dépendance énergétique"}
 
 ## Histoire
 

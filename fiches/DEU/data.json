@@ -42,7 +42,7 @@
       "value": 1.32,
       "unit": "enfant/femme",
       "year": 2025,
-      "precision": 2,
+      "precision": 1,
       "coverage": "Indicateur conjoncturel · 2025",
       "source_ids": [
         "S04"
@@ -1164,7 +1164,7 @@
     },
     {
       "id": "S31",
-      "text": "[bpb, l’année 2015, exil et réfugiés, rétrospective](https://www.bpb.de/themen/migration-integration/kurzdossiers/217367/das-jahr-2015-flucht-und-fluechtlinge-im-fokus-ein-rueckblick/)."
+      "text": "Bundeszentrale für politische Bildung : [l’année 2015, exil et réfugiés, rétrospective](https://www.bpb.de/themen/migration-integration/kurzdossiers/217367/das-jahr-2015-flucht-und-fluechtlinge-im-fokus-ein-rueckblick/) ; [crise administrative et d’infrastructures en Allemagne](https://www.bpb.de/themen/migration-integration/kurzdossiers/217376/deutschland-verwaltungs-und-infrastrukturkrise/)."
     },
     {
       "id": "S32",
@@ -1241,6 +1241,10 @@
     {
       "id": "S50",
       "text": "[ZDFheute, le tribunal administratif de Cologne suspend le classement de l’AfD, 26/02/2026](https://www.zdfheute.de/politik/deutschland/afd-gericht-einstufung-rechtsextrem-100.html). Décision en référé, susceptible d’appel devant la cour administrative d’appel de Münster."
+    },
+    {
+      "id": "S51",
+      "text": "[Deutschlandticket.de, page de commande](https://deutschlandticket.de/), consultée le 16/11/2026. Prix affiché pour un départ en novembre 2026 : 63,00 € par mois ; validité dans les transports locaux et régionaux de toute l’Allemagne."
     },
     {
       "id": "NE",
