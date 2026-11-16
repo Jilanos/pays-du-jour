@@ -37,6 +37,15 @@ uv run --with cairosvg --with pillow python scripts/fetch_city_map.py USA USA \
   --projection-from fiches/USA/data.json
 ```
 
+Japan uses the reviewed `japan_side_map` projection for its Ryukyu side panel:
+
+```sh
+uv run --with cairosvg --with pillow python scripts/fetch_city_map.py JPN Japan \
+  --projection-from fiches/JPN/data.json
+```
+
+See `docs/review/maps-jpn.md` for its formulas, pin checks and locator comparison.
+
 Never fit pins to an estimated country outline. Test known coastal and inland locations.
 Use numbered pins and the existing table. Separate dense clusters with leader-line offsets
 or a `cities_inset` using the same image and projection. Put the inset below the full map.

@@ -489,19 +489,17 @@
         "Bouddhisme",
         "Sans religion",
         "Christianisme",
-        "Autres religions",
-        "Sans réponse"
+        "Autres religions"
       ],
       "values": [
         46,
         42,
         2,
-        9,
-        1
+        9
       ],
       "unit": "%",
-      "note": "Pew, enquête 2023, question d’affiliation actuelle. Autres religions comprend le shintō. Sans réponse : résidu de 100 moins les catégories publiées ; il inclut les effets des arrondis. Cette distribution ne compte pas les visites de sanctuaires.",
-      "note_visible": "La catégorie « Sans réponse » inclut le résidu d’arrondi des parts publiées."
+      "note": "Pew, enquête adultes 2023, question d’affiliation actuelle, p. 30. Autres religions comprend le shintō. Réponses indéterminées non représentées dans le tableau source. Les valeurs arrondies publiées sont conservées, sans normalisation et sans attribuer le point résiduel à une catégorie.",
+      "note_visible": "Total de 99 % : parts publiées arrondies, réponses indéterminées non représentées."
     },
     {
       "id": "salaires",
@@ -693,6 +691,7 @@
   },
   "hero_sources": [
     "S21",
+    "S26",
     "FLAG"
   ],
   "relief_title": "Des montagnes entre les façades maritimes",
@@ -770,7 +769,7 @@
     },
     {
       "id": "S15",
-      "text": "[Pew Research Center, Religion and Spirituality in East Asian Societies, 17/06/2024](https://www.pewresearch.org/wp-content/uploads/sites/20/2024/06/PR_2024.06.17_religion-in-east-asia_report.pdf), p. 30 et chapitres sur pratiques et affiliations. Enquête adultes de 2023. Japon : bouddhisme 46 %, sans religion 42 %, christianisme 2 %, autres 9 %, dont shintō. Résidu affiché de 1 point comprenant non-réponses et arrondis."
+      "text": "[Pew Research Center, Religion and Spirituality in East Asian Societies, 17/06/2024](https://www.pewresearch.org/wp-content/uploads/sites/20/2024/06/PR_2024.06.17_religion-in-east-asia_report.pdf), p. 30 et chapitres sur pratiques et affiliations. Enquête adultes de 2023. Japon : bouddhisme 46 %, sans religion 42 %, christianisme 2 %, autres 9 %, dont shintō. Les quatre parts publiées totalisent 99 % ; réponses indéterminées et arrondis, sans normalisation ni attribution du résidu."
     },
     {
       "id": "S16",
@@ -798,7 +797,7 @@
     },
     {
       "id": "S22",
-      "text": "[MHLW, guide des conditions de travail](https://www.mhlw.go.jp/content/000678301.pdf), chapitre durée du travail. Principe général de huit heures par jour et quarante heures par semaine ; dérogations et heures supplémentaires encadrées."
+      "text": "[MHLW, modèle de règlement intérieur, chapitre 4](https://www.mhlw.go.jp/content/001456903.pdf), pp. 24 et suivantes. Principe général de huit heures par jour et quarante heures par semaine ; dérogations et heures supplémentaires encadrées."
     },
     {
       "id": "S23",
@@ -814,7 +813,7 @@
     },
     {
       "id": "S26",
-      "text": "[UNESCO, The saga of the Ainu language, 2019](https://www.unesco.org/en/articles/saga-ainu-language-0). Transmission, assimilation et revitalisation de l’aïnou. Aucun pourcentage national de locuteurs extrapolé."
+      "text": "[UNESCO, The saga of the Ainu language, 2019](https://www.unesco.org/en/articles/saga-ainu-language-0). Transmission, assimilation et revitalisation de l’aïnou. Aucun pourcentage national de locuteurs extrapolé. [Agence japonaise des affaires culturelles, langues et dialectes menacés](https://www.bunka.go.jp/english/policy/japanese_language/policy/index.html), aïnou et langues des Ryūkyū."
     },
     {
       "id": "S27",
@@ -830,7 +829,7 @@
     },
     {
       "id": "S30",
-      "text": "[Kantei, anciens Premiers ministres et cabinets](https://japan.kantei.go.jp/past_cabinet/index.html). Chronologie des mandats, de Koizumi à Kishida. [Banque du Japon, histoire économique et monétaire](https://www.boj.or.jp/en/about/outline/history/index.htm), reconstruction, croissance et bulle financière."
+      "text": "[Kantei, anciens Premiers ministres et cabinets](https://japan.kantei.go.jp/past_cabinet/index.html). Chronologie des mandats, de Koizumi à Kishida. [Banque du Japon, analyse de la croissance depuis l’après-guerre et de la bulle, 06/09/2011](https://www.boj.or.jp/en/about/press/koen_2011/ko110906a.htm)."
     },
     {
       "id": "S31",
@@ -838,7 +837,7 @@
     },
     {
       "id": "S32",
-      "text": "[Banque du Japon, politique d’assouplissement depuis 2013](https://www.boj.or.jp/en/mopo/outline/ref_qqe.htm) ; [changement de cadre du 19/03/2024](https://www.boj.or.jp/en/mopo/mpmdeci/state_2024/k240319a.htm). Achat d’actifs et sortie du taux négatif. [MOFA, législation de paix et sécurité](https://www.mofa.go.jp/fp/nsp/page1we_000084.html), dispositif de 2015."
+      "text": "[Banque du Japon, politique d’assouplissement depuis 2013](https://www.boj.or.jp/en/mopo/outline/ref_qqe.htm) ; [changement de cadre du 19/03/2024](https://www.boj.or.jp/en/mopo/mpmdeci/state_2024/k240319a.htm). Achat d’actifs et sortie du taux négatif. [MOFA, législation de paix et sécurité](https://www.mofa.go.jp/fp/nsp/page1we_000084.html), dispositif de 2015. [Kantei, stratégie de revitalisation du 21/06/2013](https://japan.kantei.go.jp/96_abe/documents/2013/1200485_7321.html), les trois composantes des Abenomics."
     },
     {
       "id": "S33",
@@ -846,7 +845,7 @@
     },
     {
       "id": "S34",
-      "text": "[AP, perte de majorité de la coalition Ishiba au Sénat, 20/07/2025](https://apnews.com/article/fcc2fb4cce609240d1c2369bf4090e26) ; [Kantei, désignation de Takaichi, 18/02/2026](https://japan.kantei.go.jp/105/actions/202602/_00001.html). [France Diplomatie, arrivée au pouvoir en octobre 2025](https://www.diplomatie.gouv.fr/fr/information-par-pays/japon/presentation-du-japon)."
+      "text": "[AP, perte de majorité de la coalition Ishiba au Sénat, 20/07/2025](https://apnews.com/article/fcc2fb4cce609240d1c2369bf4090e26) ; [Kantei, désignation de Takaichi, 18/02/2026](https://japan.kantei.go.jp/105/actions/202602/_00001.html). [France Diplomatie, arrivée au pouvoir en octobre 2025](https://www.diplomatie.gouv.fr/fr/information-par-pays/japon/presentation-du-japon). [AP, coalition PLD–Ishin et départ de Kōmeitō, 21/10/2025](https://apnews.com/article/24b4a5e2a2b777139de66e38665ced0d) ; [Kantei, assassinat d’Abe, 08/07/2022](https://japan.kantei.go.jp/101_kishida/statement/202207/_00004.html)."
     },
     {
       "id": "S35",
@@ -858,7 +857,7 @@
     },
     {
       "id": "S37",
-      "text": "[AP, mesures d’urgence cybersécurité, 06/11/2026](https://apnews.com/article/8ba038fde849e7ea9c49126ecd770972). [Kantei, conférence de presse du 16/11/2026 avant les sommets ASEAN/APEC](https://japan.kantei.go.jp/105/speech/202611/16kaiken.html). État des annonces à la date de consultation, sans anticiper les résultats des sommets."
+      "text": "[Kantei, réunion ministérielle sur la cybersécurité, 06/11/2026](https://japan.kantei.go.jp/105/actions/202611/06kaigi_cyber.html) ; [AP, équipes d’intervention, 06/11/2026](https://apnews.com/article/8ba038fde849e7ea9c49126ecd770972). [Kantei, conférence de presse du 16/11/2026 avant les sommets ASEAN/APEC](https://japan.kantei.go.jp/105/speech/202611/16kaiken.html). État des annonces à la date de consultation, sans anticiper les résultats des sommets."
     },
     {
       "id": "S38",
@@ -879,6 +878,10 @@
     {
       "id": "S42",
       "text": "[Toyota, enquête sur les dossiers de certification, 03/06/2024](https://global.toyota/en/newsroom/corporate/40920588.html). Déclaration de l’entreprise sur les essais et les procédures d’homologation de plusieurs modèles."
+    },
+    {
+      "id": "S43",
+      "text": "[AP, conjoncture japonaise du troisième trimestre, 16/11/2026](https://apnews.com/article/263988f2ec1894d3bf88522fd12500a6). Première estimation du Cabinet Office, consommation et coût des importations de pétrole. [Kantei, discours de politique générale du 05/10/2026](https://japan.kantei.go.jp/105/speech/202610/05shoshinhyomei.html), politique industrielle, fiscalité, diversification énergétique et soutenabilité budgétaire."
     },
     {
       "id": "FLAG",

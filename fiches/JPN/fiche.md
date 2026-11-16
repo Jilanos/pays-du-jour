@@ -46,7 +46,7 @@ Le Japon vieillit plus fortement que la France. Les générations nées pendant 
 
 Les décès dépassent les naissances. L’immigration atténue le recul démographique sans l’annuler. Le coût de l’éducation, l’organisation du travail et les difficultés de conciliation familiale occupent le débat. Le maintien de services dans les communes qui se dépeuplent devient aussi concret que le financement des retraites ou le recrutement des soignants. {#population-recul sources="S01,S04,S25" label="Recul démographique et services"}
 
-Le japonais domine l’administration, l’école et les échanges. Les dialectes régionaux restent identifiables. L’aïnou porte un héritage autochtone de Hokkaidō, longtemps soumis à l’assimilation. Sa transmission fait l’objet d’efforts de revitalisation. Cette diversité linguistique se décrit difficilement par un partage national des langues parlées : les compétences et les usages se recouvrent. {#population-langues sources="S21,S26" label="Langues et transmission"}
+Le japonais domine l’administration, l’école et les échanges. Les dialectes régionaux restent identifiables. Les langues des Ryūkyū connaissent des difficultés de transmission. L’aïnou porte un héritage autochtone de Hokkaidō, longtemps soumis à l’assimilation. Sa transmission fait l’objet d’efforts de revitalisation. Cette diversité linguistique se décrit difficilement par un partage national des langues parlées : les compétences et les usages se recouvrent. {#population-langues sources="S21,S26" label="Langues et transmission"}
 
 {{chart:religions}}
 
@@ -94,7 +94,7 @@ La restauration de Meiji de 1868 accélère la construction d’un État central
 
 La rupture décisive intervient en 1945. Hiroshima et Nagasaki subissent les bombardements atomiques. La capitulation ouvre une occupation alliée dominée par les États-Unis. Le pouvoir militaire disparaît. La Constitution de 1947 affirme la souveraineté populaire, les droits fondamentaux et la renonciation à la guerre. L’empereur devient le symbole de l’État. {#histoire-1945 sources="S28,S29" label="La rupture de 1945"}
 
-La reconstruction puis la forte croissance installent le Japon parmi les grandes économies industrielles. Le PLD, créé en 1955, domine durablement la vie politique. L’éclatement de la bulle financière au début des années 1990 ouvre une longue période de faible croissance. Le vieillissement et la difficulté à sortir de la déflation pèsent sur les décennies suivantes. {#histoire-croissance sources="S30,S32" label="Croissance puis stagnation"}
+La reconstruction puis la forte croissance installent le Japon parmi les grandes économies industrielles. Le PLD, créé en 1955, domine durablement la vie politique. L’éclatement de la bulle financière au début des années 1990 ouvre une longue période de faible croissance. Le vieillissement et la difficulté à sortir de la déflation pèsent sur les décennies suivantes. {#histoire-croissance sources="S30,S32,S35" label="Croissance puis stagnation"}
 
 ## Politique et relations extérieures
 
@@ -106,7 +106,7 @@ Après Junichirō Koizumi, Shinzō Abe arrive au pouvoir en 2006. Son premier ma
 
 Le 11 mars 2011, le séisme, le tsunami et l’accident de Fukushima bouleversent le pays sous Naoto Kan. Reconstruction, déplacements de population et confiance dans la filière nucléaire deviennent des enjeux nationaux. Les conséquences se prolongent au-delà des changements de gouvernement. Le débat énergétique actuel reste lié à cette catastrophe. {#politique-2011 sources="S31" label="Politique · Fukushima"}
 
-Abe revient en décembre 2012 et reste jusqu’en 2020. Les « Abenomics » associent assouplissement monétaire, soutien budgétaire et réformes. Les résultats sur la croissance et les salaires restent un enjeu politique. Les lois de sécurité de 2015 élargissent les possibilités d’action des forces d’autodéfense. La portée de l’article 9 continue de diviser. {#politique-abe sources="S30,S32" label="Politique · les années Abe"}
+Abe revient en décembre 2012 et reste jusqu’en 2020. Les « Abenomics » associent assouplissement monétaire, soutien budgétaire et réformes. Leur capacité à installer une croissance durable des salaires reste un enjeu politique. Les lois de sécurité de 2015 élargissent les possibilités d’action des forces d’autodéfense. La portée de l’article 9 continue de diviser. {#politique-abe sources="S30,S32" label="Politique · les années Abe"}
 
 Yoshihide Suga gouverne en 2020–2021, pendant la pandémie. Fumio Kishida lui succède en 2021. L’assassinat d’Abe en juillet 2022 marque le pays. Les affaires de financement politique fragilisent ensuite le PLD. Shigeru Ishiba prend le pouvoir en octobre 2024. Sa coalition perd la majorité à la chambre basse, puis à la chambre haute en juillet 2025. {#politique-kishida sources="S30,S34" label="Politique · 2020–2025"}
 
@@ -117,6 +117,8 @@ Takaichi devient la première femme à diriger le gouvernement en octobre 2025. 
 Cette victoire ne donne pas automatiquement la maîtrise de la chambre haute. Takaichi défend une ligne conservatrice et une politique industrielle active. Le pouvoir d’achat reste central après la hausse des prix. Le remaniement du 17 septembre 2026 cherche à relancer son gouvernement. Il conserve plusieurs responsables clés, dont le ministre des Affaires étrangères Toshimitsu Motegi. {#politique-gouvernement sources="S35,S36" label="Politique · gouvernement de septembre 2026"}
 
 La stratégie de défense adoptée en décembre 2022 prévoit des capacités de contre-attaque. L’alliance américaine reste centrale. Les activités militaires chinoises, Taïwan et les missiles nord-coréens structurent les préoccupations de Tokyo. Les litiges territoriaux avec la Chine, la Corée du Sud et la Russie compliquent les relations régionales. La mémoire de l’empire demeure un autre point sensible. {#politique-defense sources="S21,S33" label="Défense et voisinage"}
+
+La première estimation publiée le 16 novembre 2026 décrit une économie presque stagnante au troisième trimestre. La consommation faiblit et les importations pétrolières deviennent plus coûteuses dans le contexte de la guerre en Iran. Le gouvernement défend une baisse de la fiscalité alimentaire. Son financement et la soutenabilité de la dette restent au cœur des arbitrages. {#politique-prix sources="S43" label="Conjoncture au 16 novembre 2026"}
 
 Le 6 novembre 2026, le gouvernement annonce des mesures d’urgence contre les cyberattaques, avec des équipes spécialisées d’intervention. Le 16 novembre, Takaichi présente son déplacement aux Philippines et en Chine pour les réunions de l’ASEAN et de l’APEC. La sécurisation des chaînes d’approvisionnement et la coopération énergétique figurent dans cette diplomatie. Les résultats des rencontres restent à venir. {#politique-novembre sources="S37" label="Actualité au 16 novembre 2026"}
 
