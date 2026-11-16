@@ -104,6 +104,10 @@
     {
       "id": "FR-ENERGY-DEP-2024",
       "text": "[Eurostat, dépendance énergétique, nrg_ind_id](https://ec.europa.eu/eurostat/databrowser/view/nrg_ind_id/default/table?lang=fr), [API Allemagne et France, 2024, tous produits](https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nrg_ind_id?geo=DE&geo=FR&siec=TOTAL&time=2024), mise à jour du 16 juillet 2026. Importations nettes rapportées à l’énergie brute disponible. Même convention pour les deux pays : la chaleur nucléaire compte comme production primaire nationale. France : 41,672 %."
+    },
+    {
+      "id": "FR-AGE-KOR",
+      "text": "[Insee, population par sexe et âge quinquennal, bilan démographique, édition du 15 juin 2026](https://www.insee.fr/fr/statistiques/fichier/8999013/4_Pop1janv_grages_quinquennal.xlsx). Feuilles FR-Hommes et FR-Femmes, ligne 2020. France entière au 1er janvier 2020. Moins d’un an et 1–4 ans additionnés ; 100–104 et 105 ans ou plus additionnés. Mêmes cohortes que le recensement coréen de novembre 2020."
     }
   ],
   "population": {
@@ -778,6 +782,84 @@
     "coverage": "Importations nettes / énergie brute disponible · 2024",
     "source_ids": [
       "FR-ENERGY-DEP-2024"
+    ]
+  },
+  "pyramide-france-2020": {
+    "status": "comparable",
+    "unit": "personnes",
+    "year": 2020,
+    "coverage": "Résidents · 1er janvier 2020",
+    "age_groups": [
+      "0–4",
+      "5–9",
+      "10–14",
+      "15–19",
+      "20–24",
+      "25–29",
+      "30–34",
+      "35–39",
+      "40–44",
+      "45–49",
+      "50–54",
+      "55–59",
+      "60–64",
+      "65–69",
+      "70–74",
+      "75–79",
+      "80–84",
+      "85–89",
+      "90–94",
+      "95–99",
+      "100+"
+    ],
+    "male": [
+      1882432,
+      2105560,
+      2164882,
+      2150910,
+      1930135,
+      1869514,
+      1990554,
+      2069990,
+      2013963,
+      2244698,
+      2183081,
+      2130619,
+      1965362,
+      1839874,
+      1613771,
+      988288,
+      766611,
+      485167,
+      189275,
+      42067,
+      3051
+    ],
+    "female": [
+      1798524,
+      2016365,
+      2063929,
+      2030704,
+      1869107,
+      1900504,
+      2099739,
+      2179239,
+      2079789,
+      2288716,
+      2260619,
+      2254182,
+      2154941,
+      2071960,
+      1872032,
+      1228989,
+      1108256,
+      885426,
+      476003,
+      156493,
+      16529
+    ],
+    "source_ids": [
+      "FR-AGE-KOR"
     ]
   }
 }

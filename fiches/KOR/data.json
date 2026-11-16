@@ -1,0 +1,918 @@
+{
+  "keyfacts": [
+    {
+      "id": "population",
+      "label": "Population résidente",
+      "value": 51820000,
+      "unit": "habitants",
+      "year": 2025,
+      "coverage": "Résidents · 1er novembre 2025",
+      "source_ids": [
+        "S01"
+      ],
+      "france": "population"
+    },
+    {
+      "id": "superficie",
+      "label": "Superficie",
+      "value": 99618,
+      "unit": "km²",
+      "year": 2026,
+      "coverage": "Hors zone démilitarisée · référence diplomatique 2026",
+      "source_ids": [
+        "S30"
+      ],
+      "france": {
+        "status": "non_comparable",
+        "reason": "Source coréenne hors zone démilitarisée ; périmètre des eaux non harmonisé avec la référence Eurostat française.",
+        "source_ids": [
+          "S30",
+          "FR-AREA"
+        ]
+      }
+    },
+    {
+      "id": "pib-nominal",
+      "label": "PIB nominal",
+      "value": 1875800000000,
+      "unit": "USD",
+      "year": 2024,
+      "coverage": "Prix courants · 2024",
+      "source_ids": [
+        "S16"
+      ],
+      "france": "pib-nominal"
+    },
+    {
+      "id": "fecondite",
+      "label": "Fécondité",
+      "value": 0.8,
+      "unit": "enfant/femme",
+      "year": 2025,
+      "coverage": "Indicateur conjoncturel · 2025",
+      "source_ids": [
+        "S12"
+      ],
+      "france": "fecondite"
+    },
+    {
+      "id": "65-plus",
+      "label": "Part des 65 ans ou plus",
+      "value": 20.7,
+      "unit": "%",
+      "year": 2025,
+      "coverage": "Résidents · 1er novembre 2025",
+      "source_ids": [
+        "S01"
+      ],
+      "france": "65-plus"
+    },
+    {
+      "id": "recherche",
+      "label": "Recherche et développement",
+      "value": 5.1,
+      "unit": "%",
+      "year": 2024,
+      "coverage": "Dépenses intérieures brutes / PIB · 2024",
+      "source_ids": [
+        "S16"
+      ],
+      "france": {
+        "status": "unavailable",
+        "reason": "Référence française de même millésime non extraite ; aucune substitution par une dépense publique seule.",
+        "source_ids": [
+          "S16"
+        ]
+      }
+    }
+  ],
+  "indices": [
+    {
+      "id": "idh",
+      "name": "Développement humain",
+      "acronym": "IDH",
+      "value": 0.937,
+      "year": 2023,
+      "rank": "20ᵉ",
+      "scale_min": 0,
+      "scale_max": 1,
+      "higher_is_better": true,
+      "precision": 3,
+      "source_ids": [
+        "S06"
+      ],
+      "france": "idh"
+    },
+    {
+      "id": "gini",
+      "name": "Inégalités de revenus",
+      "acronym": "Gini",
+      "value": 0.325,
+      "year": 2024,
+      "rank": "Sans classement",
+      "scale_min": 0,
+      "scale_max": 1,
+      "higher_is_better": false,
+      "precision": 3,
+      "source_ids": [
+        "S07"
+      ],
+      "france": {
+        "status": "non_comparable",
+        "reason": "Corée : revenu disponible équivalent, échelle racine carrée de la taille du ménage. Référence française : échelle OCDE modifiée. Pas de juxtaposition numérique sans harmonisation.",
+        "source_ids": [
+          "S07",
+          "FR-GINI"
+        ]
+      },
+      "coverage": "Revenu disponible équivalent après transferts · 2024"
+    },
+    {
+      "id": "democratie",
+      "name": "Démocratie libérale",
+      "acronym": "V-Dem",
+      "value": 0.74,
+      "year": 2025,
+      "rank": "22ᵉ",
+      "scale_min": 0,
+      "scale_max": 1,
+      "higher_is_better": true,
+      "precision": 2,
+      "source_ids": [
+        "S08"
+      ],
+      "france": "democratie"
+    },
+    {
+      "id": "presse",
+      "name": "Liberté de la presse",
+      "acronym": "RSF",
+      "value": 69.12,
+      "year": 2026,
+      "rank": "47ᵉ / 180",
+      "scale_min": 0,
+      "scale_max": 100,
+      "higher_is_better": true,
+      "precision": 2,
+      "source_ids": [
+        "S09"
+      ],
+      "france": "presse"
+    },
+    {
+      "id": "corruption",
+      "name": "Corruption perçue",
+      "acronym": "CPI",
+      "value": 63,
+      "year": 2025,
+      "rank": "31ᵉ / 182",
+      "scale_min": 0,
+      "scale_max": 100,
+      "higher_is_better": true,
+      "precision": 0,
+      "source_ids": [
+        "S10"
+      ],
+      "france": "corruption"
+    }
+  ],
+  "cities": [
+    {
+      "name": "Séoul",
+      "population": 9586195,
+      "lat": 37.5665,
+      "lon": 126.978,
+      "note": "Capitale, sièges sociaux, services et création.",
+      "year": 2020,
+      "source_ids": [
+        "S04"
+      ]
+    },
+    {
+      "name": "Busan",
+      "population": 3349016,
+      "lat": 35.1796,
+      "lon": 129.0756,
+      "note": "Grand port et logistique maritime.",
+      "year": 2020,
+      "source_ids": [
+        "S04"
+      ],
+      "offset": [
+        0,
+        7
+      ]
+    },
+    {
+      "name": "Incheon",
+      "population": 2945454,
+      "lat": 37.4563,
+      "lon": 126.7052,
+      "note": "Aéroport international, port et industrie.",
+      "year": 2020,
+      "source_ids": [
+        "S04"
+      ]
+    },
+    {
+      "name": "Daegu",
+      "population": 2410700,
+      "lat": 35.8714,
+      "lon": 128.6014,
+      "note": "Textile, machines et reconversion industrielle.",
+      "year": 2020,
+      "source_ids": [
+        "S04"
+      ]
+    },
+    {
+      "name": "Daejeon",
+      "population": 1488435,
+      "lat": 36.3504,
+      "lon": 127.3845,
+      "note": "Recherche et technopôle de Daedeok.",
+      "year": 2020,
+      "source_ids": [
+        "S04"
+      ]
+    },
+    {
+      "name": "Ulsan",
+      "population": 1135423,
+      "lat": 35.5384,
+      "lon": 129.3114,
+      "note": "Automobile, chantiers navals et pétrochimie.",
+      "year": 2020,
+      "source_ids": [
+        "S04"
+      ],
+      "offset": [
+        4,
+        -6
+      ]
+    }
+  ],
+  "charts": [
+    {
+      "id": "climat",
+      "type": "climate",
+      "title": "Hiver continental, été de mousson",
+      "subtitle": "Normales 1991–2020 · Séoul, Busan et Paris-Montsouris",
+      "year": "1991–2020",
+      "france": "climat-paris",
+      "source_ids": [
+        "S03"
+      ],
+      "temperature_extent": [
+        -10,
+        40
+      ],
+      "rain_max": 500,
+      "places": [
+        {
+          "place": "Séoul",
+          "tmin": [
+            -5.5,
+            -3.2,
+            1.9,
+            8,
+            13.5,
+            18.7,
+            22.3,
+            22.9,
+            17.7,
+            10.6,
+            3.5,
+            -3.4
+          ],
+          "tmax": [
+            2.1,
+            5.1,
+            11,
+            17.9,
+            23.6,
+            27.6,
+            29,
+            30.2,
+            26.2,
+            20.2,
+            11.9,
+            4.2
+          ],
+          "precip_mm": [
+            16.8,
+            28.2,
+            36.9,
+            72.9,
+            103.6,
+            129.5,
+            414.4,
+            348.2,
+            141.5,
+            52.2,
+            51.1,
+            22.6
+          ]
+        },
+        {
+          "place": "Busan",
+          "tmin": [
+            -0.1,
+            1.5,
+            5.3,
+            10.1,
+            14.6,
+            18.3,
+            22.1,
+            23.7,
+            19.8,
+            14.5,
+            8.3,
+            2
+          ],
+          "tmax": [
+            8.2,
+            10.2,
+            13.8,
+            18.2,
+            22,
+            24.6,
+            27.5,
+            29.5,
+            26.4,
+            22.5,
+            16.6,
+            10.4
+          ],
+          "precip_mm": [
+            34.5,
+            49.6,
+            89.7,
+            140.9,
+            155.9,
+            188.4,
+            326.8,
+            266.5,
+            160.6,
+            79.6,
+            50.4,
+            33.8
+          ]
+        }
+      ],
+      "note": "Stations KMA 108 et 159 ; mêmes définitions et période que Paris. Échelles communes pour les trois villes."
+    },
+    {
+      "id": "pyramide-ages",
+      "type": "pyramid",
+      "title": "Des générations centrales bien plus nombreuses que les enfants",
+      "subtitle": "Recensement 2020 · part de la population totale · %",
+      "year": 2020,
+      "age_groups": [
+        "0–4",
+        "5–9",
+        "10–14",
+        "15–19",
+        "20–24",
+        "25–29",
+        "30–34",
+        "35–39",
+        "40–44",
+        "45–49",
+        "50–54",
+        "55–59",
+        "60–64",
+        "65–69",
+        "70–74",
+        "75–79",
+        "80–84",
+        "85–89",
+        "90–94",
+        "95–99",
+        "100+"
+      ],
+      "male": [
+        883196,
+        1161247,
+        1168937,
+        1271404,
+        1762135,
+        1959723,
+        1742483,
+        1970249,
+        1997630,
+        2196042,
+        2195060,
+        2109380,
+        1912792,
+        1314575,
+        946539,
+        684291,
+        419037,
+        168643,
+        42951,
+        8024,
+        869
+      ],
+      "female": [
+        838885,
+        1103348,
+        1098544,
+        1178157,
+        1602669,
+        1706489,
+        1558848,
+        1835221,
+        1909035,
+        2129655,
+        2176994,
+        2101265,
+        1972505,
+        1419612,
+        1081140,
+        916576,
+        701744,
+        395287,
+        149712,
+        33488,
+        4755
+      ],
+      "unit": "personnes",
+      "source_ids": [
+        "S11"
+      ],
+      "france": "pyramide-france-2020",
+      "note_visible": "Photographie de 2020 : Corée au 1er novembre, France au 1er janvier. Le vieillissement s’est poursuivi depuis.",
+      "note": "Cohortes quinquennales identiques, 100 ans ou plus en dernière classe. Effectifs nationaux, étrangers inclus. La comparaison porte sur des dates séparées de dix mois."
+    },
+    {
+      "id": "religions",
+      "type": "share",
+      "title": "Une majorité sans affiliation, un christianisme bien implanté",
+      "subtitle": "Adultes · enquête Pew de 2023 · %",
+      "year": 2023,
+      "labels": [
+        "Sans religion",
+        "Christianisme",
+        "Bouddhisme",
+        "Autres / sans réponse"
+      ],
+      "values": [
+        52,
+        32,
+        14,
+        2
+      ],
+      "unit": "%",
+      "source_ids": [
+        "REL"
+      ],
+      "france": "religions",
+      "note": "Réponse à la question sur l’affiliation actuelle. Le résidu 2 % regroupe les petites catégories et non-réponses, calculé par différence. Cette répartition ne mesure pas toutes les pratiques."
+    },
+    {
+      "id": "salaires",
+      "type": "bar",
+      "title": "La moyenne salariale masque un large écart",
+      "subtitle": "Revenus salariaux mensuels · décembre 2024 · avant prélèvements",
+      "year": 2024,
+      "labels": [
+        "Médiane",
+        "Moyenne"
+      ],
+      "values": [
+        2880000,
+        3750000
+      ],
+      "unit": "KRW/mois",
+      "euro": true,
+      "highlight": "Médiane",
+      "source_ids": [
+        "S14"
+      ],
+      "france": {
+        "status": "non_comparable",
+        "reason": "Revenu salarial administratif en décembre, sans standardisation des heures. France : rémunérations du privé en équivalent temps plein, primes et année différentes.",
+        "source_ids": [
+          "S14",
+          "FR-WAGE"
+        ]
+      },
+      "note_visible": "Emplois occupés en décembre 2024, sans conversion en temps plein. Une personne multi-employeurs peut apparaître plusieurs fois."
+    },
+    {
+      "id": "pib-secteurs",
+      "type": "share",
+      "title": "Un pays de services doté d’une forte base industrielle",
+      "subtitle": "Parts de la valeur ajoutée courante · 2024 · %",
+      "year": 2024,
+      "labels": [
+        "Agriculture, forêt, pêche",
+        "Industrie et construction",
+        "Services"
+      ],
+      "values": [
+        1.6,
+        36.5,
+        61.9
+      ],
+      "unit": "%",
+      "source_ids": [
+        "S16"
+      ],
+      "france": "valeur-ajoutee-2024",
+      "note": "Hors impôts nets sur les produits. Source OCDE, valeurs publiées à une décimale. France WDI, même dénominateur, année et regroupement."
+    },
+    {
+      "id": "exportations",
+      "type": "share",
+      "title": "Les puces occupent une place décisive dans les exportations",
+      "subtitle": "Exportations de biens · 2025 · % de la valeur",
+      "year": 2025,
+      "labels": [
+        "Semi-conducteurs",
+        "Autres biens"
+      ],
+      "values": [
+        24.43285895448781,
+        75.5671410455122
+      ],
+      "unit": "%",
+      "source_ids": [
+        "S17"
+      ],
+      "france": {
+        "status": "unavailable",
+        "reason": "Classification douanière nationale MOTIR ; agrégation française harmonisée non extraite.",
+        "source_ids": [
+          "S17"
+        ]
+      },
+      "note": "Parts calculées à partir des montants publiés : 173,4 milliards USD et total de 709,7 milliards. Autres biens par différence."
+    },
+    {
+      "id": "salaires-entreprises",
+      "type": "barh",
+      "title": "Grandes entreprises et PME, deux marchés salariaux",
+      "subtitle": "Revenu mensuel moyen · décembre 2024 · avant prélèvements",
+      "year": 2024,
+      "labels": [
+        "Grandes entreprises",
+        "PME"
+      ],
+      "values": [
+        6130000,
+        3070000
+      ],
+      "unit": "KRW/mois",
+      "euro": true,
+      "source_ids": [
+        "S14"
+      ],
+      "france": {
+        "status": "non_comparable",
+        "reason": "Catégories légales coréennes et champ salarial administratif ; pas d’équivalent français strict extrait.",
+        "source_ids": [
+          "S14"
+        ]
+      },
+      "note": "Définition de la taille de l’entreprise de la publication coréenne, distincte du seul effectif de l’établissement.",
+      "note_visible": "Emplois occupés en décembre 2024, sans conversion en temps plein. Une personne multi-employeurs peut apparaître plusieurs fois."
+    },
+    {
+      "id": "fecondite-evolution",
+      "type": "line",
+      "title": "La remontée récente part d’un niveau très bas",
+      "subtitle": "Indicateur conjoncturel de fécondité · enfants par femme",
+      "year": "2015–2025",
+      "x": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "series": [
+        {
+          "name": "Corée",
+          "values": [
+            1.24,
+            1.17,
+            1.05,
+            0.98,
+            0.92,
+            0.84,
+            0.81,
+            0.78,
+            0.72,
+            0.75,
+            0.8
+          ]
+        }
+      ],
+      "unit": "enfant/femme",
+      "source_ids": [
+        "S12"
+      ],
+      "note": "Indicateur de période, sans prédiction du nombre final d’enfants d’une génération. Le dernier point reprend le repère de fécondité pour situer la tendance."
+    }
+  ],
+  "hero_sources": [
+    "S30",
+    "S37"
+  ],
+  "map_sources": {
+    "locator": [
+      "NE",
+      "S30"
+    ],
+    "cities": [
+      "S04"
+    ],
+    "relief": [
+      "S05"
+    ]
+  },
+  "cities_map": {
+    "file": "cities.svg",
+    "width": 1772,
+    "height": 1672,
+    "bounds": {
+      "top": 38.9,
+      "bottom": 33.0,
+      "left": 124.5,
+      "right": 132.0
+    },
+    "projection": {
+      "type": "equirectangular"
+    },
+    "credit": {
+      "author": "NordNordWest",
+      "license": "CC BY-SA 3.0 de",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+      "url": "https://commons.wikimedia.org/wiki/File:South_Korea_adm_location_map.svg"
+    },
+    "definition_url": "https://en.wikipedia.org/wiki/Module:Location_map/data/South_Korea",
+    "source_ids": [
+      "CITYMAP"
+    ]
+  },
+  "cities_title": "La capitale et les pôles du corridor industriel",
+  "cities_scope": "Municipalités · recensement du 1er novembre 2020",
+  "cities_note": "Sélection de villes aux fonctions complémentaires. Les populations correspondent aux limites municipales de 2020, pas aux aires métropolitaines.",
+  "cities_inset": {
+    "label": "Séoul et Incheon · détail",
+    "cities": [
+      "Séoul",
+      "Incheon"
+    ],
+    "center": [
+      126.85,
+      37.51
+    ],
+    "zoom": 5,
+    "x": 8,
+    "y": 250,
+    "width": 244,
+    "height": 106
+  },
+  "relief_title": "Les montagnes structurent la péninsule",
+  "relief_alt": "Relief de la Corée du Sud : massifs à l’est et à l’intérieur, plaines occidentales, Jeju au sud.",
+  "relief_landmarks": [
+    {
+      "label": "Les Taebaek",
+      "text": "Une chaîne proche de la côte orientale."
+    },
+    {
+      "label": "Les Sobaek",
+      "text": "Des massifs intérieurs orientés vers le sud-ouest."
+    },
+    {
+      "label": "Les plaines occidentales",
+      "text": "Des bassins urbains et agricoles plus ouverts."
+    }
+  ],
+  "euro": {
+    "currency": "KRW",
+    "per_euro": 1475.4041015624998,
+    "year": 2024,
+    "basis": "Taux de référence BCE direct : moyenne annuelle 2024, 1475,4041015624998 KRW pour un euro. Chaque montant de décembre 2024 est divisé par cette moyenne annuelle. Conversion indicative, sans correction de pouvoir d’achat.",
+    "source_ids": [
+      "S15"
+    ]
+  },
+  "prose_values": {
+    "aire-capitale": {
+      "value": 50.9,
+      "unit": "%",
+      "precision": 1
+    },
+    "pauvrete-aines": {
+      "value": 37.7,
+      "unit": "%",
+      "precision": 1
+    },
+    "export-total": {
+      "value": 709700000000,
+      "unit": "USD"
+    },
+    "egmp-haute": {
+      "value": 800,
+      "unit": "V",
+      "precision": 0
+    },
+    "egmp-basse": {
+      "value": 400,
+      "unit": "V",
+      "precision": 0
+    }
+  },
+  "sources": [
+    {
+      "id": "S01",
+      "text": "[Ministry of Data and Statistics, recensement 2025, 28 juillet 2026](https://www.mods.go.kr/boardDownload.es?bid=11739&list_no=446724&seq=1). Au 1er novembre 2025, population résidente, Coréens et étrangers. Chiffres de synthèse publiés : 51,82 millions et 20,7 % de 65 ans ou plus. Région capitale : Séoul, Incheon et Gyeonggi."
+    },
+    {
+      "id": "S02",
+      "text": "[AIEA, Country Nuclear Power Profiles, Republic of Korea, section 1.1.2 Geography and Climate](https://www-pub.iaea.org/MTCD/publications/PDF/CNPP2015_CD/countryprofiles/KoreaRepublicof/Figures/KOREA%20CNPP.pdf). Description physique de 2013 : Taebaek, Sobaek, plaines et Jeju. Aucun chiffre économique ou énergétique ancien de ce document n’est utilisé."
+    },
+    {
+      "id": "S03",
+      "text": "[Korea Meteorological Administration, Climatological Normals of Korea, 1991–2020](https://data.kma.go.kr/resources/normals/pdf_data/korea_pdf_0106_v2.pdf). Station 108 Séoul, p. II-27 (page PDF 95) ; station 159 Busan, p. II-65 (page PDF 133). Lignes Normals : minima et maxima quotidiens moyens, cumuls mensuels moyens. Contrôle visuel des deux tables primaires. [Portail KMA](https://data.kma.go.kr/normals/table.do)."
+    },
+    {
+      "id": "S04",
+      "text": "[City Population, villes de Corée du Sud, recensement du 1er novembre 2020](https://www.citypopulation.de/en/southkorea/cities/). Source : National Statistical Office. Limites municipales de 2020, étrangers inclus, hors agglomérations. Sélection éditoriale de six villes ; Ulsan complète les principaux pôles pour son industrie automobile."
+    },
+    {
+      "id": "S05",
+      "text": "[Wikimedia Commons, South Korea physical map2.svg](https://commons.wikimedia.org/wiki/File:South_Korea_physical_map2.svg). Urutseg, [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/). Conversion proportionnelle en WebP, 1000 × 944 pixels, qualité 88, sans recadrage ni recoloration. Carte de relief illustrative."
+    },
+    {
+      "id": "S06",
+      "text": "[PNUD, Human Development Report 2025, tableau des tendances de l’IDH](https://hdr.undp.org/sites/default/files/2025_HDR/HDR25_Statistical_Annex_HDI_Trends_Table.pdf). IDH 2023 : 0,937 ; rang 20."
+    },
+    {
+      "id": "S07",
+      "text": "[MODS, Survey of Household Finances and Living Conditions 2025](https://mods.go.kr/boardDownload.es?bid=11737&list_no=443273&seq=2). Publication du 4 décembre 2025. Revenus de 2024 : Gini du revenu disponible équivalent 0,325. Pauvreté des 66 ans ou plus : 37,7 %, seuil à la moitié de la médiane. Le Gini du patrimoine est une autre mesure. [KOSIS, méthode d’équivalisation](https://kosis.kr/eng/bulletinBoard/qnaView.do?boardIdx=334867) : revenu du ménage divisé par la racine carrée de sa taille."
+    },
+    {
+      "id": "S08",
+      "text": "[V-Dem, Democracy Report 2026, tableau A2, p. 48](https://www.v-dem.net/documents/75/V-Dem_Institute_Democracy_Report_2026_lowres.pdf). Données 2025, indice de démocratie libérale publié à deux décimales : 0,74, rang 22."
+    },
+    {
+      "id": "S09",
+      "text": "[RSF, Corée du Sud, classement 2026](https://rsf.org/en/country/south-korea). Score 69,12 ; rang 47 sur 180. Pressions politiques et économiques sur les rédactions."
+    },
+    {
+      "id": "S10",
+      "text": "[Transparency International, Corée du Sud, CPI 2025](https://www.transparency.org/en/countries/south-korea). Score 63 ; rang 31 sur 182. Perception de la corruption du secteur public."
+    },
+    {
+      "id": "S11",
+      "text": "[ONU, Demographic Yearbook 2022, tableau 7, p. 243–244](https://unstats.un.org/unsd/demographic-social/products/dyb/documents/DYB2022/table07.pdf). Recensement coréen du 1er novembre 2020, total national par sexe et âge. Résidents, étrangers inclus, séjour prévu supérieur à trois mois. Pyramide conservée à cette date observée ; elle ne représente pas une estimation de 2026."
+    },
+    {
+      "id": "S12",
+      "text": "[MODS, Birth Statistics in 2025, 26 août 2026](https://mods.go.kr/boardDownload.es?bid=11773&list_no=447264&seq=1). Tableau 1 : indicateur conjoncturel de fécondité, séries 2015–2025. Valeurs publiées à deux décimales, sans précision supplémentaire reconstituée."
+    },
+    {
+      "id": "S13",
+      "text": "[OCDE, Étude économique de la Corée 2026, résumé](https://www.oecd.org/en/publications/oecd-economic-surveys-korea-2026_6b87f585-en/full-report/executive-summary_4d2a0ce1.html). 2 juillet 2026. Dualité du marché du travail, concentration régionale, logement, éducation et conciliation travail-famille."
+    },
+    {
+      "id": "S14",
+      "text": "[MODS, Income of Wage Workers in 2024, 23 février 2026](https://www.mods.go.kr/boardDownload.es?bid=11786&list_no=444598&seq=2). Revenus salariaux mensuels administratifs de décembre 2024, avant prélèvements, sans conversion en équivalent temps plein. Médiane 2,88 millions KRW ; moyenne 3,75 millions ; grandes entreprises 6,13 millions ; PME 3,07 millions. Les montants sont publiés au dix-millier de wons. [Notice de publication](https://mods.go.kr/board.es?act=view&bid=11786&list_no=444598&mid=a20105010000). [Rapport coréen complet, méthodologie et annexes](https://www.mods.go.kr/boardDownload.es?bid=11113&list_no=443648&seq=1). Salariés ayant travaillé au moins un jour en décembre ; observations par emploi, une personne multi-employeurs peut être comptée plusieurs fois. Remboursements de frais non imposables exclus ; taille des entreprises classée selon les règles légales coréennes, notamment le chiffre d’affaires."
+    },
+    {
+      "id": "S15",
+      "text": "[Banque centrale européenne, taux annuel moyen KRW/EUR 2024](https://data-api.ecb.europa.eu/service/data/EXR/A.KRW.EUR.SP00.A?format=csvdata&startPeriod=2024&endPeriod=2024). Série EXR.A.KRW.EUR.SP00.A, valeur brute 1475,4041015624998 KRW par euro. Conversion indicative : montant en KRW divisé par ce taux annuel moyen 2024. Les équivalents gardent le signe ≈ ; ils ne mesurent pas le pouvoir d’achat."
+    },
+    {
+      "id": "S16",
+      "text": "[OCDE, statistiques de base de la Corée, 2024, édition 2026](https://www.oecd.org/en/publications/oecd-economic-surveys-korea-2026_6b87f585-en/full-report/basic-statistics-of-korea-2024_6dd3c2ca.html). PIB courant : 1875,8 milliards USD. Parts de valeur ajoutée, hors impôts nets sur les produits : agriculture 1,6 %, industrie et construction 36,5 %, services 61,9 %. Dépenses intérieures de R&D : 5,1 % du PIB. Valeurs conservées à la précision publiée."
+    },
+    {
+      "id": "S17",
+      "text": "[Yonhap, bilan des exportations 2025, données MOTIR, 1er janvier 2026](https://en.yna.co.kr/view/AEN20260101000851320). Biens : total 709,7 milliards USD ; semi-conducteurs 173,4 milliards. Part calculée : 173,4 / 709,7 × 100. Autres biens par différence. Les batteries et véhicules fabriqués à l’étranger ne sont pas des exportations coréennes."
+    },
+    {
+      "id": "S18",
+      "text": "[Agence internationale de l’énergie, Korea 2025, Energy Policy Review](https://www.iea.org/files/b3a8a809-6cd0-4e12-bbc3-8069f4679d6a/Korea2025.pdf). Approvisionnement fossile importé, production nucléaire et renouvelables, contraintes du système énergétique."
+    },
+    {
+      "id": "S19",
+      "text": "[Samsung Semiconductor, activités](https://semiconductor.samsung.com/about-us/business-area/). Mémoire, System LSI et fonderie. DRAM, NAND et distinction entre activités de mémoire et fabrication pour des tiers."
+    },
+    {
+      "id": "S20",
+      "text": "[SK hynix, résultats du troisième trimestre 2026](https://news.skhynix.com/en/q3-2026-business-results/). Publication d’octobre 2026. Mémoire HBM4, DRAM serveur et NAND pour stockage. Source d’entreprise, sans reprise de prévisions commerciales."
+    },
+    {
+      "id": "S21",
+      "text": "[Hyundai Motor Group, présentation de la plateforme E-GMP](https://www.hyundai.com/content/hyundai/worldwide/en/newsroom/detail/hyundai-motor-group-to-lead-charge-into-electric-era-with-dedicated-ev-platform-%25E2%2580%2598e-gmp%25E2%2580%2599-0000000812.html). Architecture électrique dédiée, charge 800 V et compatibilité 400 V. Performances annoncées par le constructeur, variables selon véhicule et conditions."
+    },
+    {
+      "id": "S22",
+      "text": "[Yonhap, accord L&F–LG Energy Solution pour des matériaux LFP, 3 novembre 2026](https://www.yna.co.kr/view/AKR20261103073200003). Diversification depuis les matériaux NCM riches en nickel vers le lithium-fer-phosphate. Concurrence et adaptation de la filière coréenne des batteries."
+    },
+    {
+      "id": "S23",
+      "text": "[Library of Congress, mouvement de démocratisation, soulèvement de Gwangju](https://guides.loc.gov/south-korean-democratization-movement/kwangju-uprising). Répression de mai 1980 et héritage démocratique ; [Musée national d’histoire contemporaine, Votes and Voices](https://www.much.go.kr/online_exhi/vnv/exh_mat.html), mobilisations et vote direct de 1987."
+    },
+    {
+      "id": "S24",
+      "text": "[Council on Foreign Relations, chronologie de l’alliance américano-coréenne](https://www.cfr.org/articles/us-south-korea-alliance). Partition, guerre de 1950–1953, armistice et alliance ; tensions de 2010, sommets de 2018 et rapprochement trilatéral de 2023."
+    },
+    {
+      "id": "S25",
+      "text": "[Chatham House, South Korea’s democratic evolution, juillet 2022](https://www.chathamhouse.org/2022/07/contested-politics-south-korea/2-south-koreas-democratic-evolution). Alternances Roh Moo-hyun, Lee Myung-bak, Park Geun-hye et Moon Jae-in ; polarisation et manifestations des bougies."
+    },
+    {
+      "id": "S26",
+      "text": "[Freedom House, Freedom in the World 2026, South Korea](https://freedomhouse.org/country/south-korea/freedom-world/2026). Institutions, élections et crise de la loi martiale ; mandat présidentiel de cinq ans non renouvelable ; élection anticipée de juin 2025."
+    },
+    {
+      "id": "S27",
+      "text": "[Yonhap, réquisitions en appel dans le procès Yoon, 29 octobre 2026](https://en.yna.co.kr/view/AEN20261029005751315). Condamnation à perpétuité en première instance en février 2026 ; parquet spécial requérant à nouveau la peine de mort en appel. Une réquisition ne constitue pas un jugement."
+    },
+    {
+      "id": "S28",
+      "text": "[SBS, actualité politique du 16 novembre 2026](https://news.sbs.co.kr/english/newsSection.do?pageDate=20261116&pageIdx=4&sectionType=01). Opposition PPP au texte sur une enquête spéciale concernant les poursuites contre Lee ; départ du président pour les sommets régionaux. Les accusations partisanes ne sont pas présentées comme des faits établis."
+    },
+    {
+      "id": "S29",
+      "text": "[Reuters, Lee propose une autorité de cybersécurité, 3 novembre 2026](https://malaysia.news.yahoo.com/south-koreas-lee-calls-powerful-020301717.html). Coordination préventive des fonctions publiques et privées, après des intrusions visant des systèmes essentiels."
+    },
+    {
+      "id": "S30",
+      "text": "[France Diplomatie, présentation de la Corée du Sud, mise à jour du 22 octobre 2026](https://www.diplomatie.gouv.fr/fr/information-par-pays/coree-du-sud/presentation-de-la-coree-du-sud). Identité, superficie de 99618 km² hors zone démilitarisée et orientations diplomatiques. Les autres chiffres de cette page ne servent pas de millésime statistique à la fiche."
+    },
+    {
+      "id": "S31",
+      "text": "[France Diplomatie, déclaration Macron–Lee, 3 avril 2026](https://www.diplomatie.gouv.fr/fr/presse-et-ressources/decouvrir-et-informer/actualites/declaration-conjointe-d-emmanuel-macron-president-de-la-republique-et-de-lee-jae-myung-president-de). Partenariat stratégique global, relations depuis 1886, mémoire du Bataillon français et coopérations industrielles, scientifiques et culturelles."
+    },
+    {
+      "id": "S32",
+      "text": "[UNESCO, inscription du kimjang, décision de 2013](https://ich.unesco.org/en/decisions/8.COM/8.23). Préparation et partage collectifs du kimchi, particulièrement en fin d’automne."
+    },
+    {
+      "id": "S33",
+      "text": "[Fondation Nobel, prix de littérature 2024, Han Kang](https://www.nobelprize.org/uploads/2024/10/press-literatureprize2024.pdf). Œuvre consacrée aux traumatismes historiques et à la fragilité humaine."
+    },
+    {
+      "id": "S34",
+      "text": "[National Hangeul Museum, exposition permanente](https://www.hangeul.go.kr/en/exhi/dailyExhibition.do). Alphabet créé sous Sejong en 1443, publication du Hunminjeongeum en 1446 ; principes phonétiques et organisation des lettres."
+    },
+    {
+      "id": "S35",
+      "text": "[Ville de Séoul, sport et loisirs](https://english.seoul.go.kr/service/amusement/sportsleisure-2/). Course, vélo, parcs du Hangang et promenades. [Seoul Tourism, itinéraire cyclable](https://english.visitseoul.net/tours/hangang-river-cycling-trail/ENP002871)."
+    },
+    {
+      "id": "S36",
+      "text": "[Resident Advisor, Faust, Séoul](https://ra.co/clubs/106806). Lieu de la scène électronique locale et internationale ; fiche consultée le 16 novembre 2026. Aucune programmation future garantie."
+    },
+    {
+      "id": "S37",
+      "text": "[Wikimedia Commons, Flag of South Korea.svg](https://commons.wikimedia.org/wiki/File:Flag_of_South_Korea.svg). Dessin du gouvernement de la République de Corée ; vectorisation Great Brightstar et autres. Domaine public, [PD-South Korea](https://commons.wikimedia.org/wiki/Template:PD-South_Korea). SVG original conservé."
+    },
+    {
+      "id": "S38",
+      "text": "[Korea Tourism Organization, Set Menu, traditions du repas coréen](https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=189672). Riz, soupe et accompagnements ; [présentation du bibimbap](https://english.visitkorea.or.kr/svc/sp/food/ext/special_view.do?menuSn=913&vcontsId=178062)."
+    },
+    {
+      "id": "NE",
+      "text": "[Natural Earth, frontières et géométrie du localisateur](https://www.naturalearthdata.com/about/terms-of-use/). Domaine public. Géométrie locale de l’application ; vue régionale et repère mondial."
+    },
+    {
+      "id": "CITYMAP",
+      "text": "[Wikimedia Commons, South Korea adm location map.svg](https://commons.wikimedia.org/wiki/File:South_Korea_adm_location_map.svg). NordNordWest, [CC BY-SA 3.0 de](https://creativecommons.org/licenses/by-sa/3.0/de/deed.en). SVG original conservé. [Bornes et projection](https://en.wikipedia.org/wiki/Module:Location_map/data/South_Korea). Repères numérotés ajoutés à l’affichage."
+    },
+    {
+      "id": "REL",
+      "text": "[Pew Research Center, Religious landscape and change, 17 juin 2024](https://www.pewresearch.org/religion/2024/06/17/religious-landscape-and-change-in-east-asia/). Enquête de 2023, adultes ; affiliation religieuse déclarée. Sans religion 52 %, chrétiens 32 %, bouddhistes 14 %. Autres et non-réponses regroupés par différence : 2 %."
+    },
+    {
+      "id": "PARK",
+      "text": "[Parlement européen, South Korea after Park, avril 2017](https://www.europarl.europa.eu/RegData/etudes/BRIE/2017/603905/EPRS_BRI%282017%29603905_EN.pdf). Catastrophe du Sewol, manifestations, destitution confirmée le 10 mars 2017 et élection anticipée."
+    },
+    {
+      "id": "WORK",
+      "text": "[OCDE, Exploring Korea’s Fertility, Work, and Family Policy Trends, chapitre sur le marché du travail, novembre 2026](https://www.oecd.org/en/publications/exploring-korea-s-fertility-work-and-family-policy-trends_1155864e-en/full-report/going-into-labour-effects-of-labour-market-institutions-and-work-life-balance-on-fertility_38b237b3.html). Sécurité de l’emploi, dualité, conciliation et écarts entre entreprises."
+    },
+    {
+      "id": "FAMILY",
+      "text": "[OCDE, Étude économique de la Corée 2024, Responding to population decline](https://www.oecd.org/en/publications/oecd-economic-surveys-korea-2024_c243e16a-en/full-report/responding-to-population-decline_7f6620e6.html). Logement, éducation, politiques familiales et trajectoires professionnelles."
+    },
+    {
+      "id": "MEMORY",
+      "text": "[SK hynix, Semiconductor 101, acteurs et technologies](https://news.skhynix.com/en/semiconductor-101-sk-hynix-guide-to-key-industry-players/). Fonctions de la DRAM et de la NAND, empilement HBM et vias traversants."
+    }
+  ]
+}
