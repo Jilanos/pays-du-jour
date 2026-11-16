@@ -120,6 +120,14 @@
     {
       "id": "FR-AGE-UKR",
       "text": "[Banque mondiale, WDI, population française par âge et sexe, 2024](https://data.worldbank.org/indicator/SP.POP.0004.MA.5Y?locations=FR) ; [population totale, API](https://api.worldbank.org/v2/country/FRA/indicator/SP.POP.TOTL?format=json&date=2024). Base du 11 novembre 2026. Cohortes quinquennales 0-4 à 75-79, puis 80 ans ou plus. Effectifs calculés à partir des parts propres à chaque sexe et de SP.POP.TOTL.MA.IN / FE.IN, sans arrondi. Population totale 68 551 653 ; hommes 33 232 759 ; femmes 35 318 894. Même année et séries WDI que l’Ukraine. Les comptes démographiques français sont issus des statistiques nationales reprises dans WDI."
+    },
+    {
+      "id": "FR-AGE-RUS",
+      "text": "[Insee, population par sexe et âge quinquennal, bilan démographique, édition du 15 juin 2026](https://www.insee.fr/fr/statistiques/fichier/8999013/4_Pop1janv_grages_quinquennal.xlsx). Feuilles FR-Hommes et FR-Femmes, ligne 2024 (p). France entière au 1er janvier 2024, estimations provisoires. Moins d’un an et 1–4 ans additionnés ; 100–104 et 105 ans ou plus additionnés. Même date de référence que l’estimation russe de Rosstat au 1er janvier 2024."
+    },
+    {
+      "id": "FR-MIL-SIPRI",
+      "text": "[Banque mondiale, WDI, dépenses militaires en % du PIB, série MS.MIL.XPND.GD.ZS, France et Russie, 2010–2025](https://api.worldbank.org/v2/country/FRA;RUS/indicator/MS.MIL.XPND.GD.ZS?source=2&date=2010:2025&format=json&per_page=100). Données du [SIPRI Military Expenditure Database](https://www.sipri.org/databases/milex), reprises par la Banque mondiale ; même définition SIPRI pour les deux pays. France 2025 : 2,027 % du PIB. Usage non commercial selon les [conditions du SIPRI](https://www.sipri.org/about/terms-and-conditions)."
     }
   ],
   "population": {
@@ -994,6 +1002,122 @@
     "coverage": "Part des 65 ans ou plus · WDI 2024",
     "source_ids": [
       "FR-AGE-UKR"
+    ]
+  },
+  "pyramide-france-2024": {
+    "status": "comparable",
+    "unit": "personnes",
+    "year": 2024,
+    "coverage": "Résidents · 1er janvier 2024, estimations provisoires",
+    "age_groups": [
+      "0–4",
+      "5–9",
+      "10–14",
+      "15–19",
+      "20–24",
+      "25–29",
+      "30–34",
+      "35–39",
+      "40–44",
+      "45–49",
+      "50–54",
+      "55–59",
+      "60–64",
+      "65–69",
+      "70–74",
+      "75–79",
+      "80–84",
+      "85–89",
+      "90–94",
+      "95–99",
+      "100+"
+    ],
+    "male": [
+      1759157,
+      1995005,
+      2178867,
+      2183950,
+      2024588,
+      1928746,
+      2016813,
+      2096501,
+      2134436,
+      2062946,
+      2251950,
+      2177080,
+      2056363,
+      1847983,
+      1697415,
+      1331340,
+      773760,
+      506068,
+      220391,
+      46298,
+      4997
+    ],
+    "female": [
+      1682904,
+      1900369,
+      2078949,
+      2045476,
+      1939273,
+      1937200,
+      2082363,
+      2204033,
+      2236792,
+      2112193,
+      2305856,
+      2268814,
+      2205941,
+      2083525,
+      1996530,
+      1635643,
+      1060520,
+      857303,
+      514844,
+      166990,
+      28205
+    ],
+    "source_ids": [
+      "FR-AGE-RUS"
+    ]
+  },
+  "depenses-militaires-2025": {
+    "status": "comparable",
+    "value": 2.0266296921,
+    "unit": "%",
+    "year": 2025,
+    "precision": 1,
+    "coverage": "Dépenses militaires SIPRI · % du PIB · 2025",
+    "source_ids": [
+      "FR-MIL-SIPRI"
+    ]
+  },
+  "depenses-militaires-2010-2025": {
+    "status": "comparable",
+    "unit": "% du PIB",
+    "year": "2010–2025",
+    "values": [
+      1.9686437504,
+      1.8879461498,
+      1.8715440946,
+      1.8471164836,
+      1.8595290656,
+      1.869732682,
+      1.8517180962,
+      1.8523088188,
+      1.8460425714,
+      1.852885207,
+      2.0216745528,
+      1.9802222581,
+      1.9587812677,
+      1.9481758892,
+      2.0115758078,
+      2.0266296921
+    ],
+    "coverage": "Dépenses militaires SIPRI · % du PIB · 2010–2025",
+    "source_ids": [
+      "FR-MIL-SIPRI"
     ]
   }
 }
