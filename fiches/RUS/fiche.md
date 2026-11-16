@@ -42,7 +42,7 @@ Moscou passe plusieurs mois sous zéro, puis connaît un été tiède. Ses pluie
 
 {{chart:pyramide-ages}}
 
-La pyramide porte les marques de l’histoire. Les générations nées dans les années 1990 sont peu nombreuses. Celles des années 1980 forment un renflement. Après 60 ans, les femmes sont nettement plus nombreuses que les hommes. Rosstat attribue ce déséquilibre à la forte mortalité prématurée des hommes. Les moins de cinq ans sont moins nombreux que les enfants de 5 à 14 ans : les naissances reculent. La France compte une part plus forte de personnes de 75 ans ou plus. {#population-pyramide sources="S04,FR-AGE-RUS" label="Une pyramide marquée par l’histoire"}
+La pyramide porte les marques de l’histoire. Les générations nées dans les années 1990 sont peu nombreuses. Celles des années 1980 forment un renflement. Après 60 ans, les femmes sont nettement plus nombreuses que les hommes. Début 2024, le pays compte {{value:femmes-1000}} pour 1 000 hommes. Rosstat attribue ce déséquilibre à la forte mortalité prématurée des hommes. Seule la Tchétchénie compte moins de femmes que d’hommes. Les moins de cinq ans sont moins nombreux que les enfants de 5 à 14 ans : les naissances reculent. La France compte une part plus forte de personnes de 75 ans ou plus. {#population-pyramide sources="S04,FR-AGE-RUS" label="Une pyramide marquée par l’histoire"}
 
 La fécondité reste inférieure au niveau français. La population décline lentement. Rosstat n’a plus publié de pyramide détaillée après celle du 1er janvier 2024. {#population-fecondite sources="S01,S04" label="Fécondité et statistiques"}
 
@@ -115,7 +115,7 @@ Mikhaïl Michoustine, ancien directeur des impôts, dirige le gouvernement depui
 
 **2006-2011.** Vladimir Poutine ne peut pas enchaîner un troisième mandat. Il devient Premier ministre de Dmitri Medvedev en 2008 et garde la main. En 2011, Medvedev renonce à se représenter. Après les législatives de décembre, des fraudes provoquent les plus grandes manifestations depuis la fin de l’URSS. {#dynamiques-2006 sources="S26" label="Politique · 2006-2011"}
 
-**2012-2021.** Vladimir Poutine retrouve la présidence en 2012. En mars 2014, la Russie annexe la Crimée. Les premières sanctions européennes suivent. En 2020, une révision constitutionnelle remet à zéro ses mandats. La même année, l’opposant Alexeï Navalny est empoisonné au Novitchok. {#dynamiques-2012 sources="S26,S30" label="Politique · 2012-2021"}
+**2012-2021.** Vladimir Poutine retrouve la présidence en 2012. En mars 2014, la Russie annexe la Crimée. Les premières sanctions européennes suivent. En 2020, une révision constitutionnelle remet à zéro ses mandats. Le vote s’étale sur sept jours, pandémie oblige. Les autorités annoncent {{value:oui-2020}} de oui. Des observateurs indépendants dénoncent des fraudes massives. La loi sur les « agents de l’étranger » s’étend aux médias en 2017, puis aux particuliers en 2019. La même année, l’opposant Alexeï Navalny est empoisonné au Novitchok. {#dynamiques-2012 sources="S26,S30" label="Politique · 2012-2021"}
 
 **2022-2023.** L’armée russe envahit l’Ukraine le 24 février 2022. Le 21 septembre, une mobilisation de {{value:reservistes}} est décrétée. Le 30 septembre, Moscou proclame l’annexion de quatre régions ukrainiennes qu’elle ne contrôle qu’en partie. En juin 2023, le groupe Wagner d’Evgueni Prigojine marche vers Moscou, puis renonce. Prigojine meurt deux mois plus tard dans l’accident de son avion. {#dynamiques-2022 sources="S30,S28,S27,S34,S29" label="Politique · 2022-2023"}
 
@@ -123,7 +123,7 @@ Mikhaïl Michoustine, ancien directeur des impôts, dirige le gouvernement depui
 
 **2026, jusqu’au 16 novembre.** Des pourparlers trilatéraux réunissent Américains, Russes et Ukrainiens à Abou Dhabi en janvier. Deux autres sessions suivent. Ils s’interrompent avec le début des opérations militaires américano-israéliennes contre l’Iran, fin février. Moscou exige toujours le retrait ukrainien du Donbass. Kiev refuse. {#dynamiques-2026-negociations sources="S33,S34" label="Politique · négociations 2026"}
 
-Les législatives ont lieu du 18 au 20 septembre. Russie unie obtient 349 sièges sur 450, un record. La participation officielle atteint {{value:participation-douma}}. Pour la première fois, {{value:anciens-combattants}} de la guerre entrent à la Douma. {#dynamiques-2026-douma sources="S32" label="Politique · législatives 2026"}
+Les législatives ont lieu du 18 au 20 septembre. Russie unie obtient 349 sièges sur 450, un record. La participation officielle atteint {{value:participation-douma}}. Pour la première fois, {{value:anciens-combattants}} de la guerre entrent à la Douma. Les analystes y voient un scrutin étroitement encadré, conçu pour ne rien révéler des fragilités du régime. {#dynamiques-2026-douma sources="S32,S50" label="Politique · législatives 2026"}
 
 Les négociations reprennent à Abou Dhabi les 10 et 11 novembre, sans percée. Un nouvel échange de prisonniers est convenu. Le 12 novembre, Vladimir Poutine reçoit les émissaires américains Steve Witkoff et Jared Kushner. Au 10 septembre, des médias indépendants avaient identifié nommément {{value:morts-identifies}} russes tués depuis 2022. Ce décompte constitue un minimum. {#dynamiques-2026-novembre sources="S34,S35" label="Politique · novembre 2026"}
 
@@ -137,7 +137,7 @@ La cuisine est aussi devenue un terrain politique. En 2022, l’UNESCO inscrit l
 
 Les deux pays partagent une mémoire militaire commune. Pendant la Seconde Guerre mondiale, les pilotes français du Normandie-Niemen combattent sur le front de l’Est aux côtés de l’Armée rouge. {#france-memoire sources="S49" label="Le Normandie-Niemen"}
 
-La confiance se dégrade avec l’annexion de la Crimée en 2014. Depuis 2022, la France applique les sanctions européennes et réduit fortement sa coopération économique. Elle maintient un canal de dialogue politique. En janvier 2026, le chercheur Laurent Vinatier est libéré, en échange d’un basketteur russe détenu en France. {#france-crise sources="S24,S25" label="Sanctions et dialogue"}
+La confiance se dégrade avec l’annexion de la Crimée en 2014. Depuis 2022, la France applique les sanctions européennes et réduit fortement sa coopération économique. Moscou déclare {{value:diplomates}} persona non grata le 18 mai 2022. Elle maintient un canal de dialogue politique. En janvier 2026, le chercheur Laurent Vinatier est libéré, en échange d’un basketteur russe détenu en France. {#france-crise sources="S24,S25" label="Sanctions et dialogue"}
 
 En 2025, les importations françaises depuis la Russie atteignent {{value:imports-fr}}. Le gaz, surtout liquéfié, en représente {{value:gaz-fr}}. La Russie est le deuxième fournisseur de gaz de la France, derrière les États-Unis. Les exportations françaises tombent à {{value:exports-fr}}, portées par les médicaments et les cosmétiques. {#france-commerce sources="S23" label="Échanges commerciaux"}
 

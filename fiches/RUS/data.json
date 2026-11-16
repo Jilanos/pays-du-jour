@@ -910,6 +910,21 @@
     "police-deficit": {
       "value": 200000,
       "unit": "agents"
+    },
+    "femmes-1000": {
+      "value": 1152,
+      "unit": "femmes",
+      "precision": 0
+    },
+    "oui-2020": {
+      "value": 79,
+      "unit": "%",
+      "precision": 0
+    },
+    "diplomates": {
+      "value": 34,
+      "unit": "diplomates français",
+      "precision": 0
     }
   },
   "euro": {
