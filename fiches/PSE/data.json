@@ -391,9 +391,9 @@
       "id": "economie-territoires",
       "type": "line",
       "title": "Gaza décroche de la Cisjordanie",
-      "subtitle": "PIB réel · millions de dollars aux prix de 2015 · 2021–2025",
+      "subtitle": "PIB réel · milliards de dollars aux prix de 2015 · 2021–2025",
       "year": "2021–2025",
-      "unit": "millions USD de 2015",
+      "unit": "milliards USD de 2015",
       "x": [
         2021,
         2022,
@@ -405,28 +405,29 @@
         {
           "name": "Cisjordanie",
           "values": [
-            12443.6,
-            12921.7,
-            13328.3,
-            11582.1,
-            11977.3
+            12.4436,
+            12.9217,
+            13.3283,
+            11.5821,
+            11.9773
           ]
         },
         {
           "name": "Gaza",
           "values": [
-            2578.1,
-            2713.3,
-            2154.7,
-            361.9,
-            485.6
+            2.5781,
+            2.7133,
+            2.1547,
+            0.3619,
+            0.4856
           ]
         }
       ],
       "source_ids": [
         "S13"
       ],
-      "note_visible": "Les niveaux de production diffèrent aussi avec la taille des populations. Données préliminaires."
+      "note_visible": "Les niveaux de production diffèrent aussi avec la taille des populations. Données préliminaires.",
+      "note": "Les montants du tableau PCBS, publiés en millions, sont divisés exactement par 1 000 pour afficher des milliards. Aucune donnée n’est arrondie dans le fichier."
     }
   ],
   "cities": [
@@ -682,11 +683,27 @@
     },
     {
       "id": "CITYMAP",
-      "text": "[Wikimedia Commons, Palestine location map wide.png](https://commons.wikimedia.org/wiki/File:Palestine_location_map_wide.png). NordNordWest, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0). Réduction proportionnelle et conversion WebP, sans recadrage ni recoloration. [Bornes et projection](https://en.wikipedia.org/wiki/Module:Location_map/data/Palestine). Repères numérotés ajoutés à l’affichage."
+      "text": "[Wikimedia Commons, Palestine location map wide.png](https://commons.wikimedia.org/wiki/File:Palestine_location_map_wide.png). NordNordWest, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0). Conversion PNG vers WebP, sans redimensionnement, recadrage ni recoloration ; cadre complet de 614 × 1 141 pixels. [Bornes et projection](https://en.wikipedia.org/wiki/Module:Location_map/data/Palestine). Repères numérotés ajoutés à l’affichage."
     },
     {
       "id": "S40",
       "text": "[ONU, histoire de la question de Palestine](https://www.un.org/unispal/fr/history/). Partage, Nakba, occupation et processus d’Oslo. Source historique distincte de la chronologie actualisée."
+    },
+    {
+      "id": "S41",
+      "text": "[ONU, droits humains dans les territoires occupés, rapport A/HRC/28/80, 2015](https://www.un.org/unispal/document/auto-insert-189524/) ; [rapport du Secrétaire général sur l’assistance au peuple palestinien, 2016](https://www.un.org/unispal/document/auto-insert-180921/). Gouvernement de consensus formé le 2 juin 2014, difficultés persistantes à exercer ses fonctions à Gaza."
+    },
+    {
+      "id": "S42",
+      "text": "[CPI, accueil de la Palestine comme État partie au Statut de Rome, 1er avril 2015](https://www.icc-cpi.int/news/icc-welcomes-palestine-new-state-party). [Département d’État américain, reconnaissance de Jérusalem, 7 décembre 2017](https://2017-2021.state.gov/recognizing-jerusalem-as-israels-capital/), décision présidentielle du 6 décembre."
+    },
+    {
+      "id": "S43",
+      "text": "[Commission électorale palestinienne, décret de report des élections générales de 2021](https://www.elections.ps/tabid/1257/language/en-US/Default.aspx). [Experts des Nations unies, appel à reprogrammer les élections, 26 juillet 2021](https://www.un.org/unispal/document/palestinian-election-free-fair-democratic-and-credible-vote-must-include-east-jerusalem-un-experts-press-release/). Motif avancé par la présidence : participation de Jérusalem-Est."
+    },
+    {
+      "id": "S44",
+      "text": "[Conseil de l’Union européenne, Hamas et Jihad islamique palestinien, 16 janvier 2026](https://www.consilium.europa.eu/en/press/press-releases/2026/01/16/hamas-and-palestinian-islamic-jihad-council-prolongs-restrictive-measures-for-another-year/). Confirme les mesures au titre de la liste antiterroriste de l’UE, distinctes du régime complémentaire de sanctions individuelles."
     }
   ],
   "hero_sources": [

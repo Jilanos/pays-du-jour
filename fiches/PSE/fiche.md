@@ -92,6 +92,8 @@ La seconde Intifada éclate en 2000. Attentats, opérations militaires et durcis
 
 L’État de Palestine et l’Autorité palestinienne ne recouvrent pas exactement la même institution. L’OLP porte la représentation nationale extérieure. L’Autorité administre des compétences issues d’Oslo, principalement en Cisjordanie. Les zones de contrôle, les colonies et les interventions israéliennes limitent son pouvoir. À Gaza, l’emprise du Hamas et la présence militaire israélienne compliquent toute autorité unifiée. {#politique-institutions sources="S18,S20,S24" label="Institutions et contrôle effectif"}
 
+Le Fatah, principal courant de l’OLP, soutient la voie diplomatique et la solution à deux États. Le Hamas associe mouvement islamiste, activités sociales et branche armée. L’Union européenne le classe parmi les organisations terroristes. Les deux mouvements rivalisent aussi pour le contrôle des institutions et des forces de sécurité. {#politique-courants sources="S20,S44" label="Fatah et Hamas"}
+
 ### Dirigeants récents
 
 La présidence, les gouvernements et les pouvoirs territoriaux suivent des trajectoires différentes. {#politique-dirigeants sources="S18,S20,S39" label="Repères sur les dirigeants"}
@@ -109,7 +111,9 @@ La présidence, les gouvernements et les pouvoirs territoriaux suivent des traje
 
 **2006–2007.** Le Hamas remporte les législatives de 2006. La rivalité avec le Fatah débouche sur des affrontements. En 2007, le Hamas prend le contrôle de Gaza. Le Fatah domine l’Autorité en Cisjordanie. Le blocus israélien et les restrictions égyptiennes durcissent l’isolement de Gaza. La division politique se prolonge malgré plusieurs tentatives de réconciliation. {#politique-2006 sources="S20" label="Victoire du Hamas et division"}
 
-**2008–2022.** Les guerres de Gaza se succèdent, notamment en 2008–2009, 2012, 2014 et 2021. La Palestine obtient en 2012 le statut d’État observateur non membre à l’ONU. Les négociations ne produisent pas de règlement. Les élections générales prévues en 2021 sont reportées. L’absence de renouvellement national affaiblit la légitimité des dirigeants. {#politique-2008 sources="S19,S21" label="Guerres et impasse politique"}
+**2008–2014.** Les guerres de Gaza se succèdent en 2008–2009, 2012 et 2014. La Palestine obtient en 2012 le statut d’État observateur non membre à l’ONU. Les négociations relancées en 2013 s’interrompent en 2014. Un gouvernement de consensus est formé cette année-là après un accord Fatah-Hamas. Il ne parvient pas à unifier les appareils de gouvernement et de sécurité à Gaza. {#politique-2008 sources="S19,S41" label="Guerres et tentative de réconciliation"}
+
+**2015–2022.** La Palestine devient partie au Statut de Rome en avril 2015. La voie judiciaire internationale prend davantage de place dans sa diplomatie. En décembre 2017, Donald Trump reconnaît Jérusalem comme capitale d’Israël. Une nouvelle guerre frappe Gaza en mai 2021. Abbas reporte les élections générales prévues cette année-là, en invoquant les obstacles au vote à Jérusalem-Est. L’absence de renouvellement électoral approfondit la crise de légitimité palestinienne. {#politique-2015 sources="S42,S43,S21" label="Diplomatie, Jérusalem et élections reportées"}
 
 **2023.** Le 7 octobre, le Hamas et d’autres groupes armés attaquent le sud d’Israël, tuent des civils et des militaires et prennent des otages. Israël lance une campagne militaire à Gaza. Les bombardements, les offensives terrestres et les restrictions d’approvisionnement provoquent une catastrophe humanitaire. Les déplacements et les destructions touchent l’ensemble du territoire. {#politique-2023 sources="S21" label="Attaques du 7 octobre et guerre"}
 
