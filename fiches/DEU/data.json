@@ -1,0 +1,1258 @@
+{
+  "keyfacts": [
+    {
+      "id": "population",
+      "label": "Population",
+      "value": 83467117,
+      "unit": "habitants",
+      "year": 2025,
+      "coverage": "Résidents · 31 décembre 2025",
+      "source_ids": [
+        "S01"
+      ],
+      "france": "population"
+    },
+    {
+      "id": "superficie",
+      "label": "Superficie",
+      "value": 357569,
+      "unit": "km²",
+      "year": 2026,
+      "coverage": "Données Eurostat · 2026",
+      "source_ids": [
+        "S02"
+      ],
+      "france": "superficie"
+    },
+    {
+      "id": "pib-nominal",
+      "label": "PIB nominal",
+      "value": 5115594000000,
+      "unit": "USD",
+      "year": 2025,
+      "coverage": "Prix courants · 2025",
+      "source_ids": [
+        "S03"
+      ],
+      "france": "pib-nominal"
+    },
+    {
+      "id": "fecondite",
+      "label": "Fécondité",
+      "value": 1.32,
+      "unit": "enfant/femme",
+      "year": 2025,
+      "precision": 1,
+      "coverage": "Indicateur conjoncturel · 2025",
+      "source_ids": [
+        "S04"
+      ],
+      "france": "fecondite"
+    },
+    {
+      "id": "65-plus",
+      "label": "Part des 65 ans ou plus",
+      "value": 23.14610075725989,
+      "unit": "%",
+      "year": 2025,
+      "coverage": "Résidents · 31 décembre 2025",
+      "source_ids": [
+        "S01"
+      ],
+      "france": "65-plus"
+    },
+    {
+      "id": "chomage",
+      "label": "Chômage",
+      "value": 3.8,
+      "unit": "%",
+      "year": 2025,
+      "precision": 1,
+      "coverage": "Au sens du BIT, 15 à 74 ans · moyenne 2025",
+      "source_ids": [
+        "S05"
+      ],
+      "france": "chomage-eurostat-2025"
+    },
+    {
+      "id": "electricite-bas-carbone",
+      "label": "Électricité bas carbone",
+      "value": 58.461,
+      "unit": "%",
+      "year": 2025,
+      "coverage": "Nucléaire et renouvelables · production brute 2025",
+      "source_ids": [
+        "S22"
+      ],
+      "france": "electricite-bas-carbone"
+    },
+    {
+      "id": "dependance-energetique",
+      "label": "Dépendance énergétique",
+      "value": 66.812,
+      "unit": "%",
+      "year": 2024,
+      "coverage": "Importations nettes / énergie brute disponible · 2024",
+      "source_ids": [
+        "S06"
+      ],
+      "france": "dependance-energetique-2024"
+    }
+  ],
+  "indices": [
+    {
+      "id": "idh",
+      "name": "Développement humain",
+      "acronym": "IDH",
+      "value": 0.959,
+      "year": 2023,
+      "rank": "5ᵉ",
+      "scale_min": 0,
+      "scale_max": 1,
+      "precision": 3,
+      "higher_is_better": true,
+      "source_ids": [
+        "S07"
+      ],
+      "france": "idh"
+    },
+    {
+      "id": "gini",
+      "name": "Inégalités de revenus",
+      "acronym": "Gini",
+      "value": 30.1,
+      "year": 2025,
+      "rank": "Sans classement",
+      "scale_min": 0,
+      "scale_max": 100,
+      "precision": 1,
+      "higher_is_better": false,
+      "coverage": "EU-SILC 2025 · revenu disponible équivalent",
+      "source_ids": [
+        "S08"
+      ],
+      "france": "gini-silc-2025"
+    },
+    {
+      "id": "democratie",
+      "name": "Démocratie libérale",
+      "acronym": "V-Dem",
+      "value": 0.78,
+      "year": 2025,
+      "rank": "15ᵉ",
+      "scale_min": 0,
+      "scale_max": 1,
+      "precision": 2,
+      "higher_is_better": true,
+      "source_ids": [
+        "S09"
+      ],
+      "france": "democratie"
+    },
+    {
+      "id": "presse",
+      "name": "Liberté de la presse",
+      "acronym": "RSF",
+      "value": 82.17,
+      "year": 2026,
+      "rank": "14ᵉ / 180",
+      "scale_min": 0,
+      "scale_max": 100,
+      "precision": 2,
+      "higher_is_better": true,
+      "source_ids": [
+        "S10"
+      ],
+      "france": "presse"
+    },
+    {
+      "id": "corruption",
+      "name": "Corruption perçue",
+      "acronym": "CPI",
+      "value": 77,
+      "year": 2025,
+      "rank": "10ᵉ / 182",
+      "scale_min": 0,
+      "scale_max": 100,
+      "precision": 0,
+      "higher_is_better": true,
+      "source_ids": [
+        "S11"
+      ],
+      "france": "corruption"
+    }
+  ],
+  "cities_title": "Un pays de métropoles régionales",
+  "cities_scope": "Communes · population au 31 décembre 2024",
+  "cities_note": "Huit plus grandes villes, plus Wolfsburg, siège de Volkswagen. Les limites communales varient beaucoup d’une ville à l’autre.",
+  "cities": [
+    {
+      "name": "Berlin",
+      "population": 3685265,
+      "lat": 52.523765,
+      "lon": 13.399603,
+      "note": "Capitale, administrations, start-up et clubs.",
+      "year": 2024,
+      "source_ids": [
+        "S39",
+        "NE"
+      ]
+    },
+    {
+      "name": "Hambourg",
+      "population": 1862565,
+      "lat": 53.551971,
+      "lon": 9.998053,
+      "note": "Premier port, aéronautique et médias.",
+      "year": 2024,
+      "source_ids": [
+        "S39",
+        "NE"
+      ]
+    },
+    {
+      "name": "Munich",
+      "population": 1505005,
+      "lat": 48.131888,
+      "lon": 11.573048,
+      "note": "BMW, assurance et industrie de pointe.",
+      "year": 2024,
+      "source_ids": [
+        "S39",
+        "NE"
+      ]
+    },
+    {
+      "name": "Cologne",
+      "population": 1024621,
+      "lat": 50.93195,
+      "lon": 6.948059,
+      "note": "Médias, chimie et Ford.",
+      "year": 2024,
+      "offset": [
+        10,
+        13
+      ],
+      "source_ids": [
+        "S39",
+        "NE"
+      ]
+    },
+    {
+      "name": "Francfort-sur-le-Main",
+      "population": 756021,
+      "lat": 50.099977,
+      "lon": 8.675015,
+      "note": "Finance, BCE et aéroport.",
+      "year": 2024,
+      "source_ids": [
+        "S39",
+        "NE"
+      ]
+    },
+    {
+      "name": "Düsseldorf",
+      "population": 618685,
+      "lat": 51.220374,
+      "lon": 6.779989,
+      "note": "Capitale de la Rhénanie-du-Nord-Westphalie, services.",
+      "year": 2024,
+      "offset": [
+        -6,
+        -13
+      ],
+      "source_ids": [
+        "S39",
+        "NE"
+      ]
+    },
+    {
+      "name": "Stuttgart",
+      "population": 612663,
+      "lat": 48.77998,
+      "lon": 9.199996,
+      "note": "Mercedes-Benz, Porsche et équipementiers.",
+      "year": 2024,
+      "source_ids": [
+        "S39",
+        "NE"
+      ]
+    },
+    {
+      "name": "Leipzig",
+      "population": 611850,
+      "lat": 51.335405,
+      "lon": 12.409981,
+      "note": "Logistique, usines BMW et Porsche.",
+      "year": 2024,
+      "source_ids": [
+        "S39",
+        "NE"
+      ]
+    },
+    {
+      "name": "Wolfsburg",
+      "population": 129560,
+      "lat": 52.423056,
+      "lon": 10.787222,
+      "note": "Siège et usine principale de Volkswagen.",
+      "year": 2024,
+      "source_ids": [
+        "S39",
+        "S41"
+      ]
+    }
+  ],
+  "cities_map": {
+    "file": "cities.webp",
+    "width": 1073,
+    "height": 1272,
+    "bounds": {
+      "top": 55.1,
+      "bottom": 47.2,
+      "left": 5.5,
+      "right": 15.5
+    },
+    "projection": {
+      "type": "equirectangular"
+    },
+    "credit": {
+      "author": "NordNordWest",
+      "license": "CC BY-SA 3.0 de",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+      "url": "https://commons.wikimedia.org/wiki/File:Germany_adm_location_map.svg"
+    },
+    "definition_url": "https://en.wikipedia.org/wiki/Module:Location_map/data/Germany",
+    "source_ids": [
+      "CITYMAP"
+    ]
+  },
+  "relief_title": "Des plaines au nord, des massifs au sud",
+  "relief_alt": "Relief de l’Allemagne : plaine du nord, moyennes montagnes au centre, Alpes au sud.",
+  "relief_landmarks": [
+    {
+      "label": "La plaine du nord",
+      "text": "Basses terres ouvertes sur la mer du Nord et la Baltique."
+    },
+    {
+      "label": "Les moyennes montagnes",
+      "text": "Massifs boisés et vallées entre Rhin et Elbe."
+    },
+    {
+      "label": "Le fossé rhénan et les Alpes",
+      "text": "Le Rhin longe la France au sud-ouest. Les Alpes bavaroises ferment le sud."
+    }
+  ],
+  "map_sources": {
+    "locator": [
+      "S14",
+      "NE"
+    ],
+    "cities": [
+      "S39",
+      "NE"
+    ],
+    "relief": [
+      "S43"
+    ]
+  },
+  "hero_sources": [
+    "S14",
+    "S42"
+  ],
+  "charts": [
+    {
+      "id": "climat",
+      "type": "climate",
+      "title": "Des hivers plus froids qu’à Paris, des étés comparables",
+      "subtitle": "Normales 1991–2020 · Berlin et Munich face à Paris",
+      "year": "1991–2020",
+      "source_ids": [
+        "S12"
+      ],
+      "france": "climat-paris",
+      "temperature_extent": [
+        -5,
+        30
+      ],
+      "rain_max": 150,
+      "note": "DWD : stations Berlin-Tempelhof (433) et München-Stadt (3379). Minima et maxima : moyennes des valeurs quotidiennes 1991–2020 (TNK, TXK), calculées sur les relevés quotidiens complets. Pluie : normales mensuelles 1991–2020 publiées par le DWD. Paris-Montsouris : mêmes définitions et période.",
+      "places": [
+        {
+          "place": "Berlin-Tempelhof",
+          "tmin": [
+            -1.4,
+            -0.8,
+            1.4,
+            5.2,
+            9.3,
+            12.8,
+            15.1,
+            14.7,
+            10.9,
+            6.6,
+            2.7,
+            -0.1
+          ],
+          "tmax": [
+            3.6,
+            5.1,
+            9.0,
+            15.1,
+            19.6,
+            23.1,
+            25.2,
+            24.9,
+            19.9,
+            14.0,
+            8.0,
+            4.4
+          ],
+          "precip_mm": [
+            47.7,
+            36.0,
+            40.5,
+            29.3,
+            52.3,
+            58.2,
+            71.7,
+            58.1,
+            46.6,
+            43.9,
+            41.7,
+            44.2
+          ]
+        },
+        {
+          "place": "Munich",
+          "tmin": [
+            -1.8,
+            -1.4,
+            1.7,
+            5.3,
+            9.3,
+            12.9,
+            14.7,
+            14.5,
+            10.4,
+            6.5,
+            2.1,
+            -0.8
+          ],
+          "tmax": [
+            4.0,
+            5.6,
+            10.1,
+            15.2,
+            19.4,
+            22.9,
+            24.9,
+            24.7,
+            19.6,
+            14.5,
+            8.2,
+            4.8
+          ],
+          "precip_mm": [
+            51.9,
+            45.5,
+            61.2,
+            56.0,
+            107.0,
+            120.9,
+            118.9,
+            116.5,
+            78.1,
+            66.9,
+            58.4,
+            58.5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pyramide-ages",
+      "type": "pyramid",
+      "title": "Les baby-boomers dominent, la base se rétrécit",
+      "subtitle": "Part de la population totale · % · 31 décembre 2025 / 1er janvier 2026",
+      "year": 2025,
+      "age_groups": [
+        "0–4",
+        "5–9",
+        "10–14",
+        "15–19",
+        "20–24",
+        "25–29",
+        "30–34",
+        "35–39",
+        "40–44",
+        "45–49",
+        "50–54",
+        "55–59",
+        "60–64",
+        "65–69",
+        "70–74",
+        "75–79",
+        "80–84",
+        "85–89",
+        "90–94",
+        "95–99",
+        "100+"
+      ],
+      "male": [
+        1835342,
+        2062771,
+        2010928,
+        2070122,
+        2271650,
+        2615416,
+        2633854,
+        2928077,
+        2744454,
+        2547428,
+        2496364,
+        3179294,
+        3239707,
+        2639265,
+        2084227,
+        1547576,
+        1141702,
+        854562,
+        238301,
+        39917,
+        3365
+      ],
+      "female": [
+        1742019,
+        1964826,
+        1904045,
+        1908001,
+        2086344,
+        2377803,
+        2461211,
+        2800943,
+        2698566,
+        2552003,
+        2517983,
+        3186873,
+        3311710,
+        2842680,
+        2406449,
+        1895773,
+        1568012,
+        1402342,
+        513866,
+        125543,
+        15803
+      ],
+      "unit": "personnes",
+      "source_ids": [
+        "S01"
+      ],
+      "france": "pyramide-france",
+      "note": "Allemagne : Bevölkerungsfortschreibung sur la base du recensement 2022, tableau 12411-06, regroupé en classes de cinq ans ; les cas « divers » ou sans indication sont répartis entre hommes et femmes par Destatis. France : résidents au 1er janvier 2026, estimations provisoires."
+    },
+    {
+      "id": "religions",
+      "type": "share",
+      "title": "Les deux grandes Églises ne rassemblent plus la majorité",
+      "subtitle": "Membres des Églises rapportés à la population · fin 2025 · %",
+      "year": 2025,
+      "labels": [
+        "Catholiques",
+        "Protestants (EKD)",
+        "Autres religions ou sans appartenance"
+      ],
+      "values": [
+        23.026554277656434,
+        20.846532892707913,
+        56.12691282963566
+      ],
+      "unit": "%",
+      "source_ids": [
+        "S16",
+        "S17",
+        "S01"
+      ],
+      "france": {
+        "status": "unavailable",
+        "reason": "Pas de statistique française d’appartenance aux Églises tenue par registre.",
+        "source_ids": []
+      },
+      "note": "Membres déclarés par les registres des Églises au 31 décembre 2025, rapportés à la population résidente de la même date. Catholiques : 19 219 601, résultat provisoire. EKD : environ 17,4 millions, résultat provisoire arrondi. Résidu calculé.",
+      "note_visible": "Le résidu regroupe les sans-appartenance, les musulmans, les orthodoxes et les autres cultes. Il est calculé par différence."
+    },
+    {
+      "id": "salaires",
+      "type": "barh",
+      "title": "Un écart net entre la médiane et la moyenne",
+      "subtitle": "Salaire annuel brut des salariés à temps plein · 2025 · €/an",
+      "year": 2025,
+      "labels": [
+        "Seuil des 10 % les moins payés",
+        "Médiane",
+        "Moyenne",
+        "Seuil des 10 % les mieux payés"
+      ],
+      "values": [
+        33828,
+        54066,
+        64441,
+        100719
+      ],
+      "unit": "€/an",
+      "highlight": "Médiane",
+      "source_ids": [
+        "S18"
+      ],
+      "france": {
+        "status": "non_comparable",
+        "reason": "Allemagne : salariés à temps plein seulement, emplois d’au moins sept mois, primes annuelles incluses. France : salariés du privé en équivalent temps plein. Champ et définition différents.",
+        "source_ids": [
+          "FR-WAGE"
+        ]
+      },
+      "note": "Verdiensterhebung 2025. Salaires bruts annuels, versements exceptionnels imposables inclus. Emplois d’au moins sept mois dans l’année, montants des années partielles ramenés à douze mois."
+    },
+    {
+      "id": "salaires-regions",
+      "type": "barh",
+      "title": "L’Est reste en retrait sur les salaires",
+      "subtitle": "Salaire annuel brut médian à temps plein · 2025 · €/an",
+      "year": 2025,
+      "labels": [
+        "Länder de l’Est, sans Berlin",
+        "Länder de l’Ouest"
+      ],
+      "values": [
+        46013,
+        55435
+      ],
+      "unit": "€/an",
+      "highlight": "Länder de l’Est, sans Berlin",
+      "source_ids": [
+        "S18"
+      ],
+      "france": {
+        "status": "non_comparable",
+        "reason": "Pas de découpage français équivalent.",
+        "source_ids": []
+      },
+      "note": "Même champ que le graphique précédent. Berlin est exclu des deux ensembles dans la publication."
+    },
+    {
+      "id": "pib-secteurs",
+      "type": "share",
+      "title": "Une industrie plus lourde qu’en France",
+      "subtitle": "Valeurs ajoutées et impôts nets · parts du PIB courant · 2025 · %",
+      "year": 2025,
+      "labels": [
+        "Agriculture, forêt, pêche",
+        "Industrie, construction comprise",
+        "Services",
+        "Impôts nets sur les produits"
+      ],
+      "values": [
+        0.871426941482043,
+        25.1588063294339,
+        64.459664735979,
+        9.510101993105053
+      ],
+      "unit": "%",
+      "source_ids": [
+        "S21"
+      ],
+      "france": "pib-secteurs-wdi-2025",
+      "note": "Banque mondiale, WDI, mise à jour du 11 novembre 2026. Impôts nets calculés par différence avec les trois valeurs ajoutées, même méthode que pour la France."
+    },
+    {
+      "id": "croissance",
+      "type": "line",
+      "title": "Deux années de recul, puis une stagnation",
+      "subtitle": "Évolution du PIB en volume · 2016–2025 · %",
+      "year": 2025,
+      "x": [
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "series": [
+        {
+          "name": "PIB réel",
+          "values": [
+            2.2,
+            2.8,
+            1.1,
+            1.0,
+            -4.1,
+            3.9,
+            1.8,
+            -0.9,
+            -0.5,
+            0.2
+          ]
+        }
+      ],
+      "unit": "%",
+      "source_ids": [
+        "S40"
+      ],
+      "france": {
+        "status": "unavailable",
+        "reason": "Pas de série française ajoutée à ce graphique.",
+        "source_ids": []
+      },
+      "note": "Variation annuelle du PIB aux prix de l’année précédente, chaînée, non corrigée des jours ouvrables. Premiers résultats pour 2025, janvier 2026."
+    },
+    {
+      "id": "electricite",
+      "type": "share",
+      "title": "Le vent et le soleil en tête, le charbon encore présent",
+      "subtitle": "Production brute d’électricité · 2025 · %",
+      "year": 2025,
+      "labels": [
+        "Éolien",
+        "Solaire",
+        "Biomasse, hydraulique et autres renouvelables",
+        "Charbon et lignite",
+        "Gaz",
+        "Autres fossiles"
+      ],
+      "values": [
+        26.612,
+        18.048,
+        13.801,
+        20.977,
+        16.799,
+        3.763
+      ],
+      "unit": "%",
+      "source_ids": [
+        "S22"
+      ],
+      "france": {
+        "status": "non_comparable",
+        "reason": "Le mix français est dominé par le nucléaire, absent du mix allemand depuis 2023. Une comparaison par filière n’a pas de catégories communes utiles.",
+        "source_ids": [
+          "FR-ELEC-2025"
+        ]
+      },
+      "note": "Ember, Yearly Electricity Data, ligne Allemagne 2025. Somme publiée : 100,0 %. Nucléaire : 0 %. Importations nettes exclues du dénominateur."
+    },
+    {
+      "id": "clients",
+      "type": "barh",
+      "title": "La France, deuxième client de l’Allemagne",
+      "subtitle": "Exportations allemandes de biens par pays · 2025 · €",
+      "year": 2025,
+      "labels": [
+        "États-Unis",
+        "France",
+        "Pays-Bas",
+        "Pologne",
+        "Italie",
+        "Chine"
+      ],
+      "values": [
+        147049346000,
+        117337164000,
+        112373405000,
+        100114846000,
+        83476061000,
+        81249795000
+      ],
+      "unit": "€",
+      "highlight": "France",
+      "source_ids": [
+        "S23"
+      ],
+      "france": {
+        "status": "non_comparable",
+        "reason": "La France figure elle-même parmi les pays du graphique.",
+        "source_ids": []
+      },
+      "note": "Destatis, rangs des partenaires commerciaux 2025, version de septembre 2026. Valeurs publiées en milliers d’euros."
+    },
+    {
+      "id": "production-auto",
+      "type": "line",
+      "title": "La production de voitures n’a pas retrouvé son niveau d’avant 2018",
+      "subtitle": "Voitures particulières produites en Allemagne · 1990–2025 · millions",
+      "year": 2025,
+      "x": [
+        1990,
+        1991,
+        1992,
+        1993,
+        1994,
+        1995,
+        1996,
+        1997,
+        1998,
+        1999,
+        2000,
+        2001,
+        2002,
+        2003,
+        2004,
+        2005,
+        2006,
+        2007,
+        2008,
+        2009,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "series": [
+        {
+          "name": "Allemagne",
+          "values": [
+            4.660657,
+            4.676666,
+            4.863721,
+            3.794491,
+            4.093685,
+            4.360235,
+            4.539583,
+            4.678022,
+            5.348115,
+            5.309524,
+            5.131918,
+            5.301189,
+            5.123238,
+            5.145403,
+            5.192101,
+            5.350187,
+            5.398508,
+            5.709139,
+            5.53203,
+            4.964523,
+            5.552409,
+            5.871918,
+            5.388459,
+            5.439904,
+            5.604026,
+            5.708138,
+            5.746808,
+            5.645584,
+            5.120409,
+            4.663749,
+            3.515488,
+            3.096165,
+            3.480357,
+            4.109371,
+            4.069222,
+            4.148836
+          ]
+        }
+      ],
+      "unit": "millions de voitures",
+      "source_ids": [
+        "S24"
+      ],
+      "france": {
+        "status": "unavailable",
+        "reason": "Pas de série française de même source sur toute la période.",
+        "source_ids": []
+      },
+      "note": "VDA, production intérieure de voitures particulières, en unités, convertie en millions sans arrondi. 2025 : 4 148 836 unités."
+    }
+  ],
+  "prose_values": {
+    "zugspitze": {
+      "value": 2962,
+      "unit": "mètres",
+      "precision": 0
+    },
+    "etrangers": {
+      "value": 14.9,
+      "unit": "%",
+      "precision": 1
+    },
+    "ages60": {
+      "value": 31,
+      "unit": "%",
+      "precision": 0
+    },
+    "smic-de": {
+      "value": 13.9,
+      "unit": "€ brut de l’heure",
+      "precision": 2
+    },
+    "smic-fr": {
+      "value": 12.31,
+      "unit": "€ brut de l’heure",
+      "precision": 2
+    },
+    "smic-de-2027": {
+      "value": 14.6,
+      "unit": "€",
+      "precision": 2
+    },
+    "ticket": {
+      "value": 63,
+      "unit": "€ par mois"
+    },
+    "export-total": {
+      "value": 1564192000000,
+      "unit": "€"
+    },
+    "export-excedent": {
+      "value": 202302000000,
+      "unit": "€"
+    },
+    "vote-union": {
+      "value": 28.520727454481325,
+      "unit": "%",
+      "precision": 1
+    },
+    "vote-afd": {
+      "value": 20.803386748292713,
+      "unit": "%",
+      "precision": 1
+    },
+    "vote-spd": {
+      "value": 16.413301302941306,
+      "unit": "%",
+      "precision": 1
+    },
+    "sa-afd": {
+      "value": 43.8,
+      "unit": "%",
+      "precision": 1
+    },
+    "mv-afd": {
+      "value": 38.2,
+      "unit": "%",
+      "precision": 1
+    },
+    "mv-cdu": {
+      "value": 4.9,
+      "unit": "%",
+      "precision": 1
+    },
+    "berlin-linke": {
+      "value": 25.7,
+      "unit": "%",
+      "precision": 1
+    },
+    "auto-emploi": {
+      "value": 691500,
+      "unit": "salariés"
+    },
+    "machines-emploi": {
+      "value": 905900,
+      "unit": "salariés"
+    },
+    "prod-etranger": {
+      "value": 9151179,
+      "unit": "de voitures"
+    },
+    "e-part": {
+      "value": 40.2,
+      "unit": "%",
+      "precision": 0
+    },
+    "prod-france": {
+      "value": 1061700,
+      "unit": "de voitures"
+    },
+    "ofaj": {
+      "value": 9500000,
+      "unit": "de jeunes"
+    },
+    "travail-fr": {
+      "value": 35,
+      "unit": "heures",
+      "precision": 0
+    },
+    "fonds-special": {
+      "value": 100000000000,
+      "unit": "€"
+    },
+    "frein-pib": {
+      "value": 1,
+      "unit": "%",
+      "precision": 0
+    },
+    "emplois-fr-de": {
+      "value": 330000,
+      "unit": "personnes"
+    },
+    "emplois-de-fr": {
+      "value": 350000,
+      "unit": "personnes"
+    },
+    "sorties-cath": {
+      "value": 307117,
+      "unit": "personnes"
+    },
+    "proprietaires": {
+      "value": 41.9,
+      "unit": "%",
+      "precision": 1
+    },
+    "proprio-berlin": {
+      "value": 15.9,
+      "unit": "%",
+      "precision": 1
+    },
+    "fec-saxe": {
+      "value": 1.16,
+      "unit": "",
+      "precision": 2
+    },
+    "fec-bassesaxe": {
+      "value": 1.38,
+      "unit": "",
+      "precision": 2
+    },
+    "francais-de": {
+      "value": 93750,
+      "unit": "Français inscrits au registre"
+    },
+    "prod-usa": {
+      "value": 817300,
+      "unit": "voitures"
+    },
+    "allemands-fr": {
+      "value": 86751,
+      "unit": "résidents allemands"
+    }
+  },
+  "sources": [
+    {
+      "id": "S01",
+      "text": "Destatis : [Statistischer Bericht, Bevölkerungsfortschreibung auf Basis Zensus 2022, 2025, XLSX](https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Bevoelkerung/Bevoelkerungsstand/Publikationen/Downloads-Bevoelkerungsstand/statistischer-bericht-bevoelkerungsfortschreibung-zensus-2022-jaehrlich-5124108257005.xlsx?__blob=publicationFile&v=5), paru le 26/06/2026, tableaux 12411-01, 12411-06 et 12411-08 ; [communiqué n° 203 du 16/06/2026](https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/06/PD26_203_124.html). Population au 31/12/2025 : 83 467 117 ; 65 ans ou plus : 19 319 383 ; part des étrangers : 14,9 %."
+    },
+    {
+      "id": "S02",
+      "text": "[Union européenne, présentation de l’Allemagne, données Eurostat 2026](https://european-union.europa.eu/principles-countries-history/eu-countries/germany_fr). Superficie : 357 569 km². Même source que la superficie française."
+    },
+    {
+      "id": "S03",
+      "text": "[FMI, World Economic Outlook, octobre 2026, série NGDPD pour l’Allemagne](https://www.imf.org/external/datamapper/NGDPD@WEO/DEU) ; [extraction API](https://www.imf.org/external/datamapper/api/v1/NGDPD/DEU). 2025 : 5 115,594 milliards de dollars courants."
+    },
+    {
+      "id": "S04",
+      "text": "[Destatis, communiqué n° 230 du 01/07/2026, indicateur conjoncturel de fécondité 2025](https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/07/PD26_230_12.html). 1,32 enfant par femme ; 654 241 naissances."
+    },
+    {
+      "id": "S05",
+      "text": "[Eurostat, taux de chômage annuel, une_rt_a, API Allemagne et France, 2025](https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/une_rt_a?geo=DE&geo=FR&time=2025&age=Y15-74&sex=T&unit=PC_ACT), mise à jour du 06/11/2026. Allemagne : 3,8 % des actifs de 15 à 74 ans."
+    },
+    {
+      "id": "S06",
+      "text": "[Eurostat, dépendance énergétique, nrg_ind_id, API Allemagne et France, 2024](https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nrg_ind_id?geo=DE&geo=FR&siec=TOTAL&time=2024), mise à jour du 16/07/2026. Allemagne : 66,812 %, tous produits."
+    },
+    {
+      "id": "S07",
+      "text": "[PNUD, Human Development Report 2025, tableau des indices](https://www.undp.org/sites/g/files/zskgke326/files/2025-05/hdr2025overviewen.pdf), données 2023. Allemagne : IDH 0,959, rang 5."
+    },
+    {
+      "id": "S08",
+      "text": "[Eurostat, coefficient de Gini, EU-SILC, ilc_di12, API Allemagne et France, 2025](https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_di12?geo=DE&geo=FR&time=2025&age=TOTAL), mise à jour du 12/11/2026. Allemagne : 30,1 sur 100."
+    },
+    {
+      "id": "S09",
+      "text": "[V-Dem, Democracy Report 2026, tableau A2, p. 48, données 2025](https://www.v-dem.net/documents/75/V-Dem_Institute_Democracy_Report_2026_lowres.pdf). Allemagne : indice de démocratie libérale 0,78, rang 15."
+    },
+    {
+      "id": "S10",
+      "text": "[RSF, Allemagne, classement 2026](https://rsf.org/en/country/germany). Score 82,17 sur 100 ; rang 14 sur 180."
+    },
+    {
+      "id": "S11",
+      "text": "[Transparency International, Allemagne, CPI 2025](https://www.transparency.org/en/countries/germany). Score 77 sur 100 ; rang 10 sur 182."
+    },
+    {
+      "id": "S12",
+      "text": "Deutscher Wetterdienst, Climate Data Center : [relevés quotidiens KL, Berlin-Tempelhof, station 433](https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/daily/kl/historical/tageswerte_KL_00433_19480101_20251231_hist.zip) ; [relevés quotidiens KL, München-Stadt, station 3379](https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/daily/kl/historical/tageswerte_KL_03379_19540601_20251231_hist.zip) ; [normales de précipitations 1991–2020](https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/multi_annual/mean_91-20/Niederschlag_1991-2020.txt). Minima et maxima calculés comme moyennes des valeurs quotidiennes TNK et TXK de 1991 à 2020, sans jour manquant. Données ouvertes du DWD, licence CC BY 4.0."
+    },
+    {
+      "id": "S13",
+      "text": "[Office statistique de Bavière, Statistisches Jahrbuch 2024, données générales, PDF](https://statistik.bayern.de/mam/produkte/jahrbuch/jb2024_00_allgemeine_angaben_und_bayern_daten.pdf). Zugspitze : 2 962 m, point culminant de la Bavière et de l’Allemagne."
+    },
+    {
+      "id": "S14",
+      "text": "France Diplomatie : [présentation de l’Allemagne](https://www.diplomatie.gouv.fr/fr/information-par-pays/allemagne/presentation-de-l-allemagne/), mise à jour du 06/05/2026 ; [politique et économie](https://www.diplomatie.gouv.fr/fr/information-par-pays/allemagne/politique-et-economie/), mise à jour du 22/10/2026. Régime, traités franco-allemands, Zeitenwende, réforme du frein à l’endettement de mars 2025, échanges économiques."
+    },
+    {
+      "id": "S15",
+      "text": "[France Diplomatie, relations bilatérales avec l’Allemagne](https://www.diplomatie.gouv.fr/fr/information-par-pays/allemagne/relations-bilaterales/), mise à jour du 21/10/2026. OFAJ, Université franco-allemande, ARTE, coopération transfrontalière."
+    },
+    {
+      "id": "S16",
+      "text": "[Conférence épiscopale allemande, statistique ecclésiale 2025, reprise par le diocèse de Mayence, PDF](https://bistummainz.de/pdflink/de/d6a236ad-4558-4628-b211-bcc7cff695b5/Kirchliche-Statistik-2025-00001/Kirchliche-Statistik-2025.pdf), d’après le communiqué de la DBK du 16/03/2026. Catholiques au 31/12/2025 : 19 219 601, résultats provisoires."
+    },
+    {
+      "id": "S17",
+      "text": "[EKD, communiqué du 16/03/2026, membres de l’Église évangélique en 2025](https://www.presseportal.de/pm/55310/6236467). Environ 17,4 millions de membres au 31/12/2025, résultat provisoire des 20 Églises régionales."
+    },
+    {
+      "id": "S18",
+      "text": "[Destatis, communiqué n° 113 du 01/04/2026, salaires annuels bruts 2025](https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/04/PD26_113_621.html). Verdiensterhebung 2025, salariés à temps plein ; versements exceptionnels inclus ; décile inférieur 33 828 €, médiane 54 066 €, moyenne 64 441 €, décile supérieur 100 719 € ; médianes Est 46 013 € et Ouest 55 435 €."
+    },
+    {
+      "id": "S19",
+      "text": "[Cinquième règlement d’adaptation du salaire minimum (MiLoV5), § 1](https://www.gesetze-im-internet.de/milov5/BJNR10C0A0025.html). 13,90 € brut de l’heure à partir du 01/01/2026, 14,60 € à partir du 01/01/2027."
+    },
+    {
+      "id": "S20",
+      "text": "[Service Public, montant du Smic](https://www.service-public.gouv.fr/particuliers/vosdroits/F2300), vérifié le 01/06/2026. 12,31 € brut de l’heure en métropole depuis le 01/06/2026."
+    },
+    {
+      "id": "S21",
+      "text": "[Banque mondiale, WDI, parts de valeur ajoutée de l’Allemagne en 2025](https://api.worldbank.org/v2/country/DEU/indicator/NV.AGR.TOTL.ZS;NV.IND.TOTL.ZS;NV.SRV.TOTL.ZS?source=2&date=2025&format=json&per_page=100), mise à jour du 11/11/2026. Agriculture 0,871 % ; industrie, construction comprise, 25,159 % ; services 64,460 % du PIB courant. Impôts nets calculés comme 100 moins ces parts."
+    },
+    {
+      "id": "S22",
+      "text": "[Ember, Yearly Electricity Data, série mondiale 2025](https://files.ember-energy.org/public-downloads/generation/outputs/release_generation_yearly_global.csv), mise à jour du 11/11/2026. Ligne Allemagne, 2025, colonne Share of generation (%). Clean : 58,461 %. Licence CC BY 4.0."
+    },
+    {
+      "id": "S23",
+      "text": "Destatis : [Statistischer Bericht, rangs des partenaires commerciaux, XLSX](https://www.destatis.de/DE/Themen/Wirtschaft/Aussenhandel/Publikationen/Downloads-Aussenhandel/statistischer-bericht-aussenhandel-rangfolgen-5510007.xlsx?__blob=publicationFile&v=8), paru le 30/09/2026, tableaux 51000-02 et 51000-b01 ; [communiqué n° 056 du 20/02/2026](https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/02/PD26_056_51.html). Exportations 2025 : 1 564 192 millions d’euros ; excédent : 202 302 millions d’euros ; importations depuis la France : 69,1 milliards d’euros."
+    },
+    {
+      "id": "S24",
+      "text": "[VDA, chiffres annuels, production automobile](https://www.vda.de/en/news/facts-and-figures/annual-figures/automobile-production). Production intérieure de voitures particulières 1957–2025, production à l’étranger des membres du VDA et production mondiale par pays, chiffres 2025 en partie provisoires."
+    },
+    {
+      "id": "S25",
+      "text": "[VDA, dossier de presse de la conférence annuelle du 10/02/2026, PDF](https://www.vda.de/dam/jcr:8960a990-afcc-4eb8-9081-eeaa4548ce7e/260210_Pressematreial-zur-VDA-Jahres-PK_Download?mode=view), p. 16 à 18. Part des voitures électriques et hybrides rechargeables dans la production allemande 2025 : 40,2 %."
+    },
+    {
+      "id": "S26",
+      "text": "[Destatis, communiqué n° N057 du 14/08/2026, emploi dans l’industrie automobile](https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/08/PD26_N057_42.html). 691 500 salariés fin juin 2026 ; 905 900 dans la construction mécanique."
+    },
+    {
+      "id": "S27",
+      "text": "[Conférence des ministres de la Culture (KMK), communiqué du 13/03/2024](https://www.kmk.org/aktuelles/pressearchiv/mitteilung/sechs-neuzugaenge-auf-deutschlands-liste-des-immateriellen-kulturerbes.html). Culture techno de Berlin et alpinisme en Saxe inscrits à l’inventaire national du patrimoine culturel immatériel."
+    },
+    {
+      "id": "S28",
+      "text": "[ZDFheute, prix du Deutschlandticket porté à 63 € en 2026](https://www.zdfheute.de/politik/deutschlandticket-dticket-verkehr-nahverkehr-preis-erhoehung-100.html). Décision des ministres régionaux des Transports du 18/09/2025."
+    },
+    {
+      "id": "S29",
+      "text": "Bundeszentrale für politische Bildung : [unité allemande au 3 octobre 1990](https://www.bpb.de/themen/deutsche-teilung/ddr-kompakt/521743/deutsche-einheit-am-3-oktober-1990/) ; [traité d’unification](https://www.bpb.de/kurz-knapp/hintergrund-aktuell/501819/unterzeichnung-des-einigungsvertrags/)."
+    },
+    {
+      "id": "S30",
+      "text": "[bpb, sortie du nucléaire, avril 2023](https://www.bpb.de/kurz-knapp/hintergrund-aktuell/520059/atomausstieg-deutschland-verabschiedet-sich-endgueltig-von-der-kernkraft/). Arrêt des trois derniers réacteurs le 15/04/2023 ; décisions de 2002 et 2011."
+    },
+    {
+      "id": "S31",
+      "text": "Bundeszentrale für politische Bildung : [l’année 2015, exil et réfugiés, rétrospective](https://www.bpb.de/themen/migration-integration/kurzdossiers/217367/das-jahr-2015-flucht-und-fluechtlinge-im-fokus-ein-rueckblick/) ; [crise administrative et d’infrastructures en Allemagne](https://www.bpb.de/themen/migration-integration/kurzdossiers/217376/deutschland-verwaltungs-und-infrastrukturkrise/)."
+    },
+    {
+      "id": "S32",
+      "text": "[bpb, Informationen zur politischen Bildung, le chemin vers l’élection anticipée de 2025](https://www.bpb.de/shop/zeitschriften/izpb/bundestagswahl-2025/558693/der-weg-zur-vorgezogenen-wahl/). Rupture de la coalition le 06/11/2024, question de confiance du 16/12/2024."
+    },
+    {
+      "id": "S33",
+      "text": "[Bundeswahlleiterin, élection du Bundestag du 23/02/2025, résultat définitif](https://www.bundeswahlleiterin.de/bundestagswahlen/2025/ergebnisse/bund-99.html). Secondes voix : CDU 11 196 374, CSU 2 964 028, AfD 10 328 780, SPD 8 149 124 sur 49 649 512 suffrages valides. Sièges : CDU 164, CSU 44, AfD 152, SPD 120, Verts 85, Die Linke 64, SSW 1."
+    },
+    {
+      "id": "S34",
+      "text": "[Bundestag, élection du chancelier du 06/05/2025](https://www.bundestag.de/dokumente/textarchiv/2025/kw19-de-kanzlerwahl-1062470). Friedrich Merz élu au second tour avec 325 voix sur 618."
+    },
+    {
+      "id": "S35",
+      "text": "Wikipédia en allemand, articles consultés le 16/11/2026 : [élection régionale du Bade-Wurtemberg 2026](https://de.wikipedia.org/wiki/Landtagswahl_in_Baden-W%C3%BCrttemberg_2026) ; [Rhénanie-Palatinat 2026](https://de.wikipedia.org/wiki/Landtagswahl_in_Rheinland-Pfalz_2026) ; [Mecklembourg-Poméranie-Occidentale 2026](https://de.wikipedia.org/wiki/Landtagswahl_in_Mecklenburg-Vorpommern_2026) ; [Berlin 2026](https://de.wikipedia.org/wiki/Wahl_zum_Abgeordnetenhaus_von_Berlin_2026) ; [Saxe-Anhalt 2026](https://de.wikipedia.org/wiki/Landtagswahl_in_Sachsen-Anhalt_2026). Résultats en secondes voix et état de la formation des gouvernements."
+    },
+    {
+      "id": "S36",
+      "text": "Landeswahlleiterin de Saxe-Anhalt : [répartition des sièges, élection du 06/09/2026, PDF](https://wahlergebnisse.sachsen-anhalt.de/wahlen/lt26/downloads/Sitzverteilung_Abgeordnete_LT_2026.pdf) ; [ZDFheute, suites de l’élection](https://www.zdfheute.de/politik/deutschland/sachsen-anhalt-wahl-wie-weiter-faq-100.html). AfD : 39 sièges sur 83."
+    },
+    {
+      "id": "S37",
+      "text": "[AeroTime, l’Allemagne et la France renoncent à l’avion de combat commun du SCAF, 08/06/2026](https://www.aerotime.aero/articles/germany-france-abandon-joint-fcas-fighter). Décision communiquée par Friedrich Merz à Emmanuel Macron le 06/06/2026, d’après Handelsblatt ; poursuite du cloud de combat."
+    },
+    {
+      "id": "S38",
+      "text": "[deutschland.de, réunion de la coalition des volontaires à Berlin, 14/11/2026](https://www.deutschland.de/en/news/merz-hosts-meeting-of-the-coalition-of-the-willing-in-berlin). Réunion prévue le 19/11/2026 à la Chancellerie."
+    },
+    {
+      "id": "S39",
+      "text": "[Destatis, Gemeindeverzeichnis, villes par superficie et population au 31/12/2024, XLSX](https://www.destatis.de/DE/Themen/Laender-Regionen/Regionales/Gemeindeverzeichnis/Administrativ/05-staedte.xlsx?__blob=publicationFile&v=13), paru en septembre 2025. Population sur la base du recensement 2022. Dernière édition publiée par Destatis à la date de la fiche."
+    },
+    {
+      "id": "S40",
+      "text": "[Destatis, communiqué n° 017 du 15/01/2026, PIB 2025](https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/01/PD26_017_811.html). Variation du PIB en volume, 2016–2025 ; premiers résultats pour 2025."
+    },
+    {
+      "id": "S41",
+      "text": "[Wikidata, Wolfsburg (Q3014), coordonnées P625](https://www.wikidata.org/wiki/Q3014). Domaine public (CC0)."
+    },
+    {
+      "id": "S42",
+      "text": "[Wikimedia Commons, Flag of Germany.svg](https://commons.wikimedia.org/wiki/File:Flag_of_Germany.svg). Domaine public ; SKopp, Madden et autres contributeurs. Fichier SVG conservé tel quel."
+    },
+    {
+      "id": "S43",
+      "text": "[Wikimedia Commons, Relief Map of Germany.svg](https://commons.wikimedia.org/wiki/File:Relief_Map_of_Germany.svg). TUBS, d’après Germany2 location map.svg (NordNordWest) et Relief Map of Germany.png (Виктор В) ; [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/). Rendu PNG de Wikimedia à 960 px de large converti en WebP, sans recadrage ni recoloration."
+    },
+    {
+      "id": "S44",
+      "text": "[Loi sur le temps de travail (ArbZG), § 3](https://www.gesetze-im-internet.de/arbzg/__3.html). Huit heures par jour ouvrable, jusqu’à dix heures si la moyenne de huit heures est respectée sur six mois."
+    },
+    {
+      "id": "S45",
+      "text": "[KMK, minorités autochtones et langue régionale bas-allemande](https://www.kmk.org/bildungsministerkonferenz/vertiefende-bildungsinhalte/allgemeinbildende-schulen/autochthone-minderheiten.html). Danois, Frisons, Sorabes, Sintés et Roms allemands ; bas allemand."
+    },
+    {
+      "id": "S46",
+      "text": "[Office national allemand du tourisme, la cuisine allemande](https://www.germany.travel/en/experience-enjoy/german-cuisine.html). Spécialités régionales, pain et brasseries."
+    },
+    {
+      "id": "S47",
+      "text": "Deutsches Historisches Museum, Lebendiges Museum Online : [l’Empire](https://www.dhm.de/lemo/kapitel/kaiserreich), [la république de Weimar](https://www.dhm.de/lemo/kapitel/weimarer-republik), [le régime nazi](https://www.dhm.de/lemo/kapitel/ns-regime), [la Seconde Guerre mondiale](https://www.dhm.de/lemo/kapitel/zweiter-weltkrieg)."
+    },
+    {
+      "id": "S48",
+      "text": "[bpb, Das junge Politik-Lexikon, chancelier fédéral](https://www.bpb.de/kurz-knapp/lexika/das-junge-politik-lexikon/319976/bundeskanzler-in/) ; [Chancellerie fédérale, liste des chanceliers depuis 1949, PDF](https://www.bundeskanzler.de/resource/blob/1905334/1844926/e811219de1a7b275c91b2c4315700c5a/kanzler-pdf-data.pdf?download=1). Gerhard Schröder 1998-2005, Angela Merkel 22/11/2005-08/12/2021, Olaf Scholz 08/12/2021-06/05/2025."
+    },
+    {
+      "id": "S49",
+      "text": "[Destatis, taux de propriétaires par Land, microrecensement 2022](https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Wohnen/Tabellen/tabelle-eigentumsquote.html), état au 19/02/2024. Part des ménages propriétaires de leur logement : 41,9 % en Allemagne, 15,9 % à Berlin, 59,7 % en Sarre."
+    },
+    {
+      "id": "S50",
+      "text": "[ZDFheute, le tribunal administratif de Cologne suspend le classement de l’AfD, 26/02/2026](https://www.zdfheute.de/politik/deutschland/afd-gericht-einstufung-rechtsextrem-100.html). Décision en référé, susceptible d’appel devant la cour administrative d’appel de Münster."
+    },
+    {
+      "id": "S51",
+      "text": "[Deutschlandticket.de, page de commande](https://deutschlandticket.de/), consultée le 16/11/2026. Prix affiché pour un départ en novembre 2026 : 63,00 € par mois ; validité dans les transports locaux et régionaux de toute l’Allemagne."
+    },
+    {
+      "id": "NE",
+      "text": "[Natural Earth](https://www.naturalearthdata.com/about/terms-of-use/), domaine public. Contours 1:110 m et 1:50 m, micro-États 1:10 m ; [villes peuplées 1:10 m, GeoJSON](https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_populated_places.geojson) pour les coordonnées des villes. Les contours ne constituent pas une position sur les frontières."
+    },
+    {
+      "id": "CITYMAP",
+      "text": "[Wikimedia Commons, Germany adm location map.svg](https://commons.wikimedia.org/wiki/File:Germany_adm_location_map.svg). NordNordWest, [CC BY-SA 3.0 de](https://creativecommons.org/licenses/by-sa/3.0/de/deed.en). Réduction proportionnelle et conversion WebP, sans recadrage ni recoloration. [Bornes et projection](https://en.wikipedia.org/wiki/Module:Location_map/data/Germany). Repères numérotés ajoutés à l’affichage."
+    }
+  ]
+}

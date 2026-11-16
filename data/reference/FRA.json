@@ -92,6 +92,18 @@
     {
       "id": "FR-ELEC-DZA",
       "text": "[Ember, Yearly Electricity Data, France, 2024](https://files.ember-energy.org/public-downloads/generation/outputs/release_generation_yearly_global.csv). Agrégat Clean, colonne Share of generation (%) : 94,923 %. Production brute, nucléaire et renouvelables. Même définition, même millésime et même fichier que l’Algérie. Mise à jour du 11 novembre 2026. Licence CC BY 4.0."
+    },
+    {
+      "id": "FR-GINI-SILC-2025",
+      "text": "[Eurostat, coefficient de Gini, EU-SILC, ilc_di12](https://ec.europa.eu/eurostat/databrowser/view/ilc_di12/default/table?lang=fr), [API Allemagne et France, 2025, ensemble des âges](https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_di12?geo=DE&geo=FR&time=2025&age=TOTAL), mise à jour du 12 novembre 2026. Revenu disponible équivalent après transferts, enquête 2025. France : 30,4 sur 100. Même série harmonisée que l’Allemagne."
+    },
+    {
+      "id": "FR-UNEMP-EU-2025",
+      "text": "[Eurostat, taux de chômage annuel, une_rt_a](https://ec.europa.eu/eurostat/databrowser/view/une_rt_a/default/table?lang=fr), [API Allemagne et France, 2025](https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/une_rt_a?geo=DE&geo=FR&time=2025&age=Y15-74&sex=T&unit=PC_ACT), mise à jour du 6 novembre 2026. Chômage au sens du BIT, personnes de 15 à 74 ans, en pourcentage de la population active. France : 7,7 %. Même série harmonisée que l’Allemagne."
+    },
+    {
+      "id": "FR-ENERGY-DEP-2024",
+      "text": "[Eurostat, dépendance énergétique, nrg_ind_id](https://ec.europa.eu/eurostat/databrowser/view/nrg_ind_id/default/table?lang=fr), [API Allemagne et France, 2024, tous produits](https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nrg_ind_id?geo=DE&geo=FR&siec=TOTAL&time=2024), mise à jour du 16 juillet 2026. Importations nettes rapportées à l’énergie brute disponible. Même convention pour les deux pays : la chaleur nucléaire compte comme production primaire nationale. France : 41,672 %."
     }
   ],
   "population": {
@@ -733,6 +745,39 @@
     "reason": "Algérie : consommation des ménages par personne, enquête 2011, WDI/PIP. France : niveau de vie par unité de consommation après redistribution, enquête 2024. Concept, unité statistique et période différents.",
     "source_ids": [
       "FR-GINI"
+    ]
+  },
+  "gini-silc-2025": {
+    "status": "comparable",
+    "value": 30.4,
+    "unit": "",
+    "year": 2025,
+    "coverage": "EU-SILC 2025 · revenu disponible équivalent",
+    "precision": 1,
+    "source_ids": [
+      "FR-GINI-SILC-2025"
+    ],
+    "rank": "Sans classement"
+  },
+  "chomage-eurostat-2025": {
+    "status": "comparable",
+    "value": 7.7,
+    "unit": "%",
+    "year": 2025,
+    "precision": 1,
+    "coverage": "Au sens du BIT, 15 à 74 ans · moyenne 2025",
+    "source_ids": [
+      "FR-UNEMP-EU-2025"
+    ]
+  },
+  "dependance-energetique-2024": {
+    "status": "comparable",
+    "value": 41.672,
+    "unit": "%",
+    "year": 2024,
+    "coverage": "Importations nettes / énergie brute disponible · 2024",
+    "source_ids": [
+      "FR-ENERGY-DEP-2024"
     ]
   }
 }
