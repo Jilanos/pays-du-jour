@@ -309,23 +309,24 @@
         0.5
       ],
       "precip_mm": [
-        28.0,
-        38.0,
-        41.0,
-        39.0,
-        65.0,
-        68.0,
-        77.0,
-        54.0,
-        52.0,
-        51.0,
-        45.0,
-        47.0
+        37,
+        39,
+        40,
+        42,
+        65,
+        74,
+        68,
+        56,
+        58,
+        46,
+        46,
+        47
       ],
       "source_ids": [
         "S04"
       ],
-      "france": "climat-paris"
+      "france": "climat-paris",
+      "rain_max": 100
     },
     {
       "id": "pyramide-ages",
@@ -559,11 +560,11 @@
     },
     {
       "id": "S03",
-      "text": "[Service national des statistiques d’Ukraine, Number of Present Population of Ukraine, as of January 1 2022, PDF](https://stat.gov.ua/sites/default/files/2026-09/zb_chnas_22.pdf). Villes dans leurs limites administratives, population présente estimée au 1er janvier 2022 : Kyiv 2 952 301 ; Kharkiv 1 421 125 ; Odesa 1 010 537 ; Dnipro 968 502 ; Lviv 717 273 ; Zaporizhzhia 710 052. Référence antérieure à l’invasion à grande échelle, sans actualisation implicite en 2026."
+      "text": "[Service national des statistiques d’Ukraine, Number of Present Population of Ukraine, as of January 1 2022, PDF](https://stat.gov.ua/sites/default/files/2026-09/zb_chnas_22.pdf). Villes dans leurs limites administratives, population présente estimée au 1er janvier 2022 : Kyiv 2 952 301 ; Kharkiv 1 421 125 ; Odesa 1 010 537 ; Dnipro 968 502 ; Lviv 717 273 ; Zaporizhzhia 710 052. Référence antérieure à l’invasion à grande échelle, sans actualisation implicite en 2026. Rôles urbains recoupés dans les notices [Kyiv](https://en.wikipedia.org/wiki/Kyiv), [Kharkiv](https://en.wikipedia.org/wiki/Kharkiv), [Odesa](https://en.wikipedia.org/wiki/Odesa), [Dnipro](https://en.wikipedia.org/wiki/Dnipro), [Lviv](https://en.wikipedia.org/wiki/Lviv) et [Zaporizhzhia](https://en.wikipedia.org/wiki/Zaporizhzhia)."
     },
     {
       "id": "S04",
-      "text": "[OMM / Ukrainian Hydrometeorological Center, Kyiv, World Weather Information Service](https://worldweather.wmo.int/en/city.html?cityId=207) ; [données JSON](https://worldweather.wmo.int/en/json/207_en.json). Période affichée 1991-2020. Moyennes mensuelles des minima, maxima et précipitations telles que publiées par WWIS. Les précipitations diffèrent de la table de l’Observatoire Sreznevsky ; les deux séries ne sont pas mélangées."
+      "text": "[OMM / Ukrainian Hydrometeorological Center, Kyiv, World Weather Information Service](https://worldweather.wmo.int/en/city.html?cityId=207) ; [données JSON](https://worldweather.wmo.int/en/json/207_en.json) ; [Observatoire géophysique central Borys Sreznevsky, normales de Kyiv, station 33345](https://cgo-sreznevskyi.kyiv.ua/en/activity/klimatolohichna/climate-data-for-kyiv). Période 1991-2020. Minima et maxima moyens mensuels : WWIS. Précipitations mensuelles : normale explicitement publiée par l’Observatoire, total 618 mm. La table WWIS de précipitations diverge de cette normale nationale et n’est pas retenue. Les températures et les précipitations proviennent ainsi de deux publications primaires pour la même ville et la même période."
     },
     {
       "id": "S05",
@@ -659,7 +660,7 @@
     },
     {
       "id": "S29",
-      "text": "[Présidences ukrainienne et française, déclaration commune du 13 juillet 2026](https://www.president.gov.ua/en/news/spilna-deklaraciya-prezidenta-ukrayini-ta-prezidenta-francuz-105425). Première commande annoncée de Rafale, financement sollicité et coopération industrielle en Ukraine. Une annonce de commande ne vaut pas livraison."
+      "text": "[Présidences ukrainienne et française, déclaration commune publiée le 14 juillet 2026](https://www.president.gov.ua/en/news/spilna-deklaraciya-prezidenta-ukrayini-ta-prezidenta-francuz-105425). Première commande annoncée de Rafale, financement sollicité et coopération industrielle en Ukraine. Une annonce de commande ne vaut pas livraison."
     },
     {
       "id": "S30",
@@ -723,7 +724,7 @@
     },
     {
       "id": "NE",
-      "text": "[Natural Earth, conditions d’utilisation](https://www.naturalearthdata.com/about/terms-of-use/), domaine public ; [Populated Places 1:10m, GeoJSON](https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_populated_places.geojson). Coordonnées des centres urbains et fonds du localisateur. Les contours locaux ne représentent pas les lignes de front ni un état du contrôle militaire."
+      "text": "[Natural Earth, conditions d’utilisation](https://www.naturalearthdata.com/about/terms-of-use/), domaine public ; [Populated Places 1:10m, GeoJSON](https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_populated_places.geojson). Coordonnées des centres urbains et fonds du localisateur. Les contours locaux ne représentent pas les lignes de front ni un état du contrôle militaire. Dans le localisateur régional et son repère mondial, le polygone Natural Earth de la Crimée est réaffecté à l’Ukraine conformément aux frontières internationalement reconnues. Aucun trait de côte n’est redessiné."
     },
     {
       "id": "FLAG",
@@ -732,6 +733,10 @@
     {
       "id": "CITYMAP",
       "text": "[Wikimedia Commons, Ukraine administrative locations map, improved.svg](https://commons.wikimedia.org/wiki/File:Ukraine_administrative_locations_map,_improved.svg). Yakiv Gluck et TUBS, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). [Module de géoréférencement Ukraine](https://en.wikipedia.org/wiki/Module:Location_map/data/Ukraine), cadre 52,7–44,1° N et 21,5–40,7° E. Original 3 780 × 2 540 ; réduction proportionnelle à 1 100 px de large et conversion WebP qualité 90 par scripts/fetch_city_map.py, cadre entier et couleurs conservés. Repères numérotés et traits de rappel ajoutés à l’affichage. Fond administratif antérieur à l’invasion à grande échelle ; aucune ligne de front actuelle."
+    },
+    {
+      "id": "S38",
+      "text": "[OTAN, réponse à l’invasion de l’Ukraine par la Russie](https://www.nato.int/cps/en/natohq/topics_192648.htm). Invasion du 24 février 2022, résistance ukrainienne et soutien des partenaires. Source institutionnelle, distincte des analyses des belligérants."
     }
   ],
   "hero_sources": [
