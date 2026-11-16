@@ -3,6 +3,7 @@
 import argparse
 import json
 from pathlib import Path
+from urllib.parse import urljoin
 
 from PIL import Image
 from playwright.sync_api import sync_playwright
@@ -16,6 +17,15 @@ def ready(page):
     assert page.locator("img").evaluate_all(
         "images => images.every(img => img.naturalWidth > 0)"
     ), "Broken image"
+    for url in set(
+        page.locator("svg image").evaluate_all("images => images.map(el => el.href.baseVal)")
+    ):
+        response = page.request.get(urljoin(page.url, url))
+        assert response.ok and response.headers.get("content-type", "").startswith("image/"), (
+            "Broken SVG map background",
+            url,
+            response.status,
+        )
 
 
 def capture(url, output, name):
