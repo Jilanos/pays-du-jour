@@ -38,7 +38,7 @@ Berlin et Munich ont des hivers plus froids que Paris. Les nuits y passent sous 
 
 {{chart:pyramide-ages}}
 
-La pyramide est renflée entre 55 et 65 ans. Ces générations du baby-boom approchent de la retraite. Les moins de 15 ans pèsent moins qu’en France. Les décès dépassent nettement les naissances. En 2025, l’immigration nette ne compense plus ce déficit. La population diminue légèrement pour la première fois depuis 2020. La fécondité varie de {{value:fec-saxe}} en Saxe à {{value:fec-bassesaxe}} en Basse-Saxe. {#population-1 sources="S01,S04,FR-AGE" label="Vieillissement"}
+La pyramide est renflée entre 55 et 65 ans. Ces générations du baby-boom approchent de la retraite. Les moins de 15 ans pèsent moins qu’en France. Les décès dépassent nettement les naissances. En 2025, l’immigration nette ne compense plus ce déficit. La population diminue légèrement pour la première fois depuis 2020. L’indicateur de fécondité varie de {{value:fec-saxe}} enfant par femme en Saxe à {{value:fec-bassesaxe}} en Basse-Saxe. {#population-1 sources="S01,S04,FR-AGE" label="Vieillissement"}
 
 Les étrangers représentent {{value:etrangers}} des résidents fin 2025. Leur part dépasse un cinquième à Berlin et à Brême. Elle reste faible dans les Länder de l’Est. Depuis 2022, le pays a accueilli plus d’un million de réfugiés ukrainiens. {#population-2 sources="S01,S14" label="Étrangers et migrations"}
 
@@ -88,9 +88,9 @@ En 2025, les exportations de biens atteignent {{value:export-total}}. L’excéd
 
 {{chart:electricite}}
 
-Les trois derniers réacteurs nucléaires s’arrêtent le 15 avril 2023. La sortie avait été décidée en 2002 puis accélérée en 2011. Les renouvelables fournissent {{value:elec-de}} de l’électricité en 2025. En France, nucléaire et renouvelables en fournissent {{value:elec-fr}}. Le charbon, la lignite et le gaz assurent encore une part importante de la production. {#economie-4 sources="S30,S22,FR-ELEC-2025" label="Électricité"}
+Les trois derniers réacteurs nucléaires s’arrêtent le 15 avril 2023. La sortie avait été décidée en 2002 puis accélérée en 2011. Sans nucléaire, l’électricité bas carbone repose entièrement sur les renouvelables. Les repères la comparent à celle de la France. Le charbon, la lignite et le gaz assurent encore une part importante de la production. {#economie-4 sources="S30,S22,FR-ELEC-2025" label="Électricité"}
 
-La dépendance énergétique des repères mesure la part des importations nettes dans l’énergie disponible. La France est moins dépendante, car la chaleur nucléaire compte comme production nationale dans les deux cas. {#economie-5 sources="S06,FR-ENERGY-DEP-2024" label="Dépendance énergétique"}
+La dépendance énergétique des repères mesure la part des importations nettes dans l’énergie disponible. La France est moins dépendante, car la chaleur nucléaire compte comme production nationale dans les deux cas. {#economie-5 sources="S06,FR-ENERGY-DEP-2024" label="Lire la dépendance énergétique"}
 
 ## Histoire
 
@@ -125,11 +125,11 @@ Merz gouverne avec une coalition CDU/CSU et SPD. Il n’est élu qu’au second 
 
 **2025.** L’élection anticipée du 23 février place la CDU/CSU en tête avec {{value:vote-union}} des secondes voix. L’AfD double son score et obtient {{value:vote-afd}}. Le SPD tombe à {{value:vote-spd}}. Les libéraux et le BSW restent sous le seuil de 5 %. Les autres partis refusent toujours de gouverner avec l’AfD. L’Office fédéral de protection de la Constitution la classe comme formation d’extrême droite avérée. Le 26 février 2026, le tribunal administratif de Cologne suspend ce classement jusqu’au jugement sur le fond. {#dynamiques-3 sources="S33,S14,S50" label="Politique · 2025"}
 
-**2026, jusqu’au 16 novembre.** Cinq élections régionales redessinent la carte. En mars, les Verts de Cem Özdemir devancent de peu la CDU en Bade-Wurtemberg. En Rhénanie-Palatinat, la CDU passe devant le SPD pour la première fois depuis 1987. Le 6 septembre, l’AfD remporte {{value:sa-afd}} des voix en Saxe-Anhalt. Elle obtient 39 sièges sur 83 et manque de peu la majorité absolue. {#dynamiques-4 sources="S35,S36" label="Politique · 2026, élections de printemps et Saxe-Anhalt"}
+**Mars 2026.** Cinq élections régionales redessinent la carte cette année. Le 8 mars, les Verts de Cem Özdemir devancent de peu la CDU en Bade-Wurtemberg. Le 22 mars, en Rhénanie-Palatinat, la CDU passe devant le SPD pour la première fois depuis 1987. {#dynamiques-4 sources="S35" label="Politique · mars 2026"}
 
-Le 20 septembre, l’AfD arrive aussi en tête en Mecklembourg-Poméranie-Occidentale avec {{value:mv-afd}}. La CDU y obtient {{value:mv-cdu}} et sort du parlement régional. À Berlin, Die Linke devient le premier parti avec {{value:berlin-linke}}. En Saxe-Anhalt, aucun gouvernement n’est formé à la mi-novembre. Le candidat de l’AfD, Ulrich Siegmund, vise un vote du parlement régional en décembre. {#dynamiques-5 sources="S35,S36" label="Politique · 2026, élections de septembre"}
+**Septembre 2026.** Le 6 septembre, l’AfD remporte {{value:sa-afd}} des voix en Saxe-Anhalt. Elle obtient 39 sièges sur 83 et manque de peu la majorité absolue. Le 20 septembre, l’AfD arrive aussi en tête en Mecklembourg-Poméranie-Occidentale avec {{value:mv-afd}}. La CDU y obtient {{value:mv-cdu}} et sort du parlement régional. À Berlin, Die Linke devient le premier parti avec {{value:berlin-linke}}. En Saxe-Anhalt, aucun gouvernement n’est formé à la mi-novembre. Le candidat de l’AfD, Ulrich Siegmund, vise un vote du parlement régional en décembre. {#dynamiques-5 sources="S35,S36" label="Politique · septembre 2026"}
 
-Au niveau fédéral, la coalition de Merz reste en place. Le 19 novembre, Berlin accueille une réunion de la coalition des volontaires pour l’Ukraine. Merz l’organise avec Emmanuel Macron et le Premier ministre britannique. {#dynamiques-6 sources="S38" label="Politique · novembre 2026"}
+**Novembre 2026, jusqu’au 16.** Au niveau fédéral, la coalition de Merz reste en place. Le 19 novembre, Berlin accueille une réunion de la coalition des volontaires pour l’Ukraine. Merz l’organise avec Emmanuel Macron et le Premier ministre britannique. {#dynamiques-6 sources="S38" label="Politique · novembre 2026"}
 
 ## Culture et cuisine
 

@@ -75,6 +75,18 @@
       "france": "chomage-eurostat-2025"
     },
     {
+      "id": "electricite-bas-carbone",
+      "label": "Électricité bas carbone",
+      "value": 58.461,
+      "unit": "%",
+      "year": 2025,
+      "coverage": "Nucléaire et renouvelables · production brute 2025",
+      "source_ids": [
+        "S22"
+      ],
+      "france": "electricite-bas-carbone"
+    },
+    {
       "id": "dependance-energetique",
       "label": "Dépendance énergétique",
       "value": 66.812,
@@ -218,8 +230,8 @@
       "note": "Médias, chimie et Ford.",
       "year": 2024,
       "offset": [
-        7,
-        9
+        10,
+        13
       ],
       "source_ids": [
         "S39",
@@ -870,7 +882,8 @@
   "prose_values": {
     "zugspitze": {
       "value": 2962,
-      "unit": "mètres"
+      "unit": "mètres",
+      "precision": 0
     },
     "etrangers": {
       "value": 14.9,
@@ -908,16 +921,6 @@
     "export-excedent": {
       "value": 202302000000,
       "unit": "€"
-    },
-    "elec-fr": {
-      "value": 94.893,
-      "unit": "%",
-      "precision": 1
-    },
-    "elec-de": {
-      "value": 58.461,
-      "unit": "%",
-      "precision": 1
     },
     "vote-union": {
       "value": 28.520727454481325,
@@ -1017,12 +1020,12 @@
     },
     "fec-saxe": {
       "value": 1.16,
-      "unit": "enfant par femme",
+      "unit": "",
       "precision": 2
     },
     "fec-bassesaxe": {
       "value": 1.38,
-      "unit": "enfant par femme",
+      "unit": "",
       "precision": 2
     },
     "francais-de": {
