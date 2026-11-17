@@ -140,6 +140,14 @@
     {
       "id": "FR-PERIOD-IND",
       "text": "[Banque mondiale, périodes de référence des séries WDI](https://datahelpdesk.worldbank.org/knowledgebase/articles/201203-are-all-wdi-series-on-a-calendar-year-reporting-pe) ; [métadonnées de l’Inde](https://databank.worldbank.org/metadataglossary/adjusted-net-savings/country/IND). Comptes indiens en exercice clos le 31 mars ; comptes français en année civile. Aucun regroupement trimestriel français au même champ vérifié pour cette fiche."
+    },
+    {
+      "id": "FR-AGE-EU-2025",
+      "text": "[Eurostat, population par âge et sexe au 1er janvier 2025, demo_pjan](https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/demo_pjan?geo=ES&geo=FR&time=2025&unit=NR). Extraction du 17 novembre 2026, base du 15 novembre. France entière. Âges simples additionnés en cohortes quinquennales, puis 85 ans ou plus. Part des 65 ans ou plus calculée sur la population totale. Même série, date et regroupement que l’Espagne."
+    },
+    {
+      "id": "FR-CLIM-1981-2010",
+      "text": "[Météo-France, fiche climatologique Paris-Montsouris, station 75114001, reproduite en annexe 1 du dossier de géothermie de Bagneux](https://www.eib.org/attachments/registers/77021052.pdf). Normales 1981-2010, fiche éditée le 25 mai 2012, première page de l’annexe climatologique. Moyennes mensuelles des minima, maxima et précipitations. Même période et variables que les stations AEMET espagnoles."
     }
   ],
   "population": {
@@ -1301,6 +1309,135 @@
     "source_ids": [
       "FR-VA-DZA",
       "FR-PERIOD-IND"
+    ]
+  },
+  "pyramide-eurostat-2025-85plus": {
+    "unit": "personnes",
+    "year": 2025,
+    "age_groups": [
+      "0–4",
+      "5–9",
+      "10–14",
+      "15–19",
+      "20–24",
+      "25–29",
+      "30–34",
+      "35–39",
+      "40–44",
+      "45–49",
+      "50–54",
+      "55–59",
+      "60–64",
+      "65–69",
+      "70–74",
+      "75–79",
+      "80–84",
+      "85+"
+    ],
+    "coverage": "Résidents · 1er janvier 2025 · Eurostat demo_pjan",
+    "male": [
+      1710265,
+      1967741,
+      2171635,
+      2200079,
+      2027909,
+      1962847,
+      2008617,
+      2118083,
+      2141885,
+      2052144,
+      2243676,
+      2170823,
+      2085796,
+      1865693,
+      1690782,
+      1422121,
+      794541,
+      799433
+    ],
+    "female": [
+      1636998,
+      1869361,
+      2073305,
+      2059730,
+      1939204,
+      1960999,
+      2068320,
+      2215870,
+      2251732,
+      2110090,
+      2294302,
+      2255449,
+      2226210,
+      2094102,
+      1987572,
+      1749818,
+      1076025,
+      1579443
+    ],
+    "status": "comparable",
+    "source_ids": [
+      "FR-AGE-EU-2025"
+    ]
+  },
+  "65plus-eurostat-2025": {
+    "status": "comparable",
+    "value": 21.862603908679407,
+    "year": 2025,
+    "unit": "%",
+    "coverage": "Résidents · 1er janvier 2025 · Eurostat demo_pjan",
+    "source_ids": [
+      "FR-AGE-EU-2025"
+    ]
+  },
+  "climat-paris-1981-2010": {
+    "status": "comparable",
+    "place": "Paris-Montsouris",
+    "year": "1981–2010",
+    "tmin": [
+      2.7,
+      2.8,
+      5.3,
+      7.3,
+      10.9,
+      13.8,
+      15.8,
+      15.7,
+      12.7,
+      9.6,
+      5.8,
+      3.4
+    ],
+    "tmax": [
+      7.2,
+      8.3,
+      12.2,
+      15.6,
+      19.6,
+      22.7,
+      25.2,
+      25,
+      21.1,
+      16.3,
+      10.8,
+      7.5
+    ],
+    "precip_mm": [
+      51,
+      41.2,
+      47.6,
+      51.8,
+      63.2,
+      49.6,
+      62.3,
+      52.7,
+      47.6,
+      61.5,
+      51.1,
+      57.8
+    ],
+    "source_ids": [
+      "FR-CLIM-1981-2010"
     ]
   }
 }

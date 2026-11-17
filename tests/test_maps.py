@@ -10,7 +10,7 @@ from app.config import Settings
 from app.content import read_fiche
 from app.maps import cities, map_point, path, validate_city_map
 
-CODES = ("TWN", "USA", "CHN", "CHE", "MAR", "DZA", "JPN", "UKR", "RUS")
+CODES = ("TWN", "USA", "CHN", "CHE", "MAR", "DZA", "JPN", "UKR", "RUS", "ESP")
 
 
 def country_data(code):
