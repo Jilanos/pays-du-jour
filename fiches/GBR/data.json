@@ -1,0 +1,861 @@
+{
+  "keyfacts": [
+    {
+      "id": "population",
+      "label": "Population résidente",
+      "value": 69483939,
+      "unit": "habitants",
+      "year": 2025,
+      "coverage": "Royaume-Uni · milieu de 2025",
+      "source_ids": [
+        "S01"
+      ],
+      "france": "population"
+    },
+    {
+      "id": "superficie",
+      "label": "Superficie statistique",
+      "value": 242493.9456,
+      "unit": "km²",
+      "year": 2025,
+      "coverage": "Emprise territoriale ONS · limites 2025",
+      "source_ids": [
+        "S01"
+      ],
+      "france": "superficie-gbr"
+    },
+    {
+      "id": "pib-nominal",
+      "label": "PIB nominal",
+      "value": 3695539513534.15,
+      "unit": "USD",
+      "year": 2024,
+      "coverage": "Prix courants · 2024",
+      "source_ids": [
+        "S02"
+      ],
+      "france": "pib-wdi-2024"
+    },
+    {
+      "id": "fecondite",
+      "label": "Fécondité",
+      "value": 1.39,
+      "unit": "enfant/femme",
+      "year": 2025,
+      "coverage": "Angleterre et pays de Galles · 2025",
+      "source_ids": [
+        "S39"
+      ],
+      "france": "fecondite",
+      "precision": 1
+    },
+    {
+      "id": "65-plus",
+      "label": "Part des 65 ans ou plus",
+      "value": 19.37239625980329,
+      "unit": "%",
+      "year": 2025,
+      "coverage": "Royaume-Uni · milieu de 2025",
+      "source_ids": [
+        "S01"
+      ],
+      "france": "65-plus"
+    },
+    {
+      "id": "electricite-bas-carbone",
+      "label": "Électricité bas carbone",
+      "value": 64.212,
+      "unit": "%",
+      "year": 2025,
+      "coverage": "Nucléaire et renouvelables · production brute 2025",
+      "source_ids": [
+        "S15"
+      ],
+      "france": "electricite-bas-carbone"
+    }
+  ],
+  "indices": [
+    {
+      "id": "idh",
+      "name": "Développement humain",
+      "acronym": "IDH",
+      "value": 0.946,
+      "year": 2023,
+      "rank": "13ᵉ",
+      "source_ids": [
+        "S35"
+      ],
+      "france": "idh",
+      "scale_min": 0,
+      "scale_max": 1,
+      "higher_is_better": true,
+      "precision": 3
+    },
+    {
+      "id": "gini",
+      "name": "Inégalités de revenus",
+      "acronym": "Gini",
+      "value": 32.7,
+      "year": 2025,
+      "rank": "Sans classement",
+      "source_ids": [
+        "S12"
+      ],
+      "france": "gini-gbr",
+      "scale_min": 0,
+      "scale_max": 100,
+      "higher_is_better": false,
+      "precision": 1,
+      "coverage": "Revenu disponible équivalent · avril 2024 à mars 2025 · ménages privés"
+    },
+    {
+      "id": "democratie",
+      "name": "Démocratie libérale",
+      "acronym": "V-Dem",
+      "value": 0.69,
+      "year": 2025,
+      "rank": "30ᵉ",
+      "source_ids": [
+        "S36"
+      ],
+      "france": "democratie",
+      "scale_min": 0,
+      "scale_max": 1,
+      "higher_is_better": true,
+      "precision": 2
+    },
+    {
+      "id": "presse",
+      "name": "Liberté de la presse",
+      "acronym": "RSF",
+      "value": 79.45,
+      "year": 2026,
+      "rank": "18ᵉ / 180",
+      "source_ids": [
+        "S37"
+      ],
+      "france": "presse",
+      "scale_min": 0,
+      "scale_max": 100,
+      "higher_is_better": true,
+      "precision": 2
+    },
+    {
+      "id": "corruption",
+      "name": "Corruption perçue",
+      "acronym": "CPI",
+      "value": 70,
+      "year": 2025,
+      "rank": "20ᵉ / 182",
+      "source_ids": [
+        "S38"
+      ],
+      "france": "corruption",
+      "scale_min": 0,
+      "scale_max": 100,
+      "higher_is_better": true,
+      "precision": 0
+    }
+  ],
+  "cities": [
+    {
+      "name": "Londres",
+      "population": 9122909,
+      "lat": 51.501941,
+      "lon": -0.118668,
+      "note": "Capitale, finance, recherche et industries créatives.",
+      "year": 2025,
+      "source_ids": [
+        "S01",
+        "NE"
+      ]
+    },
+    {
+      "name": "Birmingham",
+      "population": 1176960,
+      "lat": 52.47692,
+      "lon": -1.921943,
+      "note": "Midlands, automobile et ingénierie.",
+      "year": 2025,
+      "source_ids": [
+        "S01",
+        "NE"
+      ]
+    },
+    {
+      "name": "Manchester",
+      "population": 588256,
+      "lat": 53.47532,
+      "lon": -2.248685,
+      "note": "Services, universités et culture musicale.",
+      "year": 2025,
+      "source_ids": [
+        "S01",
+        "NE"
+      ]
+    },
+    {
+      "name": "Glasgow",
+      "population": 654330,
+      "lat": 55.86227,
+      "lon": -4.239101,
+      "note": "Ingénierie, universités et héritage naval.",
+      "year": 2025,
+      "source_ids": [
+        "S01",
+        "NE"
+      ]
+    },
+    {
+      "name": "Cardiff",
+      "population": 381516,
+      "lat": 51.482619,
+      "lon": -3.167598,
+      "note": "Capitale galloise, institutions et médias.",
+      "year": 2025,
+      "source_ids": [
+        "S01",
+        "NE"
+      ]
+    },
+    {
+      "name": "Belfast",
+      "population": 351927,
+      "lat": 54.594245,
+      "lon": -5.928178,
+      "note": "Capitale nord-irlandaise, aéronautique et services.",
+      "year": 2025,
+      "source_ids": [
+        "S01",
+        "NE"
+      ]
+    }
+  ],
+  "charts": [
+    {
+      "id": "climat",
+      "type": "climate",
+      "title": "Londres et Glasgow : deux climats atlantiques",
+      "year": "1991–2020",
+      "source_ids": [
+        "S05"
+      ],
+      "subtitle": "Normales 1991–2020 · comparaison avec Paris-Montsouris",
+      "france": "climat-paris",
+      "temperature_extent": [
+        0,
+        30
+      ],
+      "rain_max": 150,
+      "places": [
+        {
+          "place": "Londres · Heathrow",
+          "tmin": [
+            2.68,
+            2.65,
+            4.14,
+            6.03,
+            9.08,
+            12.03,
+            14.18,
+            14.06,
+            11.62,
+            8.78,
+            5.26,
+            3.08
+          ],
+          "tmax": [
+            8.42,
+            8.98,
+            11.73,
+            15,
+            18.37,
+            21.57,
+            23.89,
+            23.4,
+            20.22,
+            15.81,
+            11.47,
+            8.79
+          ],
+          "precip_mm": [
+            58.83,
+            44.96,
+            38.78,
+            42.31,
+            45.91,
+            47.25,
+            45.8,
+            52.78,
+            49.61,
+            65.07,
+            66.63,
+            57.05
+          ]
+        },
+        {
+          "place": "Glasgow · Springburn",
+          "tmin": [
+            1.3,
+            1.35,
+            2.48,
+            4.25,
+            6.5,
+            9.81,
+            11.18,
+            11.21,
+            9.06,
+            6.09,
+            3.42,
+            1.33
+          ],
+          "tmax": [
+            6.26,
+            7.03,
+            9.1,
+            12.06,
+            15.29,
+            17.72,
+            19.21,
+            18.6,
+            16.14,
+            12.37,
+            8.85,
+            6.43
+          ],
+          "precip_mm": [
+            112.13,
+            97.95,
+            87.3,
+            65.13,
+            63.44,
+            71.14,
+            97.21,
+            106.11,
+            100.46,
+            124.48,
+            110.16,
+            117.94
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pyramide-ages",
+      "type": "pyramid",
+      "title": "Une population vieillissante, alimentée par les migrations",
+      "year": 2025,
+      "source_ids": [
+        "S01"
+      ],
+      "subtitle": "Résidents à mi-2025 · France au 1er janvier 2026",
+      "age_groups": [
+        "0–4",
+        "5–9",
+        "10–14",
+        "15–19",
+        "20–24",
+        "25–29",
+        "30–34",
+        "35–39",
+        "40–44",
+        "45–49",
+        "50–54",
+        "55–59",
+        "60–64",
+        "65–69",
+        "70–74",
+        "75–79",
+        "80–84",
+        "85+"
+      ],
+      "male": [
+        1790962,
+        1985034,
+        2115846,
+        2107008,
+        2127062,
+        2259207,
+        2315894,
+        2332808,
+        2223098,
+        2054586,
+        2133309,
+        2250313,
+        2152532,
+        1795052,
+        1478885,
+        1373112,
+        854188,
+        688981
+      ],
+      "female": [
+        1701788,
+        1886581,
+        2014595,
+        2002099,
+        2036764,
+        2269669,
+        2439546,
+        2501726,
+        2363855,
+        2140231,
+        2211381,
+        2348471,
+        2258870,
+        1899277,
+        1625449,
+        1578946,
+        1064928,
+        1101886
+      ],
+      "unit": "personnes",
+      "france": "pyramide-france-85plus",
+      "note": "Somme des âges simples ONS ; 85 ans ou plus regroupés. La comparaison française est décalée de six mois. Pourcentages rapportés à la population des deux sexes de chaque pays."
+    },
+    {
+      "id": "langues",
+      "type": "share",
+      "title": "L’anglais domine, les migrations diversifient les langues",
+      "year": 2021,
+      "source_ids": [
+        "S06"
+      ],
+      "subtitle": "Langue principale · Angleterre et pays de Galles · résidents de 3 ans ou plus",
+      "labels": [
+        "Anglais, ou gallois au pays de Galles",
+        "Polonais",
+        "Roumain",
+        "Autres langues"
+      ],
+      "values": [
+        91.1,
+        1.1,
+        0.8,
+        7
+      ],
+      "unit": "%",
+      "france": "langues",
+      "note_visible": "Angleterre et pays de Galles uniquement. La première catégorie inclut le gallois au pays de Galles."
+    },
+    {
+      "id": "religions",
+      "type": "share",
+      "title": "Le recul de l’affiliation chrétienne",
+      "year": 2021,
+      "source_ids": [
+        "S07"
+      ],
+      "subtitle": "Affiliation déclarée · Angleterre et pays de Galles · recensement 2021",
+      "labels": [
+        "Christianisme",
+        "Sans religion",
+        "Islam",
+        "Hindouisme",
+        "Autres religions",
+        "Sans réponse"
+      ],
+      "values": [
+        46.2,
+        37.2,
+        6.5,
+        1.7,
+        2.5,
+        6
+      ],
+      "unit": "%",
+      "france": "religions",
+      "note_visible": "Question facultative. Angleterre et pays de Galles uniquement. Total 100,1 % : arrondis publiés."
+    },
+    {
+      "id": "salaires",
+      "type": "barh",
+      "title": "Salaires bruts des emplois à temps plein",
+      "year": 2025,
+      "source_ids": [
+        "S10"
+      ],
+      "subtitle": "Royaume-Uni · semaine d’avril 2025 · données révisées",
+      "labels": [
+        "Salaire médian",
+        "Salaire moyen"
+      ],
+      "values": [
+        766.6,
+        928
+      ],
+      "unit": "GBP/semaine",
+      "euro": true,
+      "france": "salaires-gbr",
+      "note": "Brut de la semaine de référence, public et privé. La moyenne dépasse la médiane sous l’effet des hauts salaires. Ni salaire net, ni rémunération mensuelle, ni revenu des indépendants."
+    },
+    {
+      "id": "logement",
+      "type": "barh",
+      "title": "Le logement reste plus coûteux autour de Londres",
+      "year": 2025,
+      "source_ids": [
+        "S13"
+      ],
+      "subtitle": "Prix médian des ventes / salaire annuel brut médian · 2025",
+      "labels": [
+        "Angleterre",
+        "Pays de Galles",
+        "Londres",
+        "Nord-Est anglais"
+      ],
+      "values": [
+        7.6,
+        6,
+        10.6,
+        5
+      ],
+      "unit": "années de salaire",
+      "precision": 1,
+      "france": "logement-gbr",
+      "note": "Salaires au lieu de travail. Londres et le Nord-Est sont inclus dans l’Angleterre. Ce rapport ne mesure ni les loyers ni une durée de remboursement."
+    },
+    {
+      "id": "pib-secteurs",
+      "type": "share",
+      "title": "Les services dominent la production",
+      "year": 2025,
+      "source_ids": [
+        "S14"
+      ],
+      "subtitle": "Valeurs ajoutées et impôts nets · parts du PIB courant · 2025",
+      "labels": [
+        "Agriculture, forêt, pêche",
+        "Industrie, construction comprise",
+        "Services",
+        "Impôts nets sur les produits"
+      ],
+      "values": [
+        0.639963472014016,
+        16.4889776210162,
+        73.098046259352,
+        9.773012647617776
+      ],
+      "unit": "%",
+      "france": "pib-secteurs-wdi-2025"
+    },
+    {
+      "id": "moteurs-f1",
+      "type": "barh",
+      "title": "Qui motorise les équipes de F1 en 2026 ?",
+      "year": 2026,
+      "source_ids": [
+        "S30"
+      ],
+      "subtitle": "Nombre d’équipes clientes, équipe du constructeur comprise · grille 2026",
+      "labels": [
+        "Mercedes",
+        "Ferrari",
+        "Red Bull Ford",
+        "Honda",
+        "Audi"
+      ],
+      "values": [
+        4,
+        3,
+        2,
+        1,
+        1
+      ],
+      "unit": "",
+      "precision": 0,
+      "note": "Mercedes : Mercedes, McLaren, Williams et Alpine. Ferrari : Ferrari, Haas et Cadillac. Red Bull Ford : Red Bull Racing et Racing Bulls. Honda : Aston Martin. Audi : Audi. Le lieu du moteur, la base du châssis, la nationalité sportive et celle du propriétaire sont distincts."
+    }
+  ],
+  "sources": [
+    {
+      "id": "S01",
+      "text": "[ONS, estimations de population à mi-2025](https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/bulletins/annualmidyearpopulationestimates/mid2025) ; [tableaux MYE 2025, XLSX](https://www.ons.gov.uk/file?uri=/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/populationestimatesforukenglandandwalesscotlandandnorthernireland/mid2025/mye25tablesuk.xlsx), 1 octobre 2026. MYE2 Persons, Males et Females : résidents à mi-2025, Royaume-Uni sans dépendances ni territoires d’outre-mer. Classes d’âge annuelles additionnées en cohortes quinquennales, puis 85+. Part des 65 ans ou plus calculée sans arrondi. Villes : Londres = région du Grand Londres ; ailleurs collectivités locales, pas agglomérations. MYE5 : aire statistique des territoires administratifs, en km², Royaume-Uni 242 493,9456. Champ hydrologique non harmonisé avec la référence française Eurostat."
+    },
+    {
+      "id": "S02",
+      "text": "[Banque mondiale, WDI, PIB nominal du Royaume-Uni en 2024](https://api.worldbank.org/v2/country/GBR/indicator/NY.GDP.MKTP.CD?format=json&date=2024). Série NY.GDP.MKTP.CD, dollars courants. Extraction du 17 novembre 2026 : 3 695 539 513 534,15 USD. Même année et définition que la référence française WDI."
+    },
+    {
+      "id": "S03",
+      "text": "[House of Commons Library, The United Kingdom and independence](https://commonslibrary.parliament.uk/research-briefings/cbp-10649/), 2026. Composition du Royaume-Uni, union, dépendances de la Couronne et droit de sécession. [Parlements dévolus](https://www.parliament.uk/about/how/role/relations-with-other-institutions/devolved/)."
+    },
+    {
+      "id": "S04",
+      "text": "[Met Office, climats régionaux](https://www.metoffice.gov.uk/research/climate/maps-and-data/regional-climates) ; [pluies et relief au Royaume-Uni](https://weather.metoffice.gov.uk/learn-about/weather/types-of-weather/rain/how-much-does-it-rain-in-the-uk). Influence atlantique et contraste entre ouest montagneux et sud-est."
+    },
+    {
+      "id": "S05",
+      "text": "Met Office, normales 1991-2020 : [Heathrow](https://www.metoffice.gov.uk/research/climate/maps-and-data/location-specific-long-term-averages/gcpsvg3nc) et [Glasgow, Springburn](https://www.metoffice.gov.uk/research/climate/maps-and-data/location-specific-long-term-averages/gcuvzv5wy). Table « Station », première période. Moyennes des minima et maxima quotidiens, cumul moyen mensuel des précipitations. Même période et variables que Paris-Montsouris. Échelles communes aux deux stations."
+    },
+    {
+      "id": "S06",
+      "text": "[ONS, langue principale, recensement 2021](https://www.ons.gov.uk/peoplepopulationandcommunity/culturalidentity/language/bulletins/languageenglandandwales/census2021). Angleterre et pays de Galles, résidents habituels de trois ans ou plus. La première catégorie combine l’anglais et, au pays de Galles, le gallois. « Autres langues » = 100 moins les trois catégories affichées, à partir des pourcentages publiés. Cette mesure ne décrit pas les connaissances linguistiques."
+    },
+    {
+      "id": "S07",
+      "text": "[ONS, religion, recensement 2021](https://www.ons.gov.uk/peoplepopulationandcommunity/culturalidentity/religion/bulletins/religionenglandandwales/census2021). Angleterre et pays de Galles, tous résidents habituels, question facultative d’affiliation. Autres religions : sikhs 0,9 %, bouddhistes 0,5 %, juifs 0,5 %, autres 0,6 %. Total affiché 100,1 %, effet des arrondis publiés."
+    },
+    {
+      "id": "S08",
+      "text": "[GOV.UK, manuel de la Constitution du NHS en Angleterre](https://www.gov.uk/government/publications/supplements-to-the-nhs-constitution-for-england/the-handbook-to-the-nhs-constitution-for-england). Principes de financement, gratuité au point d’usage, exceptions et accès des résidents."
+    },
+    {
+      "id": "S09",
+      "text": "GOV.UK : [durée maximale du travail](https://www.gov.uk/maximum-weekly-working-hours), [dérogation individuelle](https://www.gov.uk/maximum-weekly-working-hours/weekly-maximum-working-hours-and-opting-out), [congés payés](https://www.gov.uk/holiday-entitlement-rights). Plafond moyen de 48 heures et congé légal de 5,6 semaines, jours fériés éventuellement inclus."
+    },
+    {
+      "id": "S10",
+      "text": "[ONS, ASHE Table 1, édition 2025 révisée](https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/datasets/allemployeesashetable1) ; [archive ZIP](https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/earningsandworkinghours/datasets/allemployeesashetable1/2025revised/ashetable12025revised.zip), 22 octobre 2026. Fichier « Total Table 1.1a Weekly pay - Gross 2025 », feuille Full-Time, ligne All Employees : médiane 766,6 GBP, moyenne 928 GBP par semaine. Emplois salariés aux taux adultes, public et privé, rémunération non affectée par une absence. Brut hebdomadaire, heures supplémentaires et primes versées pendant la période incluses ; indépendants exclus. Millésime 2025 conservé pour utiliser une moyenne de change annuelle complète."
+    },
+    {
+      "id": "S11",
+      "text": "[BCE, taux GBP/EUR annuel, série EXR.A.GBP.EUR.SP00.A](https://data.ecb.europa.eu/data/datasets/EXR/EXR.A.GBP.EUR.SP00.A) ; [extraction CSV 2025](https://data-api.ecb.europa.eu/service/data/EXR/A.GBP.EUR.SP00.A?startPeriod=2025&endPeriod=2025&format=csvdata). Moyenne annuelle 2025 : 0,8567923137255 livre sterling pour un euro (valeur brute de la série ; publication à cinq décimales : 0,85679). Équivalents approximatifs obtenus en divisant le salaire en GBP par 0,8567923137255. Comparaison monétaire, sans correction du coût de la vie."
+    },
+    {
+      "id": "S12",
+      "text": "[ONS, revenu disponible et inégalités, exercice clos en 2025](https://www.ons.gov.uk/peoplepopulationandcommunity/personalandhouseholdfinances/incomeandwealth/bulletins/householddisposableincomeandinequality/financialyearending2025), 2 octobre 2026. Household Finances Survey, avril 2024 à mars 2025. Revenu disponible équivalent après impôts directs et prestations monétaires. Gini 32,7 sur 100. Taille de l’échantillon réduite après l’arrêt de la Survey of Living Conditions."
+    },
+    {
+      "id": "S13",
+      "text": "[ONS, accessibilité du logement en Angleterre et au pays de Galles, 2025](https://www.ons.gov.uk/peoplepopulationandcommunity/housing/bulletins/housingaffordabilityinenglandandwales/2025), 26 mars 2026. Prix médian des logements vendus / salaire annuel brut médian au lieu de travail, ASHE. Angleterre 7,6 ; pays de Galles 6,0 ; Londres 10,6 ; Nord-Est anglais 5,0. Londres et le Nord-Est sont inclus dans l’Angleterre. Ni ratio de loyer, ni durée d’emprunt, ni revenu par ménage."
+    },
+    {
+      "id": "S14",
+      "text": "[Banque mondiale, WDI, structure du PIB britannique 2025](https://api.worldbank.org/v2/country/GBR/indicator/NV.AGR.TOTL.ZS;NV.IND.TOTL.ZS;NV.SRV.TOTL.ZS?source=2&date=2025&format=json&per_page=100). Parts des valeurs ajoutées dans le PIB courant. Industrie construction comprise. Impôts nets sur les produits calculés comme 100 moins les trois parts. Même définition, année et dénominateur que la référence française WDI."
+    },
+    {
+      "id": "S15",
+      "text": "[Ember, Yearly Electricity Data](https://files.ember-energy.org/public-downloads/generation/outputs/release_generation_yearly_global.csv) ; [méthodologie](https://files.ember-energy.org/public-downloads/ember_electricity_data_methodology.pdf). Mise à jour du 11 novembre 2026. Royaume-Uni, 2025, Clean, Share of generation (%) = 64,212. Nucléaire et renouvelables, production brute nationale, importations exclues. Même fichier et définition que la France. Licence CC BY 4.0."
+    },
+    {
+      "id": "S16",
+      "text": "[DESNZ, UK Energy in Brief 2026](https://assets.publishing.service.gov.uk/media/6a6cb5f00c36759b5ccaa2f5/UK_Energy_in_Brief_2026.pdf). Ressources de mer du Nord, gaz, renouvelables et bilan électrique 2025. [Feuille de route d’électrification, novembre 2026](https://www.gov.uk/government/publications/uk-clean-electrification-roadmap/the-uks-clean-electrification-roadmap)."
+    },
+    {
+      "id": "S17",
+      "text": "[SMMT, production automobile annuelle 2025](https://www.smmt.co.uk/tough-year-for-auto-but-new-models-and-industrial-strategy-can-deliver-growth/), 29 janvier 2026. Voitures particulières fabriquées : 717 371 ; exportées : 555 826. Transition des usines, cyberattaque et tensions commerciales. [Implantations industrielles](https://www.smmt.co.uk/industry-facts/)."
+    },
+    {
+      "id": "S18",
+      "text": "[Université d’Oxford, histoire des îles Britanniques](https://www.history.ox.ac.uk/history-british-isles-fhs). Union de 1707 et 1801, expansion impériale, esclavage, industrialisation et transformations sociales. [Parlement britannique, naissance de la première nation industrielle](https://www.parliament.uk/about/living-heritage/transformingsociety/tradeindustry/industrycommunity/overview/earlyindustry/)."
+    },
+    {
+      "id": "S19",
+      "text": "[GOV.UK, anciens Premiers ministres](https://www.gov.uk/government/history/past-prime-ministers). Biographies de Thatcher, Blair, Brown, Cameron, May, Johnson, Truss, Sunak et Starmer. Chronologie des mandats et principales décisions gouvernementales."
+    },
+    {
+      "id": "S20",
+      "text": "[Institute for Fiscal Studies, The Conservatives and the Economy, 2010-24](https://ifs.org.uk/publications/conservatives-and-economy-2010-24). Austérité, investissement, productivité et Brexit. [ONS, PIB et événements historiques](https://www.ons.gov.uk/economy/grossdomesticproductgdp/articles/gdpandeventsinhistoryhowthecovid19pandemicshockedtheukeconomy/2022-05-24). Crise financière et pandémie."
+    },
+    {
+      "id": "S21",
+      "text": "[Commission électorale, résultat du référendum européen de 2016](https://www.electoralcommission.org.uk/media-centre/official-result-eu-referendum-declared-electoral-commission-manchester). Leave 51,9 %. [Conseil de l’UE, chronologie des accords post-Brexit](https://www.consilium.europa.eu/en/policies/post-brexit-agreements/timeline-post-brexit-agreements/). Sortie le 31 janvier 2020 ; fin de transition le 31 décembre 2020."
+    },
+    {
+      "id": "S22",
+      "text": "[Banque d’Angleterre, crise des gilts de 2022](https://www.bankofengland.co.uk/quarterly-bulletin/2023/2023/financial-stability-buy-sell-tools-a-gilt-market-case-study). Intervention temporaire après les tensions de septembre 2022. [Commons Library, Irlande du Nord, 2022-24](https://commonslibrary.parliament.uk/research-briefings/cbp-9913/). Cadre de Windsor et restauration du partage du pouvoir."
+    },
+    {
+      "id": "S23",
+      "text": "[House of Commons Library, élections législatives de 2024](https://commonslibrary.parliament.uk/research-briefings/cbp-10009/). Résultats du 4 juillet : Labour 411 sièges, conservateurs 121, libéraux-démocrates 72, Reform UK cinq. Labour : 33,7 % des suffrages. Les chiffres décrivent le scrutin, pas la composition actuelle des Communes."
+    },
+    {
+      "id": "S24",
+      "text": "[House of Commons Library, élections locales de 2025](https://commonslibrary.parliament.uk/research-briefings/cbp-10272/). Progression de Reform UK. [Sommet UE-Royaume-Uni du 19 mai 2025](https://www.consilium.europa.eu/en/meetings/international-summit/2025/05/19/). Relance de la coopération et partenariat de sécurité et de défense."
+    },
+    {
+      "id": "S25",
+      "text": "[GOV.UK, Premier ministre en exercice](https://www.gov.uk/government/ministers/prime-minister). Andy Burnham nommé le 20 juillet 2026, chef du Labour depuis le 16 juillet. [Dernier discours de Keir Starmer, 20 juillet 2026](https://www.gov.uk/government/speeches/keir-starmers-final-speech-as-prime-minister-20-july-2026)."
+    },
+    {
+      "id": "S26",
+      "text": "House of Commons Library, élections du 7 mai 2026 : [Écosse](https://commonslibrary.parliament.uk/research-briefings/cbp-10843/) et [pays de Galles](https://commonslibrary.parliament.uk/research-briefings/cbp-10838/). SNP et Plaid Cymru premiers en sièges, percée de Reform UK."
+    },
+    {
+      "id": "S27",
+      "text": "[GOV.UK, Budget 2026](https://www.gov.uk/government/news/budget-2026-breathing-space-for-today-hope-for-the-future), 2026. Mesures annoncées pour investissement, pouvoir d’achat et immigration qualifiée. [Home Office, réforme de l’installation permanente, 2 novembre 2026](https://www.gov.uk/government/news/home-secretary-unveils-new-rules-for-migrants-settling-in-the-uk) ; [réponse à la consultation, 12 novembre](https://www.gov.uk/government/consultations/earned-settlement/outcome/a-fairer-pathway-to-settlement-government-response-to-the-consultation). Annonces gouvernementales ; mise en œuvre et exceptions à distinguer."
+    },
+    {
+      "id": "S28",
+      "text": "[GOV.UK, discours d’Andy Burnham au Lord Mayor’s Banquet, 16 novembre 2026](https://www.gov.uk/government/speeches/pm-speech-at-the-lord-mayors-banquet-16-november-2026). Position sur le Brexit et sommet avec l’UE annoncé pour le 20 novembre à Bruxelles. Déclarations politiques, sans préjuger des accords futurs."
+    },
+    {
+      "id": "S29",
+      "text": "[France Diplomatie, relations franco-britanniques](https://www.diplomatie.gouv.fr/en/information-by-country/united-kingdom/france-and-the-united-kingdom), mise à jour du 29 octobre 2026. Défense, économie, recherche et contrôles frontaliers juxtaposés. [Déclaration de Northwood, 10 juillet 2025](https://www.gov.uk/government/news/northwood-declaration-10-july-2025-uk-france-joint-nuclear-statement). Forces nucléaires indépendantes et coordination approfondie."
+    },
+    {
+      "id": "S30",
+      "text": "[Formula 1, équipes de la saison 2026](https://www.formula1.com/en/latest/article/who-are-the-2026-formula-1-teams.1lkaenQFrnBNcRxQo28Ckv). Implantations, arrivée de Cadillac et motorisation Mercedes d’Alpine. [Groupes propulseurs 2026](https://www.formula1.com/en/latest/article/2026-regulations-explained-all-you-need-to-know-about-f1-their-new-power-units.14jfv7a36905uDJDdNyfQd). Comptage des équipes clientes : Mercedes quatre, Ferrari trois, Red Bull Ford deux, Honda une, Audi une. Deux voitures par équipe ; ce graphique compte les équipes, pas les voitures."
+    },
+    {
+      "id": "S31",
+      "text": "[FIA, nouvelle réglementation de F1 en 2026](https://www.fia.com/news/f1s-new-era-everything-you-need-know-about-how-fia-making-formula-1-more-competitive-more). Motoristes, rôle accru de l’électrique, aérodynamique active et carburants avancés durables. [Red Bull Ford Powertrains](https://www.redbull.com/int-en/red-bull-x-ford-future-f1-engines), développement à Milton Keynes. [Mercedes AMG High Performance Powertrains](https://www.mercedes-amg-hpp.com/), Brixworth."
+    },
+    {
+      "id": "S32",
+      "text": "[VisitBritain, carte des spécialités culinaires](https://www.visitbritain.com/en/things-to-do/eat-local-foodie-map-britain). Produits régionaux, roast dinner, fish and chips, currys, thé et cuisine de pub."
+    },
+    {
+      "id": "S33",
+      "text": "[FAC51 The Haçienda, histoire du club](https://fac51-thehacienda.com/about/). Manchester, Factory Records et culture acid house. [Resident Advisor, Royaume-Uni](https://ra.co/clubs/uk), scènes électroniques et lieux de clubs. Sélection descriptive consultée le 17 novembre 2026."
+    },
+    {
+      "id": "S34",
+      "text": "[parkrun, les cinq premières années](https://blog.parkrun.com/uk/2024/01/19/the-first-five-years-of-parkrun/), 19 janvier 2024 ; [AP, vingt ans de parkrun](https://apnews.com/article/c133a04c3a77c531d4a5419d9ea280de), 3 octobre 2024. Premier rendez-vous à Bushy Park, le 2 octobre 2004, treize participants, parcours de cinq kilomètres. Gratuité, bénévolat et ouverture aux marcheurs."
+    },
+    {
+      "id": "S35",
+      "text": "[PNUD, Human Development Report 2025, tableau des indices](https://www.undp.org/sites/g/files/zskgke326/files/2025-05/hdr2025overviewen.pdf), données 2023. Royaume-Uni : IDH 0,946 ; rang 13."
+    },
+    {
+      "id": "S36",
+      "text": "[V-Dem, Democracy Report 2026](https://www.v-dem.net/documents/75/V-Dem_Institute_Democracy_Report_2026_lowres.pdf), tableau A2, page 48, données 2025. Royaume-Uni : indice de démocratie libérale 0,69 ; rang 30. Valeur publiée et intervalle d’incertitude distincts."
+    },
+    {
+      "id": "S37",
+      "text": "[RSF, Royaume-Uni, index 2026](https://rsf.org/en/country/united-kingdom). Score 79,45 sur 100, rang 18 sur 180. La page conserve aussi l’index 2025 : score 78,89, à ne pas confondre avec 2026."
+    },
+    {
+      "id": "S38",
+      "text": "[Transparency International, Royaume-Uni, CPI 2025](https://www.transparency.org/en/countries/united-kingdom). Score 70 sur 100, rang 20 sur 182."
+    },
+    {
+      "id": "S39",
+      "text": "[ONS, naissances en Angleterre et au pays de Galles, taux définitifs 2025](https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/livebirths/bulletins/birthsummarytablesenglandandwales/2025finalrates), septembre 2026. Fécondité conjoncturelle 1,39 enfant par femme, champ Angleterre et pays de Galles uniquement."
+    },
+    {
+      "id": "FLAG",
+      "text": "[Wikimedia Commons, Flag of the United Kingdom (3-5).svg](https://commons.wikimedia.org/wiki/File:Flag_of_the_United_Kingdom_(3-5).svg). Union Flag, Acts of Union 1800 ; vectorisation Yaddah. Domaine public, dessin officiel ancien et formes géométriques simples. SVG original conservé, format 1000 × 600."
+    },
+    {
+      "id": "RELIEF",
+      "text": "[Wikimedia Commons, United Kingdom relief location map.jpg](https://commons.wikimedia.org/wiki/File:United_Kingdom_relief_location_map.jpg). Alexrk2, fond cartographique NordNordWest, données SRTM ; [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0). Conversion proportionnelle WebP, qualité 87, cadre complet et couleurs conservés. Dimensions originales 1348 × 2083 ; copie locale 134 946 octets."
+    },
+    {
+      "id": "NE",
+      "text": "[Natural Earth](https://www.naturalearthdata.com/about/terms-of-use/), domaine public. Contours du localisateur régional et repère mondial. [Populated Places](https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-populated-places/), coordonnées des centres urbains. Les limites ne constituent pas une position sur les frontières."
+    },
+    {
+      "id": "CITYMAP",
+      "text": "[Wikimedia Commons, United Kingdom adm location map.svg](https://commons.wikimedia.org/wiki/File:United_Kingdom_adm_location_map.svg). NordNordWest, [CC BY-SA 3.0 de](https://creativecommons.org/licenses/by-sa/3.0/de/deed.en). Réduction proportionnelle et conversion WebP, sans recadrage ni recoloration. [Bornes et projection](https://en.wikipedia.org/wiki/Module:Location_map/data/United_Kingdom). Repères numérotés ajoutés à l’affichage."
+    },
+    {
+      "id": "S40",
+      "text": "[Royal Household, Charles III](https://www.royal.uk/the-king). Accession le 8 septembre 2022."
+    },
+    {
+      "id": "S41",
+      "text": "[Department for Transport, National Travel Survey 2025](https://www.gov.uk/government/statistics/national-travel-survey-2025), septembre 2026. Déplacements des résidents d’Angleterre : poids de la voiture, transports londoniens et différences territoriales."
+    },
+    {
+      "id": "S42",
+      "text": "[National Motorsport Academy, Inside Motorsport Valley: Formula 1’s Technological Core](https://motorsport.nda.ac.uk/news/inside-motorsport-valley-formula-1s-technological-core/), consulté le 17 novembre 2026. Implantations, fournisseurs, transfert de compétences, composites, aérodynamique, simulation et prototypage."
+    }
+  ],
+  "hero_sources": [
+    "S03",
+    "FLAG"
+  ],
+  "map_sources": {
+    "locator": [
+      "NE",
+      "S03"
+    ],
+    "cities": [
+      "S01",
+      "NE"
+    ],
+    "relief": [
+      "RELIEF"
+    ]
+  },
+  "cities_map": {
+    "file": "cities.webp",
+    "width": 886,
+    "height": 1369,
+    "bounds": {
+      "top": 61.0,
+      "bottom": 49.0,
+      "left": -11.0,
+      "right": 2.2
+    },
+    "projection": {
+      "type": "equirectangular"
+    },
+    "credit": {
+      "author": "NordNordWest",
+      "license": "CC BY-SA 3.0 de",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+      "url": "https://commons.wikimedia.org/wiki/File:United_Kingdom_adm_location_map.svg"
+    },
+    "definition_url": "https://en.wikipedia.org/wiki/Module:Location_map/data/United_Kingdom",
+    "source_ids": [
+      "CITYMAP"
+    ]
+  },
+  "cities_title": "Six villes, quatre nations",
+  "cities_scope": "Population résidente · milieu de 2025",
+  "cities_note": "Londres : région du Grand Londres. Autres villes : collectivités locales, avec des limites de taille variable. Ces populations ne sont pas celles des agglomérations.",
+  "relief_title": "Les hautes terres du nord et de l’ouest",
+  "relief_alt": "Relief des îles Britanniques : Highlands écossais, Pennines et montagnes galloises, plaines au sud-est.",
+  "relief_landmarks": [
+    {
+      "label": "Les Highlands",
+      "text": "Montagnes et côtes découpées au nord de l’Écosse."
+    },
+    {
+      "label": "Les Pennines",
+      "text": "Une dorsale dans le nord de l’Angleterre."
+    },
+    {
+      "label": "Les massifs gallois",
+      "text": "Des reliefs exposés aux vents atlantiques."
+    }
+  ],
+  "euro": {
+    "currency": "GBP",
+    "per_euro": 0.8567923137255,
+    "year": 2025,
+    "basis": "Moyenne annuelle directe de la BCE pour 2025 : 0,8567923137255 GBP par euro (publiée à cinq décimales : 0,85679). Conversion approximative : montant en GBP divisé par la valeur brute du taux, sans correction du pouvoir d’achat.",
+    "source_ids": [
+      "S11"
+    ]
+  },
+  "prose_values": {
+    "travail": {
+      "value": 48,
+      "unit": "heures",
+      "precision": 0
+    },
+    "conges": {
+      "value": 5.6,
+      "unit": "semaines",
+      "precision": 1
+    },
+    "leave": {
+      "value": 51.9,
+      "unit": "%",
+      "precision": 1
+    },
+    "vote-labour": {
+      "value": 33.7,
+      "unit": "%",
+      "precision": 1
+    },
+    "voitures": {
+      "value": 717371,
+      "unit": "voitures"
+    },
+    "export-auto": {
+      "value": 77.48096870378089,
+      "unit": "%",
+      "precision": 1
+    },
+    "parkrun": {
+      "value": 5,
+      "unit": "kilomètres",
+      "precision": 0
+    }
+  }
+}
