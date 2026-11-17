@@ -148,6 +148,14 @@
     {
       "id": "FR-CLIM-1981-2010",
       "text": "[Météo-France, fiche climatologique Paris-Montsouris, station 75114001, reproduite en annexe 1 du dossier de géothermie de Bagneux](https://www.eib.org/attachments/registers/77021052.pdf). Normales 1981-2010, fiche éditée le 1er juin 2012, première page de l’annexe climatologique. Moyennes mensuelles des minima, maxima et précipitations. Même période et variables que les stations AEMET espagnoles."
+    },
+    {
+      "id": "FR-FERT-EU-2024",
+      "text": "[Eurostat, indicateur conjoncturel de fécondité, demo_find](https://ec.europa.eu/eurostat/databrowser/view/demo_find/default/table?lang=fr), [API Belgique et France, 2024](https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/demo_find?lang=EN&geo=BE&geo=FR&indic_de=TOTFERRT&time=2024), mise à jour du 13 novembre 2026. France : 1,61 enfant par femme. Même série et même année que la Belgique."
+    },
+    {
+      "id": "FR-TAXWEDGE-2025",
+      "text": "[OCDE, Taxing Wages 2026](https://www.oecd.org/en/publications/taxing-wages-2026_3a5169ef-en.html), [extraction SDMX DF_TW_COMP, Belgique et France, 2025](https://sdmx.oecd.org/public/rest/data/OECD.CTP.TPS,DSD_TAX_WAGES_COMP@DF_TW_COMP,/BEL+FRA.......?startPeriod=2025&format=csvfilewithlabels). Mesure AV_TW : impôt sur le revenu et cotisations sociales salariales et patronales, moins les prestations en espèces, en part du coût du travail. France : 47,178 % pour un célibataire sans enfant au salaire moyen (S_C0, AW100) ; 41,174 % à deux tiers du salaire moyen (S_C0, AW67) ; 39,062 % pour un couple avec deux enfants et un seul salaire moyen (C_C2, AW100, conjoint sans revenu). Mêmes cas types et même année que la Belgique."
     }
   ],
   "population": {
@@ -1438,6 +1446,36 @@
     ],
     "source_ids": [
       "FR-CLIM-1981-2010"
+    ]
+  },
+  "fecondite-eurostat-2024": {
+    "status": "comparable",
+    "value": 1.61,
+    "unit": "enfant/femme",
+    "year": 2024,
+    "precision": 1,
+    "coverage": "Indicateur conjoncturel · Eurostat 2024",
+    "source_ids": [
+      "FR-FERT-EU-2024"
+    ]
+  },
+  "coin-fiscal-2025": {
+    "status": "comparable",
+    "year": 2025,
+    "unit": "%",
+    "labels": [
+      "Célibataire sans enfant, salaire moyen",
+      "Célibataire sans enfant, deux tiers du salaire moyen",
+      "Couple avec deux enfants, un seul salaire moyen"
+    ],
+    "values": [
+      47.178061,
+      41.173728,
+      39.061738
+    ],
+    "coverage": "OCDE, Taxing Wages 2026 · coin fiscal moyen 2025",
+    "source_ids": [
+      "FR-TAXWEDGE-2025"
     ]
   }
 }
