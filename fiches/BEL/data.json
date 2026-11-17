@@ -1,0 +1,954 @@
+{
+  "keyfacts": [
+    {
+      "id": "population",
+      "label": "Population",
+      "value": 11867634,
+      "unit": "habitants",
+      "year": 2026,
+      "coverage": "Résidents · 1er janvier 2026",
+      "source_ids": [
+        "S03"
+      ],
+      "france": "population"
+    },
+    {
+      "id": "superficie",
+      "label": "Superficie",
+      "value": 30667,
+      "unit": "km²",
+      "year": 2026,
+      "coverage": "Territoire dans l’UE · champ Eurostat 2026",
+      "source_ids": [
+        "S01"
+      ],
+      "france": "superficie"
+    },
+    {
+      "id": "pib-nominal",
+      "label": "PIB nominal",
+      "value": 725056000000,
+      "unit": "USD",
+      "year": 2025,
+      "coverage": "Prix courants · 2025 · FMI octobre 2026",
+      "source_ids": [
+        "GDP"
+      ],
+      "france": "pib-nominal"
+    },
+    {
+      "id": "fecondite",
+      "label": "Fécondité",
+      "value": 1.44,
+      "unit": "enfant/femme",
+      "year": 2024,
+      "coverage": "Indicateur conjoncturel · Eurostat 2024",
+      "source_ids": [
+        "S05"
+      ],
+      "france": "fecondite-eurostat-2024",
+      "precision": 1
+    },
+    {
+      "id": "65-plus",
+      "label": "Part des 65 ans ou plus",
+      "value": 20.669233648425624,
+      "unit": "%",
+      "year": 2026,
+      "coverage": "Résidents · 1er janvier 2026",
+      "source_ids": [
+        "S03"
+      ],
+      "france": "65-plus"
+    },
+    {
+      "id": "chomage",
+      "label": "Chômage",
+      "value": 6.2,
+      "unit": "%",
+      "year": 2025,
+      "coverage": "Au sens du BIT · 15-74 ans · moyenne 2025",
+      "source_ids": [
+        "UNEMP"
+      ],
+      "france": "chomage-eurostat-2025",
+      "precision": 1
+    }
+  ],
+  "indices": [
+    {
+      "id": "idh",
+      "name": "Développement humain",
+      "acronym": "IDH",
+      "value": 0.951,
+      "rank": "10ᵉ",
+      "year": 2023,
+      "scale_min": 0,
+      "scale_max": 1,
+      "higher_is_better": true,
+      "precision": 3,
+      "source_ids": [
+        "HDI"
+      ],
+      "france": "idh"
+    },
+    {
+      "id": "gini",
+      "name": "Inégalités de revenus",
+      "acronym": "Gini",
+      "value": 23.4,
+      "rank": "Sans classement",
+      "year": 2025,
+      "scale_min": 0,
+      "scale_max": 100,
+      "higher_is_better": false,
+      "precision": 1,
+      "source_ids": [
+        "GINI"
+      ],
+      "france": "gini-silc-2025",
+      "coverage": "EU-SILC 2025 · revenu disponible équivalent, après transferts"
+    },
+    {
+      "id": "democratie",
+      "name": "Démocratie libérale",
+      "acronym": "V-Dem",
+      "value": 0.79,
+      "rank": "10ᵉ",
+      "year": 2025,
+      "scale_min": 0,
+      "scale_max": 1,
+      "higher_is_better": true,
+      "precision": 2,
+      "source_ids": [
+        "VDEM"
+      ],
+      "france": "democratie"
+    },
+    {
+      "id": "presse",
+      "name": "Liberté de la presse",
+      "acronym": "RSF",
+      "value": 81.17,
+      "rank": "16ᵉ / 180",
+      "year": 2026,
+      "scale_min": 0,
+      "scale_max": 100,
+      "higher_is_better": true,
+      "precision": 2,
+      "source_ids": [
+        "RSF"
+      ],
+      "france": "presse"
+    },
+    {
+      "id": "corruption",
+      "name": "Corruption perçue",
+      "acronym": "CPI",
+      "value": 69,
+      "rank": "21ᵉ / 182",
+      "year": 2025,
+      "scale_min": 0,
+      "scale_max": 100,
+      "higher_is_better": true,
+      "precision": 0,
+      "source_ids": [
+        "CPI"
+      ],
+      "france": "corruption"
+    }
+  ],
+  "cities": [
+    {
+      "name": "Bruxelles",
+      "population": 1251715,
+      "lat": 50.835263,
+      "lon": 4.331371,
+      "note": "Capitale et institutions européennes ; région de 19 communes.",
+      "year": 2026,
+      "source_ids": [
+        "RN",
+        "COORD"
+      ]
+    },
+    {
+      "name": "Anvers",
+      "population": 564561,
+      "lat": 51.222319,
+      "lon": 4.413071,
+      "note": "Port, chimie et diamant.",
+      "year": 2026,
+      "source_ids": [
+        "RN",
+        "COORD"
+      ]
+    },
+    {
+      "name": "Gand",
+      "population": 273665,
+      "lat": 51.029998,
+      "lon": 3.700022,
+      "note": "Université, port et usine Volvo.",
+      "year": 2026,
+      "source_ids": [
+        "RN",
+        "COORD"
+      ]
+    },
+    {
+      "name": "Charleroi",
+      "population": 206585,
+      "lat": 50.420397,
+      "lon": 4.450002,
+      "note": "Ancien bassin sidérurgique, aéroport régional.",
+      "year": 2026,
+      "source_ids": [
+        "RN",
+        "COORD"
+      ]
+    },
+    {
+      "name": "Liège",
+      "population": 198044,
+      "lat": 50.629996,
+      "lon": 5.580011,
+      "note": "Sidérurgie historique, logistique et université.",
+      "year": 2026,
+      "source_ids": [
+        "RN",
+        "COORD"
+      ]
+    },
+    {
+      "name": "Bruges",
+      "population": 120393,
+      "lat": 51.220374,
+      "lon": 3.230025,
+      "note": "Ville historique ; port de Zeebruges.",
+      "year": 2026,
+      "source_ids": [
+        "RN",
+        "COORD"
+      ]
+    },
+    {
+      "name": "Namur",
+      "population": 115330,
+      "lat": 50.470394,
+      "lon": 4.870028,
+      "note": "Capitale de la Wallonie.",
+      "year": 2026,
+      "source_ids": [
+        "RN",
+        "COORD"
+      ]
+    },
+    {
+      "name": "Louvain",
+      "population": 105233,
+      "lat": 50.8775,
+      "lon": 4.704444,
+      "note": "Université et centre de recherche imec.",
+      "year": 2026,
+      "source_ids": [
+        "RN",
+        "COORD"
+      ]
+    }
+  ],
+  "charts": [
+    {
+      "id": "climat",
+      "type": "climate",
+      "title": "Un climat océanique, de la pluie en toute saison",
+      "subtitle": "Uccle · normales 1991–2020 · comparaison avec Paris-Montsouris",
+      "year": "1991–2020",
+      "place": "Uccle (Bruxelles)",
+      "tmin": [
+        1.4,
+        1.5,
+        3.5,
+        6.0,
+        9.2,
+        12.0,
+        14.1,
+        13.9,
+        11.3,
+        8.1,
+        4.6,
+        2.1
+      ],
+      "tmax": [
+        6.1,
+        7.1,
+        10.9,
+        15.0,
+        18.4,
+        21.2,
+        23.2,
+        23.0,
+        19.5,
+        14.9,
+        9.9,
+        6.6
+      ],
+      "precip_mm": [
+        75.5,
+        65.1,
+        59.3,
+        46.7,
+        59.7,
+        70.8,
+        76.9,
+        86.5,
+        65.3,
+        67.8,
+        76.4,
+        87.4
+      ],
+      "temperature_extent": [
+        0,
+        30
+      ],
+      "rain_max": 100,
+      "france": "climat-paris",
+      "source_ids": [
+        "S06"
+      ],
+      "note": "Normales 1991–2020 de la station d’Uccle, reprises des bilans climatiques mensuels de l’IRM de janvier à décembre 2025 : température maximale moyenne, température minimale moyenne et total des précipitations. Paris-Montsouris : mêmes définitions et même période."
+    },
+    {
+      "id": "pyramide-ages",
+      "type": "pyramid",
+      "title": "Une pyramide en colonne, au sommet élargi",
+      "subtitle": "Part de la population totale · % · 1er janvier 2025",
+      "year": 2025,
+      "age_groups": [
+        "0–4",
+        "5–9",
+        "10–14",
+        "15–19",
+        "20–24",
+        "25–29",
+        "30–34",
+        "35–39",
+        "40–44",
+        "45–49",
+        "50–54",
+        "55–59",
+        "60–64",
+        "65–69",
+        "70–74",
+        "75–79",
+        "80–84",
+        "85+"
+      ],
+      "male": [
+        297213,
+        325229,
+        353618,
+        362998,
+        358764,
+        374385,
+        395458,
+        389341,
+        387310,
+        377921,
+        388981,
+        394055,
+        385798,
+        332191,
+        272130,
+        220214,
+        130634,
+        124629
+      ],
+      "female": [
+        284139,
+        311519,
+        337162,
+        341142,
+        340674,
+        365803,
+        392171,
+        390956,
+        388917,
+        374706,
+        382262,
+        387389,
+        389812,
+        351877,
+        302724,
+        263274,
+        176058,
+        232041
+      ],
+      "unit": "personnes",
+      "france": "pyramide-eurostat-2025-85plus",
+      "source_ids": [
+        "S04"
+      ],
+      "note": "Eurostat, effectifs au 1er janvier 2025 par sexe et groupe quinquennal, puis 85 ans ou plus, pour la Belgique et la France. Pourcentages calculés par le rendu sur le total des deux sexes. Le total belge d’Eurostat (11 883 495) dépasse celui de Statbel (11 825 551) à la même date. Il inclut des personnes enregistrées hors du registre de population."
+    },
+    {
+      "id": "regions",
+      "type": "share",
+      "title": "La Flandre réunit plus de la moitié des habitants",
+      "subtitle": "Population par région · 1er janvier 2026 · %",
+      "year": 2026,
+      "labels": [
+        "Région flamande",
+        "Région wallonne",
+        "Région de Bruxelles-Capitale"
+      ],
+      "values": [
+        58.12742455657126,
+        31.290567268926562,
+        10.58200817450218
+      ],
+      "unit": "%",
+      "source_ids": [
+        "S03"
+      ],
+      "france": {
+        "status": "non_comparable",
+        "reason": "Découpage fédéral belge sans équivalent français.",
+        "source_ids": []
+      },
+      "note": "Statbel, population résidente au 1er janvier 2026 : Région flamande 6 898 350 ; Région wallonne 3 713 450 ; Région de Bruxelles-Capitale 1 255 834. Parts calculées sur le total de 11 867 634. La Région wallonne inclut la région de langue allemande."
+    },
+    {
+      "id": "salaires",
+      "type": "bar",
+      "title": "Salaires horaires : une médiane élevée",
+      "subtitle": "Brut par heure payée · enquête SES 2022 · € / heure",
+      "year": 2022,
+      "labels": [
+        "Salaire médian",
+        "Salaire moyen"
+      ],
+      "values": [
+        23.84,
+        26.97
+      ],
+      "unit": "€/heure",
+      "precision": 2,
+      "france": "salaires-ses-2022",
+      "source_ids": [
+        "S12"
+      ],
+      "note_visible": "Entreprises d’au moins dix salariés ; agriculture et administration publique exclues. Primes régulières et heures supplémentaires du mois incluses."
+    },
+    {
+      "id": "coin-fiscal",
+      "type": "barh",
+      "title": "Le travail parmi les plus taxés de l’OCDE",
+      "subtitle": "Coin fiscal moyen · % du coût du travail · 2025",
+      "year": 2025,
+      "labels": [
+        "Célibataire sans enfant, salaire moyen",
+        "Célibataire sans enfant, deux tiers du salaire moyen",
+        "Couple avec deux enfants, un seul salaire moyen"
+      ],
+      "values": [
+        52.482196,
+        45.71544,
+        36.85754
+      ],
+      "unit": "%",
+      "precision": 1,
+      "france": "coin-fiscal-2025",
+      "source_ids": [
+        "S13"
+      ],
+      "note_visible": "Impôt sur le revenu et cotisations sociales, salariales et patronales, moins les allocations familiales en espèces."
+    },
+    {
+      "id": "chomage-regions",
+      "type": "barh",
+      "title": "Le chômage triple entre la Flandre et Bruxelles",
+      "subtitle": "Taux de chômage au sens du BIT · 15-74 ans · 2025 · %",
+      "year": 2025,
+      "labels": [
+        "Région de Bruxelles-Capitale",
+        "Région wallonne",
+        "Région flamande",
+        "Belgique"
+      ],
+      "values": [
+        12.6,
+        7.8,
+        4.3,
+        6.2
+      ],
+      "unit": "%",
+      "precision": 1,
+      "highlight": "Belgique",
+      "source_ids": [
+        "S14"
+      ],
+      "france": {
+        "status": "non_comparable",
+        "reason": "Régions belges sans équivalent français dans ce graphique ; la France figure dans le repère national du chômage.",
+        "source_ids": []
+      }
+    },
+    {
+      "id": "pib-secteurs",
+      "type": "share",
+      "title": "Les services dominent la valeur ajoutée",
+      "subtitle": "Valeur ajoutée courante, hors impôts nets sur les produits · 2025",
+      "year": 2025,
+      "labels": [
+        "Agriculture, forêt, pêche",
+        "Industrie et construction",
+        "Services"
+      ],
+      "values": [
+        0.9030760213782392,
+        20.48684729565757,
+        78.61007668296418
+      ],
+      "unit": "%",
+      "france": "va-eurostat-2025",
+      "source_ids": [
+        "S15"
+      ]
+    },
+    {
+      "id": "production-auto",
+      "type": "line",
+      "title": "La production automobile divisée par quatre depuis 2001",
+      "subtitle": "Véhicules produits en Belgique · voitures et utilitaires · 2000–2025",
+      "year": "2000–2025",
+      "x": [
+        2000,
+        2001,
+        2002,
+        2003,
+        2004,
+        2005,
+        2006,
+        2007,
+        2008,
+        2009,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "series": [
+        {
+          "name": "Belgique",
+          "values": [
+            1033294,
+            1187257,
+            1057189,
+            909383,
+            900273,
+            926515,
+            918056,
+            834403,
+            724498,
+            537354,
+            555302,
+            595084,
+            538848,
+            503504,
+            516831,
+            409340,
+            399427,
+            379140,
+            308493,
+            285797,
+            null,
+            261038,
+            285473,
+            332103,
+            240366,
+            253418
+          ]
+        }
+      ],
+      "unit": "véhicules",
+      "source_ids": [
+        "S20",
+        "S21"
+      ],
+      "france": {
+        "status": "unavailable",
+        "reason": "Série française OICA de même période non ajoutée à ce graphique.",
+        "source_ids": []
+      },
+      "note_visible": "Aucune valeur 2020 n’a été retrouvée dans les tableaux OICA consultés : la ligne est interrompue.",
+      "note": "OICA, production de véhicules à moteur, total des voitures particulières et des véhicules utilitaires. 2000–2019 : tableaux annuels par pays de l’OICA, copies archivées. 2021–2025 : enquête des correspondants OICA publiée en 2026, source nationale Febiac. Valeurs publiées sans recalcul."
+    },
+    {
+      "id": "ronde",
+      "type": "barh",
+      "title": "Tour des Flandres : 69 victoires belges sur 110 éditions",
+      "subtitle": "Vainqueurs de l’épreuve masculine par nationalité · 1913–2026",
+      "year": 2026,
+      "labels": [
+        "Belgique",
+        "Pays-Bas",
+        "Italie",
+        "Suisse",
+        "France",
+        "Slovénie",
+        "Autres pays"
+      ],
+      "values": [
+        69,
+        13,
+        11,
+        4,
+        3,
+        3,
+        7
+      ],
+      "unit": "victoires",
+      "precision": 0,
+      "highlight": "Belgique",
+      "source_ids": [
+        "S41"
+      ],
+      "note": "Décompte des 110 éditions de 1913 à 2026, à partir de la liste des vainqueurs. Autres pays : Danemark 2, Allemagne 2 (RFA comprise), Royaume-Uni, Norvège et Slovaquie 1 chacun."
+    }
+  ],
+  "prose_values": {
+    "botrange": {
+      "value": 694,
+      "unit": "mètres",
+      "precision": 0
+    },
+    "ne-en-belgique": {
+      "value": 79.8,
+      "unit": "%",
+      "precision": 1
+    },
+    "travail-bel": {
+      "value": 38,
+      "unit": "heures",
+      "precision": 0
+    },
+    "travail-fr": {
+      "value": 35,
+      "unit": "heures",
+      "precision": 0
+    },
+    "acheteurs-prives": {
+      "value": 41.7,
+      "unit": "%",
+      "precision": 1
+    },
+    "port-anvers": {
+      "value": 266500000,
+      "unit": "tonnes"
+    },
+    "dependance-bel": {
+      "value": 75.448,
+      "unit": "%",
+      "precision": 1
+    },
+    "dependance-fr": {
+      "value": 41.672,
+      "unit": "%",
+      "precision": 1
+    },
+    "commerce-france": {
+      "value": 89400000000,
+      "unit": "euros"
+    },
+    "ide-france": {
+      "value": 126400000000,
+      "unit": "euros"
+    }
+  },
+  "sources": [
+    {
+      "id": "S01",
+      "text": "[Union européenne, présentation de la Belgique](https://european-union.europa.eu/principles-countries-history/eu-countries/belgium_en). Données Eurostat 2026 : superficie de 30 667 km², même champ que la référence française. Capitale, langues officielles (néerlandais, français, allemand), monnaie et régime de monarchie constitutionnelle fédérale."
+    },
+    {
+      "id": "S02",
+      "text": "[France Diplomatie, présentation de la Belgique, mise à jour du 22 octobre 2026](https://www.diplomatie.gouv.fr/fr/information-par-pays/belgique/presentation-de-la-belgique). Institutions, élections du 9 juin 2024 et abstention record malgré le vote obligatoire, accord de coalition du 31 janvier 2025, retour sur la sortie du nucléaire, gouvernement bruxellois du 14 février 2026 et déclaration franco-belge sur l’énergie de juillet 2025."
+    },
+    {
+      "id": "S03",
+      "text": "Statbel : [population résidente par région, 2016-2026](https://bestat.statbel.fgov.be/bestat/api/views/c85d8545-ce8a-444b-908d-9fb278d672ea/result/CSV) ; [population par sexe et grand groupe d’âge, 2026](https://bestat.statbel.fgov.be/bestat/api/views/8f6ebea0-37a9-435a-aa0d-ad5c8b76c09d/result/CSV). Population au 1er janvier 2026 : 11 867 634. Personnes de 65 ans ou plus : 2 452 949, somme des trois régions et des deux sexes ; part calculée sur le total sans arrondi préalable."
+    },
+    {
+      "id": "S04",
+      "text": "[Eurostat, population par groupe d’âge quinquennal et sexe, demo_pjangroup](https://ec.europa.eu/eurostat/databrowser/view/demo_pjangroup/default/table?lang=fr), [API Belgique et France, 2025](https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/demo_pjangroup?lang=EN&geo=BE&geo=FR&time=2025&sex=M&sex=F), mise à jour du 15 novembre 2026. Dernier millésime détaillé par âge disponible. Classes Y_LT5 à Y80-84, puis Y_GE85 ; sommes vérifiées sur les totaux par sexe."
+    },
+    {
+      "id": "S05",
+      "text": "[Eurostat, indicateur conjoncturel de fécondité, demo_find](https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/demo_find?lang=EN&geo=BE&indic_de=TOTFERRT&sinceTimePeriod=2022), mise à jour du 13 novembre 2026. Belgique : 1,53 en 2022 ; 1,47 en 2023 ; 1,44 en 2024. Dernière année publiée."
+    },
+    {
+      "id": "S06",
+      "text": "IRM, bilans climatiques mensuels 2025 à Uccle, tableau « Bilan des valeurs mensuelles depuis 1991 », colonne des normales 1991–2020 : [janvier](https://www.meteo.be/resources/climatology/pdf/bilan_climatique_mensuel_202501.pdf), [mai](https://www.meteo.be/resources/climatology/pdf/bilan_climatique_mensuel_202505.pdf), [juillet](https://www.meteo.be/resources/climatology/pdf/bilan_climatique_mensuel_202507.pdf), [décembre](https://www.meteo.be/resources/climatology/pdf/bilan_climatique_mensuel_202512.pdf) ; mêmes fichiers pour les autres mois (bilan_climatique_mensuel_2025MM.pdf)."
+    },
+    {
+      "id": "S07",
+      "text": "[Wikipédia, Signal de Botrange](https://fr.wikipedia.org/wiki/Signal_de_Botrange). Point culminant de la Belgique, 694 m, plateau des Hautes Fagnes, province de Liège."
+    },
+    {
+      "id": "S08",
+      "text": "[L’Avenir, d’après Statbel, 10 juin 2026](https://www.lavenir.net/actu/societe/2026/06/10/plus-de-deces-que-de-naissances-pour-la-quatrieme-dannee-consecutive-en-belgique-limmigration-internationale-seul-moteur-de-croissance-SNONZ44HNBG3FPYKAI5FBLVZGQ/). En 2025 : 108 033 naissances, 112 923 décès, quatrième année de solde naturel négatif ; solde migratoire international de 47 562 ; 79,80 % des habitants nés en Belgique en 2026."
+    },
+    {
+      "id": "S09",
+      "text": "[CRISP, Vocabulaire politique, réforme de l’État](https://www.vocabulairepolitique.be/reforme-de-letat/). Six réformes depuis 1970, frontière linguistique, lois linguistiques de 1962-1963, quatre régions linguistiques, affaire de Louvain en 1968, Communautés et Régions."
+    },
+    {
+      "id": "S10",
+      "text": "[SPF Emploi, durée du travail et temps de repos](https://emploi.belgique.be/fr/themes/reglementation-du-travail/duree-du-travail-et-temps-de-repos). Limites de 8 heures par jour et de 40 heures par semaine, ramenées à 38 heures en moyenne annuelle."
+    },
+    {
+      "id": "S11",
+      "text": "[The Brussels Times avec Belga, chiffres Febiac et Traxio, 17 avril 2026](https://www.brusselstimes.com/belgium/2082584/car-industry-sees-private-buyers-return-as-sales-normalise/). Particuliers : 41,7 % des immatriculations de voitures neuves en 2025, 48,8 % au premier trimestre 2026. Les autres immatriculations relèvent d’acheteurs professionnels."
+    },
+    {
+      "id": "S12",
+      "text": "[Eurostat, Structure of earnings survey, salaires horaires, 2022](https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses_hourly?lang=EN&geo=BE&geo=FR&time=2022&sex=T&age=TOTAL&isco08=TOTAL&worktime=TOTAL&nace_r2=B-S_X_O). Série earn_ses_hourly, MED_E_EUR 23,84 et MEAN_E_EUR 26,97 pour la Belgique. Tous sexes, âges, professions et temps de travail ; entreprises d’au moins dix salariés, sections NACE B à S hors O. Brut par heure payée du mois de référence. Montants en euros, monnaie locale. [Méthode](https://ec.europa.eu/eurostat/cache/metadata/en/earn_ses_main_esms.htm)."
+    },
+    {
+      "id": "S13",
+      "text": "[OCDE, Taxing Wages 2026](https://www.oecd.org/en/publications/taxing-wages-2026_3a5169ef-en.html), [extraction SDMX DF_TW_COMP, Belgique et France, 2025](https://sdmx.oecd.org/public/rest/data/OECD.CTP.TPS,DSD_TAX_WAGES_COMP@DF_TW_COMP,/BEL+FRA.......?startPeriod=2025&format=csvfilewithlabels). Mesure AV_TW. Belgique : 52,482 % (S_C0, AW100) ; 45,715 % (S_C0, AW67) ; 36,858 % (C_C2, AW100, conjoint sans revenu)."
+    },
+    {
+      "id": "S14",
+      "text": "[Eurostat, taux de chômage par région NUTS 1, lfst_r_lfu3rt](https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/lfst_r_lfu3rt?lang=EN&geo=BE&geo=BE1&geo=BE2&geo=BE3&time=2025&sex=T&age=Y15-74&unit=PC&isced11=TOTAL), mise à jour du 30 octobre 2026. 15-74 ans, tous niveaux d’éducation, moyenne 2025. BE1 Bruxelles 12,6 ; BE2 Flandre 4,3 ; BE3 Wallonie 7,8 ; Belgique 6,2."
+    },
+    {
+      "id": "S15",
+      "text": "[Eurostat, valeur ajoutée par activité, comptes nationaux 2025](https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10_a10?lang=EN&geo=BE&time=2025&unit=CP_MEUR&na_item=B1G), mise à jour du 11 novembre 2026, données provisoires. B1G en millions d’euros courants : total 580 272,3 ; A 5 240,3 ; B-E 86 319,9 ; F 32 559,6. Industrie et construction additionnées ; services par différence ; parts calculées sur la VA totale, hors impôts nets sur les produits. Même calcul pour la France."
+    },
+    {
+      "id": "S16",
+      "text": "[Port of Antwerp-Bruges, bilan 2025](https://newsroom.portofantwerpbruges.com/en/press-releases/port-of-antwerp-bruges-ends-2025-with-resilience-in-a-turbulent-trading-climate). Trafic maritime total de 266,5 millions de tonnes en 2025, en baisse de 4,1 % ; grèves et contexte géopolitique."
+    },
+    {
+      "id": "S17",
+      "text": "[imec, About us](https://www.imec-int.com/en/about-us). Siège à Louvain, fondé en 1984, recherche en nanoélectronique et technologies numériques."
+    },
+    {
+      "id": "S18",
+      "text": "[Eurostat, dépendance énergétique, nrg_ind_id](https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nrg_ind_id?lang=EN&geo=BE&geo=FR&time=2024&siec=TOTAL), mise à jour du 16 juillet 2026. Importations nettes rapportées à l’énergie brute disponible, tous produits, 2024 : Belgique 75,448 %. Même convention que la France pour la chaleur nucléaire."
+    },
+    {
+      "id": "S19",
+      "text": "[World Nuclear News, abrogation de la loi de sortie du nucléaire, mai 2025](https://world-nuclear-news.org/articles/belgium-reverses-phase-out-policy-as-denmark-reconsiders-nuclear). Vote de la Chambre du 15 mai 2025 ; prolongation de Doel 4 et Tihange 3."
+    },
+    {
+      "id": "S20",
+      "text": "OICA, production mondiale de véhicules par pays, copies archivées des tableaux annuels : [2000](http://web.archive.org/web/20251016095751/https://oica.net/category/production-statistics/2000-statistics/), [2005](http://web.archive.org/web/20251015142755/https://oica.net/category/production-statistics/2005-statistics/), [2010](http://web.archive.org/web/20251011171341/https://oica.net/category/production-statistics/2010-statistics/), [2015](http://web.archive.org/web/20251018232552/https://oica.net/category/production-statistics/2015-statistics/), [2019](http://web.archive.org/web/20251016094216/https://oica.net/category/production-statistics/2019-statistics/). Les autres années de 2001 à 2018 proviennent des pages du même modèle d’adresse. Ligne Belgium, colonne Total."
+    },
+    {
+      "id": "S21",
+      "text": "[OICA, enquête des correspondants, production mondiale 2025 par pays, copie publiée par l’AFIA](https://www.afia.pt/wp-content/uploads/2026/04/prod-total-2025.pdf). Belgique, tous véhicules : 285 797 en 2019 ; 261 038 en 2021 ; 285 473 en 2022 ; 332 103 en 2023 ; 240 366 en 2024 ; 253 418 en 2025. Source nationale indiquée : Febiac. Aucune colonne 2020."
+    },
+    {
+      "id": "S22",
+      "text": "[The Brussels Times, Ford Genk dix ans après, 18 décembre 2024](https://www.brusselstimes.com/1360005/ford-plant-genk-looking-back-after-ten-years-of-closure). Fermeture le 18 décembre 2014, environ 4 300 salariés ; fermeture de Renault Vilvorde en 1997 ; Volvo Car Gand, seule grande usine automobile restante après Audi Bruxelles."
+    },
+    {
+      "id": "S23",
+      "text": "[The Brussels Times, fermeture d’Audi Bruxelles, février 2025](https://brusselstimes.com/1463904/audi-factory-in-brussels-shuts-up-shop-after-more-than-75-years). Fin de la production du Q8 e-tron et fermeture fin février 2025, environ 3 000 emplois."
+    },
+    {
+      "id": "S24",
+      "text": "[The Brussels Times, début de production de l’EX30 à Gand, 2025](https://www.brusselstimes.com/belgium/1550038/volvo-starts-production-of-ex30-to-give-last-belgian-car-plant-a-lifeline/) ; [Newmobility.news, production de Volvo Car Gand en 2025, 13 janvier 2026](https://newmobility.news/en/2026/01/13/ex30-lifts-volvo-car-ghent-output-14-despite-recall-of-china-built-cars/)."
+    },
+    {
+      "id": "S25",
+      "text": "[AfricaMuseum, points de vue du musée](https://www.africamuseum.be/en/about_us/viewpoints). État indépendant du Congo gouverné par Léopold II, exploitation du caoutchouc et de l’ivoire, violences et travail forcé ; collections acquises pendant la période coloniale."
+    },
+    {
+      "id": "S26",
+      "text": "[La Libre Belgique, lettre du roi Philippe au président Tshisekedi, 30 juin 2020](https://www.lalibre.be/international/afrique/colonialisme-dans-une-lettre-adressee-a-felix-tshisekedi-le-roi-philippe-exprime-ses-plus-profonds-regrets-5efa3f319978e21bd0d7d85a). « Plus profonds regrets » pour les blessures de la période coloniale, soixantième anniversaire de l’indépendance."
+    },
+    {
+      "id": "S27",
+      "text": "[Commission royale d’histoire, Belelite, gouvernements fédéraux](https://www.commissionroyalehistoire.be/belelite/fr/gov/governmentsoverview/fed). Dates et partis des gouvernements, de Verhofstadt I (12 juillet 1999) à De Wever (depuis le 3 février 2025). Le gouvernement De Croo comprend sept partis."
+    },
+    {
+      "id": "S28",
+      "text": "[Wikipédia, élections fédérales belges de 2024](https://en.wikipedia.org/wiki/2024_Belgian_federal_election). Sièges à la Chambre : N-VA 24, Vlaams Belang 20, MR 20, PS 16, PVDA-PTB 15, Les Engagés 14, Vooruit 13, CD&V 11, Open Vld 7, Groen 6, Ecolo 3, DéFI 1."
+    },
+    {
+      "id": "S29",
+      "text": "[The World, prestation de serment d’Elio Di Rupo après 541 jours de blocage, 6 décembre 2011](https://theworld.org/stories/2011-12-06/elio-di-rupo-sworn-belgiums-pm-after-541-day-deadlock)."
+    },
+    {
+      "id": "S30",
+      "text": "[VRT NWS, verdict du procès des attentats de Bruxelles, 26 juillet 2023](https://www.vrt.be/vrtnws/fr/2023/07/26/verdict-du-proces-des-attentats-six-accuses-coupables-sur-tout/). Attentats du 22 mars 2016 à Zaventem et Maelbeek ; six accusés coupables d’assassinats terroristes."
+    },
+    {
+      "id": "S31",
+      "text": "[Wikipédia, gouvernement Michel II](https://en.wikipedia.org/wiki/Michel_II_Government). Sortie des ministres N-VA et remaniement du 9 décembre 2018."
+    },
+    {
+      "id": "S32",
+      "text": "[Eunews, démission de Bart De Wever mise en suspens, 2 novembre 2026](https://www.eunews.it/en/2026/11/02/belgian-government-in-turmoil-over-budget-king-puts-prime-minister-de-wevers-resignation-on-hold/). Échec des discussions sur le budget 2027, décision royale suspendue, consultations des partis. Déficit et dette cités d’après Belga ; ces chiffres ne sont pas repris dans la fiche."
+    },
+    {
+      "id": "S33",
+      "text": "[L’Avenir, rencontre entre le roi et Bart De Wever, 16 novembre 2026](https://www.lavenir.net/actu/belgique/politique/2026/11/16/un-accord-pour-le-jour-de-manifestation-L2ZM3MLEFVHQLB5FBJ656F3BOI/). Refus de Vooruit le 15 novembre, demande de poursuivre les négociations, nouveau rendez-vous et manifestation nationale le 23 novembre. État des faits au 17 novembre ; aucune issue affirmée."
+    },
+    {
+      "id": "S34",
+      "text": "[The Brussels Times, élection du gouvernement bruxellois, 14 février 2026](https://www.brusselstimes.com/1972293/brussels-ministers-elected-by-new-parliament). Gouvernement Dilliès après plus de 600 jours sans gouvernement régional de plein exercice."
+    },
+    {
+      "id": "S35",
+      "text": "[UNESCO, maisons majeures de l’architecte Victor Horta (Bruxelles)](https://whc.unesco.org/en/list/1005/). Inscription en 2000, Art nouveau."
+    },
+    {
+      "id": "S36",
+      "text": "[Qobuz, R&S Records, quand la Belgique donnait le tempo, 30 avril 2018](https://www.qobuz.com/ca-en/magazine/story/2018/04/30/rs-records-when-belgium-set-the-pace/). Label fondé en 1983 par Renaat Vandepapeliere et Sabine Maes ; new beat ; « Energy Flash » de Joey Beltram, 1990."
+    },
+    {
+      "id": "S37",
+      "text": "[Vice, quand la Belgique se réinventait avec la new beat](https://www.vice.com/fr/article/quand-la-belgique-se-reinventait-avec-la-new-beat/). Origines de la new beat dans les clubs belges à la fin des années 1980."
+    },
+    {
+      "id": "S38",
+      "text": "[Wikipédia, Tomorrowland](https://en.wikipedia.org/wiki/Tomorrowland_(festival)). Festival organisé à Boom, au parc De Schorre, depuis 2005."
+    },
+    {
+      "id": "S39",
+      "text": "[UNESCO, culture de la bière en Belgique](https://ich.unesco.org/en/RL/beer-culture-in-belgium-01062). Inscription au patrimoine culturel immatériel en 2016."
+    },
+    {
+      "id": "S40",
+      "text": "[DG Trésor, relations économiques bilatérales France-Belgique, 19 mai 2026](https://www.tresor.economie.gouv.fr/Pays/BE/relations-bilaterales). Échanges de biens de 89,4 milliards d’euros en 2025 ; sixième partenaire commercial de la France ; stock d’IDE français de 126,4 milliards d’euros en 2024 ; environ 2 600 filiales françaises."
+    },
+    {
+      "id": "S41",
+      "text": "[Wikipédia, Tour des Flandres, liste des vainqueurs](https://en.wikipedia.org/wiki/Tour_of_Flanders_(men%27s_race)). 110 éditions de 1913 à 2026 ; décompte par nationalité refait à partir de la liste et concordant avec le tableau de la page. Création en 1913 par le journal Sportwereld ; Pogačar vainqueur en 2023, 2025 et 2026 ; dernier vainqueur belge : Philippe Gilbert en 2017."
+    },
+    {
+      "id": "S42",
+      "text": "[Wikipédia, Remco Evenepoel](https://en.wikipedia.org/wiki/Remco_Evenepoel). Champion olympique de la course en ligne et du contre-la-montre à Paris en 2024."
+    },
+    {
+      "id": "S43",
+      "text": "[Wikipédia, Adolphe Sax](https://fr.wikipedia.org/wiki/Adolphe_Sax). Né à Dinant ; brevet français du saxophone du 21 mars 1846."
+    },
+    {
+      "id": "S44",
+      "text": "visit.brussels : [gastronomie belge d’hiver](https://www.visit.brussels/en/visitors/where-to-eat/gastronomie-belge-plaisir-hivernal-), [spécialités culinaires de Bruxelles](https://www.visit.brussels/en/visitors/where-to-eat/brussels-culinary-specialities). Stoemp, waterzooi, carbonnade, chicons au gratin, moules-frites, croquettes de crevettes, gaufre de Bruxelles, chocolat."
+    },
+    {
+      "id": "S45",
+      "text": "[Centre belge de la bande dessinée](https://www.cbbd.be/fr) ; [Musée Hergé](https://www.museeherge.com/fr). Patrimoine de la bande dessinée belge, Hergé et Tintin."
+    },
+    {
+      "id": "S46",
+      "text": "[Wikipédia, Révolution belge](https://fr.wikipedia.org/wiki/R%C3%A9volution_belge). Soulèvement de 1830 contre le royaume uni des Pays-Bas, indépendance et monarchie constitutionnelle."
+    },
+    {
+      "id": "HDI",
+      "text": "[PNUD, Human Development Report 2025, annexe statistique](https://hdr.undp.org/sites/default/files/2025_HDR/HDR25_Statistical_Annex_Tables_1-7.pdf). Tableau 1, données 2023 : Belgique 0,951, rang 10."
+    },
+    {
+      "id": "GINI",
+      "text": "[Eurostat, Gini du revenu disponible équivalent, EU-SILC 2025](https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_di12?lang=EN&geo=BE&time=2025&age=TOTAL), mise à jour du 12 novembre 2026. Échelle 0-100 : 23,4. Revenus de l’année précédente, après transferts ; même définition que la référence française EU-SILC 2025. Ne mesure pas le patrimoine."
+    },
+    {
+      "id": "VDEM",
+      "text": "[V-Dem, Democracy Report 2026](https://www.v-dem.net/documents/75/V-Dem_Institute_Democracy_Report_2026_lowres.pdf). Tableau A2, p. 48 : indice de démocratie libérale 2025, Belgique 0,79, rang 10. Même publication et définition que la France."
+    },
+    {
+      "id": "RSF",
+      "text": "[RSF, Belgique, classement 2026](https://rsf.org/en/country/belgium). Score 81,17 ; rang 16 sur 180."
+    },
+    {
+      "id": "CPI",
+      "text": "[Transparency International, Belgique, CPI 2025](https://www.transparency.org/en/countries/belgium). Score 69 sur 100 ; rang 21 sur 182."
+    },
+    {
+      "id": "GDP",
+      "text": "[FMI, World Economic Outlook, octobre 2026, PIB nominal de la Belgique](https://www.imf.org/external/datamapper/NGDPD@WEO/BEL). [Extraction API NGDPD](https://www.imf.org/external/datamapper/api/v1/NGDPD/BEL), année 2025 : 725,056 milliards de dollars courants, multipliés par un milliard sans arrondi préalable. Même millésime que la France."
+    },
+    {
+      "id": "UNEMP",
+      "text": "[Eurostat, taux de chômage annuel 2025](https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/une_rt_a?lang=EN&geo=BE&time=2025&sex=T&age=Y15-74&unit=PC_ACT), mise à jour du 6 novembre 2026. Au sens du BIT, 15-74 ans, tous sexes, pourcentage des actifs : 6,2. Même série et période que la France."
+    },
+    {
+      "id": "RN",
+      "text": "[Registre national, chiffres de la population par province et par commune au 1er janvier 2026, PDF](https://www.rijksregister.fgov.be/sites/default/files/documents/fr/population/statistiques/population-bevolking-20260101.pdf). Date d’observation : 24 janvier 2026. Communes : Anvers 564 561 ; Gand 273 665 ; Charleroi 206 585 ; Liège 198 044 ; Bruges 120 393 ; Namur 115 330 ; Louvain 105 233. Bruxelles : total de la Région de Bruxelles-Capitale et de ses 19 communes, 1 251 715 ; la seule commune de Bruxelles compte 198 005 habitants. Ces chiffres diffèrent légèrement des totaux régionaux Statbel."
+    },
+    {
+      "id": "COORD",
+      "text": "[Natural Earth, populated places, 1:10m](https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_populated_places.geojson), domaine public : centres de Brussels, Antwerpen, Gent, Charleroi, Liège, Brugge et Namur. Louvain, absente de ce fichier : coordonnées [Wikidata Q118958](https://www.wikidata.org/wiki/Q118958), propriété P625."
+    },
+    {
+      "id": "FLAG",
+      "text": "[Wikimedia Commons, Flag of Belgium.svg](https://commons.wikimedia.org/wiki/File:Flag_of_Belgium.svg). Dbenbenn et autres contributeurs ; domaine public, dessin géométrique simple (PD-shape). Proportions 13:15 du protocole belge. SVG original conservé, 182 octets."
+    },
+    {
+      "id": "NE",
+      "text": "[Natural Earth, conditions de réutilisation](https://www.naturalearthdata.com/about/terms-of-use/). Domaine public. Contours du localisateur régional et repère mondial ; aucune position sur les frontières."
+    },
+    {
+      "id": "CITYMAP",
+      "text": "[Wikimedia Commons, Belgium location map.svg](https://commons.wikimedia.org/wiki/File:Belgium_location_map.svg). NordNordWest, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0). SVG original conservé, 122 830 octets. [Bornes et projection](https://en.wikipedia.org/wiki/Module:Location_map/data/Belgium) : nord 51,8, sud 49,2, ouest 2,2, est 6,9, équirectangulaire. Repères numérotés ajoutés à l’affichage."
+    }
+  ],
+  "hero_sources": [
+    "S01",
+    "FLAG"
+  ],
+  "map_sources": {
+    "locator": [
+      "NE"
+    ],
+    "cities": [
+      "RN",
+      "COORD"
+    ]
+  },
+  "cities_map": {
+    "file": "cities.svg",
+    "width": 1136,
+    "height": 988,
+    "bounds": {
+      "top": 51.8,
+      "bottom": 49.2,
+      "left": 2.2,
+      "right": 6.9
+    },
+    "projection": {
+      "type": "equirectangular"
+    },
+    "credit": {
+      "author": "NordNordWest",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Belgium_location_map.svg"
+    },
+    "definition_url": "https://en.wikipedia.org/wiki/Module:Location_map/data/Belgium",
+    "source_ids": [
+      "CITYMAP"
+    ]
+  },
+  "cities_title": "Huit pôles urbains",
+  "cities_scope": "Communes · 1er janvier 2026 · Registre national ; Bruxelles : région de 19 communes",
+  "cities_note": "Repères des centres urbains. Les populations suivent les limites communales. Bruxelles regroupe les 19 communes de sa région."
+}

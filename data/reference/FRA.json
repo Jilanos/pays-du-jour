@@ -140,6 +140,18 @@
     {
       "id": "FR-PERIOD-IND",
       "text": "[Banque mondiale, périodes de référence des séries WDI](https://datahelpdesk.worldbank.org/knowledgebase/articles/201203-are-all-wdi-series-on-a-calendar-year-reporting-pe) ; [métadonnées de l’Inde](https://databank.worldbank.org/metadataglossary/adjusted-net-savings/country/IND). Comptes indiens en exercice clos le 31 mars ; comptes français en année civile. Aucun regroupement trimestriel français au même champ vérifié pour cette fiche."
+    },
+    {
+      "id": "FR-AGE-EU-2025",
+      "text": "[Eurostat, population au 1er janvier par groupe d’âge quinquennal et sexe, demo_pjangroup](https://ec.europa.eu/eurostat/databrowser/view/demo_pjangroup/default/table?lang=fr), [API Belgique et France, 2025](https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/demo_pjangroup?lang=EN&geo=BE&geo=FR&time=2025&sex=M&sex=F), mise à jour du 15 novembre 2026. Classes Y_LT5 à Y80-84, puis Y_GE85. Effectifs par sexe ; sommes vérifiées sur les totaux publiés. Même date et même série que la Belgique."
+    },
+    {
+      "id": "FR-FERT-EU-2024",
+      "text": "[Eurostat, indicateur conjoncturel de fécondité, demo_find](https://ec.europa.eu/eurostat/databrowser/view/demo_find/default/table?lang=fr), [API Belgique et France, 2024](https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/demo_find?lang=EN&geo=BE&geo=FR&indic_de=TOTFERRT&time=2024), mise à jour du 13 novembre 2026. France : 1,61 enfant par femme. Même série et même année que la Belgique."
+    },
+    {
+      "id": "FR-TAXWEDGE-2025",
+      "text": "[OCDE, Taxing Wages 2026](https://www.oecd.org/en/publications/taxing-wages-2026_3a5169ef-en.html), [extraction SDMX DF_TW_COMP, Belgique et France, 2025](https://sdmx.oecd.org/public/rest/data/OECD.CTP.TPS,DSD_TAX_WAGES_COMP@DF_TW_COMP,/BEL+FRA.......?startPeriod=2025&format=csvfilewithlabels). Mesure AV_TW : impôt sur le revenu et cotisations sociales salariales et patronales, moins les prestations en espèces, en part du coût du travail. France : 47,178 % pour un célibataire sans enfant au salaire moyen (S_C0, AW100) ; 41,174 % à deux tiers du salaire moyen (S_C0, AW67) ; 39,062 % pour un couple avec deux enfants et un seul salaire moyen (C_C2, AW100, conjoint sans revenu). Mêmes cas types et même année que la Belgique."
     }
   ],
   "population": {
@@ -1301,6 +1313,105 @@
     "source_ids": [
       "FR-VA-DZA",
       "FR-PERIOD-IND"
+    ]
+  },
+  "pyramide-eurostat-2025-85plus": {
+    "status": "comparable",
+    "unit": "personnes",
+    "year": 2025,
+    "coverage": "Résidents · 1er janvier 2025 · Eurostat · classes quinquennales, puis 85 ans ou plus",
+    "source_ids": [
+      "FR-AGE-EU-2025"
+    ],
+    "age_groups": [
+      "0–4",
+      "5–9",
+      "10–14",
+      "15–19",
+      "20–24",
+      "25–29",
+      "30–34",
+      "35–39",
+      "40–44",
+      "45–49",
+      "50–54",
+      "55–59",
+      "60–64",
+      "65–69",
+      "70–74",
+      "75–79",
+      "80–84",
+      "85+"
+    ],
+    "male": [
+      1710265,
+      1967741,
+      2171635,
+      2200079,
+      2027909,
+      1962847,
+      2008617,
+      2118083,
+      2141885,
+      2052144,
+      2243676,
+      2170823,
+      2085796,
+      1865693,
+      1690782,
+      1422121,
+      794541,
+      799433
+    ],
+    "female": [
+      1636998,
+      1869361,
+      2073305,
+      2059730,
+      1939204,
+      1960999,
+      2068320,
+      2215870,
+      2251732,
+      2110090,
+      2294302,
+      2255449,
+      2226210,
+      2094102,
+      1987572,
+      1749818,
+      1076025,
+      1579443
+    ]
+  },
+  "fecondite-eurostat-2024": {
+    "status": "comparable",
+    "value": 1.61,
+    "unit": "enfant/femme",
+    "year": 2024,
+    "precision": 1,
+    "coverage": "Indicateur conjoncturel · Eurostat 2024",
+    "source_ids": [
+      "FR-FERT-EU-2024"
+    ]
+  },
+  "coin-fiscal-2025": {
+    "status": "comparable",
+    "year": 2025,
+    "unit": "%",
+    "labels": [
+      "Célibataire sans enfant, salaire moyen",
+      "Célibataire sans enfant, deux tiers du salaire moyen",
+      "Couple avec deux enfants, un seul salaire moyen"
+    ],
+    "values": [
+      47.178061,
+      41.173728,
+      39.061738
+    ],
+    "coverage": "OCDE, Taxing Wages 2026 · coin fiscal moyen 2025",
+    "source_ids": [
+      "FR-TAXWEDGE-2025"
     ]
   }
 }
