@@ -8,7 +8,7 @@ monnaie: euro (EUR)
 langues: [néerlandais, français, allemand]
 langue_principale: néerlandais
 region: Europe de l’Ouest
-chapo: Un petit royaume au carrefour des mondes latin et germanique, partagé entre deux grandes communautés linguistiques. Sa capitale accueille l’Europe, ses routes pavées le cyclisme et ses clubs une part de l’histoire de la techno.
+chapo: Un petit royaume au carrefour des mondes latin et germanique, partagé entre deux grandes communautés linguistiques. Sa capitale accueille l’Europe, ses routes pavées le cyclisme, ses clubs une part de l’histoire de la techno.
 date_donnees: 2026-11-17
 temps_lecture_min: 10
 relief_pertinent: false
@@ -22,15 +22,15 @@ relief_pertinent: false
 
 La Belgique borde la France, le Luxembourg, l’Allemagne, les Pays-Bas et la mer du Nord. Bruxelles est la capitale du royaume. Elle accueille aussi les principales institutions de l’Union européenne. Le pays compte trois langues officielles : le néerlandais, le français et l’allemand. {#geographie-situation sources="S01,S02" label="Un carrefour européen"}
 
-Le point culminant, le signal de Botrange, se trouve sur le plateau des Hautes Fagnes, dans le massif ardennais. Il atteint {{value:botrange}}. Le relief reste modeste. Il compte pourtant pour le cycliste : le Tour des Flandres doit son caractère aux côtes courtes des Ardennes flamandes. {#geographie-relief sources="S07,S41" label="Plaines et plateaux"}
+Le point culminant, le signal de Botrange, se trouve sur le plateau des Hautes Fagnes, dans le massif ardennais. Il atteint {{value:botrange}}. Le relief reste modeste. Il compte pourtant pour le cycliste : le Tour des Flandres doit son caractère aux côtes courtes des Ardennes flamandes. {#geographie-relief sources="S07,S41" label="Relief et point culminant"}
 
 {{map:cities}}
 
-Les villes forment un réseau dense. Bruxelles regroupe dix-neuf communes dans sa propre région. Anvers vit de son port. Le port d’Anvers-Bruges traite {{value:port-anvers}} de marchandises en 2025. Gand accueille la dernière grande usine automobile du pays. Louvain accueille imec, un centre de recherche en nanoélectronique fondé en 1984. {#geographie-villes sources="RN,S16,S17,S24" label="Un réseau de villes"}
+Les villes forment un réseau dense. Bruxelles regroupe dix-neuf communes dans sa propre région. Anvers vit de son port. Le port d’Anvers-Bruges traite {{value:port-anvers}} de marchandises en 2025. Gand accueille la dernière grande usine automobile du pays. Louvain accueille l’université et le centre de recherche imec. {#geographie-villes sources="RN,S16,S17,S24" label="Un réseau de villes"}
 
 {{chart:climat}}
 
-Le climat est océanique. Les hivers restent doux et les étés modérés. Il pleut en toute saison, sans mois vraiment sec. Uccle reçoit plus de pluie que Paris et connaît des après-midi d’été un peu moins chauds. Pour courir ou rouler, le vent, la bruine et les routes humides comptent davantage que le froid. {#climat-saisons sources="S06,FR-CLIM" label="Saisons et pratique sportive"}
+Le climat est océanique. Les hivers restent doux et les étés modérés. Il pleut en toute saison, sans mois vraiment sec. Uccle reçoit plus de pluie que Paris et connaît des après-midi d’été un peu moins chauds. Pour courir ou rouler, la pluie fréquente compte davantage que le froid. {#climat-saisons sources="S06,FR-CLIM" label="Saisons et pratique sportive"}
 
 ## Population
 
@@ -74,6 +74,8 @@ Les services dominent la valeur ajoutée, comme en France. L’industrie pèse u
 
 Le pays importe {{value:dependance-bel}} de l’énergie qu’il consomme en 2024, contre {{value:dependance-fr}} pour la France. La loi de 2003 prévoyait la sortie du nucléaire. Le 15 mai 2025, la Chambre l’abroge. Elle lève aussi l’interdiction de construire de nouveaux réacteurs. Les deux plus récents, Doel 4 et Tihange 3, doivent fonctionner dix ans de plus. {#economie-energie sources="S18,S19,FR-ENERGY-DEP-2024" label="Énergie et nucléaire"}
 
+À Louvain, imec se présente comme le plus grand centre de recherche indépendant au monde en nanoélectronique et en technologies numériques. Fondé en 1984, il emploie {{value:imec}}. Il travaille avec des partenaires industriels, des start-up et plus de deux cents universités. Sa ligne pilote, alignée sur le Chips Act européen, prépare des procédés au-delà de 2 nm. {#economie-imec sources="S17" label="imec, la recherche sur les puces"}
+
 {{chart:production-auto}}
 
 La Belgique a longtemps été une terre d’assemblage automobile. Renault ferme Vilvorde en 1997. Ford arrête Genk le 18 décembre 2014. Audi ferme son usine de Bruxelles fin février 2025, avec environ 3 000 emplois. Volvo Car Gand reste la seule grande usine automobile du pays. Elle produit aussi l’EX30 électrique depuis 2025. La production nationale remonte légèrement cette année-là. {#economie-automobile sources="S20,S21,S22,S23,S24" label="La fin de l’assemblage de masse"}
@@ -109,7 +111,7 @@ Tous ces gouvernements sont des coalitions, de trois à sept partis. Sophie Wilm
 
 **2007-2011.** Après les élections de 2007, partis flamands et francophones s’opposent sur l’équilibre entre communautés. Leterme, Van Rompuy puis de nouveau Leterme dirigent le gouvernement. Celui-ci gère les affaires courantes à partir d’avril 2010. Il faut 541 jours sans nouveau gouvernement avant l’investiture d’Elio Di Rupo, en décembre 2011. Il est le premier Premier ministre francophone depuis trente ans. Sa coalition engage la sixième réforme de l’État. {#dynamiques-2007-2011 sources="S27,S29,S09" label="Politique · 2007-2011"}
 
-**2014-2020.** Charles Michel forme en 2014 une coalition avec la N-VA, le CD&V et l’Open VLD. Son MR y est le seul parti francophone. Le 22 mars 2016, des attentats djihadistes frappent l’aéroport de Zaventem et la station de métro Maelbeek. En 2023, le jury déclare six accusés coupables d’assassinats terroristes. La N-VA quitte le gouvernement en décembre 2018. La coalition restante devient minoritaire. {#dynamiques-2014-2020 sources="S27,S30,S31" label="Politique · 2014-2020"}
+**2014-2020.** Charles Michel forme en 2014 une coalition avec la N-VA, le CD&V et l’Open VLD. Son MR y est le seul parti francophone. Le 22 mars 2016, des attentats djihadistes frappent l’aéroport de Zaventem et la station de métro Maelbeek. La N-VA quitte le gouvernement en décembre 2018. La coalition restante devient minoritaire. Le procès des attentats s’achève en 2023 : le jury déclare six accusés coupables d’assassinats terroristes. {#dynamiques-2014-2020 sources="S27,S30,S31" label="Politique · 2014-2020"}
 
 **2020-2024.** Alexander De Croo dirige la coalition Vivaldi à partir d’octobre 2020. Elle réunit sept partis, des socialistes aux libéraux en passant par les écologistes. Aux élections du 9 juin 2024, la N-VA obtient 24 sièges. Le Vlaams Belang et le MR en obtiennent 20 chacun. Le pays bascule à droite. {#dynamiques-2020-2024 sources="S27,S28,S02" label="Politique · 2020-2024"}
 

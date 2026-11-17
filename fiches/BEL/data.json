@@ -241,6 +241,10 @@
       "source_ids": [
         "RN",
         "COORD"
+      ],
+      "offset": [
+        8,
+        4
       ]
     },
     {
@@ -253,6 +257,10 @@
       "source_ids": [
         "RN",
         "COORD"
+      ],
+      "offset": [
+        10,
+        -8
       ]
     }
   ],
@@ -518,8 +526,8 @@
     {
       "id": "production-auto",
       "type": "line",
-      "title": "La production automobile divisée par quatre depuis 2001",
-      "subtitle": "Véhicules produits en Belgique · voitures et utilitaires · 2000–2025",
+      "title": "La production automobile divisée par plus de quatre depuis 2001",
+      "subtitle": "Véhicules produits en Belgique · voitures et utilitaires · millions · 2000–2025",
       "year": "2000–2025",
       "x": [
         2000,
@@ -553,36 +561,36 @@
         {
           "name": "Belgique",
           "values": [
-            1033294,
-            1187257,
-            1057189,
-            909383,
-            900273,
-            926515,
-            918056,
-            834403,
-            724498,
-            537354,
-            555302,
-            595084,
-            538848,
-            503504,
-            516831,
-            409340,
-            399427,
-            379140,
-            308493,
-            285797,
+            1.033294,
+            1.187257,
+            1.057189,
+            0.909383,
+            0.900273,
+            0.926515,
+            0.918056,
+            0.834403,
+            0.724498,
+            0.537354,
+            0.555302,
+            0.595084,
+            0.538848,
+            0.503504,
+            0.516831,
+            0.40934,
+            0.399427,
+            0.37914,
+            0.308493,
+            0.285797,
             null,
-            261038,
-            285473,
-            332103,
-            240366,
-            253418
+            0.261038,
+            0.285473,
+            0.332103,
+            0.240366,
+            0.253418
           ]
         }
       ],
-      "unit": "véhicules",
+      "unit": "millions de véhicules",
       "source_ids": [
         "S20",
         "S21"
@@ -593,7 +601,7 @@
         "source_ids": []
       },
       "note_visible": "Aucune valeur 2020 n’a été retrouvée dans les tableaux OICA consultés : la ligne est interrompue.",
-      "note": "OICA, production de véhicules à moteur, total des voitures particulières et des véhicules utilitaires. 2000–2019 : tableaux annuels par pays de l’OICA, copies archivées. 2021–2025 : enquête des correspondants OICA publiée en 2026, source nationale Febiac. Valeurs publiées sans recalcul."
+      "note": "OICA, production de véhicules à moteur, total des voitures particulières et des véhicules utilitaires. 2000–2019 : tableaux annuels par pays de l’OICA, copies archivées. 2021–2025 : enquête des correspondants OICA publiée en 2026, source nationale Febiac. Unités publiées divisées exactement par 1 000 000 pour l’affichage en millions, sans autre recalcul."
     },
     {
       "id": "ronde",
@@ -656,7 +664,7 @@
     },
     "port-anvers": {
       "value": 266500000,
-      "unit": "tonnes"
+      "unit": "de tonnes"
     },
     "dependance-bel": {
       "value": 75.448,
@@ -670,11 +678,16 @@
     },
     "commerce-france": {
       "value": 89400000000,
-      "unit": "euros"
+      "unit": "d’euros"
     },
     "ide-france": {
       "value": 126400000000,
-      "unit": "euros"
+      "unit": "d’euros"
+    },
+    "imec": {
+      "value": 6500,
+      "unit": "personnes",
+      "precision": 0
     }
   },
   "sources": [
@@ -744,7 +757,7 @@
     },
     {
       "id": "S17",
-      "text": "[imec, About us](https://www.imec-int.com/en/about-us). Siège à Louvain, fondé en 1984, recherche en nanoélectronique et technologies numériques."
+      "text": "[imec, About us](https://www.imec-int.com/en/about-us). Siège à Louvain ; fondé en 1984 ; présenté comme le plus grand centre indépendant de recherche et d’innovation au monde en nanoélectronique et technologies numériques ; 6 500 scientifiques, ingénieurs et innovateurs de plus de cent pays ; partenaires industriels, start-up et plus de 200 universités ; ligne pilote alignée sur le Chips Act européen pour des procédés au-delà de 2 nm."
     },
     {
       "id": "S18",
