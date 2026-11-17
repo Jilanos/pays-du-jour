@@ -383,8 +383,12 @@ def cities(
         "<thead><tr><th>Ville</th><th>Population</th><th>Repère</th></tr></thead>"
         f"<tbody>{''.join(rows)}</tbody></table>"
     )
+    # Use the licensed image ratio, independent of any inset below the main frame.
+    layout = "cities-layout"
+    if map_data["width"] / map_data["height"] >= 1.25:
+        layout += " cities-layout-wide"
     return (
         f'<figure class="graphic cities-figure" id="villes"><h3>{escape(title)}{marker}</h3>'
         f'<p class="figure-note">{escape(note)}</p>'
-        f'<div class="cities-layout">{finish(root)}{table}</div></figure>'
+        f'<div class="{layout}">{finish(root)}{table}</div></figure>'
     )

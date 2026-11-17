@@ -94,6 +94,11 @@ Do not mix a current spot rate with an annual historical wage.
 
 ## Map verification
 
+City maps with a source image width/height ratio of at least 1.25 use the full reading
+column above their city table on desktop (768 CSS pixels and wider). The ratio excludes
+any inset appended below the source image. Mobile retains its existing single column
+and 340 px map limit. Do not add country-specific layout overrides.
+
 Run `uv run pytest` and `uv run python scripts/lint_fiche.py <ISO3>`. Start the app and run
 `scripts/screenshot.sh URL OUT_DIR ISO3`. This writes full pages, tiles, a viewport manifest,
 and separate `*-cities.png` and `*-locator.png` captures at desktop/mobile widths in both

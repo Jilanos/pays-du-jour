@@ -185,6 +185,42 @@ def test_licensed_assets_pins_insets_and_sources(code):
 
 
 @pytest.mark.parametrize(
+    "width,height,wide", [(124, 100, False), (125, 100, True), (100, 150, False)]
+)
+def test_city_layout_uses_image_aspect_ratio_without_country_rules(width, height, wide):
+    map_data = deepcopy(country_data("MAR")["cities_map"])
+    map_data.update(width=width, height=height)
+    bounds = map_data["bounds"]
+    city = {
+        "name": "Centre",
+        "population": 1000,
+        "lon": (bounds["left"] + bounds["right"]) / 2,
+        "lat": (bounds["top"] + bounds["bottom"]) / 2,
+    }
+    rendered = cities("XXX", "Test", [city], map_data)
+    assert ('class="cities-layout cities-layout-wide"' in rendered) is wide
+    # Layout selection does not crop or distort the licensed image.
+    root = svg_root(rendered)
+    background = root.find("{*}image")
+    assert float(background.get("width")) / float(background.get("height")) == pytest.approx(
+        width / height
+    )
+    assert rendered.index("</svg>") < rendered.index('<table class="cities-table"')
+
+
+@pytest.mark.parametrize(
+    "code,wide",
+    [("RUS", True), ("USA", True), ("CHN", True), ("BEL", False), ("NLD", False), ("ESP", False)],
+)
+def test_production_city_layouts(code, wide):
+    data = country_data(code)
+    rendered = cities(
+        code, code, data["cities"], data["cities_map"], inset=data.get("cities_inset")
+    )
+    assert ("cities-layout-wide" in rendered) is wide
+
+
+@pytest.mark.parametrize(
     "change,match",
     [
         ({"file": "../cities.svg"}, "local SVG"),
