@@ -46,10 +46,12 @@ def download(iso3, country, projection_from=None):
         if reviewed.get("definition_url") != module_url:
             raise ValueError("The reviewed projection must reference this exact module")
         projection = reviewed["projection"]
-        if projection.get("type") not in {"equidistant_conic", "japan_side_map"}:
+        if projection.get("type") not in {"equidistant_conic", "japan_side_map", "spain_side_map"}:
             raise ValueError("Custom x/y formulas require a supported projection")
         if projection.get("type") == "japan_side_map" and country != "Japan":
             raise ValueError("Japan side map requires the Japan module")
+        if projection.get("type") == "spain_side_map" and country != "Spain":
+            raise ValueError("Spain side map requires the Spain module")
         bounds = None
     else:
         projection = {"type": "equirectangular"}

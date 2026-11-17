@@ -99,6 +99,35 @@ def test_rectangular_map_corners_and_antimeridian():
 
 
 @pytest.mark.parametrize(
+    "point,expected",
+    [
+        ((-3.7038, 40.4168), (0.4215102041, 0.4106391753)),
+        ((2.1734, 41.3851), (0.8213197279, 0.3108144330)),
+        ((-15.4138, 28.0997), (0.8387030965, 0.9346074766)),
+        ((-9.9, 44.4), (0, 0)),
+        ((4.8, 34.7), (1, 1)),
+        ((-26.925, 38.1), (0, 0)),
+        ((-13.2, 27.4), (1, 1)),
+        ((-10, 40), (-0.0068027211, 0.4536082474)),
+    ],
+)
+def test_spain_module_reference_locations(point, expected):
+    # Madrid, Barcelona, Las Palmas, both frame corners and the longitude boundary.
+    data = {"projection": {"type": "spain_side_map"}}
+    assert map_point(data, point) == pytest.approx(expected, abs=1e-8)
+
+
+def test_spain_projection_rejects_wrong_module_and_rectangular_bounds():
+    data = deepcopy(country_data("MAR")["cities_map"])
+    data["projection"] = {"type": "spain_side_map"}
+    with pytest.raises(ValueError, match="exact Wikipedia module"):
+        validate_city_map(data, Settings().content_dir / "MAR/assets")
+    data["definition_url"] = "https://en.wikipedia.org/wiki/Module:Location_map/data/Spain"
+    with pytest.raises(ValueError, match="two frames"):
+        validate_city_map(data, Settings().content_dir / "MAR/assets")
+
+
+@pytest.mark.parametrize(
     "code,point,expected",
     [
         ("USA", (-77.04, 38.89), (0.81631028, 0.43527750)),
