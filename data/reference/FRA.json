@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-16",
+  "checked": "2026-11-17",
   "sources": [
     {
       "id": "FR-DEM",
@@ -132,6 +132,14 @@
     {
       "id": "FR-WDI-ISR-2024",
       "text": "[Banque mondiale, WDI, France, PIB et fécondité 2024](https://api.worldbank.org/v2/country/FRA/indicator/NY.GDP.MKTP.CD;SP.DYN.TFRT.IN?source=2&date=2024&format=json&per_page=100). Base du 11 novembre 2026. Même année, séries et définitions que les indicateurs israéliens. PIB nominal en dollars courants ; fécondité conjoncturelle."
+    },
+    {
+      "id": "FR-LIFE-IND",
+      "text": "[Banque mondiale, WDI, espérance de vie à la naissance, France, 2024](https://api.worldbank.org/v2/country/FRA/indicator/SP.DYN.LE00.IN?format=json&date=2024). Deux sexes, années, même définition que l’Inde. Extraction du 17 novembre 2026 ; base mise à jour le 11 novembre 2026."
+    },
+    {
+      "id": "FR-PERIOD-IND",
+      "text": "[Banque mondiale, périodes de référence des séries WDI](https://datahelpdesk.worldbank.org/knowledgebase/articles/201203-are-all-wdi-series-on-a-calendar-year-reporting-pe) ; [métadonnées de l’Inde](https://databank.worldbank.org/metadataglossary/adjusted-net-savings/country/IND). Comptes indiens en exercice clos le 31 mars ; comptes français en année civile. Aucun regroupement trimestriel français au même champ vérifié pour cette fiche."
     }
   ],
   "population": {
@@ -1156,6 +1164,46 @@
     "reason": "Cisjordanie seule : consommation totale par personne, enquête 2023. France : revenu disponible équivalent après redistribution, autre unité, autre champ et autre année.",
     "source_ids": [
       "FR-GINI"
+    ]
+  },
+  "esperance-vie-wdi-2024": {
+    "status": "comparable",
+    "value": 82.9804878048781,
+    "unit": "ans",
+    "year": 2024,
+    "coverage": "À la naissance, deux sexes · WDI 2024",
+    "source_ids": [
+      "FR-LIFE-IND"
+    ]
+  },
+  "salaires-ind": {
+    "status": "non_comparable",
+    "reason": "Inde : rémunération mensuelle déclarée des salariés réguliers, PLFS 2025, current weekly status, tous secteurs, sans EQTP ni harmonisation brut/net et primes. France : secteur privé en EQTP, primes incluses. Les périmètres, heures et concepts diffèrent.",
+    "source_ids": [
+      "FR-WAGE"
+    ]
+  },
+  "gini-ind": {
+    "status": "non_comparable",
+    "reason": "Inde : consommation par personne, HCES 2022-2023. France : revenu disponible par unité de consommation après redistribution. Concept, unité statistique et période distincts.",
+    "source_ids": [
+      "FR-GINI"
+    ]
+  },
+  "pib-ind": {
+    "status": "non_comparable",
+    "reason": "Le millésime WDI 2024 de l’Inde couvre avril 2024-mars 2025. Le PIB français disponible couvre janvier-décembre 2024. Une monnaie commune ne rend pas les périodes identiques.",
+    "source_ids": [
+      "FR-GDP",
+      "FR-PERIOD-IND"
+    ]
+  },
+  "valeur-ajoutee-ind": {
+    "status": "non_comparable",
+    "reason": "Même notion de valeur ajoutée courante hors impôts nets sur les produits, mais exercice avril 2024-mars 2025 en Inde et année civile 2024 en France. Pas de référence française sur les mêmes douze mois vérifiée.",
+    "source_ids": [
+      "FR-VA-DZA",
+      "FR-PERIOD-IND"
     ]
   }
 }
