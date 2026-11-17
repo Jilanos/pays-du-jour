@@ -343,7 +343,8 @@
           ]
         }
       ],
-      "france": "climat-paris-1981-2010"
+      "france": "climat-paris-1981-2010",
+      "rain_max": 120
     },
     {
       "id": "pyramide-ages",
@@ -529,7 +530,7 @@
       ],
       "subtitle": "Véhicules assemblés en Espagne · 2025 · parts en %",
       "labels": [
-        "Électriques et hybrides rechargeables",
+        "Électriques ou rechargeables",
         "Autres motorisations alternatives",
         "Essence et diesel"
       ],
@@ -552,7 +553,7 @@
       "subtitle": "Production nationale hors autoconsommation · 2025",
       "labels": [
         "Éolien",
-        "Solaire photovoltaïque",
+        "Photovoltaïque",
         "Hydraulique",
         "Nucléaire",
         "Gaz, cycles combinés",
@@ -755,7 +756,7 @@
     },
     {
       "id": "CERDAN",
-      "text": "RTVE : [placement en détention provisoire de Santos Cerdán](https://www.rtve.es/noticias/20250630/fiscalia-pide-prision-santos-cerdan-supremo-persecucion-politica/16645670.shtml), 30 juin 2025 ; [libération sous contrôle judiciaire](https://amp.rtve.es/noticias/20251119/juez-deja-libertad-a-santos-cerdan-tras-cinco-meses-prision/16821827.shtml), 19 novembre 2025. Enquête sur des commissions présumées dans les marchés publics ; absence de jugement déduite de ces seules mesures de procédure, aucune culpabilité affirmée."
+      "text": "RTVE : [placement en détention provisoire de Santos Cerdán](https://www.rtve.es/noticias/20250630/fiscalia-pide-prision-santos-cerdan-supremo-persecucion-politica/16645670.shtml), 30 juin 2025 ; [libération sous contrôle judiciaire](https://amp.rtve.es/noticias/20251119/juez-deja-libertad-a-santos-cerdan-tras-cinco-meses-prision/16821827.shtml), 19 novembre 2025. Enquête sur des commissions présumées dans les marchés publics ; articles décrivant les soupçons et les mesures provisoires à ces dates, sans affirmer de culpabilité."
     },
     {
       "id": "ELECTION",
@@ -807,7 +808,7 @@
     },
     {
       "id": "CITYMAP",
-      "text": "[Wikimedia Commons, Spain adm location map.svg](https://commons.wikimedia.org/wiki/File:Spain_adm_location_map.svg). NordNordWest, [CC BY-SA 3.0 de](https://creativecommons.org/licenses/by-sa/3.0/de/deed.en). SVG original conservé. [Bornes et projection](https://en.wikipedia.org/wiki/Module:Location_map/data/Spain). Repères numérotés ajoutés à l’affichage."
+      "text": "[Wikimedia Commons, Spain adm location map.svg](https://commons.wikimedia.org/wiki/File:Spain_adm_location_map.svg). [NordNordWest](https://commons.wikimedia.org/wiki/User:NordNordWest), [CC BY-SA 3.0 de](https://creativecommons.org/licenses/by-sa/3.0/de/deed.en). SVG original conservé. [Bornes et projection](https://en.wikipedia.org/wiki/Module:Location_map/data/Spain). Repères numérotés ajoutés à l’affichage."
     }
   ],
   "map_sources": {
