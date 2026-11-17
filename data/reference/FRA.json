@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-16",
+  "checked": "2026-11-17",
   "sources": [
     {
       "id": "FR-DEM",
@@ -1156,6 +1156,103 @@
     "reason": "Cisjordanie seule : consommation totale par personne, enquête 2023. France : revenu disponible équivalent après redistribution, autre unité, autre champ et autre année.",
     "source_ids": [
       "FR-GINI"
+    ]
+  },
+  "pyramide-france-85plus": {
+    "status": "comparable",
+    "unit": "personnes",
+    "year": 2026,
+    "source_ids": [
+      "FR-AGE"
+    ],
+    "age_groups": [
+      "0–4",
+      "5–9",
+      "10–14",
+      "15–19",
+      "20–24",
+      "25–29",
+      "30–34",
+      "35–39",
+      "40–44",
+      "45–49",
+      "50–54",
+      "55–59",
+      "60–64",
+      "65–69",
+      "70–74",
+      "75–79",
+      "80–84",
+      "85+"
+    ],
+    "male": [
+      1662835,
+      1936744,
+      2147040,
+      2222637,
+      2013408,
+      2001462,
+      2006912,
+      2135649,
+      2131470,
+      2089504,
+      2205051,
+      2177228,
+      2108210,
+      1887418,
+      1680153,
+      1508046,
+      823170,
+      814260
+    ],
+    "female": [
+      1591477,
+      1838580,
+      2051146,
+      2077070,
+      1921888,
+      1994129,
+      2060312,
+      2221960,
+      2243460,
+      2156607,
+      2255236,
+      2254664,
+      2238065,
+      2104638,
+      1980961,
+      1854803,
+      1108827,
+      1576976
+    ],
+    "coverage": "Résidents · 1er janvier 2026 · classes quinquennales, puis 85 ans ou plus"
+  },
+  "salaires-gbr": {
+    "status": "non_comparable",
+    "reason": "ASHE : emplois salariés réellement à temps plein, secteurs public et privé, brut de la semaine d’avril 2025, rémunération non réduite pour absence. France : privé en équivalent temps plein, rémunération annuelle ramenée au mois. Champ, normalisation du temps et période de paie différents.",
+    "source_ids": [
+      "FR-WAGE"
+    ]
+  },
+  "gini-gbr": {
+    "status": "non_comparable",
+    "reason": "HFS britannique, exercice avril 2024 à mars 2025, revenu disponible équivalent des ménages privés. La référence française ERFS concerne les personnes en logement ordinaire de métropole sur l’année civile 2024. Pas de série harmonisée commune vérifiée pour ce millésime.",
+    "source_ids": [
+      "FR-GINI"
+    ]
+  },
+  "logement-gbr": {
+    "status": "unavailable",
+    "reason": "Pas de ratio français harmonisé avec le prix médian des transactions et le salaire annuel brut médian des emplois au lieu de travail, ASHE 2025.",
+    "source_ids": [
+      "FR-HOUSING"
+    ]
+  },
+  "superficie-gbr": {
+    "status": "non_comparable",
+    "reason": "L’aire statistique ONS des territoires administratifs britanniques n’a pas été harmonisée avec le champ hydrologique et territorial de la référence française Eurostat.",
+    "source_ids": [
+      "FR-AREA"
     ]
   }
 }
