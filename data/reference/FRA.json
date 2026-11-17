@@ -39,23 +39,23 @@
     },
     {
       "id": "FR-GINI",
-      "text": "[Insee, niveau de vie et pauvreté en 2024](https://www.insee.fr/fr/statistiques/9019316). Gini 0,302, niveau de vie individuel par unité de consommation, France métropolitaine, logements ordinaires. Non superposé au Gini taïwanais du revenu par ménage : unité statistique, champ et année différents."
+      "text": "[Insee, niveau de vie et pauvreté en 2024](https://www.insee.fr/fr/statistiques/9019316). Gini 0,302, niveau de vie individuel par unité de consommation, France métropolitaine, logements ordinaires."
     },
     {
       "id": "FR-ENERGY",
-      "text": "[SDES, bilan énergétique 2025, données provisoires](https://www.statistiques.developpement-durable.gouv.fr/media/9287/download?inline=) et [Insee, conventions des statistiques de l’énergie](https://www.insee.fr/fr/information/8203038). Indépendance française : 62,7 %. La chaleur nucléaire compte en production intérieure malgré l’uranium importé. Ce ratio ne mesure pas la part des combustibles importés au sens taïwanais."
+      "text": "[SDES, bilan énergétique 2025, données provisoires](https://www.statistiques.developpement-durable.gouv.fr/media/9287/download?inline=) et [Insee, conventions des statistiques de l’énergie](https://www.insee.fr/fr/information/8203038). Indépendance française : 62,7 %. La chaleur nucléaire compte en production intérieure malgré l’uranium importé. Le ratio rapporte la production primaire nationale à la consommation primaire."
     },
     {
       "id": "FR-WAGE",
-      "text": "[Insee, salaires dans le secteur privé en 2025](https://www.insee.fr/fr/statistiques/9087193), octobre 2026. Salaires en équivalent temps plein, primes incluses, ensemble des salariés du privé. Le salaire régulier brut des seuls nationaux à temps plein à Taïwan exclut primes et heures supplémentaires. Aucune conversion monétaire ne corrige cette différence de champ."
+      "text": "[Insee, salaires dans le secteur privé en 2025](https://www.insee.fr/fr/statistiques/9087193), octobre 2026. Salaires en équivalent temps plein, primes incluses, ensemble des salariés du privé."
     },
     {
       "id": "FR-HOUSING",
-      "text": "[IGEDD, prix immobilier et environnement économique, séries longues](https://www.igedd.developpement-durable.gouv.fr/prix-immobilier-evolution-a-long-terme-a1048.html). Les indices prix/revenu français ne sont pas un nombre d’années de revenu médian d’un ménage. Pas de série française de même définition et période identifiée lors de cette recherche."
+      "text": "[IGEDD, prix immobilier et environnement économique, séries longues](https://www.igedd.developpement-durable.gouv.fr/prix-immobilier-evolution-a-long-terme-a1048.html). Les indices prix/revenu français ne sont pas un nombre d’années de revenu médian d’un ménage."
     },
     {
       "id": "FR-SECTORS",
-      "text": "[Insee, valeur ajoutée par branche en 2025](https://www.insee.fr/fr/statistiques/2830197), comptes base 2020, données provisoires. Agriculture : 41,3 milliards d’euros ; industrie et construction : 358,5 + 148,5 ; services : 1 536,8 + 579,8 ; total VA : 2 664,9. Ces parts excluent les impôts nets sur les produits. Taïwan inclut les droits d’importation et la TVA dans les services (note 3 du tableau 4-2). Pas de superposition de ces deux dénominateurs."
+      "text": "[Insee, valeur ajoutée par branche en 2025](https://www.insee.fr/fr/statistiques/2830197), comptes base 2020, données provisoires. Agriculture : 41,3 milliards d’euros ; industrie et construction : 358,5 + 148,5 ; services : 1 536,8 + 579,8 ; total VA : 2 664,9. Ces parts excluent les impôts nets sur les produits."
     },
     {
       "id": "FR-WORK",
@@ -67,15 +67,15 @@
     },
     {
       "id": "FR-ELEC-2025",
-      "text": "[Ember, Yearly Electricity Data, série mondiale 2025](https://files.ember-energy.org/public-downloads/generation/outputs/release_generation_yearly_global.csv) ; [méthodologie](https://files.ember-energy.org/public-downloads/ember_electricity_data_methodology.pdf). Publication mise à jour le 11 novembre 2026. Ligne France, 2025, Clean, colonne Share of generation (%) : 94,893 %. Même fichier, agrégat nucléaire et renouvelables et convention de production brute que la Chine. La production nette métropolitaine de RTE n’est pas utilisée pour cette comparaison. Licence CC BY 4.0."
+      "text": "[Ember, Yearly Electricity Data, série mondiale 2025](https://files.ember-energy.org/public-downloads/generation/outputs/release_generation_yearly_global.csv) ; [méthodologie](https://files.ember-energy.org/public-downloads/ember_electricity_data_methodology.pdf). Publication mise à jour le 11 novembre 2026. Ligne France, 2025, Clean, colonne Share of generation (%) : 94,893 %. Agrégat nucléaire et renouvelables, convention de production brute. Le périmètre diffère de la production nette métropolitaine de RTE. Licence CC BY 4.0."
     },
     {
       "id": "FR-GINI-SILC-2024",
-      "text": "[Eurostat, coefficient de Gini, EU-SILC, ilc_di12](https://ec.europa.eu/eurostat/databrowser/view/ilc_di12/default/table?lang=fr), [API France et Suisse, 2024, ensemble des âges](https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_di12?lang=FR&geo=CH&geo=FR&time=2024&age=TOTAL). Revenu disponible équivalent après transferts, enquête 2024, revenus de 2023. France : 30,0 sur 100. Même série harmonisée que la Suisse, sans mélange avec ERFS ou les inégalités de patrimoine."
+      "text": "[Eurostat, coefficient de Gini, EU-SILC, ilc_di12](https://ec.europa.eu/eurostat/databrowser/view/ilc_di12/default/table?lang=fr), [API France, 2024, ensemble des âges](https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_di12?lang=FR&geo=FR&time=2024&age=TOTAL). Revenu disponible équivalent après transferts, enquête 2024, revenus de 2023. France : 30,0 sur 100. Série harmonisée EU-SILC, distincte d’ERFS et des mesures d’inégalités de patrimoine."
     },
     {
       "id": "FR-SECTORS-WDI-2025",
-      "text": "[Banque mondiale, WDI, parts de valeur ajoutée de la France en 2025](https://api.worldbank.org/v2/country/FRA/indicator/NV.AGR.TOTL.ZS;NV.IND.TOTL.ZS;NV.SRV.TOTL.ZS?source=2&date=2025&format=json&per_page=100). Agriculture, industrie construction comprise, services : parts du PIB courant. Impôts nets sur les produits calculés comme 100 moins ces parts. Même fichier, année, définition et dénominateur que la Suisse."
+      "text": "[Banque mondiale, WDI, parts de valeur ajoutée de la France en 2025](https://api.worldbank.org/v2/country/FRA/indicator/NV.AGR.TOTL.ZS;NV.IND.TOTL.ZS;NV.SRV.TOTL.ZS?source=2&date=2025&format=json&per_page=100). Agriculture, industrie construction comprise, services : parts du PIB courant. Impôts nets sur les produits calculés comme 100 moins ces parts."
     },
     {
       "id": "FR-UNEMP",
@@ -83,79 +83,79 @@
     },
     {
       "id": "FR-AGE-DZA",
-      "text": "[Insee, POP4, population par sexe et groupe quinquennal, fichier du bilan démographique](https://www.insee.fr/fr/statistiques/fichier/8999013/4_Pop1janv_grages_quinquennal.xlsx). Édition du 15 juin 2026. Feuilles FR-Hommes et FR-Femmes, ligne 2023, France entière au 1er janvier. Moins d’un an et 1–4 ans additionnés ; cinq classes à partir de 85 ans additionnées en 85+. Cohortes identiques à la pyramide algérienne."
+      "text": "[Insee, POP4, population par sexe et groupe quinquennal, fichier du bilan démographique](https://www.insee.fr/fr/statistiques/fichier/8999013/4_Pop1janv_grages_quinquennal.xlsx). Édition du 15 juin 2026. Feuilles FR-Hommes et FR-Femmes, ligne 2023, France entière au 1er janvier. Moins d’un an et 1–4 ans additionnés ; cinq classes à partir de 85 ans additionnées en 85+. Classes quinquennales de 0–4 à 80–84 ans, puis 85 ans ou plus."
     },
     {
       "id": "FR-VA-DZA",
-      "text": "[Banque mondiale, WDI, valeurs ajoutées françaises par branche, 2024, extraction API](https://api.worldbank.org/v2/country/FRA/indicator/NV.AGR.TOTL.CD;NV.IND.TOTL.CD;NV.SRV.TOTL.CD?source=2&format=json&date=2024&per_page=100). Séries NV.AGR.TOTL.CD, NV.IND.TOTL.CD et NV.SRV.TOTL.CD. Parts calculées sur la somme des trois valeurs ajoutées courantes, hors impôts nets sur les produits, comme pour l’Algérie. Base actualisée le 11 novembre 2026."
+      "text": "[Banque mondiale, WDI, valeurs ajoutées françaises par branche, 2024, extraction API](https://api.worldbank.org/v2/country/FRA/indicator/NV.AGR.TOTL.CD;NV.IND.TOTL.CD;NV.SRV.TOTL.CD?source=2&format=json&date=2024&per_page=100). Séries NV.AGR.TOTL.CD, NV.IND.TOTL.CD et NV.SRV.TOTL.CD. Parts calculées sur la somme des trois valeurs ajoutées courantes, hors impôts nets sur les produits. Base actualisée le 11 novembre 2026."
     },
     {
       "id": "FR-ELEC-DZA",
-      "text": "[Ember, Yearly Electricity Data, France, 2024](https://files.ember-energy.org/public-downloads/generation/outputs/release_generation_yearly_global.csv). Agrégat Clean, colonne Share of generation (%) : 94,923 %. Production brute, nucléaire et renouvelables. Même définition, même millésime et même fichier que l’Algérie. Mise à jour du 11 novembre 2026. Licence CC BY 4.0."
+      "text": "[Ember, Yearly Electricity Data, France, 2024](https://files.ember-energy.org/public-downloads/generation/outputs/release_generation_yearly_global.csv). Agrégat Clean, colonne Share of generation (%) : 94,923 %. Production brute, nucléaire et renouvelables. Mise à jour du 11 novembre 2026. Licence CC BY 4.0."
     },
     {
       "id": "FR-GINI-SILC-2025",
-      "text": "[Eurostat, coefficient de Gini, EU-SILC, ilc_di12](https://ec.europa.eu/eurostat/databrowser/view/ilc_di12/default/table?lang=fr), [API Allemagne et France, 2025, ensemble des âges](https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_di12?geo=DE&geo=FR&time=2025&age=TOTAL), mise à jour du 12 novembre 2026. Revenu disponible équivalent après transferts, enquête 2025. France : 30,4 sur 100. Même série harmonisée que l’Allemagne."
+      "text": "[Eurostat, coefficient de Gini, EU-SILC, ilc_di12](https://ec.europa.eu/eurostat/databrowser/view/ilc_di12/default/table?lang=fr), [API France, 2025, ensemble des âges](https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_di12?geo=FR&time=2025&age=TOTAL), mise à jour du 12 novembre 2026. Revenu disponible équivalent après transferts, enquête 2025. France : 30,4 sur 100. Série harmonisée EU-SILC."
     },
     {
       "id": "FR-UNEMP-EU-2025",
-      "text": "[Eurostat, taux de chômage annuel, une_rt_a](https://ec.europa.eu/eurostat/databrowser/view/une_rt_a/default/table?lang=fr), [API Allemagne et France, 2025](https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/une_rt_a?geo=DE&geo=FR&time=2025&age=Y15-74&sex=T&unit=PC_ACT), mise à jour du 6 novembre 2026. Chômage au sens du BIT, personnes de 15 à 74 ans, en pourcentage de la population active. France : 7,7 %. Même série harmonisée que l’Allemagne."
+      "text": "[Eurostat, taux de chômage annuel, une_rt_a](https://ec.europa.eu/eurostat/databrowser/view/une_rt_a/default/table?lang=fr), [API France, 2025](https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/une_rt_a?geo=FR&time=2025&age=Y15-74&sex=T&unit=PC_ACT), mise à jour du 6 novembre 2026. Chômage au sens du BIT, personnes de 15 à 74 ans, en pourcentage de la population active. France : 7,7 %. Série harmonisée une_rt_a."
     },
     {
       "id": "FR-ENERGY-DEP-2024",
-      "text": "[Eurostat, dépendance énergétique, nrg_ind_id](https://ec.europa.eu/eurostat/databrowser/view/nrg_ind_id/default/table?lang=fr), [API Allemagne et France, 2024, tous produits](https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nrg_ind_id?geo=DE&geo=FR&siec=TOTAL&time=2024), mise à jour du 16 juillet 2026. Importations nettes rapportées à l’énergie brute disponible. Même convention pour les deux pays : la chaleur nucléaire compte comme production primaire nationale. France : 41,672 %."
+      "text": "[Eurostat, dépendance énergétique, nrg_ind_id](https://ec.europa.eu/eurostat/databrowser/view/nrg_ind_id/default/table?lang=fr), [API France, 2024, tous produits](https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nrg_ind_id?geo=FR&siec=TOTAL&time=2024), mise à jour du 16 juillet 2026. Importations nettes rapportées à l’énergie brute disponible. La chaleur nucléaire compte comme production primaire nationale. France : 41,672 %."
     },
     {
       "id": "FR-AGE-KOR",
-      "text": "[Insee, population par sexe et âge quinquennal, bilan démographique, édition du 15 juin 2026](https://www.insee.fr/fr/statistiques/fichier/8999013/4_Pop1janv_grages_quinquennal.xlsx). Feuilles FR-Hommes et FR-Femmes, ligne 2020. France entière au 1er janvier 2020. Moins d’un an et 1–4 ans additionnés ; 100–104 et 105 ans ou plus additionnés. Mêmes cohortes que le recensement coréen de novembre 2020."
+      "text": "[Insee, population par sexe et âge quinquennal, bilan démographique, édition du 15 juin 2026](https://www.insee.fr/fr/statistiques/fichier/8999013/4_Pop1janv_grages_quinquennal.xlsx). Feuilles FR-Hommes et FR-Femmes, ligne 2020. France entière au 1er janvier 2020. Moins d’un an et 1–4 ans additionnés ; 100–104 et 105 ans ou plus additionnés. Classes quinquennales de 0–4 à 95–99 ans, puis 100 ans ou plus."
     },
     {
       "id": "FR-WAGE-SES-2022",
-      "text": "[Eurostat, salaires horaires SES 2022, France et Pays-Bas](https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses_hourly?lang=EN&geo=NL&geo=FR&time=2022&sex=T&age=TOTAL&isco08=TOTAL&worktime=TOTAL&nace_r2=B-S_X_O). Série earn_ses_hourly ; France : médiane 16,46 €, moyenne 20,13 €. Même enquête 2022, champ des entreprises d’au moins dix salariés, secteurs B-S hors O, brut, temps plein et partiel, primes régulières et heures supplémentaires que les Pays-Bas. Les versements annuels non réguliers sont exclus. [Méthode](https://ec.europa.eu/eurostat/cache/metadata/en/earn_ses_main_esms.htm). Montants déjà en euros."
+      "text": "[Eurostat, salaires horaires SES 2022, France](https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses_hourly?lang=EN&geo=FR&time=2022&sex=T&age=TOTAL&isco08=TOTAL&worktime=TOTAL&nace_r2=B-S_X_O). Série earn_ses_hourly ; France : médiane 16,46 €, moyenne 20,13 €. Enquête SES 2022, entreprises d’au moins dix salariés, secteurs B-S hors O, brut, temps plein et partiel, primes régulières et heures supplémentaires. Les versements annuels non réguliers sont exclus. [Méthode](https://ec.europa.eu/eurostat/cache/metadata/en/earn_ses_main_esms.htm). Montants déjà en euros."
     },
     {
       "id": "FR-VA-EU-2025",
-      "text": "[Eurostat, valeur ajoutée française par activité en 2025](https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10_a10?lang=EN&geo=NL&geo=FR&time=2025&unit=CP_MEUR&na_item=B1G). Série nama_10_a10, B1G, CP_MEUR. Total 2664898,2 M€ ; A 41318,7 M€ ; B-E 358527,6 M€ ; F 148501,4 M€. Industrie et construction additionnées ; services obtenus par différence ; parts calculées sur la VA totale. Données françaises provisoires ; même fichier, année et dénominateur que les Pays-Bas."
+      "text": "[Eurostat, valeur ajoutée française par activité en 2025](https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10_a10?lang=EN&geo=FR&time=2025&unit=CP_MEUR&na_item=B1G). Série nama_10_a10, B1G, CP_MEUR. Total 2664898,2 M€ ; A 41318,7 M€ ; B-E 358527,6 M€ ; F 148501,4 M€. Industrie et construction additionnées ; services obtenus par différence ; parts calculées sur la VA totale. Données françaises provisoires ; parts de la valeur ajoutée courante, hors impôts nets sur les produits."
     },
     {
       "id": "FR-AGE-UKR",
-      "text": "[Banque mondiale, WDI, population française par âge et sexe, 2024](https://data.worldbank.org/indicator/SP.POP.0004.MA.5Y?locations=FR) ; [population totale, API](https://api.worldbank.org/v2/country/FRA/indicator/SP.POP.TOTL?format=json&date=2024). Base du 11 novembre 2026. Cohortes quinquennales 0-4 à 75-79, puis 80 ans ou plus. Effectifs calculés à partir des parts propres à chaque sexe et de SP.POP.TOTL.MA.IN / FE.IN, sans arrondi. Population totale 68 551 653 ; hommes 33 232 759 ; femmes 35 318 894. Même année et séries WDI que l’Ukraine. Les comptes démographiques français sont issus des statistiques nationales reprises dans WDI."
+      "text": "[Banque mondiale, WDI, population française par âge et sexe, 2024](https://data.worldbank.org/indicator/SP.POP.0004.MA.5Y?locations=FR) ; [population totale, API](https://api.worldbank.org/v2/country/FRA/indicator/SP.POP.TOTL?format=json&date=2024). Base du 11 novembre 2026. Cohortes quinquennales 0-4 à 75-79, puis 80 ans ou plus. Effectifs calculés à partir des parts propres à chaque sexe et de SP.POP.TOTL.MA.IN / FE.IN, sans arrondi. Population totale 68 551 653 ; hommes 33 232 759 ; femmes 35 318 894. Les comptes démographiques français sont issus des statistiques nationales reprises dans WDI."
     },
     {
       "id": "FR-AGE-RUS",
-      "text": "[Insee, population par sexe et âge quinquennal, bilan démographique, édition du 15 juin 2026](https://www.insee.fr/fr/statistiques/fichier/8999013/4_Pop1janv_grages_quinquennal.xlsx). Feuilles FR-Hommes et FR-Femmes, ligne 2024 (p). France entière au 1er janvier 2024, estimations provisoires. Moins d’un an et 1–4 ans additionnés ; 100–104 et 105 ans ou plus additionnés. Même date de référence que l’estimation russe de Rosstat au 1er janvier 2024."
+      "text": "[Insee, population par sexe et âge quinquennal, bilan démographique, édition du 15 juin 2026](https://www.insee.fr/fr/statistiques/fichier/8999013/4_Pop1janv_grages_quinquennal.xlsx). Feuilles FR-Hommes et FR-Femmes, ligne 2024 (p). France entière au 1er janvier 2024, estimations provisoires. Moins d’un an et 1–4 ans additionnés ; 100–104 et 105 ans ou plus additionnés."
     },
     {
       "id": "FR-MIL-SIPRI",
-      "text": "[Banque mondiale, WDI, dépenses militaires en % du PIB, série MS.MIL.XPND.GD.ZS, France et Russie, 2010–2025](https://api.worldbank.org/v2/country/FRA;RUS/indicator/MS.MIL.XPND.GD.ZS?source=2&date=2010:2025&format=json&per_page=100). Données du [SIPRI Military Expenditure Database](https://www.sipri.org/databases/milex), reprises par la Banque mondiale ; même définition SIPRI pour les deux pays. France 2025 : 2,027 % du PIB. Usage non commercial selon les [conditions du SIPRI](https://www.sipri.org/about/terms-and-conditions)."
+      "text": "[Banque mondiale, WDI, dépenses militaires en % du PIB, série MS.MIL.XPND.GD.ZS, France, 2010–2025](https://api.worldbank.org/v2/country/FRA/indicator/MS.MIL.XPND.GD.ZS?source=2&date=2010:2025&format=json&per_page=100). Données du [SIPRI Military Expenditure Database](https://www.sipri.org/databases/milex), reprises par la Banque mondiale. France 2025 : 2,027 % du PIB. Usage non commercial selon les [conditions du SIPRI](https://www.sipri.org/about/terms-and-conditions)."
     },
     {
       "id": "FR-WDI-ISR-2024",
-      "text": "[Banque mondiale, WDI, France, PIB et fécondité 2024](https://api.worldbank.org/v2/country/FRA/indicator/NY.GDP.MKTP.CD;SP.DYN.TFRT.IN?source=2&date=2024&format=json&per_page=100). Base du 11 novembre 2026. Même année, séries et définitions que les indicateurs israéliens. PIB nominal en dollars courants ; fécondité conjoncturelle."
+      "text": "[Banque mondiale, WDI, France, PIB et fécondité 2024](https://api.worldbank.org/v2/country/FRA/indicator/NY.GDP.MKTP.CD;SP.DYN.TFRT.IN?source=2&date=2024&format=json&per_page=100). Base du 11 novembre 2026. Séries NY.GDP.MKTP.CD et SP.DYN.TFRT.IN. PIB nominal en dollars courants ; fécondité conjoncturelle."
     },
     {
       "id": "FR-LIFE-IND",
-      "text": "[Banque mondiale, WDI, espérance de vie à la naissance, France, 2024](https://api.worldbank.org/v2/country/FRA/indicator/SP.DYN.LE00.IN?format=json&date=2024). Deux sexes, années, même définition que l’Inde. Extraction du 17 novembre 2026 ; base mise à jour le 11 novembre 2026."
+      "text": "[Banque mondiale, WDI, espérance de vie à la naissance, France, 2024](https://api.worldbank.org/v2/country/FRA/indicator/SP.DYN.LE00.IN?format=json&date=2024). Deux sexes, espérance de vie exprimée en années ; série SP.DYN.LE00.IN. Extraction du 17 novembre 2026 ; base mise à jour le 11 novembre 2026."
     },
     {
       "id": "FR-PERIOD-IND",
-      "text": "[Banque mondiale, périodes de référence des séries WDI](https://datahelpdesk.worldbank.org/knowledgebase/articles/201203-are-all-wdi-series-on-a-calendar-year-reporting-pe) ; [métadonnées de l’Inde](https://databank.worldbank.org/metadataglossary/adjusted-net-savings/country/IND). Comptes indiens en exercice clos le 31 mars ; comptes français en année civile. Aucun regroupement trimestriel français au même champ vérifié pour cette fiche."
+      "text": "[Banque mondiale, périodes de référence des séries WDI](https://datahelpdesk.worldbank.org/knowledgebase/articles/201203-are-all-wdi-series-on-a-calendar-year-reporting-pe). Les périodes des comptes nationaux WDI dépendent des conventions statistiques nationales. Les comptes français couvrent l’année civile."
     },
     {
       "id": "FR-AGE-EU-2025",
-      "text": "[Eurostat, population par âge et sexe au 1er janvier 2025, demo_pjan](https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/demo_pjan?geo=ES&geo=FR&time=2025&unit=NR). Extraction du 17 novembre 2026, base du 15 novembre. France entière. Âges simples additionnés en cohortes quinquennales, puis 85 ans ou plus. Part des 65 ans ou plus calculée sur la population totale. Même série, date et regroupement que l’Espagne."
+      "text": "[Eurostat, population par âge et sexe au 1er janvier 2025, demo_pjan](https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/demo_pjan?geo=FR&time=2025&unit=NR). Extraction du 17 novembre 2026, base du 15 novembre. France entière. Âges simples additionnés en cohortes quinquennales, puis 85 ans ou plus. Part des 65 ans ou plus calculée sur la population totale."
     },
     {
       "id": "FR-CLIM-1981-2010",
-      "text": "[Météo-France, fiche climatologique Paris-Montsouris, station 75114001, reproduite en annexe 1 du dossier de géothermie de Bagneux](https://www.eib.org/attachments/registers/77021052.pdf). Normales 1981-2010, fiche éditée le 1er juin 2012, première page de l’annexe climatologique. Moyennes mensuelles des minima, maxima et précipitations. Même période et variables que les stations AEMET espagnoles."
+      "text": "[Météo-France, fiche climatologique Paris-Montsouris, station 75114001, reproduite en annexe 1 du dossier de géothermie de Bagneux](https://www.eib.org/attachments/registers/77021052.pdf). Normales 1981-2010, fiche éditée le 1er juin 2012, première page de l’annexe climatologique. Moyennes mensuelles des minima, maxima et précipitations."
     },
     {
       "id": "FR-FERT-EU-2024",
-      "text": "[Eurostat, indicateur conjoncturel de fécondité, demo_find](https://ec.europa.eu/eurostat/databrowser/view/demo_find/default/table?lang=fr), [API Belgique et France, 2024](https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/demo_find?lang=EN&geo=BE&geo=FR&indic_de=TOTFERRT&time=2024), mise à jour du 13 novembre 2026. France : 1,61 enfant par femme. Même série et même année que la Belgique."
+      "text": "[Eurostat, indicateur conjoncturel de fécondité, demo_find](https://ec.europa.eu/eurostat/databrowser/view/demo_find/default/table?lang=fr), [API France, 2024](https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/demo_find?lang=EN&geo=FR&indic_de=TOTFERRT&time=2024), mise à jour du 13 novembre 2026. France : 1,61 enfant par femme. Série harmonisée demo_find, année 2024."
     },
     {
       "id": "FR-TAXWEDGE-2025",
-      "text": "[OCDE, Taxing Wages 2026](https://www.oecd.org/en/publications/taxing-wages-2026_3a5169ef-en.html), [extraction SDMX DF_TW_COMP, Belgique et France, 2025](https://sdmx.oecd.org/public/rest/data/OECD.CTP.TPS,DSD_TAX_WAGES_COMP@DF_TW_COMP,/BEL+FRA.......?startPeriod=2025&format=csvfilewithlabels). Mesure AV_TW : impôt sur le revenu et cotisations sociales salariales et patronales, moins les prestations en espèces, en part du coût du travail. France : 47,178 % pour un célibataire sans enfant au salaire moyen (S_C0, AW100) ; 41,174 % à deux tiers du salaire moyen (S_C0, AW67) ; 39,062 % pour un couple avec deux enfants et un seul salaire moyen (C_C2, AW100, conjoint sans revenu). Mêmes cas types et même année que la Belgique."
+      "text": "[OCDE, Taxing Wages 2026](https://www.oecd.org/en/publications/taxing-wages-2026_3a5169ef-en.html), [extraction SDMX DF_TW_COMP, France, 2025](https://sdmx.oecd.org/public/rest/data/OECD.CTP.TPS,DSD_TAX_WAGES_COMP@DF_TW_COMP,/FRA.......?startPeriod=2025&format=csvfilewithlabels). Mesure AV_TW : impôt sur le revenu et cotisations sociales salariales et patronales, moins les prestations en espèces, en part du coût du travail. France : 47,178 % pour un célibataire sans enfant au salaire moyen (S_C0, AW100) ; 41,174 % à deux tiers du salaire moyen (S_C0, AW67) ; 39,062 % pour un couple avec deux enfants et un seul salaire moyen (C_C2, AW100, conjoint sans revenu). Cas types OCDE pour l’année 2025."
     }
   ],
   "population": {
