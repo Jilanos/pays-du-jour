@@ -788,6 +788,18 @@
     {
       "id": "CITYMAP",
       "text": "[Wikimedia Commons, Usa edcp location map.svg](https://commons.wikimedia.org/wiki/File:Usa_edcp_location_map.svg). Uwe Dedering, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0). Conversion en WebP à 1 100 pixels de large, sans recadrage. [Bornes et projection](https://en.wikipedia.org/wiki/Module:Location_map/data/USA). Repères numérotés et encart ajoutés à l’affichage."
+    },
+    {
+      "id": "SPORT",
+      "text": "[Gallup, Football Still Top U.S. Sport, Soccer Inching Up](https://news.gallup.com/poll/714281/football-top-sport-soccer-inching.aspx), 9 septembre 2026. Enquête auprès des adultes sur leur sport préféré à regarder ; football américain en tête, devant basket, baseball et football. Ce classement ne mesure pas la pratique."
+    },
+    {
+      "id": "SPORT-LIGUES",
+      "text": "[NFL, site officiel du championnat de football américain](https://www.nfl.com/) ; [MLB, site officiel du championnat de baseball](https://www.mlb.com/) ; [NBA, présentation des ligues NBA et WNBA](https://careers.nba.com/our-leagues//1000). Consultation du 17 novembre 2026."
+    },
+    {
+      "id": "SPORT-CAMPUS",
+      "text": "[NCAA, participation au-delà du lycée](https://www.ncaa.org/student-athletes/probability-of-competing-beyond-high-school/). Tableaux masculins et féminins, fondés sur les effectifs 2024-2025 : football américain, basket, baseball, football et volley. Champ universitaire NCAA, distinct de l’ensemble de la pratique aux États-Unis."
     }
   ],
   "hero_sources": [

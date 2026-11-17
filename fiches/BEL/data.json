@@ -922,6 +922,10 @@
     {
       "id": "CITYMAP",
       "text": "[Wikimedia Commons, Belgium location map.svg](https://commons.wikimedia.org/wiki/File:Belgium_location_map.svg). NordNordWest, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0). SVG original conservé, 122 830 octets. [Bornes et projection](https://en.wikipedia.org/wiki/Module:Location_map/data/Belgium) : nord 51,8, sud 49,2, ouest 2,2, est 6,9, équirectangulaire. Repères numérotés ajoutés à l’affichage."
+    },
+    {
+      "id": "SPORT",
+      "text": "[Conseil de l’Europe, profil sportif de la Belgique](https://www.coe.int/en/web/sport/country-profile-belgium). Principaux sports par nombre de membres : football, tennis, cyclisme, gymnastique, hockey. Jupiler Pro League et grandes compétitions. Consultation du 17 novembre 2026."
     }
   ],
   "hero_sources": [

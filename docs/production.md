@@ -11,6 +11,20 @@ Lane per batch:
 3. Review: read fiche.md, check `uv run pytest`, open `/pays/<ISO3>` locally.
 4. Merge `--no-ff` into main, remove the worktree and the branch.
 
+## Sport coverage
+
+Describe the sports people play and follow in the country. Cover major national
+disciplines, participation through clubs or everyday facilities, domestic leagues and
+dated international results where relevant. Distinguish participation surveys, federation
+memberships and spectator preferences. Name their scope and year when making a ranking.
+Do not call a sport official or national without a source supporting that status.
+
+Cycling and running belong only when the country is known for them, alongside its other
+sports. Avoid generic exercise itineraries and running or cycling advice in climate
+passages. A reader's own hobbies must not determine the country's sporting portrait.
+Source every factual claim with the usual paragraph annotation. Add new evidence to
+the fiche's `data.json`, preferably from surveys, federations or competition organisers.
+
 ## Existing city maps
 
 Use a Commons country location map for every city figure. Read its English Wikipedia
@@ -79,6 +93,11 @@ Do not remove the conversion solely because ECB or Banque de France lacks the cu
 Do not mix a current spot rate with an annual historical wage.
 
 ## Map verification
+
+City maps with a source image width/height ratio of at least 1.25 use the full reading
+column above their city table on desktop (768 CSS pixels and wider). The ratio excludes
+any inset appended below the source image. Mobile retains its existing single column
+and 340 px map limit. Do not add country-specific layout overrides.
 
 Run `uv run pytest` and `uv run python scripts/lint_fiche.py <ISO3>`. Start the app and run
 `scripts/screenshot.sh URL OUT_DIR ISO3`. This writes full pages, tiles, a viewport manifest,

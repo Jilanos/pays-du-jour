@@ -68,7 +68,9 @@ Le *hukou* est le registre de résidence. Vivre et travailler dans une métropol
 
 La pression professionnelle est forte dans une partie de la technologie et de l’industrie. Le terme « 996 » décrit des journées de neuf heures à vingt et une heures, six jours par semaine. En août 2021, les autorités judiciaires ont rappelé l’illégalité de ces horaires excessifs. Ce rythme ne représente pas l’ensemble des emplois chinois. {#societe-3 sources="S19" label="Travail et horaires"}
 
-Les métropoles proposent des parcs, des terrains et des parcours de course. Shanghai accueille un marathon, des compétitions de tennis et le Grand Prix de Formule 1. Pékin possède aussi une scène électronique indépendante. Le club Zhao Dai en est un repère. Sa programmation donne accès à une autre vie urbaine que celle des seuls grands équipements. {#societe-4 sources="S47,S20" label="Sport et musique électronique"}
+Le badminton et le basket figurent parmi les activités les plus pratiquées dans l’enquête nationale de 2025. Le tennis de table constitue un autre grand repère sportif : la Chine remporte tous ses titres olympiques à Paris en 2024. Ces succès internationaux coexistent avec des compétitions locales et des équipements de quartier. {#societe-4 sources="SPORT,SPORT-JO" label="Sports populaires et tennis de table"}
+
+Pékin possède aussi une scène électronique indépendante. Le club Zhao Dai en est un repère. Sa programmation donne accès à une autre vie urbaine que celle des seuls grands équipements. {#societe-musique sources="S20" label="Musique électronique"}
 
 ## Richesse et disparités
 

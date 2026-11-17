@@ -30,7 +30,7 @@ La Randstad réunit plusieurs pôles complémentaires autour d’un espace centr
 
 {{chart:climat}}
 
-L’influence maritime adoucit l’hiver et limite les chaleurs moyennes estivales. Les pluies se répartissent sur toute l’année. De Bilt représente l’intérieur du pays, près d’Utrecht. Paris possède des après-midi d’été plus chauds et reçoit moins de pluie. Pour courir ou rouler, le vent et les averses comptent autant que la température. Le printemps offre des journées qui s’allongent, sans garantir un temps sec. {#climat-saisons sources="S09,FR-CLIM" label="Saisons et pratique sportive"}
+L’influence maritime adoucit l’hiver et limite les chaleurs moyennes estivales. Les pluies se répartissent sur toute l’année. De Bilt représente l’intérieur du pays, près d’Utrecht. Paris possède des après-midi d’été plus chauds et reçoit moins de pluie. Le printemps offre des journées qui s’allongent, sans garantir un temps sec. {#climat-saisons sources="S09,FR-CLIM" label="Saisons et températures"}
 
 ## Population
 
@@ -52,7 +52,7 @@ Le temps partiel structure fortement le marché du travail. Une moyenne national
 
 L’installation implique une assurance maladie néerlandaise dans les situations où elle est obligatoire. Une aide dépendant des ressources peut contribuer à son paiement. Le budget disponible doit intégrer logement, assurance et transports. Un salaire brut ne suffit pas à décrire le niveau de vie. Les conditions personnelles et familiales modifient les prélèvements et les aides. {#societe-assurance sources="S18,S19" label="S’installer et se soigner"}
 
-Le football et le hockey sur gazon disposent d’un tissu de clubs. Le patinage de vitesse occupe une place particulière dans le sport néerlandais. Pour un sportif amateur, les associations donnent accès à des entraînements réguliers et à une vie collective. Les pratiques urbaines coexistent avec le vélo, la course et les sports d’eau. {#societe-sport sources="S20,S15" label="La vie sportive"}
+Le football, le tennis et le hockey sur gazon s’appuient sur de nombreux clubs. Le patinage de vitesse reste une spécialité du pays, aux côtés du cyclisme. Les succès du hockey concernent les deux sélections : les équipes masculine et féminine gagnent l’or aux Jeux de Paris en 2024. La vie sportive néerlandaise associe ces rendez-vous internationaux à une pratique régulière en association. {#societe-sport sources="SPORT,S20,SPORT-JO" label="Clubs, patinage, cyclisme et hockey"}
 
 ## Richesse et disparités
 

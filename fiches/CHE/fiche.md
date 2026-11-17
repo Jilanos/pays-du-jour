@@ -50,7 +50,7 @@ L’héritage catholique et réformé reste visible dans les fêtes et les insti
 
 ## Mode de vie et société
 
-Le réseau de transports publics facilite les déplacements entre villes et les sorties en montagne. Train, car postal et itinéraires balisés peuvent s’enchaîner dans une même journée. SuisseMobile rassemble des parcours de randonnée, de vélo et d’activités hivernales. Pour un sportif, le dénivelé devient une ressource accessible depuis les pôles urbains. La difficulté varie fortement selon le parcours et la saison. {#societe-1 sources="S09,S35" label="Mobilité et sport"}
+La randonnée, la natation et le ski font partie des pratiques les plus répandues. Les salles de fitness occupent aussi une place croissante dans les loisirs. Le football et le hockey sur glace structurent la vie des clubs et des supporters. Leurs premières divisions sont la Super League et la National League. En ski alpin, les étapes de Coupe du monde de Wengen et d’Adelboden font partie des grands rendez-vous organisés dans le pays. {#societe-1 sources="SPORT,SPORT-LIGUES" label="Pratiques sportives et championnats"}
 
 Le contrat et les conventions collectives déterminent la durée usuelle du travail. La loi fixe notamment un plafond hebdomadaire de {{value:travail-industrie}} pour les entreprises industrielles et le personnel technique ou de bureau. D’autres catégories relèvent d’un plafond de {{value:travail-autres}}. Ces limites légales ne décrivent pas l’horaire ordinaire d’une équipe d’ingénierie. {#societe-2 sources="S10" label="Temps de travail"}
 

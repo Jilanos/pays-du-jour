@@ -978,6 +978,14 @@
     {
       "id": "CITYMAP",
       "text": "[Wikimedia Commons, Morocco location map.svg](https://commons.wikimedia.org/wiki/File:Morocco_location_map.svg). Eric Gaba (Sting), [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0). SVG original conservé. [Bornes et projection](https://en.wikipedia.org/wiki/Module:Location_map/data/Morocco). Repères numérotés et encart ajoutés à l’affichage."
+    },
+    {
+      "id": "SPORT",
+      "text": "[FIFA, le Maroc entre dans l’histoire contre le Portugal](https://www.fifa.com/en/articles/morocco-portugal). Quart de finale du 10 décembre 2022 ; première qualification africaine en demi-finale de Coupe du monde."
+    },
+    {
+      "id": "SPORT-ATHLE",
+      "text": "[World Athletics, El Bakkali conserve son titre olympique à Paris](https://worldathletics.org/competitions/olympic-games/the-xxxiii-olympic-games-7153115/news/article/paris-2024-olympics-report-men-3000m-steeplechase), 7 août 2024. Steeple masculin."
     }
   ],
   "cities_map": {

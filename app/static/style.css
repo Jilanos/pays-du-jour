@@ -33,3 +33,6 @@
 
 /* Preserve the licensed map colours and readable pins in both page themes. */
 .cities-figure .map{--accent:#176B64;--bg:#FAF8F3;--ink:#202C2F;--rule:#59666A}
+
+/* Landscape city maps use the reading column, with the city table below. */
+@media(min-width:768px){.cities-layout-wide{grid-template-columns:minmax(0,1fr)}}

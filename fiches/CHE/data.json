@@ -971,6 +971,14 @@
     {
       "id": "CITYMAP",
       "text": "[Wikimedia Commons, Switzerland adm location map.svg](https://commons.wikimedia.org/wiki/File:Switzerland_adm_location_map.svg). NordNordWest, [CC BY-SA 3.0 de](https://creativecommons.org/licenses/by-sa/3.0/de/deed.en). SVG original conservé. [Bornes et projection](https://en.wikipedia.org/wiki/Module:Location_map/data/Switzerland). Repères numérotés et encart ajoutés à l’affichage."
+    },
+    {
+      "id": "SPORT",
+      "text": "[OFSPO, Sport Suisse, enquête 2026](https://www.baspo.admin.ch/fr/sport-suisse), publiée le 18 août 2026. Randonnée, natation, ski et progression du fitness ; enquête sur les pratiques de la population, distincte des audiences des compétitions."
+    },
+    {
+      "id": "SPORT-LIGUES",
+      "text": "[Conseil de l’Europe, profil sportif de la Suisse](https://www.coe.int/en/web/sport/country-profile-switzerland). Football, hockey sur glace, ski ; Super League, National League et étapes de Coupe du monde à Wengen et Adelboden. Consultation du 17 novembre 2026."
     }
   ],
   "cities_map": {

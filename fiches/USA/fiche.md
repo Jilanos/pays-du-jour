@@ -34,7 +34,7 @@ Le relief structure les ressources. À l’ouest, les chaînes côtières, les p
 
 New York connaît des hivers froids et des étés chauds et humides. Los Angeles associe pluies hivernales et sécheresse estivale. La station de l’aéroport représente le littoral. Les vallées voisines chauffent davantage. Les normales de Paris donnent un repère familier. Ces profils décrivent des moyennes, sans montrer les épisodes extrêmes. {#geographie-saisons sources="S11,FR-CLIM" label="Saisons sur les deux côtes"}
 
-Le pays cumule des risques très différents : ouragans sur les côtes atlantique et du golfe, tornades dans l’intérieur, feux et sécheresses à l’ouest. Le réchauffement intensifie notamment les chaleurs extrêmes. Pour courir ou rouler, la saison, l’altitude et la qualité de l’air comptent autant que la latitude. {#geographie-risques sources="S50" label="Climat et risques"}
+Le pays cumule des risques très différents : ouragans sur les côtes atlantique et du golfe, tornades dans l’intérieur, feux et sécheresses à l’ouest. Le réchauffement intensifie notamment les chaleurs extrêmes. {#geographie-risques sources="S50" label="Climat et risques"}
 
 ## Population
 
@@ -58,7 +58,7 @@ Le droit fédéral prévoit une majoration après {{value:travail-us}} hebdomada
 
 L’assurance maladie est souvent liée à l’emploi. Medicare couvre principalement les personnes âgées et certaines personnes handicapées. Medicaid s’adresse à des populations modestes selon des règles partagées entre fédération et États. Les assurances individuelles complètent cet ensemble. Pour lire une rémunération, il faut regarder couverture santé, franchise et participation de l’employeur. {#societe-sante sources="S16" label="Protection sociale"}
 
-Le sport combine pratique locale, clubs, salles privées et grands rendez-vous. Le marathon de Boston incarne une culture de la course très structurée. Les parcs offrent des terrains de randonnée variés. Chaleur, altitude, distances et accès aux secours modifient les conditions de pratique. Une sortie dans l’Ouest exige une préparation différente d’un footing urbain. {#societe-sport sources="S51,S50" label="Course et plein air"}
+Le football américain reste le sport que les adultes préfèrent regarder, devant le basket, le baseball et le football. La NFL organise le championnat professionnel de football américain, la MLB celui de baseball. La NBA et la WNBA donnent au basket ses grandes ligues professionnelles masculine et féminine. Les universités possèdent aussi leurs propres équipes et championnats. Dans les compétitions de la NCAA, football américain, basket, baseball, football et volley mobilisent de nombreux étudiants. Le sport universitaire constitue un univers de pratique à part entière. {#societe-sport sources="SPORT,SPORT-LIGUES,SPORT-CAMPUS" label="Sports suivis et équipes universitaires"}
 
 ## Richesse et disparités
 

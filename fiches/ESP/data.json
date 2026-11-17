@@ -809,6 +809,18 @@
     {
       "id": "CITYMAP",
       "text": "[Wikimedia Commons, Spain adm location map.svg](https://commons.wikimedia.org/wiki/File:Spain_adm_location_map.svg). [NordNordWest](https://commons.wikimedia.org/wiki/User:NordNordWest), [CC BY-SA 3.0 de](https://creativecommons.org/licenses/by-sa/3.0/de/deed.en). SVG original conservé. [Bornes et projection](https://en.wikipedia.org/wiki/Module:Location_map/data/Spain). Repères numérotés ajoutés à l’affichage."
+    },
+    {
+      "id": "SPORT",
+      "text": "[CSD, licences et clubs en 2024](https://www.csd.gob.es/sites/default/files/media/files/2025-12/Licencias%20y%20Clubes%202024.pdf). Nombre de licences par fédération : football, basket, tennis et padel. La mesure concerne le sport fédéré, pas tous les pratiquants."
+    },
+    {
+      "id": "SPORT-PADEL",
+      "text": "[Fédération internationale de padel, Rules of Padel](https://www.padelfip.com/wp-content/uploads/2025/12/FIP_Rules-of-Padel.pdf), application au 1er janvier 2026. Terrain fermé et usage des parois dans les échanges."
+    },
+    {
+      "id": "SPORT-MONDIAL",
+      "text": "[UEFA, l’Espagne remporte la Coupe du monde féminine 2023](https://www.uefa.com/news-media/news/027a-166817b8be17-9e0082e122cd-1000--spain-win-2023-women-s-world-cup-all-the-results/), 20 août 2023. Victoire contre l’Angleterre en finale."
     }
   ],
   "map_sources": {

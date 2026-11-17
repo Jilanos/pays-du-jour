@@ -36,7 +36,7 @@ Le relief découpe le pays en diagonale. Le Rif longe la Méditerranée. Le Moye
 
 {{chart:climat}}
 
-La pluie tombe surtout de l’automne au printemps. L’été est presque sec dans les trois stations. Casablanca garde des températures douces grâce à l’océan. Marrakech compte en moyenne {{value:marrakech-35}} à 35 °C ou plus. Ifrane, dans le Moyen Atlas, compte {{value:ifrane-gel}} de gel. Pour courir ou rouler à vélo à Marrakech, l’été impose de partir à l’aube. Paris reçoit des pluies mieux réparties sur l’année. {#climat-1 sources="S11,FR-CLIM" label="Saisons marocaines"}
+La pluie tombe surtout de l’automne au printemps. L’été est presque sec dans les trois stations. Casablanca garde des températures douces grâce à l’océan. Marrakech compte en moyenne {{value:marrakech-35}} à 35 °C ou plus. Ifrane, dans le Moyen Atlas, compte {{value:ifrane-gel}} de gel. Paris reçoit des pluies mieux réparties sur l’année. {#climat-1 sources="S11,FR-CLIM" label="Saisons marocaines"}
 
 ## Population
 
@@ -56,7 +56,9 @@ La place Jemaa el-Fna, à Marrakech, rassemble chaque soir conteurs, musiciens e
 
 La Moudawana de 2004 réforme le code de la famille. Les femmes peuvent demander le divorce et se marier sans tuteur. L’âge légal du mariage passe à 18 ans. La polygamie reste permise sous conditions strictes. Le travail des femmes reste pourtant rare. Leur taux d’activité atteint {{value:activite-femmes}}, contre {{value:activite-hommes}} pour les hommes. Leur chômage dépasse nettement celui des hommes. {#societe-2 sources="S30,S05" label="Famille et travail des femmes"}
 
-Le football domine les conversations. Le Maroc a accueilli la Coupe d’Afrique des nations fin 2025. Il coorganise la Coupe du monde 2030 avec l’Espagne et le Portugal. Le Toubkal, au sud de Marrakech, attire randonneurs et alpinistes. Pour la musique électronique, le festival Oasis a fait venir à Marrakech des artistes comme Laurent Garnier et Joy Orbison. Sa huitième édition a eu lieu en septembre 2024, avant une pause annoncée pour 2025. {#societe-3 sources="S27,S28,S38,S36" label="Sport et musique"}
+Le football porte une forte représentation nationale. En 2022, le Maroc devient le premier pays africain à atteindre une demi-finale de Coupe du monde. Il coorganise l’édition 2030 avec l’Espagne et le Portugal. L’athlétisme apporte aussi des succès internationaux : Soufiane El Bakkali conserve son titre olympique du steeple à Paris en 2024. {#societe-3 sources="SPORT,SPORT-ATHLE,S28" label="Football et athlétisme"}
+
+Pour la musique électronique, le festival Oasis a fait venir à Marrakech des artistes comme Laurent Garnier et Joy Orbison. Sa huitième édition a eu lieu en septembre 2024, avant une pause annoncée pour 2025. {#societe-musique sources="S36" label="Musique électronique"}
 
 ## Richesse et disparités
 

@@ -91,6 +91,26 @@ def test_bibliography_numbers_follow_display_order_not_citation_order():
         sources.cite("missing", "Absent", ["Z"])
 
 
+@pytest.mark.parametrize(
+    "code", sorted(p.parent.name for p in (ROOT / "fiches").glob("*/fiche.md"))
+)
+def test_every_fiche_bibliography_has_complete_citation_roundtrips(code):
+    with TestClient(create_app()) as client:
+        response = client.get(f"/pays/{code}")
+    assert response.status_code == 200
+    html = response.text
+    assert html.count('class="sources"') == 1
+    links = Links(html)
+    assert len(links.ids) == len(set(links.ids))
+    assert all(href[1:] in links.ids for href in links.hrefs if href.startswith("#"))
+    # Every displayed source has a return link to an actual reading block or figure.
+    bibliography = html.split('<section class="sources"', 1)[1].split("</section>", 1)[0]
+    entries = re.findall(r'<li id="src-[^"]+">(.*?)</li>', bibliography, re.S)
+    assert entries
+    assert all('class="backlinks"' in entry and 'href="#' in entry for entry in entries)
+    assert not re.search(r"\{\{sources\}\}|\{#[\w-]+ sources=", html)
+
+
 def test_usa_figures_use_their_own_country_and_citations_roundtrip():
     with TestClient(create_app()) as client:
         response = client.get("/pays/USA")

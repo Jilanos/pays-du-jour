@@ -30,7 +30,7 @@ Les villes forment un réseau dense. Bruxelles regroupe dix-neuf communes dans s
 
 {{chart:climat}}
 
-Le climat est océanique. Les hivers restent doux et les étés modérés. Il pleut en toute saison, sans mois vraiment sec. Uccle reçoit plus de pluie que Paris et connaît des après-midi d’été un peu moins chauds. Pour courir ou rouler, la pluie fréquente compte davantage que le froid. {#climat-saisons sources="S06,FR-CLIM" label="Saisons et pratique sportive"}
+Le climat est océanique. Les hivers restent doux et les étés modérés. Il pleut en toute saison, sans mois vraiment sec. Uccle reçoit plus de pluie que Paris et connaît des après-midi d’été un peu moins chauds. {#climat-saisons sources="S06,FR-CLIM" label="Saisons et températures"}
 
 ## Population
 
@@ -50,7 +50,7 @@ La durée du travail est limitée à {{value:travail-bel}} par semaine en moyenn
 
 La voiture de société occupe une place singulière. En 2025, les particuliers ne représentent que {{value:acheteurs-prives}} des immatriculations de voitures neuves. Les acheteurs professionnels réalisent la majorité des achats. {#societe-voiture sources="S11" label="La voiture de société"}
 
-Le cyclisme occupe une place à part, surtout en Flandre. Les grandes classiques attirent des foules considérables le long des routes. Remco Evenepoel remporte la course en ligne et le contre-la-montre aux Jeux de Paris en 2024. {#societe-sport sources="S41,S42" label="Le sport"}
+Le football rassemble le plus grand nombre de membres en fédération. La Jupiler Pro League est son championnat de première division. Tennis, gymnastique et hockey sur gazon occupent aussi une place importante dans les clubs. Le cyclisme reste un grand rendez-vous populaire, surtout en Flandre avec les classiques. Remco Evenepoel remporte la course en ligne et le contre-la-montre aux Jeux de Paris en 2024. {#societe-sport sources="SPORT,S41,S42" label="Football, clubs et cyclisme"}
 
 ## Richesse et disparités
 

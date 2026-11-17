@@ -56,7 +56,7 @@ Le lieu de résidence et les possibilités de circulation structurent le quotidi
 
 La vie culturelle existe aussi à travers les associations, les familles et les réseaux internationaux. Ramallah possède une scène musicale électronique dont Sama’ Abdulhadi est devenue une figure internationale. Son parcours relie clubs, production et festivals. Il renseigne sur une histoire culturelle ; les conditions actuelles ne permettent pas de présumer de l’ouverture des lieux. {#societe-techno sources="S34" label="La techno de Ramallah"}
 
-Le football offre un espace de représentation collective. En janvier 2024, la sélection atteint pour la première fois les huitièmes de finale de la Coupe d’Asie. Son parcours s’arrête contre le Qatar. Cette visibilité internationale contraste avec les difficultés locales d’entraînement et de circulation pendant la guerre. {#societe-sport sources="S35,S21" label="Le football international"}
+Le football offre un espace de représentation collective. En janvier 2024, la sélection atteint pour la première fois les huitièmes de finale de la Coupe d’Asie, où elle s’incline contre le Qatar. Le basket possède aussi une sélection internationale. Pour sa première participation au championnat d’Asie en 2015, elle bat les Philippines. La guerre fragilise les lieux d’entraînement et les déplacements des sportifs. {#societe-sport sources="SPORT,SPORT-BASKET,S21" label="Football et basket sous contraintes"}
 
 ## Richesse et disparités
 

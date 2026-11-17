@@ -54,7 +54,7 @@ L’héritage catholique demeure visible dans les fêtes et les paysages urbains
 
 Les repas se prennent souvent plus tard qu’en France. Les terrasses, les promenades du soir et les places publiques prolongent la vie hors du logement. Les rythmes varient selon le métier, la région et la saison. Les horaires des commerces touristiques ne décrivent pas la journée de tous les salariés. La pause de milieu de journée ne signifie pas que chaque habitant fait une sieste. {#societe-rythmes sources="HOURS" label="Rythmes quotidiens"}
 
-Le vélo permet de lire le territoire autrement. Les voies vertes réutilisent d’anciennes lignes ferroviaires. Les grands itinéraires traversent plaines agricoles, vallées et villes. Le printemps et l’automne conviennent souvent mieux aux longues sorties dans l’intérieur. En été, chaleur et exposition au soleil deviennent des contraintes majeures. La montagne ajoute ses propres conditions météorologiques. {#societe-sport sources="BIKE,MADCLIM,SEVCLIM" label="Sport et saisons"}
+Le football domine le sport fédéré par le nombre de licences. Le basket occupe aussi une place majeure dans les clubs. Le tennis et le padel complètent ce paysage, avec des pratiques et des compétitions distinctes. Le padel se joue sur un terrain entouré de parois qui participent aux échanges. Le football féminin possède désormais son propre titre mondial : la sélection espagnole remporte la Coupe du monde en 2023. {#societe-sport sources="SPORT,SPORT-PADEL,SPORT-MONDIAL" label="Football, basket et sports de raquette"}
 
 La musique électronique possède plusieurs géographies. Barcelone associe clubs, création numérique et festivals. Le 3 novembre 2026, Sónar annonce le retour de sa formule de jour dans la ville pour 2027. À Fraga, les Monegros accueillent une grande fête électronique dans un paysage aride. Ces événements relient la scène espagnole aux circulations européennes des artistes et du public. {#societe-electro sources="SONAR,MONEGROS" label="Musique électronique"}
 
@@ -152,6 +152,6 @@ Le succès touristique ouvre un conflit sur l’usage des lieux. Les locations c
 
 ## Le saviez-vous ?
 
-Une voie verte peut traverser un paysage industriel disparu. En Espagne, des itinéraires cyclables occupent les plateformes d’anciennes lignes de chemin de fer. Les faibles pentes héritées du rail facilitent les sorties longues, avec des ponts et des tunnels conservés sur plusieurs parcours. {#saviez-vous-velo sources="BIKE" label="Du rail au vélo"}
+Le titre mondial espagnol de 2023 vient d’un but d’Olga Carmona en finale contre l’Angleterre. Cette victoire est la première de la sélection féminine dans la compétition. Elle donne une place nouvelle aux joueuses dans l’histoire du football espagnol. {#saviez-vous-velo sources="SPORT-MONDIAL" label="Le premier titre mondial des footballeuses"}
 
 {{sources}}

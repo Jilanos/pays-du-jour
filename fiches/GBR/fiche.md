@@ -36,7 +36,7 @@ Les Highlands écossais, les Pennines et les massifs gallois forment les princip
 
 L’océan atténue les écarts saisonniers. Londres connaît des hivers relativement doux et des étés moins chauds que Paris dans les normales présentées. Glasgow est plus fraîche et nettement plus arrosée. L’automne et l’hiver apportent des passages perturbés fréquents. Le printemps offre souvent des conditions plus sèches, avec une forte variabilité quotidienne. {#climat-saisons sources="S04,S05,FR-CLIM" label="Saisons comparées"}
 
-Pour courir, pédaler ou marcher, le vent et l’humidité comptent autant que le thermomètre. En montagne, la visibilité peut se dégrader rapidement. La douceur des moyennes n’exclut ni gel, ni neige en altitude, ni épisodes chauds. Les normales décrivent une période passée ; elles ne prédisent pas la météo d’une sortie. {#climat-sport sources="S04,S05" label="Le climat pour le sport"}
+En montagne, la visibilité peut se dégrader rapidement. La douceur des moyennes n’exclut ni gel, ni neige en altitude, ni épisodes chauds. Les normales décrivent une période passée ; elles ne prédisent pas la météo d’une sortie. {#climat-sport sources="S04,S05" label="Variations du climat"}
 
 ## Population
 
@@ -62,7 +62,9 @@ Les systèmes de santé relèvent des nations constitutives. Le NHS reste un rep
 
 Le droit prévoit en général un plafond moyen de {{value:travail}} de travail hebdomadaire. Une dérogation volontaire est possible pour de nombreux salariés adultes. Le minimum légal de congés payés atteint {{value:conges}} par an ; les jours fériés peuvent y être inclus. Ces règles ne donnent pas la durée habituelle d’un contrat d’ingénieur. {#societe-travail sources="S09" label="Travail et congés"}
 
-Les clubs sportifs et les rendez-vous bénévoles occupent une place importante dans la vie locale. Le parkrun illustre une pratique accessible, régulière et collective. La marche y a sa place. Pour les sorties musicales, Londres, Manchester et Glasgow disposent de scènes électroniques distinctes. Les grands événements coexistent avec des lieux indépendants. {#societe-loisirs sources="S33,S34" label="Sport et scènes électroniques"}
+Le football possède plusieurs championnats, dont la Premier League anglaise et le championnat professionnel écossais. Le rugby à XV, le rugby à XIII et le cricket ont leurs propres réseaux de clubs et de compétitions. Le County Championship appartient au calendrier du cricket en Angleterre et au pays de Galles. Pour la pratique ordinaire, l’enquête Active Lives mesure aussi la natation et les activités de fitness. Son champ couvre l’Angleterre. {#societe-loisirs sources="SPORT,SPORT-PRATIQUES" label="Football, rugby, cricket et pratique amateur"}
+
+Londres, Manchester et Glasgow disposent de scènes électroniques distinctes. Les grands événements coexistent avec des lieux indépendants. {#societe-musique sources="S34" label="Scènes électroniques"}
 
 ## Richesse et disparités
 
