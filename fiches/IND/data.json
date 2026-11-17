@@ -1,0 +1,878 @@
+{
+  "keyfacts": [
+    {
+      "id": "population",
+      "label": "Population estimée",
+      "value": 1450935791,
+      "unit": "habitants",
+      "year": 2024,
+      "coverage": "Résidents · estimation WDI 2024",
+      "source_ids": [
+        "S01"
+      ],
+      "france": "population-wdi-2024"
+    },
+    {
+      "id": "superficie",
+      "label": "Superficie officielle",
+      "value": 3287263,
+      "unit": "km²",
+      "year": 2024,
+      "coverage": "Périmètre revendiqué · EnviStats 2024",
+      "source_ids": [
+        "S02"
+      ]
+    },
+    {
+      "id": "pib-nominal",
+      "label": "PIB nominal",
+      "value": 3760813470500.86,
+      "unit": "USD",
+      "year": "2024-2025",
+      "coverage": "Prix courants · avril 2024-mars 2025 · WDI 2024",
+      "source_ids": [
+        "S01"
+      ],
+      "france": "pib-ind"
+    },
+    {
+      "id": "fecondite",
+      "label": "Fécondité",
+      "value": 1.962,
+      "unit": "enfant/femme",
+      "year": 2024,
+      "coverage": "Indicateur conjoncturel · 2024",
+      "source_ids": [
+        "S01"
+      ],
+      "france": "fecondite-wdi-2024"
+    },
+    {
+      "id": "65-plus",
+      "label": "Part des 65 ans ou plus",
+      "value": 7.14651714039908,
+      "unit": "%",
+      "year": 2024,
+      "coverage": "Résidents · estimation WDI 2024",
+      "source_ids": [
+        "S01"
+      ],
+      "france": "65plus-wdi-2024"
+    },
+    {
+      "id": "esperance-vie",
+      "label": "Espérance de vie",
+      "value": 72.235,
+      "unit": "ans",
+      "year": 2024,
+      "coverage": "À la naissance, deux sexes · 2024",
+      "source_ids": [
+        "LIFE"
+      ],
+      "france": "esperance-vie-wdi-2024"
+    }
+  ],
+  "indices": [
+    {
+      "id": "idh",
+      "name": "Développement humain",
+      "acronym": "IDH",
+      "value": 0.685,
+      "unit": "",
+      "scale_min": 0,
+      "scale_max": 1,
+      "precision": 3,
+      "year": 2023,
+      "rank": "130ᵉ / 193",
+      "source_ids": [
+        "S03"
+      ],
+      "france": "idh",
+      "higher_is_better": true
+    },
+    {
+      "id": "democratie",
+      "name": "Démocratie libérale",
+      "acronym": "V-Dem",
+      "value": 0.26,
+      "unit": "",
+      "scale_min": 0,
+      "scale_max": 1,
+      "precision": 2,
+      "year": 2025,
+      "rank": "105ᵉ",
+      "source_ids": [
+        "S04"
+      ],
+      "france": "democratie",
+      "higher_is_better": true
+    },
+    {
+      "id": "presse",
+      "name": "Liberté de la presse",
+      "acronym": "RSF",
+      "value": 31.96,
+      "unit": "",
+      "scale_min": 0,
+      "scale_max": 100,
+      "precision": 2,
+      "year": 2026,
+      "rank": "157ᵉ / 180",
+      "source_ids": [
+        "S05"
+      ],
+      "france": "presse",
+      "higher_is_better": true
+    },
+    {
+      "id": "corruption",
+      "name": "Corruption perçue",
+      "acronym": "CPI",
+      "value": 39,
+      "unit": "",
+      "scale_min": 0,
+      "scale_max": 100,
+      "precision": 0,
+      "year": 2025,
+      "rank": "91ᵉ / 182",
+      "source_ids": [
+        "S06"
+      ],
+      "france": "corruption",
+      "higher_is_better": true
+    },
+    {
+      "id": "gini",
+      "name": "Inégalités de consommation",
+      "acronym": "Gini",
+      "value": 25.5,
+      "unit": "",
+      "scale_min": 0,
+      "scale_max": 100,
+      "precision": 1,
+      "year": "2022-2023",
+      "rank": "Sans classement",
+      "source_ids": [
+        "S07"
+      ],
+      "france": "gini-ind",
+      "higher_is_better": false,
+      "coverage": "Consommation par personne · HCES 2022-2023",
+      "note_visible": "Consommation par personne ; distinct du revenu disponible et du patrimoine."
+    }
+  ],
+  "charts": [
+    {
+      "id": "climat",
+      "type": "climate",
+      "title": "Delhi et Mumbai : deux rythmes de mousson",
+      "subtitle": "Normales 1991–2020 · minima, maxima et pluie · référence Paris",
+      "year": "1991–2020",
+      "source_ids": [
+        "S08"
+      ],
+      "france": "climat-paris",
+      "places": [
+        {
+          "place": "Delhi · Safdarjung",
+          "tmin": [
+            7.5,
+            10.6,
+            15.6,
+            21.3,
+            25.8,
+            27.7,
+            27.5,
+            26.7,
+            25.0,
+            19.5,
+            13.0,
+            8.4
+          ],
+          "tmax": [
+            20.1,
+            24.2,
+            29.9,
+            36.5,
+            39.9,
+            39.0,
+            35.6,
+            34.2,
+            34.1,
+            33.0,
+            28.4,
+            22.8
+          ],
+          "precip_mm": [
+            19.2,
+            21.5,
+            19.1,
+            12.5,
+            29.4,
+            80.6,
+            195.8,
+            226.8,
+            128.0,
+            14.1,
+            4.1,
+            8.0
+          ]
+        },
+        {
+          "place": "Mumbai · Colaba",
+          "tmin": [
+            19.4,
+            20.4,
+            23.0,
+            25.3,
+            27.3,
+            26.6,
+            25.5,
+            25.2,
+            25.1,
+            25.1,
+            23.6,
+            21.2
+          ],
+          "tmax": [
+            30.2,
+            30.3,
+            31.7,
+            32.9,
+            34.0,
+            32.2,
+            29.9,
+            29.9,
+            30.6,
+            33.1,
+            33.8,
+            32.2
+          ],
+          "precip_mm": [
+            0.6,
+            0.4,
+            0.7,
+            0.2,
+            15.9,
+            506.0,
+            768.5,
+            471.9,
+            355.6,
+            81.7,
+            8.5,
+            3.4
+          ]
+        }
+      ],
+      "temperature_extent": [
+        0,
+        45
+      ],
+      "rain_max": 800,
+      "note": "Minima et maxima quotidiens moyens ; cumul mensuel moyen des précipitations. Deux stations urbaines, sans généralisation au pays entier."
+    },
+    {
+      "id": "pyramide-ages",
+      "type": "pyramid",
+      "title": "Des générations actives nombreuses, une base qui se resserre",
+      "subtitle": "Estimations WDI · milieu de 2024 · part du total des deux sexes",
+      "year": 2024,
+      "source_ids": [
+        "S01"
+      ],
+      "france": "pyramide-wdi-2024-80plus",
+      "age_groups": [
+        "0–4",
+        "5–9",
+        "10–14",
+        "15–19",
+        "20–24",
+        "25–29",
+        "30–34",
+        "35–39",
+        "40–44",
+        "45–49",
+        "50–54",
+        "55–59",
+        "60–64",
+        "65–69",
+        "70–74",
+        "75–79",
+        "80+"
+      ],
+      "male": [
+        58920509.0,
+        61965433.49999997,
+        65253769.50000001,
+        66730579.50000001,
+        68155216.99999999,
+        65258361.49999999,
+        61846646.000000045,
+        57979905.000000045,
+        51622180.00000003,
+        44391110.50000001,
+        38222138.999999985,
+        32137630.499999996,
+        26519323.000000004,
+        20613162.999999978,
+        14224239.0,
+        7793933.500000004,
+        6689287.499999999
+      ],
+      "female": [
+        54737621.99999999,
+        56915847.50000002,
+        59483835.99999998,
+        60645953.50000002,
+        61835076.49999998,
+        59211687.50000001,
+        56880627.00000002,
+        53665702.00000003,
+        48012516.50000002,
+        41973609.000000015,
+        36894343.49999999,
+        31528368.499999978,
+        26456422.499999978,
+        21207800.500000037,
+        15290500.500000019,
+        9016760.500000015,
+        8855690.499999993
+      ],
+      "unit": "personnes",
+      "note": "Effectifs calculés sans arrondi à partir des proportions par sexe et par âge. Le rendu les rapporte au total des deux sexes. France et Inde : mêmes séries WDI et cohortes, milieu de 2024."
+    },
+    {
+      "id": "langues",
+      "type": "share",
+      "title": "Une langue maternelle dominante, une grande diversité",
+      "subtitle": "Recensement 2011 · langue maternelle déclarée · %",
+      "year": 2011,
+      "labels": [
+        "Hindi et parlers regroupés",
+        "Bengali",
+        "Marathi",
+        "Télougou",
+        "Tamoul",
+        "Autres langues"
+      ],
+      "values": [
+        43.63,
+        8.03,
+        6.86,
+        6.7,
+        5.7,
+        29.08
+      ],
+      "unit": "%",
+      "source_ids": [
+        "S13"
+      ],
+      "france": "langues",
+      "note": "Une langue maternelle déclarée. Autres = 100 moins les cinq parts publiées. Les compétences en anglais ou les secondes langues ne sont pas mesurées par cette répartition."
+    },
+    {
+      "id": "religions",
+      "type": "share",
+      "title": "Des appartenances religieuses diverses",
+      "subtitle": "Recensement 2011 · communauté religieuse déclarée · %",
+      "year": 2011,
+      "labels": [
+        "Hindouisme",
+        "Islam",
+        "Christianisme",
+        "Sikhisme",
+        "Bouddhisme",
+        "Jaïnisme",
+        "Autres religions",
+        "Non déclaré"
+      ],
+      "values": [
+        79.8,
+        14.23,
+        2.3,
+        1.72,
+        0.7,
+        0.37,
+        0.66,
+        0.24
+      ],
+      "unit": "%",
+      "source_ids": [
+        "S14"
+      ],
+      "france": "religions",
+      "note_visible": "Total publié : 100,02 %, effet des arrondis. Données de 2011.",
+      "note": "Valeurs publiées conservées, sans normalisation. Autres religions : catégorie du recensement, distincte du non-déclaré."
+    },
+    {
+      "id": "salaires",
+      "type": "barh",
+      "title": "Le salaire moyen varie fortement selon le lieu",
+      "subtitle": "Salariés réguliers · PLFS, année civile 2025 · moyenne mensuelle",
+      "year": 2025,
+      "labels": [
+        "Ensemble",
+        "Milieu rural",
+        "Milieu urbain"
+      ],
+      "values": [
+        22699,
+        17841,
+        26247
+      ],
+      "unit": "INR/mois",
+      "euro": true,
+      "source_ids": [
+        "S17"
+      ],
+      "france": "salaires-ind",
+      "note_visible": "Moyennes des salariés réguliers ; aucune médiane nationale publiée sur ce champ.",
+      "note": "Current weekly status, rural et urbain, deux sexes. Rémunération du mois précédent déclarée au ménage ; public et privé, sans harmonisation des heures, du brut/net ou des primes avec la France. Médiane non substituée par une moyenne ou une enquête privée."
+    },
+    {
+      "id": "pib-secteurs",
+      "type": "share",
+      "title": "Les services dominent, l’agriculture reste importante",
+      "subtitle": "Valeur ajoutée courante · avril 2024-mars 2025 · %",
+      "year": "2024-2025",
+      "labels": [
+        "Agriculture, forêt, pêche",
+        "Industrie et construction",
+        "Services"
+      ],
+      "values": [
+        19.371983970202393,
+        27.74828286092105,
+        52.879733168876555
+      ],
+      "unit": "%",
+      "source_ids": [
+        "S01"
+      ],
+      "france": "valeur-ajoutee-ind",
+      "note": "Parts calculées sur la somme des trois valeurs ajoutées courantes, hors impôts nets sur les produits. Millésime WDI 2024, exercice indien d’avril 2024 à mars 2025. Valeurs en USD : agriculture 660 909 562 099,749 ; industrie 946 681 842 336,859 ; services 1 804 085 804 858,77. Aucune comparaison française sur une année civile différente."
+    },
+    {
+      "id": "automobile",
+      "type": "barh",
+      "title": "Les deux-roues structurent le marché automobile",
+      "subtitle": "Ventes domestiques des constructeurs · avril 2024-mars 2025 · unités",
+      "year": "2024-2025",
+      "labels": [
+        "Deux-roues",
+        "Véhicules particuliers",
+        "Véhicules utilitaires",
+        "Trois-roues"
+      ],
+      "values": [
+        19607332,
+        4301848,
+        956671,
+        741420
+      ],
+      "unit": "véhicules",
+      "source_ids": [
+        "S21"
+      ],
+      "note": "Périmètre SIAM, ventes en gros domestiques, hors exportations. Quadricycles omis de cette sélection. Pas de comparaison avec des immatriculations françaises ou avec une série SIAM de production."
+    },
+    {
+      "id": "upi",
+      "type": "line",
+      "title": "UPI change l’échelle des paiements quotidiens",
+      "subtitle": "Milliards d’opérations · exercices clos en mars · particuliers et marchands",
+      "year": "2022–2026",
+      "x": [
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "series": [
+        {
+          "name": "UPI",
+          "values": [
+            45.9561,
+            83.7144,
+            131.1295,
+            185.866,
+            241.6169
+          ]
+        }
+      ],
+      "unit": "milliards d’opérations",
+      "source_ids": [
+        "S40",
+        "S42"
+      ],
+      "note": "Tableau parlementaire publié le 20 juillet 2026, données NPCI. Volumes en crore divisés exactement par 100 pour les exprimer en milliards. Valeurs conservées à quatre décimales dans le JSON, sans arrondi préalable. Année de clôture de l’exercice : 2026 signifie avril 2025-mars 2026. Transferts entre particuliers et paiements marchands, sans décompte d’utilisateurs uniques."
+    }
+  ],
+  "cities": [
+    {
+      "name": "Mumbai",
+      "population": 18394912,
+      "lat": 19.068408,
+      "lon": 72.875839,
+      "note": "Finance, port et cinéma hindi.",
+      "year": 2011,
+      "source_ids": [
+        "S11",
+        "S12"
+      ]
+    },
+    {
+      "name": "Delhi",
+      "population": 16349831,
+      "lat": 28.671939,
+      "lon": 77.228058,
+      "note": "Agglomération de la capitale New Delhi, administration et services.",
+      "year": 2011,
+      "source_ids": [
+        "S11",
+        "S12"
+      ]
+    },
+    {
+      "name": "Kolkata",
+      "population": 14057991,
+      "lat": 22.569579,
+      "lon": 88.369126,
+      "note": "Port, industrie et culture bengalie.",
+      "year": 2011,
+      "source_ids": [
+        "S11",
+        "S12"
+      ]
+    },
+    {
+      "name": "Chennai",
+      "population": 8653521,
+      "lat": 13.091934,
+      "lon": 80.278053,
+      "note": "Automobile, port et ingénierie.",
+      "year": 2011,
+      "source_ids": [
+        "S11",
+        "S12"
+      ],
+      "offset": [
+        9,
+        0
+      ]
+    },
+    {
+      "name": "Bengaluru",
+      "population": 8520435,
+      "lat": 12.971941,
+      "lon": 77.558064,
+      "note": "Logiciel, aéronautique et recherche.",
+      "year": 2011,
+      "source_ids": [
+        "S11",
+        "S12"
+      ],
+      "offset": [
+        -9,
+        0
+      ]
+    },
+    {
+      "name": "Hyderabad",
+      "population": 7677018,
+      "lat": 17.401929,
+      "lon": 78.478008,
+      "note": "Technologies numériques et pharmacie.",
+      "year": 2011,
+      "source_ids": [
+        "S11",
+        "S12"
+      ]
+    }
+  ],
+  "cities_map": {
+    "file": "cities.webp",
+    "width": 1500,
+    "height": 1615,
+    "bounds": {
+      "top": 37.5,
+      "bottom": 5.0,
+      "left": 67.0,
+      "right": 99.0
+    },
+    "projection": {
+      "type": "equirectangular"
+    },
+    "credit": {
+      "author": "Uwe Dedering at German Wikipedia",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:India_location_map.svg"
+    },
+    "definition_url": "https://en.wikipedia.org/wiki/Module:Location_map/data/India",
+    "source_ids": [
+      "CITYMAP"
+    ]
+  },
+  "cities_title": "Six grands pôles urbains",
+  "cities_scope": "Agglomérations urbaines · recensement 2011, résultats définitifs",
+  "cities_note": "Périmètres UA historiques, au-delà des communes centrales. Ces effectifs anciens ne sont pas des estimations de population actuelle. Delhi comprend New Delhi.",
+  "relief_title": "L’Himalaya, les plaines et le Deccan",
+  "relief_alt": "Relief de l’Inde, avec l’Himalaya au nord, les plaines du Gange et le plateau péninsulaire bordé par les Ghâts.",
+  "relief_landmarks": [
+    {
+      "label": "L’Himalaya",
+      "text": "Une barrière de hautes montagnes au nord."
+    },
+    {
+      "label": "Les plaines du Nord",
+      "text": "De grands bassins agricoles et urbains."
+    },
+    {
+      "label": "Le Deccan et les Ghâts",
+      "text": "Un plateau péninsulaire et des reliefs côtiers."
+    }
+  ],
+  "hero_sources": [
+    "S36",
+    "FLAG"
+  ],
+  "map_sources": {
+    "locator": [
+      "NE"
+    ],
+    "cities": [
+      "S11",
+      "S12"
+    ],
+    "relief": [
+      "RELIEF",
+      "S09"
+    ]
+  },
+  "euro": {
+    "currency": "INR",
+    "per_euro": 98.5239117647059,
+    "year": 2025,
+    "basis": "Taux direct BCE, moyenne annuelle 2025 : 98,5239117647059 INR pour 1 €. Conversion approximative = salaire mensuel en INR divisé par ce taux. Salaires et taux sur la même année civile ; aucune conversion en parité de pouvoir d’achat.",
+    "source_ids": [
+      "S18"
+    ]
+  },
+  "sources": [
+    {
+      "id": "S01",
+      "text": "[Banque mondiale, WDI, Inde, données 2024](https://api.worldbank.org/v2/country/IND/indicator/SP.POP.TOTL;NY.GDP.MKTP.CD;SP.DYN.TFRT.IN;SP.POP.65UP.TO.ZS;NV.AGR.TOTL.CD;NV.IND.TOTL.CD;NV.SRV.TOTL.CD?source=2&format=json&date=2024&per_page=100). Base mise à jour le 11 novembre 2026. Population résidente estimée, PIB courant en USD, fécondité, structure démographique et valeurs ajoutées. Pyramide : parts quinquennales SP.POP.0004.MA.5Y à SP.POP.80UP.MA.5Y, et FE, multipliées par la population de chaque sexe (SP.POP.TOTL.MA.IN et FE.IN), puis divisées par 100. Effectifs calculés conservés sans arrondi. Branches : chaque valeur ajoutée divisée par la somme agriculture + industrie + services, hors impôts nets sur les produits. Comptes indiens en exercice avril 2024-mars 2025, millésime WDI 2024 : [métadonnées pays](https://databank.worldbank.org/metadataglossary/adjusted-net-savings/country/IND) et [règle d’affectation des exercices](https://datahelpdesk.worldbank.org/knowledgebase/articles/201203-are-all-wdi-series-on-a-calendar-year-reporting-pe). Pas de comparaison avec les comptes français en année civile."
+    },
+    {
+      "id": "S02",
+      "text": "[MoSPI, EnviStats India 2024, composante 1, tableau 1.11](https://www.mospi.gov.in/sites/default/files/reports_and_publication/statistical_publication/EnviStats/ES1_2024_Comp1.pdf). Superficie géographique officielle, archipels et territoires revendiqués compris. Le fond Commons emploie ses propres conventions de frontières. La superficie ne correspond pas au seul territoire effectivement administré."
+    },
+    {
+      "id": "S03",
+      "text": "[PNUD, Human Development Report 2025 : Inde](https://india.un.org/en/294474-india%E2%80%99s-human-development-continues-make-progress-ranks-130-out-193-countries). Données 2023 : IDH 0,685, rang 130 sur 193. Publication du 6 mai 2025."
+    },
+    {
+      "id": "S04",
+      "text": "[V-Dem, Democracy Report 2026](https://www.v-dem.net/documents/75/V-Dem_Institute_Democracy_Report_2026_lowres.pdf). Tableau A2, données 2025 : Inde, indice de démocratie libérale 0,26, rang 105. Méthode identique à la référence française. Estimation avec incertitude ; le score ne résume pas toute la compétition politique."
+    },
+    {
+      "id": "S05",
+      "text": "[RSF, Inde, classement 2026](https://rsf.org/en/country/india). Score 31,96 sur 100 ; rang 157 sur 180. Diagnostic sur les médias, les pressions et la concentration de la propriété."
+    },
+    {
+      "id": "S06",
+      "text": "[Transparency International, Inde, CPI 2025](https://www.transparency.org/en/countries/india). Score 39 sur 100 ; rang 91 sur 182. Corruption perçue du secteur public."
+    },
+    {
+      "id": "S07",
+      "text": "[Banque mondiale, India Poverty & Equity Brief, octobre 2025](https://documents1.worldbank.org/curated/en/099722104222534584/pdf/IDU-25f34333-d3a3-44ae-8268-86830e3bc5a5.pdf). Gini de consommation par personne, enquête HCES 2022-2023 : 25,5 sur 100. La note souligne les limites de couverture des hauts niveaux de consommation. Concepts distincts des revenus et du patrimoine."
+    },
+    {
+      "id": "S08",
+      "text": "[India Meteorological Department, Climatological Tables 1991-2020](https://www.imdpune.gov.in/library/public/Climatological%20Tables%201991-2020.pdf). Stations NEW DELHI (SAFDARJUNG), index 42182, et MUMBAI (COLABA), index 43057. Moyennes des minima et maxima quotidiens et cumuls mensuels moyens de pluie. Douze mois, janvier à décembre. Normales identiques en période à Paris-Montsouris. Échelles communes : 0-45 °C et 0-800 mm."
+    },
+    {
+      "id": "S09",
+      "text": "[NCERT, Contemporary India I, Physical Features of India](https://www.ncert.nic.in/textbook/pdf/iess102.pdf). Himalaya, plaines, plateau péninsulaire, Ghâts, désert et îles. Complément : [National Portal of India, Physical Features](https://www.india.gov.in/explore-india/facts-of-india/physical-background/physical-features)."
+    },
+    {
+      "id": "S10",
+      "text": "[NCERT, India: Physical Environment, Climate](https://www.ncert.nic.in/textbook/pdf/kegy104.pdf). Moussons, répartition des précipitations et contrastes régionaux. Pour les risques montagneux : [AP, mousson, pluies et glissements de terrain, 10 juillet 2025](https://apnews.com/article/ef8b703ab93bc310e397d896b032ce8f)."
+    },
+    {
+      "id": "S11",
+      "text": "[Census of India, A-04 (I), agglomérations et villes de classe I, recensement 2011](https://censusindia.mha.gov.in/nada/index.php/catalog/42876). [Tableau primaire CLASS_I.xlsx](https://censusindia.gov.in/nada/index.php/catalog/42876/download/46544/CLASS_I.xlsx), résultats définitifs, lignes UA de 2011 : Mumbai 18 394 912 ; Delhi 16 349 831 ; Kolkata 14 057 991 ; Chennai 8 653 521 ; Bruhat Bangalore 8 520 435 ; Hyderabad 7 677 018. Périmètres historiques, distincts des seules communes centrales. Aucune extrapolation à 2026."
+    },
+    {
+      "id": "S12",
+      "text": "[Natural Earth, populated places 1:10m](https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_populated_places.geojson). Coordonnées des centres urbains ; domaine public. Delhi comprend la capitale New Delhi. Les populations du tableau proviennent du recensement, sans reprise des estimations Natural Earth."
+    },
+    {
+      "id": "S13",
+      "text": "[Census of India, Language, Census 2011, Statement 4](https://censusindia.gov.in/nada/index.php/catalog/42458/download/46089/C-16_25062018.pdf). Langue maternelle déclarée, catégories regroupées du recensement. Hindi 43,63 ; bengali 8,03 ; marathi 6,86 ; télougou 6,70 ; tamoul 5,70 %. Autres : résidu arithmétique de 29,08 %. L’anglais n’est pas mesuré ici comme langue de travail ou seconde langue."
+    },
+    {
+      "id": "S14",
+      "text": "[National Buildings Organisation, Housing Data Tables, tableau 4](https://www.nbo.gov.in/HousingDataTables.html). Recensement 2011, tableau C-1 par communauté religieuse. Hindu 79,80 ; Muslim 14,23 ; Christian 2,30 ; Sikh 1,72 ; Buddhist 0,70 ; Jain 0,37 ; autres 0,66 ; non déclaré 0,24 %. Total 100,02 % publié, conservé sans normalisation."
+    },
+    {
+      "id": "S15",
+      "text": "[Ministère de l’Intérieur, Census 2027 : modalités](https://www.pib.gov.in/PressNoteDetails.aspx?ModuleId=3&NoteId=158344&lang=1&reg=5). Démarrage de la première phase en avril 2026. Millésime 2027, dénombrement des castes prévu. Aucun résultat national détaillé utilisé en remplacement des ventilations de 2011."
+    },
+    {
+      "id": "S16",
+      "text": "[Pew Research Center, Religion in India: Tolerance and Segregation](https://www.pewresearch.org/religious-landscape-study/2021/06/29/religion-in-india-tolerance-and-segregation/). Enquête réalisée fin 2019-début 2020, publiée le 29 juin 2021. Religion, castes, mariages et habitudes alimentaires. Les attitudes décrites se rapportent à la période de l’enquête."
+    },
+    {
+      "id": "S17",
+      "text": "[MoSPI, Annual Report, Periodic Labour Force Survey 2025](https://mospi.gov.in/uploads/publications_reports/publications_reports1780040415321_0624fb13-fb47-40bc-b470-7c7e9635c3ef_PLFS_2025_F_REV_29052026.pdf). Rapport révisé du 29 mai 2026, Statement 11, page imprimée 22. Rémunération mensuelle moyenne des salariés réguliers, current weekly status, janvier-décembre 2025 : ensemble 22 699 INR ; rural 17 841 ; urbain 26 247. Salaires déclarés pour le mois précédent ; temps plein et partiel non ramenés en EQTP, champ national comprenant le public, l’agriculture et le privé. Brut/net et primes non harmonisés avec la référence française. Pas de médiane publiée dans ce tableau. Les chiffres 21 285 ou 20 702 parfois repris ailleurs ne décrivent pas ce millésime et ce tableau. Emploi et participation : [communiqué MoSPI du 27 mars 2026](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2246009&lang=2&reg=48)."
+    },
+    {
+      "id": "S18",
+      "text": "[BCE, taux de référence annuel INR/EUR, 2025, EXR.A.INR.EUR.SP00.A](https://data.ecb.europa.eu/data/datasets/EXR/EXR.A.INR.EUR.SP00.A). Moyenne annuelle publiée : 98,5239117647059 INR pour 1 €. Équivalent approximatif en euros = montant en INR / 98,5239117647059. Année civile 2025 identique à celle des salaires. [Extraction primaire CSV](https://data-api.ecb.europa.eu/service/data/EXR/A.INR.EUR.SP00.A?startPeriod=2025&endPeriod=2025&format=csvdata)."
+    },
+    {
+      "id": "S19",
+      "text": "[U.S. Department of Commerce, India: Information and Communication Technology](https://www.trade.gov/country-commercial-guides/india-information-and-communication-technology). Écosystème informatique, centres de services, compétences et développement de l’électronique. Description sectorielle ; aucun objectif industriel futur compté comme réalisation."
+    },
+    {
+      "id": "S20",
+      "text": "[Renault Group, Chennai Plant](https://www.renaultgroup.com/en/group/locations/chennai-plant/). Usine entièrement détenue depuis le 31 juillet 2025. [futuREady India, 16 avril 2026](https://media.renaultgroup.com/renault-group-unveils-futuready-india-to-power-its-next-phase-of-international-growth/?lang=eng) : ingénierie, fournisseurs et production."
+    },
+    {
+      "id": "S21",
+      "text": "[SIAM, Annual Report 2024-25](https://www.siam.in/uploads/Know/AnnualReport/10985file_SIAM-Annual-Report-24-25_s.pdf). Automobile Domestic Sales Trends : véhicules particuliers 4 301 848 ; utilitaires 956 671 ; trois-roues 741 420 ; deux-roues 19 607 332. Exercice avril 2024-mars 2025. Ventes domestiques des constructeurs, hors exportations ; périmètre SIAM, distinct d’immatriculations. Certains constructeurs de luxe et acteurs électriques ne sont pas couverts ; aucune prétention à une mesure exhaustive de toutes les mobilités."
+    },
+    {
+      "id": "S22",
+      "text": "[AIE, India Renewable Energy Market Report 2026, synthèse](https://www.iea.org/reports/india-renewable-energy-market-report-2026/executive-summary). Production électrique, intégration des renouvelables, stockage et dépendance aux combustibles importés. Compléments : [Coal 2025](https://www.iea.org/reports/coal-2025/executive-summary) et [Global Energy Review 2026, coal](https://www.iea.org/reports/global-energy-review-2026/coal)."
+    },
+    {
+      "id": "S23",
+      "text": "[The National Archives, Partition of British India](https://www.nationalarchives.gov.uk/education/teaching-resources/partition-of-british-india/). Indépendance, partition de 1947, violences et déplacements. Documents d’archives et dossier pédagogique."
+    },
+    {
+      "id": "S24",
+      "text": "[Cour suprême de l’Inde, Constitution](https://www.sci.gov.in/constitution/). Institutions, fédéralisme, droits fondamentaux et article 17. [India Code, Constitution à jour en 2026](https://indiacode.gov.in/server/api/core/bitstreams/2bd776ff-891e-444c-9344-f63df7b299fc/content), notamment articles 343 et 345 ; [Law Commission, entrée en vigueur le 26 janvier 1950](https://lawcommissionofindia.nic.in/post-independence-developments/). L’anglais reste utilisé pour les fonctions officielles de l’Union selon l’Official Languages Act."
+    },
+    {
+      "id": "S25",
+      "text": "[TIME, état d’urgence de 1975, retour historique du 25 juin 2015](https://time.com/3935184/indira-gandhi-emergency-40-years-1975/). Suspension des libertés et pouvoir d’Indira Gandhi jusqu’en 1977."
+    },
+    {
+      "id": "S26",
+      "text": "[AP, Manmohan Singh, parcours et réformes, 26 décembre 2024](https://apnews.com/article/06cfb0b96acc00a64a280cc6da3cc968). Réformes économiques de 1991 et gouvernement de 2004 à 2014."
+    },
+    {
+      "id": "S27",
+      "text": "[Business Standard, Five developments that changed India’s political landscape, 25 décembre 2019](https://www.business-standard.com/article/economy-policy/five-developments-that-changed-india-s-political-landscape-the-past-decade-119122500399_1.html). Coalition UPA, politiques de droits sociaux, anticorruption et Aam Aadmi Party."
+    },
+    {
+      "id": "S28",
+      "text": "[FMI, consultation article IV de 2018, rapport 18/254](https://www.imf.org/en/-/media/files/publications/cr/2018/cr18254.pdf). Démonétisation du 8 novembre 2016, GST du 1er juillet 2017 et effets transitoires sur l’activité."
+    },
+    {
+      "id": "S29",
+      "text": "[AP, montée du nationalisme hindou sous Modi, avril 2024](https://apnews.com/article/79c30c8ae750a9c037d86b9e2c1b640c). BJP, RSS, Cachemire, loi sur la citoyenneté et temple d’Ayodhya. Les musulmans sont exclus de la voie spécifique de naturalisation créée par cette loi, sans suppression générale de leur citoyenneté."
+    },
+    {
+      "id": "S30",
+      "text": "[AP, Modi face aux contraintes d’une coalition, 5 juin 2024](https://apnews.com/article/41eadd4a74cd13b5e5b9ceca0d7b2f31). Réformes agricoles de 2020 retirées en 2021, majorité et style de gouvernement."
+    },
+    {
+      "id": "S31",
+      "text": "[Congressional Research Service, India’s 2024 National Election, 10 juin 2024](https://www.everycrsreport.com/files/2024-06-10_IF12686_c1982b9ed547514d4870e88b1f7fd87dca28c1b4.pdf). Résultats et seuil majoritaire : BJP 240 sièges, Congrès 99, chambre de 543 sièges. Copie du rapport IF12686. Alliances régionales et troisième mandat de Modi."
+    },
+    {
+      "id": "S32",
+      "text": "[CRS, India-Pakistan Conflict in Spring 2025](https://www.everycrsreport.com/reports/IF13000.html). Attentat du 22 avril à Pahalgam, frappes et cessez-le-feu du 10 mai 2025. Attributions de responsabilité et revendications militaires distinguées des événements établis."
+    },
+    {
+      "id": "S33",
+      "text": "[AP, élections régionales et victoire du BJP au Bengale-Occidental, 4 mai 2026](https://apnews.com/article/561dc6a5460485df5c4d6d84c9bc1502). Alternance au Bengale-Occidental, percée de Vijay au Tamil Nadu, critiques de la révision des listes électorales. Aucun nombre de sièges provisoire repris."
+    },
+    {
+      "id": "S34",
+      "text": "[AP, mobilisations de jeunes en Inde, 13 octobre 2026](https://apnews.com/article/ef4f9c27fcc2c66544b52bd312262eb5). Emploi, contestation étudiante et pression sur les institutions."
+    },
+    {
+      "id": "S35",
+      "text": "[AP, nouvelle manifestation de l’opposition contre le responsable électoral, 1er novembre 2026](https://apnews.com/article/cb532b4811eea64c51f61cd4199fb64e). Revendications attribuées à l’opposition, sans les présenter comme une conclusion judiciaire."
+    },
+    {
+      "id": "S36",
+      "text": "[France Diplomatie, Présentation de l’Inde, mise à jour du 26 octobre 2026](https://www.diplomatie.gouv.fr/fr/information-par-pays/inde/presentation-de-l-inde). Identité, institutions, gouvernement et politique étrangère. Seules les rubriques institutionnelles et diplomatiques sont utilisées ; les indicateurs économiques et démographiques anciens de cette page sont remplacés par les sources statistiques directes."
+    },
+    {
+      "id": "S37",
+      "text": "[Incredible India, cuisines régionales](https://www.prod.incredibleindia.gov.in/content/incredible-india-v2/en/experiences/food-and-cuisine.html). [Chennai, food and cuisine](https://www.prod.incredibleindia.gov.in/content/incredible-india-v2/en/destinations/chennai/food-and-cuisine.html) : thali, dosa, idli, sambar et traditions du Tamil Nadu."
+    },
+    {
+      "id": "S38",
+      "text": "[Élysée, déclaration conjointe franco-indienne, 17 février 2026](https://www.elysee.fr/emmanuel-macron/2026/02/17/india-france-joint-statement). Partenariat stratégique global spécial, Année de l’innovation, espace, défense et coopération industrielle. Les projets annoncés ne sont pas traités comme achevés."
+    },
+    {
+      "id": "S39",
+      "text": "[AP, autorisation préliminaire d’acquisitions de défense, 12 février 2026](https://apnews.com/article/3034e3f1026418206eaaa7b10a620bf4). Acceptance of Necessity pour un nouveau projet Rafale. La fiche décrit cette étape datée sans la présenter comme un contrat définitif."
+    },
+    {
+      "id": "S40",
+      "text": "[NPCI, Retail Payments Statistics](https://www.npci.org.in/uploads/RETAIL_PAYMENTS_STATISTICS_1_xlsx_de91fc7ec0.pdf). Ligne 9 : volumes UPI annuels en millions, exercices 2022-23 à 2024-25. Les publications NPCI et parlementaires peuvent présenter des révisions mineures. Pour conserver une série homogène jusqu’en 2025-26, le graphique reprend intégralement le tableau parlementaire du 20 juillet 2026 cité en S42, sans fusion de versions."
+    },
+    {
+      "id": "S41",
+      "text": "[FMI, India’s Approach to Open Banking, Working Paper 2021/052](https://www.elibrary.imf.org/view/journals/001/2021/052/article-2021-052-A001-en.xml-en.xml). Architecture d’UPI, lancement en 2016, interopérabilité entre banques et applications, accès et protection des données. Complément : [NPCI, TXN NXT, volume 2](https://www.npci.org.in/PDF/npci/knowledge-center/NPCI%20Magazine%20%E2%80%93%20TXN%20NXT%20Vol%202%20-%20Collateral.pdf)."
+    },
+    {
+      "id": "S42",
+      "text": "[Ministère des Finances, réponse à la Lok Sabha sur UPI, 20 juillet 2026](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2286608&lang=1&reg=48). Tableau complet des volumes en crore, soit 10 000 000 d’opérations : 4 595,61 (2021-22), 8 371,44 (2022-23), 13 112,95 (2023-24), 18 586,60 (2024-25), 24 161,69 (2025-26). Division exacte par 100 pour le graphique en milliards d’opérations. Les décimales sources sont toutes conservées. Exercices d’avril à mars, particuliers et marchands. Mesures de sécurité, limites de risque et cadres NPCI de 2025."
+    },
+    {
+      "id": "S43",
+      "text": "[ISRO Science Data Archive, Chandrayaan-3](https://pradan.issdc.gov.in/ch3/index.xhtml). Atterrissage du 23 août 2023, hautes latitudes australes et instruments. Le site n’est pas le pôle géographique."
+    },
+    {
+      "id": "S44",
+      "text": "[Resident Advisor, Kohra](https://ra.co/dj/kohra). Producteur et fondateur de Qilla Records. [RA, compilation de Qilla, 6 avril 2024](https://ra.co/news/80527)."
+    },
+    {
+      "id": "S45",
+      "text": "[Sports Authority of India, sports et jeux](https://sportsauthorityofindia.nic.in/sai_new/public/assets/uploads/circulars/1695618534_Revised%20Sports%20Guidelines.pdf). Diversité des disciplines. [AP, économie de l’IPL, 25 mars 2026](https://apnews.com/article/34500a7918876c0e6c0bb9f7a4de45e0) ; [Pro Kabaddi, règles](https://www.prokabaddi.com/kabaddi-rules)."
+    },
+    {
+      "id": "S47",
+      "text": "[Indiana University Libraries, Introduction to South Asian Cinema](https://guides.libraries.indiana.edu/southasiancinema/intro). Cinéma hindi de Mumbai et industries dans les autres langues indiennes."
+    },
+    {
+      "id": "FLAG",
+      "text": "[Wikimedia Commons, Flag of India.svg](https://commons.wikimedia.org/wiki/File:Flag_of_India.svg). Government of India ; domaine public selon PD-India et dessin géométrique simple. SVG original conservé. [Statut et conditions](https://commons.wikimedia.org/wiki/Template:PD-India)."
+    },
+    {
+      "id": "RELIEF",
+      "text": "[Wikimedia Commons, India relief location map.jpg](https://commons.wikimedia.org/wiki/File:India_relief_location_map.jpg). Uwe Dedering, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/). Conversion WebP à 1 100 pixels de large, qualité 88, cadre complet et couleurs conservés. Carte de repérage, sans prise de position sur les frontières."
+    },
+    {
+      "id": "NE",
+      "text": "[Natural Earth, conditions d’utilisation](https://www.naturalearthdata.com/about/terms-of-use/). Domaine public. Géométries et centres urbains du localisateur. Les contours ne constituent pas une position sur les frontières."
+    },
+    {
+      "id": "CITYMAP",
+      "text": "[Wikimedia Commons, India location map.svg](https://commons.wikimedia.org/wiki/File:India_location_map.svg). Uwe Dedering at German Wikipedia, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0). Réduction proportionnelle et conversion WebP, sans recadrage ni recoloration. [Bornes et projection](https://en.wikipedia.org/wiki/Module:Location_map/data/India). Repères numérotés ajoutés à l’affichage."
+    },
+    {
+      "id": "LIFE",
+      "text": "[Banque mondiale, WDI, espérance de vie à la naissance, 2024](https://api.worldbank.org/v2/country/IND/indicator/SP.DYN.LE00.IN?format=json&date=2024). Deux sexes, années. Estimations harmonisées ONU/WDI."
+    },
+    {
+      "id": "S48",
+      "text": "[TIME, How the Pandemic Is Reshaping India, août 2020](https://time.com/5880585/india-coronavirus-impact/). Confinement, déplacements et conséquences sur le travail."
+    },
+    {
+      "id": "S49",
+      "text": "[Prime Minister’s Office, Former Prime Ministers](https://www.pmindia.gov.in/en/former-prime-ministers/). Dates de fonction de Vajpayee, du 19 mars 1998 au 22 mai 2004, et de Singh, du 22 mai 2004 au 26 mai 2014. Page mise à jour le 13 novembre 2026."
+    }
+  ],
+  "prose_values": {}
+}
