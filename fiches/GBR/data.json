@@ -46,7 +46,8 @@
       "source_ids": [
         "S39"
       ],
-      "france": "fecondite"
+      "france": "fecondite",
+      "precision": 1
     },
     {
       "id": "65-plus",
@@ -546,7 +547,7 @@
       "source_ids": [
         "S30"
       ],
-      "subtitle": "Équipes clientes, équipe du constructeur comprise · grille 2026",
+      "subtitle": "Nombre d’équipes clientes, équipe du constructeur comprise · grille 2026",
       "labels": [
         "Mercedes",
         "Ferrari",
@@ -561,7 +562,7 @@
         1,
         1
       ],
-      "unit": "équipes",
+      "unit": "",
       "precision": 0,
       "note": "Mercedes : Mercedes, McLaren, Williams et Alpine. Ferrari : Ferrari, Haas et Cadillac. Red Bull Ford : Red Bull Racing et Racing Bulls. Honda : Aston Martin. Audi : Audi. Le lieu du moteur, la base du châssis, la nationalité sportive et celle du propriétaire sont distincts."
     }
@@ -649,7 +650,7 @@
     },
     {
       "id": "S21",
-      "text": "[Commission électorale, résultat du référendum européen de 2016](https://www.electoralcommission.org.uk/research-reports-and-data/our-reports-and-data-past-elections-and-referendums/results-and-turnout-eu-referendum). Leave 51,9 %. [Conseil de l’UE, chronologie des accords post-Brexit](https://www.consilium.europa.eu/en/policies/post-brexit-agreements/timeline-post-brexit-agreements/). Sortie le 31 janvier 2020 ; fin de transition le 31 décembre 2020."
+      "text": "[Commission électorale, résultat du référendum européen de 2016](https://www.electoralcommission.org.uk/media-centre/official-result-eu-referendum-declared-electoral-commission-manchester). Leave 51,9 %. [Conseil de l’UE, chronologie des accords post-Brexit](https://www.consilium.europa.eu/en/policies/post-brexit-agreements/timeline-post-brexit-agreements/). Sortie le 31 janvier 2020 ; fin de transition le 31 décembre 2020."
     },
     {
       "id": "S22",
