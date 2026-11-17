@@ -202,6 +202,12 @@ The renderer implements its exact two-frame formulas: above 30.90° N, longitude
 110.43–131.44° E and latitude 39.54–23.71° N. This type requires the exact Japan module
 and its map with the Ryukyu side panel. The full image frame remains unchanged.
 
+Spain's module uses `projection: {"type": "spain_side_map"}` and `bounds: null`.
+For longitudes west of -10°, the Canary Islands panel spans -26.925 to -13.2°
+and 38.1 to 27.4° N. Elsewhere the main frame spans -9.9 to 4.8° and 44.4 to
+34.7° N. This type requires the exact Spain module and its map with the Canary
+Islands panel. Both frames retain the module's original geometry.
+
 `source_ids` are automatically cited alongside `map_sources.cities`. The bibliography
 entry must link the Commons file page, author, licence, module and any conversion.
 The renderer also attaches the declared author and licence to the first map source.

@@ -1,0 +1,867 @@
+{
+  "keyfacts": [
+    {
+      "id": "population",
+      "label": "Population",
+      "value": 49935642,
+      "unit": "habitants",
+      "year": 2026,
+      "coverage": "Résidents · 1er octobre 2026 · provisoire",
+      "source_ids": [
+        "POP"
+      ],
+      "france": "population"
+    },
+    {
+      "id": "superficie",
+      "label": "Superficie",
+      "value": 505983,
+      "unit": "km²",
+      "year": 2026,
+      "coverage": "Territoire dans l’UE · champ Eurostat 2026",
+      "source_ids": [
+        "EU"
+      ],
+      "france": "superficie"
+    },
+    {
+      "id": "pib-nominal",
+      "label": "PIB nominal",
+      "value": 1725671652742.19,
+      "unit": "USD",
+      "year": 2024,
+      "coverage": "Prix courants · WDI 2024",
+      "source_ids": [
+        "GDP"
+      ],
+      "france": "pib-wdi-2024"
+    },
+    {
+      "id": "fecondite",
+      "label": "Fécondité",
+      "value": 1.1,
+      "unit": "enfant/femme",
+      "year": 2024,
+      "coverage": "Indicateur conjoncturel · 2024",
+      "source_ids": [
+        "FERT"
+      ],
+      "france": "fecondite-wdi-2024"
+    },
+    {
+      "id": "65-plus",
+      "label": "Part des 65 ans ou plus",
+      "value": 20.718456819294996,
+      "unit": "%",
+      "year": 2025,
+      "coverage": "Résidents · 1er janvier 2025",
+      "source_ids": [
+        "AGE"
+      ],
+      "france": "65plus-eurostat-2025"
+    },
+    {
+      "id": "chomage",
+      "label": "Chômage",
+      "value": 10.5,
+      "unit": "%",
+      "year": 2025,
+      "coverage": "BIT · 15-74 ans · moyenne 2025",
+      "source_ids": [
+        "UNEMP"
+      ],
+      "france": "chomage-eurostat-2025"
+    }
+  ],
+  "indices": [
+    {
+      "id": "idh",
+      "name": "Développement humain",
+      "acronym": "IDH",
+      "value": 0.918,
+      "rank": "28ᵉ",
+      "year": 2023,
+      "scale_min": 0,
+      "scale_max": 1,
+      "precision": 3,
+      "source_ids": [
+        "HDI"
+      ],
+      "france": "idh",
+      "higher_is_better": true
+    },
+    {
+      "id": "gini",
+      "name": "Inégalités de revenus",
+      "acronym": "Gini",
+      "value": 30.8,
+      "rank": "Sans classement",
+      "year": 2025,
+      "scale_min": 0,
+      "scale_max": 100,
+      "precision": 1,
+      "source_ids": [
+        "GINI"
+      ],
+      "france": "gini-silc-2025",
+      "higher_is_better": false,
+      "coverage": "EU-SILC 2025 · revenu disponible équivalent après transferts"
+    },
+    {
+      "id": "democratie",
+      "name": "Démocratie libérale",
+      "acronym": "V-Dem",
+      "value": 0.74,
+      "rank": "21ᵉ",
+      "year": 2025,
+      "scale_min": 0,
+      "scale_max": 1,
+      "precision": 2,
+      "source_ids": [
+        "VDEM"
+      ],
+      "france": "democratie",
+      "higher_is_better": true
+    },
+    {
+      "id": "presse",
+      "name": "Liberté de la presse",
+      "acronym": "RSF",
+      "value": 75.42,
+      "rank": "29ᵉ / 180",
+      "year": 2026,
+      "scale_min": 0,
+      "scale_max": 100,
+      "precision": 2,
+      "source_ids": [
+        "RSF"
+      ],
+      "france": "presse",
+      "higher_is_better": true
+    },
+    {
+      "id": "corruption",
+      "name": "Corruption perçue",
+      "acronym": "CPI",
+      "value": 55,
+      "rank": "49ᵉ / 182",
+      "year": 2025,
+      "scale_min": 0,
+      "scale_max": 100,
+      "precision": 0,
+      "source_ids": [
+        "CPI"
+      ],
+      "france": "corruption",
+      "higher_is_better": true
+    }
+  ],
+  "cities": [
+    {
+      "name": "Madrid",
+      "population": 3477497,
+      "lat": 40.401972,
+      "lon": -3.685297,
+      "note": "Capitale, sièges d’entreprises et services.",
+      "year": 2025,
+      "source_ids": [
+        "CITIES",
+        "COORD"
+      ]
+    },
+    {
+      "name": "Barcelone",
+      "population": 1713247,
+      "lat": 41.385245,
+      "lon": 2.181424,
+      "note": "Métropole catalane, port et industrie.",
+      "year": 2025,
+      "source_ids": [
+        "CITIES",
+        "COORD"
+      ]
+    },
+    {
+      "name": "Valence",
+      "population": 841558,
+      "lat": 39.486963,
+      "lon": -0.401958,
+      "note": "Port méditerranéen et logistique.",
+      "year": 2025,
+      "source_ids": [
+        "CITIES",
+        "COORD"
+      ]
+    },
+    {
+      "name": "Saragosse",
+      "population": 699007,
+      "lat": 41.650002,
+      "lon": -0.889982,
+      "note": "Carrefour de l’Èbre, industrie automobile.",
+      "year": 2025,
+      "source_ids": [
+        "CITIES",
+        "COORD"
+      ]
+    },
+    {
+      "name": "Séville",
+      "population": 688714,
+      "lat": 37.405015,
+      "lon": -5.980007,
+      "note": "Capitale andalouse, services et aéronautique.",
+      "year": 2025,
+      "source_ids": [
+        "CITIES",
+        "COORD"
+      ]
+    }
+  ],
+  "cities_title": "Cinq grands pôles continentaux",
+  "cities_scope": "Communes, hors agglomérations · 1er janvier 2025",
+  "cities_note": "Sélection de villes. Le fond conserve son encart géographique des Canaries.",
+  "cities_map": {
+    "file": "cities.svg",
+    "width": 1183,
+    "height": 1015,
+    "bounds": null,
+    "projection": {
+      "type": "spain_side_map"
+    },
+    "credit": {
+      "author": "NordNordWest",
+      "license": "CC BY-SA 3.0 de",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+      "url": "https://commons.wikimedia.org/wiki/File:Spain_adm_location_map.svg"
+    },
+    "definition_url": "https://en.wikipedia.org/wiki/Module:Location_map/data/Spain",
+    "source_ids": [
+      "CITYMAP"
+    ]
+  },
+  "charts": [
+    {
+      "id": "climat",
+      "type": "climate",
+      "title": "L’été sec de l’intérieur et du Sud",
+      "year": "1981–2010",
+      "source_ids": [
+        "MADCLIM",
+        "SEVCLIM"
+      ],
+      "subtitle": "Normales 1981-2010 · minima, maxima et pluie mensuels",
+      "places": [
+        {
+          "place": "Madrid-Retiro",
+          "tmin": [
+            2.7,
+            3.7,
+            6.2,
+            7.7,
+            11.3,
+            16.1,
+            19,
+            18.8,
+            15.4,
+            10.7,
+            6.3,
+            3.6
+          ],
+          "tmax": [
+            9.8,
+            12,
+            16.3,
+            18.2,
+            22.2,
+            28.2,
+            32.1,
+            31.3,
+            26.4,
+            19.4,
+            13.5,
+            10
+          ],
+          "precip_mm": [
+            33,
+            34,
+            25,
+            45,
+            50,
+            21,
+            12,
+            10,
+            22,
+            60,
+            58,
+            51
+          ]
+        },
+        {
+          "place": "Séville-Aéroport",
+          "tmin": [
+            5.7,
+            7,
+            9.2,
+            11.1,
+            14.2,
+            18,
+            20.3,
+            20.4,
+            18.2,
+            14.4,
+            10,
+            7.3
+          ],
+          "tmax": [
+            16,
+            18.1,
+            21.9,
+            23.4,
+            27.2,
+            32.2,
+            36,
+            35.5,
+            31.7,
+            26,
+            20.2,
+            16.6
+          ],
+          "precip_mm": [
+            66,
+            50,
+            36,
+            54,
+            30,
+            10,
+            2,
+            5,
+            27,
+            68,
+            91,
+            99
+          ]
+        }
+      ],
+      "france": "climat-paris-1981-2010",
+      "rain_max": 120
+    },
+    {
+      "id": "pyramide-ages",
+      "type": "pyramid",
+      "title": "Des générations actives très fournies",
+      "year": 2025,
+      "source_ids": [
+        "AGE"
+      ],
+      "subtitle": "Population résidente · 1er janvier 2025",
+      "france": "pyramide-eurostat-2025-85plus",
+      "unit": "personnes",
+      "age_groups": [
+        "0–4",
+        "5–9",
+        "10–14",
+        "15–19",
+        "20–24",
+        "25–29",
+        "30–34",
+        "35–39",
+        "40–44",
+        "45–49",
+        "50–54",
+        "55–59",
+        "60–64",
+        "65–69",
+        "70–74",
+        "75–79",
+        "80–84",
+        "85+"
+      ],
+      "coverage": "Résidents · 1er janvier 2025 · Eurostat demo_pjan",
+      "male": [
+        879470,
+        1103846,
+        1278568,
+        1396356,
+        1390780,
+        1382040,
+        1458512,
+        1532793,
+        1770981,
+        2054811,
+        1974013,
+        1811055,
+        1614179,
+        1350011,
+        1065706,
+        889002,
+        609285,
+        528961
+      ],
+      "female": [
+        832798,
+        1045027,
+        1204354,
+        1300910,
+        1302851,
+        1315931,
+        1415174,
+        1529349,
+        1775900,
+        2032474,
+        1969968,
+        1862894,
+        1714638,
+        1489076,
+        1234885,
+        1118942,
+        854868,
+        1037889
+      ]
+    },
+    {
+      "id": "langues",
+      "type": "barh",
+      "title": "Les langues que l’on déclare bien parler",
+      "year": 2021,
+      "source_ids": [
+        "LANG"
+      ],
+      "subtitle": "Résidents de plus d’un an · ECEPOV 2021 · réponses multiples",
+      "labels": [
+        "Castillan",
+        "Anglais",
+        "Catalan, hors valencien",
+        "Valencien",
+        "Galicien",
+        "Basque"
+      ],
+      "values": [
+        96,
+        14.7,
+        14.2,
+        5.6,
+        5.2,
+        2.3
+      ],
+      "unit": "%",
+      "note_visible": "Réponses multiples. Le valencien est distingué du catalan dans les réponses de l’enquête.",
+      "france": "langues"
+    },
+    {
+      "id": "religions",
+      "type": "share",
+      "title": "Une société largement sécularisée",
+      "year": 2026,
+      "source_ids": [
+        "REL"
+      ],
+      "subtitle": "Nationaux de 18 ans ou plus · CIS, septembre 2026",
+      "labels": [
+        "Catholiques pratiquants",
+        "Catholiques non pratiquants",
+        "Autres religions",
+        "Sans religion",
+        "Sans réponse"
+      ],
+      "values": [
+        15.9,
+        38.5,
+        3.2,
+        40.6,
+        1.7
+      ],
+      "unit": "%",
+      "note_visible": "Total publié : 99,9 %. Écart d’arrondi conservé. Sans religion regroupe trois réponses.",
+      "france": "religions"
+    },
+    {
+      "id": "salaires",
+      "type": "barh",
+      "title": "Les salaires horaires face à la France",
+      "year": 2022,
+      "source_ids": [
+        "WAGE"
+      ],
+      "subtitle": "Brut par heure payée · enquête harmonisée SES 2022",
+      "labels": [
+        "Salaire médian",
+        "Salaire moyen"
+      ],
+      "values": [
+        11.01,
+        13.43
+      ],
+      "unit": "€/heure",
+      "precision": 2,
+      "france": "salaires-ses-2022",
+      "note_visible": "Entreprises de dix salariés ou plus, hors agriculture et administration publique. Temps plein et partiel ; primes annuelles non régulières exclues."
+    },
+    {
+      "id": "pib-secteurs",
+      "type": "share",
+      "title": "Une économie surtout tertiaire",
+      "year": 2025,
+      "source_ids": [
+        "VA"
+      ],
+      "subtitle": "Parts de la valeur ajoutée courante · 2025",
+      "labels": [
+        "Agriculture, forêt, pêche",
+        "Industrie et construction",
+        "Services"
+      ],
+      "values": [
+        3.0415602204375456,
+        21.349223500193578,
+        75.60921627936888
+      ],
+      "unit": "%",
+      "france": "va-eurostat-2025",
+      "note": "Parts de la valeur ajoutée hors impôts nets sur les produits ; ne constituent pas des parts du PIB avec impôts."
+    },
+    {
+      "id": "automobile",
+      "type": "share",
+      "title": "Le virage électrique des usines reste partiel",
+      "year": 2025,
+      "source_ids": [
+        "ANFAC"
+      ],
+      "subtitle": "Véhicules assemblés en Espagne · 2025 · parts en %",
+      "labels": [
+        "Électriques ou rechargeables",
+        "Autres motorisations alternatives",
+        "Essence et diesel"
+      ],
+      "values": [
+        9.903404798362024,
+        29.29095797497478,
+        60.8056372266632
+      ],
+      "unit": "%",
+      "note_visible": "Les hybrides non rechargeables et le gaz font partie des autres motorisations alternatives. Assemblage national, toutes marques."
+    },
+    {
+      "id": "electricite",
+      "type": "share",
+      "title": "Le vent et le soleil dans la production électrique",
+      "year": 2025,
+      "source_ids": [
+        "REE"
+      ],
+      "subtitle": "Production nationale hors autoconsommation · 2025",
+      "labels": [
+        "Éolien",
+        "Photovoltaïque",
+        "Hydraulique",
+        "Nucléaire",
+        "Gaz, cycles combinés",
+        "Autres sources"
+      ],
+      "values": [
+        21.6,
+        18.4,
+        12.4,
+        19,
+        16.8,
+        11.8
+      ],
+      "unit": "%",
+      "note": "Autres sources calculées par solde : cogénération, solaire thermique, fuel et gaz hors cycles combinés, charbon, autres renouvelables et déchets. Périmètre REE hors autoconsommation ; aucune comparaison avec la série française de production brute Ember."
+    },
+    {
+      "id": "tourisme",
+      "type": "barh",
+      "title": "Les destinations du tourisme international",
+      "year": 2025,
+      "source_ids": [
+        "FRONTUR"
+      ],
+      "subtitle": "Arrivées avec nuitée, selon la destination principale · 2025",
+      "labels": [
+        "Catalogne",
+        "Baléares",
+        "Canaries",
+        "Andalousie",
+        "Communauté valencienne",
+        "Communauté de Madrid",
+        "Autres régions"
+      ],
+      "values": [
+        20055316,
+        15708921,
+        15691444,
+        14466171,
+        12422659,
+        9111879,
+        9314125
+      ],
+      "unit": "voyages",
+      "note_visible": "Il s’agit d’arrivées touristiques, avec plusieurs voyages possibles pour une même personne. Hors visiteurs à la journée."
+    }
+  ],
+  "sources": [
+    {
+      "id": "EU",
+      "text": "[Union européenne, Espagne](https://european-union.europa.eu/principles-countries-history/eu-countries/spain_fr). Superficie Eurostat 2026, monnaie, institutions et adhésion. Même champ territorial européen que la référence française."
+    },
+    {
+      "id": "POP",
+      "text": "[INE, Estadística Continua de Población, 1er octobre 2026](https://www.ine.es/dyngs/Prensa/ECP3T26.htm), publication du 12 novembre 2026. Population résidente provisoire : 49 935 642. Croissance portée par les personnes nées à l’étranger ; nationalité et pays de naissance sont distincts."
+    },
+    {
+      "id": "AGE",
+      "text": "[Eurostat, population par âge et sexe au 1er janvier 2025, demo_pjan](https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/demo_pjan?geo=ES&geo=FR&time=2025&unit=NR). Base du 15 novembre 2026. Âges simples additionnés en groupes quinquennaux puis 85 ans ou plus, sans arrondi. Effectifs résidents, deux sexes ; pourcentages calculés à l’affichage. Même série et regroupement pour la France."
+    },
+    {
+      "id": "GDP",
+      "text": "[Banque mondiale, PIB nominal espagnol, WDI 2024, NY.GDP.MKTP.CD](https://api.worldbank.org/v2/country/ESP/indicator/NY.GDP.MKTP.CD?format=json&date=2024). Base du 11 novembre 2026 : 1 725 671 652 742,19 USD courants. Même série et année que la référence française."
+    },
+    {
+      "id": "FERT",
+      "text": "[INE, mouvement naturel et indicateurs démographiques, 2024](https://www.ine.es/dyngs/Prensa/MNP2024.htm). Indicateur conjoncturel de fécondité : 1,10 enfant par femme ; mortalité supérieure aux naissances."
+    },
+    {
+      "id": "UNEMP",
+      "text": "[Eurostat, taux de chômage annuel, une_rt_a, Espagne et France, 2025](https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/une_rt_a?geo=ES&geo=FR&time=2025&age=Y15-74&sex=T&unit=PC_ACT). BIT, 15-74 ans, deux sexes, pourcentage de la population active ; Espagne 10,5 %."
+    },
+    {
+      "id": "HDI",
+      "text": "[PNUD, Human Development Report 2025, tableau des indices, données 2023](https://www.undp.org/sites/g/files/zskgke326/files/2025-05/hdr2025overviewen.pdf). Espagne : IDH 0,918, rang 28."
+    },
+    {
+      "id": "GINI",
+      "text": "[Eurostat, coefficient de Gini, EU-SILC 2025, ilc_di12](https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_di12?geo=ES&geo=FR&time=2025&age=TOTAL). Revenu disponible équivalent après transferts, ensemble des âges. Espagne 30,8 sur 100 ; France 30,4. Enquête 2025, revenus principalement de 2024."
+    },
+    {
+      "id": "VDEM",
+      "text": "[V-Dem, Democracy Report 2026](https://www.v-dem.net/documents/75/V-Dem_Institute_Democracy_Report_2026_lowres.pdf), tableau A2, page imprimée 48, données 2025. Indice de démocratie libérale : Espagne 0,74, rang 21."
+    },
+    {
+      "id": "RSF",
+      "text": "[RSF, Espagne, classement 2026](https://rsf.org/en/country/spain). Score 75,42, rang 29 sur 180. Polarisation, pressions politiques et poursuites abusives."
+    },
+    {
+      "id": "CPI",
+      "text": "[Transparency International, Espagne, CPI 2025](https://www.transparency.org/en/countries/spain). Corruption perçue du secteur public : 55 sur 100, rang 49 sur 182."
+    },
+    {
+      "id": "GEO",
+      "text": "[Larousse, Espagne : géographie physique](https://www.larousse.fr/encyclopedie/divers/Espagne_geographie_physique/185597). Meseta, chaînes périphériques, bassins et contrastes climatiques. Les superficies anciennes de cet article ne sont pas utilisées."
+    },
+    {
+      "id": "MADCLIM",
+      "text": "[AEMET, normales de Madrid-Retiro, station 3195](https://www.aemet.es/es/serviciosclimaticos/datosclimatologicos/valoresclimatologicos?l=3195&k=). Période 1981-2010 : Tm, moyenne des minima quotidiens ; TM, moyenne des maxima ; R, précipitations mensuelles. Réutilisation autorisée avec citation de l’AEMET."
+    },
+    {
+      "id": "SEVCLIM",
+      "text": "[AEMET, normales de Séville-Aéroport, station 5783](https://www.aemet.es/es/serviciosclimaticos/datosclimatologicos/valoresclimatologicos?l=5783&k=and). Mêmes variables et normales 1981-2010. Ces normales historiques ne décrivent pas une prévision ni tout le climat actuel."
+    },
+    {
+      "id": "CITIES",
+      "text": "[INE, Espagne municipale, recensement annuel 2025](https://www.ine.es/infografias/infografia_censo.pdf). Communes au 1er janvier 2025 : Madrid, Barcelone, Valence, Saragosse et Séville. Champ du recensement annuel, distinct du Padrón et des agglomérations."
+    },
+    {
+      "id": "COORD",
+      "text": "[Natural Earth, populated places, 1:10m](https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_populated_places.geojson). Coordonnées des centres urbains, domaine public."
+    },
+    {
+      "id": "LANG",
+      "text": "[INE, ECEPOV 2021, résultats définitifs corrigés le 10 octobre 2023](https://www.ine.es/prensa/ecepov_2021.pdf), page 6. Personnes de plus d’un an en logement familial déclarant « bien parler » chaque langue. Réponses multiples. Le valencien constitue une réponse distincte du catalan, qui inclut les variantes des Baléares. Sélection de six langues ; aucune somme à 100 %."
+    },
+    {
+      "id": "REL",
+      "text": "[CIS, baromètre de septembre 2026, étude 3577](https://www.cis.es/es/estudios/barometro-de-septiembre-2026), [résultats, question 36, PDF](https://www.cis.es/documents/d/guest/es3577mar_a-pdf). Population de nationalité espagnole de 18 ans ou plus, 4 042 entretiens. Sans religion : agnostiques 12,2 + indifférents/non-croyants 11,3 + athées 17,1 = 40,6 %. Total publié 99,9 %, sans normalisation."
+    },
+    {
+      "id": "CONST",
+      "text": "[BOE, Constitution espagnole, texte consolidé](https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229). Articles 1-3, 16, 56, 68, 99 et 113 : monarchie parlementaire, langues, religions, investiture et motion de censure constructive."
+    },
+    {
+      "id": "HOURS",
+      "text": "[Turespaña, horaires habituels en Espagne](https://www.spain.info/fr/conseils-voyage/horaires-jours-feries-espagne/). Repas, commerces et vie quotidienne."
+    },
+    {
+      "id": "BIKE",
+      "text": "[Turespaña, l’Espagne à vélo](https://www.spain.info/fr/decouvrir-espagne/cyclotourisme-espagne/). Voies vertes, itinéraires et saisonnalité."
+    },
+    {
+      "id": "SONAR",
+      "text": "[Sónar, actualités officielles](https://sonar.es/es/noticias), annonce du 3 novembre 2026. Retour annoncé de Sónar de Día dans Barcelone pour 2027 ; musique électronique, création et technologie."
+    },
+    {
+      "id": "MONEGROS",
+      "text": "[Monegros Desert Festival, informations officielles 2026](https://monegrosfestival.com/fr/faqs). Édition du 25 juillet à Fraga, Huesca, dans les Monegros."
+    },
+    {
+      "id": "WAGE",
+      "text": "[Eurostat, salaires horaires, SES 2022, earn_ses_hourly, Espagne et France](https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses_hourly?lang=EN&geo=ES&geo=FR&time=2022&sex=T&age=TOTAL&isco08=TOTAL&worktime=TOTAL&nace_r2=B-S_X_O). MED_E_EUR : 11,01 ; MEAN_E_EUR : 13,43. Brut par heure payée, entreprises de dix salariés ou plus, NACE B-S hors O, temps plein et partiel, primes régulières et heures supplémentaires ; versements annuels non réguliers exclus. [Méthode](https://ec.europa.eu/eurostat/cache/metadata/en/earn_ses_main_esms.htm). Les montants sont déjà en euros, monnaie locale ; aucun change ni équivalent distinct nécessaire."
+    },
+    {
+      "id": "HOUSING",
+      "text": "[Banco de España, rapport annuel 2025](https://www.bde.es/f/webbe/SES/Secciones/Publicaciones/PublicacionesAnuales/InformesAnuales/25/InfAnual_2025.pdf). Offre de logements peu réactive, demande et difficultés d’accès au marché locatif."
+    },
+    {
+      "id": "RENT",
+      "text": "[Banco de España, marché du logement locatif, évolution, déterminants et taux d’effort](https://www.bde.es/wbe/es/publicaciones/analisis-economico-investigacion/documentos-ocasionales/el-mercado-del-alquiler-de-vivienda-residencial-en-espana-evolucion-reciente-determinantes-e-indicadores-de-esfuerzo.html), 2024. Usages touristiques et saisonniers, parc social et pression dans les zones d’emploi."
+    },
+    {
+      "id": "VA",
+      "text": "[Eurostat, valeur ajoutée par activité, nama_10_a10, Espagne, 2025](https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10_a10?lang=EN&geo=ES&time=2025&unit=CP_MEUR&na_item=B1G). CP_MEUR, B1G : total 1 531 681 ; A 46 587 ; B-E 236 410 ; F 90 592. Parts calculées sans arrondi sur la VA totale, hors impôts nets sur les produits. Services par différence. Même année et méthode que la France."
+    },
+    {
+      "id": "ANFAC",
+      "text": "[ANFAC, production et exportations automobiles, bilan 2025](https://anfac.com/wp-content/uploads/2026/01/NP-Produccion-y-exportacion-diciembre-y-cierre-2025.pdf), 21 janvier 2026. Total 2 274 026 ; alternatives 891 290 ; électriques et hybrides rechargeables 225 206 ; exportations 1 950 103. Graphique : parts calculées sur le total, autres alternatives par différence et essence/diesel par solde. Champ : véhicules particuliers, commerciaux et industriels assemblés en Espagne ; aucune confusion avec immatriculations ou marques espagnoles."
+    },
+    {
+      "id": "CUPRA",
+      "text": "[SEAT & CUPRA, suivre la Raval sur la ligne de production](https://www.seat-cupra-mediacenter.com/CUPRA-Brand/cupra-news/2026/follow-the-cupra-raval-through-the-production-line), 15 juin 2026 ; [assemblage des batteries à Martorell](https://www.seat-cupra-mediacenter.com/SEAT-sa/seat-sa-news/company/2026/a-batterys-journey), 4 mai 2026. Production et assemblage des systèmes, distincts de la fabrication des cellules."
+    },
+    {
+      "id": "STELLANTIS",
+      "text": "[ICEX / Invest in Spain, plateformes électriques attribuées à Vigo et Saragosse](https://www.investinspain.org/en/news/2025/stellantis-vigo). Implantations et transformation industrielle."
+    },
+    {
+      "id": "REE",
+      "text": "[Red Eléctrica, rapport résumé des énergies renouvelables 2025](https://www.sistemaelectrico-ree.es/sites/default/files/informes/2026/informe-renovables-2025.pdf), mars 2026, page imprimée 6. Production nationale hors autoconsommation : éolien 21,6 %, photovoltaïque 18,4 %, hydraulique 12,4 %, nucléaire 19,0 %, cycles combinés au gaz 16,8 %. Autres sources : résidu calculé 11,8 %. Données provisoires, catégories publiées à une décimale ; aucune normalisation."
+    },
+    {
+      "id": "BLACKOUT",
+      "text": "[ENTSO-E, panne ibérique du 28 avril 2025, rapport final publié le 20 mars 2026](https://www.entsoe.eu/publications/blackout/28-april-2025-iberian-blackout/). Facteurs multiples, fluctuations de tension, oscillations et déconnexions en cascade."
+    },
+    {
+      "id": "HISTORY",
+      "text": "[Institut géographique national espagnol, références historiques, Atlas national](https://www.ign.es/web/resources/acercaDe/libDigPub/06_Referencias_historicas_2020_20230601.pdf). Guerre civile, franquisme et transition démocratique, 1975-1981."
+    },
+    {
+      "id": "MEMORY",
+      "text": "[BOE, loi 20/2022 de mémoire démocratique](https://www.boe.es/buscar/act.php?id=BOE-A-2022-17099). Victimes, fosses, condamnations et mémoire de la guerre civile et de la dictature."
+    },
+    {
+      "id": "PM",
+      "text": "[La Moncloa, présidents du gouvernement depuis 1978](https://www.lamoncloa.gob.es/presidente/presidentes/Paginas/index.aspx). Mandats de Zapatero, Rajoy et Sánchez."
+    },
+    {
+      "id": "CHRONO",
+      "text": "[CIDOB, chronologie des gouvernements d’Espagne, octobre 2024](https://cidob.org/sites/default/files/2024-10/Cronologia%20gobiernos%20de%20Espa%C3%B1a_oct_24_0.pdf). Crise financière, Indignés, fin du bipartisme, crise catalane, motion de censure et coalitions. Synthèse utilisée pour 2006-2020."
+    },
+    {
+      "id": "INVEST",
+      "text": "[Congrès des députés, investiture de Pedro Sánchez](https://www.congreso.es/es/notas-de-prensa?_notasprensa_mvcPath=detalle&_notasprensa_notaId=45970), 16 novembre 2023 : 179 voix pour et 171 contre."
+    },
+    {
+      "id": "AMNESTY",
+      "text": "[BOE, loi organique 1/2024 d’amnistie](https://www.boe.es/buscar/act.php?id=BOE-A-2024-11776), 10 juin 2024. Champ des actes liés au processus indépendantiste catalan."
+    },
+    {
+      "id": "CERDAN",
+      "text": "RTVE : [placement en détention provisoire de Santos Cerdán](https://www.rtve.es/noticias/20250630/fiscalia-pide-prision-santos-cerdan-supremo-persecucion-politica/16645670.shtml), 30 juin 2025 ; [libération sous contrôle judiciaire](https://amp.rtve.es/noticias/20251119/juez-deja-libertad-a-santos-cerdan-tras-cinco-meses-prision/16821827.shtml), 19 novembre 2025. Enquête sur des commissions présumées dans les marchés publics ; articles décrivant les soupçons et les mesures provisoires à ces dates, sans affirmer de culpabilité."
+    },
+    {
+      "id": "ELECTION",
+      "text": "[BOE, décret royal 806/2026 du 5 octobre, dissolution et convocation des élections](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20742), publié le 6 octobre 2026. Scrutin fixé au 29 novembre 2026."
+    },
+    {
+      "id": "HOUSINGNEWS",
+      "text": "[Le Monde, Sánchez convoque des élections anticipées sur fond de crise du logement](https://www.lemonde.fr/en/international/article/2026/10/06/in-spain-sanchez-once-again-bets-on-the-ballot-box-amid-housing-crisis-unrest_6758280_4.html), 6 octobre 2026 ; [grève générale du 11 novembre](https://www.lemonde.fr/en/international/article/2026/11/12/spain-s-nationwide-strike-erupts-amid-housing-crisis-and-anger-over-shrinking-purchasing-power_6778180_4.html), 12 novembre 2026."
+    },
+    {
+      "id": "RAILNEWS",
+      "text": "[Reuters, démission du ministre des Transports Óscar Puente](https://www.investing.com/news/world-news/spains-transport-minister-resigns-over-deadly-train-crash-4996622), 3 novembre 2026. Accident ferroviaire du 28 octobre et campagne électorale ; aucune cause technique affirmée ici."
+    },
+    {
+      "id": "DIPLO",
+      "text": "[France Diplomatie, présentation de l’Espagne](https://www.diplomatie.gouv.fr/fr/information-par-pays/espagne/presentation-de-l-espagne), consultation du 17 novembre 2026. Roi, gouvernement, relations européennes et positions extérieures."
+    },
+    {
+      "id": "FRANCE",
+      "text": "[France Diplomatie, relations bilatérales avec l’Espagne](https://www.diplomatie.gouv.fr/fr/information-par-pays/espagne/relations-bilaterales), mise à jour du 23 octobre 2026 ; [politique et économie](https://www.diplomatie.gouv.fr/fr/information-par-pays/espagne/politique-et-economie). Traité de Barcelone de 2023, coopération policière, interconnexions et commerce de biens 2024."
+    },
+    {
+      "id": "FOOD",
+      "text": "[Turespaña, informations sur la gastronomie espagnole](https://www.spain.info/fr/decouvrir-espagne/informations-espagne-gastronomie/) ; [cuisines régionales](https://www.spain.info/fr/recherche/cuisines-regionales-espagne/). Riz valenciens, tortilla, gaspacho, jambon et cuisines du Nord."
+    },
+    {
+      "id": "FLAMENCO",
+      "text": "[UNESCO, le flamenco](https://ich.unesco.org/fr/RL/le-flamenco-00363). Inscription en 2010 ; chant, danse et accompagnement musical, ancrage andalou et communautés gitanes."
+    },
+    {
+      "id": "FRONTUR",
+      "text": "[INE, FRONTUR, décembre et année 2025](https://www.ine.es/dyngs/Prensa/FRONTUR1225.htm), février 2026, données provisoires. Arrivées de touristes internationaux, voyages avec au moins une nuit, classés selon la communauté de destination principale. Un voyageur peut effectuer plusieurs voyages. Les visites à la journée sont exclues. Total 96 770 515 ; tableau régional dans le graphique."
+    },
+    {
+      "id": "TOURGDP",
+      "text": "[INE, compte satellite du tourisme, série 2021-2024](https://www.ine.es/dyngs/Prensa/es/CSTE2024.htm), 22 décembre 2025. Contribution au PIB 2024 : 12,6 %, estimation avancée. Périmètre transversal, tourisme intérieur compris ; ne s’ajoute pas aux secteurs de valeur ajoutée."
+    },
+    {
+      "id": "FLAG",
+      "text": "[Wikimedia Commons, Flag of Spain.svg](https://commons.wikimedia.org/wiki/File:Flag_of_Spain.svg). RelShot 263 et Echando una mano, œuvre placée dans le domaine public par ses auteurs. SVG conservé."
+    },
+    {
+      "id": "RELIEF",
+      "text": "[Wikimedia Commons, Spain rel location map.svg](https://commons.wikimedia.org/wiki/File:Spain_rel_location_map.svg). [NordNordWest](https://commons.wikimedia.org/wiki/User:NordNordWest), [CC BY-SA 3.0 de](https://creativecommons.org/licenses/by-sa/3.0/de/). Données NIMA, World Data Base II et GTOPO30. Aperçu Commons à 960 × 824 pixels converti en WebP, qualité 86 ; cadre complet, proportions et couleurs conservés. [Module de localisation et encart des Canaries](https://en.wikipedia.org/wiki/Module:Location_map/data/Spain)."
+    },
+    {
+      "id": "NE",
+      "text": "[Natural Earth, conditions de réutilisation](https://www.naturalearthdata.com/about/terms-of-use/). Contours du localisateur régional et mondial, domaine public. Les conventions de frontière n’expriment aucune position de souveraineté."
+    },
+    {
+      "id": "CITYMAP",
+      "text": "[Wikimedia Commons, Spain adm location map.svg](https://commons.wikimedia.org/wiki/File:Spain_adm_location_map.svg). [NordNordWest](https://commons.wikimedia.org/wiki/User:NordNordWest), [CC BY-SA 3.0 de](https://creativecommons.org/licenses/by-sa/3.0/de/deed.en). SVG original conservé. [Bornes et projection](https://en.wikipedia.org/wiki/Module:Location_map/data/Spain). Repères numérotés ajoutés à l’affichage."
+    }
+  ],
+  "map_sources": {
+    "locator": [
+      "EU",
+      "NE"
+    ],
+    "cities": [
+      "CITIES",
+      "COORD"
+    ],
+    "relief": [
+      "RELIEF"
+    ]
+  },
+  "hero_sources": [
+    "EU",
+    "FLAG"
+  ],
+  "prose_values": {
+    "production": {
+      "value": 2274026,
+      "unit": "véhicules"
+    },
+    "export-auto": {
+      "value": 85.8,
+      "unit": "%",
+      "precision": 1
+    },
+    "tourisme-pib": {
+      "value": 12.6,
+      "unit": "%",
+      "precision": 1
+    },
+    "commerce-fr": {
+      "value": 91400000000,
+      "unit": "euros"
+    }
+  },
+  "relief_title": "La Meseta et ses barrières montagneuses",
+  "relief_alt": "Relief de l’Espagne : plateau central de la Meseta, Pyrénées au nord-est, chaînes bétiques au sud et Canaries volcaniques dans l’encart.",
+  "relief_landmarks": [
+    {
+      "label": "La Meseta",
+      "text": "Un intérieur élevé, traversé par le système central."
+    },
+    {
+      "label": "Les Pyrénées",
+      "text": "Une barrière au nord-est, à la frontière française."
+    },
+    {
+      "label": "L’Èbre et le Guadalquivir",
+      "text": "Deux grandes dépressions entre les massifs."
+    }
+  ]
+}

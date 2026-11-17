@@ -182,6 +182,11 @@ def map_point(map_data, point):
     lon, lat = point
     projection = map_data["projection"]
     kind = projection["type"]
+    if kind == "spain_side_map":
+        # Spain's module places longitudes west of -10 in the Canary Islands panel.
+        if lon < -10:
+            return (lon + 26.925) / (-13.2 + 26.925), (38.1 - lat) / (38.1 - 27.4)
+        return (lon + 9.9) / (4.8 + 9.9), (44.4 - lat) / (44.4 - 34.7)
     if kind == "japan_side_map":
         # Wikipedia's Japan module moves latitudes <= 30.90 into the Ryukyu panel.
         if lat > 30.90:
@@ -226,12 +231,13 @@ def validate_city_map(map_data, assets):
     if not map_data.get("source_ids"):
         raise ValueError("City map credit needs source_ids")
     projection = map_data["projection"]
-    if projection["type"] == "japan_side_map":
-        module = "https://en.wikipedia.org/wiki/Module:Location_map/data/Japan"
+    if projection["type"] in {"japan_side_map", "spain_side_map"}:
+        country = "Japan" if projection["type"] == "japan_side_map" else "Spain"
+        module = f"https://en.wikipedia.org/wiki/Module:Location_map/data/{country}"
         if map_data.get("definition_url") != module:
-            raise ValueError("Japan side map requires its exact Wikipedia module")
+            raise ValueError(f"{country} side map requires its exact Wikipedia module")
         if map_data.get("bounds") is not None:
-            raise ValueError("Japan side map uses two frames, not rectangular bounds")
+            raise ValueError(f"{country} side map uses two frames, not rectangular bounds")
     elif projection["type"] == "equirectangular":
         bounds = map_data["bounds"]
         if not all(isfinite(bounds[key]) for key in ("top", "bottom", "left", "right")):
