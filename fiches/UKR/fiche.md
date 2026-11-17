@@ -58,7 +58,7 @@ La numérisation des services publics possède un visage concret : Diia. L’app
 
 La scène électronique de Kyiv conserve des lieux comme Closer et ∄, souvent appelé K41. Le couvre-feu avance les horaires des soirées. Les collectes soutiennent l’armée et les réseaux d’entraide. Une partie des artistes et du public est mobilisée ou vit à l’étranger. Les clubs servent aussi de points de rencontre pour des communautés fragilisées par la guerre. {#societe-techno sources="S09" label="Techno et entraide"}
 
-Le sport offre un autre espace de représentation nationale. Yaroslava Mahuchikh remporte le saut en hauteur aux Jeux de Paris en 2024. Son parcours illustre une génération qui poursuit sa carrière entre entraînement à l’étranger et liens avec le pays. Le déplacement des athlètes accompagne celui des familles et des clubs. {#societe-sport sources="S10" label="Sport et déplacements"}
+Le football garde une vie de championnat autour de clubs comme le Dynamo Kyiv et le Shakhtar Donetsk. En 2025, ces deux équipes disputent la finale de la Coupe d’Ukraine, remportée par le Shakhtar. L’athlétisme offre un autre repère international : Yaroslava Mahuchikh gagne le saut en hauteur aux Jeux de Paris en 2024. Sa préparation à l’étranger illustre les déplacements imposés aux sportifs par la guerre. {#societe-sport sources="SPORT,S10" label="Football et athlétisme pendant la guerre"}
 
 ## Richesse et disparités
 

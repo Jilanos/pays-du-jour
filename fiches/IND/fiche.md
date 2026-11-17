@@ -54,7 +54,9 @@ La famille reste un réseau de logement, d’entraide et de transmission. Les ma
 
 Le salariat régulier ne couvre qu’une partie des actifs. Agriculture familiale, petits commerces, travail indépendant et emplois occasionnels occupent une place centrale. Un poste dans une entreprise informatique internationale décrit une expérience particulière. Il ne représente guère les conditions ordinaires d’emploi du pays. Les écarts d’activité entre hommes et femmes restent importants, notamment autour des responsabilités domestiques. {#societe-travail sources="S17" label="Des mondes du travail différents"}
 
-Le cricket dispose d’une industrie de spectacles et de compétitions très visible. Le badminton, la lutte, le hockey et le kabaddi offrent d’autres portes d’entrée sportives. Le kabaddi combine poursuite, contact et retour dans son camp. Pour un amateur de musique électronique, Kohra et son label Qilla ouvrent une autre fenêtre : une production indienne qui circule dans les clubs internationaux. {#societe-sport-musique sources="S45,S44" label="Sport et musique électronique"}
+Le cricket associe la sélection nationale à l’Indian Premier League, championnat de franchises. L’équipe masculine remporte la Coupe du monde T20 en 2024 puis conserve son titre en 2026. Le badminton, la lutte, le hockey sur gazon et le kabaddi complètent le paysage sportif. Dans le kabaddi, un joueur entre dans le camp adverse, tente de toucher des défenseurs puis de revenir dans son camp. La Pro Kabaddi League en fait aussi un spectacle professionnel. {#societe-sport-musique sources="S45,SPORT" label="Cricket et autres disciplines"}
+
+Pour la musique électronique, Kohra et son label Qilla ouvrent une autre fenêtre : une production indienne qui circule dans les clubs internationaux. {#societe-musique sources="S44" label="Musique électronique"}
 
 ## Richesse et disparités
 

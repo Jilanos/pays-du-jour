@@ -34,7 +34,7 @@ Le relief explique des écarts sensibles sur de courtes distances. La plaine cô
 
 {{chart:climat}}
 
-Les pluies se concentrent pendant la saison fraîche. L’été est presque sans pluie. Jérusalem connaît des nuits plus fraîches que le littoral, favorisées par son altitude. Le sud est désertique. Pour courir ou pédaler, la chaleur, l’exposition au soleil et les longues distances sans eau comptent autant que la pente. Les normales décrivent une moyenne climatique, sans prévoir les épisodes extrêmes. {#geographie-climat sources="S06,S43" label="Saisons et pratique sportive"}
+Les pluies se concentrent pendant la saison fraîche. L’été est presque sans pluie. Jérusalem connaît des nuits plus fraîches que le littoral, favorisées par son altitude. Le sud est désertique. Les normales décrivent une moyenne climatique, sans prévoir les épisodes extrêmes. {#geographie-climat sources="S06,S43" label="Saisons et températures"}
 
 ## Population
 
@@ -58,7 +58,7 @@ Le shabbat commence le vendredi soir et s’achève le samedi soir. De nombreux 
 
 Le service militaire et la réserve marquent de nombreux parcours. Les obligations diffèrent selon le sexe, la communauté et les exemptions. La Cour suprême impose en 2024 l’application de la conscription aux hommes ultraorthodoxes. En avril 2026, elle exige des mesures contre ceux qui échappent à cette obligation. La mobilisation prolongée affecte les familles, les études et les entreprises. Depuis 2023, sécurité, fatigue et responsabilité des dirigeants se mêlent dans l’espace public. {#societe-armee sources="S28,S45" label="Service et réserve"}
 
-Les plages et les promenades de Tel Aviv accueillent course, vélo et sports nautiques. Le judo et la voile ont une forte visibilité olympique. À Paris en 2024, Tom Reuveny remporte l’or en planche à voile ; Sharon Kantor, Inbar Lanir et Raz Hershko obtiennent l’argent dans leurs disciplines. Le sport offre un autre point d’entrée dans le pays. {#societe-sport sources="S20,S46" label="Sport"}
+Le football et le basket dominent les sports collectifs suivis dans le pays. Les terrains de proximité et les équipements publics leur donnent aussi une place dans les loisirs. Le judo et la voile apportent une visibilité olympique différente. À Paris en 2024, Tom Reuveny remporte l’or en planche à voile. Sharon Kantor obtient l’argent dans cette discipline ; Inbar Lanir et Raz Hershko gagnent l’argent en judo. {#societe-sport sources="SPORT,S20" label="Football, basket, judo et voile"}
 
 La culture électronique possède un versant trance très identifiable. Le festival Nova, attaqué le 7 octobre 2023, appartient à cet univers. Pour les survivants, la musique et les rassemblements peuvent accompagner le deuil et la reconstruction. Ce lien entre fête, traumatisme et mémoire dépasse aujourd’hui le seul public des musiques électroniques. {#societe-musique sources="S21" label="Musique et mémoire"}
 

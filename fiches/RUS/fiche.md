@@ -36,7 +36,7 @@ Le climat passe de la steppe au sud au continental humide dans la Russie d’Eur
 
 {{chart:climat}}
 
-Moscou passe plusieurs mois sous zéro, puis connaît un été tiède. Ses pluies, neige comprise, culminent en été. Iakoutsk illustre l’extrême continental : hiver glacial, été court et chaud. Elle reçoit très peu de précipitations. Paris garde des hivers doux. À Moscou, la saison confortable pour courir dehors va de mai à septembre. {#saisons-temperatures sources="S12,FR-CLIM" label="Le climat au quotidien"}
+Moscou passe plusieurs mois sous zéro, puis connaît un été tiède. Ses pluies, neige comprise, culminent en été. Iakoutsk illustre l’extrême continental : hiver glacial, été court et chaud. Elle reçoit très peu de précipitations. Paris garde des hivers doux. {#saisons-temperatures sources="S12,FR-CLIM" label="Le climat au quotidien"}
 
 ## Population
 
@@ -58,7 +58,7 @@ La durée normale du travail est plafonnée à {{value:travail-rus}} par semaine
 
 Internet se ferme progressivement. En février 2026, les autorités confirment le blocage de WhatsApp. Elles imposent la messagerie nationale Max, préinstallée sur les téléphones neufs depuis 2025. Les fonctionnaires et les étudiants doivent l’utiliser. Telegram subit aussi des restrictions, en partie levées ensuite. Sans VPN, WhatsApp n’est plus accessible. {#societe-internet sources="S36" label="Messageries et contrôle d’internet"}
 
-Le sport russe vit à l’écart des grandes compétitions. Aux Jeux d’hiver de Milan-Cortina, seuls {{value:athletes-2026}} russes concourent, sous statut neutre. Sans drapeau ni hymne, ils sont surtout skieurs alpins et lugeurs. Les équipes russes restent exclues des sports collectifs olympiques, hockey sur glace compris. {#societe-sport sources="S39" label="Sport et isolement"}
+Le football et le hockey sur glace ont leurs grands championnats : la Premier League russe et la KHL. Le basket dispose de la ligue VTB, tandis que le volley possède ses compétitions nationales. Ces clubs continuent de structurer la vie sportive intérieure. La présence internationale relève d’un autre cadre : aux Jeux d’hiver de Milan-Cortina en 2026, une délégation russe très réduite est admise sous statut individuel neutre, sans drapeau ni hymne national. {#societe-sport sources="SPORT,S39" label="Championnats et représentation internationale"}
 
 Le festival Outline, près de Moscou, est le grand rendez-vous techno de l’été. Des DJ occidentaux s’y produisent encore en 2024, malgré les critiques. En 2023, un stand de recrutement militaire apparaît à son entrée. En juillet 2026, l’édition est annulée sous la contrainte des autorités, au motif du risque de drones. Fin 2024, la police fait irruption au club Arma pendant une soirée. Ces descentes visent la « propagande LGBT », un an après la classification du mouvement LGBT comme « extrémiste ». {#societe-techno sources="S38,S37" label="Techno sous contrainte"}
 

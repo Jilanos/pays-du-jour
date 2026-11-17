@@ -56,7 +56,7 @@ Le salaire minimum légal atteint {{value:smic-de}} depuis janvier 2026. Il pass
 
 Le Deutschlandticket coûte {{value:ticket}} en 2026. Il donne accès aux transports locaux et régionaux dans tout le pays. {#societe-3 sources="S28,S51" label="Se déplacer"}
 
-La montagne a sa place dans la culture sportive. L’alpinisme en Saxe figure depuis 2024 à l’inventaire national du patrimoine culturel immatériel. Les Alpes bavaroises ferment le sud du pays. {#societe-4 sources="S27,S43" label="Montagne et sport"}
+Le football s’appuie sur le premier réseau fédéral du pays par nombre d’adhésions. La gymnastique arrive ensuite, devant le tennis. Les associations constituent une base majeure de la pratique sportive allemande. Le basket possède aussi ses champions : la sélection masculine remporte son premier titre mondial en 2023, contre la Serbie en finale. {#societe-4 sources="SPORT,SPORT-MONDIAL" label="Clubs, football et basket"}
 
 La location reste la norme. En 2022, seuls {{value:proprietaires}} des ménages possèdent leur logement. La part tombe à {{value:proprio-berlin}} à Berlin. La Sarre compte la plus forte proportion de propriétaires. {#societe-5 sources="S49" label="Logement"}
 

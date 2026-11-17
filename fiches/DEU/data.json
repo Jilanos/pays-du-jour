@@ -1253,6 +1253,14 @@
     {
       "id": "CITYMAP",
       "text": "[Wikimedia Commons, Germany adm location map.svg](https://commons.wikimedia.org/wiki/File:Germany_adm_location_map.svg). NordNordWest, [CC BY-SA 3.0 de](https://creativecommons.org/licenses/by-sa/3.0/de/deed.en). Réduction proportionnelle et conversion WebP, sans recadrage ni recoloration. [Bornes et projection](https://en.wikipedia.org/wiki/Module:Location_map/data/Germany). Repères numérotés ajoutés à l’affichage."
+    },
+    {
+      "id": "SPORT",
+      "text": "[DOSB, recensement des adhésions sportives 2025](https://cdn.dosb.de/user_upload/www.dosb.de/uber_uns/Bestandserhebung/Bestandserhebung_2025.pdf). Classement des fédérations : football, gymnastique, tennis. Adhésions en club, pas personnes uniques ni audiences télévisées."
+    },
+    {
+      "id": "SPORT-MONDIAL",
+      "text": "[FIBA, premier titre mondial de l’Allemagne](https://www.fiba.basketball/en/news/basketballworldcup-2023-news-game-report-germany-v-serbia), 10 septembre 2023. Finale masculine contre la Serbie."
     }
   ]
 }

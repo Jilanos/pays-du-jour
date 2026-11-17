@@ -815,6 +815,14 @@
     {
       "id": "CITYMAP",
       "text": "[Wikimedia Commons, China edcp location map.svg](https://commons.wikimedia.org/wiki/File:China_edcp_location_map.svg). Uwe Dedering, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0). Conversion en WebP à 1 100 pixels de large, sans recadrage. [Bornes et projection](https://en.wikipedia.org/wiki/Module:Location_map/data/China). Repères numérotés et encart ajoutés à l’affichage."
+    },
+    {
+      "id": "SPORT",
+      "text": "[Administration générale des sports, résultats de l’enquête nationale sur la pratique sportive de 2025](https://www.sport.gov.cn/n20001280/n20745751/c29327174/content.html). Badminton et basket parmi les activités à forte participation ; équipements et compétitions de proximité. Consultation du 17 novembre 2026."
+    },
+    {
+      "id": "SPORT-JO",
+      "text": "[Conseil olympique d’Asie, tous les titres du tennis de table pour la Chine à Paris 2024](https://oca.asia/news/5392-china-sweeps-table-tennis-titles-at-paris-2024.html). Bilan des épreuves olympiques de tennis de table, août 2024."
     }
   ],
   "cities": [

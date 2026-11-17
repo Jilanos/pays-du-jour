@@ -870,6 +870,14 @@
     {
       "id": "CITYMAP",
       "text": "[Wikimedia Commons, Taiwan location map.svg](https://commons.wikimedia.org/wiki/File:Taiwan_location_map.svg). NordNordWest, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0). SVG original conservé. [Bornes et projection](https://en.wikipedia.org/wiki/Module:Location_map/data/Taiwan). Repères numérotés et encart ajoutés à l’affichage."
+    },
+    {
+      "id": "SPORT",
+      "text": "[CPBL, site officiel du championnat professionnel de baseball](https://www.cpbl.com.tw/) ; [TPBL, site officiel de la ligue professionnelle de basket](https://tpbl.basketball/). Équipes et calendriers, consultés le 17 novembre 2026."
+    },
+    {
+      "id": "SPORT-PREMIER",
+      "text": "[WBSC, feuille officielle de la finale du Premier12 2024](https://static.wbsc.org/uploads/federations/0/documents/82f90f98-607b-6a2c-59ba-47dbefdf741f.pdf). Chinese Taipei contre le Japon, Tokyo Dome, 24 novembre 2024 ; victoire taïwanaise. [Banque centrale de Taïwan, commémoration du titre](https://www.cbc.gov.tw/en/cp-448-182672-b9b20-2.html), 2025."
     }
   ],
   "map_sources": {
@@ -962,10 +970,6 @@
       "value": 90,
       "unit": "%",
       "precision": 0
-    },
-    "velo": {
-      "value": 960.8,
-      "unit": "kilomètres"
     }
   },
   "cities_title": "Les villes de l’ouest",

@@ -36,7 +36,7 @@ Les Alpes japonaises barrent le centre de Honshū. Le Fuji, volcan isolé au sud
 
 En hiver, la mousson traverse la mer du Japon et dépose sa neige sur les versants exposés. Tokyo connaît un hiver plus sec. Sapporo reste nettement plus froide que Paris. Au sud, Okinawa possède un climat subtropical. Une saison nationale unique décrit mal cet archipel allongé. {#climat-hiver sources="S02,S13,S14,FR-CLIM" label="Hiver et contrastes régionaux"}
 
-La saison des pluies précède l’été chaud et humide d’une grande partie du pays. Les typhons peuvent ensuite perturber transports et activités extérieures jusqu’en automne. À Tokyo, les pluies automnales sont particulièrement marquées. Pour courir ou pédaler, la température seule décrit mal l’effort : humidité, soleil et dénivelé changent beaucoup les conditions. {#climat-ete sources="S02,S13" label="Pluies et chaleur humide"}
+La saison des pluies précède l’été chaud et humide d’une grande partie du pays. Les typhons peuvent ensuite perturber transports et activités extérieures jusqu’en automne. À Tokyo, les pluies automnales sont particulièrement marquées. {#climat-ete sources="S02,S13" label="Pluies et chaleur humide"}
 
 ## Population
 
@@ -60,7 +60,7 @@ La durée normale du travail est en principe de {{value:travail-jp}} par semaine
 
 Le vieillissement transforme aussi les ménages. Vivre seul concerne des jeunes urbains et des personnes âgées. L’assurance maladie et les dispositifs de dépendance soutiennent l’accès aux soins. Les familles restent mobilisées autour des aînés. La disponibilité locale des professionnels et des transports influence directement l’autonomie dans les territoires moins denses. {#societe-soins sources="S25" label="Ménages et dépendance"}
 
-Le relief donne accès à la randonnée, au ski et aux routes de montagne. Le vélo permet aussi de traverser des paysages maritimes. La Shimanami Kaidō relie Honshū et Shikoku par des îles et des ponts. Elle rassemble itinéraire sportif, villages, ports et ouvrages d’art dans un même parcours. {#societe-sport sources="S02,S23" label="Sport et paysages"}
+Le baseball et le football font partie des sports les plus populaires. Le premier se suit dans les championnats professionnels et les tournois des lycées, notamment à Kōshien. Le second dispose de la J.League. Le sumo garde une place particulière avec ses grands tournois et ses rituels. Judo, kendō et karaté prolongent d’autres traditions de pratique et d’enseignement. Le sport japonais associe ces disciplines à une vie de clubs et de stades. {#societe-sport sources="SPORT" label="Baseball, football et sports traditionnels"}
 
 La musique électronique possède ses propres foyers. DJ Nobu et Haruka ont développé Future Terror à partir de Chiba. Fumiya Tanaka relie l’histoire des clubs d’Osaka à la scène minimal internationale. Ces parcours donnent des portes d’entrée distinctes : techno immersive, travail du groove et attention portée à la durée d’un set. {#societe-musique sources="S24" label="Techno et minimal"}
 
@@ -150,6 +150,6 @@ La réputation industrielle ne dispense pas de contrôler les procédures. En ju
 
 ## Le saviez-vous ?
 
-La Shimanami Kaidō propose un itinéraire cyclable de {{value:velo}}. Elle traverse la mer intérieure de Seto entre Onomichi et Imabari. Ses ponts donnent accès aux îles avec des voies aménagées pour les cyclistes. Le trajet fait aussi découvrir des villages, des cultures d’agrumes et des ports. {#anecdote-velo sources="S23" label="Traverser une mer à vélo"}
+Avant un combat de sumo, les lutteurs jettent du sel sur le ring pour le purifier. Ces gestes rituels occupent une partie du spectacle. Le combat lui-même peut s’achever très vite : il faut pousser l’adversaire hors du cercle ou lui faire toucher le sol avec une autre partie du corps que la plante des pieds. {#anecdote-velo sources="SPORT-SUMO" label="Les rituels du sumo"}
 
 {{sources}}

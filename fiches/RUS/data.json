@@ -1160,6 +1160,10 @@
     {
       "id": "CITYMAP",
       "text": "[Wikimedia Commons, Russia administrative location map and Crimea dashed.svg](https://commons.wikimedia.org/wiki/File:Russia_administrative_location_map_and_Crimea_dashed.svg). Uwe Dedering, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0). SVG de 8,7 Mo rendu à 1 100 px de large puis converti en WebP, qualité 90, sans recadrage ni recoloration. [Formules de projection](https://en.wikipedia.org/wiki/Module:Location_map/data/Russia) : conique équidistante du module, convertie sans approximation dans les sept paramètres de la projection equidistant_conic. La Crimée apparaît hachurée sur la carte source ; le fond ne constitue pas une position sur les frontières. Repères numérotés ajoutés à l’affichage."
+    },
+    {
+      "id": "SPORT",
+      "text": "[Conseil de l’Europe, profil sportif de la Russie](https://www.coe.int/en/web/sport/country-profile-russia). Championnats de football, hockey sur glace, basket et volley. Profil institutionnel ancien ; utilisé pour les noms et disciplines des ligues, sans reprendre son calendrier prévisionnel ni ses annonces d’événements."
     }
   ]
 }

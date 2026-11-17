@@ -40,7 +40,7 @@ Le nord possède un climat subtropical humide. Le sud est tropical, avec une sai
 
 {{chart:climat}}
 
-À Taipei, l’humidité persiste toute l’année. À Kaohsiung, la saison sèche contraste avec les pluies d’été. Paris connaît des hivers plus froids et des pluies beaucoup moins concentrées. La chaleur humide pèse sur la course et le vélo. Les typhons surviennent surtout pendant la saison chaude, avec un risque qui se prolonge en automne. {#saisons-et-temperatures-1 sources="S12,S13,FR-CLIM" label="Climat au quotidien"}
+À Taipei, l’humidité persiste toute l’année. À Kaohsiung, la saison sèche contraste avec les pluies d’été. Paris connaît des hivers plus froids et des pluies beaucoup moins concentrées. Les typhons surviennent surtout pendant la saison chaude, avec un risque qui se prolonge en automne. {#saisons-et-temperatures-1 sources="S12,S13,FR-CLIM" label="Climat au quotidien"}
 
 ## Population
 
@@ -68,9 +68,11 @@ Les marchés de nuit prolongent la journée dehors. On mange quelques bouchées 
 
 La durée légale normale du travail est de {{value:travail-twn}} par semaine, avec un plafond quotidien de huit heures. La durée légale française est de {{value:travail-fr}}. Heures supplémentaires et organisation par équipes complètent ce cadre. Les usines de semi-conducteurs fonctionnent en continu. {#mode-de-vie-et-societe-2 sources="S20,S21,FR-WORK" label="Durée du travail"}
 
-Le sport se pratique sur les berges aménagées, les terrains de basket et les routes de montagne. La randonnée permet de quitter rapidement les grandes villes. Le cyclisme possède aussi une base industrielle exportatrice. Pour la musique électronique, Taipei dispose d’une scène de clubs identifiable : les clubs Pawnshop et FINAL en sont deux lieux. {#mode-de-vie-et-societe-3 sources="S05,S22,S23" label="Sport et musique"}
+Le baseball possède un championnat professionnel, la CPBL, et une sélection qui se présente à l’international sous le nom de Chinese Taipei. Le basket dispose aussi de ligues professionnelles, dont la TPBL. Ces compétitions donnent aux supporters des équipes locales à suivre au fil de la saison. {#mode-de-vie-et-societe-3 sources="SPORT,SPORT-PREMIER" label="Baseball et basket professionnels"}
 
 Taïwan légalise le mariage entre personnes de même sexe en 2019, une première en Asie. La France l’a ouvert en 2013. {#mode-de-vie-et-societe-4 sources="S24,FR-MARRIAGE" label="Mariage"}
+
+Taipei possède une scène de musique électronique identifiable : les clubs Pawnshop et FINAL en sont deux lieux. {#societe-musique sources="S22" label="Musique électronique"}
 
 ## Richesse et disparités
 
@@ -163,7 +165,7 @@ Le « bouclier de silicium » désigne une hypothèse stratégique : la dépenda
 
 ## Le saviez-vous ?
 
-La route cyclable nationale numéro 1 forme une boucle de {{value:velo}}. Elle relie plaines, villes et côte orientale. {#le-saviez-vous-1 sources="S23" label="Le tour de l’île à vélo"}
+Le 24 novembre 2024, Taïwan remporte le Premier12 de baseball au Tokyo Dome. La sélection, inscrite sous le nom de Chinese Taipei, bat le Japon en finale sans lui laisser marquer de point. La banque centrale célèbre ensuite ce succès par une pièce commémorative en argent. {#le-saviez-vous-1 sources="SPORT-PREMIER" label="Un titre de baseball célébré sur une pièce"}
 
 
 {{sources}}

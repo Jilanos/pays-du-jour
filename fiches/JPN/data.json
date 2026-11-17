@@ -671,10 +671,6 @@
       "value": 35,
       "unit": "heures",
       "precision": 0
-    },
-    "velo": {
-      "value": 70,
-      "unit": "kilomètres"
     }
   },
   "map_sources": {
@@ -898,6 +894,14 @@
     {
       "id": "CITYMAP",
       "text": "[Wikimedia Commons, Japan location map with side map of the Ryukyu Islands.svg](https://commons.wikimedia.org/wiki/File:Japan_location_map_with_side_map_of_the_Ryukyu_Islands.svg). Maximilian Dörrbecker (Chumwa), [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0). Réduction proportionnelle et conversion WebP, sans recadrage ni recoloration. [Bornes et projection](https://en.wikipedia.org/wiki/Module:Location_map/data/Japan). Repères numérotés ajoutés à l’affichage."
+    },
+    {
+      "id": "SPORT",
+      "text": "[JNTO, panorama des sports japonais](https://faq.japan-travel.jnto.go.jp/en/guide/japanese-sports-an-overview/) ; [baseball professionnel et lycéen à Kōshien](https://faq.japan-travel.jnto.go.jp/en/guide/japan-baseball/) ; [J.League, site officiel](https://www.jleague.jp/en/). Baseball, football, sumo, judo, kendō et karaté. Consultation du 17 novembre 2026."
+    },
+    {
+      "id": "SPORT-SUMO",
+      "text": "[Association japonaise de sumo, guide officiel en anglais](https://www.sumo.or.jp/pdf/en/sumo_introduction.pdf). Règles de victoire et purification du ring par le sel. Consultation du 17 novembre 2026."
     }
   ]
 }
