@@ -1,9 +1,30 @@
 # Pays du jour
 
-A French country reader: 197 countries, short fiches, server-rendered charts and
-maps. Python 3.13, FastAPI, Jinja2 and markdown-it-py. No frontend build or JavaScript.
+A daily country reader in French: one short fiche per country, with charts and maps rendered on the server.
 
-## Run locally
+Live: https://pays.paulmondou.fr
+
+## What it is for
+
+Readers who want a short, sourced introduction to one country at a time, in reading order grouped by palier or in alphabetical order. The list covers 197 countries. 18 fiches are written so far (BEL, CHE, CHN, DEU, DZA, ESP, GBR, IND, ISR, JPN, KOR, MAR, NLD, PSE, RUS, TWN, UKR, USA); the others display "à venir".
+
+## Features
+
+- Fiches in Markdown with YAML front matter and a `data.json`, see [the content contract](docs/format.md).
+- Seven SVG chart types with citation markers and expandable data tables.
+- Vector maps (locator, cities, relief) built from committed Natural Earth geometry.
+- Light and dark themes, no JavaScript, no frontend build.
+- Docker image with a health check on `/healthz`.
+
+## Tech stack
+
+Python 3.13, FastAPI, Jinja2, markdown-it-py, uv, pytest, ruff. Optional Playwright smoke check.
+
+## Status
+
+V1 is online. No database and no accounts; the V2 extension points are in [app/future/README.md](app/future/README.md). Pages are marked `noindex`.
+
+## Quick start
 
 Install [uv](https://docs.astral.sh/uv/), then:
 
